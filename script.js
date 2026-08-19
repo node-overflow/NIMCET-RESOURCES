@@ -280,16 +280,22 @@
         renderFilterPills();
 
         const results = getFilteredResources();
-        elResourcesCount.textContent = results.length + (results.length === 1 ? " resource" : " resources");
+
+        elResourcesCount.textContent =
+            results.length +
+            (results.length === 1 ? " resource" : " resources");
 
         if (results.length === 0) {
+            elResourcesGrid.innerHTML = "";
             elResourcesGrid.hidden = true;
             elEmptyState.hidden = false;
-        } else {
-            elResourcesGrid.hidden = false;
-            elEmptyState.hidden = true;
-            renderGrid(elResourcesGrid, results);
+            return;
         }
+
+        elResourcesGrid.hidden = false;
+        elEmptyState.hidden = true;
+
+        renderGrid(elResourcesGrid, results);
     };
 
     /* ---------------- View switching ---------------- */
