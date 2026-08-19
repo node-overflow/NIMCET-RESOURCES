@@ -133,59 +133,115 @@
     const buildCard = (item) => {
         if (item.type === "Video") return buildVideoCard(item);
 
-        const a = document.createElement("a");
-        a.className = "resource-card";
-        a.href = item.url || "#";
-        a.target = "_blank";
-        a.rel = "noopener";
+        const card = document.createElement("div");
+        card.className = "resource-card";
 
         const typeClass = TYPE_CLASS[item.type] || "type-notes";
 
-        a.innerHTML =
+        card.innerHTML =
             '<div class="card-top">' +
             '<span class="type-dot" style="background: var(--' + typeClass + ')"></span>' +
             '<span class="type-label" style="color: var(--' + typeClass + ')">' + item.type + '</span>' +
             '</div>' +
+
             '<h3 class="card-title"></h3>' +
+
             '<p class="card-desc"></p>' +
+
             '<div class="card-meta">' +
             '<span><b>' + escapeHtml(item.difficulty || "") + '</b></span>' +
             '<span>' + escapeHtml(item.bestFor || "") + '</span>' +
             '</div>' +
+
             '<div class="card-foot">' +
-            '<span class="card-action">' + actionLabel(item) + ' <span class="arrow">\u2192</span></span>' +
+            '<a class="card-action" href="' +
+            (item.url && item.url !== "#" ? escapeHtml(item.url) : "#") +
+            '" target="_blank" rel="noopener noreferrer">' +
+            actionLabel(item) +
+            ' <span class="arrow">→</span>' +
+            '</a>' +
             '</div>';
 
-        a.querySelector(".card-title").textContent = item.title;
-        a.querySelector(".card-desc").textContent = item.desc;
+        card.querySelector(".card-title").textContent = item.title;
+        card.querySelector(".card-desc").textContent = item.desc;
 
-        return a;
+        const action = card.querySelector(".card-action");
+
+        action.addEventListener("click", (e) => {
+            if (!item.url || item.url === "#") {
+                e.preventDefault();
+            }
+        });
+
+        return card;
     };
 
     const buildVideoCard = (item) => {
-        const a = document.createElement("a");
-        a.className = "resource-card video-card";
-        a.target = "_blank";
-        a.rel = "noopener";
+        const card = document.createElement("div");
+        card.className = "resource-card video-card";
 
         const videoId = extractYouTubeId(item.url);
-        a.href = videoId ? "https://www.youtube.com/watch?v=" + videoId : (item.url || "#");
 
         const thumbInner = videoId
-            ? '<img class="video-thumb-img" src="https://img.youtube.com/vi/' + videoId + '/hqdefault.jpg" alt="" loading="lazy" />'
-            : '<div class="video-thumb-fallback"><span class="type-label" style="color: var(--type-video)">' + item.type + '</span></div>';
+            ? '<img class="video-thumb-img" src="https://img.youtube.com/vi/' +
+            videoId +
+            '/hqdefault.jpg" alt="" loading="lazy" />'
+            : '<div class="video-thumb-fallback">' +
+            '<span class="type-label" style="color: var(--type-video)">Video</span>' +
+            '</div>';
 
-        a.innerHTML =
-            '<div class="video-thumb">' +
+        const videoUrl =
+            item.url && item.url !== "#"
+                ? escapeHtml(item.url)
+                : "#";
+
+        card.innerHTML =
+            '<a class="video-thumb" href="' + videoUrl + '" target="_blank" rel="noopener noreferrer">' +
             thumbInner +
             '<span class="play-badge">' +
-            '<svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M1 1.2v13.6a1 1 0 0 0 1.53.85l11-6.8a1 1 0 0 0 0-1.7l-11-6.8A1 1 0 0 0 1 1.2Z" fill="currentColor"/></svg>' +
+            '<svg width="14" height="16" viewBox="0 0 14 16" fill="none">' +
+            '<path d="M1 1.2v13.6a1 1 0 0 0 1.53.85l11-6.8a1 1 0 0 0 0-1.7l-11-6.8A1 1 0 0 0 1 1.2Z" fill="currentColor"/>' +
+            '</svg>' +
             '</span>' +
-            '</div>' +
-            '<h3 class="card-title video-card-title"></h3>';
+            '</a>' +
 
-        a.querySelector(".video-card-title").textContent = item.title;
-        return a;
+            '<div class="video-card-content">' +
+
+            '<h3 class="card-title video-card-title"></h3>' +
+
+            '<div class="card-meta">' +
+            '<span><b></b></span>' +
+            '<span class="video-best-for"></span>' +
+            '</div>' +
+
+            '<div class="card-foot">' +
+            '<a class="card-action" href="' + videoUrl + '" target="_blank" rel="noopener noreferrer">' +
+            'Watch Now <span class="arrow">→</span>' +
+            '</a>' +
+            '</div>' +
+
+            '</div>';
+
+        card.querySelector(".video-card-title").textContent = item.title;
+        card.querySelector(".card-meta b").textContent = item.difficulty || "";
+        card.querySelector(".video-best-for").textContent = item.bestFor || "";
+
+        const thumbnail = card.querySelector(".video-thumb");
+        const action = card.querySelector(".card-action");
+
+        thumbnail.addEventListener("click", (e) => {
+            if (!item.url || item.url === "#") {
+                e.preventDefault();
+            }
+        });
+
+        action.addEventListener("click", (e) => {
+            if (!item.url || item.url === "#") {
+                e.preventDefault();
+            }
+        });
+
+        return card;
     };
 
     const escapeHtml = (str) => {
@@ -197,7 +253,22 @@
     const renderGrid = (container, items) => {
         container.innerHTML = "";
         const frag = document.createDocumentFragment();
-        items.forEach((item) => { frag.appendChild(buildCard(item)); });
+
+        const order = {
+            Book: 1,
+            PYQ: 2,
+            Notes: 3,
+            Practice: 4,
+            Formula: 5,
+            Video: 6
+        };
+
+        [...items]
+            .sort((a, b) => (order[a.type] || 99) - (order[b.type] || 99))
+            .forEach((item) => {
+                frag.appendChild(buildCard(item));
+            });
+
         container.appendChild(frag);
     };
 

@@ -127,11 +127,11 @@
   },
   {
     "id": 110,
-    "title": "Limits, Continuity & Differentiability",
+    "title": "Limits",
     "type": "Video",
     "subject": "Mathematics",
     "chapter": "Calculus",
-    "desc": "A structured lecture series building intuition before moving into standard limit techniques.",
+    "desc": "Limits one shot",
     "difficulty": "Intermediate",
     "bestFor": "Concept Building",
     "tags": ["limits", "continuity", "video lecture"],

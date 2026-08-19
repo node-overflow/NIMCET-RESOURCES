@@ -555,9 +555,9 @@ input:focus-visible {
   padding: 16px;
   text-decoration: none;
   color: inherit;
+  cursor: default;
   transition:
     border-color 0.15s ease,
-    transform 0.15s ease,
     background 0.15s ease;
 }
 
@@ -620,7 +620,7 @@ input:focus-visible {
   align-items: center;
   justify-content: flex-end;
   padding-top: 6px;
-  border-top: 1px solid var(--border);
+  border-top: none;
 }
 
 .card-action {
@@ -630,15 +630,17 @@ input:focus-visible {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--accent-text);
+  text-decoration: none;
+}
+
+.card-action,
+.video-thumb {
+  cursor: pointer;
 }
 
 .card-action .arrow {
   transition: transform 0.15s ease;
   display: inline-block;
-}
-
-.resource-card:hover .card-action .arrow {
-  transform: translateX(3px);
 }
 
 /* Video cards: thumbnail + title only */
@@ -673,6 +675,32 @@ input:focus-visible {
 .resource-card:hover .video-thumb-img {
   transform: scale(1.03);
   filter: brightness(0.85);
+}
+
+.video-card {
+  padding: 0;
+  overflow: hidden;
+  gap: 0;
+}
+
+.video-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 14px 14px;
+  flex: 1;
+}
+
+.video-card .video-card-title {
+  padding: 0;
+}
+
+.video-card .card-meta {
+  margin-top: auto;
+}
+
+.video-card .card-foot {
+  padding-top: 9px;
 }
 
 .video-thumb-fallback {
