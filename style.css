@@ -76,10 +76,6 @@ body {
 }
 
 body {
-  /* Do NOT set overflow-x here. html already clips horizontal overflow;
-     repeating it on body turns body into its own nested scroll container
-     (overflow-x:hidden forces overflow-y to compute to auto), which is
-     what was breaking position:sticky on the sidebar. */
   position: relative;
 }
 
@@ -1083,6 +1079,8 @@ input:focus-visible {
     margin: 0 -16px;
     padding: 0 16px;
     gap: 10px;
+    min-width: 0;
+    width: calc(100% + 32px);
   }
 
   .subject-grid::-webkit-scrollbar {
@@ -1139,6 +1137,8 @@ input:focus-visible {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 12px;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .search-field {
@@ -1162,6 +1162,9 @@ input:focus-visible {
     scrollbar-width: none;
     margin: 0 -16px;
     padding: 0 16px;
+    min-width: 0;
+    width: calc(100% + 32px);
+    max-width: calc(100% + 32px);
   }
 
   .filter-pills::-webkit-scrollbar {
@@ -1270,10 +1273,6 @@ input:focus-visible {
 
 @media (max-width: 400px) {
   .resource-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .subject-grid {
     grid-template-columns: 1fr;
   }
 }
