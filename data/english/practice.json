@@ -1,0 +1,44 @@
+[
+    {
+    "id": 412,
+    "title": "Synonyms & Antonyms \u2013 Practice Set",
+    "type": "Practice",
+    "subject": "English",
+    "chapter": "Vocabulary",
+    "desc": "80 questions across common and moderately difficult competitive-exam vocabulary.",
+    "difficulty": "Beginner",
+    "bestFor": "Timed Practice",
+    "tags": ["synonyms", "antonyms"],
+    "featured": false,
+    "action": "open",
+    "url": "#"
+  },
+  {
+    "id": 413,
+    "title": "Sentence Correction \u2013 Practice Set",
+    "type": "Practice",
+    "subject": "English",
+    "chapter": "Grammar",
+    "desc": "Error-spotting and correction questions modelled on the standard exam format.",
+    "difficulty": "Intermediate",
+    "bestFor": "Timed Practice",
+    "tags": ["sentence correction"],
+    "featured": false,
+    "action": "open",
+    "url": "#"
+  },
+  {
+    "id": 414,
+    "title": "Reading Comprehension \u2013 Practice Set",
+    "type": "Practice",
+    "subject": "English",
+    "chapter": "Comprehension",
+    "desc": "Five timed passages with inference, vocabulary-in-context and main-idea questions.",
+    "difficulty": "Advanced",
+    "bestFor": "Timed Practice",
+    "tags": ["comprehension"],
+    "featured": false,
+    "action": "open",
+    "url": "#"
+  }
+]

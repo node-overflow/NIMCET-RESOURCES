@@ -3,18 +3,21 @@
 
     /* ---------------- Config ---------------- */
     const DATA_FILES = [
-        "data/math/books.json",
-        "data/math/pyqs.json",
-        "data/math/notes.json",
-        "data/math/videos.json",
-        "data/math/practice.json",
-        "data/math/formulas.json",
-
-        "data/reasoning.json",
-        "data/computer.json",
-        "data/quants.json",
-        "data/english.json"
-    ];
+        "math",
+        "reasoning",
+        "computer",
+        "quants",
+        "english"
+    ].flatMap(subject =>
+        [
+            "books",
+            "pyqs",
+            "notes",
+            "videos",
+            "practice",
+            "formulas"
+        ].map(type => `data/${subject}/${type}.json`)
+    );
 
     const ANNOUNCEMENTS_FILE = "data/announcements.json";
     const PYQS_FILE = "data/pyqs.json";
