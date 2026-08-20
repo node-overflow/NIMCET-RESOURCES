@@ -19,8 +19,16 @@
 //     "id": "upd-003",
 //     "date": "2026-07-05",
 //     "category": "Exam Date",
-//     "title": "Tentative exam window announced",
-//     "desc": "A tentative testing window has been indicated for NIMCET 2027. Exact dates will be confirmed once the official notification is released.",
+//     "title": "NIMCET 2027 tentative exam date",
+//     "desc": "The tentative exam date for NIMCET 2027 is June 6, 2027. Exact dates will be confirmed once the official notification is released.",
+//     "url": "#"
+//   },
+//   {
+//     "id": "upd-004",
+//     "date": "2026-06-18",
+//     "category": "Exam Date",
+//     "title": "CUET PG MCA 2027 tentative exam window",
+//     "desc": "The tentative exam date for CUET PG MCA 2027 is expected to be in the first week of March 2027. Official schedule will be published by NTA.",
 //     "url": "#"
 //   }
 // ]

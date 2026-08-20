@@ -364,7 +364,6 @@ input:focus-visible {
 .subject-card:hover {
   border-color: var(--border-strong);
   background: var(--surface-2);
-  transform: translateY(-1px);
 }
 
 .subject-symbol {
@@ -1329,5 +1328,22 @@ input:focus-visible {
 
   .bnav-item[data-active="true"] {
     color: var(--accent-text);
+  }
+
+  #view-pyqs .subject-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: visible;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 12px;
+  }
+
+  #view-pyqs .subject-card {
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
   }
 }
