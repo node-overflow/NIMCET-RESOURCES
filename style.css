@@ -1078,12 +1078,12 @@ input:focus-visible {
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    gap: 10px;
     scroll-snap-type: x proximity;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     margin: 0 -16px;
     padding: 0 16px;
+    gap: 10px;
   }
 
   .subject-grid::-webkit-scrollbar {
@@ -1092,6 +1092,7 @@ input:focus-visible {
 
   .subject-card {
     flex: 0 0 170px;
+    min-width: 170px;
     scroll-snap-align: start;
   }
 
