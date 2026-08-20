@@ -98,7 +98,6 @@ svg {
 }
 
 @media (hover: none) {
-  .resource-card:active,
   .subject-card:active,
   .chip:active,
   .pill:active,
@@ -1106,8 +1105,6 @@ input:focus-visible {
     font-size: 0.88rem;
   }
 
-  /* Horizontally scrollable chip / pill rows, native app style.
-     This scrolling IS intentional — contained locally, never leaks to the page. */
   .chip-row {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -1225,7 +1222,6 @@ input:focus-visible {
     padding: 48px 16px;
   }
 
-  /* Exam Updates timeline */
   .timeline {
     padding-left: 20px;
   }
@@ -1282,12 +1278,6 @@ input:focus-visible {
   }
 }
 
-/* ============ Bottom tab bar (mobile view only) ============
-   This is the ONLY navigation chrome on mobile: Home / All / Search / Subjects.
-   It is promoted to its own compositor layer (transform/backface-visibility)
-   and kept above every other layer (overlay, drawer) so it can never be
-   hidden or blanked out — including the WebKit bug where fixed-position
-   elements using backdrop-filter can disappear during a heavy DOM re-render. */
 .bottom-nav {
   display: none;
 }
