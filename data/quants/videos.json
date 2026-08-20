@@ -1,0 +1,44 @@
+[
+  {
+    "id": 509,
+    "title": "Ratio, Proportion & Mixtures Explained",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "chapter": "Ratio and Proportion",
+    "desc": "Component ratios, partnership problems and mixture-alligation solved step by step.",
+    "difficulty": "Intermediate",
+    "bestFor": "Concept Building",
+    "tags": ["ratio and proportion", "mixtures"],
+    "featured": false,
+    "action": "open",
+    "url": "#"
+  },
+  {
+    "id": 510,
+    "title": "Number System Shortcuts",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "chapter": "Number System",
+    "desc": "Divisibility rules, remainders, HCF-LCM and unit-digit tricks for faster solving.",
+    "difficulty": "Beginner",
+    "bestFor": "Concept Building",
+    "tags": ["number system", "hcf lcm"],
+    "featured": false,
+    "action": "open",
+    "url": "#"
+  },
+  {
+    "id": 511,
+    "title": "Averages & Ages Made Simple",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "chapter": "Averages",
+    "desc": "Weighted averages and age-based problems worked through with quick methods.",
+    "difficulty": "Beginner",
+    "bestFor": "Concept Building",
+    "tags": ["averages", "problems on ages"],
+    "featured": false,
+    "action": "open",
+    "url": "#"
+  }
+]

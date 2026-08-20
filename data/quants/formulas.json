@@ -1,0 +1,16 @@
+[
+  {
+    "id": 515,
+    "title": "Arithmetic Formula Sheet",
+    "type": "Formula",
+    "subject": "Quantitative Aptitude",
+    "chapter": "All Topics",
+    "desc": "One-page reference for percentage, interest, ratio, time-work and time-speed-distance.",
+    "difficulty": "Beginner",
+    "bestFor": "Last-Minute Revision",
+    "tags": ["formula sheet", "arithmetic"],
+    "featured": true,
+    "action": "download",
+    "url": "#"
+  }
+]

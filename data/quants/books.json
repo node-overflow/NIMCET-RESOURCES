@@ -1,0 +1,30 @@
+[
+  {
+    "id": 501,
+    "title": "Quantitative Aptitude for Competitive Examinations",
+    "type": "Book",
+    "subject": "Quantitative Aptitude",
+    "chapter": "Foundation",
+    "desc": "R.S. Aggarwal-style reference covering arithmetic topics with graded exercises and shortcuts.",
+    "difficulty": "Beginner",
+    "bestFor": "Foundation",
+    "tags": ["arithmetic", "shortcuts"],
+    "featured": true,
+    "action": "open",
+    "url": "#"
+  },
+  {
+    "id": 502,
+    "title": "Fast Track Objective Arithmetic",
+    "type": "Book",
+    "subject": "Quantitative Aptitude",
+    "chapter": "Arithmetic",
+    "desc": "Speed-oriented arithmetic practice built around exam-style objective questions.",
+    "difficulty": "Intermediate",
+    "bestFor": "Concept + Practice",
+    "tags": ["arithmetic", "speed maths"],
+    "featured": false,
+    "action": "open",
+    "url": "#"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 503,
+    "title": "NIMCET 2016\u20132026 Solved Papers \u2013 Quant Section",
+    "type": "PYQ",
+    "subject": "Quantitative Aptitude",
+    "chapter": "Previous Years",
+    "desc": "Eleven years of arithmetic and numerical-ability questions extracted with solutions.",
+    "difficulty": "Advanced",
+    "bestFor": "Exam Pattern",
+    "tags": ["pyq", "previous years"],
+    "featured": true,
+    "action": "download",
+    "url": "#"
+  },
+  {
+    "id": 504,
+    "title": "NIMCET 2025 Question Paper",
+    "type": "PYQ",
+    "subject": "Quantitative Aptitude",
+    "chapter": "Previous Years",
+    "desc": "Most recent official paper to check current weighting on arithmetic topics.",
+    "difficulty": "Advanced",
+    "bestFor": "Exam Pattern",
+    "tags": ["pyq", "2025"],
+    "featured": false,
+    "action": "download",
+    "url": "#"
+  }
+]
