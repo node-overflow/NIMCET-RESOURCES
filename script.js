@@ -147,9 +147,6 @@
         });
     };
 
-    // Optional file: on 404 / parse error / missing folder, resolve to an
-    // empty list instead of rejecting, so Exam Updates / PYQs simply render
-    // empty rather than taking the whole site down.
     const loadOptional = (path) => {
         return fetch(path)
             .then((res) => (res.ok ? res.json() : []))
@@ -177,7 +174,7 @@
     };
 
     const actionLabel = (item) => {
-        return item.action === "download" ? "Download" : "Open";
+        return item.action === "download" ? "Download PDF" : "Open PDF";
     };
 
     const countByExam = (key) => {
@@ -193,9 +190,6 @@
         "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
     ];
 
-    // Parses "YYYY-MM-DD" using local date components (avoids the classic
-    // `new Date("YYYY-MM-DD")` UTC-parsing bug that can shift the displayed
-    // day by one in negative-UTC-offset timezones).
     const parseDateStr = (str) => {
         if (!str) return null;
         const parts = String(str).split("-").map((n) => parseInt(n, 10));
@@ -283,37 +277,34 @@
         return card;
     };
 
+    /* ---------------- Build Video Card ---------------- */
+
+    let activeVideo = null;
+
     const buildVideoCard = (item) => {
         const card = document.createElement("div");
         card.className = "resource-card video-card";
 
         const videoId = extractYouTubeId(item.url);
+        const videoUrl = item.url && item.url !== "#" ? escapeHtml(item.url) : "#";
 
         const thumbInner = videoId
-            ? '<img class="video-thumb-img" src="https://img.youtube.com/vi/' +
-            videoId +
-            '/hqdefault.jpg" alt="" loading="lazy" />'
+            ? '<img class="video-thumb-img" src="https://img.youtube.com/vi/' + videoId + '/hqdefault.jpg" alt="" loading="lazy" />'
             : '<div class="video-thumb-fallback">' +
             '<span class="type-label" style="color: var(--type-video)">Video</span>' +
             '</div>';
 
-        const videoUrl =
-            item.url && item.url !== "#"
-                ? escapeHtml(item.url)
-                : "#";
-
         card.innerHTML =
-            '<a class="video-thumb" href="' + videoUrl + '" target="_blank" rel="noopener noreferrer">' +
+            '<div class="video-thumb">' +
             thumbInner +
-            '<span class="play-badge">' +
+            '<button class="play-badge" type="button" aria-label="Play video">' +
             '<svg width="14" height="16" viewBox="0 0 14 16" fill="none">' +
             '<path d="M1 1.2v13.6a1 1 0 0 0 1.53.85l11-6.8a1 1 0 0 0 0-1.7l-11-6.8A1 1 0 0 0 1 1.2Z" fill="currentColor"/>' +
             '</svg>' +
-            '</span>' +
-            '</a>' +
+            '</button>' +
+            '</div>' +
 
             '<div class="video-card-content">' +
-
             '<h3 class="card-title video-card-title"></h3>' +
 
             '<div class="card-meta">' +
@@ -323,10 +314,9 @@
 
             '<div class="card-foot">' +
             '<a class="card-action" href="' + videoUrl + '" target="_blank" rel="noopener noreferrer">' +
-            'Watch Now <span class="arrow">\u2192</span>' +
+            'Watch Now <span class="arrow">→</span>' +
             '</a>' +
             '</div>' +
-
             '</div>';
 
         card.querySelector(".video-card-title").textContent = item.title;
@@ -334,18 +324,43 @@
         card.querySelector(".video-best-for").textContent = item.bestFor || "";
 
         const thumbnail = card.querySelector(".video-thumb");
-        const action = card.querySelector(".card-action");
+        const playButton = card.querySelector(".play-badge");
 
-        thumbnail.addEventListener("click", (e) => {
-            if (!item.url || item.url === "#") {
-                e.preventDefault();
-            }
-        });
+        if (!videoId) {
+            playButton.style.display = "none";
+        }
 
-        action.addEventListener("click", (e) => {
-            if (!item.url || item.url === "#") {
-                e.preventDefault();
+        playButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            if (!videoId) return;
+
+            if (activeVideo && activeVideo !== thumbnail) {
+                activeVideo.innerHTML = activeVideo.dataset.originalContent;
+                activeVideo.classList.remove("video-playing");
+
+                const oldButton = activeVideo.querySelector(".play-badge");
+                if (oldButton) oldButton.style.display = "";
             }
+
+            if (!thumbnail.dataset.originalContent) {
+                thumbnail.dataset.originalContent = thumbnail.innerHTML;
+            }
+
+            thumbnail.innerHTML =
+                '<iframe ' +
+                'class="video-embed" ' +
+                'src="https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0" ' +
+                'title="' + escapeHtml(item.title || "YouTube video") + '" ' +
+                'frameborder="0" ' +
+                'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ' +
+                'allowfullscreen' +
+                '></iframe>';
+
+            thumbnail.classList.add("video-playing");
+
+            activeVideo = thumbnail;
         });
 
         return card;
@@ -841,8 +856,6 @@
                 } else if (action === "all") {
                     goToResources({ subject: null, type: null, search: "" });
                 } else if (action === "menu") {
-                    // Acts as the app's only "hamburger" trigger — toggles the
-                    // Subjects drawer open/closed without ever hiding the bar itself.
                     toggleSidebar();
                 } else if (action === "search") {
                     closeSidebar();
