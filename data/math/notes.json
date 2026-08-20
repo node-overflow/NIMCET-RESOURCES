@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Set Theory & Relations \u2013 Notes",
+    "type": "Notes",
+    "subject": "Mathematics",
+    "chapter": "Set Theory",
+    "desc": "Compact notes on operations on sets, Venn diagrams, types of relations and functions.",
+    "difficulty": "Beginner",
+    "bestFor": "Quick Revision",
+    "tags": ["sets", "relations", "functions"],
+    "featured": false,
+    "action": "download",
+    "url": "#"
+  },
+  {
+    "title": "Complex Numbers \u2013 Notes",
+    "type": "Notes",
+    "subject": "Mathematics",
+    "chapter": "Complex Numbers",
+    "desc": "Argand plane, modulus-argument form, De Moivre's theorem and cube roots of unity, condensed.",
+    "difficulty": "Intermediate",
+    "bestFor": "Quick Revision",
+    "tags": ["complex numbers", "de moivre"],
+    "featured": false,
+    "action": "download",
+    "url": "#"
+  },
+  {
+    "title": "Matrices & Determinants \u2013 Notes",
+    "type": "Notes",
+    "subject": "Mathematics",
+    "chapter": "Matrices",
+    "desc": "Rank, inverse, adjoint, Cramer's rule and properties of determinants in one reference sheet.",
+    "difficulty": "Intermediate",
+    "bestFor": "Quick Revision",
+    "tags": ["matrices", "determinants"],
+    "featured": true,
+    "action": "download",
+    "url": "#"
+  }
+]

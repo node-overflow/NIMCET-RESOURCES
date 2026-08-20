@@ -1,0 +1,28 @@
+[
+  {
+    "title": "NIMCET 2016\u20132026 Solved Papers",
+    "type": "PYQ",
+    "subject": "Mathematics",
+    "chapter": "Previous Years",
+    "desc": "Eleven years of official NIMCET maths questions organised by topic with step-by-step solutions.",
+    "difficulty": "Advanced",
+    "bestFor": "Exam Pattern",
+    "tags": ["pyq", "previous years", "solved"],
+    "featured": true,
+    "action": "download",
+    "url": "#"
+  },
+  {
+    "title": "NIMCET 2025 Question Paper",
+    "type": "PYQ",
+    "subject": "Mathematics",
+    "chapter": "Previous Years",
+    "desc": "The most recent official paper, useful for gauging current difficulty and question style.",
+    "difficulty": "Advanced",
+    "bestFor": "Exam Pattern",
+    "tags": ["pyq", "2025"],
+    "featured": false,
+    "action": "download",
+    "url": "#"
+  }
+]

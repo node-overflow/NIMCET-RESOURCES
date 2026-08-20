@@ -3,11 +3,42 @@
 
     /* ---------------- Config ---------------- */
     const DATA_FILES = [
-        "data/math.json",
+        "data/math/books.json",
+        "data/math/pyqs.json",
+        "data/math/notes.json",
+        "data/math/videos.json",
+        "data/math/practice.json",
+        "data/math/formulas.json",
+
         "data/reasoning.json",
         "data/computer.json",
         "data/quants.json",
         "data/english.json"
+    ];
+
+    const ANNOUNCEMENTS_FILE = "data/announcements.json";
+    const PYQS_FILE = "data/pyqs.json";
+
+    const UPDATE_CATEGORIES = [
+        { key: "Notification", label: "Notification", cssVar: "--upd-notification" },
+        { key: "Exam Date", label: "Exam Date", cssVar: "--upd-exam-date" },
+        { key: "Admit Card", label: "Admit Card", cssVar: "--upd-admit-card" },
+        { key: "Result", label: "Result", cssVar: "--upd-result" },
+        { key: "Important", label: "Important", cssVar: "--upd-important" }
+    ];
+
+    const UPDATE_CATEGORY_VAR = {};
+    UPDATE_CATEGORIES.forEach((c) => { UPDATE_CATEGORY_VAR[c.key] = c.cssVar; });
+
+    const NEW_WITHIN_DAYS = 7;
+
+    const EXAMS = [
+        { key: "NIMCET", name: "NIMCET", full: "NIT MCA Common Entrance Test", symbol: "N" },
+        { key: "CUET PG MCA", name: "CUET PG MCA", full: "CUET PG \u2014 MCA Entrance", symbol: "C" },
+        { key: "TANCET", name: "TANCET", full: "Tamil Nadu Common Entrance Test (MCA)", symbol: "T" },
+        { key: "DU MCA", name: "DU MCA", full: "Delhi University MCA Entrance", symbol: "D" },
+        { key: "BHU MCA", name: "BHU MCA", full: "Banaras Hindu University MCA Entrance", symbol: "B" },
+        { key: "JMI", name: "JMI", full: "Jamia Millia Islamia MCA Entrance", symbol: "J" }
     ];
 
     const SUBJECTS = [
@@ -39,10 +70,14 @@
     /* ---------------- State ---------------- */
     const state = {
         resources: [],
+        announcements: [],
+        pyqs: [],
         view: "home",
         subject: null,
         type: null,
-        search: ""
+        search: "",
+        updateCategory: null,
+        examKey: null
     };
 
     /* ---------------- DOM refs ---------------- */
@@ -56,6 +91,31 @@
 
     const elViewHome = $("#view-home");
     const elViewResources = $("#view-resources");
+    const elViewUpdates = $("#view-updates");
+    const elViewPyqs = $("#view-pyqs");
+    const elViewPyqsExam = $("#view-pyqs-exam");
+
+    const VIEWS = {
+        home: elViewHome,
+        resources: elViewResources,
+        updates: elViewUpdates,
+        pyqs: elViewPyqs,
+        "pyqs-exam": elViewPyqsExam
+    };
+
+    const elUpdatesBadge = $("#updatesBadge");
+    const elUpdateFilters = $("#updateFilters");
+    const elUpdatesTimeline = $("#updatesTimeline");
+    const elUpdatesEmpty = $("#updatesEmpty");
+
+    const elExamGrid = $("#examGrid");
+    const elExamsEmpty = $("#examsEmpty");
+
+    const elPyqsBackBtn = $("#pyqsBackBtn");
+    const elPyqsExamHeading = $("#pyqsExamHeading");
+    const elPyqsExamCount = $("#pyqsExamCount");
+    const elPyqsExamGrid = $("#pyqsExamGrid");
+    const elPyqsExamEmpty = $("#pyqsExamEmpty");
 
     const elSubjectGrid = $("#subjectGrid");
     const elTypeChips = $("#typeChips");
@@ -84,6 +144,25 @@
         });
     };
 
+    // Optional file: on 404 / parse error / missing folder, resolve to an
+    // empty list instead of rejecting, so Exam Updates / PYQs simply render
+    // empty rather than taking the whole site down.
+    const loadOptional = (path) => {
+        return fetch(path)
+            .then((res) => (res.ok ? res.json() : []))
+            .catch(() => []);
+    };
+
+    const loadOptionalData = () => {
+        return Promise.all([
+            loadOptional(ANNOUNCEMENTS_FILE),
+            loadOptional(PYQS_FILE)
+        ]).then(([announcements, pyqs]) => {
+            state.announcements = Array.isArray(announcements) ? announcements : [];
+            state.pyqs = Array.isArray(pyqs) ? pyqs : [];
+        });
+    };
+
     /* ---------------- Helpers ---------------- */
     const countBySubject = (name) => {
         return state.resources.filter((r) => r.subject === name).length;
@@ -96,6 +175,37 @@
 
     const actionLabel = (item) => {
         return item.action === "download" ? "Download" : "Open";
+    };
+
+    const countByExam = (key) => {
+        return state.pyqs.filter((r) => r.exam === key).length;
+    };
+
+    const examByKey = (key) => {
+        return EXAMS.filter((e) => e.key === key)[0] || null;
+    };
+
+    const MONTH_SHORT = [
+        "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+        "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
+    ];
+
+    // Parses "YYYY-MM-DD" using local date components (avoids the classic
+    // `new Date("YYYY-MM-DD")` UTC-parsing bug that can shift the displayed
+    // day by one in negative-UTC-offset timezones).
+    const parseDateStr = (str) => {
+        if (!str) return null;
+        const parts = String(str).split("-").map((n) => parseInt(n, 10));
+        if (parts.length < 3 || parts.some(isNaN)) return null;
+        const d = new Date(parts[0], parts[1] - 1, parts[2]);
+        if (isNaN(d.getTime())) return null;
+        return d;
+    };
+
+    const isRecent = (dateObj) => {
+        if (!dateObj) return false;
+        const diffDays = (Date.now() - dateObj.getTime()) / 86400000;
+        return diffDays >= 0 && diffDays <= NEW_WITHIN_DAYS;
     };
 
     const extractYouTubeId = (url) => {
@@ -135,6 +245,7 @@
             '<div class="card-top">' +
             '<span class="type-dot" style="background: var(--' + typeClass + ')"></span>' +
             '<span class="type-label" style="color: var(--' + typeClass + ')">' + escapeHtml(item.type) + '</span>' +
+            (item.year ? '<span class="type-label" style="margin-left:auto;color:var(--text-faint)">' + escapeHtml(String(item.year)) + '</span>' : '') +
             '</div>' +
 
             '<h3 class="card-title"></h3>' +
@@ -362,6 +473,237 @@
         renderGrid(elResourcesGrid, results);
     };
 
+    /* ---------------- Exam Updates view ---------------- */
+    const updateUnreadBadge = () => {
+        if (!elUpdatesBadge) return;
+        const count = state.announcements.filter((a) => isRecent(parseDateStr(a.date))).length;
+        if (count > 0) {
+            elUpdatesBadge.hidden = false;
+            elUpdatesBadge.textContent = count > 9 ? "9+" : String(count);
+        } else {
+            elUpdatesBadge.hidden = true;
+            elUpdatesBadge.textContent = "";
+        }
+    };
+
+    const renderUpdateFilters = () => {
+        elUpdateFilters.innerHTML = "";
+
+        const allChip = document.createElement("button");
+        allChip.className = "chip";
+        allChip.type = "button";
+        allChip.textContent = "All";
+        allChip.dataset.active = state.updateCategory ? "false" : "true";
+        allChip.addEventListener("click", () => {
+            state.updateCategory = null;
+            renderUpdates();
+        });
+        elUpdateFilters.appendChild(allChip);
+
+        UPDATE_CATEGORIES.forEach((c) => {
+            const has = state.announcements.some((a) => a.category === c.key);
+            if (!has) return;
+            const chip = document.createElement("button");
+            chip.className = "chip";
+            chip.type = "button";
+            chip.textContent = c.label;
+            chip.dataset.active = state.updateCategory === c.key ? "true" : "false";
+            chip.addEventListener("click", () => {
+                state.updateCategory = state.updateCategory === c.key ? null : c.key;
+                renderUpdates();
+            });
+            elUpdateFilters.appendChild(chip);
+        });
+    };
+
+    const buildTimelineItem = (item) => {
+        const dateObj = parseDateStr(item.date);
+
+        const li = document.createElement("div");
+        li.className = "timeline-item";
+
+        const dot = document.createElement("span");
+        dot.className = "timeline-dot";
+        if (item.category && UPDATE_CATEGORY_VAR[item.category]) {
+            dot.style.borderColor = "var(" + UPDATE_CATEGORY_VAR[item.category] + ")";
+        }
+        li.appendChild(dot);
+
+        const card = document.createElement("div");
+        card.className = "timeline-card";
+        card.dataset.expanded = "false";
+
+        const dateBox = document.createElement("div");
+        dateBox.className = "timeline-date";
+        dateBox.innerHTML =
+            '<span class="tl-day">' + (dateObj ? dateObj.getDate() : "\u2014") + '</span>' +
+            '<span class="tl-month">' + (dateObj ? MONTH_SHORT[dateObj.getMonth()] : "") + '</span>';
+        card.appendChild(dateBox);
+
+        const body = document.createElement("div");
+        body.className = "timeline-body";
+
+        const top = document.createElement("div");
+        top.className = "timeline-top";
+
+        if (item.category) {
+            const tag = document.createElement("span");
+            tag.className = "update-tag";
+            const cssVar = UPDATE_CATEGORY_VAR[item.category];
+            if (cssVar) {
+                tag.style.color = "var(" + cssVar + ")";
+                tag.style.borderColor = "var(" + cssVar + ")";
+                tag.style.background = "color-mix(in srgb, var(" + cssVar + ") 12%, transparent)";
+            }
+            tag.textContent = item.category;
+            top.appendChild(tag);
+        }
+
+        if (isRecent(dateObj)) {
+            const badge = document.createElement("span");
+            badge.className = "update-new";
+            badge.textContent = "New";
+            top.appendChild(badge);
+        }
+
+        body.appendChild(top);
+
+        const title = document.createElement("h3");
+        title.className = "timeline-title";
+        title.textContent = item.title || "";
+        body.appendChild(title);
+
+        if (item.desc) {
+            const desc = document.createElement("p");
+            desc.className = "timeline-desc";
+            desc.textContent = item.desc;
+            body.appendChild(desc);
+
+            const foot = document.createElement("div");
+            foot.className = "timeline-foot";
+
+            const toggle = document.createElement("span");
+            toggle.className = "timeline-toggle";
+            toggle.textContent = "Read more";
+            foot.appendChild(toggle);
+
+            if (item.url && item.url !== "#") {
+                const link = document.createElement("a");
+                link.className = "timeline-link";
+                link.href = escapeHtml(item.url);
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.textContent = "View source \u2192";
+                link.addEventListener("click", (e) => e.stopPropagation());
+                foot.appendChild(link);
+            }
+
+            body.appendChild(foot);
+
+            card.addEventListener("click", () => {
+                const expanded = card.dataset.expanded === "true";
+                card.dataset.expanded = expanded ? "false" : "true";
+                toggle.textContent = expanded ? "Read more" : "Show less";
+            });
+        } else if (item.url && item.url !== "#") {
+            const foot = document.createElement("div");
+            foot.className = "timeline-foot";
+            const link = document.createElement("a");
+            link.className = "timeline-link";
+            link.href = escapeHtml(item.url);
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = "View source \u2192";
+            foot.appendChild(link);
+            body.appendChild(foot);
+        }
+
+        card.appendChild(body);
+        li.appendChild(card);
+
+        return li;
+    };
+
+    const renderUpdates = () => {
+        renderUpdateFilters();
+
+        const results = state.announcements
+            .filter((a) => !state.updateCategory || a.category === state.updateCategory)
+            .slice()
+            .sort((a, b) => {
+                const da = parseDateStr(a.date);
+                const db = parseDateStr(b.date);
+                const ta = da ? da.getTime() : 0;
+                const tb = db ? db.getTime() : 0;
+                return tb - ta;
+            });
+
+        elUpdatesTimeline.innerHTML = "";
+
+        if (results.length === 0) {
+            elUpdatesTimeline.hidden = true;
+            elUpdatesEmpty.hidden = false;
+            return;
+        }
+
+        elUpdatesTimeline.hidden = false;
+        elUpdatesEmpty.hidden = true;
+
+        const frag = document.createDocumentFragment();
+        results.forEach((item) => frag.appendChild(buildTimelineItem(item)));
+        elUpdatesTimeline.appendChild(frag);
+    };
+
+    /* ---------------- PYQs views ---------------- */
+    const renderExamGrid = () => {
+        elExamGrid.innerHTML = "";
+
+        EXAMS.forEach((exam) => {
+            const btn = document.createElement("button");
+            btn.className = "subject-card";
+            btn.type = "button";
+            const count = countByExam(exam.key);
+            btn.innerHTML =
+                '<span class="subject-symbol">' + escapeHtml(exam.symbol) + '</span>' +
+                '<span class="subject-name">' + escapeHtml(exam.name) + '</span>' +
+                '<span class="subject-count">' + count + (count === 1 ? ' paper' : ' papers') + '</span>';
+            btn.title = exam.full;
+            btn.addEventListener("click", () => {
+                goToPyqsExam(exam.key);
+            });
+            elExamGrid.appendChild(btn);
+        });
+
+        elExamsEmpty.hidden = EXAMS.length > 0;
+    };
+
+    const renderPyqsExam = () => {
+        const exam = examByKey(state.examKey);
+        const name = exam ? exam.name : state.examKey;
+
+        elPyqsExamHeading.textContent = name || "Exam";
+
+        const results = state.pyqs
+            .filter((p) => p.exam === state.examKey)
+            .slice()
+            .sort((a, b) => (b.year || 0) - (a.year || 0));
+
+        elPyqsExamCount.textContent =
+            results.length + (results.length === 1 ? " paper" : " papers") +
+            (exam ? " \u2014 " + exam.full : "");
+
+        if (results.length === 0) {
+            elPyqsExamGrid.innerHTML = "";
+            elPyqsExamGrid.hidden = true;
+            elPyqsExamEmpty.hidden = false;
+            return;
+        }
+
+        elPyqsExamGrid.hidden = false;
+        elPyqsExamEmpty.hidden = true;
+        renderGrid(elPyqsExamGrid, results);
+    };
+
     /* ---------------- View switching ---------------- */
     const setActiveNav = () => {
         $$(".nav-item").forEach((btn) => { btn.dataset.active = "false"; });
@@ -382,13 +724,21 @@
                 const allBBtn = $('.bnav-item[data-bottom="all"]');
                 if (allBBtn) allBBtn.dataset.active = "true";
             }
+        } else if (state.view === "updates") {
+            const updBtn = $('.nav-item[data-nav="updates"]');
+            if (updBtn) updBtn.dataset.active = "true";
+        } else if (state.view === "pyqs" || state.view === "pyqs-exam") {
+            const pyqBtn = $('.nav-item[data-nav="pyqs"]');
+            if (pyqBtn) pyqBtn.dataset.active = "true";
         }
     };
 
     const showView = (name) => {
         state.view = name;
-        elViewHome.hidden = name !== "home";
-        elViewResources.hidden = name !== "resources";
+        Object.keys(VIEWS).forEach((key) => {
+            const el = VIEWS[key];
+            if (el) el.hidden = key !== name;
+        });
         setActiveNav();
         closeSidebar();
         window.scrollTo(0, 0);
@@ -407,6 +757,24 @@
         elSearchInput.value = state.search;
         showView("resources");
         renderResources();
+    };
+
+    const goToUpdates = () => {
+        showView("updates");
+        updateUnreadBadge();
+        renderUpdates();
+    };
+
+    const goToPyqs = () => {
+        state.examKey = null;
+        showView("pyqs");
+        renderExamGrid();
+    };
+
+    const goToPyqsExam = (examKey) => {
+        state.examKey = examKey;
+        showView("pyqs-exam");
+        renderPyqsExam();
     };
 
     /* ---------------- Sidebar / mobile drawer ---------------- */
@@ -443,9 +811,19 @@
                     goToResources({ subject: null, type: null, search: "" });
                 } else if (nav === "subject") {
                     goToResources({ subject: btn.dataset.subject, type: null, search: "" });
+                } else if (nav === "updates") {
+                    goToUpdates();
+                } else if (nav === "pyqs") {
+                    goToPyqs();
                 }
             });
         });
+
+        if (elPyqsBackBtn) {
+            elPyqsBackBtn.addEventListener("click", () => {
+                goToPyqs();
+            });
+        }
 
         elSearchInput.addEventListener("input", (e) => {
             state.search = e.target.value;
@@ -479,8 +857,10 @@
 
     /* ---------------- Init ---------------- */
     loadData()
+        .then(() => loadOptionalData())
         .then(() => {
             wireStaticEvents();
+            updateUnreadBadge();
             goHome();
         })
         .catch((err) => {

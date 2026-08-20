@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pyq-nimcet-2026",
+    "exam": "NIMCET",
+    "year": 2026,
+    "title": "NIMCET 2026 Question Paper",
+    "type": "PYQ",
+    "desc": "Official NIMCET 2026 question paper.",
+    "difficulty": "",
+    "bestFor": "Full-length practice",
+    "action": "download",
+    "url": "#"
+  },
+  {
+    "id": "pyq-nimcet-2025",
+    "exam": "NIMCET",
+    "year": 2025,
+    "title": "NIMCET 2025 Question Paper",
+    "type": "PYQ",
+    "desc": "Official NIMCET 2025 question paper.",
+    "difficulty": "",
+    "bestFor": "Full-length practice",
+    "action": "download",
+    "url": "#"
+  },
+  {
+    "id": "pyq-cuetpg-2026",
+    "exam": "CUET PG MCA",
+    "year": 2026,
+    "title": "CUET PG MCA 2026 Question Paper",
+    "type": "PYQ",
+    "desc": "Official CUET PG MCA-entrance question paper.",
+    "difficulty": "",
+    "bestFor": "Full-length practice",
+    "action": "download",
+    "url": "#"
+  },
+  {
+    "id": "pyq-tancet-2026",
+    "exam": "TANCET",
+    "year": 2026,
+    "title": "TANCET MCA 2026 Question Paper",
+    "type": "PYQ",
+    "desc": "Official TANCET MCA question paper.",
+    "difficulty": "",
+    "bestFor": "Full-length practice",
+    "action": "download",
+    "url": "#"
+  }
+]

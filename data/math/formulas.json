@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Trigonometry Formula Sheet",
+    "type": "Formula",
+    "subject": "Mathematics",
+    "chapter": "Trigonometry",
+    "desc": "Identities, multiple/sub-multiple angle formulas and inverse trig ranges on a single page.",
+    "difficulty": "Beginner",
+    "bestFor": "Last-Minute Revision",
+    "tags": ["trigonometry", "formula sheet"],
+    "featured": true,
+    "action": "download",
+    "url": "#"
+  },
+  {
+    "title": "Calculus Formula Sheet",
+    "type": "Formula",
+    "subject": "Mathematics",
+    "chapter": "Calculus",
+    "desc": "Standard limits, derivatives and integrals table for quick lookup during revision.",
+    "difficulty": "Intermediate",
+    "bestFor": "Last-Minute Revision",
+    "tags": ["calculus", "formula sheet"],
+    "featured": false,
+    "action": "download",
+    "url": "#"
+  },
+  {
+    "title": "Algebra & Sequence Formula Sheet",
+    "type": "Formula",
+    "subject": "Mathematics",
+    "chapter": "Algebra",
+    "desc": "AP, GP, HP results, logarithm rules and quadratic formulas condensed for rapid recall.",
+    "difficulty": "Beginner",
+    "bestFor": "Last-Minute Revision",
+    "tags": ["sequence and series", "logarithms", "formula sheet"],
+    "featured": false,
+    "action": "download",
+    "url": "#"
+  }
+]

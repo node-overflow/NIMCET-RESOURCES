@@ -62,6 +62,32 @@
                     </button>
                 </div>
 
+                <div class="nav-group nav-group-hub">
+                    <p class="nav-label">Exam Hub</p>
+                    <button class="nav-item" data-nav="updates">
+                        <svg class="nav-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect x="2" y="3" width="12" height="11" rx="1.5" stroke="currentColor"
+                                stroke-width="1.4" />
+                            <path d="M2 6.3H14" stroke="currentColor" stroke-width="1.4" />
+                            <path d="M5.2 1.6V4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                            <path d="M10.8 1.6V4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                            <circle cx="5.3" cy="9.4" r="1" fill="currentColor" />
+                        </svg>
+                        <span>Exam Updates</span>
+                        <span class="nav-badge" id="updatesBadge" hidden></span>
+                    </button>
+                    <button class="nav-item" data-nav="pyqs">
+                        <svg class="nav-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4.2 1.8h5l3 3v8.4a1 1 0 0 1-1 1H4.2a1 1 0 0 1-1-1V2.8a1 1 0 0 1 1-1Z"
+                                stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+                            <path d="M9.2 1.8V4.8h3" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+                            <path d="M5.6 8.4H10.4M5.6 10.6H10.4M5.6 6.2H7.6" stroke="currentColor" stroke-width="1.2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span>PYQs</span>
+                    </button>
+                </div>
+
                 <div class="nav-group nav-group-subjects">
                     <p class="nav-label">Subjects</p>
                     <button class="nav-item" data-nav="subject" data-subject="Mathematics">
@@ -141,6 +167,60 @@
                     <p class="empty-sub">Try a different search term or clear the active filter.</p>
                 </div>
             </section>
+
+            <!-- EXAM UPDATES VIEW -->
+            <section class="view" id="view-updates" hidden>
+                <header class="view-head">
+                    <h1>Exam Updates</h1>
+                    <p class="subtitle">Notifications, exam dates, admit cards and results — as they drop.</p>
+                </header>
+
+                <div class="chip-row" id="updateFilters"></div>
+
+                <div class="timeline" id="updatesTimeline"></div>
+
+                <div class="empty-state" id="updatesEmpty" hidden>
+                    <p class="empty-title">No updates yet</p>
+                    <p class="empty-sub">Announcements will show up here as soon as they're added.</p>
+                </div>
+            </section>
+
+            <!-- PYQs — EXAM SELECT VIEW -->
+            <section class="view" id="view-pyqs" hidden>
+                <header class="view-head">
+                    <h1>Previous Year Questions</h1>
+                    <p class="subtitle">Pick an exam to browse its papers.</p>
+                </header>
+
+                <div class="subject-grid" id="examGrid"></div>
+
+                <div class="empty-state" id="examsEmpty" hidden>
+                    <p class="empty-title">No exams added yet</p>
+                    <p class="empty-sub">PYQ sets will appear here once they're added.</p>
+                </div>
+            </section>
+
+            <!-- PYQs — EXAM DETAIL VIEW -->
+            <section class="view" id="view-pyqs-exam" hidden>
+                <header class="view-head">
+                    <button class="back-btn" id="pyqsBackBtn" type="button">
+                        <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                            <path d="M8.5 2.5 3 8l5.5 5.5" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        All exams
+                    </button>
+                    <h1 id="pyqsExamHeading">Exam</h1>
+                    <p class="subtitle" id="pyqsExamCount"></p>
+                </header>
+
+                <div class="resource-grid" id="pyqsExamGrid"></div>
+
+                <div class="empty-state" id="pyqsExamEmpty" hidden>
+                    <p class="empty-title">No papers yet</p>
+                    <p class="empty-sub">PYQs for this exam will appear here once they're added.</p>
+                </div>
+            </section>
         </main>
     </div>
 
@@ -173,7 +253,7 @@
             <svg width="19" height="19" viewBox="0 0 16 16" fill="none">
                 <path d="M3 5.5H13M3 8H13M3 10.5H13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
             </svg>
-            <span>Subjects</span>
+            <span>Menu</span>
         </button>
     </nav>
 
