@@ -25,8 +25,7 @@
   --radius-lg: 14px;
 
   --sidebar-w: 236px;
-  --topbar-h: 56px;
-  --bottom-nav-h: 60px;
+  --bottom-nav-h: 64px;
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-left: env(safe-area-inset-left, 0px);
@@ -48,6 +47,7 @@
 
 html {
   overflow-x: hidden;
+  width: 100%;
 }
 
 html,
@@ -69,6 +69,11 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
 button {
   font-family: inherit;
   -webkit-tap-highlight-color: transparent;
@@ -76,6 +81,12 @@ button {
 
 input {
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Elements that must never cause the page to widen (long words, long tags, etc.) */
+img,
+svg {
+  max-width: 100%;
 }
 
 @media (hover: none) {
@@ -98,7 +109,6 @@ input {
 
 body.no-scroll {
   overflow: hidden;
-  height: 100%;
 }
 
 a:focus-visible,
@@ -109,54 +119,7 @@ input:focus-visible {
   border-radius: var(--radius-sm);
 }
 
-/* ============ Topbar (mobile) ============ */
-.topbar {
-  display: none;
-  align-items: center;
-  gap: 12px;
-  height: calc(var(--topbar-h) + var(--safe-top));
-  padding: var(--safe-top) 16px 0;
-  border-bottom: 1px solid var(--border);
-  background: rgba(10, 10, 12, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 30;
-}
-
-.topbar-title {
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  font-size: 1rem;
-}
-
-.topbar-spacer {
-  flex: 1;
-}
-
-.icon-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  color: var(--text-dim);
-  cursor: pointer;
-  transition:
-    transform 0.12s ease,
-    background 0.12s ease,
-    color 0.12s ease;
-}
-
-.icon-btn:hover {
-  color: var(--text);
-  border-color: var(--border-strong);
-}
-
+/* ============ Mobile drawer overlay ============ */
 .overlay {
   display: none;
   position: fixed;
@@ -338,6 +301,7 @@ input:focus-visible {
   flex: 1;
   min-width: 0;
   padding: 44px 48px 64px;
+  overflow-x: hidden;
 }
 
 .view-head {
@@ -381,6 +345,7 @@ input:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-width: 0;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -417,6 +382,8 @@ input:focus-visible {
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--text);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .subject-count {
@@ -549,6 +516,7 @@ input:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  min-width: 0;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -570,6 +538,7 @@ input:focus-visible {
   display: flex;
   align-items: center;
   gap: 7px;
+  min-width: 0;
 }
 
 .type-dot {
@@ -584,6 +553,8 @@ input:focus-visible {
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .card-title {
@@ -592,6 +563,8 @@ input:focus-visible {
   font-weight: 600;
   color: var(--text);
   line-height: 1.35;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .card-desc {
@@ -600,6 +573,8 @@ input:focus-visible {
   color: var(--text-dim);
   line-height: 1.5;
   flex: 1;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .card-meta {
@@ -608,6 +583,13 @@ input:focus-visible {
   gap: 6px 14px;
   font-size: 0.74rem;
   color: var(--text-faint);
+  min-width: 0;
+}
+
+.card-meta span {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  min-width: 0;
 }
 
 .card-meta span b {
@@ -650,10 +632,6 @@ input:focus-visible {
   gap: 0;
 }
 
-.video-card .video-card-title {
-  padding: 12px 14px 14px;
-}
-
 .video-thumb {
   position: relative;
   width: 100%;
@@ -677,18 +655,13 @@ input:focus-visible {
   filter: brightness(0.85);
 }
 
-.video-card {
-  padding: 0;
-  overflow: hidden;
-  gap: 0;
-}
-
 .video-card-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 12px 14px 14px;
   flex: 1;
+  min-width: 0;
 }
 
 .video-card .video-card-title {
@@ -783,21 +756,19 @@ input:focus-visible {
 
 /* ============ Responsive ============ */
 @media (max-width: 880px) {
-  .topbar {
-    display: flex;
-  }
-
   .shell {
     display: block;
   }
 
+  /* Sidebar becomes a slide-in drawer, triggered only from the bottom nav's
+     "Subjects" tab. It stops short of the bottom nav so the bottom nav is
+     never covered/hidden while the drawer is open. */
   .sidebar {
     position: fixed;
     left: 0;
     top: 0;
     width: min(82vw, 300px);
-    height: 100vh;
-    height: 100dvh;
+    height: calc(100dvh - var(--bottom-nav-h) - var(--safe-bottom));
     z-index: 40;
     padding-top: calc(20px + var(--safe-top));
     padding-left: calc(14px + var(--safe-left));
@@ -816,8 +787,20 @@ input:focus-visible {
     display: inline-flex;
   }
 
+  /* On mobile, Home / All Resources already live in the bottom nav, so the
+     drawer only needs to show the Subjects options. */
+  .nav-group-overview {
+    display: none;
+  }
+
+  /* The overlay also stops short of the bottom nav, so it's always visible
+     and tappable — including to close the drawer again. */
+  .overlay {
+    bottom: calc(var(--bottom-nav-h) + var(--safe-bottom));
+  }
+
   .main {
-    padding: 18px 16px calc(var(--bottom-nav-h) + var(--safe-bottom) + 32px);
+    padding: 20px 16px calc(var(--bottom-nav-h) + var(--safe-bottom) + 32px);
   }
 
   .view-head {
@@ -866,10 +849,12 @@ input:focus-visible {
     font-size: 0.88rem;
   }
 
-  /* Horizontally scrollable chip / pill rows, native app style */
+  /* Horizontally scrollable chip / pill rows, native app style.
+     This scrolling IS intentional — contained locally, never leaks to the page. */
   .chip-row {
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x proximity;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -894,7 +879,7 @@ input:focus-visible {
     align-items: stretch;
     gap: 10px;
     position: sticky;
-    top: calc(var(--topbar-h) + var(--safe-top));
+    top: var(--safe-top);
     background: var(--bg);
     z-index: 15;
     padding-top: 10px;
@@ -917,6 +902,7 @@ input:focus-visible {
   .filter-pills {
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x proximity;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -936,6 +922,8 @@ input:focus-visible {
     align-items: center;
   }
 
+  /* Fixed 2-column grid — min-width:0 (set above, globally) keeps long
+     words/titles from forcing tracks wider than the viewport. */
   .resource-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -993,7 +981,12 @@ input:focus-visible {
   }
 }
 
-/* ============ Bottom tab bar (mobile view only) ============ */
+/* ============ Bottom tab bar (mobile view only) ============
+   This is the ONLY navigation chrome on mobile: Home / All / Search / Subjects.
+   It is promoted to its own compositor layer (transform/backface-visibility)
+   and kept above every other layer (overlay, drawer) so it can never be
+   hidden or blanked out — including the WebKit bug where fixed-position
+   elements using backdrop-filter can disappear during a heavy DOM re-render. */
 .bottom-nav {
   display: none;
 }
@@ -1005,8 +998,14 @@ input:focus-visible {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 30;
-    background: rgba(15, 15, 19, 0.92);
+    z-index: 60;
+    isolation: isolate;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background: rgba(15, 15, 19, 0.96);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     border-top: 1px solid var(--border);

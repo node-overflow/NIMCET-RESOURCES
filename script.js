@@ -51,10 +51,8 @@
 
     const elSidebar = $("#sidebar");
     const elOverlay = $("#overlay");
-    const elMenuToggle = $("#menuToggle");
     const elSidebarClose = $("#sidebarClose");
-    const elBottomNav = $("#bottomNav");
-    const elTopbarTitle = $("#topbarTitle");
+    const elMenuBBtn = $('.bnav-item[data-bottom="menu"]');
 
     const elViewHome = $("#view-home");
     const elViewResources = $("#view-resources");
@@ -89,11 +87,6 @@
     /* ---------------- Helpers ---------------- */
     const countBySubject = (name) => {
         return state.resources.filter((r) => r.subject === name).length;
-    };
-
-    const subjectSymbol = (name) => {
-        const s = SUBJECTS.filter((s) => s.name === name)[0];
-        return s ? s.symbol : "";
     };
 
     const typeLabelPlural = (key) => {
@@ -141,7 +134,7 @@
         card.innerHTML =
             '<div class="card-top">' +
             '<span class="type-dot" style="background: var(--' + typeClass + ')"></span>' +
-            '<span class="type-label" style="color: var(--' + typeClass + ')">' + item.type + '</span>' +
+            '<span class="type-label" style="color: var(--' + typeClass + ')">' + escapeHtml(item.type) + '</span>' +
             '</div>' +
 
             '<h3 class="card-title"></h3>' +
@@ -158,7 +151,7 @@
             (item.url && item.url !== "#" ? escapeHtml(item.url) : "#") +
             '" target="_blank" rel="noopener noreferrer">' +
             actionLabel(item) +
-            ' <span class="arrow">→</span>' +
+            ' <span class="arrow">\u2192</span>' +
             '</a>' +
             '</div>';
 
@@ -216,7 +209,7 @@
 
             '<div class="card-foot">' +
             '<a class="card-action" href="' + videoUrl + '" target="_blank" rel="noopener noreferrer">' +
-            'Watch Now <span class="arrow">→</span>' +
+            'Watch Now <span class="arrow">\u2192</span>' +
             '</a>' +
             '</div>' +
 
@@ -282,7 +275,7 @@
             btn.type = "button";
             btn.innerHTML =
                 '<span class="subject-symbol">' + s.symbol + '</span>' +
-                '<span class="subject-name">' + s.name + '</span>' +
+                '<span class="subject-name">' + escapeHtml(s.name) + '</span>' +
                 '<span class="subject-count">' + countBySubject(s.name) + ' resources</span>';
             btn.addEventListener("click", () => {
                 goToResources({ subject: s.name, type: null, search: "" });
@@ -379,18 +372,16 @@
             if (homeBtn) homeBtn.dataset.active = "true";
             const homeBBtn = $('.bnav-item[data-bottom="home"]');
             if (homeBBtn) homeBBtn.dataset.active = "true";
-            if (elTopbarTitle) elTopbarTitle.textContent = "Resource Hub";
         } else if (state.view === "resources") {
             if (state.subject) {
                 const subBtn = $('.nav-item[data-subject="' + state.subject + '"]');
                 if (subBtn) subBtn.dataset.active = "true";
-            } else {
+            } else if (!state.type) {
                 const allBtn = $('.nav-item[data-nav="all"]');
                 if (allBtn) allBtn.dataset.active = "true";
                 const allBBtn = $('.bnav-item[data-bottom="all"]');
                 if (allBBtn) allBBtn.dataset.active = "true";
             }
-            if (elTopbarTitle) elTopbarTitle.textContent = state.subject || (state.type ? typeLabelPlural(state.type) : "All Resources");
         }
     };
 
@@ -418,25 +409,28 @@
         renderResources();
     };
 
-    /* ---------------- Sidebar (mobile) ---------------- */
+    /* ---------------- Sidebar / mobile drawer ---------------- */
     const openSidebar = () => {
         elSidebar.classList.add("open");
         elOverlay.classList.add("active");
         document.body.classList.add("no-scroll");
+        if (elMenuBBtn) elMenuBBtn.dataset.active = "true";
     };
 
     const closeSidebar = () => {
         elSidebar.classList.remove("open");
         elOverlay.classList.remove("active");
         document.body.classList.remove("no-scroll");
+        if (elMenuBBtn) elMenuBBtn.dataset.active = "false";
+    };
+
+    const toggleSidebar = () => {
+        if (elSidebar.classList.contains("open")) closeSidebar();
+        else openSidebar();
     };
 
     /* ---------------- Wiring ---------------- */
     const wireStaticEvents = () => {
-        elMenuToggle.addEventListener("click", () => {
-            if (elSidebar.classList.contains("open")) closeSidebar();
-            else openSidebar();
-        });
         elOverlay.addEventListener("click", closeSidebar);
         elSidebarClose.addEventListener("click", closeSidebar);
 
@@ -466,8 +460,11 @@
                 } else if (action === "all") {
                     goToResources({ subject: null, type: null, search: "" });
                 } else if (action === "menu") {
-                    openSidebar();
+                    // Acts as the app's only "hamburger" trigger — toggles the
+                    // Subjects drawer open/closed without ever hiding the bar itself.
+                    toggleSidebar();
                 } else if (action === "search") {
+                    closeSidebar();
                     if (state.view !== "resources") {
                         goToResources({});
                     }
