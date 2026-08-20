@@ -1,0 +1,30 @@
+[
+    {
+    "id": 201,
+    "title": "A Modern Approach to Verbal & Non-Verbal Reasoning",
+    "type": "Book",
+    "subject": "Logical Reasoning",
+    "chapter": "Foundation",
+    "desc": "Standard reference covering both verbal and non-verbal reasoning with graded exercises.",
+    "difficulty": "Beginner",
+    "bestFor": "Foundation",
+    "tags": ["verbal reasoning", "non-verbal reasoning"],
+    "featured": true,
+    "action": "open",
+    "url": "#"
+  },
+  {
+    "id": 202,
+    "title": "Analytical Reasoning",
+    "type": "Book",
+    "subject": "Logical Reasoning",
+    "chapter": "Analytical Reasoning",
+    "desc": "Deep-dive into puzzles, arrangements and analytical decision-making questions.",
+    "difficulty": "Advanced",
+    "bestFor": "Concept + Practice",
+    "tags": ["puzzles", "seating arrangement", "analytical"],
+    "featured": false,
+    "action": "open",
+    "url": "#"
+  }
+]
