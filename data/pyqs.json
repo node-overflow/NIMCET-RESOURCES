@@ -1,6 +1,5 @@
 [
   {
-    "id": "pyq-nimcet-2026",
     "exam": "NIMCET",
     "year": 2026,
     "title": "NIMCET 2026 Question Paper",
@@ -12,31 +11,50 @@
     "url": "#"
   },
   {
-    "id": "pyq-nimcet-2025",
-    "exam": "NIMCET",
-    "year": 2025,
-    "title": "NIMCET 2025 Question Paper",
+    "exam": "CUET PG MCA",
+    "year": 2022,
+    "title": "CUET PG MCA 2022",
     "type": "PYQ",
-    "desc": "Official NIMCET 2025 question paper.",
-    "difficulty": "",
+    "desc": "Official CUET PG MCA question paper.",
+    "difficulty": "easy",
     "bestFor": "Full-length practice",
     "action": "download",
-    "url": "#"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/raw/master/pyqs/cuet%20pg%20mca/CUET%202022%20Original.pdf"
   },
   {
-    "id": "pyq-cuetpg-2026",
+    "exam": "CUET PG MCA",
+    "year": 2023,
+    "title": "CUET PG MCA 2023",
+    "type": "PYQ",
+    "desc": "Official CUET PG MCA question paper.",
+    "difficulty": "easy",
+    "bestFor": "Full-length practice",
+    "action": "download",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/raw/master/pyqs/cuet%20pg%20mca/CUET%202023%20Original.pdf"
+  },
+  {
+    "exam": "CUET PG MCA",
+    "year": 2024,
+    "title": "CUET PG MCA 2024",
+    "type": "PYQ",
+    "desc": "Official CUET PG MCA question paper.",
+    "difficulty": "easy",
+    "bestFor": "Full-length practice",
+    "action": "download",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/raw/master/pyqs/cuet%20pg%20mca/CUET%202024%20Original.pdf"
+  },
+  {
     "exam": "CUET PG MCA",
     "year": 2026,
-    "title": "CUET PG MCA 2026 Question Paper",
+    "title": "CUET PG MCA 2026",
     "type": "PYQ",
-    "desc": "Official CUET PG MCA-entrance question paper.",
-    "difficulty": "",
+    "desc": "Official CUET PG MCA question paper.",
+    "difficulty": "easy",
     "bestFor": "Full-length practice",
     "action": "download",
-    "url": "#"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/raw/master/pyqs/cuet%20pg%20mca/CUET%20PG%20SCQP09%202026.pdf"
   },
   {
-    "id": "pyq-tancet-2026",
     "exam": "TANCET",
     "year": 2026,
     "title": "TANCET MCA 2026 Question Paper",
