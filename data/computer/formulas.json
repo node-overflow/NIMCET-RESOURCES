@@ -1,0 +1,30 @@
+[
+    {
+    "id": 316,
+    "title": "C Programming Formula & Syntax Sheet",
+    "type": "Formula",
+    "subject": "Computer",
+    "chapter": "Programming in C",
+    "desc": "Operator precedence table, format specifiers and common library function signatures.",
+    "difficulty": "Beginner",
+    "bestFor": "Last-Minute Revision",
+    "tags": ["c programming", "formula sheet"],
+    "featured": true,
+    "action": "download",
+    "url": "#"
+  },
+  {
+    "id": 317,
+    "title": "Data Structures Complexity Sheet",
+    "type": "Formula",
+    "subject": "Computer",
+    "chapter": "Data Structures",
+    "desc": "Time and space complexity of common operations across structures, in one table.",
+    "difficulty": "Intermediate",
+    "bestFor": "Last-Minute Revision",
+    "tags": ["data structures", "time complexity", "formula sheet"],
+    "featured": false,
+    "action": "download",
+    "url": "#"
+  }
+]

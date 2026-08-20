@@ -1,0 +1,44 @@
+[
+    {
+    "id": 310,
+    "title": "Pointers & Recursion in C",
+    "type": "Video",
+    "subject": "Computer",
+    "chapter": "Programming in C",
+    "desc": "Memory model walkthroughs building intuition for pointer arithmetic and recursive calls.",
+    "difficulty": "Advanced",
+    "bestFor": "Concept Building",
+    "tags": ["c programming", "pointers", "recursion"],
+    "featured": false,
+    "action": "open",
+    "url": "#"
+  },
+  {
+    "id": 311,
+    "title": "Data Structures Visualised",
+    "type": "Video",
+    "subject": "Computer",
+    "chapter": "Data Structures",
+    "desc": "Animated walkthroughs of stack, queue, linked list and tree traversal operations.",
+    "difficulty": "Intermediate",
+    "bestFor": "Concept Building",
+    "tags": ["data structures", "video lecture"],
+    "featured": false,
+    "action": "open",
+    "url": "#"
+  },
+  {
+    "id": 312,
+    "title": "Operating Systems Core Concepts",
+    "type": "Video",
+    "subject": "Computer",
+    "chapter": "Operating Systems",
+    "desc": "Process states, CPU scheduling algorithms and deadlock handling with worked examples.",
+    "difficulty": "Intermediate",
+    "bestFor": "Concept Building",
+    "tags": ["operating systems", "video lecture"],
+    "featured": false,
+    "action": "open",
+    "url": "#"
+  }
+]
