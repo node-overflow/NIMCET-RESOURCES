@@ -1012,9 +1012,6 @@ input:focus-visible {
     display: block;
   }
 
-  /* Sidebar becomes a slide-in drawer, triggered only from the bottom nav's
-     "Subjects" tab. It stops short of the bottom nav so the bottom nav is
-     never covered/hidden while the drawer is open. */
   .sidebar {
     position: fixed;
     left: 0;
@@ -1039,14 +1036,10 @@ input:focus-visible {
     display: inline-flex;
   }
 
-  /* On mobile, Home / All Resources already live in the bottom nav, so the
-     drawer only needs to show the Subjects options. */
   .nav-group-overview {
     display: none;
   }
 
-  /* The overlay also stops short of the bottom nav, so it's always visible
-     and tappable — including to close the drawer again. */
   .overlay {
     bottom: calc(var(--bottom-nav-h) + var(--safe-bottom));
   }
@@ -1081,14 +1074,25 @@ input:focus-visible {
   }
 
   .subject-grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
     gap: 10px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin: 0 -16px;
+    padding: 0 16px;
+  }
+
+  .subject-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .subject-card {
-    padding: 14px;
-    gap: 10px;
-    border-radius: var(--radius-md);
+    flex: 0 0 170px;
+    scroll-snap-align: start;
   }
 
   .subject-symbol {
