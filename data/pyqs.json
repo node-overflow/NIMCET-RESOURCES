@@ -2,85 +2,176 @@
   {
     "exam": "NIMCET",
     "year": 2026,
-    "title": "NIMCET 2026 Question Paper",
-    "type": "PYQ",
-    "desc": "Official NIMCET 2026 question paper.",
-    "difficulty": "",
-    "bestFor": "Full-length practice",
-    "action": "download",
+    "title": "NIMCET 2026",
+    "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202026.pdf"
   },
   {
     "exam": "NIMCET",
     "year": 2025,
-    "title": "NIMCET 2025 Question Paper",
-    "type": "PYQ",
-    "desc": "Official NIMCET 2025 question paper.",
-    "difficulty": "",
-    "bestFor": "Full-length practice",
-    "action": "download",
-    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyqs/nimcet/NIMCET%202025%20Paper.pdf"
+    "title": "NIMCET 2025",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202025%20Paper.pdf"
   },
   {
     "exam": "NIMCET",
     "year": 2024,
-    "title": "NIMCET 2024 Question Paper",
-    "action": "download",
-    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyqs/nimcet/NIMCET%202025%20Paper.pdf"
+    "title": "NIMCET 2024",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202025%20Paper.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2023,
+    "title": "NIMCET 2023",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202023.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2022,
+    "title": "NIMCET 2022",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202022.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2021,
+    "title": "NIMCET 2021",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202021.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2020,
+    "title": "NIMCET 2020",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202020.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2019,
+    "title": "NIMCET 2019",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202019.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2018,
+    "title": "NIMCET 2018",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202018.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2017,
+    "title": "NIMCET 2017",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202017.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2016,
+    "title": "NIMCET 2016",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202016.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2015,
+    "title": "NIMCET 2015",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202015.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2014,
+    "title": "NIMCET 2014",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202014.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2013,
+    "title": "NIMCET 2013",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202013.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2012,
+    "title": "NIMCET 2012",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202012.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2011,
+    "title": "NIMCET 2011",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202011.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2010,
+    "title": "NIMCET 2010",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202010.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2009,
+    "title": "NIMCET 2009",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202009.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2008,
+    "title": "NIMCET 2008",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202008.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2007,
+    "title": "NIMCET 2007",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202007.pdf"
   },
   {
     "exam": "CUET PG MCA",
     "year": 2022,
-    "title": "📌 CUET PG MCA 2022",
-    "type": "PYQ",
-    "desc": "Official CUET PG MCA question paper.",
-    "difficulty": "easy",
-    "bestFor": "Full-length practice",
-    "action": "download",
-    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/raw/master/pyqs/cuet%20pg%20mca/CUET%202022%20Original.pdf"
+    "title": "CUET PG MCA 2022",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/cuet%20pg%20mca/CUET%202022%20Original.pdf"
   },
   {
     "exam": "CUET PG MCA",
     "year": 2023,
     "title": "CUET PG MCA 2023",
-    "type": "PYQ",
-    "desc": "Official CUET PG MCA question paper.",
-    "difficulty": "easy",
-    "bestFor": "Full-length practice",
-    "action": "download",
-    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/raw/master/pyqs/cuet%20pg%20mca/CUET%202023%20Original.pdf"
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/cuet%20pg%20mca/CUET%202023%20Original.pdf"
   },
   {
     "exam": "CUET PG MCA",
     "year": 2024,
     "title": "CUET PG MCA 2024",
-    "type": "PYQ",
-    "desc": "Official CUET PG MCA question paper.",
-    "difficulty": "easy",
-    "bestFor": "Full-length practice",
-    "action": "download",
-    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/raw/master/pyqs/cuet%20pg%20mca/CUET%202024%20Original.pdf"
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/cuet%20pg%20mca/CUET%202024%20Original.pdf"
   },
   {
     "exam": "CUET PG MCA",
     "year": 2026,
     "title": "CUET PG MCA 2026",
-    "type": "PYQ",
-    "desc": "Official CUET PG MCA question paper.",
-    "difficulty": "easy",
-    "bestFor": "Full-length practice",
-    "action": "download",
-    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/raw/master/pyqs/cuet%20pg%20mca/CUET%20PG%20SCQP09%202026.pdf"
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/cuet%20pg%20mca/CUET%20PG%20SCQP09%202026.pdf"
   },
   {
     "exam": "TANCET",
     "year": 2026,
     "title": "TANCET MCA 2026 Question Paper",
-    "type": "PYQ",
-    "desc": "Official TANCET MCA question paper.",
-    "difficulty": "",
-    "bestFor": "Full-length practice",
-    "action": "download",
+    "action": "open",
     "url": "#"
   }
 ]
