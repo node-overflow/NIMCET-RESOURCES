@@ -394,6 +394,42 @@
         container.appendChild(frag);
     };
 
+    const renderPyqCards = (container, items) => {
+        container.innerHTML = "";
+        const frag = document.createDocumentFragment();
+
+        items.forEach((item) => {
+            const card = document.createElement("div");
+            card.className = "pyq-card";
+
+            card.innerHTML =
+                '<div class="pyq-card-body">' +
+                '<h3 class="pyq-title"></h3>' +
+                '<div class="pyq-card-foot">' +
+                '<a class="card-action" href="' +
+                (item.url && item.url !== "#" ? escapeHtml(item.url) : "#") +
+                '" target="_blank" rel="noopener noreferrer">' +
+                actionLabel(item) +
+                ' <span class="arrow">→</span>' +
+                '</a>' +
+                '</div>' +
+                '</div>';
+
+            card.querySelector(".pyq-title").textContent = item.title || "Question Paper";
+
+            const action = card.querySelector(".card-action");
+            action.addEventListener("click", (e) => {
+                if (!item.url || item.url === "#") {
+                    e.preventDefault();
+                }
+            });
+
+            frag.appendChild(card);
+        });
+
+        container.appendChild(frag);
+    };
+
     /* ---------------- Home view ---------------- */
     const renderHome = () => {
         elSubjectGrid.innerHTML = "";
@@ -719,7 +755,7 @@
 
         elPyqsExamGrid.hidden = false;
         elPyqsExamEmpty.hidden = true;
-        renderGrid(elPyqsExamGrid, results);
+        renderPyqCards(elPyqsExamGrid,results)
     };
 
     /* ---------------- View switching ---------------- */

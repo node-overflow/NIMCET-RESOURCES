@@ -8,12 +8,30 @@
     "difficulty": "",
     "bestFor": "Full-length practice",
     "action": "download",
-    "url": "#"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyqs/nimcet/NIMCET%202026.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2025,
+    "title": "NIMCET 2025 Question Paper",
+    "type": "PYQ",
+    "desc": "Official NIMCET 2025 question paper.",
+    "difficulty": "",
+    "bestFor": "Full-length practice",
+    "action": "download",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyqs/nimcet/NIMCET%202025%20Paper.pdf"
+  },
+  {
+    "exam": "NIMCET",
+    "year": 2024,
+    "title": "NIMCET 2024 Question Paper",
+    "action": "download",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyqs/nimcet/NIMCET%202025%20Paper.pdf"
   },
   {
     "exam": "CUET PG MCA",
     "year": 2022,
-    "title": "CUET PG MCA 2022",
+    "title": "📌 CUET PG MCA 2022",
     "type": "PYQ",
     "desc": "Official CUET PG MCA question paper.",
     "difficulty": "easy",
