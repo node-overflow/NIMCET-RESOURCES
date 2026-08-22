@@ -88,6 +88,26 @@
                     </button>
                 </div>
 
+                <div class="nav-group nav-group-practice">
+                    <p class="nav-label">Practice</p>
+                    <button class="nav-item" data-nav="dpps">
+                        <svg class="nav-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="currentColor"
+                                stroke-width="1.4" />
+                            <path d="M5 8h6M5 5.3h6M5 10.7h3.5" stroke="currentColor" stroke-width="1.3"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span>DPPs</span>
+                    </button>
+                    <button class="nav-item" data-nav="mocks">
+                        <svg class="nav-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2 9.6 5.4 13.3 5.9 10.6 8.3 11.3 12 8 10.2 4.7 12 5.4 8.3 2.7 5.9 6.4 5.4 8 2Z"
+                                stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" />
+                        </svg>
+                        <span>Mocks</span>
+                    </button>
+                </div>
+
                 <div class="nav-group nav-group-subjects">
                     <p class="nav-label">Subjects</p>
                     <button class="nav-item" data-nav="subject" data-subject="Mathematics">
@@ -221,6 +241,94 @@
                     <p class="empty-sub">PYQs for this exam will appear here once they're added.</p>
                 </div>
             </section>
+
+            <!-- DPPs — SUBJECT SELECT VIEW -->
+            <section class="view" id="view-dpps" hidden>
+                <header class="view-head">
+                    <h1>Daily Practice Problems</h1>
+                    <p class="subtitle">Pick a subject to browse chapter-wise DPPs.</p>
+                </header>
+
+                <div class="subject-grid" id="dppSubjectGrid"></div>
+
+                <div class="empty-state" id="dppSubjectEmpty" hidden>
+                    <p class="empty-title">No subjects yet</p>
+                    <p class="empty-sub">DPP subjects will appear here once they're added.</p>
+                </div>
+            </section>
+
+            <!-- DPPs — CHAPTER SELECT VIEW -->
+            <section class="view" id="view-dpps-subject" hidden>
+                <header class="view-head">
+                    <button class="back-btn" id="dppChapterBackBtn" type="button">
+                        <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                            <path d="M8.5 2.5 3 8l5.5 5.5" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        All subjects
+                    </button>
+                    <h1 id="dppChapterHeading">Chapters</h1>
+                    <p class="subtitle">Pick a chapter to view its DPPs.</p>
+                </header>
+
+                <div class="subject-grid" id="dppChapterGrid"></div>
+
+                <div class="empty-state" id="dppChapterEmpty" hidden>
+                    <p class="empty-title">No chapters yet</p>
+                    <p class="empty-sub">Chapters will appear here once they're added.</p>
+                </div>
+            </section>
+
+            <!-- DPPs — CHAPTER DETAIL VIEW -->
+            <section class="view" id="view-dpps-chapter" hidden>
+                <header class="view-head">
+                    <button class="back-btn" id="dppBackBtn" type="button">
+                        <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                            <path d="M8.5 2.5 3 8l5.5 5.5" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        All chapters
+                    </button>
+                    <h1 id="dppHeading">Chapter</h1>
+                    <p class="subtitle" id="dppCount"></p>
+                </header>
+
+                <div class="resource-grid" id="dppGrid"></div>
+
+                <div class="empty-state" id="dppEmpty" hidden>
+                    <p class="empty-title">No DPPs yet</p>
+                    <p class="empty-sub">DPPs for this chapter will appear here once they're added.</p>
+                </div>
+            </section>
+
+            <!-- MOCKS — SELECT VIEW -->
+            <section class="view" id="view-mocks" hidden>
+                <header class="view-head">
+                    <h1>Mock Tests</h1>
+                    <p class="subtitle">Choose free or paid mock tests.</p>
+                </header>
+
+                <div class="subject-grid" id="mocksGrid"></div>
+            </section>
+
+            <!-- MOCKS — DETAIL VIEW -->
+            <section class="view" id="view-mocks-detail" hidden>
+                <header class="view-head">
+                    <button class="back-btn" id="mocksBackBtn" type="button">
+                        <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                            <path d="M8.5 2.5 3 8l5.5 5.5" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Mocks
+                    </button>
+                    <h1 id="mocksDetailHeading">Mocks</h1>
+                </header>
+
+                <div class="empty-state" id="mocksDetailBody">
+                    <p class="empty-title">Coming soon</p>
+                    <p class="empty-sub">This section is being built — check back later.</p>
+                </div>
+            </section>
         </main>
     </div>
 
@@ -257,7 +365,8 @@
         </button>
     </nav>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

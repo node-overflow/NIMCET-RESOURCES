@@ -1431,7 +1431,10 @@ input:focus-visible {
     color: var(--accent-text);
   }
 
-  #view-pyqs .subject-grid {
+  #view-pyqs .subject-grid,
+  #view-dpps .subject-grid,
+  #view-dpps-subject .subject-grid,
+  #view-mocks .subject-grid {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1442,7 +1445,10 @@ input:focus-visible {
     gap: 12px;
   }
 
-  #view-pyqs .subject-card {
+  #view-pyqs .subject-card,
+  #view-dpps .subject-card,
+  #view-dpps-subject .subject-card,
+  #view-mocks .subject-card {
     flex: 1 1 auto;
     width: 100%;
     min-width: 0;
