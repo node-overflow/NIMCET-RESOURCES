@@ -4,6 +4,8 @@ import { loadAllData } from "./data.js";
 
 import { wireStaticEvents } from "./events.js";
 
+import { wireThemeToggle } from "./theme.js";
+
 import { updateUnreadBadge } from "./updates.js";
 
 import { goHome } from "./navigation.js";
@@ -29,6 +31,8 @@ const showLoadError = error => {
 };
 
 const init = async () => {
+    wireThemeToggle();
+
     try {
         await loadAllData();
 
