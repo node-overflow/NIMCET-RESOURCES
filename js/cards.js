@@ -306,10 +306,53 @@ export const renderPyqCards = (container, items) => {
             pyqUrl = escapeHtml(item.url);
         }
 
+        const questionsDetail = item.questions != null && item.questions !== ""
+            ? '<div class="pyq-detail">' +
+            '<div class="pyq-detail-icon">' +
+            '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+            '<circle cx="12" cy="12" r="10"></circle>' +
+            '<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>' +
+            '<path d="M12 17h.01"></path>' +
+            '</svg>' +
+            '</div>' +
+            '<span>' + item.questions + ' Questions</span>' +
+            '</div>'
+            : "";
+
+        const durationDetail = item.duration != null && item.duration !== ""
+            ? '<div class="pyq-detail">' +
+            '<div class="pyq-detail-icon">' +
+            '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+            '<path d="M12 6v6l4 2"></path>' +
+            '<circle cx="12" cy="12" r="10"></circle>' +
+            '</svg>' +
+            '</div>' +
+            '<span>' + item.duration + ' Minutes</span>' +
+            '</div>'
+            : "";
+
+        const marksDetail = item.marks != null && item.marks !== ""
+            ? '<div class="pyq-detail">' +
+            '<div class="pyq-detail-icon">' +
+            '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+            '<path d="M21.801 10A10 10 0 1 1 17 3.335"></path>' +
+            '<path d="m9 11 3 3L22 4"></path>' +
+            '</svg>' +
+            '</div>' +
+            '<span>' + item.marks + ' Marks</span>' +
+            '</div>'
+            : "";
+
         card.innerHTML =
             '<div class="pyq-card-body">' +
 
             '<h3 class="pyq-title"></h3>' +
+
+            '<div class="pyq-details">' +
+            questionsDetail +
+            durationDetail +
+            marksDetail +
+            '</div>' +
 
             '<div class="pyq-card-foot">' +
 
@@ -327,7 +370,8 @@ export const renderPyqCards = (container, items) => {
 
             '</div>';
 
-        card.querySelector(".pyq-title").textContent = item.title || "Question Paper";
+        card.querySelector(".pyq-title").textContent =
+            item.title || "Question Paper";
 
         const action = card.querySelector(".card-action");
 

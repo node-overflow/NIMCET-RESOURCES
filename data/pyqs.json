@@ -3,6 +3,9 @@
     "exam": "NIMCET",
     "year": 2026,
     "title": "NIMCET 2026",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202026.pdf"
   },
@@ -10,6 +13,9 @@
     "exam": "NIMCET",
     "year": 2025,
     "title": "NIMCET 2025",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202025%20Paper.pdf"
   },
@@ -17,6 +23,9 @@
     "exam": "NIMCET",
     "year": 2024,
     "title": "NIMCET 2024",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202025%20Paper.pdf"
   },
@@ -24,6 +33,9 @@
     "exam": "NIMCET",
     "year": 2023,
     "title": "NIMCET 2023",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202023.pdf"
   },
@@ -31,6 +43,9 @@
     "exam": "NIMCET",
     "year": 2022,
     "title": "NIMCET 2022",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202022.pdf"
   },
@@ -38,6 +53,9 @@
     "exam": "NIMCET",
     "year": 2021,
     "title": "NIMCET 2021",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202021.pdf"
   },
@@ -45,6 +63,9 @@
     "exam": "NIMCET",
     "year": 2020,
     "title": "NIMCET 2020",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202020.pdf"
   },
@@ -52,6 +73,9 @@
     "exam": "NIMCET",
     "year": 2019,
     "title": "NIMCET 2019",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202019.pdf"
   },
@@ -59,6 +83,9 @@
     "exam": "NIMCET",
     "year": 2018,
     "title": "NIMCET 2018",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202018.pdf"
   },
@@ -66,6 +93,9 @@
     "exam": "NIMCET",
     "year": 2017,
     "title": "NIMCET 2017",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202017.pdf"
   },
@@ -73,6 +103,9 @@
     "exam": "NIMCET",
     "year": 2016,
     "title": "NIMCET 2016",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202016.pdf"
   },
@@ -80,6 +113,9 @@
     "exam": "NIMCET",
     "year": 2015,
     "title": "NIMCET 2015",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202015.pdf"
   },
@@ -87,6 +123,9 @@
     "exam": "NIMCET",
     "year": 2014,
     "title": "NIMCET 2014",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202014.pdf"
   },
@@ -94,6 +133,9 @@
     "exam": "NIMCET",
     "year": 2013,
     "title": "NIMCET 2013",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202013.pdf"
   },
@@ -101,6 +143,9 @@
     "exam": "NIMCET",
     "year": 2012,
     "title": "NIMCET 2012",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202012.pdf"
   },
@@ -108,6 +153,9 @@
     "exam": "NIMCET",
     "year": 2011,
     "title": "NIMCET 2011",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202011.pdf"
   },
@@ -115,6 +163,9 @@
     "exam": "NIMCET",
     "year": 2010,
     "title": "NIMCET 2010",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202010.pdf"
   },
@@ -122,6 +173,9 @@
     "exam": "NIMCET",
     "year": 2009,
     "title": "NIMCET 2009",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202009.pdf"
   },
@@ -129,6 +183,9 @@
     "exam": "NIMCET",
     "year": 2008,
     "title": "NIMCET 2008",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202008.pdf"
   },
@@ -136,6 +193,9 @@
     "exam": "NIMCET",
     "year": 2007,
     "title": "NIMCET 2007",
+    "questions": 120,
+    "duration": 120,
+    "marks": 1000,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202007.pdf"
   },
@@ -143,6 +203,9 @@
     "exam": "CUET PG MCA",
     "year": 2022,
     "title": "CUET PG MCA 2022",
+    "questions": 75,
+    "duration": 90,
+    "marks": 300,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/cuet%20pg%20mca/CUET%202022%20Original.pdf"
   },
@@ -150,6 +213,9 @@
     "exam": "CUET PG MCA",
     "year": 2023,
     "title": "CUET PG MCA 2023",
+    "questions": 75,
+    "duration": 90,
+    "marks": 300,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/cuet%20pg%20mca/CUET%202023%20Original.pdf"
   },
@@ -157,21 +223,135 @@
     "exam": "CUET PG MCA",
     "year": 2024,
     "title": "CUET PG MCA 2024",
+    "questions": 75,
+    "duration": 90,
+    "marks": 300,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/cuet%20pg%20mca/CUET%202024%20Original.pdf"
   },
   {
     "exam": "CUET PG MCA",
+    "year": 2025,
+    "title": "CUET PG MCA 2025",
+    "questions": 75,
+    "duration": 90,
+    "marks": 300,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/cuet%20pg%20mca/CUET%20PG%20MCA%202025.pdf"
+  },
+  {
+    "exam": "CUET PG MCA",
     "year": 2026,
     "title": "CUET PG MCA 2026",
+    "questions": 75,
+    "duration": 90,
+    "marks": 300,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/cuet%20pg%20mca/CUET%20PG%20SCQP09%202026.pdf"
   },
   {
-    "exam": "TANCET",
+    "exam": "DU MCA",
     "year": 2026,
-    "title": "TANCET MCA 2026 Question Paper",
+    "title": "DU MCA 2021",
     "action": "open",
-    "url": "#"
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/du%20mca/DU%20MCA%202021.pdf"
+  },
+  {
+    "exam": "DU MCA",
+    "year": 2020,
+    "title": "DU MCA 2020",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/du%20mca/DU%20MCA%202020.pdf"
+  },
+  {
+    "exam": "DU MCA",
+    "year": 2019,
+    "title": "DU MCA 2019",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/du%20mca/DU%20MCA%202019.pdf"
+  },
+  {
+    "exam": "DU MCA",
+    "year": 2018,
+    "title": "DU MCA 2018",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/du%20mca/DU%20MCA%202018.pdf"
+  },
+  {
+    "exam": "DU MCA",
+    "year": 2017,
+    "title": "DU MCA 2017",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/du%20mca/DU%20MCA%202017.pdf"
+  },
+  {
+    "exam": "DU MCA",
+    "year": 2012,
+    "title": "DU MCA 2012",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/du%20mca/DU%20MCA%202012.pdf"
+  },
+  {
+    "exam": "DU MCA",
+    "year": 2011,
+    "title": "DU MCA 2011",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/du%20mca/DU%20MCA%202011.pdf"
+  },
+  {
+    "exam": "BHU MCA",
+    "year": 2020,
+    "title": "BHU MCA 2020",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/bhu%20mca/BHU%202020%20Question%20Paper%20(2).pdf"
+  },
+  {
+    "exam": "BHU MCA",
+    "year": 2019,
+    "title": "BHU MCA 2019",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/bhu%20mca/BHU_2019_MCA_ACTUAL%20(2).pdf"
+  },
+  {
+    "exam": "BHU MCA",
+    "year": 2018,
+    "title": "BHU MCA 2018",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/bhu%20mca/BHU_2018_MCA_ACTUAL%20(2).pdf"
+  },
+  {
+    "exam": "BHU MCA",
+    "year": 2017,
+    "title": "BHU MCA 2017",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/bhu%20mca/BHU_2017_MCA_ACTUAL%20(2).pdf"
+  },
+  {
+    "exam": "BHU MCA",
+    "year": 2016,
+    "title": "BHU MCA 2016",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/bhu%20mca/BHU_2016_MCA_ACTUAL%20(2).pdf"
+  },
+  {
+    "exam": "BHU MCA",
+    "year": 2015,
+    "title": "BHU MCA 2015",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/bhu%20mca/BHU_2015_MCA_ACTUAL%20(2).pdf"
+  },
+  {
+    "exam": "BHU MCA",
+    "year": 2014,
+    "title": "BHU MCA 2014",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/bhu%20mca/BHU_2014_MCA_ACTUAL%20(2).pdf"
+  },
+  {
+    "exam": "BHU MCA",
+    "year": 2011,
+    "title": "BHU MCA 2011",
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/bhu%20mca/BHU_2011_MCA_ACTUAL%20(1).pdf"
   }
 ]

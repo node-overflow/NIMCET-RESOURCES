@@ -97,16 +97,7 @@ export const renderPyqsExam = () => {
         paperLabel = " paper";
     }
 
-    let examLabel = "";
-
-    if (exam) {
-        examLabel = " — " + exam.full;
-    }
-
-    elPyqsExamCount.textContent =
-        results.length +
-        paperLabel +
-        examLabel;
+    elPyqsExamCount.textContent = results.length + paperLabel;
 
     if (results.length === 0) {
         elPyqsExamGrid.innerHTML = "";

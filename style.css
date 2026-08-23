@@ -9,6 +9,8 @@
   --text: #edf0f5;
   --text-dim: #97a0b0;
   --text-faint: #5e6675;
+  --text-calm-h: #b9bfca;
+  --text-muted: #858d9d;
 
   --accent: #6e6bdc;
   --accent-dim: rgba(110, 107, 220, 0.14);
@@ -58,6 +60,8 @@
   --text: #14161a;
   --text-dim: #565d6b;
   --text-faint: #868fa0;
+  --text-calm-h: #30343c;
+  --text-muted: #68707e;
 
   --accent: #5754cf;
   --accent-dim: rgba(87, 84, 207, 0.1);
@@ -604,7 +608,7 @@ input:focus-visible {
 }
 
 .resource-card:hover {
-  background: #111317;
+  background: var(--surface-2);
 }
 
 .pyq-card {
@@ -612,49 +616,89 @@ input:focus-visible {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  align-self: start;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 18px;
-  gap: 16px;
+  padding: 16px;
+  gap: 14px;
   overflow: hidden;
+  user-select: none;
   transition:
     border-color 0.14s ease,
     background 0.14s ease;
 }
 
 .pyq-card:hover {
-  border-color: var(--border-strong);
   background: var(--surface-2);
 }
 
 .pyq-card-body {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  flex: 1;
+  gap: 11px;
   min-width: 0;
   z-index: 1;
 }
 
 .pyq-title {
   margin: 0;
-  color: var(--text);
-  font-size: 1rem;
-  font-weight: 650;
-  line-height: 1.5;
-  letter-spacing: -0.01em;
+  color: var(--text-calm-h);
+  font-family: "Caudex", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
   overflow-wrap: break-word;
   word-break: break-word;
+}
+
+.pyq-details {
+  color: #9899afe8;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pyq-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.pyq-detail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--text-muted);
+}
+
+.pyq-detail-icon svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  stroke-width: 1.5;
+}
+
+.pyq-detail span:last-child {
+  line-height: 1.3;
 }
 
 .pyq-card-foot {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: auto;
-  padding-top: 12px;
-  border-top: 1px solid var(--border);
+  padding-top: 2px;
   z-index: 1;
 }
 
@@ -737,10 +781,12 @@ input:focus-visible {
 }
 
 .card-action {
+  width: 100%;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
-  padding: 6px 11px;
+  padding: 10px 15px;
   border-radius: var(--radius-sm);
   background: var(--accent-dim);
   border: 1px solid rgba(110, 107, 220, 0.24);
@@ -1305,17 +1351,32 @@ input:focus-visible {
     gap: 11px;
   }
 
-  .pyq-year {
-    font-size: 0.67rem;
-    padding: 4px 8px;
-  }
-
   .pyq-card-body {
     gap: 12px;
   }
 
   .pyq-title {
     font-size: 0.86rem;
+  }
+
+  .pyq-details {
+    gap: 8px;
+    min-height: 72px;
+  }
+
+  .pyq-detail {
+    gap: 8px;
+    font-size: 0.76rem;
+  }
+
+  .pyq-detail-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .pyq-detail-icon svg {
+    width: 16px;
+    height: 16px;
   }
 
   .card-title {
