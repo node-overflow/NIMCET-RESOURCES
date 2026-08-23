@@ -1,14 +1,222 @@
 [
   {
-    "title": "Seating Arrangement Masterclass",
+    "title": "Alphabets",
     "type": "Video",
     "subject": "Logical Reasoning",
-    "chapter": "Seating Arrangement",
-    "difficulty": "Advanced",
-    "bestFor": "Concept Building",
-    "tags": ["seating arrangement", "video lecture"],
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "alphabets"],
     "featured": false,
     "action": "open",
-    "url": "#"
+    "url": "https://www.youtube.com/watch?v=0AWLcXFCKrQ&pp=ygUiYmFua2luZyB3YWxsYWggYWxwaGFudW1lcmljIHNlcmllcw%3D%3D"
+  },
+  {
+    "title": "Alphabet Series",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "alphabet series"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=-iSW41er49Q&list=PLw6nNovS7OMlaCoNuaDmHrAIYc0V3l_4-&index=11&pp=iAQB"
+  },
+  {
+    "title": "Letter Series",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "letter series"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=7aE4vgHyky0&list=PLCCr5cf2z0qk&index=10&pp=iAQB"
+  },
+  {
+    "title": "Number Series",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "number series"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=4Y2i7jJGX70&list=PLCCr5cf2z0qk&index=14&pp=iAQB"
+  },
+  {
+    "title": "Alphanumeric Series",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "alphanumeric series"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=ZG3seCml0_s&list=PLCCr5cf2z0qk&index=13&pp=iAQB"
+  },
+  {
+    "title": "Analogy",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "analogy"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=DbvaIHgdb1g&list=PLw6nNovS7OMlaCoNuaDmHrAIYc0V3l_4-&index=14&pp=iAQB"
+  },
+  {
+    "title": "Odd One Out",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "odd one out"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=kci0_mnLtH4&list=PLCCr5cf2z0qk&index=8&pp=iAQB"
+  },
+  {
+    "title": "Coding Decoding",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "coding decoding"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=aybroS6JpjE&t=3219s&pp=ygUeYmFua2luZyB3YWxsYWggY29kaW5nIGRlY29kaW5n"
+  },
+  {
+    "title": "Coding Decoding",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "coding decoding"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=UeU-oxrVi-8&list=PLw6nNovS7OMlaCoNuaDmHrAIYc0V3l_4-&index=15&pp=iAQB"
+  },
+  {
+    "title": "Blood Relations",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "blood relation"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=qQ7-a-JzpvE&list=PLoak-cHQOqaOh6ifWbCl6PlIlbOYADTYL&index=25&t=9210s&pp=iAQB"
+  },
+  {
+    "title": "Blood Relations",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "blood relation"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=X0R8uTd6ASc&list=PLjgKXowPULMkRgjexlP3QdmdVT82rqOGN&index=2&pp=iAQB"
+  },
+  {
+    "title": "Direction and Distance",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "direction", "distance"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=KFeFTww1Y1k&pp=ygUYYmFua2luZyB3YWxsYWggZGlyZWN0aW9u"
+  },
+  {
+    "title": "Direction and Distance",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "direction", "distance"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=KBcuz4T1X5Y&list=PLjgKXowPULMkRgjexlP3QdmdVT82rqOGN&index=1&pp=iAQB"
+  },
+  {
+    "title": "Direction Test",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "direction"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=Ge9ejhevNr8&list=PLw6nNovS7OMlaCoNuaDmHrAIYc0V3l_4-&index=12&pp=iAQB"
+  },
+  {
+    "title": "Order and Ranking",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "order", "ranking"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=6NfsmNKsjUg&pp=ygUgYmFua2luZyB3YWxsYWggb3JkZXIgYW5kIHJhbmtpbmc%3D"
+  },
+  {
+    "title": "Ranking and Comparision",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "ranking"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=ZHYvY0JTlSw&list=PLCCr5cf2z0qk&index=7&pp=iAQB"
+  },
+  {
+    "title": "Venn Diagram",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "venn diagram"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=p3rtANR88uM&list=PLCCr5cf2z0qk&index=6&pp=iAQB"
+  },
+  {
+    "title": "Inequality",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "inequality"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=u9JfXfDL0Fc&pp=ygUZYmFua2luZyB3YWxsYWggaW5lcXVhbGl0eQ%3D%3D"
+  },
+  {
+    "title": "Inequality",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "inequality"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=eyWvqqdqsAA&list=PLw6nNovS7OMlaCoNuaDmHrAIYc0V3l_4-&index=3&pp=iAQB"
+  },
+  {
+    "title": "Data Sufficiency",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "data sufficiency"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=1kRebgx_etY&pp=ygUfYmFua2luZyB3YWxsYWggZGF0YSBzdWZmaWNpZW5jeQ%3D%3D"
+  },
+  {
+    "title": "Data Sufficiency",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "data sufficiency"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=sRXw80EYro4&list=PLw6nNovS7OMlaCoNuaDmHrAIYc0V3l_4-&index=5&pp=iAQB"
+  },
+  {
+    "title": "Counting of Figures",
+    "type": "Video",
+    "subject": "Logical Reasoning",
+    "bestFor": "One Shot",
+    "tags": ["reasoning", "counting"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=OSTQX0HYQ3s&list=PLw6nNovS7OMlaCoNuaDmHrAIYc0V3l_4-&index=4&pp=iAQB"
   }
 ]

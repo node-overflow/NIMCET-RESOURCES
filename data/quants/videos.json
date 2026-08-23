@@ -1,44 +1,195 @@
 [
   {
-    "id": 509,
-    "title": "Ratio, Proportion & Mixtures Explained",
+    "title": "Percentage",
     "type": "Video",
     "subject": "Quantitative Aptitude",
-    "chapter": "Ratio and Proportion",
-    "desc": "Component ratios, partnership problems and mixture-alligation solved step by step.",
-    "difficulty": "Intermediate",
-    "bestFor": "Concept Building",
-    "tags": ["ratio and proportion", "mixtures"],
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "percentage"],
     "featured": false,
     "action": "open",
-    "url": "#"
+    "url": "https://www.youtube.com/watch?v=wH1Up7WTefU&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=5&pp=iAQB"
   },
   {
-    "id": 510,
-    "title": "Number System Shortcuts",
+    "title": "Ratio and Proportion",
     "type": "Video",
     "subject": "Quantitative Aptitude",
-    "chapter": "Number System",
-    "desc": "Divisibility rules, remainders, HCF-LCM and unit-digit tricks for faster solving.",
-    "difficulty": "Beginner",
-    "bestFor": "Concept Building",
-    "tags": ["number system", "hcf lcm"],
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "ratio", "proportion"],
     "featured": false,
     "action": "open",
-    "url": "#"
+    "url": "https://www.youtube.com/watch?v=V8tcZZIFJew&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=6&t=11675s&pp=iAQB"
   },
   {
-    "id": 511,
-    "title": "Averages & Ages Made Simple",
+    "title": "Average",
     "type": "Video",
     "subject": "Quantitative Aptitude",
-    "chapter": "Averages",
-    "desc": "Weighted averages and age-based problems worked through with quick methods.",
-    "difficulty": "Beginner",
-    "bestFor": "Concept Building",
-    "tags": ["averages", "problems on ages"],
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "average"],
     "featured": false,
     "action": "open",
-    "url": "#"
+    "url": "https://www.youtube.com/watch?v=l4R5OVIeAi4&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=7&t=5s&pp=iAQB"
+  },
+  {
+    "title": "Profit and Loss",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "profit", "loss"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=NJqHxUU1ezs&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=8&pp=iAQB"
+  },
+  {
+    "title": "Simple Interest",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "simple interest"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=teet4LaQur8&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=11&pp=iAQB0gcJCRMMAYcqIYzv"
+  },
+  {
+    "title": "Compound Interest",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "compound interest"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=kHZJEI9jNGw&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=12&pp=iAQB"
+  },
+  {
+    "title": "Mixture and Alligation",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": [
+      "quant",
+      "quants",
+      "quantitative aptitude",
+      "mixture",
+      "alligation"
+    ],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=BS7XZujeB2M&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=13&pp=iAQB"
+  },
+  {
+    "title": "Partnership",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "partnership"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=nXNnSLOoHC8&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=18&pp=iAQB"
+  },
+  {
+    "title": "Problems on Ages",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "ages"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=88amN0GMrY4&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=14&pp=iAQB"
+  },
+  {
+    "title": "Problems on Ages",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "ages"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=88amN0GMrY4&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=14&pp=iAQB"
+  },
+  {
+    "title": "Problems on Ages",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "ages"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=88amN0GMrY4&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=14&pp=iAQB"
+  },
+  {
+    "title": "Time and Work",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "time", "work"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=NnHawIe7bXc&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=9&pp=iAQB"
+  },
+  {
+    "title": "Pipes and Cisterns",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "pipes", "cisterns"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=B-TSxgLHMM0&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=10&pp=iAQB"
+  },
+  {
+    "title": "Time, Speed and Distance",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": [
+      "quant",
+      "quants",
+      "quantitative aptitude",
+      "time",
+      "speed",
+      "distance"
+    ],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=2GgfyxFsj4o&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=15&pp=iAQB"
+  },
+  {
+    "title": "Boat and Stream",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "boat", "stream"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=yp2tgfwT3YU&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=16&pp=iAQB"
+  },
+  {
+    "title": "Number Series",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "number", "series"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=qT3qSF7LzZ4&list=PLAr0hfIonl-GxRd26o0YHhOb6czgvNN9M&index=3&pp=iAQB0gcJCRMMAYcqIYzv"
+  },
+  {
+    "title": "Clock",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "clock"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=efSnw-CrB1U&list=PLjgKXowPULMkRgjexlP3QdmdVT82rqOGN&index=4&pp=iAQB"
+  },
+  {
+    "title": "Calendar",
+    "type": "Video",
+    "subject": "Quantitative Aptitude",
+    "bestFor": "One Shot",
+    "tags": ["quant", "quants", "quantitative aptitude", "calendar"],
+    "featured": false,
+    "action": "open",
+    "url": "https://www.youtube.com/watch?v=_Dr-G7Li8AI&list=PLjgKXowPULMkRgjexlP3QdmdVT82rqOGN&index=7&pp=iAQB"
   }
 ]
