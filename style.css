@@ -816,47 +816,115 @@ input:focus-visible {
   opacity: 0.8;
 }
 
-/* Video cards: thumbnail + title only */
 .video-card {
   padding: 0;
   overflow: hidden;
   gap: 0;
+  transition:
+    border-color 0.16s ease,
+    background 0.16s ease,
+    transform 0.16s ease;
+}
+
+.video-card:hover {
+  background: var(--surface-2);
+  border-color: var(--border-strong);
 }
 
 .video-thumb {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: var(--surface-2);
   overflow: hidden;
+  background: var(--surface-2);
+  cursor: pointer;
 }
 
 .video-thumb-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease;
 }
 
-.video-card-content {
+.video-card:hover .video-thumb-img {
+  transform: scale(1.025);
+}
+
+.video-thumb-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    #00000038 0%,
+    transparent 42%,
+    #00000042 100%
+  );
+  pointer-events: none;
+}
+
+.video-label {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-size: 0.61rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-shadow: 0 1px 3px #00000080;
+  pointer-events: none;
+}
+
+.video-label-dot {
+  width: 5px;
+  height: 5px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--type-video);
+}
+
+.play-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 46px;
+  height: 46px;
+
+  transform: translate(-50%, -50%);
+
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 12px 14px 14px;
-  flex: 1;
-  min-width: 0;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ffffff38;
+  border-radius: 50%;
+
+  background: #08090cb8;
+  color: #fff;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(6px);
+
+  transition:
+    transform 0.16s ease,
+    background 0.16s ease,
+    border-color 0.16s ease;
 }
 
-.video-card .video-card-title {
-  padding: 0;
+.play-badge svg {
+  margin-left: 2px;
 }
 
-.video-card .card-meta {
-  margin-top: auto;
-}
-
-.video-card .card-foot {
-  padding-top: 9px;
+.video-thumb:hover .play-badge {
+  transform: translate(-50%, -50%) scale(1.07);
+  background: #121318d9;
+  border-color: #ffffff55;
 }
 
 .video-thumb-fallback {
@@ -868,33 +936,73 @@ input:focus-visible {
   background: var(--surface-2);
 }
 
-.play-badge {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 44px;
-  height: 44px;
-  transform: translate(-50%, -50%);
+.video-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  padding: 14px 15px 15px;
+}
+
+.video-card .video-card-title {
+  margin: 0;
+  font-size: 0.91rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+  color: var(--text);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.video-best-for-row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: rgba(8, 9, 12, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  color: #fff;
-  cursor: pointer;
-  transition:
-    background 0.12s ease,
-    border-color 0.12s ease;
+  gap: 7px;
+  margin-top: 9px;
+  min-width: 0;
+  font-size: 0.69rem;
+  line-height: 1.3;
 }
 
-.play-badge svg {
-  margin-left: 2px;
+.video-best-for-label {
+  flex-shrink: 0;
+  color: var(--text-faint);
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
 }
 
-.video-thumb:hover .play-badge {
-  background: rgba(18, 19, 24, 0.82);
-  border-color: rgba(255, 255, 255, 0.32);
+.video-best-for {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-dim);
+  font-size: 0.71rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.video-card .card-foot {
+  margin-top: 13px;
+  padding-top: 0;
+}
+
+.video-card .card-action {
+  width: 100%;
+}
+
+.video-card .card-action .arrow {
+  transition: transform 0.16s ease;
+}
+
+.video-card .card-action:hover .arrow {
+  transform: translateX(3px);
 }
 
 .video-embed {
@@ -1401,7 +1509,6 @@ input:focus-visible {
   }
 
   .video-card .video-card-title {
-    padding: 9px 10px 11px;
     font-size: 0.82rem;
   }
 

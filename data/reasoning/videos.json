@@ -1,42 +1,12 @@
 [
   {
-    "id": 209,
     "title": "Seating Arrangement Masterclass",
     "type": "Video",
     "subject": "Logical Reasoning",
     "chapter": "Seating Arrangement",
-    "desc": "Linear, circular and complex multi-condition seating arrangements solved step by step.",
     "difficulty": "Advanced",
     "bestFor": "Concept Building",
     "tags": ["seating arrangement", "video lecture"],
-    "featured": false,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "id": 210,
-    "title": "Number & Letter Series Techniques",
-    "type": "Video",
-    "subject": "Logical Reasoning",
-    "chapter": "Series",
-    "desc": "Pattern-spotting shortcuts for number, letter and mixed series questions.",
-    "difficulty": "Beginner",
-    "bestFor": "Concept Building",
-    "tags": ["series", "video lecture"],
-    "featured": false,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "id": 211,
-    "title": "Clocks & Calendars Explained",
-    "type": "Video",
-    "subject": "Logical Reasoning",
-    "chapter": "Clocks and Calendars",
-    "desc": "Angle-based clock tricks and odd-day calculation methods for calendar problems.",
-    "difficulty": "Intermediate",
-    "bestFor": "Concept Building",
-    "tags": ["clocks", "calendars"],
     "featured": false,
     "action": "open",
     "url": "#"
