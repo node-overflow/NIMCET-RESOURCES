@@ -136,6 +136,9 @@
   align-items: center;
   justify-content: center;
   min-width: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 .hero-illustration {

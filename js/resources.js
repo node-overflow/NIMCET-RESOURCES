@@ -51,7 +51,7 @@ export const renderFilterPills = () => {
         elFilterPills.appendChild(pill);
     });
 
-    if (state.subject === "Computer" && state.type === "Video") {
+    if (state.subject === "Computer") {
 
         if (state.examFilter === null) {
             state.examFilter = "All";

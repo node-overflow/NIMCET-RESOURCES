@@ -113,12 +113,7 @@ export const getFilteredResources = () => {
         if (state.type && item.type !== state.type) return false;
         if (!matchesSearch(item, state.search)) return false;
 
-        if (
-            state.subject === "Computer" &&
-            state.type === "Video" &&
-            state.examFilter &&
-            state.examFilter !== "All"
-        ) {
+        if (state.subject === "Computer" && state.examFilter && state.examFilter !== "All") {
             const exam = (item.exam || "").toUpperCase();
             const filter = state.examFilter.toUpperCase();
 
