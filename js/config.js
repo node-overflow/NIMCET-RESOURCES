@@ -111,7 +111,7 @@ export const EXAMS = [
     },
     {
         key: "MAH CET",
-        name: "JMI",
+        name: "MAH CET",
         full: "Maharashtra Common Entrance Test (MCA)",
         symbol: "J"
     },

@@ -353,5 +353,255 @@
     "title": "BHU MCA 2011",
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/bhu%20mca/BHU_2011_MCA_ACTUAL%20(1).pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2025,
+    "title": "WB JECA 2025",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2025/12/20251215189779980.pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2024,
+    "title": "WB JECA 2024",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2024/12/2024120269.pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2023,
+    "title": "WB JECA 2023",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2023/11/2023110987-1.pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2022,
+    "title": "WB JECA 2022",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2023/11/2023110962.pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2021,
+    "title": "WB JECA MATHEMATICS 2021",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2023/11/2023110917.pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2021,
+    "title": "WB JECA APTITUDE 2021",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2023/11/2023110981.pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2019,
+    "title": "WB JECA MATHEMATICS 2019",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2023/11/2023110973.pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2019,
+    "title": "WB JECA APTITUDE 2019",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2023/11/2023110982.pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2018,
+    "title": "WB JECA MATHEMATICS 2018",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2023/11/2023110941.pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2018,
+    "title": "WB JECA APTITUDE 2018",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2023/11/2023110951-1.pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2017,
+    "title": "WB JECA MATHEMATICS 2017",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2023/11/2023110987.pdf"
+  },
+  {
+    "exam": "WB JECA",
+    "year": 2017,
+    "title": "WB JECA APTITUDE 2017",
+    "questions": 100,
+    "duration": 120,
+    "marks": 120,
+    "action": "open",
+    "url": "https://cdnbbsr.s3waas.gov.in/s3d2a27e83d429f0dcae6b937cf440aeb1/uploads/2023/11/2023110960.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2025,
+    "title": "TANCET 2025",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2025.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2024,
+    "title": "TANCET 2024",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2024.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2023,
+    "title": "TANCET 2023",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2023.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2022,
+    "title": "TANCET 2022",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2022.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2009,
+    "title": "TANCET 2009",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2009.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2008,
+    "title": "TANCET 2008",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2008.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2007,
+    "title": "TANCET 2007",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2007.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2006,
+    "title": "TANCET 2006",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2006.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2005,
+    "title": "TANCET 2005",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2005.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2004,
+    "title": "TANCET 2004",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2004.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2003,
+    "title": "TANCET 2003",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2003.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2002,
+    "title": "TANCET 2002",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2002.pdf"
+  },
+  {
+    "exam": "TANCET",
+    "year": 2001,
+    "title": "TANCET 2001",
+    "questions": 100,
+    "duration": 120,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2001.pdf"
   }
 ]
