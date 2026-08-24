@@ -51,15 +51,21 @@
 .brand-mark {
   width: 28px;
   height: 28px;
-  border-radius: var(--radius-sm);
-  background: var(--accent-dim);
   color: var(--accent-text);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
   font-size: 0.85rem;
-  border: 1px solid rgba(110, 107, 220, 0.28);
+  margin-bottom: 5px;
+}
+
+.brand-mark img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 .brand-text {
