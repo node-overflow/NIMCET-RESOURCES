@@ -72,7 +72,15 @@ const animateCount = (element, target) => {
     requestAnimationFrame(update);
 };
 
+let heroStatsAnimated = false;
+
 const renderHeroStats = () => {
+    if (!elHeroStats || heroStatsAnimated) return;
+
+    heroStatsAnimated = true;
+
+    elHeroStats.innerHTML = "";
+
     if (!elHeroStats) return;
 
     elHeroStats.innerHTML = "";
