@@ -499,4 +499,8 @@
     width: 100%;
     min-width: 0;
   }
+
+  .scroll-top-btn {
+    bottom: 80px;
+  }
 }

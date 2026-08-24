@@ -126,4 +126,28 @@ export const wireStaticEvents = () => {
             }
         });
     });
+
+    const handleScrollTopButton = () => {
+        const button = document.getElementById("scrollTopBtn");
+
+        if (!button) return;
+
+        button.dataset.visible =
+            window.scrollY > 300 ? "true" : "false";
+    };
+
+    window.addEventListener("scroll", handleScrollTopButton, {
+        passive: true
+    });
+
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
 };
