@@ -16,5 +16,6 @@ export const state = {
     dppChapterName: null,
     dppChaptersCache: {},
     dppItemsCache: {},
+    dppTotalCount: null,
     mockKey: null
 };

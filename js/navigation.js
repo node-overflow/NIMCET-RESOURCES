@@ -158,7 +158,17 @@ export const goHome = () => {
                 subject: null,
                 type,
                 search: ""
-            })
+            }),
+        examKey =>
+            goToPyqsExam(examKey),
+        () =>
+            goToResources({
+                subject: null,
+                type: null,
+                search: ""
+            }),
+        () =>
+            goToPyqs()
     );
 };
 

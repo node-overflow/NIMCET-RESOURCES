@@ -37,7 +37,7 @@ const fetchJsonSafe = (path) => {
         .catch(() => []);
 };
 
-const loadChapters = (subjectName) => {
+export const loadChapters = (subjectName) => {
     if (state.dppChaptersCache[subjectName]) {
         return Promise.resolve(
             state.dppChaptersCache[subjectName]
@@ -61,7 +61,7 @@ const loadChapters = (subjectName) => {
     });
 };
 
-const loadDppItems = (subjectName, chapterKey) => {
+export const loadDppItems = (subjectName, chapterKey) => {
     const cacheKey = subjectName + "::" + chapterKey;
 
     if (state.dppItemsCache[cacheKey]) {
@@ -84,6 +84,37 @@ const loadDppItems = (subjectName, chapterKey) => {
         state.dppItemsCache[cacheKey] = list;
 
         return list;
+    });
+};
+
+// Fetches every subject's chapter manifest, then every chapter's item
+// count, and sums the total. Cached on state so repeat home visits
+// don't refetch. Never rejects — missing files just count as zero.
+export const computeDppTotal = () => {
+    if (state.dppTotalCount != null) {
+        return Promise.resolve(state.dppTotalCount);
+    }
+
+    const subjectNames = Object.keys(DPP_SUBJECT_SLUGS);
+
+    return Promise.all(
+        subjectNames.map(subjectName =>
+            loadChapters(subjectName).then(chapters =>
+                Promise.all(
+                    chapters.map(chapter =>
+                        loadDppItems(subjectName, chapter.key).then(
+                            items => items.length
+                        )
+                    )
+                ).then(counts => counts.reduce((a, b) => a + b, 0))
+            )
+        )
+    ).then(subjectTotals => {
+        const total = subjectTotals.reduce((a, b) => a + b, 0);
+
+        state.dppTotalCount = total;
+
+        return total;
     });
 };
 

@@ -1,6 +1,6 @@
 [
   {
-    "title": "Title",
+    "title": "",
     "type": "Video",
     "subject": "Computer",
     "chapter": "",
@@ -9,6 +9,6 @@
     "tags": ["computer"],
     "featured": false,
     "action": "open",
-    "url": "https://www.youtube.com/watch?v=2_kp6QCevxc&list=PLMttXSB2G2YNyx0wpKMcGo4VQNmQPZGek&index=28&pp=iAQB"
+    "url": ""
   }
 ]

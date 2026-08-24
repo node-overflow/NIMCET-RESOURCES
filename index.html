@@ -20,9 +20,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Chewy&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Chewy&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/misc-ui.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -145,19 +155,116 @@
         <main class="main" id="main">
             <!-- HOME VIEW -->
             <section class="view" id="view-home">
-                <header class="view-head">
-                    <h1>Resource Hub</h1>
-                    <p class="subtitle">Books, notes, PYQs, videos and practice sets for NIMCET 2027 — organised by
-                        subject.</p>
+                <header class="hero">
+                    <div class="hero-main">
+                        <span class="hero-eyebrow">NIMCET 2027 · Free Prep Hub</span>
+                        <h1 class="hero-title">Everything you need to<br><em>crack NIMCET.</em></h1>
+                        <p class="hero-sub">Books, notes, PYQs, DPPs and mock tests — curated by subject and built
+                            for one goal: an All India Rank that gets you into an NIT.</p>
+
+                        <div class="hero-actions">
+                            <button class="hero-btn hero-btn-primary" id="heroBrowseBtn" type="button">
+                                Browse Resources
+                                <span class="arrow">→</span>
+                            </button>
+                            <button class="hero-btn hero-btn-ghost" id="heroPyqBtn" type="button">Explore PYQs</button>
+                        </div>
+
+                        <div class="hero-stats" id="heroStats"></div>
+                    </div>
+
+                    <div class="hero-visual" aria-hidden="true">
+                        <!-- <svg class="hero-illustration" viewBox="0 0 420 340" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="210" cy="170" r="160" fill="var(--accent-dim-2)" />
+
+                            <path d="M60 222 C60 162 150 152 200 167 L200 262 C150 247 60 257 60 222 Z"
+                                fill="var(--surface)" stroke="var(--border-strong)" stroke-width="2" />
+                            <path d="M360 222 C360 162 270 152 220 167 L220 262 C270 247 360 257 360 222 Z"
+                                fill="var(--surface)" stroke="var(--border-strong)" stroke-width="2" />
+                            <path d="M200 167 C207 163 213 163 220 167 L220 262 C213 258 207 258 200 262 Z"
+                                fill="var(--accent-dim)" />
+
+                            <line x1="85" y1="186" x2="175" y2="179" stroke="var(--border)" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="85" y1="201" x2="175" y2="194" stroke="var(--border)" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="85" y1="216" x2="160" y2="210" stroke="var(--border)" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="245" y1="179" x2="335" y2="186" stroke="var(--border)" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="245" y1="194" x2="335" y2="201" stroke="var(--border)" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="260" y1="210" x2="335" y2="216" stroke="var(--border)" stroke-width="2"
+                                stroke-linecap="round" />
+
+                            <g class="hero-illustration-float" style="animation-delay:0s">
+                                <rect x="28" y="56" width="46" height="46" rx="12" fill="var(--surface)"
+                                    stroke="var(--border)" />
+                                <text x="51" y="86" text-anchor="middle" font-size="20" font-weight="700"
+                                    fill="var(--accent-text)" font-family="Inter, sans-serif">&#931;</text>
+                            </g>
+
+                            <g class="hero-illustration-float" style="animation-delay:1.4s">
+                                <rect x="332" y="46" width="46" height="46" rx="12" fill="var(--surface)"
+                                    stroke="var(--border)" />
+                                <text x="355" y="75" text-anchor="middle" font-size="17" font-weight="700"
+                                    fill="var(--accent-text)" font-family="Inter, sans-serif">{ }</text>
+                            </g>
+
+                            <g class="hero-illustration-float" style="animation-delay:0.8s">
+                                <rect x="350" y="228" width="46" height="46" rx="12" fill="var(--surface)"
+                                    stroke="var(--border)" />
+                                <text x="373" y="258" text-anchor="middle" font-size="18" font-weight="700"
+                                    fill="var(--accent-text)" font-family="Inter, sans-serif">%</text>
+                            </g>
+
+                            <g class="hero-illustration-float" style="animation-delay:2.1s">
+                                <rect x="18" y="240" width="46" height="46" rx="12" fill="var(--surface)"
+                                    stroke="var(--border)" />
+                                <text x="41" y="270" text-anchor="middle" font-size="16" font-weight="700"
+                                    fill="var(--accent-text)" font-family="Inter, sans-serif">Aa</text>
+                            </g>
+
+                            <circle cx="210" cy="66" r="26" fill="var(--accent)" />
+                            <path d="M198 66 l8 8 l16 -18" stroke="#fff" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none" />
+                        </svg> -->
+                        <img src="assets/illustration.png">
+
+                    </div>
                 </header>
 
                 <section class="section">
+                    <h2 class="section-title">Subjects</h2>
                     <div class="subject-grid" id="subjectGrid"></div>
                 </section>
 
                 <section class="section">
                     <h2 class="section-title">Browse by type</h2>
                     <div class="chip-row" id="typeChips"></div>
+                </section>
+
+                <section class="section marquee-section">
+                    <h2 class="section-title">Target these exams</h2>
+                    <p class="section-sub">MCA entrance exams worth preparing for alongside NIMCET.</p>
+                    <div class="marquee-wrap">
+                        <div class="marquee-track" id="examMarquee"></div>
+                    </div>
+                </section>
+
+                <section class="section marquee-section">
+                    <h2 class="section-title">Aim for these NITs</h2>
+                    <p class="section-sub">A strong NIMCET rank opens the door to these National Institutes of
+                        Technology.</p>
+                    <div class="marquee-wrap">
+                        <div class="marquee-track marquee-track-b" id="nitMarquee"></div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Frequently asked questions</h2>
+                    <div class="faq-list" id="faqList"></div>
                 </section>
 
                 <section class="section">

@@ -17,8 +17,8 @@ export const DATA_FILES = [
     ].map(type => `data/${subject}/${type}.json`)
 );
 
-export const ANNOUNCEMENTS_FILE = "data/announcements.json";
-export const PYQS_FILE = "data/pyqs.json";
+export const ANNOUNCEMENTS_FILE = "data/other/announcements.json";
+export const PYQS_FILE = "data/other/pyqs.json";
 
 export const DPP_SUBJECT_SLUGS = {
     "Mathematics": "math",
@@ -120,6 +120,47 @@ export const EXAMS = [
         name: "JMI",
         full: "Jamia Millia Islamia MCA Entrance",
         symbol: "J"
+    }
+];
+
+export const NITS = [
+    { name: "NIT Agartala", city: "Agartala, Tripura", code: "NITA" },
+    { name: "NIT Allahabad", city: "Prayagraj, UP", code: "MNNIT" },
+    { name: "NIT Bhopal", city: "Bhopal, MP", code: "MANIT" },
+    { name: "NIT Delhi", city: "New Delhi", code: "NITD" },
+    { name: "NIT Jamshedpur", city: "Jamshedpur, Jharkhand", code: "NITJSR" },
+    { name: "NIT Kurukshetra", city: "Kurukshetra, Haryana", code: "NITK" },
+    { name: "NIT Meghalaya", city: "Shillong, Meghalaya", code: "NITM" },
+    { name: "NIT Patna", city: "Patna, Bihar", code: "NITP" },
+    { name: "NIT Raipur", city: "Raipur, Chhattisgarh", code: "NITRR" },
+    { name: "NIT Tiruchirappalli", city: "Tiruchirappalli, TN", code: "NITT" },
+    { name: "NIT Warangal", city: "Warangal, Telangana", code: "NITW" }
+];
+
+export const FAQS = [
+    {
+        q: "What is NIMCET?",
+        a: "NIMCET (NIT MCA Common Entrance Test) is a national-level entrance exam for admission to the MCA programme at participating NITs and IIITs. It's conducted every year by one of the participating NITs on a rotational basis."
+    },
+    {
+        q: "Which institutes accept NIMCET scores?",
+        a: "Your NIMCET All India Rank is used for centralised counselling across the participating NITs and IIITs. Check the \"Aim for these NITs\" section above for the full list of institutes."
+    },
+    {
+        q: "Is everything on this site free?",
+        a: "Yes. Every book, note, PYQ, DPP and video linked here is free to access — this hub simply curates and organises material that's already publicly available, by subject and difficulty."
+    },
+    {
+        q: "How are DPPs organised?",
+        a: "Daily Practice Problems are grouped by subject and then by chapter, so you can drill one topic at a time instead of hunting through a single long PDF."
+    },
+    {
+        q: "Where do I find previous year papers?",
+        a: "Head to the PYQs section and pick an exam — papers are sorted by year so you can start with the most recent ones first."
+    },
+    {
+        q: "Are mock tests available?",
+        a: "Free and paid mock tests are on the way — the Mocks section will light up as soon as they're ready."
     }
 ];
 

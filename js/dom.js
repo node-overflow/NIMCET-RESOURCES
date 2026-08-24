@@ -72,6 +72,13 @@ export const elSubjectGrid = $("#subjectGrid");
 export const elTypeChips = $("#typeChips");
 export const elFeaturedGrid = $("#featuredGrid");
 
+export const elHeroStats = $("#heroStats");
+export const elHeroBrowseBtn = $("#heroBrowseBtn");
+export const elHeroPyqBtn = $("#heroPyqBtn");
+export const elExamMarquee = $("#examMarquee");
+export const elNitMarquee = $("#nitMarquee");
+export const elFaqList = $("#faqList");
+
 export const elResourcesHeading = $("#resourcesHeading");
 export const elResourcesCount = $("#resourcesCount");
 export const elFilterPills = $("#filterPills");
