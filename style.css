@@ -615,6 +615,79 @@ input:focus-visible {
   background: var(--surface-2);
 }
 
+/* =========================
+   BOOK CARD
+   ========================= */
+
+.book-card {
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+}
+
+.book-card:hover {
+  background: var(--surface-2);
+  border-color: var(--border-strong);
+}
+
+.book-cover {
+  width: 100%;
+  aspect-ratio: 5 / 6;
+  overflow: hidden;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.book-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.book-cover-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--surface-2);
+}
+
+.book-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  padding: 13px 14px 14px;
+}
+
+.book-card .card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  min-height: 2.84em;
+}
+
+.book-best-for {
+  margin-top: 6px;
+  color: var(--text-dim);
+  font-size: 0.71rem;
+  font-weight: 500;
+  line-height: 1.35;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.book-card .card-foot {
+  margin-top: 13px;
+  padding-top: 0;
+}
+
+.book-card .card-action {
+  width: 100%;
+}
+
 .pyq-card {
   position: relative;
   display: flex;
@@ -1459,6 +1532,27 @@ input:focus-visible {
     padding: 12px;
     gap: 9px;
     border-radius: var(--radius-md);
+  }
+
+  .book-card {
+    padding: 0;
+  }
+
+  .book-card-content {
+    padding: 11px 12px 12px;
+  }
+
+  .book-card .card-title {
+    font-size: 0.84rem;
+  }
+
+  .book-best-for {
+    font-size: 0.68rem;
+    margin-top: 5px;
+  }
+
+  .book-card .card-foot {
+    margin-top: 11px;
   }
 
   .pyq-card {
