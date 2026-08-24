@@ -10,6 +10,7 @@ export const state = {
     search: "",
     updateCategory: null,
     examKey: null,
+    examFilter: null,
     dppSubject: null,
     dppChapterKey: null,
     dppChapterName: null,

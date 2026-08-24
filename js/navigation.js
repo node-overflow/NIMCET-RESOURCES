@@ -183,6 +183,10 @@ export const goToResources = opts => {
         state.search = state.search;
     }
 
+    if (state.subject !== "Computer" || state.type !== "Video") {
+        state.examFilter = null;
+    }
+
     elSearchInput.value = state.search;
 
     showView("resources");

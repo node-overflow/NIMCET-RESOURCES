@@ -93,6 +93,15 @@ export const buildCard = (item) => {
 
     const action = card.querySelector(".card-action");
 
+    if (item.subject === "Computer" && item.exam) {
+        const tag = document.createElement("span");
+
+        tag.className = "video-exam-tag";
+        tag.textContent = item.exam;
+
+        card.querySelector(".video-card-content").appendChild(tag);
+    }
+
     action.addEventListener("click", event => {
         if (!item.url || item.url === "#") {
             event.preventDefault();
@@ -173,62 +182,44 @@ const buildVideoCard = (item) => {
     const videoId = extractYouTubeId(item.url);
 
     let videoUrl = "#";
-
     if (item.url && item.url !== "#") {
         videoUrl = escapeHtml(item.url);
     }
 
     let thumbInner = "";
-
     if (videoId) {
         thumbInner =
             '<img class="video-thumb-img" src="https://img.youtube.com/vi/' +
             videoId +
             '/hqdefault.jpg" alt="" loading="lazy" />';
     } else {
-        thumbInner =
-            '<div class="video-thumb-fallback"></div>';
+        thumbInner = '<div class="video-thumb-fallback"></div>';
     }
 
     card.innerHTML =
         '<div class="video-thumb">' +
         thumbInner +
-
         '<button class="play-badge" type="button" aria-label="Play video">' +
         '<svg width="15" height="17" viewBox="0 0 14 16" fill="none">' +
         '<path d="M1 1.2v13.6a1 1 0 0 0 1.53.85l11-6.8a1 1 0 0 0 0-1.7l-11-6.8A1 1 0 0 0 1 1.2Z" fill="currentColor"/>' +
         '</svg>' +
         '</button>' +
-
         '</div>' +
-
         '<div class="video-card-content">' +
-
         '<h3 class="card-title video-card-title"></h3>' +
-
         '<div class="video-best-for"></div>' +
-
         '<div class="card-foot">' +
-
         '<a class="card-action" href="' +
         videoUrl +
         '" target="_blank" rel="noopener noreferrer">' +
-
         'Watch Now' +
-
         '<span class="arrow">→</span>' +
-
         '</a>' +
-
         '</div>' +
-
         '</div>';
 
-    card.querySelector(".video-card-title").textContent =
-        item.title || "";
-
-    card.querySelector(".video-best-for").textContent =
-        item.bestFor || "";
+    card.querySelector(".video-card-title").textContent = item.title || "";
+    card.querySelector(".video-best-for").textContent = item.bestFor || "";
 
     const thumbnail = card.querySelector(".video-thumb");
     const playButton = card.querySelector(".play-badge");
@@ -244,22 +235,17 @@ const buildVideoCard = (item) => {
         if (!videoId) return;
 
         if (activeVideo && activeVideo !== thumbnail) {
-            activeVideo.innerHTML =
-                activeVideo.dataset.originalContent;
-
+            activeVideo.innerHTML = activeVideo.dataset.originalContent;
             activeVideo.classList.remove("video-playing");
 
-            const oldButton =
-                activeVideo.querySelector(".play-badge");
-
+            const oldButton = activeVideo.querySelector(".play-badge");
             if (oldButton) {
                 oldButton.style.display = "";
             }
         }
 
         if (!thumbnail.dataset.originalContent) {
-            thumbnail.dataset.originalContent =
-                thumbnail.innerHTML;
+            thumbnail.dataset.originalContent = thumbnail.innerHTML;
         }
 
         thumbnail.innerHTML =
@@ -269,9 +255,7 @@ const buildVideoCard = (item) => {
             videoId +
             '?autoplay=1&rel=0" ' +
             'title="' +
-            escapeHtml(
-                item.title || "YouTube video"
-            ) +
+            escapeHtml(item.title || "YouTube video") +
             '" ' +
             'frameborder="0" ' +
             'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ' +
@@ -279,7 +263,6 @@ const buildVideoCard = (item) => {
             '</iframe>';
 
         thumbnail.classList.add("video-playing");
-
         activeVideo = thumbnail;
     });
 

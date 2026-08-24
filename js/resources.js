@@ -22,50 +22,73 @@ import { renderGrid } from "./cards.js";
 export const renderFilterPills = () => {
     elFilterPills.innerHTML = "";
 
-    const allPill = document.createElement("button");
+    const oldBar = document.getElementById("examFilterBar");
+    if (oldBar) oldBar.remove();
 
+    const allPill = document.createElement("button");
     allPill.className = "pill";
     allPill.type = "button";
     allPill.textContent = "All";
-
-    if (state.type) {
-        allPill.dataset.active = "false";
-    } else {
-        allPill.dataset.active = "true";
-    }
-
+    allPill.dataset.active = state.type ? "false" : "true";
     allPill.addEventListener("click", () => {
         state.type = null;
+        state.examFilter = null;
         renderResources();
     });
-
     elFilterPills.appendChild(allPill);
 
     TYPES.forEach(type => {
         const pill = document.createElement("button");
-
         pill.className = "pill";
         pill.type = "button";
         pill.textContent = type.label;
-
-        if (state.type === type.key) {
-            pill.dataset.active = "true";
-        } else {
-            pill.dataset.active = "false";
-        }
-
+        pill.dataset.active = state.type === type.key ? "true" : "false";
         pill.addEventListener("click", () => {
-            if (state.type === type.key) {
-                state.type = null;
-            } else {
-                state.type = type.key;
-            }
-
+            state.type = state.type === type.key ? null : type.key;
+            state.examFilter = null;
             renderResources();
         });
-
         elFilterPills.appendChild(pill);
     });
+
+    if (state.subject === "Computer" && state.type === "Video") {
+
+        if (state.examFilter === null) {
+            state.examFilter = "All";
+        }
+
+        const bar = document.createElement("div");
+        bar.id = "examFilterBar";
+        bar.className = "exam-filter-bar";
+
+        const label = document.createElement("span");
+        label.className = "exam-filter-label";
+        label.textContent = "Select Exam";
+        bar.appendChild(label);
+
+        ["All", "NIMCET", "CUET PG"].forEach(name => {
+            const btn = document.createElement("button");
+            btn.className = "exam-filter-btn";
+            btn.type = "button";
+            btn.textContent = name;
+
+            if (state.examFilter === name) {
+                btn.dataset.active = "true";
+            }
+
+            btn.addEventListener("click", () => {
+                state.examFilter = name;
+                renderResources();
+            });
+
+            bar.appendChild(btn);
+        });
+
+        const toolbar = document.querySelector(".toolbar");
+        if (toolbar) {
+            toolbar.insertAdjacentElement("afterend", bar);
+        }
+    }
 };
 
 export const renderHeading = () => {

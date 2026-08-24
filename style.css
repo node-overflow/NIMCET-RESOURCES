@@ -969,26 +969,18 @@ input:focus-visible {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 46px;
   height: 46px;
-
   transform: translate(-50%, -50%);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 1px solid #ffffff38;
   border-radius: 50%;
-
   background: #08090cb8;
   color: #fff;
-
   cursor: pointer;
-
   backdrop-filter: blur(6px);
-
   transition:
     transform 0.16s ease,
     background 0.16s ease,
@@ -1088,6 +1080,69 @@ input:focus-visible {
   height: 100%;
   display: block;
   border: 0;
+}
+
+/* ===== Exam tag on Computer video cards ===== */
+.video-exam-tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 9px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+  background: var(--accent-dim);
+  border: 1px solid rgba(110, 107, 220, 0.35);
+  border-radius: 999px;
+}
+
+/* ===== Exam filter bar (Computer → Video) ===== */
+.exam-filter-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px 0;
+  padding: 10px 14px;
+  background: transparent;
+  border: none;
+  user-select: none;
+}
+
+.exam-filter-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-right: 4px;
+}
+
+.exam-filter-btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  font-weight: 550;
+  cursor: pointer;
+  transition:
+    background 0.12s ease,
+    border-color 0.12s ease,
+    color 0.12s ease;
+}
+
+.exam-filter-btn:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.exam-filter-btn[data-active="true"] {
+  background: var(--accent-dim);
+  border-color: rgba(110, 107, 220, 0.45);
+  color: var(--accent-text);
 }
 
 /* ============ Empty state ============ */
@@ -1532,6 +1587,30 @@ input:focus-visible {
     padding: 12px;
     gap: 9px;
     border-radius: var(--radius-md);
+  }
+
+  .exam-filter-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-bottom: 14px;
+    padding: 9px 12px;
+  }
+
+  .exam-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .exam-filter-label {
+    flex-shrink: 0;
+  }
+
+  .exam-filter-btn {
+    flex-shrink: 0;
+    scroll-snap-align: start;
   }
 
   .book-card {

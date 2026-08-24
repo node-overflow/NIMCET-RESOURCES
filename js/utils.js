@@ -109,16 +109,22 @@ export const matchesSearch = (item, query) => {
 
 export const getFilteredResources = () => {
     return state.resources.filter(item => {
-        if (state.subject && item.subject !== state.subject) {
-            return false;
-        }
+        if (state.subject && item.subject !== state.subject) return false;
+        if (state.type && item.type !== state.type) return false;
+        if (!matchesSearch(item, state.search)) return false;
 
-        if (state.type && item.type !== state.type) {
-            return false;
-        }
+        if (
+            state.subject === "Computer" &&
+            state.type === "Video" &&
+            state.examFilter &&
+            state.examFilter !== "All"
+        ) {
+            const exam = (item.exam || "").toUpperCase();
+            const filter = state.examFilter.toUpperCase();
 
-        if (!matchesSearch(item, state.search)) {
-            return false;
+            if (exam !== filter && exam !== "ALL") {
+                return false;
+            }
         }
 
         return true;
