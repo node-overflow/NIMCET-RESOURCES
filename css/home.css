@@ -425,3 +425,8 @@ button.logo-card:hover {
 .faq-panel .faq-item:last-child {
   border-bottom: none;
 }
+
+/* ============ DPPs Section ============ */
+#dppHeading, #dppChapterHeading {
+  color: var(--text);
+}

@@ -104,6 +104,24 @@ export const EXAMS = [
         symbol: "T"
     },
     {
+        key: "WB JECA",
+        name: "WB JECA",
+        full: "West Bengal MCA Entrance",
+        symbol: "J"
+    },
+    {
+        key: "MAH CET",
+        name: "JMI",
+        full: "Maharashtra Common Entrance Test (MCA)",
+        symbol: "J"
+    },
+    {
+        key: "JMI",
+        name: "JMI",
+        full: "Jamia Millia Islamia MCA Entrance",
+        symbol: "J"
+    },
+    {
         key: "DU MCA",
         name: "DU MCA",
         full: "Delhi University MCA Entrance",
@@ -114,12 +132,6 @@ export const EXAMS = [
         name: "BHU MCA",
         full: "Banaras Hindu University MCA Entrance",
         symbol: "B"
-    },
-    {
-        key: "JMI",
-        name: "JMI",
-        full: "Jamia Millia Islamia MCA Entrance",
-        symbol: "J"
     }
 ];
 
