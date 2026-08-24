@@ -197,6 +197,7 @@ input:focus-visible {
   padding: 20px 14px;
   overflow-y: auto;
   z-index: 20;
+  user-select: none;
 }
 
 .brand {
@@ -400,6 +401,7 @@ input:focus-visible {
   border-radius: var(--radius-md);
   padding: 16px;
   text-align: left;
+  user-select: none;
   cursor: pointer;
   transition:
     border-color 0.14s ease,
@@ -443,6 +445,7 @@ input:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
+  user-select: none;
 }
 
 .chip {
@@ -554,6 +557,7 @@ input:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  user-select: none;
 }
 
 .pill {
@@ -795,6 +799,7 @@ input:focus-visible {
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
+  user-select: none;
   transition:
     background 0.12s ease,
     border-color 0.12s ease;
@@ -1430,6 +1435,7 @@ input:focus-visible {
     min-width: 0;
     width: 100%;
     max-width: 100%;
+    user-select: none;
   }
 
   .filter-pills::-webkit-scrollbar {
