@@ -294,12 +294,12 @@ button.logo-card:hover {
   cursor: pointer;
   font-size: 0.94rem;
   font-weight: 650;
-  color: var(--text);
+  color: var(--text-calm);
   transition: color 0.14s ease;
 }
 
 .faq-question:hover {
-  color: var(--accent-text);
+  color: var(--accent-faq);
 }
 
 .faq-icon {

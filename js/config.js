@@ -124,43 +124,43 @@ export const EXAMS = [
 ];
 
 export const NITS = [
-    { name: "NIT Agartala", city: "Agartala, Tripura", code: "NITA" },
-    { name: "NIT Allahabad", city: "Prayagraj, UP", code: "MNNIT" },
-    { name: "NIT Bhopal", city: "Bhopal, MP", code: "MANIT" },
-    { name: "NIT Delhi", city: "New Delhi", code: "NITD" },
-    { name: "NIT Jamshedpur", city: "Jamshedpur, Jharkhand", code: "NITJSR" },
-    { name: "NIT Kurukshetra", city: "Kurukshetra, Haryana", code: "NITK" },
-    { name: "NIT Meghalaya", city: "Shillong, Meghalaya", code: "NITM" },
-    { name: "NIT Patna", city: "Patna, Bihar", code: "NITP" },
-    { name: "NIT Raipur", city: "Raipur, Chhattisgarh", code: "NITRR" },
-    { name: "NIT Tiruchirappalli", city: "Tiruchirappalli, TN", code: "NITT" },
-    { name: "NIT Warangal", city: "Warangal, Telangana", code: "NITW" }
+    { name: "NIT Agartala", city: "Agartala, Tripura", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNpH4mRl0Hp-OMiwN-rgp66Ir2Qc-uq65MnSluGpGdA&s" },
+    { name: "NIT Allahabad", city: "Prayagraj, UP", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCjlJmzy3SwbXTToC1g4J5U3ivse_DitryBGq31zqMNg&s" },
+    { name: "NIT Bhopal", city: "Bhopal, MP", logo: "https://upload.wikimedia.org/wikipedia/en/4/4f/Maulana_Azad_National_Institute_of_Technology_Logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" },
+    { name: "NIT Delhi", city: "New Delhi", logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGXwJsFdmcZAQ/company-logo_200_200/company-logo_200_200/0/1631334583369?e=2147483647&v=beta&t=ePdZd3zMeBCVTJgw_Jn2RwIpyIovgQbV3KdeS5xLhR4" },
+    { name: "NIT Jamshedpur", city: "Jamshedpur, Jharkhand", logo: "https://www.upgrad.com/_ww3-next/image/?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FLOGO_12_optimized_100-40bce995e88c457c8ae65fe283df2b59.png&w=3840&q=75" },
+    { name: "NIT Kurukshetra", city: "Kurukshetra, Haryana", logo: "https://www.upgrad.com/_ww3-next/image/?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FNIT%20Kurukshetra-f4e0725b871e412ba740bdafdf61e616.jpeg&w=3840&q=75" },
+    { name: "NIT Meghalaya", city: "Shillong, Meghalaya", logo: "https://nitm.ac.in/icepe2023/assets/img/nitmlogo.jpg" },
+    { name: "NIT Patna", city: "Patna, Bihar", logo: "https://upload.wikimedia.org/wikipedia/en/b/b5/National_Institute_of_Technology%2C_Patna_Logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" },
+    { name: "NIT Raipur", city: "Raipur, Chhattisgarh", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/National_Institute_of_Technology%2C_Raipur_Logo.png/250px-National_Institute_of_Technology%2C_Raipur_Logo.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" },
+    { name: "NIT Tiruchirappalli", city: "Tiruchirappalli, TN", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/National_Institute_of_Technology%2C_Tiruchirappalli.svg/1280px-National_Institute_of_Technology%2C_Tiruchirappalli.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" },
+    { name: "NIT Warangal", city: "Warangal, Telangana", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU8qaAPsQDPlcMDb_dKjRUYmMen8C_aglNt0ayZNZaBj6GY0XH4cfuM1eD&s=10" }
 ];
 
 export const FAQS = [
     {
         q: "What is NIMCET?",
-        a: "NIMCET (NIT MCA Common Entrance Test) is a national-level entrance exam for admission to the MCA programme at participating NITs and IIITs. It's conducted every year by one of the participating NITs on a rotational basis."
+        a: "NIMCET is a national-level entrance exam for admission to the MCA programme at participating NITs and IIITs. It is conducted every year by one of the participating NITs."
     },
     {
         q: "Which institutes accept NIMCET scores?",
-        a: "Your NIMCET All India Rank is used for centralised counselling across the participating NITs and IIITs. Check the \"Aim for these NITs\" section above for the full list of institutes."
+        a: "Your NIMCET All India Rank is used for counselling and admission to the participating NITs and IIITs. Check the \"Aim for these NITs\" section above to see the full list."
     },
     {
         q: "Is everything on this site free?",
-        a: "Yes. Every book, note, PYQ, DPP and video linked here is free to access — this hub simply curates and organises material that's already publicly available, by subject and difficulty."
+        a: "Yes. All the books, notes, PYQs, DPPs and videos linked here are free to access. This site simply collects and organises study material that is already publicly available."
     },
     {
         q: "How are DPPs organised?",
-        a: "Daily Practice Problems are grouped by subject and then by chapter, so you can drill one topic at a time instead of hunting through a single long PDF."
+        a: "DPPs are organised by subject and then by chapter. This makes it easier to practise one topic at a time without searching through a long PDF."
     },
     {
         q: "Where do I find previous year papers?",
-        a: "Head to the PYQs section and pick an exam — papers are sorted by year so you can start with the most recent ones first."
+        a: "Go to the PYQs section and select an exam. The papers are organised by year, with the latest papers listed first."
     },
     {
         q: "Are mock tests available?",
-        a: "Free and paid mock tests are on the way — the Mocks section will light up as soon as they're ready."
+        a: "Mock tests are coming soon. The Mocks section will be available once they are ready."
     }
 ];
 

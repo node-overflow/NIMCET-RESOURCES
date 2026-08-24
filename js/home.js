@@ -80,31 +80,37 @@ const renderHeroStats = () => {
     });
 };
 
-const buildLogoCard = (badgeText, name, sub, onClick) => {
-    const card = document.createElement(onClick ? "button" : "div");
+const buildLogoItem = (logo, name, sub, onClick) => {
+    const item = document.createElement(onClick ? "button" : "div");
 
-    card.className = "logo-card";
+    item.className = "logo-card";
 
     if (onClick) {
-        card.type = "button";
+        item.type = "button";
     }
 
-    card.innerHTML =
-        '<span class="logo-badge"></span>' +
+    item.innerHTML =
+        '<span class="logo-badge">' +
+        '<img src="" alt="" loading="lazy">' +
+        '</span>' +
         '<span>' +
         '<span class="logo-card-name" style="display:block;"></span>' +
         '<span class="logo-card-sub" style="display:block;"></span>' +
         '</span>';
 
-    card.querySelector(".logo-badge").textContent = badgeText;
-    card.querySelector(".logo-card-name").textContent = name;
-    card.querySelector(".logo-card-sub").textContent = sub;
+    const img = item.querySelector(".logo-badge img");
+
+    img.src = logo;
+    img.alt = `${name} logo`;
+
+    item.querySelector(".logo-card-name").textContent = name;
+    item.querySelector(".logo-card-sub").textContent = sub;
 
     if (onClick) {
-        card.addEventListener("click", onClick);
+        item.addEventListener("click", onClick);
     }
 
-    return card;
+    return item;
 };
 
 const renderExamMarquee = (onExamClick) => {
@@ -114,16 +120,28 @@ const renderExamMarquee = (onExamClick) => {
 
     const fragment = document.createDocumentFragment();
 
-    // Duplicated once so the track can loop seamlessly.
     [...EXAMS, ...EXAMS].forEach(exam => {
-        fragment.appendChild(
-            buildLogoCard(
-                exam.symbol,
-                exam.name,
-                exam.full,
-                () => onExamClick(exam.key)
-            )
-        );
+        const item = document.createElement("button");
+
+        item.className = "logo-card";
+        item.type = "button";
+
+        item.innerHTML =
+            '<span class="logo-badge"></span>' +
+            '<span>' +
+            '<span class="logo-card-name" style="display:block;"></span>' +
+            '<span class="logo-card-sub" style="display:block;"></span>' +
+            '</span>';
+
+        item.querySelector(".logo-badge").textContent = exam.symbol;
+        item.querySelector(".logo-card-name").textContent = exam.name;
+        item.querySelector(".logo-card-sub").textContent = exam.full;
+
+        item.addEventListener("click", () => {
+            onExamClick(exam.key);
+        });
+
+        fragment.appendChild(item);
     });
 
     elExamMarquee.appendChild(fragment);
@@ -138,7 +156,12 @@ const renderNitMarquee = () => {
 
     [...NITS, ...NITS].forEach(nit => {
         fragment.appendChild(
-            buildLogoCard(nit.code, nit.name, nit.city, null)
+            buildLogoItem(
+                nit.logo,
+                nit.name,
+                nit.city,
+                null
+            )
         );
     });
 
