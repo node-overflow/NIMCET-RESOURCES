@@ -176,17 +176,21 @@
   overflow: hidden;
   -webkit-mask-image: linear-gradient(
     90deg,
-    transparent,
-    #000 8%,
-    #000 92%,
-    transparent
+    transparent 0%,
+    rgba(0, 0, 0, 0.85) 2%,
+    #000 5%,
+    #000 95%,
+    rgba(0, 0, 0, 0.85) 98%,
+    transparent 100%
   );
   mask-image: linear-gradient(
     90deg,
-    transparent,
-    #000 8%,
-    #000 92%,
-    transparent
+    transparent 0%,
+    rgba(0, 0, 0, 0.85) 2%,
+    #000 5%,
+    #000 95%,
+    rgba(0, 0, 0, 0.85) 98%,
+    transparent 100%
   );
 }
 
@@ -226,6 +230,7 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   cursor: default;
+  user-select: none;
   text-align: left;
   transition:
     border-color 0.14s ease,

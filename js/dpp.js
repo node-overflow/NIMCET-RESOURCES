@@ -87,9 +87,6 @@ export const loadDppItems = (subjectName, chapterKey) => {
     });
 };
 
-// Fetches every subject's chapter manifest, then every chapter's item
-// count, and sums the total. Cached on state so repeat home visits
-// don't refetch. Never rejects — missing files just count as zero.
 export const computeDppTotal = () => {
     if (state.dppTotalCount != null) {
         return Promise.resolve(state.dppTotalCount);

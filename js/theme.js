@@ -31,7 +31,7 @@ const saveTheme = (theme) => {
     try {
         localStorage.setItem(STORAGE_KEY, theme);
     } catch (error) {
-        // Private browsing / storage disabled — theme just won't persist.
+        // Private browsing / storage disabled
     }
 };
 

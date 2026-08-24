@@ -94,7 +94,7 @@ export const EXAMS = [
     {
         key: "CUET PG MCA",
         name: "CUET PG MCA",
-        full: "CUET PG — MCA Entrance",
+        full: "CUET PG MCA Entrance",
         symbol: "C"
     },
     {
