@@ -1,0 +1,224 @@
+/* ============ Mobile drawer overlay ============ */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 4, 6, 0.68);
+  z-index: 35;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* ============ Shell / Sidebar ============ */
+
+.shell {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+  padding: 20px 14px;
+  overflow-y: auto;
+  z-index: 20;
+  user-select: none;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 8px 18px 8px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-dim);
+  color: var(--accent-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+  border: 1px solid rgba(110, 107, 220, 0.28);
+}
+
+.brand-text {
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.005em;
+  color: var(--text);
+  flex: 1;
+}
+
+.brand-text em {
+  font-style: normal;
+  color: var(--accent-text);
+}
+
+.sidebar-close {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition:
+    color 0.12s ease,
+    border-color 0.12s ease;
+}
+
+.sidebar-close:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  overflow-y: auto;
+  padding-top: 6px;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.nav-label {
+  margin: 0 0 7px 10px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px 8px 9px;
+  border: none;
+  border-left: 2px solid transparent;
+  background: transparent;
+  color: var(--text-dim);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.86rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 0.12s ease,
+    color 0.12s ease,
+    border-color 0.12s ease;
+}
+
+.nav-item:hover {
+  background: var(--surface-hover);
+  color: var(--text);
+}
+
+.nav-item[data-active="true"] {
+  background: var(--accent-dim-2);
+  border-left-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.nav-icon {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.nav-symbol {
+  flex-shrink: 0;
+  width: 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.sidebar-foot {
+  padding: 12px 8px 4px 8px;
+  border-top: 1px solid var(--border);
+  margin-top: 12px;
+}
+
+.sidebar-foot p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: var(--text-faint);
+  line-height: 1.5;
+}
+
+/* ============ Main content ============ */
+.main {
+  flex: 1;
+  min-width: 0;
+  padding: 44px 48px 64px;
+  overflow-x: hidden;
+}
+
+.view-head {
+  margin-bottom: 30px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.view-head h1 {
+  margin: 0 0 6px 0;
+  font-size: 1.55rem;
+  font-weight: 750;
+  letter-spacing: -0.015em;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.section {
+  margin-bottom: 38px;
+}
+
+.section-title {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin: 0 0 14px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}

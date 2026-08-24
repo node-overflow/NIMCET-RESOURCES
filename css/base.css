@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+}
+
+body {
+  position: relative;
+}
+
+button {
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+@media (hover: none) {
+  .subject-card:active,
+  .chip:active,
+  .pill:active,
+  .nav-item:active,
+  .bnav-item:active,
+  .icon-btn:active {
+    opacity: 0.75;
+  }
+}
+
+::selection {
+  background: var(--accent-dim);
+  color: var(--text);
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}

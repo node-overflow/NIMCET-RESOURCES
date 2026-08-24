@@ -1,0 +1,74 @@
+/* ============ Empty state ============ */
+.empty-state {
+  padding: 60px 20px;
+  text-align: center;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-lg);
+}
+
+.empty-title {
+  margin: 0 0 6px 0;
+  font-weight: 650;
+  color: var(--text);
+  font-size: 0.94rem;
+}
+
+.empty-sub {
+  margin: 0;
+  color: var(--text-faint);
+  font-size: 0.83rem;
+}
+
+/* ============ Back button (PYQs exam detail) ============ */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  padding: 7px 12px 7px 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    border-color 0.12s ease,
+    color 0.12s ease,
+    background 0.12s ease;
+}
+
+.back-btn:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+/* ============ Icon buttons (generic) ============ */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition:
+    border-color 0.12s ease,
+    color 0.12s ease;
+}
+
+.icon-btn:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.icon-btn.theme-toggle {
+  font-size: 15px;
+  line-height: 1;
+  margin-left: 6px;
+}
