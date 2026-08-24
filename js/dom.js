@@ -78,6 +78,7 @@ export const elHeroPyqBtn = $("#heroPyqBtn");
 export const elExamMarquee = $("#examMarquee");
 export const elNitMarquee = $("#nitMarquee");
 export const elFaqList = $("#faqList");
+export const elFaqCategories = document.getElementById("faqCategories");
 
 export const elResourcesHeading = $("#resourcesHeading");
 export const elResourcesCount = $("#resourcesCount");

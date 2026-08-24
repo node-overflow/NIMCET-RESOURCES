@@ -1,0 +1,132 @@
+[
+  {
+    "key": "about",
+    "label": "About NIMCET",
+    "faqs": [
+      {
+        "q": "What is NIMCET?",
+        "a": "NIMCET is a national entrance exam for MCA admission at participating NITs and other institutes. It is conducted once every year."
+      },
+      {
+        "q": "Who can apply for NIMCET?",
+        "a": "Students with a qualifying bachelor's degree and the required Mathematics or Statistics background can apply, subject to the current rules."
+      },
+      {
+        "q": "How many questions are there in NIMCET?",
+        "a": "NIMCET has 120 questions divided into Mathematics, Logical Reasoning, Computer Awareness and General English sections."
+      },
+      {
+        "q": "What is the NIMCET exam pattern?",
+        "a": "NIMCET is a computer-based test with multiple-choice questions. Each section has its own marks, time and negative marking rules."
+      },
+      {
+        "q": "How is the NIMCET rank calculated?",
+        "a": "Your marks are calculated using the official marking scheme, and candidates are then ranked based on their overall performance."
+      }
+    ]
+  },
+  {
+    "key": "study-material",
+    "label": "Study Material",
+    "faqs": [
+      {
+        "q": "How are DPPs organised?",
+        "a": "DPPs are organised by subject and chapter, so you can practise one topic at a time without searching through long PDFs."
+      },
+      {
+        "q": "Where do I find previous year papers?",
+        "a": "Open the PYQs section and select an exam. Papers are arranged by year, with the latest papers shown first for quick access."
+      },
+      {
+        "q": "Are mock tests available?",
+        "a": "Mock tests are being added to the site. Once available, you will find them in the Mocks section for regular practice."
+      },
+      {
+        "q": "Where can I find study notes?",
+        "a": "Open the Notes section and choose a subject or chapter. Notes are grouped by topic to make revision easier and faster."
+      },
+      {
+        "q": "Where can I find video lectures?",
+        "a": "Open the Videos section to find useful lectures organised by subject and topic. You can use them for learning or quick revision."
+      }
+    ]
+  },
+  {
+    "key": "preparation",
+    "label": "Preparation",
+    "faqs": [
+      {
+        "q": "How should I start preparing for NIMCET?",
+        "a": "Start with the syllabus and build your basics first. Then practise questions, solve PYQs and slowly move towards timed mock tests."
+      },
+      {
+        "q": "Which subject should I study first?",
+        "a": "Start with Mathematics if it is your weakest area. Build the basics, practise regularly and then give more time to your weak topics."
+      },
+      {
+        "q": "How important are NIMCET PYQs?",
+        "a": "PYQs are very important because they show the exam style, repeated concepts and difficulty level. Solve them after learning each topic."
+      },
+      {
+        "q": "How should I use DPPs?",
+        "a": "Use DPPs after finishing a topic. Try the questions yourself first, then review your mistakes and note the concepts you missed."
+      },
+      {
+        "q": "How can I improve my speed?",
+        "a": "Practise with a timer and track the questions where you lose time. Regular timed practice will help you become faster without rushing."
+      }
+    ]
+  },
+  {
+    "key": "admission",
+    "label": "Rank & Admission",
+    "faqs": [
+      {
+        "q": "What happens after the NIMCET exam?",
+        "a": "After the result, eligible candidates take part in counselling and fill their institute preferences based on their rank."
+      },
+      {
+        "q": "Which institutes accept NIMCET scores?",
+        "a": "Your NIMCET rank is used for counselling and admission to participating NITs and other institutes listed in the official brochure."
+      },
+      {
+        "q": "What is NIMCET counselling?",
+        "a": "Counselling is the process where candidates choose institute preferences and receive seats based on rank, category and available seats."
+      },
+      {
+        "q": "Can I change my college preference later?",
+        "a": "Preference changes depend on the counselling rules and the current round. Always check the official counselling instructions before making changes."
+      },
+      {
+        "q": "Is NIMCET rank important for admission?",
+        "a": "Yes. Your rank plays a major role in seat allotment, along with your category, preferences and the seats available in each institute."
+      }
+    ]
+  },
+  {
+    "key": "access",
+    "label": "Site & Access",
+    "faqs": [
+      {
+        "q": "Is everything on this site free?",
+        "a": "Yes. The resources linked here are free to access. The site simply collects and organises useful study material in one place."
+      },
+      {
+        "q": "Do I need an account to use the site?",
+        "a": "No account is needed for the main resources. You can browse the site and access available study material without signing in."
+      },
+      {
+        "q": "Can I use the site on my phone?",
+        "a": "Yes. The site is designed to work on phones, tablets and computers, so you can study from whichever device you prefer."
+      },
+      {
+        "q": "Can I download the study material?",
+        "a": "If a resource provides a download option, you can download it from its source. Some resources may only be available for online viewing."
+      },
+      {
+        "q": "Where can I find exam updates?",
+        "a": "Check the Updates section for important notices such as exam dates, admit cards, results and other NIMCET related announcements."
+      }
+    ]
+  }
+]

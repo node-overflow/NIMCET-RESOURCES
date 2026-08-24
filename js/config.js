@@ -137,32 +137,7 @@ export const NITS = [
     { name: "NIT Warangal", city: "Warangal, Telangana", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU8qaAPsQDPlcMDb_dKjRUYmMen8C_aglNt0ayZNZaBj6GY0XH4cfuM1eD&s=10" }
 ];
 
-export const FAQS = [
-    {
-        q: "What is NIMCET?",
-        a: "NIMCET is a national-level entrance exam for admission to the MCA programme at participating NITs and IIITs. It is conducted every year by one of the participating NITs."
-    },
-    {
-        q: "Which institutes accept NIMCET scores?",
-        a: "Your NIMCET All India Rank is used for counselling and admission to the participating NITs and IIITs. Check the \"Aim for these NITs\" section above to see the full list."
-    },
-    {
-        q: "Is everything on this site free?",
-        a: "Yes. All the books, notes, PYQs, DPPs and videos linked here are free to access. This site simply collects and organises study material that is already publicly available."
-    },
-    {
-        q: "How are DPPs organised?",
-        a: "DPPs are organised by subject and then by chapter. This makes it easier to practise one topic at a time without searching through a long PDF."
-    },
-    {
-        q: "Where do I find previous year papers?",
-        a: "Go to the PYQs section and select an exam. The papers are organised by year, with the latest papers listed first."
-    },
-    {
-        q: "Are mock tests available?",
-        a: "Mock tests are coming soon. The Mocks section will be available once they are ready."
-    }
-];
+export const FAQS_FILE = "data/other/faqs.json";
 
 export const SUBJECTS = [
     {

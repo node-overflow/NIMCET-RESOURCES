@@ -89,6 +89,43 @@
     font-size: 0.88rem;
   }
 
+  .faq-section {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .faq-categories {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    position: static;
+    margin: 0;
+    padding: 2px 2px 4px;
+    gap: 8px;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .faq-categories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .faq-cat-btn {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    white-space: nowrap;
+    padding: 10px 16px;
+    font-size: 0.82rem;
+  }
+
+  .faq-panel {
+    padding: 0 16px;
+  }
+
   .nav-item {
     min-height: 44px;
     font-size: 0.9rem;

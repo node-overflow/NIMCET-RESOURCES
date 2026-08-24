@@ -5,7 +5,7 @@ import {
     TYPES,
     EXAMS,
     NITS,
-    FAQS
+    FAQS_FILE
 } from "./config.js";
 
 import {
@@ -17,6 +17,7 @@ import {
     elHeroPyqBtn,
     elExamMarquee,
     elNitMarquee,
+    elFaqCategories,
     elFaqList
 } from "./dom.js";
 
@@ -46,6 +47,31 @@ const buildStat = (num, label) => {
     return stat;
 };
 
+const animateCount = (element, target) => {
+    const duration = Math.min(
+        3000,
+        Math.max(1800, target * 15)
+    );
+
+    const start = performance.now();
+
+    const update = now => {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(target * eased);
+
+        element.textContent = current + "+";
+
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        } else {
+            element.textContent = target + "+";
+        }
+    };
+
+    requestAnimationFrame(update);
+};
+
 const renderHeroStats = () => {
     if (!elHeroStats) return;
 
@@ -53,30 +79,36 @@ const renderHeroStats = () => {
 
     const fragment = document.createDocumentFragment();
 
-    fragment.appendChild(
-        buildStat(state.resources.length + "+", "Resources")
-    );
+    const resourceStat = buildStat("0+", "Resources");
+    const pyqStat = buildStat("0+", "PYQ Papers");
+    const dppStat = buildStat("0+", "DPPs");
+    const visitsStat = buildStat("0+", "Visits");
 
-    fragment.appendChild(
-        buildStat(SUBJECTS.length, "Subjects")
-    );
-
-    fragment.appendChild(
-        buildStat(state.pyqs.length + "+", "PYQ Papers")
-    );
-
-    const dppStat = buildStat("…", "DPPs");
-
+    fragment.appendChild(resourceStat);
+    fragment.appendChild(pyqStat);
     fragment.appendChild(dppStat);
+    fragment.appendChild(visitsStat);
 
     elHeroStats.appendChild(fragment);
 
+    const visitsNum = visitsStat.querySelector(".hero-stat-num");
+    animateCount(visitsNum, 5000);
+
+    const resourceNum = resourceStat.querySelector(".hero-stat-num");
+    const pyqNum = pyqStat.querySelector(".hero-stat-num");
+    const dppNum = dppStat.querySelector(".hero-stat-num");
+
+    animateCount(resourceNum, state.resources.length);
+    animateCount(pyqNum, state.pyqs.length);
+
     computeDppTotal().then(total => {
-        const numEl = dppStat.querySelector(".hero-stat-num");
+        if (!dppNum) return;
 
-        if (!numEl) return;
-
-        numEl.textContent = total > 0 ? total + "+" : "Soon";
+        if (total > 0) {
+            animateCount(dppNum, total);
+        } else {
+            dppNum.textContent = "Soon";
+        }
     });
 };
 
@@ -168,14 +200,31 @@ const renderNitMarquee = () => {
     elNitMarquee.appendChild(fragment);
 };
 
-const renderFaqs = () => {
+let faqCategoriesCache = null;
+let activeFaqCategory = null;
+
+const loadFaqCategories = async () => {
+    if (faqCategoriesCache) return faqCategoriesCache;
+
+    try {
+        const response = await fetch(FAQS_FILE);
+
+        faqCategoriesCache = await response.json();
+    } catch (err) {
+        faqCategoriesCache = [];
+    }
+
+    return faqCategoriesCache;
+};
+
+const renderFaqQuestions = (faqs) => {
     if (!elFaqList) return;
 
     elFaqList.innerHTML = "";
 
     const fragment = document.createDocumentFragment();
 
-    FAQS.forEach((faq, index) => {
+    faqs.forEach((faq => {
         const item = document.createElement("div");
 
         item.className = "faq-item";
@@ -215,15 +264,63 @@ const renderFaqs = () => {
             }
         });
 
-        if (index === 0) {
-            item.dataset.open = "true";
-            button.setAttribute("aria-expanded", "true");
-        }
-
         fragment.appendChild(item);
-    });
+    }));
 
     elFaqList.appendChild(fragment);
+};
+
+const renderFaqCategoryTabs = (categories) => {
+    if (!elFaqCategories) return;
+
+    elFaqCategories.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
+    categories.forEach(category => {
+        const button = document.createElement("button");
+
+        button.className = "faq-cat-btn";
+        button.type = "button";
+        button.textContent = category.label;
+        button.dataset.active = category.key === activeFaqCategory ? "true" : "false";
+
+        button.addEventListener("click", () => {
+            if (activeFaqCategory === category.key) return;
+
+            activeFaqCategory = category.key;
+
+            elFaqCategories.querySelectorAll(".faq-cat-btn").forEach(other => {
+                other.dataset.active = "false";
+            });
+
+            button.dataset.active = "true";
+
+            renderFaqQuestions(category.faqs);
+        });
+
+        fragment.appendChild(button);
+    });
+
+    elFaqCategories.appendChild(fragment);
+};
+
+const renderFaqs = async () => {
+    if (!elFaqCategories && !elFaqList) return;
+
+    const categories = await loadFaqCategories();
+
+    if (!categories.length) return;
+
+    if (!activeFaqCategory || !categories.some(category => category.key === activeFaqCategory)) {
+        activeFaqCategory = categories[0].key;
+    }
+
+    renderFaqCategoryTabs(categories);
+
+    const active = categories.find(category => category.key === activeFaqCategory);
+
+    renderFaqQuestions(active ? active.faqs : []);
 };
 
 export const renderHome = (
