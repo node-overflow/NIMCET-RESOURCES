@@ -8,8 +8,8 @@
     "image": "https://m.media-amazon.com/images/I/411yEdPAKiL._SY445_SX342_FMwebp_.jpg",
     "tags": ["graphs", "graph transformations", "functions and graphs"],
     "featured": true,
-    "action": "download",
-    "url": "https://raw.githubusercontent.com/adarshk20081825-oss/jee-books/main/Arihant%20Skills%20in%20Mathematics%20for%20JEE%20Play%20with%20Graphs.pdf"
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/math%20books/Play%20with%20graphs%20Arihant.pdf"
   },
   {
     "title": "RD SHARMA VOL 1",
@@ -22,7 +22,7 @@
     "featured": true,
     "reader": true,
     "action": "open",
-    "url": "https://raw.githubusercontent.com/rawcontentgit/NIMCET-RESOURCES/master/math%20books/RD%20Sharma%20Volume%20I.pdf"
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/math%20books/RD%20Sharma%20Volume%20I.pdf"
   },
   {
     "title": "RD SHARMA VOL 2",
@@ -34,7 +34,7 @@
     "tags": ["calculus", "r d"],
     "featured": false,
     "action": "open",
-    "url": "https://t.me/nimcet_resources/7"
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/math%20books/RD%20Sharma%20Volume%20II.pdf"
   },
   {
     "title": "RD SHARMA 11",
@@ -58,7 +58,7 @@
     "tags": ["class 11 mathematics", "rs"],
     "featured": false,
     "action": "open",
-    "url": "https://t.me/nimcet_resources/72"
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/math%20books/R%20S%20Aggarwal%20%20class%2011%20maths%20-%20Senio.pdf"
   },
   {
     "title": "R S AGGARWAL 12",
@@ -70,7 +70,7 @@
     "tags": ["class 12 mathematics", "rs"],
     "featured": false,
     "action": "open",
-    "url": "https://t.me/nimcet_resources/96"
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/math%20books/RS%20AGRAWAL%2012.pdf"
   },
   {
     "title": "Arihant MCA Package",
@@ -81,8 +81,8 @@
     "image": "https://m.media-amazon.com/images/I/512YgSZZLCL._AC_UY327_FMwebp_QL65_.jpg",
     "tags": ["mca entrance", "mathematics practice", "nimcet preparation"],
     "featured": false,
-    "action": "open",
-    "url": "https://t.me/nimcet_resources/87"
+    "action": "download",
+    "url": "https://raw.githubusercontent.com/rawcontentgit/NIMCET-RESOURCES/master/math%20books/Arihant%20MCA%20Package.pdf"
   },
   {
     "title": "CENGAGE ALGEBRA",
