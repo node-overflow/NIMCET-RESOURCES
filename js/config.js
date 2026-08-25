@@ -98,6 +98,12 @@ export const EXAMS = [
         symbol: "C"
     },
     {
+        key: "JEE MAIN MATH",
+        name: "JEE MAIN MATH",
+        full: "JOIN ENTRACE EXAMINATION MAIN",
+        symbol: "JM"
+    },
+    {
         key: "TANCET",
         name: "TANCET",
         full: "Tamil Nadu Common Entrance Test (MCA)",

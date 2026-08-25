@@ -85,11 +85,38 @@ export const renderPyqsExam = () => {
                 state.examKey
         )
         .slice()
-        .sort(
-            (a, b) =>
+        .sort((a, b) => {
+            const yearDiff =
                 (b.year || 0) -
-                (a.year || 0)
-        );
+                (a.year || 0);
+
+            if (yearDiff !== 0) {
+                return yearDiff;
+            }
+
+            const dateA = a.date
+                ? new Date(a.date)
+                : new Date(0);
+
+            const dateB = b.date
+                ? new Date(b.date)
+                : new Date(0);
+
+            const dateDiff = dateA - dateB;
+
+            if (dateDiff !== 0) {
+                return dateDiff;
+            }
+
+            const shiftA = String(a.shift || "");
+            const shiftB = String(b.shift || "");
+
+            return shiftA.localeCompare(
+                shiftB,
+                undefined,
+                { numeric: true }
+            );
+        })
 
     let paperLabel = " papers";
 
