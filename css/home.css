@@ -19,6 +19,16 @@
   min-width: 0;
 }
 
+.hero-slogan {
+  font-family: "Caveat", "Segoe Print", cursive;
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2px;
+  opacity: 0.35;
+  transform: rotate(-2deg) translateX(-6px);
+}
+
 .hero-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -133,6 +143,7 @@
 /* ============ Hero illustration ============ */
 .hero-visual {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-width: 0;
@@ -427,6 +438,7 @@ button.logo-card:hover {
 }
 
 /* ============ DPPs Section ============ */
-#dppHeading, #dppChapterHeading {
+#dppHeading,
+#dppChapterHeading {
   color: var(--text);
 }

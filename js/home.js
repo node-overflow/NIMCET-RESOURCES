@@ -81,13 +81,9 @@ const renderHeroStats = () => {
 
     elHeroStats.innerHTML = "";
 
-    if (!elHeroStats) return;
-
-    elHeroStats.innerHTML = "";
-
     const fragment = document.createDocumentFragment();
 
-    const resourceStat = buildStat("0+", "Resources");
+    const resourceStat = buildStat("0+", "Study Materials");
     const pyqStat = buildStat("0+", "PYQ Papers");
     const dppStat = buildStat("0+", "DPPs");
     const visitsStat = buildStat("0+", "Visits");
@@ -99,23 +95,34 @@ const renderHeroStats = () => {
 
     elHeroStats.appendChild(fragment);
 
-    const visitsNum = visitsStat.querySelector(".hero-stat-num");
-    animateCount(visitsNum, 5000);
-
     const resourceNum = resourceStat.querySelector(".hero-stat-num");
     const pyqNum = pyqStat.querySelector(".hero-stat-num");
     const dppNum = dppStat.querySelector(".hero-stat-num");
+    const visitsNum = visitsStat.querySelector(".hero-stat-num");
 
-    animateCount(resourceNum, state.resources.length);
+    animateCount(visitsNum, 5000);
     animateCount(pyqNum, state.pyqs.length);
 
     computeDppTotal().then(total => {
-        if (!dppNum) return;
+        if (!resourceNum || !dppNum) return;
 
         if (total > 0) {
             animateCount(dppNum, total);
+
+            const materialTotal =
+                state.resources.length +
+                state.pyqs.length +
+                total;
+
+            animateCount(resourceNum, materialTotal);
         } else {
             dppNum.textContent = "Soon";
+
+            const materialTotal =
+                state.resources.length +
+                state.pyqs.length;
+
+            animateCount(resourceNum, materialTotal);
         }
     });
 };
@@ -232,7 +239,7 @@ const renderFaqQuestions = (faqs) => {
 
     const fragment = document.createDocumentFragment();
 
-    faqs.forEach((faq => {
+    faqs.forEach(faq => {
         const item = document.createElement("div");
 
         item.className = "faq-item";
@@ -263,7 +270,9 @@ const renderFaqQuestions = (faqs) => {
 
             elFaqList.querySelectorAll(".faq-item").forEach(other => {
                 other.dataset.open = "false";
-                other.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+                other
+                    .querySelector(".faq-question")
+                    .setAttribute("aria-expanded", "false");
             });
 
             if (!isOpen) {
@@ -273,7 +282,7 @@ const renderFaqQuestions = (faqs) => {
         });
 
         fragment.appendChild(item);
-    }));
+    });
 
     elFaqList.appendChild(fragment);
 };
@@ -291,16 +300,21 @@ const renderFaqCategoryTabs = (categories) => {
         button.className = "faq-cat-btn";
         button.type = "button";
         button.textContent = category.label;
-        button.dataset.active = category.key === activeFaqCategory ? "true" : "false";
+        button.dataset.active =
+            category.key === activeFaqCategory
+                ? "true"
+                : "false";
 
         button.addEventListener("click", () => {
             if (activeFaqCategory === category.key) return;
 
             activeFaqCategory = category.key;
 
-            elFaqCategories.querySelectorAll(".faq-cat-btn").forEach(other => {
-                other.dataset.active = "false";
-            });
+            elFaqCategories
+                .querySelectorAll(".faq-cat-btn")
+                .forEach(other => {
+                    other.dataset.active = "false";
+                });
 
             button.dataset.active = "true";
 
@@ -320,13 +334,20 @@ const renderFaqs = async () => {
 
     if (!categories.length) return;
 
-    if (!activeFaqCategory || !categories.some(category => category.key === activeFaqCategory)) {
+    if (
+        !activeFaqCategory ||
+        !categories.some(
+            category => category.key === activeFaqCategory
+        )
+    ) {
         activeFaqCategory = categories[0].key;
     }
 
     renderFaqCategoryTabs(categories);
 
-    const active = categories.find(category => category.key === activeFaqCategory);
+    const active = categories.find(
+        category => category.key === activeFaqCategory
+    );
 
     renderFaqQuestions(active ? active.faqs : []);
 };
@@ -343,13 +364,19 @@ export const renderHome = (
     if (elHeroBrowseBtn && !elHeroBrowseBtn.dataset.wired) {
         elHeroBrowseBtn.dataset.wired = "true";
 
-        elHeroBrowseBtn.addEventListener("click", onBrowseAll);
+        elHeroBrowseBtn.addEventListener(
+            "click",
+            onBrowseAll
+        );
     }
 
     if (elHeroPyqBtn && !elHeroPyqBtn.dataset.wired) {
         elHeroPyqBtn.dataset.wired = "true";
 
-        elHeroPyqBtn.addEventListener("click", onPyqsHome);
+        elHeroPyqBtn.addEventListener(
+            "click",
+            onPyqsHome
+        );
     }
 
     renderExamMarquee(onExamClick);
