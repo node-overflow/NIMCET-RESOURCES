@@ -18,10 +18,11 @@
     "chapter": "Algebra",
     "bestFor": "Concept + Practice",
     "image": "https://m.media-amazon.com/images/I/81lDlNoRbbL._AC_UF1000,1000_QL80_.jpg",
-    "tags": ["algebra"],
+    "tags": ["algebra", "r d"],
     "featured": true,
+    "reader": true,
     "action": "open",
-    "url": "https://t.me/nimcet_resources/6"
+    "url": "https://raw.githubusercontent.com/rawcontentgit/NIMCET-RESOURCES/master/math%20books/RD%20Sharma%20Volume%20I.pdf"
   },
   {
     "title": "RD SHARMA VOL 2",
@@ -30,7 +31,7 @@
     "chapter": "Calculus",
     "bestFor": "Concept + Practice",
     "image": "https://m.media-amazon.com/images/I/71Yb6Jp-yfL._AC_UF1000,1000_QL80_.jpg",
-    "tags": ["calculus"],
+    "tags": ["calculus", "r d"],
     "featured": false,
     "action": "open",
     "url": "https://t.me/nimcet_resources/7"
@@ -42,7 +43,7 @@
     "chapter": "Algebra",
     "bestFor": "Foundation",
     "image": "https://m.media-amazon.com/images/I/61U2j81Cn4L._AC_UY327_FMwebp_QL65_.jpg",
-    "tags": ["class 11", "algebra and trigonometry", "coordinate geometry"],
+    "tags": ["class 11", "r d"],
     "featured": false,
     "action": "open",
     "url": "https://t.me/nimcet_resources/139"
@@ -54,7 +55,7 @@
     "chapter": "Quantitative",
     "bestFor": "Practice",
     "image": "https://m.media-amazon.com/images/I/710DY60DHUL._AC_UY327_FMwebp_QL65_.jpg",
-    "tags": ["quantitative", "class 11 mathematics", "problem solving"],
+    "tags": ["class 11 mathematics", "rs"],
     "featured": false,
     "action": "open",
     "url": "https://t.me/nimcet_resources/72"
@@ -66,7 +67,7 @@
     "chapter": "Quantitative",
     "bestFor": "Practice",
     "image": "https://m.media-amazon.com/images/I/71XNw5ICsCL._AC_UY327_FMwebp_QL65_.jpg",
-    "tags": ["quantitative", "class 12 mathematics", "problem solving"],
+    "tags": ["class 12 mathematics", "rs"],
     "featured": false,
     "action": "open",
     "url": "https://t.me/nimcet_resources/96"

@@ -13,7 +13,36 @@ import {
 
 let activeVideo = null;
 
+
+/* =========================================================
+   CARD URL HANDLER
+   ========================================================= */
+
+const getCardUrl = (item) => {
+    if (!item.url || item.url === "#") {
+        return "#";
+    }
+
+    if (item.reader === true) {
+        return (
+            "components/pdf-reader/reader.html" +
+            "?file=" +
+            encodeURIComponent(item.url) +
+            "&title=" +
+            encodeURIComponent(item.title || "PDF Reader")
+        );
+    }
+
+    return item.url;
+};
+
+
+/* =========================================================
+   NORMAL RESOURCE CARD
+   ========================================================= */
+
 export const buildCard = (item) => {
+
     if (item.type === "Video") {
         return buildVideoCard(item);
     }
@@ -23,6 +52,7 @@ export const buildCard = (item) => {
     }
 
     const card = document.createElement("div");
+
     card.className = "resource-card";
 
     let typeClass = TYPE_CLASS[item.type];
@@ -37,17 +67,18 @@ export const buildCard = (item) => {
         yearHtml =
             '<span class="type-label" style="margin-left:auto;color:var(--text-faint)">' +
             escapeHtml(String(item.year)) +
-            '</span>';
+            "</span>";
     }
 
-    let cardUrl = "#";
+    let cardUrl = getCardUrl(item);
 
-    if (item.url && item.url !== "#") {
-        cardUrl = escapeHtml(item.url);
+    if (cardUrl !== "#") {
+        cardUrl = escapeHtml(cardUrl);
     }
 
     card.innerHTML =
         '<div class="card-top">' +
+
         '<span class="type-dot" style="background: var(--' +
         typeClass +
         ')"></span>' +
@@ -56,26 +87,30 @@ export const buildCard = (item) => {
         typeClass +
         ')">' +
         escapeHtml(item.type) +
-        '</span>' +
+        "</span>" +
 
         yearHtml +
-        '</div>' +
+
+        "</div>" +
 
         '<h3 class="card-title"></h3>' +
 
         '<p class="card-desc"></p>' +
 
         '<div class="card-meta">' +
+
         '<span><b>' +
         escapeHtml(item.difficulty || "") +
-        '</b></span>' +
+        "</b></span>" +
 
-        '<span>' +
+        "<span>" +
         escapeHtml(item.bestFor || "") +
-        '</span>' +
-        '</div>' +
+        "</span>" +
+
+        "</div>" +
 
         '<div class="card-foot">' +
+
         '<a class="card-action" href="' +
         cardUrl +
         '" target="_blank" rel="noopener noreferrer">' +
@@ -84,12 +119,15 @@ export const buildCard = (item) => {
 
         ' <span class="arrow">→</span>' +
 
-        '</a>' +
-        '</div>';
+        "</a>" +
 
-    card.querySelector(".card-title").textContent = item.title || "";
+        "</div>";
 
-    card.querySelector(".card-desc").textContent = item.desc || "";
+    card.querySelector(".card-title").textContent =
+        item.title || "";
+
+    card.querySelector(".card-desc").textContent =
+        item.desc || "";
 
     const action = card.querySelector(".card-action");
 
@@ -99,7 +137,16 @@ export const buildCard = (item) => {
         tag.className = "video-exam-tag";
         tag.textContent = item.exam;
 
-        card.querySelector(".video-card-content").appendChild(tag);
+        /*
+         * Kept from your original logic.
+         * Only append if the target exists.
+         */
+        const videoContent =
+            card.querySelector(".video-card-content");
+
+        if (videoContent) {
+            videoContent.appendChild(tag);
+        }
     }
 
     action.addEventListener("click", event => {
@@ -111,14 +158,21 @@ export const buildCard = (item) => {
     return card;
 };
 
+
+/* =========================================================
+   BOOK CARD
+   ========================================================= */
+
 const buildBookCard = (item) => {
+
     const card = document.createElement("div");
+
     card.className = "resource-card book-card";
 
-    let cardUrl = "#";
+    let cardUrl = getCardUrl(item);
 
-    if (item.url && item.url !== "#") {
-        cardUrl = escapeHtml(item.url);
+    if (cardUrl !== "#") {
+        cardUrl = escapeHtml(cardUrl);
     }
 
     const imageUrl = item.image
@@ -126,7 +180,9 @@ const buildBookCard = (item) => {
         : "";
 
     card.innerHTML =
+
         '<div class="book-cover">' +
+
         (
             imageUrl
                 ? '<img src="' +
@@ -134,9 +190,11 @@ const buildBookCard = (item) => {
                 '" alt="' +
                 escapeHtml(item.title || "Book") +
                 '" loading="lazy">'
+
                 : '<div class="book-cover-placeholder"></div>'
         ) +
-        '</div>' +
+
+        "</div>" +
 
         '<div class="book-card-content">' +
 
@@ -145,6 +203,7 @@ const buildBookCard = (item) => {
         '<div class="book-best-for"></div>' +
 
         '<div class="card-foot">' +
+
         '<a class="card-action" href="' +
         cardUrl +
         '" target="_blank" rel="noopener noreferrer">' +
@@ -153,10 +212,11 @@ const buildBookCard = (item) => {
 
         ' <span class="arrow">→</span>' +
 
-        '</a>' +
-        '</div>' +
+        "</a>" +
 
-        '</div>';
+        "</div>" +
+
+        "</div>";
 
     card.querySelector(".card-title").textContent =
         item.title || "";
@@ -175,104 +235,167 @@ const buildBookCard = (item) => {
     return card;
 };
 
+
+/* =========================================================
+   VIDEO CARD
+   ========================================================= */
+
 const buildVideoCard = (item) => {
+
     const card = document.createElement("div");
+
     card.className = "resource-card video-card";
 
     const videoId = extractYouTubeId(item.url);
 
     let videoUrl = "#";
+
     if (item.url && item.url !== "#") {
         videoUrl = escapeHtml(item.url);
     }
 
     let thumbInner = "";
+
     if (videoId) {
+
         thumbInner =
             '<img class="video-thumb-img" src="https://img.youtube.com/vi/' +
             videoId +
             '/hqdefault.jpg" alt="" loading="lazy" />';
+
     } else {
-        thumbInner = '<div class="video-thumb-fallback"></div>';
+
+        thumbInner =
+            '<div class="video-thumb-fallback"></div>';
     }
 
     card.innerHTML =
+
         '<div class="video-thumb">' +
+
         thumbInner +
+
         '<button class="play-badge" type="button" aria-label="Play video">' +
+
         '<svg width="15" height="17" viewBox="0 0 14 16" fill="none">' +
+
         '<path d="M1 1.2v13.6a1 1 0 0 0 1.53.85l11-6.8a1 1 0 0 0 0-1.7l-11-6.8A1 1 0 0 0 1 1.2Z" fill="currentColor"/>' +
-        '</svg>' +
-        '</button>' +
-        '</div>' +
+
+        "</svg>" +
+
+        "</button>" +
+
+        "</div>" +
+
         '<div class="video-card-content">' +
+
         '<h3 class="card-title video-card-title"></h3>' +
+
         '<div class="video-best-for"></div>' +
+
         '<div class="card-foot">' +
+
         '<a class="card-action" href="' +
         videoUrl +
         '" target="_blank" rel="noopener noreferrer">' +
-        'Watch Now' +
+
+        "Watch Now" +
+
         '<span class="arrow">→</span>' +
-        '</a>' +
-        '</div>' +
-        '</div>';
 
-    card.querySelector(".video-card-title").textContent = item.title || "";
-    card.querySelector(".video-best-for").textContent = item.bestFor || "";
+        "</a>" +
 
-    const thumbnail = card.querySelector(".video-thumb");
-    const playButton = card.querySelector(".play-badge");
+        "</div>" +
+
+        "</div>";
+
+    card.querySelector(".video-card-title").textContent =
+        item.title || "";
+
+    card.querySelector(".video-best-for").textContent =
+        item.bestFor || "";
+
+    const thumbnail =
+        card.querySelector(".video-thumb");
+
+    const playButton =
+        card.querySelector(".play-badge");
 
     if (!videoId) {
         playButton.style.display = "none";
     }
 
     playButton.addEventListener("click", event => {
+
         event.preventDefault();
         event.stopPropagation();
 
-        if (!videoId) return;
+        if (!videoId) {
+            return;
+        }
 
         if (activeVideo && activeVideo !== thumbnail) {
-            activeVideo.innerHTML = activeVideo.dataset.originalContent;
+
+            activeVideo.innerHTML =
+                activeVideo.dataset.originalContent;
+
             activeVideo.classList.remove("video-playing");
 
-            const oldButton = activeVideo.querySelector(".play-badge");
+            const oldButton =
+                activeVideo.querySelector(".play-badge");
+
             if (oldButton) {
                 oldButton.style.display = "";
             }
         }
 
         if (!thumbnail.dataset.originalContent) {
-            thumbnail.dataset.originalContent = thumbnail.innerHTML;
+
+            thumbnail.dataset.originalContent =
+                thumbnail.innerHTML;
         }
 
         thumbnail.innerHTML =
+
             '<iframe ' +
+
             'class="video-embed" ' +
+
             'src="https://www.youtube.com/embed/' +
             videoId +
             '?autoplay=1&rel=0" ' +
+
             'title="' +
             escapeHtml(item.title || "YouTube video") +
             '" ' +
+
             'frameborder="0" ' +
+
             'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ' +
-            'allowfullscreen>' +
-            '</iframe>';
+
+            "allowfullscreen>" +
+
+            "</iframe>";
 
         thumbnail.classList.add("video-playing");
+
         activeVideo = thumbnail;
     });
 
     return card;
 };
 
+
+/* =========================================================
+   RESOURCE GRID
+   ========================================================= */
+
 export const renderGrid = (container, items) => {
+
     container.innerHTML = "";
 
-    const fragment = document.createDocumentFragment();
+    const fragment =
+        document.createDocumentFragment();
 
     [...items]
         .sort(
@@ -281,31 +404,44 @@ export const renderGrid = (container, items) => {
                 (RESOURCE_ORDER[b.type] || 99)
         )
         .forEach(item => {
+
             fragment.appendChild(
                 buildCard(item)
             );
+
         });
 
     container.appendChild(fragment);
 };
 
+
+/* =========================================================
+   DPP CARDS
+   ========================================================= */
+
 export const renderDppCards = (container, items) => {
+
     container.innerHTML = "";
 
-    const fragment = document.createDocumentFragment();
+    const fragment =
+        document.createDocumentFragment();
 
     items.forEach(item => {
-        const card = document.createElement("div");
 
-        card.className = "pyq-card dpp-card";
+        const card =
+            document.createElement("div");
 
-        let dppUrl = "#";
+        card.className =
+            "pyq-card dpp-card";
 
-        if (item.url && item.url !== "#") {
-            dppUrl = escapeHtml(item.url);
+        let dppUrl = getCardUrl(item);
+
+        if (dppUrl !== "#") {
+            dppUrl = escapeHtml(dppUrl);
         }
 
         card.innerHTML =
+
             '<div class="pyq-card-body">' +
 
             '<h3 class="pyq-title"></h3>' +
@@ -320,20 +456,24 @@ export const renderDppCards = (container, items) => {
 
             ' <span class="arrow">→</span>' +
 
-            '</a>' +
+            "</a>" +
 
-            '</div>' +
+            "</div>" +
 
-            '</div>';
+            "</div>";
 
-        card.querySelector(".pyq-title").textContent = item.title || "DPP";
+        card.querySelector(".pyq-title").textContent =
+            item.title || "DPP";
 
-        const action = card.querySelector(".card-action");
+        const action =
+            card.querySelector(".card-action");
 
         action.addEventListener("click", event => {
+
             if (!item.url || item.url === "#") {
                 event.preventDefault();
             }
+
         });
 
         fragment.appendChild(card);
@@ -342,104 +482,213 @@ export const renderDppCards = (container, items) => {
     container.appendChild(fragment);
 };
 
+
+/* =========================================================
+   PYQ CARDS
+   ========================================================= */
+
 export const renderPyqCards = (container, items) => {
+
     container.innerHTML = "";
 
-    const fragment = document.createDocumentFragment();
+    const fragment =
+        document.createDocumentFragment();
 
     items.forEach(item => {
-        const card = document.createElement("div");
 
-        card.className = "pyq-card";
+        const card =
+            document.createElement("div");
 
-        let pyqUrl = "#";
+        card.className =
+            "pyq-card";
 
-        if (item.url && item.url !== "#") {
-            pyqUrl = escapeHtml(item.url);
+
+        /* ---------- URL ---------- */
+
+        let pyqUrl = getCardUrl(item);
+
+        if (pyqUrl !== "#") {
+            pyqUrl = escapeHtml(pyqUrl);
         }
 
+
+        /* ---------- QUESTIONS ---------- */
+
         const questionsDetail =
-            item.questions != null && item.questions !== ""
+
+            item.questions != null &&
+                item.questions !== ""
+
                 ? '<div class="pyq-detail">' +
+
                 '<div class="pyq-detail-icon">' +
+
                 '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+
                 '<circle cx="12" cy="12" r="10"></circle>' +
+
                 '<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>' +
+
                 '<path d="M12 17h.01"></path>' +
-                '</svg>' +
-                '</div>' +
-                '<span>' + escapeHtml(String(item.questions)) + ' Questions</span>' +
-                '</div>'
+
+                "</svg>" +
+
+                "</div>" +
+
+                "<span>" +
+                escapeHtml(String(item.questions)) +
+                " Questions</span>" +
+
+                "</div>"
+
                 : "";
+
+
+        /* ---------- DURATION ---------- */
 
         const durationDetail =
-            item.duration != null && item.duration !== ""
+
+            item.duration != null &&
+                item.duration !== ""
+
                 ? '<div class="pyq-detail">' +
+
                 '<div class="pyq-detail-icon">' +
+
                 '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+
                 '<path d="M12 6v6l4 2"></path>' +
+
                 '<circle cx="12" cy="12" r="10"></circle>' +
-                '</svg>' +
-                '</div>' +
-                '<span>' + escapeHtml(String(item.duration)) + ' Minutes</span>' +
-                '</div>'
+
+                "</svg>" +
+
+                "</div>" +
+
+                "<span>" +
+                escapeHtml(String(item.duration)) +
+                " Minutes</span>" +
+
+                "</div>"
+
                 : "";
+
+
+        /* ---------- MARKS ---------- */
 
         const marksDetail =
-            item.marks != null && item.marks !== ""
+
+            item.marks != null &&
+                item.marks !== ""
+
                 ? '<div class="pyq-detail">' +
+
                 '<div class="pyq-detail-icon">' +
+
                 '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+
                 '<path d="M21.801 10A10 10 0 1 1 17 3.335"></path>' +
+
                 '<path d="m9 11 3 3L22 4"></path>' +
-                '</svg>' +
-                '</div>' +
-                '<span>' + escapeHtml(String(item.marks)) + ' Marks</span>' +
-                '</div>'
+
+                "</svg>" +
+
+                "</div>" +
+
+                "<span>" +
+                escapeHtml(String(item.marks)) +
+                " Marks</span>" +
+
+                "</div>"
+
                 : "";
 
-        const shiftDetail =
-            item.shift != null && item.shift !== ""
-                ? '<div class="pyq-detail">' +
-                '<div class="pyq-detail-icon">' +
-                '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
-                '<rect x="3" y="4" width="18" height="16" rx="2"></rect>' +
-                '<path d="M7 8h10"></path>' +
-                '<path d="M7 12h4"></path>' +
-                '<path d="M7 16h6"></path>' +
-                '</svg>' +
-                '</div>' +
-                '<span>' + escapeHtml(String(item.shift)) + '</span>' +
-                '</div>'
-                : "";
+
+        /* ---------- DATE ---------- */
 
         const dateDetail =
-            item.date != null && item.date !== ""
+
+            item.date != null &&
+                item.date !== ""
+
                 ? '<div class="pyq-detail">' +
+
                 '<div class="pyq-detail-icon">' +
+
                 '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+
                 '<rect x="3" y="4" width="18" height="18" rx="2"></rect>' +
+
                 '<line x1="16" y1="2" x2="16" y2="6"></line>' +
+
                 '<line x1="8" y1="2" x2="8" y2="6"></line>' +
+
                 '<line x1="3" y1="10" x2="21" y2="10"></line>' +
-                '</svg>' +
-                '</div>' +
-                '<span>' + escapeHtml(String(item.date)) + '</span>' +
-                '</div>'
+
+                "</svg>" +
+
+                "</div>" +
+
+                "<span>" +
+                escapeHtml(String(item.date)) +
+                "</span>" +
+
+                "</div>"
+
                 : "";
 
+
+        /* ---------- SHIFT ---------- */
+
+        const shiftDetail =
+
+            item.shift != null &&
+                item.shift !== ""
+
+                ? '<div class="pyq-detail">' +
+
+                '<div class="pyq-detail-icon">' +
+
+                '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+
+                '<rect x="3" y="4" width="18" height="16" rx="2"></rect>' +
+
+                '<path d="M7 8h10"></path>' +
+
+                '<path d="M7 12h4"></path>' +
+
+                '<path d="M7 16h6"></path>' +
+
+                "</svg>" +
+
+                "</div>" +
+
+                "<span>" +
+                escapeHtml(String(item.shift)) +
+                "</span>" +
+
+                "</div>"
+
+                : "";
+
+
+        /* ---------- CARD ---------- */
+
         card.innerHTML =
+
             '<div class="pyq-card-body">' +
 
             '<h3 class="pyq-title"></h3>' +
 
             '<div class="pyq-details">' +
+
             questionsDetail +
             durationDetail +
             marksDetail +
             dateDetail +
             shiftDetail +
-            '</div>' +
+
+            "</div>" +
 
             '<div class="pyq-card-foot">' +
 
@@ -451,22 +700,29 @@ export const renderPyqCards = (container, items) => {
 
             ' <span class="arrow">→</span>' +
 
-            '</a>' +
+            "</a>" +
 
-            '</div>' +
+            "</div>" +
 
-            '</div>';
+            "</div>";
+
 
         card.querySelector(".pyq-title").textContent =
             item.title || "Question Paper";
 
-        const action = card.querySelector(".card-action");
+
+        const action =
+            card.querySelector(".card-action");
+
 
         action.addEventListener("click", event => {
+
             if (!item.url || item.url === "#") {
                 event.preventDefault();
             }
+
         });
+
 
         fragment.appendChild(card);
     });

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>PDF Reader</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/6.2.108/pdf_viewer.min.css">
+
+    <link rel="stylesheet" href="reader.css">
+</head>
+
+<body>
+
+    <!-- TOP TOOLBAR -->
+    <header class="toolbar">
+
+        <div class="toolbar-left">
+
+            <div class="document-name" id="bookTitle">
+                PDF Reader
+            </div>
+
+        </div>
+
+
+        <div class="toolbar-center">
+
+            <button id="prevBtn" class="toolbar-button" title="Previous page" aria-label="Previous page">
+                <svg viewBox="0 -960 960 960">
+                    <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+                </svg>
+            </button>
+
+            <div class="page-counter">
+                <input id="pageInput" type="number" min="1" value="1" aria-label="Page number">
+                <span>/</span>
+                <span id="pageCount">0</span>
+            </div>
+
+            <button id="nextBtn" class="toolbar-button" title="Next page" aria-label="Next page">
+                <svg viewBox="0 -960 960 960">
+                    <path d="m376-240-56-56 184-184-184-184 56-56 240 240-240 240Z" />
+                </svg>
+            </button>
+
+            <span class="vertical-separator"></span>
+
+            <div class="zoom-controls">
+
+                <button id="zoomOut" class="toolbar-button" title="Zoom out" aria-label="Zoom out">
+                    <svg viewBox="0 -960 960 960">
+                        <path d="M232-444v-72h496v72H232Z" />
+                    </svg>
+                </button>
+
+                <button id="zoomValue" class="zoom-value" title="Fit to width">
+                    120%
+                </button>
+
+                <button id="zoomIn" class="toolbar-button" title="Zoom in" aria-label="Zoom in">
+                    <svg viewBox="0 -960 960 960">
+                        <path d="M444-444H240v-72h204v-204h72v204h204v72H516v204h-72v-204Z" />
+                    </svg>
+                </button>
+
+            </div>
+
+            <span class="vertical-separator"></span>
+
+            <button id="fitWidth" class="toolbar-button" title="Fit to width" aria-label="Fit to width">
+                <svg viewBox="0 -960 960 960">
+                    <path
+                        d="M263.72-96Q234-96 213-117.15T192-168v-624q0-29.7 21.16-50.85Q234.32-864 264.04-864h432.24Q726-864 747-842.85T768-792v624q0 29.7-21.16 50.85Q725.68-96 695.96-96H263.72ZM696-168v-624H264v624h432Zm-336-72 120-120 120 120-120-360-120 360Z" />
+                </svg>
+            </button>
+
+        </div>
+
+
+        <div class="toolbar-right">
+
+            <button id="searchBtn" class="toolbar-button desktop-tool" title="Search" aria-label="Search">
+                <svg viewBox="0 -960 960 960">
+                    <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                </svg>
+            </button>
+
+            <button id="printBtn" class="toolbar-button desktop-tool" title="Print" aria-label="Print">
+                <svg viewBox="0 -960 960 960">
+                    <path
+                        d="M648-624v-120H312v120h-72v-192h480v192h-72Zm-480 72h625-625Zm539.79 96q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5ZM648-216v-144H312v144h336Zm72 72H240v-144H96v-240q0-40 28-68t68-28h576q40 0 68 28t28 68v240H720v144Zm73-216v-153.67Q793-530 781-541t-28-11H206q-16.15 0-27.07 11.04Q168-529.92 168-513.6V-360h72v-72h480v72h73Z" />
+                </svg>
+            </button>
+
+            <button id="fullscreenBtn" class="toolbar-button" title="Fullscreen" aria-label="Fullscreen">
+                <svg viewBox="0 -960 960 960">
+                    <path
+                        d="M120-120v-200h72v128h128v72H120Zm520 0v-72h128v-128h72v200H640ZM120-640v-200h200v72H192v128h-72Zm648 0v-128H640v-72h200v200h-72Z" />
+                </svg>
+            </button>
+
+            <a id="downloadBtn" class="toolbar-button download" title="Download" aria-label="Download">
+                <svg viewBox="0 -960 960 960">
+                    <path
+                        d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z" />
+                </svg>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- SEARCH -->
+    <div id="searchPanel" class="search-panel">
+
+        <div class="search-inner">
+
+            <svg viewBox="0 -960 960 960">
+                <path
+                    d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+            </svg>
+
+            <input id="searchInput" type="search" placeholder="Find in document">
+
+            <span id="searchStatus"></span>
+
+            <button id="closeSearch" aria-label="Close search">
+                <svg viewBox="0 -960 960 960">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PDF VIEWER -->
+    <main id="viewer">
+
+        <div id="pdfContainer"></div>
+
+        <div id="loading">
+
+            <div class="spinner"></div>
+
+            <div class="loading-title">
+                Loading PDF
+            </div>
+
+            <div class="loading-text">
+                Please wait...
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- MOBILE BOTTOM BAR -->
+    <div class="mobile-toolbar">
+
+        <button id="mobilePrev" aria-label="Previous page">
+            <svg viewBox="0 -960 960 960">
+                <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg>
+        </button>
+
+        <div class="page-counter">
+            <input id="mobilePageInput" type="number" min="1" value="1">
+            <span>/</span>
+            <span id="mobilePageCount">0</span>
+        </div>
+
+        <button id="mobileNext" aria-label="Next page">
+            <svg viewBox="0 -960 960 960">
+                <path d="m376-240-56-56 184-184-184-184 56-56 240 240-240 240Z" />
+            </svg>
+        </button>
+
+    </div>
+
+
+    <script type="module" src="reader.js"></script>
+
+</body>
+
+</html>
