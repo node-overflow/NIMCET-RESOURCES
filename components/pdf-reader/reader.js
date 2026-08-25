@@ -271,23 +271,34 @@ const renderPage = async (pageInfo) => {
 
 const observer = new IntersectionObserver(
     entries => {
+        let mostVisiblePage = null;
+        let highestVisibility = 0;
+
         for (const entry of entries) {
-            if (entry.isIntersecting) {
-                const pageNumber = Number(
+            if (!entry.isIntersecting) {
+                continue;
+            }
+
+            const visibility = entry.intersectionRatio;
+
+            if (visibility > highestVisibility) {
+                highestVisibility = visibility;
+                mostVisiblePage = Number(
                     entry.target.dataset.page
                 );
-
-                renderNearbyPages(pageNumber);
-
-                currentPage = pageNumber;
-                updatePageUI();
             }
+        }
+
+        if (mostVisiblePage !== null) {
+            currentPage = mostVisiblePage;
+            updatePageUI();
+            renderNearbyPages(currentPage);
         }
     },
     {
         root: viewer,
-        rootMargin: "1200px 0px 1200px 0px",
-        threshold: 0.01
+        rootMargin: "0px",
+        threshold: [0.25, 0.5, 0.75, 1]
     }
 );
 
@@ -326,7 +337,7 @@ const updatePageUI = () => {
    PAGE JUMP
 ========================================================= */
 
-const jumpToPage = (pageNumber) => {
+const jumpToPage = pageNumber => {
     if (!pdf) {
         return;
     }
@@ -342,14 +353,14 @@ const jumpToPage = (pageNumber) => {
         return;
     }
 
+    currentPage = pageNumber;
     renderNearbyPages(pageNumber);
 
     page.wrapper.scrollIntoView({
-        behavior: "smooth",
+        behavior: "auto",
         block: "start"
     });
 
-    currentPage = pageNumber;
     updatePageUI();
 };
 
@@ -358,8 +369,15 @@ const jumpToPage = (pageNumber) => {
    DESKTOP PAGE JUMP
 ========================================================= */
 
-pageInput.addEventListener("change", () => {
-    jumpToPage(pageInput.value);
+pageInput.addEventListener("change", event => {
+    const value = event.target.value.trim();
+
+    if (!value) {
+        updatePageUI();
+        return;
+    }
+
+    jumpToPage(Number(value));
 });
 
 
@@ -367,8 +385,15 @@ pageInput.addEventListener("change", () => {
    MOBILE PAGE JUMP
 ========================================================= */
 
-mobilePageInput.addEventListener("change", () => {
-    jumpToPage(mobilePageInput.value);
+mobilePageInput.addEventListener("change", event => {
+    const value = event.target.value.trim();
+
+    if (!value) {
+        updatePageUI();
+        return;
+    }
+
+    jumpToPage(Number(value));
 });
 
 
