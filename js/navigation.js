@@ -326,7 +326,7 @@ export const goToUpdates = () => {
 export const goToPyqs = () => {
     state.examKey = null;
 
-    showView("pyqs");
+    showView("pyqs", { pushHistoryEntry: false });
 
     renderForView();
 };
@@ -344,7 +344,7 @@ export const goToDpps = () => {
     state.dppChapterKey = null;
     state.dppChapterName = null;
 
-    showView("dpps");
+    showView("dpps", { pushHistoryEntry: false });
 
     renderForView();
 };
@@ -371,7 +371,7 @@ export const goToDppsChapter = (chapterKey, chapterName) => {
 export const goToMocks = () => {
     state.mockKey = null;
 
-    showView("mocks");
+    showView("mocks", { pushHistoryEntry: false });
 
     renderForView();
 };
