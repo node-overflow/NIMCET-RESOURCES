@@ -116,8 +116,8 @@ export const EXAMS = [
         symbol: "J"
     },
     {
-        key: "JMI",
-        name: "JMI",
+        key: "JAMIA MCA",
+        name: "JAMIA MCA",
         full: "Jamia Millia Islamia MCA Entrance",
         symbol: "J"
     },

@@ -603,5 +603,105 @@
     "marks": 100,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/tancet/2001.pdf"
+  },
+  {
+    "exam": "JAMIA MCA",
+    "year": 2026,
+    "title": "JAMIA MCA 2026",
+    "questions": 100,
+    "duration": 90,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/jamia%20mca/2026.pdf"
+  },
+  {
+    "exam": "JAMIA MCA",
+    "year": 2025,
+    "title": "JAMIA MCA 2025",
+    "questions": 100,
+    "duration": 90,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/jamia%20mca/2025.pdf"
+  },
+  {
+    "exam": "JAMIA MCA",
+    "year": 2024,
+    "title": "JAMIA MCA 2024",
+    "questions": 100,
+    "duration": 90,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/jamia%20mca/2024.pdf"
+  },
+  {
+    "exam": "JAMIA MCA",
+    "year": 2023,
+    "title": "JAMIA MCA 2023",
+    "questions": 100,
+    "duration": 90,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/jamia%20mca/2023.pdf"
+  },
+  {
+    "exam": "JAMIA MCA",
+    "year": 2022,
+    "title": "JAMIA MCA 2022",
+    "questions": 100,
+    "duration": 90,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/jamia%20mca/2022.pdf"
+  },
+  {
+    "exam": "JAMIA MCA",
+    "year": 2021,
+    "title": "JAMIA MCA 2021",
+    "questions": 100,
+    "duration": 90,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/jamia%20mca/2021.pdf"
+  },
+  {
+    "exam": "JAMIA MCA",
+    "year": 2020,
+    "title": "JAMIA MCA 2020",
+    "questions": 100,
+    "duration": 90,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/jamia%20mca/2020.pdf"
+  },
+  {
+    "exam": "JAMIA MCA",
+    "year": 2019,
+    "title": "JAMIA MCA 2019",
+    "questions": 100,
+    "duration": 90,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/jamia%20mca/2019.pdf"
+  },
+  {
+    "exam": "JAMIA MCA",
+    "year": 2017,
+    "title": "JAMIA MCA 2017",
+    "questions": 100,
+    "duration": 90,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/jamia%20mca/2017.pdf"
+  },
+  {
+    "exam": "JAMIA MCA",
+    "year": 2016,
+    "title": "JAMIA MCA 2016",
+    "questions": 100,
+    "duration": 90,
+    "marks": 100,
+    "action": "open",
+    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/jamia%20mca/2016.pdf"
   }
 ]
