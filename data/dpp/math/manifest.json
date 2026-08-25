@@ -1,6 +1,10 @@
 [
-  { "key": "series", "name": "Sequences & Series", "count": 3 },
-  { "key": "probability", "name": "Probability", "count": 2 },
-  { "key": "prbability", "name": "Probability", "count": 2 },
-  { "key": "prbabildsafasdfity", "name": "Probability", "count": 2 }
+  {
+    "key": "basic math",
+    "name": "Basic Mathematics"
+  },
+  {
+    "key": "series",
+    "name": "Sequences & Series"
+  }
 ]
