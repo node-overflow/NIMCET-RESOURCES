@@ -9,6 +9,10 @@ import {
 
 import { escapeHtml } from "./utils.js";
 
+export const mockByKey = key => {
+    return MOCK_TYPES.find(mock => mock.key === key) || null;
+};
+
 export const renderMocksGrid = (onMockClick) => {
     elMocksGrid.innerHTML = "";
 

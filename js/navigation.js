@@ -29,10 +29,56 @@ import {
 
 import {
     renderMocksGrid,
-    renderMocksDetail
+    renderMocksDetail,
+    mockByKey
 } from "./mocks.js";
 
 import { closeSidebar } from "./sidebar.js";
+
+let historyInitialized = false;
+
+const buildSnapshot = () => ({
+    view: state.view,
+    subject: state.subject,
+    type: state.type,
+    search: state.search,
+    examKey: state.examKey,
+    examFilter: state.examFilter,
+    dppSubject: state.dppSubject,
+    dppChapterKey: state.dppChapterKey,
+    dppChapterName: state.dppChapterName,
+    mockKey: state.mockKey,
+    updateCategory: state.updateCategory
+});
+
+const applySnapshot = (snapshot) => {
+    const s = snapshot || {};
+
+    state.subject = s.subject ?? null;
+    state.type = s.type ?? null;
+    state.search = s.search ?? "";
+    state.examKey = s.examKey ?? null;
+    state.examFilter = s.examFilter ?? null;
+    state.dppSubject = s.dppSubject ?? null;
+    state.dppChapterKey = s.dppChapterKey ?? null;
+    state.dppChapterName = s.dppChapterName ?? null;
+    state.mockKey = s.mockKey ?? null;
+    state.updateCategory = s.updateCategory ?? null;
+
+    elSearchInput.value = state.search;
+
+    showView(s.view || "home", { pushHistoryEntry: false });
+
+    renderForView();
+};
+
+export const initHistoryNavigation = () => {
+    window.addEventListener("popstate", event => {
+        applySnapshot(event.state);
+    });
+};
+
+// ---------------------------------------------------------------------------
 
 export const setActiveNav = () => {
     document.querySelectorAll(".nav-item").forEach(button => {
@@ -126,7 +172,10 @@ export const setActiveNav = () => {
     }
 };
 
-export const showView = name => {
+export const showView = (name, options = {}) => {
+    const pushHistoryEntry = options.pushHistoryEntry !== false;
+    const previousView = state.view;
+
     state.view = name;
 
     Object.keys(VIEWS).forEach(key => {
@@ -142,34 +191,98 @@ export const showView = name => {
     closeSidebar();
 
     window.scrollTo(0, 0);
+
+    const snapshot = buildSnapshot();
+
+    if (!historyInitialized) {
+        history.replaceState(snapshot, "", "");
+        historyInitialized = true;
+    } else if (pushHistoryEntry) {
+        if (previousView === name) {
+            history.replaceState(snapshot, "", "");
+        } else {
+            history.pushState(snapshot, "", "");
+        }
+    }
+};
+
+const renderForView = () => {
+    switch (state.view) {
+        case "home":
+            renderHome(
+                subject =>
+                    goToResources({
+                        subject,
+                        type: null,
+                        search: ""
+                    }),
+                type =>
+                    goToResources({
+                        subject: null,
+                        type,
+                        search: ""
+                    }),
+                examKey =>
+                    goToPyqsExam(examKey),
+                () =>
+                    goToResources({
+                        subject: null,
+                        type: null,
+                        search: ""
+                    }),
+                () =>
+                    goToPyqs()
+            );
+            break;
+
+        case "resources":
+            renderResources();
+            break;
+
+        case "updates":
+            updateUnreadBadge();
+            renderUpdates();
+            break;
+
+        case "pyqs":
+            renderExamGrid(goToPyqsExam);
+            break;
+
+        case "pyqs-exam":
+            renderPyqsExam();
+            break;
+
+        case "dpps":
+            renderDppSubjectGrid(goToDppsSubject);
+            break;
+
+        case "dpps-subject":
+            renderDppChapters(goToDppsChapter);
+            break;
+
+        case "dpps-chapter":
+            renderDppChapterItems();
+            break;
+
+        case "mocks":
+            renderMocksGrid(goToMocksDetail);
+            break;
+
+        case "mocks-detail": {
+            const mock = mockByKey(state.mockKey);
+
+            renderMocksDetail(mock ? mock.name : state.mockKey);
+            break;
+        }
+
+        default:
+            break;
+    }
 };
 
 export const goHome = () => {
     showView("home");
-    renderHome(
-        subject =>
-            goToResources({
-                subject,
-                type: null,
-                search: ""
-            }),
-        type =>
-            goToResources({
-                subject: null,
-                type,
-                search: ""
-            }),
-        examKey =>
-            goToPyqsExam(examKey),
-        () =>
-            goToResources({
-                subject: null,
-                type: null,
-                search: ""
-            }),
-        () =>
-            goToPyqs()
-    );
+    renderForView();
 };
 
 export const goToResources = opts => {
@@ -201,15 +314,13 @@ export const goToResources = opts => {
 
     showView("resources");
 
-    renderResources();
+    renderForView();
 };
 
 export const goToUpdates = () => {
     showView("updates");
 
-    updateUnreadBadge();
-
-    renderUpdates();
+    renderForView();
 };
 
 export const goToPyqs = () => {
@@ -217,9 +328,7 @@ export const goToPyqs = () => {
 
     showView("pyqs");
 
-    renderExamGrid(
-        goToPyqsExam
-    );
+    renderForView();
 };
 
 export const goToPyqsExam = examKey => {
@@ -227,7 +336,7 @@ export const goToPyqsExam = examKey => {
 
     showView("pyqs-exam");
 
-    renderPyqsExam();
+    renderForView();
 };
 
 export const goToDpps = () => {
@@ -237,7 +346,7 @@ export const goToDpps = () => {
 
     showView("dpps");
 
-    renderDppSubjectGrid(goToDppsSubject);
+    renderForView();
 };
 
 export const goToDppsSubject = subjectName => {
@@ -247,7 +356,7 @@ export const goToDppsSubject = subjectName => {
 
     showView("dpps-subject");
 
-    renderDppChapters(goToDppsChapter);
+    renderForView();
 };
 
 export const goToDppsChapter = (chapterKey, chapterName) => {
@@ -256,7 +365,7 @@ export const goToDppsChapter = (chapterKey, chapterName) => {
 
     showView("dpps-chapter");
 
-    renderDppChapterItems();
+    renderForView();
 };
 
 export const goToMocks = () => {
@@ -264,7 +373,7 @@ export const goToMocks = () => {
 
     showView("mocks");
 
-    renderMocksGrid(goToMocksDetail);
+    renderForView();
 };
 
 export const goToMocksDetail = (mockKey, mockName) => {
@@ -272,5 +381,5 @@ export const goToMocksDetail = (mockKey, mockName) => {
 
     showView("mocks-detail");
 
-    renderMocksDetail(mockName);
+    renderForView();
 };
