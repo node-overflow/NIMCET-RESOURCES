@@ -1,15 +1,15 @@
 [
-    {
+  {
     "title": "B S Sijwali",
     "type": "Book",
     "subject": "Logical Reasoning",
     "chapter": "Foundation",
-    "desc": "Standard reference covering both verbal and non-verbal reasoning with graded exercises.",
-    "difficulty": "Beginner",
     "bestFor": "Foundation",
+    "image": "https://m.media-amazon.com/images/I/61nPOybeo3L._SL1360_.jpg",
     "tags": ["verbal reasoning", "non-verbal reasoning"],
     "featured": true,
+    "reader": true,
     "action": "open",
-    "url": "https://t.me/nimcet_resources/8"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/reasoning%20books/B%20S%20Sijwali%20Reasoning.pdf"
   }
 ]
