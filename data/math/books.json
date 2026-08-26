@@ -22,7 +22,7 @@
     "featured": true,
     "reader": true,
     "action": "open",
-    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/math%20books/RD%20Sharma%20Volume%20I.pdf"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/RD%20Sharma%20Volume%20I.pdf"
   },
   {
     "title": "RD SHARMA VOL 2",
@@ -81,7 +81,8 @@
     "image": "https://m.media-amazon.com/images/I/512YgSZZLCL._AC_UY327_FMwebp_QL65_.jpg",
     "tags": ["mca entrance", "mathematics practice", "nimcet preparation"],
     "featured": false,
-    "action": "download",
+    "reader": true,
+    "action": "open",
     "url": "https://raw.githubusercontent.com/rawcontentgit/NIMCET-RESOURCES/master/math%20books/Arihant%20MCA%20Package.pdf"
   },
   {

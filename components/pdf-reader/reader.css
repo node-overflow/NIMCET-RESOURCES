@@ -92,7 +92,9 @@ button {
   color: #e8eaed;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.12s ease;
+  transition:
+    background 0.12s ease,
+    transform 0.1s ease;
 }
 
 .toolbar-button svg {
@@ -108,6 +110,12 @@ button {
 
 .toolbar-button:active {
   background: rgba(255, 255, 255, 0.16);
+  transform: scale(0.92);
+}
+
+.toolbar-button:focus-visible {
+  outline: 2px solid #8ab4f8;
+  outline-offset: 1px;
 }
 
 .toolbar-button:disabled {
@@ -165,6 +173,7 @@ button {
 
 #pageInput:focus {
   background: #46474a;
+  outline: 1px solid #8ab4f8;
 }
 
 #pageInput::-webkit-inner-spin-button,
@@ -255,11 +264,22 @@ button {
   background: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
   margin: 0 auto;
+  transition: width 0.15s ease;
 }
 
 .pdf-page {
   display: block;
   background: white;
+  animation: page-in 0.15s ease-out;
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* =========================================================
@@ -459,7 +479,7 @@ button {
 
   #viewer {
     top: 52px;
-    bottom: 52px;
+    bottom: calc(52px + env(safe-area-inset-bottom, 0px));
   }
 
   #pdfContainer {
@@ -478,7 +498,7 @@ button {
   }
 
   #loading {
-    inset: 52px 0 52px 0;
+    inset: 52px 0 calc(52px + env(safe-area-inset-bottom, 0px)) 0;
   }
 
   /* Mobile bottom controls */
@@ -488,7 +508,8 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 52px;
+    height: calc(52px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
     z-index: 1000;
     display: flex;
     align-items: center;

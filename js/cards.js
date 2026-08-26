@@ -23,17 +23,29 @@ const getCardUrl = (item) => {
         return "#";
     }
 
+    let url = item.url;
+
+    if (url.includes("github.com/") && url.includes("/blob/")) {
+        url = url.replace(
+            "https://github.com/",
+            "https://raw.githubusercontent.com/"
+        ).replace(
+            "/blob/",
+            "/"
+        );
+    }
+
     if (item.reader === true) {
         return (
             "components/pdf-reader/reader.html" +
             "?file=" +
-            encodeURIComponent(item.url) +
+            encodeURIComponent(url) +
             "&title=" +
             encodeURIComponent(item.title || "PDF Reader")
         );
     }
 
-    return item.url;
+    return url;
 };
 
 

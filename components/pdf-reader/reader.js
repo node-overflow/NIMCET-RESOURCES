@@ -2,17 +2,11 @@
 
 import * as pdfjsLib from "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/6.2.108/pdf.min.mjs";
 
-
-/* =========================================================
-   PDF.JS WORKER
-========================================================= */
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/6.2.108/pdf.worker.min.mjs";
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+    "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/6.2.108/pdf.worker.min.mjs";
 
 
-/* =========================================================
-   ELEMENTS
-========================================================= */
+/* ===== ELEMENTS ===== */
 
 const viewer = document.querySelector("#viewer");
 const container = document.querySelector("#pdfContainer");
@@ -40,292 +34,291 @@ const mobilePageCount = document.querySelector("#mobilePageCount");
 const printBtn = document.querySelector("#printBtn");
 
 
-/* =========================================================
-   URL
-========================================================= */
+/* ===== URL PARAMS ===== */
 
 const params = new URLSearchParams(window.location.search);
-
 const pdfUrl = params.get("file");
-
 const title = params.get("title") || "PDF Reader";
 
-
 if (!pdfUrl) {
-
     loading.innerHTML = `
-        <div class="loading-title">
-            PDF not found
-        </div>
-
-        <div class="loading-text">
-            No document was provided.
-        </div>
+        <div class="loading-title">PDF not found</div>
+        <div class="loading-text">No document was provided.</div>
     `;
-
-    throw new Error(
-        "Missing PDF URL"
-    );
+    throw new Error("Missing PDF URL");
 }
 
-
-/* =========================================================
-   DOCUMENT INFO
-========================================================= */
-
 bookTitle.textContent = title;
-
 document.title = `${title} - PDF Reader`;
-
 downloadBtn.href = pdfUrl;
 
 
-/* =========================================================
-   STATE
-========================================================= */
+/* ===== STATE ===== */
 
 let pdf = null;
 let scale = 1.2;
 let fitWidthMode = false;
+let currentPage = 1;
+let isNavigating = false;
 
 const pages = [];
+const RENDER_AHEAD = 2;
+const RENDER_BEHIND = 1;
+const MAX_DPR = 1.5;
+const MAX_CONCURRENT_RENDERS = 3;
 
-let currentPage = 1;
+let activeRenders = 0;
+let renderGeneration = 0;
+let basePageWidth = 0;
+let baseRatio = 1;
+let scrollRaf = null;
+
+const textCache = new Map();
 
 
-/* =========================================================
-   LOAD PDF
-========================================================= */
+/* ===== LAYOUT HELPERS ===== */
+
+const getPageWidth = () => {
+    const margin = window.innerWidth <= 600 ? 0 : 40;
+    return Math.max(200, viewer.clientWidth - margin);
+};
+
+const updateZoomText = () => {
+    zoomValue.textContent = fitWidthMode ? "Fit" : `${Math.round(scale * 100)}%`;
+};
+
+const calculateFitWidth = () => {
+    if (!basePageWidth) return;
+    scale = Math.max(0.5, Math.min(2.5, getPageWidth() / basePageWidth));
+    updateZoomText();
+};
+
+
+/* ===== PLACEHOLDERS ===== */
+
+const createPagePlaceholders = () => {
+    const width = getPageWidth();
+    const height = width * baseRatio;
+    const fragment = document.createDocumentFragment();
+
+    for (let n = 1; n <= pdf.numPages; n++) {
+        const wrapper = document.createElement("div");
+        wrapper.className = "pdf-page-wrapper";
+        wrapper.dataset.page = n;
+        wrapper.style.width = `${width}px`;
+        wrapper.style.minHeight = `${height}px`;
+        wrapper.style.contain = "layout paint style";
+        fragment.appendChild(wrapper);
+
+        pages.push({ number: n, wrapper, rendered: false, rendering: false, renderTask: null });
+    }
+
+    container.appendChild(fragment);
+};
+
+
+/* ===== LOAD PDF ===== */
 
 const loadPDF = async () => {
     try {
-        pdf = await pdfjsLib.getDocument({
-            url: pdfUrl
-        }).promise;
+        const loadingTask = pdfjsLib.getDocument({
+            url: pdfUrl,
+            rangeChunkSize: 1024 * 1024,
+            disableRange: false,
+            disableStream: false,
+            disableAutoFetch: true,
+            isEvalSupported: true,
+            useSystemFonts: true,
+            verbosity: 0
+        });
+
+        loadingTask.onProgress = progress => {
+            if (progress.total && progress.loaded) {
+                const percent = Math.round((progress.loaded / progress.total) * 100);
+                const text = loading.querySelector(".loading-text");
+                if (text) text.textContent = `Loading PDF… ${percent}%`;
+            }
+        };
+
+        pdf = await loadingTask.promise;
 
         pageCount.textContent = pdf.numPages;
         mobilePageCount.textContent = pdf.numPages;
-
         pageInput.max = pdf.numPages;
         mobilePageInput.max = pdf.numPages;
 
-        await createPagePlaceholders();
+        const firstPage = await pdf.getPage(1);
+        const viewport = firstPage.getViewport({ scale: 1 });
+        basePageWidth = viewport.width;
+        baseRatio = viewport.height / viewport.width;
+        firstPage.cleanup();
+
+        createPagePlaceholders();
 
         loading.remove();
 
-        renderNearbyPages(1);
+        scheduleRender(1);
+
     } catch (error) {
         console.error("PDF loading error:", error);
-
         loading.innerHTML = `
-            <div class="loading-title">
-                Unable to open PDF
-            </div>
-
-            <div class="loading-text">
-                Please check the PDF URL and try again.
-            </div>
+            <div class="loading-title">Unable to open PDF</div>
+            <div class="loading-text">Please check the PDF URL and try again.</div>
         `;
     }
 };
 
 
-/* =========================================================
-   CREATE PAGE PLACEHOLDERS
-========================================================= */
+/* ===== RENDER QUEUE ===== */
 
-const createPagePlaceholders = async () => {
-    const firstPage = await pdf.getPage(1);
-    const firstViewport = firstPage.getViewport({
-        scale: 1
-    });
+const renderQueue = [];
 
-    const ratio = firstViewport.height / firstViewport.width;
+const queuePage = pageNumber => {
+    if (!pdf || pageNumber < 1 || pageNumber > pdf.numPages) return;
 
-    for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
-        const wrapper = document.createElement("div");
+    const pageInfo = pages[pageNumber - 1];
+    if (!pageInfo || pageInfo.rendered || pageInfo.rendering) return;
+    if (renderQueue.some(item => item.page === pageNumber)) return;
 
-        wrapper.className = "pdf-page-wrapper";
-        wrapper.dataset.page = pageNumber;
+    renderQueue.push({ page: pageNumber, generation: renderGeneration });
+};
 
-        const width = getPageWidth();
+const processRenderQueue = async () => {
+    while (activeRenders < MAX_CONCURRENT_RENDERS && renderQueue.length) {
+        renderQueue.sort((a, b) => Math.abs(a.page - currentPage) - Math.abs(b.page - currentPage));
 
-        wrapper.style.width = `${width}px`;
-        wrapper.style.minHeight = `${width * ratio}px`;
+        const item = renderQueue.shift();
+        if (!item || item.generation !== renderGeneration) continue;
 
-        container.appendChild(wrapper);
+        const pageInfo = pages[item.page - 1];
+        if (!pageInfo) continue;
 
-        pages.push({
-            number: pageNumber,
-            wrapper: wrapper,
-            rendered: false,
-            rendering: false
-        });
+        activeRenders++;
+        renderPage(pageInfo)
+            .catch(error => console.error(`Page ${item.page} failed:`, error))
+            .finally(() => {
+                activeRenders--;
+                processRenderQueue();
+            });
     }
 };
 
+const scheduleRender = pageNumber => {
+    if (!pdf) return;
 
-/* =========================================================
-   PAGE WIDTH
-========================================================= */
+    const start = Math.max(1, pageNumber - RENDER_BEHIND);
+    const end = Math.min(pdf.numPages, pageNumber + RENDER_AHEAD);
 
-const getPageWidth = () => {
-    const available = viewer.clientWidth;
-    const margin = window.innerWidth <= 600 ? 0 : 40;
-
-    return Math.max(200, available - margin);
-};
-
-
-/* =========================================================
-   FIT WIDTH
-========================================================= */
-
-const calculateScale = async () => {
-    const page = await pdf.getPage(1);
-    const viewport = page.getViewport({ scale: 1 });
-    const availableWidth = getPageWidth();
-
-    scale = availableWidth / viewport.width;
-    scale = Math.max(0.5, Math.min(2.5, scale));
-
-    updateZoomText();
-};
-
-
-/* =========================================================
-   RENDER PAGE
-========================================================= */
-
-const renderPage = async (pageInfo) => {
-    if (pageInfo.rendered || pageInfo.rendering) {
-        return;
+    queuePage(pageNumber);
+    for (let i = start; i <= end; i++) {
+        if (i !== pageNumber) queuePage(i);
     }
 
+    processRenderQueue();
+};
+
+
+/* ===== RENDER PAGE ===== */
+
+const renderPage = async pageInfo => {
+    if (pageInfo.rendered || pageInfo.rendering) return;
     pageInfo.rendering = true;
 
     try {
         const page = await pdf.getPage(pageInfo.number);
 
-        if (fitWidthMode) {
-            await calculateScale();
-        }
+        if (fitWidthMode) calculateFitWidth();
 
-        const viewport = page.getViewport({
-            scale
-        });
-
-        const outputScale = Math.min(
-            window.devicePixelRatio || 1,
-            2
-        );
+        const viewport = page.getViewport({ scale });
+        const outputScale = Math.min(window.devicePixelRatio || 1, MAX_DPR);
 
         const canvas = document.createElement("canvas");
-
         canvas.className = "pdf-page";
-
         canvas.width = Math.floor(viewport.width * outputScale);
         canvas.height = Math.floor(viewport.height * outputScale);
-
         canvas.style.width = `${viewport.width}px`;
         canvas.style.height = `${viewport.height}px`;
 
-        const context = canvas.getContext("2d");
+        const context = canvas.getContext("2d", { alpha: false, willReadFrequently: false });
 
-        pageInfo.wrapper.innerHTML = "";
+        const oldCanvas = pageInfo.wrapper.querySelector("canvas");
         pageInfo.wrapper.style.width = `${viewport.width}px`;
         pageInfo.wrapper.style.minHeight = `${viewport.height}px`;
-
         pageInfo.wrapper.appendChild(canvas);
 
-        await page.render({
+        const renderTask = page.render({
             canvasContext: context,
             viewport,
-            transform: outputScale !== 1
-                ? [
-                    outputScale,
-                    0,
-                    0,
-                    outputScale,
-                    0,
-                    0
-                ]
-                : null
-        }).promise;
+            transform: outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : null,
+            annotationMode: pdfjsLib.AnnotationMode?.DISABLE ?? 0
+        });
+
+        pageInfo.renderTask = renderTask;
+        await renderTask.promise;
+
+        if (oldCanvas && oldCanvas !== canvas) oldCanvas.remove();
 
         pageInfo.rendered = true;
+        page.cleanup();
+
     } catch (error) {
-        console.error(
-            `Page ${pageInfo.number} failed:`,
-            error
-        );
+        if (error?.name !== "RenderingCancelledException") {
+            console.error(`Page ${pageInfo.number} failed:`, error);
+        }
     } finally {
         pageInfo.rendering = false;
+        pageInfo.renderTask = null;
     }
 };
 
 
-/* =========================================================
-   LAZY RENDERING
-========================================================= */
+/* ===== VISIBILITY -> PREFETCH ===== */
 
-const observer = new IntersectionObserver(
+const renderObserver = new IntersectionObserver(
     entries => {
-        let mostVisiblePage = null;
-        let highestVisibility = 0;
-
         for (const entry of entries) {
-            if (!entry.isIntersecting) {
-                continue;
+            if (entry.isIntersecting) {
+                scheduleRender(Number(entry.target.dataset.page));
             }
-
-            const visibility = entry.intersectionRatio;
-
-            if (visibility > highestVisibility) {
-                highestVisibility = visibility;
-                mostVisiblePage = Number(
-                    entry.target.dataset.page
-                );
-            }
-        }
-
-        if (mostVisiblePage !== null) {
-            currentPage = mostVisiblePage;
-            updatePageUI();
-            renderNearbyPages(currentPage);
         }
     },
-    {
-        root: viewer,
-        rootMargin: "0px",
-        threshold: [0.25, 0.5, 0.75, 1]
-    }
+    { root: viewer, rootMargin: "400px 0px 400px 0px", threshold: 0.01 }
 );
 
 const observePages = () => {
+    for (const page of pages) renderObserver.observe(page.wrapper);
+};
+
+
+/* ===== CURRENT PAGE FROM SCROLL POSITION ===== */
+
+const trackCurrentPage = () => {
+    if (isNavigating || !pages.length) return;
+
+    const probe = viewer.scrollTop + 1;
+    let found = pages[0].number;
+
     for (const page of pages) {
-        observer.observe(page.wrapper);
+        if (page.wrapper.offsetTop <= probe) found = page.number;
+        else break;
+    }
+
+    if (found !== currentPage) {
+        currentPage = found;
+        updatePageUI();
     }
 };
 
-
-/* =========================================================
-   RENDER NEARBY
-========================================================= */
-
-const renderNearbyPages = (pageNumber) => {
-    const start = Math.max(1, pageNumber - 2);
-    const end = Math.min(pdf.numPages, pageNumber + 2);
-
-    for (let i = start; i <= end; i++) {
-        renderPage(pages[i - 1]);
-    }
-};
+viewer.addEventListener("scroll", () => {
+    if (scrollRaf) return;
+    scrollRaf = requestAnimationFrame(() => {
+        scrollRaf = null;
+        trackCurrentPage();
+    });
+}, { passive: true });
 
 
-/* =========================================================
-   PAGE UI
-========================================================= */
+/* ===== PAGE UI ===== */
 
 const updatePageUI = () => {
     pageInput.value = currentPage;
@@ -333,160 +326,107 @@ const updatePageUI = () => {
 };
 
 
-/* =========================================================
-   PAGE JUMP
-========================================================= */
+/* ===== PAGE JUMP ===== */
 
 const jumpToPage = pageNumber => {
-    if (!pdf) {
-        return;
-    }
+    if (!pdf) return;
 
-    pageNumber = Math.max(
-        1,
-        Math.min(pdf.numPages, Number(pageNumber))
-    );
+    pageNumber = Math.max(1, Math.min(pdf.numPages, Number(pageNumber)));
+    if (!Number.isFinite(pageNumber)) return;
 
     const page = pages[pageNumber - 1];
-
-    if (!page) {
-        return;
-    }
+    if (!page) return;
 
     currentPage = pageNumber;
-    renderNearbyPages(pageNumber);
-
-    page.wrapper.scrollIntoView({
-        behavior: "auto",
-        block: "start"
-    });
-
     updatePageUI();
+
+    renderGeneration++;
+    renderQueue.length = 0;
+    scheduleRender(pageNumber);
+
+    isNavigating = true;
+    const gap = window.innerWidth <= 600 ? 0 : 10;
+    viewer.scrollTop = Math.max(0, page.wrapper.offsetTop - gap);
+
+    requestAnimationFrame(() => requestAnimationFrame(() => { isNavigating = false; }));
 };
 
 
-/* =========================================================
-   DESKTOP PAGE JUMP
-========================================================= */
+/* ===== PAGE INPUTS ===== */
 
-pageInput.addEventListener("change", event => {
+const handlePageInput = event => {
     const value = event.target.value.trim();
-
-    if (!value) {
-        updatePageUI();
-        return;
-    }
-
+    if (!value) { updatePageUI(); return; }
     jumpToPage(Number(value));
-});
-
-
-/* =========================================================
-   MOBILE PAGE JUMP
-========================================================= */
-
-mobilePageInput.addEventListener("change", event => {
-    const value = event.target.value.trim();
-
-    if (!value) {
-        updatePageUI();
-        return;
-    }
-
-    jumpToPage(Number(value));
-});
-
-
-/* =========================================================
-   PREVIOUS
-========================================================= */
-
-const previousPage = () => {
-    jumpToPage(Math.max(1, currentPage - 1));
 };
+
+pageInput.addEventListener("change", handlePageInput);
+mobilePageInput.addEventListener("change", handlePageInput);
+
+
+/* ===== PREV / NEXT ===== */
+
+const previousPage = () => { if (pdf) jumpToPage(currentPage - 1); };
+const nextPage = () => { if (pdf) jumpToPage(currentPage + 1); };
 
 prevBtn.addEventListener("click", previousPage);
 mobilePrev.addEventListener("click", previousPage);
-
-
-/* =========================================================
-   NEXT
-========================================================= */
-
-const nextPage = () => {
-    jumpToPage(Math.min(pdf.numPages, currentPage + 1));
-};
-
 nextBtn.addEventListener("click", nextPage);
 mobileNext.addEventListener("click", nextPage);
 
 
-/* =========================================================
-   ZOOM
-========================================================= */
+/* ===== ZOOM ===== */
 
-zoomIn.addEventListener("click", () => {
+const changeZoom = amount => {
     fitWidthMode = false;
-    scale = Math.min(2.5, scale + 0.1);
+    scale = Math.max(0.5, Math.min(2.5, scale + amount));
+    updateZoomText();
+    rerenderVisiblePages();
+};
 
-    rerenderAllPages();
-});
-
-zoomOut.addEventListener("click", () => {
-    fitWidthMode = false;
-    scale = Math.max(0.5, scale - 0.1);
-
-    rerenderAllPages();
-});
-
-
-/* =========================================================
-   FIT WIDTH
-========================================================= */
+zoomIn.addEventListener("click", () => changeZoom(0.1));
+zoomOut.addEventListener("click", () => changeZoom(-0.1));
 
 fitWidth.addEventListener("click", () => {
     fitWidthMode = true;
-    rerenderAllPages();
+    calculateFitWidth();
+    rerenderVisiblePages();
 });
 
+const rerenderVisiblePages = () => {
+    if (!pdf) return;
 
-/* =========================================================
-   ZOOM TEXT
-========================================================= */
+    renderGeneration++;
+    renderQueue.length = 0;
 
-const updateZoomText = () => {
-    if (fitWidthMode) {
-        zoomValue.textContent = "Fit";
-        return;
-    }
+    const start = Math.max(1, currentPage - RENDER_BEHIND);
+    const end = Math.min(pdf.numPages, currentPage + RENDER_AHEAD);
 
-    zoomValue.textContent = `${Math.round(scale * 100)}%`;
-};
+    for (let i = start; i <= end; i++) {
+        const page = pages[i - 1];
+        if (!page) continue;
 
+        if (page.renderTask?.cancel) {
+            try { page.renderTask.cancel(); } catch { /* ignore */ }
+        }
 
-/* =========================================================
-   RERENDER
-========================================================= */
-
-const rerenderAllPages = async () => {
-    updateZoomText();
-
-    for (const page of pages) {
         page.rendered = false;
-        page.wrapper.innerHTML = "";
+        page.wrapper.querySelectorAll("canvas").forEach(canvas => canvas.remove());
+        queuePage(i);
     }
 
-    renderNearbyPages(currentPage);
+    updateZoomText();
+    processRenderQueue();
 };
 
 
-/* =========================================================
-   SEARCH
-========================================================= */
+/* ===== SEARCH ===== */
+
+let searchTimeout = null;
+let searchToken = 0;
 
 searchBtn.addEventListener("click", () => {
     searchPanel.classList.toggle("open");
-
     if (searchPanel.classList.contains("open")) {
         setTimeout(() => searchInput.focus(), 50);
     }
@@ -494,142 +434,150 @@ searchBtn.addEventListener("click", () => {
 
 closeSearch.addEventListener("click", () => {
     searchPanel.classList.remove("open");
-
     searchInput.value = "";
     searchStatus.textContent = "";
+    searchToken++;
 });
-
-let searchTimeout;
 
 searchInput.addEventListener("input", () => {
     clearTimeout(searchTimeout);
-
-    searchTimeout = setTimeout(searchPDF, 400);
+    searchTimeout = setTimeout(() => searchPDF(currentPage), 300);
 });
 
+searchInput.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
+        clearTimeout(searchTimeout);
+        searchPDF(currentPage + 1);
+    }
+});
 
-/* =========================================================
-   SEARCH PDF
-========================================================= */
+const getPageText = async pageNumber => {
+    if (textCache.has(pageNumber)) return textCache.get(pageNumber);
 
-const searchPDF = async () => {
+    const page = await pdf.getPage(pageNumber);
+    const content = await page.getTextContent({ disableCombineTextItems: false });
+    const text = content.items.map(item => item.str).join(" ").toLowerCase();
+
+    textCache.set(pageNumber, text);
+    page.cleanup();
+    return text;
+};
+
+const searchPDF = async (fromPage = currentPage) => {
     const query = searchInput.value.trim().toLowerCase();
+    if (!query) { searchStatus.textContent = ""; return; }
 
-    if (!query) {
-        searchStatus.textContent = "";
-        return;
-    }
+    const token = ++searchToken;
+    searchStatus.textContent = "Searching…";
 
-    searchStatus.textContent = "Searching...";
-
-    for (let i = 1; i <= pdf.numPages; i++) {
-        const page = await pdf.getPage(i);
-        const content = await page.getTextContent();
-
-        const text = content.items
-            .map(item => item.str)
-            .join(" ")
-            .toLowerCase();
-
-        if (text.includes(query)) {
-            searchStatus.textContent = `Page ${i}`;
-            jumpToPage(i);
-            return;
+    try {
+        const order = [];
+        for (let offset = 0; offset < pdf.numPages; offset++) {
+            order.push(((fromPage - 1 + offset) % pdf.numPages) + 1);
         }
-    }
 
-    searchStatus.textContent = "Not found";
+        const BATCH_SIZE = 4;
+
+        for (let i = 0; i < order.length; i += BATCH_SIZE) {
+            if (token !== searchToken) return;
+
+            const batch = order.slice(i, i + BATCH_SIZE);
+            const results = await Promise.all(batch.map(async pageNumber => {
+                const text = await getPageText(pageNumber);
+                return { pageNumber, found: text.includes(query) };
+            }));
+
+            if (token !== searchToken) return;
+
+            const found = results.find(result => result.found);
+            if (found) {
+                searchStatus.textContent = `Page ${found.pageNumber}`;
+                jumpToPage(found.pageNumber);
+                return;
+            }
+
+            await new Promise(resolve => setTimeout(resolve, 0));
+        }
+
+        if (token === searchToken) searchStatus.textContent = "Not found";
+
+    } catch (error) {
+        console.error("Search error:", error);
+        if (token === searchToken) searchStatus.textContent = "Search failed";
+    }
 };
 
 
-/* =========================================================
-   FULLSCREEN
-========================================================= */
+/* ===== FULLSCREEN / PRINT ===== */
 
 fullscreenBtn.addEventListener("click", async () => {
     try {
-        if (!document.fullscreenElement) {
-            await document.documentElement.requestFullscreen();
-        } else {
-            await document.exitFullscreen();
-        }
+        if (!document.fullscreenElement) await document.documentElement.requestFullscreen();
+        else await document.exitFullscreen();
     } catch (error) {
         console.error(error);
     }
 });
 
-
-/* =========================================================
-   PRINT
-========================================================= */
-
-printBtn.addEventListener("click", () => {
-    window.open(pdfUrl, "_blank", "noopener");
-});
+printBtn.addEventListener("click", () => window.open(pdfUrl, "_blank", "noopener"));
 
 
-/* =========================================================
-   KEYBOARD
-========================================================= */
+/* ===== KEYBOARD ===== */
 
 document.addEventListener("keydown", event => {
-    if (event.target.tagName === "INPUT") {
-        return;
-    }
+    if (event.target.tagName === "INPUT") return;
 
-    if (event.key === "ArrowLeft") {
-        previousPage();
-    }
-
-    if (event.key === "ArrowRight") {
-        nextPage();
-    }
-
-    if (event.key === "+" || event.key === "=") {
-        fitWidthMode = false;
-        scale = Math.min(2.5, scale + 0.1);
-
-        rerenderAllPages();
-    }
-
-    if (event.key === "-") {
-        fitWidthMode = false;
-        scale = Math.max(0.5, scale - 0.1);
-
-        rerenderAllPages();
-    }
-
-    if (event.key === "f") {
-        fullscreenBtn.click();
-    }
+    if (event.key === "ArrowLeft") { previousPage(); event.preventDefault(); }
+    if (event.key === "ArrowRight") { nextPage(); event.preventDefault(); }
+    if (event.key === "+" || event.key === "=") { changeZoom(0.1); event.preventDefault(); }
+    if (event.key === "-") { changeZoom(-0.1); event.preventDefault(); }
+    if (event.key.toLowerCase() === "f") fullscreenBtn.click();
 });
 
 
-/* =========================================================
-   RESIZE
-========================================================= */
+/* ===== MOBILE SWIPE ===== */
 
-let resizeTimer;
+let touchStartX = 0;
+let touchStartY = 0;
+
+viewer.addEventListener("touchstart", event => {
+    touchStartX = event.touches[0].clientX;
+    touchStartY = event.touches[0].clientY;
+}, { passive: true });
+
+viewer.addEventListener("touchend", event => {
+    const dx = event.changedTouches[0].clientX - touchStartX;
+    const dy = event.changedTouches[0].clientY - touchStartY;
+
+    if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 2) {
+        if (dx < 0) nextPage();
+        else previousPage();
+    }
+}, { passive: true });
+
+
+/* ===== RESIZE ===== */
+
+let resizeTimer = null;
 
 window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
-
     resizeTimer = setTimeout(() => {
         if (fitWidthMode) {
-            rerenderAllPages();
+            calculateFitWidth();
+            rerenderVisiblePages();
         }
-    }, 250);
+    }, 200);
 });
 
 
-/* =========================================================
-   START
-========================================================= */
+/* ===== START ===== */
 
 const start = async () => {
+    updateZoomText();
     await loadPDF();
-
     observePages();
+    updatePageUI();
 };
 
 start();
