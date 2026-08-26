@@ -26,13 +26,19 @@ const getCardUrl = (item) => {
     let url = item.url;
 
     if (url.includes("github.com/") && url.includes("/blob/")) {
-        url = url.replace(
-            "https://github.com/",
-            "https://raw.githubusercontent.com/"
-        ).replace(
-            "/blob/",
-            "/"
+        const match = url.match(
+            /^https:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\/([^/]+)\/(.+)$/
         );
+
+        if (match) {
+            const [, owner, repo, branch, filePath] = match;
+
+            if (item.cdnjs === true) {
+                url = `https://cdn.jsdelivr.net/gh/${owner}/${repo}@${branch}/${filePath}`;
+            } else {
+                url = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${filePath}`;
+            }
+        }
     }
 
     if (item.reader === true) {
@@ -149,10 +155,6 @@ export const buildCard = (item) => {
         tag.className = "video-exam-tag";
         tag.textContent = item.exam;
 
-        /*
-         * Kept from your original logic.
-         * Only append if the target exists.
-         */
         const videoContent =
             card.querySelector(".video-card-content");
 

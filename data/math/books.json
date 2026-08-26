@@ -5,11 +5,12 @@
     "subject": "Mathematics",
     "chapter": "Graphs",
     "bestFor": "Concept + Practice",
-    "image": "https://m.media-amazon.com/images/I/411yEdPAKiL._SY445_SX342_FMwebp_.jpg",
+    "image": "https://arihantbooks.com/cdn/shop/files/B019.j-f_600x.jpg?v=1773296855",
     "tags": ["graphs", "graph transformations", "functions and graphs"],
     "featured": true,
+    "cdnjs": true,
     "action": "open",
-    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/math%20books/Play%20with%20graphs%20Arihant.pdf"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Play%20with%20graphs%20Arihant.pdf"
   },
   {
     "title": "RD SHARMA VOL 1",
@@ -17,9 +18,8 @@
     "subject": "Mathematics",
     "chapter": "Algebra",
     "bestFor": "Concept + Practice",
-    "image": "https://m.media-amazon.com/images/I/81lDlNoRbbL._AC_UF1000,1000_QL80_.jpg",
+    "image": "https://dhanpatrai.com/img/books/Objective%20Math.(Vol.%20I%20&%20II).jpg",
     "tags": ["algebra", "r d"],
-    "featured": true,
     "reader": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/RD%20Sharma%20Volume%20I.pdf"
@@ -42,7 +42,7 @@
     "subject": "Mathematics",
     "chapter": "Algebra",
     "bestFor": "Foundation",
-    "image": "https://m.media-amazon.com/images/I/61U2j81Cn4L._AC_UY327_FMwebp_QL65_.jpg",
+    "image": "https://dhanpatrai.com/img/books/Math%20XI%20Vol%20I_1.jpg",
     "tags": ["class 11", "r d"],
     "featured": false,
     "action": "open",
@@ -54,7 +54,7 @@
     "subject": "Mathematics",
     "chapter": "Quantitative",
     "bestFor": "Practice",
-    "image": "https://m.media-amazon.com/images/I/710DY60DHUL._AC_UY327_FMwebp_QL65_.jpg",
+    "image": "https://m.media-amazon.com/images/I/710DY60DHUL._SL1500_.jpg",
     "tags": ["class 11 mathematics", "rs"],
     "featured": false,
     "action": "open",
@@ -66,7 +66,7 @@
     "subject": "Mathematics",
     "chapter": "Quantitative",
     "bestFor": "Practice",
-    "image": "https://m.media-amazon.com/images/I/71XNw5ICsCL._AC_UY327_FMwebp_QL65_.jpg",
+    "image": "https://m.media-amazon.com/images/I/71XNw5ICsCL._SL1500_.jpg",
     "tags": ["class 12 mathematics", "rs"],
     "featured": false,
     "action": "open",
@@ -78,7 +78,7 @@
     "subject": "Mathematics",
     "chapter": "MCA Prep",
     "bestFor": "Exam Prep",
-    "image": "https://m.media-amazon.com/images/I/512YgSZZLCL._AC_UY327_FMwebp_QL65_.jpg",
+    "image": "https://m.media-amazon.com/images/I/61zbJeaoiQL.jpg",
     "tags": ["mca entrance", "mathematics practice", "nimcet preparation"],
     "featured": false,
     "reader": true,
@@ -86,40 +86,95 @@
     "url": "https://raw.githubusercontent.com/rawcontentgit/NIMCET-RESOURCES/master/math%20books/Arihant%20MCA%20Package.pdf"
   },
   {
-    "title": "CENGAGE ALGEBRA",
+    "title": "Arihant Algebra",
     "type": "Book",
     "subject": "Mathematics",
     "chapter": "Algebra",
     "bestFor": "Concept Building",
-    "image": "https://m.media-amazon.com/images/I/71ghG8GrfiL._AC_UY327_FMwebp_QL65_.jpg",
+    "image": "https://arihantbooks.com/cdn/shop/files/B011-F_72969b1f-94da-4a7f-95fb-9f1c142624c1_600x.jpg?v=1773291095",
     "tags": ["algebra", "concept building", "advanced practice"],
     "featured": false,
+    "cdnjs": true,
     "action": "open",
-    "url": "https://t.me/nimcet_resources/310"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Algebra.pdf"
   },
   {
-    "title": "CENGAGE COORDINATE GEOMETRY",
+    "title": "Arihant Coordinate Geometry",
     "type": "Book",
     "subject": "Mathematics",
-    "chapter": "Coordinate Geometry",
+    "chapter": "Algebra",
     "bestFor": "Concept Building",
-    "image": "https://m.media-amazon.com/images/I/71hrJbqyuhL._AC_UY327_FMwebp_QL65_.jpg",
-    "tags": ["coordinate geometry", "concept building", "advanced practice"],
+    "image": "https://arihantbooks.com/cdn/shop/files/B012-F_9d482637-d21b-454e-9e06-1eaffcdf4908_600x.jpg?v=1773296020",
+    "tags": ["coodinate geometry", "concept building", "advanced practice"],
     "featured": false,
+    "cdnjs": true,
     "action": "open",
-    "url": "https://t.me/nimcet_resources/312"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Coordinate%20Geometry.pdf"
   },
   {
-    "title": "CENGAGE CALCULUS",
+    "title": "Arihant Differential Calculus",
     "type": "Book",
     "subject": "Mathematics",
-    "chapter": "Calculus",
+    "chapter": "Algebra",
     "bestFor": "Concept Building",
-    "image": "https://m.media-amazon.com/images/I/71hXgsr1dyL._AC_UY327_FMwebp_QL65_.jpg",
+    "image": "https://arihantbooks.com/cdn/shop/files/B015-F_7060f009-715c-4356-ace1-4d38147a4b73_600x.jpg?v=1773296178",
     "tags": ["calculus", "concept building", "advanced practice"],
     "featured": false,
+    "cdnjs": true,
     "action": "open",
-    "url": "https://t.me/nimcet_resources/314"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Differential%20Calculus.pdf"
+  },
+  {
+    "title": "Arihant Integral Calculus",
+    "type": "Book",
+    "subject": "Mathematics",
+    "chapter": "Algebra",
+    "bestFor": "Concept Building",
+    "image": "https://arihantbooks.com/cdn/shop/files/B016-F_6a62f266-6cd0-4838-a9f3-3d940e4fa612_600x.jpg?v=1773296256",
+    "tags": ["calculus", "concept building", "advanced practice"],
+    "featured": false,
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Integral%20Calculus.pdf"
+  },
+  {
+    "title": "Arihant Trigonometry",
+    "type": "Book",
+    "subject": "Mathematics",
+    "chapter": "Algebra",
+    "bestFor": "Concept Building",
+    "image": "https://arihantbooks.com/cdn/shop/files/B017-F_6261156b-e075-4337-b00f-f3b201d84a3a_600x.png?v=1765001487",
+    "tags": ["trigonometry", "concept building", "advanced practice"],
+    "featured": false,
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Trigonometry.pdf"
+  },
+  {
+    "title": "Arihant Vectors & 3D",
+    "type": "Book",
+    "subject": "Mathematics",
+    "chapter": "Algebra",
+    "bestFor": "Concept Building",
+    "image": "https://arihantbooks.com/cdn/shop/files/B018-F_91af9480-00db-4704-a1bc-34447d9bfe8e_600x.jpg?v=1773296794",
+    "tags": ["vector", "concept building", "advanced practice"],
+    "featured": false,
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Vectors%20%26%203D.pdf"
+  },
+  {
+    "title": "S L LONEY PLANE TRIGONOMETRY",
+    "type": "Book",
+    "subject": "Mathematics",
+    "chapter": "Trigonometry",
+    "bestFor": "Concept Building",
+    "image": "https://m.media-amazon.com/images/I/519C1RzWtNL._SL1360_.jpg",
+    "tags": ["trigonometry", "concept building", "advanced practice"],
+    "featured": false,
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/SL%20Loney-Plane%20Trigonometry.pdf"
   },
   {
     "title": "NCERT EXEMPLAR 11",
@@ -127,11 +182,12 @@
     "subject": "Mathematics",
     "chapter": "Class 11 Mathematics",
     "bestFor": "Problem Practice",
-    "image": "https://m.media-amazon.com/images/I/71CS89tlLpL._AC_UY327_FMwebp_QL65_.jpg",
+    "image": "https://arihantbooks.com/cdn/shop/files/F280-F_52aa30e0-30df-4f3e-a6a9-185f1d574458.jpg?v=1738400585",
     "tags": ["class 11", "ncert exemplar", "problem practice"],
     "featured": false,
+    "cdnjs": true,
     "action": "open",
-    "url": "https://t.me/nimcet_resources/320"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/NCERT%20Examplar%20Math%20XI.pdf"
   },
   {
     "title": "NCERT EXEMPLAR 12",
@@ -139,10 +195,11 @@
     "subject": "Mathematics",
     "chapter": "Class 12 Mathematics",
     "bestFor": "Problem Practice",
-    "image": "https://m.media-amazon.com/images/I/71W07ewRmtL._AC_UY327_FMwebp_QL65_.jpg",
+    "image": "https://arihantbooks.com/cdn/shop/files/F282-F_2b1700d1-b712-4e25-b6c8-a537318d12ca.jpg?v=1738400593",
     "tags": ["class 12", "ncert exemplar", "problem practice"],
     "featured": false,
+    "cdnjs": true,
     "action": "open",
-    "url": "https://t.me/nimcet_resources/321"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/NCERT%20Examplar%20Math%20XII.pdf"
   }
 ]
