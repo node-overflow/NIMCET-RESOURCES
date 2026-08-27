@@ -254,6 +254,41 @@
   z-index: 1;
 }
 
+.dpp-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+
+.dpp-card-header .pyq-title {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.dpp-card-header .dpp-badge {
+  flex-shrink: 0;
+}
+
+.dpp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--tc) 16%, transparent);
+  color: var(--tc);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.dpp-badge svg {
+  flex-shrink: 0;
+}
+
 .card-top {
   display: flex;
   align-items: center;

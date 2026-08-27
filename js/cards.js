@@ -682,11 +682,11 @@ export const renderDppCards = (container, items) => {
 
     items.forEach(item => {
 
-        const card =
-            document.createElement("div");
+        const card = document.createElement("div");
 
-        card.className =
-            "pyq-card dpp-card";
+        card.className = "pyq-card dpp-card";
+
+        card.style.setProperty("--tc", "var(--type-practice)");
 
         let dppUrl = getCardUrl(item);
 
@@ -696,9 +696,26 @@ export const renderDppCards = (container, items) => {
 
         card.innerHTML =
 
+            card.innerHTML =
+
             '<div class="pyq-card-body">' +
 
+            '<div class="dpp-card-header">' +
+
             '<h3 class="pyq-title"></h3>' +
+
+            (item.qc
+                ? '<span class="dpp-badge">' +
+                '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+                '<circle cx="12" cy="12" r="10"></circle>' +
+                '<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>' +
+                '<path d="M12 17h.01"></path>' +
+                '</svg>' +
+                '<span>' + escapeHtml(String(item.qc)) + ' Qs</span>' +
+                '</span>'
+                : "") +
+
+            '</div>' +
 
             '<div class="pyq-card-foot">' +
 
