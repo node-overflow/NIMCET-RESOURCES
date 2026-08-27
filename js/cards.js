@@ -1,8 +1,6 @@
 "use strict";
 
-import {
-    RESOURCE_ORDER
-} from "./config.js";
+import { RESOURCE_ORDER } from "./config.js";
 
 import {
     escapeHtml,
@@ -19,30 +17,19 @@ let activeVideo = null;
    SHARED CARD HELPERS
    ========================================================= */
 
-const shouldShowTypeLabel = (item) =>
-    !(state.type && state.type === item.type);
+const shouldShowTypeLabel = (item) => !(state.type && state.type === item.type);
 
 const typeLabelChip = (item, cssVar, text) => {
-    if (!shouldShowTypeLabel(item)) {
-        return "";
-    }
+    if (!shouldShowTypeLabel(item)) return "";
 
-    return (
-        '<span class="type-label" style="color: var(' +
-        cssVar +
-        ')">' +
+    return '<span class="type-label" style="color: var(' + cssVar + ')">' +
         escapeHtml(text) +
-        "</span>"
-    );
+        "</span>";
 };
 
 const examTagHtml = (item) => {
     if (item.subject === "Computer" && item.exam) {
-        return (
-            '<span class="video-exam-tag">' +
-            escapeHtml(item.exam) +
-            "</span>"
-        );
+        return '<span class="video-exam-tag">' + escapeHtml(item.exam) + "</span>";
     }
 
     return "";
@@ -51,11 +38,7 @@ const examTagHtml = (item) => {
 const yearBadgeHtml = (item) => {
     if (!item.year) return "";
 
-    return (
-        '<span class="year-badge">' +
-        escapeHtml(String(item.year)) +
-        "</span>"
-    );
+    return '<span class="year-badge">' + escapeHtml(String(item.year)) + "</span>";
 };
 
 const cardTopRight = (...parts) => {
