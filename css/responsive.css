@@ -362,6 +362,31 @@
     font-size: 0.73rem;
   }
 
+  .card-icon-badge {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+  }
+
+  .card-top-v2 {
+    min-height: 26px;
+    gap: 6px;
+  }
+
+  .difficulty-pill {
+    font-size: 0.56rem;
+    padding: 2px 7px;
+  }
+
+  .year-badge {
+    font-size: 0.62rem;
+  }
+
+  .formula-chapter {
+    font-size: 0.72rem;
+  }
+
   .video-card .video-card-title {
     font-size: 0.82rem;
   }

@@ -1,7 +1,6 @@
 "use strict";
 
 import {
-    TYPE_CLASS,
     RESOURCE_ORDER
 } from "./config.js";
 
@@ -11,7 +10,73 @@ import {
     extractYouTubeId
 } from "./utils.js";
 
+import { state } from "./state.js";
+
 let activeVideo = null;
+
+
+/* =========================================================
+   SHARED CARD HELPERS
+   ========================================================= */
+
+const shouldShowTypeLabel = (item) =>
+    !(state.type && state.type === item.type);
+
+const typeLabelChip = (item, cssVar, text) => {
+    if (!shouldShowTypeLabel(item)) {
+        return "";
+    }
+
+    return (
+        '<span class="type-label" style="color: var(' +
+        cssVar +
+        ')">' +
+        escapeHtml(text) +
+        "</span>"
+    );
+};
+
+const examTagHtml = (item) => {
+    if (item.subject === "Computer" && item.exam) {
+        return (
+            '<span class="video-exam-tag">' +
+            escapeHtml(item.exam) +
+            "</span>"
+        );
+    }
+
+    return "";
+};
+
+const yearBadgeHtml = (item) => {
+    if (!item.year) return "";
+
+    return (
+        '<span class="year-badge">' +
+        escapeHtml(String(item.year)) +
+        "</span>"
+    );
+};
+
+const cardTopRight = (...parts) => {
+    const content = parts.filter(Boolean).join("");
+
+    if (!content) return "";
+
+    return '<span class="card-top-right">' + content + "</span>";
+};
+
+const wireCardAction = (card, item) => {
+    const action = card.querySelector(".card-action");
+
+    if (!action) return;
+
+    action.addEventListener("click", event => {
+        if (!item.url || item.url === "#") {
+            event.preventDefault();
+        }
+    });
+};
 
 
 /* =========================================================
@@ -60,33 +125,38 @@ const getCardUrl = (item) => {
    ========================================================= */
 
 export const buildCard = (item) => {
+    switch (item.type) {
+        case "Video":
+            return buildVideoCard(item);
 
-    if (item.type === "Video") {
-        return buildVideoCard(item);
+        case "Book":
+            return buildBookCard(item);
+
+        case "Formula":
+            return buildFormulaCard(item);
+
+        case "Practice":
+            return buildPracticeCard(item);
+
+        case "PYQ":
+            return buildPyqTypeCard(item);
+
+        case "Notes":
+        default:
+            return buildNotesCard(item);
     }
+};
 
-    if (item.type === "Book") {
-        return buildBookCard(item);
-    }
 
+/* =========================================================
+   NOTES CARD
+   ========================================================= */
+
+const buildNotesCard = (item) => {
     const card = document.createElement("div");
 
-    card.className = "resource-card";
-
-    let typeClass = TYPE_CLASS[item.type];
-
-    if (!typeClass) {
-        typeClass = "type-notes";
-    }
-
-    let yearHtml = "";
-
-    if (item.year) {
-        yearHtml =
-            '<span class="type-label" style="margin-left:auto;color:var(--text-faint)">' +
-            escapeHtml(String(item.year)) +
-            "</span>";
-    }
+    card.className = "resource-card notes-card";
+    card.style.setProperty("--tc", "var(--type-notes)");
 
     let cardUrl = getCardUrl(item);
 
@@ -94,38 +164,31 @@ export const buildCard = (item) => {
         cardUrl = escapeHtml(cardUrl);
     }
 
+    const metaBits = [item.chapter || item.subject, item.bestFor]
+        .filter(Boolean);
+
     card.innerHTML =
-        '<div class="card-top">' +
+        '<div class="card-top-v2">' +
 
-        '<span class="type-dot" style="background: var(--' +
-        typeClass +
-        ')"></span>' +
+        (shouldShowTypeLabel(item)
+            ? '<span class="card-icon-badge" style="--tc: var(--type-notes)">✎</span>'
+            : "") +
 
-        '<span class="type-label" style="color: var(--' +
-        typeClass +
-        ')">' +
-        escapeHtml(item.type) +
-        "</span>" +
+        typeLabelChip(item, "--type-notes", "Notes") +
 
-        yearHtml +
+        cardTopRight(examTagHtml(item)) +
 
         "</div>" +
 
         '<h3 class="card-title"></h3>' +
 
-        '<p class="card-desc"></p>' +
-
-        '<div class="card-meta">' +
-
-        '<span><b>' +
-        escapeHtml(item.difficulty || "") +
-        "</b></span>" +
-
-        "<span>" +
-        escapeHtml(item.bestFor || "") +
-        "</span>" +
-
-        "</div>" +
+        (metaBits.length
+            ? '<div class="card-meta">' +
+            metaBits
+                .map(bit => "<span>" + escapeHtml(bit) + "</span>")
+                .join("") +
+            "</div>"
+            : "") +
 
         '<div class="card-foot">' +
 
@@ -141,33 +204,208 @@ export const buildCard = (item) => {
 
         "</div>";
 
-    card.querySelector(".card-title").textContent =
-        item.title || "";
+    card.querySelector(".card-title").textContent = item.title || "";
 
-    card.querySelector(".card-desc").textContent =
-        item.desc || "";
+    wireCardAction(card, item);
 
-    const action = card.querySelector(".card-action");
+    return card;
+};
 
-    if (item.subject === "Computer" && item.exam) {
-        const tag = document.createElement("span");
 
-        tag.className = "video-exam-tag";
-        tag.textContent = item.exam;
+/* =========================================================
+   FORMULA CARD
+   ========================================================= */
 
-        const videoContent =
-            card.querySelector(".video-card-content");
+const buildFormulaCard = (item) => {
+    const card = document.createElement("div");
 
-        if (videoContent) {
-            videoContent.appendChild(tag);
-        }
+    card.className = "resource-card formula-card";
+    card.style.setProperty("--tc", "var(--type-formula)");
+
+    let cardUrl = getCardUrl(item);
+
+    if (cardUrl !== "#") {
+        cardUrl = escapeHtml(cardUrl);
     }
 
-    action.addEventListener("click", event => {
-        if (!item.url || item.url === "#") {
-            event.preventDefault();
-        }
-    });
+    const chapterLabel = item.chapter || item.subject || "";
+
+    card.innerHTML =
+        '<div class="card-top-v2">' +
+
+        (shouldShowTypeLabel(item)
+            ? '<span class="card-icon-badge" style="--tc: var(--type-formula)">∑</span>'
+            : "") +
+
+        typeLabelChip(item, "--type-formula", "Formula") +
+
+        cardTopRight(examTagHtml(item)) +
+
+        "</div>" +
+
+        '<h3 class="card-title"></h3>' +
+
+        (chapterLabel
+            ? '<div class="formula-chapter"></div>'
+            : "") +
+
+        '<div class="card-foot">' +
+
+        '<a class="card-action" href="' +
+        cardUrl +
+        '" target="_blank" rel="noopener noreferrer">' +
+
+        actionLabel(item) +
+
+        ' <span class="arrow">→</span>' +
+
+        "</a>" +
+
+        "</div>";
+
+    card.querySelector(".card-title").textContent = item.title || "";
+
+    const chapterEl = card.querySelector(".formula-chapter");
+
+    if (chapterEl) {
+        chapterEl.textContent = chapterLabel;
+    }
+
+    wireCardAction(card, item);
+
+    return card;
+};
+
+
+/* =========================================================
+   PRACTICE CARD
+   ========================================================= */
+
+const buildPracticeCard = (item) => {
+    const card = document.createElement("div");
+
+    card.className = "resource-card practice-card";
+    card.style.setProperty("--tc", "var(--type-practice)");
+
+    let cardUrl = getCardUrl(item);
+
+    if (cardUrl !== "#") {
+        cardUrl = escapeHtml(cardUrl);
+    }
+
+    const metaBits = [];
+
+    if (item.questions != null && item.questions !== "") {
+        metaBits.push(item.questions + " Questions");
+    }
+
+    if (item.bestFor) {
+        metaBits.push(item.bestFor);
+    }
+
+    card.innerHTML =
+        '<div class="card-top-v2">' +
+
+        (shouldShowTypeLabel(item)
+            ? '<span class="card-icon-badge" style="--tc: var(--type-practice)">✓</span>'
+            : "") +
+
+        typeLabelChip(item, "--type-practice", "Practice") +
+
+        cardTopRight(examTagHtml(item)) +
+
+        "</div>" +
+
+        '<h3 class="card-title"></h3>' +
+
+        (metaBits.length
+            ? '<div class="card-meta">' +
+            metaBits
+                .map(bit => "<span>" + escapeHtml(bit) + "</span>")
+                .join("") +
+            "</div>"
+            : "") +
+
+        '<div class="card-foot">' +
+
+        '<a class="card-action" href="' +
+        cardUrl +
+        '" target="_blank" rel="noopener noreferrer">' +
+
+        actionLabel(item) +
+
+        ' <span class="arrow">→</span>' +
+
+        "</a>" +
+
+        "</div>";
+
+    card.querySelector(".card-title").textContent = item.title || "";
+
+    wireCardAction(card, item);
+
+    return card;
+};
+
+
+/* =========================================================
+   PYQ (SUBJECT-WISE RESOURCE) CARD
+   ========================================================= */
+
+const buildPyqTypeCard = (item) => {
+    const card = document.createElement("div");
+
+    card.className = "resource-card pyqtype-card";
+    card.style.setProperty("--tc", "var(--type-pyq)");
+
+    let cardUrl = getCardUrl(item);
+
+    if (cardUrl !== "#") {
+        cardUrl = escapeHtml(cardUrl);
+    }
+
+    const metaBits = [item.subject, item.bestFor].filter(Boolean);
+
+    card.innerHTML =
+        '<div class="card-top-v2">' +
+
+        (shouldShowTypeLabel(item)
+            ? '<span class="card-icon-badge">✎</span>'
+            : "") +
+
+        typeLabelChip(item, "--type-pyq", "PYQ") +
+
+        cardTopRight(yearBadgeHtml(item), examTagHtml(item)) +
+
+        "</div>" +
+
+        '<h3 class="card-title"></h3>' +
+
+        (metaBits.length
+            ? '<div class="card-meta">' +
+            metaBits
+                .map(bit => "<span>" + escapeHtml(bit) + "</span>")
+                .join("") +
+            "</div>"
+            : "") +
+
+        '<div class="card-foot">' +
+
+        '<a class="card-action" href="' +
+        cardUrl +
+        '" target="_blank" rel="noopener noreferrer">' +
+
+        actionLabel(item) +
+
+        ' <span class="arrow">→</span>' +
+
+        "</a>" +
+
+        "</div>";
+
+    card.querySelector(".card-title").textContent = item.title || "";
+
+    wireCardAction(card, item);
 
     return card;
 };
@@ -306,6 +544,8 @@ const buildVideoCard = (item) => {
         '<h3 class="card-title video-card-title"></h3>' +
 
         '<div class="video-best-for"></div>' +
+
+        examTagHtml(item) +
 
         '<div class="card-foot">' +
 

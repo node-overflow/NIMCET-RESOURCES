@@ -44,7 +44,9 @@ export const renderFilterPills = () => {
         pill.textContent = type.label;
         pill.dataset.active = state.type === type.key ? "true" : "false";
         pill.addEventListener("click", () => {
-            state.type = state.type === type.key ? null : type.key;
+            if (state.type === type.key) return;
+
+            state.type = type.key;
             state.examFilter = null;
             renderResources();
         });

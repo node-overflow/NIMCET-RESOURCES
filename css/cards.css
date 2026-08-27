@@ -1,3 +1,65 @@
+/* ============ CARDS BASE ============ */
+.notes-card,
+.formula-card,
+.practice-card,
+.pyqtype-card {
+  border-left: 3px solid var(--tc);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--tc) 6%, var(--surface)) 0%,
+    var(--surface) 65%
+  );
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    background 0.16s ease;
+}
+
+.notes-card .card-title,
+.formula-card .card-title,
+.practice-card .card-title,
+.pyqtype-card .card-title {
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+
+.notes-card .card-meta,
+.practice-card .card-meta,
+.pyqtype-card .card-meta {
+  border-top: none;
+  padding-top: 2px;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.notes-card .card-meta span,
+.practice-card .card-meta span,
+.pyqtype-card .card-meta span {
+  background: color-mix(in srgb, var(--tc) 12%, transparent);
+  color: var(--text-dim);
+  padding: 4px 9px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.notes-card .card-action,
+.formula-card .card-action,
+.practice-card .card-action,
+.pyqtype-card .card-action {
+  background: color-mix(in srgb, var(--tc) 14%, transparent);
+  border-color: color-mix(in srgb, var(--tc) 40%, transparent);
+  color: var(--tc);
+}
+
+.notes-card .card-action:hover,
+.formula-card .card-action:hover,
+.practice-card .card-action:hover,
+.pyqtype-card .card-action:hover {
+  background: color-mix(in srgb, var(--tc) 22%, transparent);
+  border-color: color-mix(in srgb, var(--tc) 55%, transparent);
+}
+
 /* ============ Resource grid & cards ============ */
 .resource-grid {
   display: grid;
@@ -204,6 +266,92 @@
   flex-shrink: 0;
 }
 
+/* =========================
+   PER-TYPE CARD HEADER 
+   ========================= */
+
+.card-top-v2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 30px;
+}
+
+.card-top-v2:empty {
+  display: none;
+}
+
+.card-icon-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--tc, var(--accent));
+  background: color-mix(in srgb, var(--tc, var(--accent)) 14%, transparent);
+}
+
+.card-top-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.card-top-right .video-exam-tag {
+  margin-top: 0;
+}
+
+.year-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-faint);
+  letter-spacing: 0.02em;
+}
+
+/* ----- Notes card ----- */
+.notes-card .card-icon-badge {
+  font-size: 1rem;
+}
+
+/* ----- Formula card ----- */
+.formula-card {
+  gap: 9px;
+}
+
+.formula-card .card-icon-badge {
+  font-family: "Georgia", serif;
+  font-size: 1.05rem;
+}
+
+.formula-card .card-title {
+  margin-bottom: 0;
+}
+
+.formula-chapter {
+  font-size: 0.76rem;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+/* ----- Practice card ----- */
+.practice-card .card-icon-badge {
+  font-size: 1rem;
+}
+
+/* ----- PYQ resource card ----- */
+.pyqtype-card .card-icon-badge {
+  font-family: "Georgia", serif;
+  font-style: italic;
+}
+
 .type-label {
   font-size: 0.66rem;
   font-weight: 700;
@@ -220,16 +368,6 @@
   color: var(--text);
   line-height: 1.42;
   letter-spacing: -0.005em;
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-.card-desc {
-  margin: 0;
-  font-size: 0.81rem;
-  color: var(--text-dim);
-  line-height: 1.52;
-  flex: 1;
   overflow-wrap: break-word;
   word-break: break-word;
 }

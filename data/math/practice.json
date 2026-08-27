@@ -43,8 +43,6 @@
     "type": "Practice",
     "subject": "Mathematics",
     "chapter": "Probability",
-    "desc": "Conditional probability, Bayes' theorem, mean-variance and standard deviation problems.",
-    "difficulty": "Advanced",
     "bestFor": "Timed Practice",
     "tags": ["probability", "statistics"],
     "featured": false,
