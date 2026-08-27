@@ -750,11 +750,10 @@ export const renderPyqCards = (container, items) => {
 
     items.forEach(item => {
 
-        const card =
-            document.createElement("div");
+        const card = document.createElement("div");
 
-        card.className =
-            "pyq-card";
+        card.className = "pyq-card";
+        card.style.setProperty("--tc", "var(--type-pyq)");
 
 
         /* ---------- URL ---------- */
@@ -929,6 +928,8 @@ export const renderPyqCards = (container, items) => {
         /* ---------- CARD ---------- */
 
         card.innerHTML =
+
+            card.innerHTML =
 
             '<div class="pyq-card-body">' +
 

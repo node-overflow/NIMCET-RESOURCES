@@ -2,7 +2,8 @@
 .notes-card,
 .formula-card,
 .practice-card,
-.pyqtype-card {
+.pyqtype-card,
+.pyq-card {
   border-left: 3px solid var(--tc);
   background: linear-gradient(
     180deg,
@@ -194,8 +195,8 @@
 .pyq-title {
   margin: 0;
   color: var(--text-calm-h);
-  font-size: 0.95rem;
-  font-weight: 650;
+  font-size: 1rem;
+  font-weight: 450;
   color: var(--text);
   line-height: 1.42;
   letter-spacing: -0.005em;
@@ -204,10 +205,9 @@
 }
 
 .pyq-details {
-  color: #9899afe8;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 2px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -215,11 +215,14 @@
 .pyq-detail {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: var(--text-muted);
-  font-size: 0.75rem;
-  font-weight: 400;
+  gap: 6px;
+  padding: 5px 5px;
+  border-radius: 999px;
+  color: var(--text-dim);
+  font-size: 0.72rem;
+  font-weight: 600;
   line-height: 1.3;
+  max-width: fit-content;
 }
 
 .pyq-detail-icon {
@@ -227,9 +230,9 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 16px;
-  height: 16px;
-  color: var(--text-muted);
+  width: 14px;
+  height: 14px;
+  color: var(--tc);
 }
 
 .pyq-detail-icon svg {
@@ -310,10 +313,14 @@
 }
 
 .year-badge {
-  font-size: 0.68rem;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(110, 107, 220, 0.28);
+  background: var(--accent-dim-2);
+  color: var(--accent-text);
+  font-size: 0.82rem;
   font-weight: 700;
-  color: var(--text-faint);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 
 /* ----- Notes card ----- */

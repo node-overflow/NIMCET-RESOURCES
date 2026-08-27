@@ -8,19 +8,25 @@
     left: 0;
     top: 0;
     width: min(82vw, 300px);
-    height: calc(100dvh - var(--bottom-nav-h) - var(--safe-bottom));
+    height: calc(100svh - var(--bottom-nav-h) - var(--safe-bottom));
     z-index: 40;
     padding-top: calc(20px + var(--safe-top));
     padding-left: calc(14px + var(--safe-left));
     border-right: none;
     border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
-    transform: translateX(-100%);
+    transform: translateX(-100%) translateZ(0);
+    -webkit-transform: translateX(-100%) translateZ(0);
     transition: transform 0.26s ease;
     box-shadow: none;
+    isolation: isolate;
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
 
   .sidebar.open {
-    transform: translateX(0);
+    transform: translateX(0) translateZ(0);
+    -webkit-transform: translateX(0) translateZ(0);
     box-shadow: 20px 0 48px #00000073;
   }
 
@@ -322,8 +328,7 @@
   }
 
   .pyq-details {
-    gap: 8px;
-    min-height: 72px;
+    gap: 6px;
   }
 
   .pyq-detail {
