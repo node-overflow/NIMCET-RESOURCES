@@ -164,11 +164,11 @@ export const SUBJECTS = [
     },
     {
         name: "Logical Reasoning",
-        symbol: "→"
+        symbol: "📊︎"
     },
     {
         name: "Computer",
-        symbol: "{ }"
+        symbol: "</>"
     },
     {
         name: "Quantitative Aptitude",
