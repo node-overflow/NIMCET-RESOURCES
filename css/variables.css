@@ -32,6 +32,8 @@
   --upd-result: #6cbb84;
   --upd-important: #d67b7b;
 
+  --dpp-badge: #bdb5cd;
+
   --radius-sm: 6px;
   --radius-md: 9px;
   --radius-lg: 12px;
@@ -84,4 +86,6 @@
   --upd-admit-card: #a4732a;
   --upd-result: #338f52;
   --upd-important: #c25757;
+
+  --dpp-badge: #625c6d;
 }

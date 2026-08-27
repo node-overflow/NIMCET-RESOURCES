@@ -1,12 +1,12 @@
 [
   {
-    "title": "NIMCET 2016\u20132026 Solved Papers",
+    "title": "Indefinite Integration",
     "type": "PYQ",
     "subject": "Mathematics",
     "chapter": "Previous Years",
     "desc": "Eleven years of official NIMCET maths questions organised by topic with step-by-step solutions.",
     "difficulty": "Advanced",
-    "bestFor": "Exam Pattern",
+    "exam": "NIMCET",
     "tags": ["pyq", "previous years", "solved"],
     "featured": true,
     "action": "download",

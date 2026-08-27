@@ -5,11 +5,6 @@
 .pyqtype-card,
 .pyq-card {
   border-left: 3px solid var(--tc);
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--tc) 6%, var(--surface)) 0%,
-    var(--surface) 65%
-  );
   transition:
     transform 0.16s ease,
     box-shadow 0.16s ease,
@@ -20,7 +15,7 @@
 .formula-card .card-title,
 .practice-card .card-title,
 .pyqtype-card .card-title {
-  font-weight: 700;
+  font-weight: 450;
   font-size: 0.98rem;
 }
 
@@ -36,21 +31,12 @@
 .notes-card .card-meta span,
 .practice-card .card-meta span,
 .pyqtype-card .card-meta span {
-  background: color-mix(in srgb, var(--tc) 12%, transparent);
-  color: var(--text-dim);
+  background: var(--accent-dim-2);
+  color: var(--text-calm);
   padding: 4px 9px;
   border-radius: 999px;
   font-size: 0.68rem;
   font-weight: 600;
-}
-
-.notes-card .card-action,
-.formula-card .card-action,
-.practice-card .card-action,
-.pyqtype-card .card-action {
-  background: color-mix(in srgb, var(--tc) 14%, transparent);
-  border-color: color-mix(in srgb, var(--tc) 40%, transparent);
-  color: var(--tc);
 }
 
 .notes-card .card-action:hover,
@@ -278,9 +264,8 @@
   gap: 5px;
   padding: 4px 10px;
   border-radius: 999px;
-  background: color-mix(in srgb, var(--tc) 16%, transparent);
-  color: var(--tc);
-  font-size: 0.68rem;
+  color: var(--dpp-badge);
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
