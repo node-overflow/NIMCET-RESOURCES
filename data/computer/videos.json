@@ -1,9 +1,7 @@
 [
   {
-    "title": "",
-    "type": "Video",
-    "subject": "Computer",
-    "chapter": "",
+    "title": "Title",
+    "chapter": "Chapter",
     "exam": "ALL",
     "bestFor": "One Shot",
     "tags": ["computer"],

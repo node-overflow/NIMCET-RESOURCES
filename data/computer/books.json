@@ -1,42 +1,11 @@
 [
-    {
-    "id": 301,
+  {
     "title": "Let Us C",
-    "type": "Book",
-    "subject": "Computer",
     "chapter": "Programming in C",
     "desc": "Classic C programming text covering syntax, pointers, structures and file handling.",
     "difficulty": "Beginner",
     "bestFor": "Foundation",
     "tags": ["c programming", "pointers"],
-    "featured": true,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "id": 302,
-    "title": "Computer Fundamentals",
-    "type": "Book",
-    "subject": "Computer",
-    "chapter": "Computer Basics",
-    "desc": "Covers computer generations, number systems, memory hierarchy and I/O devices.",
-    "difficulty": "Beginner",
-    "bestFor": "Foundation",
-    "tags": ["computer basics", "number systems"],
-    "featured": false,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "id": 303,
-    "title": "Data Structures Using C",
-    "type": "Book",
-    "subject": "Computer",
-    "chapter": "Data Structures",
-    "desc": "Arrays, linked lists, stacks, queues, trees and graphs with C implementations.",
-    "difficulty": "Advanced",
-    "bestFor": "Concept + Practice",
-    "tags": ["data structures", "trees", "graphs"],
     "featured": true,
     "action": "open",
     "url": "#"

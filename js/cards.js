@@ -347,7 +347,7 @@ const buildPyqTypeCard = (item) => {
         cardUrl = escapeHtml(cardUrl);
     }
 
-    const metaBits = [item.exam, item.subject].filter(Boolean);
+    const metaBits = [item.exam, item.year].filter(Boolean);
 
     card.innerHTML =
         '<div class="card-top-v2">' +

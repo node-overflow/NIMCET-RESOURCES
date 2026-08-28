@@ -1,56 +1,9 @@
 [
-    {
-    "id": 405,
+  {
     "title": "Reading Comprehension \u2013 Notes",
-    "type": "Notes",
-    "subject": "English",
     "chapter": "Comprehension",
-    "desc": "Passage-reading strategies and question-type breakdown for inference and tone questions.",
-    "difficulty": "Intermediate",
     "bestFor": "Quick Revision",
     "tags": ["comprehension", "reading strategy"],
-    "featured": false,
-    "action": "download",
-    "url": "#"
-  },
-  {
-    "id": 406,
-    "title": "Synonyms & Antonyms \u2013 Notes",
-    "type": "Notes",
-    "subject": "English",
-    "chapter": "Vocabulary",
-    "desc": "High-frequency word list grouped by theme for faster memorisation.",
-    "difficulty": "Beginner",
-    "bestFor": "Quick Revision",
-    "tags": ["synonyms", "antonyms", "vocabulary"],
-    "featured": false,
-    "action": "download",
-    "url": "#"
-  },
-  {
-    "id": 407,
-    "title": "Sentence Correction Rules \u2013 Notes",
-    "type": "Notes",
-    "subject": "English",
-    "chapter": "Grammar",
-    "desc": "Common error categories: subject-verb agreement, tense misuse and modifier placement.",
-    "difficulty": "Intermediate",
-    "bestFor": "Quick Revision",
-    "tags": ["sentence correction", "grammar"],
-    "featured": true,
-    "action": "download",
-    "url": "#"
-  },
-  {
-    "id": 408,
-    "title": "Para Jumbles Strategy \u2013 Notes",
-    "type": "Notes",
-    "subject": "English",
-    "chapter": "Para Jumbles",
-    "desc": "Linking-word and mandatory-pair techniques for reordering jumbled paragraphs quickly.",
-    "difficulty": "Intermediate",
-    "bestFor": "Quick Revision",
-    "tags": ["para jumbles"],
     "featured": false,
     "action": "download",
     "url": "#"

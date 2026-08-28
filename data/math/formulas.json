@@ -1,8 +1,6 @@
 [
   {
     "title": "Arihant Mathematics Handbook",
-    "type": "Formula",
-    "subject": "Mathematics",
     "chapter": "Mathematics",
     "desc": "Comprehensive mathematics formulas, identities and key results condensed into a single quick-revision reference sheet.",
     "difficulty": "Intermediate",
@@ -14,8 +12,6 @@
   },
   {
     "title": "PW Mathematics Handbook",
-    "type": "Formula",
-    "subject": "Mathematics",
     "chapter": "Mathematics",
     "desc": "Comprehensive mathematics formulas, identities and key results condensed into a single quick-revision reference sheet.",
     "difficulty": "Intermediate",
@@ -27,8 +23,6 @@
   },
   {
     "title": "Motion Mathematics Handbook",
-    "type": "Formula",
-    "subject": "Mathematics",
     "chapter": "Mathematics",
     "desc": "Comprehensive mathematics formulas, identities and key results condensed into a single quick-revision reference sheet.",
     "difficulty": "Intermediate",
@@ -40,8 +34,6 @@
   },
   {
     "title": "IIT JEE Formula Sheet",
-    "type": "Formula",
-    "subject": "Mathematics",
     "chapter": "Mathematics",
     "desc": "Comprehensive mathematics formulas, identities and key results condensed into a single quick-revision reference sheet.",
     "difficulty": "Intermediate",
@@ -53,8 +45,6 @@
   },
   {
     "title": "Resonance Mathematics Handbook",
-    "type": "Formula",
-    "subject": "Mathematics",
     "chapter": "Mathematics",
     "desc": "Comprehensive mathematics formulas, identities and key results condensed into a single quick-revision reference sheet.",
     "difficulty": "Intermediate",
@@ -66,8 +56,6 @@
   },
   {
     "title": "Mathematics Handbook",
-    "type": "Formula",
-    "subject": "Mathematics",
     "chapter": "Mathematics",
     "desc": "Comprehensive mathematics formulas, identities and key results condensed into a single quick-revision reference sheet.",
     "difficulty": "Intermediate",

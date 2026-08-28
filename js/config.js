@@ -1,20 +1,28 @@
 "use strict";
 
-export const DATA_FILES = [
-    "math",
-    "reasoning",
-    "computer",
-    "quants",
-    "english"
-].flatMap(subject =>
-    [
-        "books",
-        "pyqs",
-        "notes",
-        "videos",
-        "practice",
-        "formulas"
-    ].map(type => `data/${subject}/${type}.json`)
+const SUBJECT_BY_SLUG = {
+    math: "Mathematics",
+    reasoning: "Logical Reasoning",
+    computer: "Computer",
+    quants: "Quantitative Aptitude",
+    english: "English"
+};
+
+const TYPE_BY_FILE = {
+    books: "Book",
+    pyqs: "PYQ",
+    notes: "Notes",
+    videos: "Video",
+    practice: "Practice",
+    formulas: "Formula"
+};
+
+export const DATA_FILE_ENTRIES = Object.keys(SUBJECT_BY_SLUG).flatMap(subjectSlug =>
+    Object.keys(TYPE_BY_FILE).map(typeFile => ({
+        path: `data/${subjectSlug}/${typeFile}.json`,
+        subject: SUBJECT_BY_SLUG[subjectSlug],
+        type: TYPE_BY_FILE[typeFile]
+    }))
 );
 
 export const ANNOUNCEMENTS_FILE = "data/other/announcements.json";

@@ -1,42 +1,9 @@
 [
   {
-    "id": 212,
     "title": "Analogy & Classification \u2013 Practice Set",
-    "type": "Practice",
-    "subject": "Logical Reasoning",
     "chapter": "Analogy",
-    "desc": "50 questions spanning verbal analogy, number analogy and odd-one-out classification.",
-    "difficulty": "Beginner",
     "bestFor": "Timed Practice",
     "tags": ["analogy", "classification"],
-    "featured": false,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "id": 213,
-    "title": "Puzzles \u2013 Practice Set",
-    "type": "Practice",
-    "subject": "Logical Reasoning",
-    "chapter": "Puzzles",
-    "desc": "Box, floor and grid-based puzzles ranked from moderate to exam-hard difficulty.",
-    "difficulty": "Advanced",
-    "bestFor": "Timed Practice",
-    "tags": ["puzzles"],
-    "featured": false,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "id": 214,
-    "title": "Data Sufficiency \u2013 Practice Set",
-    "type": "Practice",
-    "subject": "Logical Reasoning",
-    "chapter": "Data Sufficiency",
-    "desc": "Statement-based data sufficiency questions with the standard five-option framework.",
-    "difficulty": "Intermediate",
-    "bestFor": "Timed Practice",
-    "tags": ["data sufficiency"],
     "featured": false,
     "action": "open",
     "url": "#"

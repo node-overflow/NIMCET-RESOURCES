@@ -1,56 +1,9 @@
 [
-    {
-    "id": 306,
-    "title": "Number Systems & Data Representation \u2013 Notes",
-    "type": "Notes",
-    "subject": "Computer",
+  {
+    "title": "Number Systems",
     "chapter": "Number Systems",
-    "desc": "Binary, octal, hex conversions and signed number representation in condensed form.",
-    "difficulty": "Beginner",
     "bestFor": "Quick Revision",
     "tags": ["number systems", "data representation"],
-    "featured": false,
-    "action": "download",
-    "url": "#"
-  },
-  {
-    "id": 307,
-    "title": "Computer Architecture \u2013 Notes",
-    "type": "Notes",
-    "subject": "Computer",
-    "chapter": "Architecture",
-    "desc": "CPU organisation, memory hierarchy, cache and instruction cycle summarised for revision.",
-    "difficulty": "Intermediate",
-    "bestFor": "Quick Revision",
-    "tags": ["computer architecture", "cpu"],
-    "featured": false,
-    "action": "download",
-    "url": "#"
-  },
-  {
-    "id": 308,
-    "title": "Operating Systems \u2013 Notes",
-    "type": "Notes",
-    "subject": "Computer",
-    "chapter": "Operating Systems",
-    "desc": "Process scheduling, deadlocks, memory management and paging explained concisely.",
-    "difficulty": "Intermediate",
-    "bestFor": "Quick Revision",
-    "tags": ["operating systems", "scheduling", "deadlocks"],
-    "featured": true,
-    "action": "download",
-    "url": "#"
-  },
-  {
-    "id": 309,
-    "title": "DBMS & Networking \u2013 Notes",
-    "type": "Notes",
-    "subject": "Computer",
-    "chapter": "DBMS",
-    "desc": "Normalization, keys, SQL basics and OSI/TCP model reduced to exam-ready points.",
-    "difficulty": "Intermediate",
-    "bestFor": "Quick Revision",
-    "tags": ["dbms", "networking", "sql"],
     "featured": false,
     "action": "download",
     "url": "#"

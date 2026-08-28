@@ -1,22 +1,30 @@
 "use strict";
 
 import {
-    DATA_FILES,
+    DATA_FILE_ENTRIES,
     ANNOUNCEMENTS_FILE,
     PYQS_FILE
 } from "./config.js";
 
 import { state } from "./state.js";
 
-const loadFile = (path) => {
-    return fetch(path).then(response => {
+const loadFile = (entry) => {
+    return fetch(entry.path).then(response => {
         if (!response.ok) {
             throw new Error(
-                `Failed to load ${path}`
+                `Failed to load ${entry.path}`
             );
         }
 
         return response.json();
+    }).then(items => {
+        const list = Array.isArray(items) ? items : [];
+
+        return list.map(item => ({
+            subject: entry.subject,
+            type: entry.type,
+            ...item
+        }));
     });
 };
 
@@ -34,7 +42,7 @@ const loadOptional = (path) => {
 
 export const loadData = () => {
     return Promise.all(
-        DATA_FILES.map(loadFile)
+        DATA_FILE_ENTRIES.map(loadFile)
     ).then(lists => {
         state.resources = lists.flat();
     });

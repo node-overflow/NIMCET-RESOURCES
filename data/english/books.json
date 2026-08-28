@@ -1,29 +1,10 @@
 [
-    {
-    "id": 401,
+  {
     "title": "High School English Grammar & Composition",
-    "type": "Book",
-    "subject": "English",
     "chapter": "Grammar",
-    "desc": "Wren & Martin style reference covering parts of speech, tenses and sentence structure.",
-    "difficulty": "Beginner",
     "bestFor": "Foundation",
     "tags": ["grammar", "sentence structure"],
     "featured": true,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "id": 402,
-    "title": "Word Power Made Easy",
-    "type": "Book",
-    "subject": "English",
-    "chapter": "Vocabulary",
-    "desc": "Root-based vocabulary building approach used widely for competitive exam preparation.",
-    "difficulty": "Intermediate",
-    "bestFor": "Concept + Practice",
-    "tags": ["vocabulary", "word roots"],
-    "featured": false,
     "action": "open",
     "url": "#"
   }

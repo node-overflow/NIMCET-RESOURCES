@@ -1,42 +1,9 @@
 [
   {
-    "id": 512,
     "title": "Percentage & Profit-Loss \u2013 Practice Set",
-    "type": "Practice",
-    "subject": "Quantitative Aptitude",
     "chapter": "Percentage",
-    "desc": "60 graded questions moving from direct application to multi-step scenarios.",
-    "difficulty": "Intermediate",
     "bestFor": "Timed Practice",
     "tags": ["percentage", "profit and loss"],
-    "featured": false,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "id": 513,
-    "title": "Time, Speed, Work \u2013 Practice Set",
-    "type": "Practice",
-    "subject": "Quantitative Aptitude",
-    "chapter": "Time Speed Distance",
-    "desc": "Mixed practice across speed, distance, work and efficiency at exam difficulty.",
-    "difficulty": "Advanced",
-    "bestFor": "Timed Practice",
-    "tags": ["time speed distance", "time and work"],
-    "featured": false,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "id": 514,
-    "title": "Number System \u2013 Practice Set",
-    "type": "Practice",
-    "subject": "Quantitative Aptitude",
-    "chapter": "Number System",
-    "desc": "Divisibility, remainder and factor-based questions with increasing difficulty.",
-    "difficulty": "Beginner",
-    "bestFor": "Timed Practice",
-    "tags": ["number system"],
     "featured": false,
     "action": "open",
     "url": "#"

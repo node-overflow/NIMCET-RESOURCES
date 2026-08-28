@@ -1,29 +1,10 @@
 [
-    {
-    "id": 304,
+  {
     "title": "NIMCET 2016\u20132026 Solved Papers",
-    "type": "PYQ",
-    "subject": "Computer",
     "chapter": "Previous Years",
-    "desc": "Eleven years of official computer awareness questions with explained answers.",
-    "difficulty": "Advanced",
     "bestFor": "Exam Pattern",
     "tags": ["pyq", "previous years"],
     "featured": true,
-    "action": "download",
-    "url": "#"
-  },
-  {
-    "id": 305,
-    "title": "NIMCET 2025 Question Paper",
-    "type": "PYQ",
-    "subject": "Computer",
-    "chapter": "Previous Years",
-    "desc": "Most recent official paper for checking current weighting across CS topics.",
-    "difficulty": "Advanced",
-    "bestFor": "Exam Pattern",
-    "tags": ["pyq", "2025"],
-    "featured": false,
     "action": "download",
     "url": "#"
   }

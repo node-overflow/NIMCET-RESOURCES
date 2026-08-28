@@ -1,50 +1,10 @@
 [
   {
-    "title": "Quadratic Equations & Inequalities \u2013 Practice Set",
-    "type": "Practice",
-    "subject": "Mathematics",
+    "title": "Quadratic Equations & Inequalities",
     "chapter": "Algebra",
-    "desc": "60 graded questions moving from direct formula application to multi-concept problems.",
     "difficulty": "Intermediate",
     "bestFor": "Timed Practice",
     "tags": ["quadratic equations", "inequalities"],
-    "featured": false,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "title": "Permutation, Combination & Binomial \u2013 Practice Set",
-    "type": "Practice",
-    "subject": "Mathematics",
-    "chapter": "Combinatorics",
-    "desc": "Question set covering arrangement, selection and binomial expansion, ordered by difficulty.",
-    "difficulty": "Advanced",
-    "bestFor": "Timed Practice",
-    "tags": ["permutation", "combination", "binomial theorem"],
-    "featured": false,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "title": "Coordinate Geometry \u2013 Practice Set",
-    "type": "Practice",
-    "subject": "Mathematics",
-    "chapter": "Coordinate Geometry",
-    "desc": "Straight lines, circles and conic sections practice with mixed-difficulty questions.",
-    "difficulty": "Intermediate",
-    "bestFor": "Timed Practice",
-    "tags": ["coordinate geometry", "circles", "conics"],
-    "featured": false,
-    "action": "open",
-    "url": "#"
-  },
-  {
-    "title": "Probability & Statistics \u2013 Practice Set",
-    "type": "Practice",
-    "subject": "Mathematics",
-    "chapter": "Probability",
-    "bestFor": "Timed Practice",
-    "tags": ["probability", "statistics"],
     "featured": false,
     "action": "open",
     "url": "#"

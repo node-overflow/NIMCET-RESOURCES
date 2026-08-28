@@ -1,8 +1,6 @@
 [
   {
     "title": "Alphabets",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "alphabets"],
     "featured": false,
@@ -11,8 +9,6 @@
   },
   {
     "title": "Alphabet Series",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "alphabet series"],
     "featured": false,
@@ -21,8 +17,6 @@
   },
   {
     "title": "Letter Series",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "letter series"],
     "featured": false,
@@ -31,8 +25,6 @@
   },
   {
     "title": "Number Series",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "number series"],
     "featured": false,
@@ -41,8 +33,6 @@
   },
   {
     "title": "Alphanumeric Series",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "alphanumeric series"],
     "featured": false,
@@ -51,8 +41,6 @@
   },
   {
     "title": "Analogy",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "analogy"],
     "featured": false,
@@ -61,8 +49,6 @@
   },
   {
     "title": "Odd One Out",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "odd one out"],
     "featured": false,
@@ -71,8 +57,6 @@
   },
   {
     "title": "Coding Decoding",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "coding decoding"],
     "featured": false,
@@ -81,8 +65,6 @@
   },
   {
     "title": "Coding Decoding",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "coding decoding"],
     "featured": false,
@@ -91,8 +73,6 @@
   },
   {
     "title": "Blood Relations",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "blood relation"],
     "featured": false,
@@ -101,8 +81,6 @@
   },
   {
     "title": "Blood Relations",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "blood relation"],
     "featured": false,
@@ -111,8 +89,6 @@
   },
   {
     "title": "Direction and Distance",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "direction", "distance"],
     "featured": false,
@@ -121,8 +97,6 @@
   },
   {
     "title": "Direction and Distance",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "direction", "distance"],
     "featured": false,
@@ -131,8 +105,6 @@
   },
   {
     "title": "Direction Test",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "direction"],
     "featured": false,
@@ -141,8 +113,6 @@
   },
   {
     "title": "Order and Ranking",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "order", "ranking"],
     "featured": false,
@@ -151,8 +121,6 @@
   },
   {
     "title": "Ranking and Comparision",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "ranking"],
     "featured": false,
@@ -161,8 +129,6 @@
   },
   {
     "title": "Venn Diagram",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "venn diagram"],
     "featured": false,
@@ -171,8 +137,6 @@
   },
   {
     "title": "Inequality",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "inequality"],
     "featured": false,
@@ -181,8 +145,6 @@
   },
   {
     "title": "Inequality",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "inequality"],
     "featured": false,
@@ -191,8 +153,6 @@
   },
   {
     "title": "Data Sufficiency",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "data sufficiency"],
     "featured": false,
@@ -201,8 +161,6 @@
   },
   {
     "title": "Data Sufficiency",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "data sufficiency"],
     "featured": false,
@@ -211,8 +169,6 @@
   },
   {
     "title": "Counting of Figures",
-    "type": "Video",
-    "subject": "Logical Reasoning",
     "bestFor": "One Shot",
     "tags": ["reasoning", "counting"],
     "featured": false,
