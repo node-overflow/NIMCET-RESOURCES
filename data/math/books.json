@@ -1,5 +1,16 @@
 [
   {
+    "title": "Arihant Nimcet 16 Years Solved",
+    "chapter": "Math",
+    "bestFor": "Practice",
+    "image": "https://m.media-amazon.com/images/I/6109xOx50LL.jpg",
+    "tags": ["nimcet"],
+    "featured": true,
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20NIMCET%2016%20Years%20Solved%20PYQs.pdf"
+  },
+  {
     "title": "Play with Graphs",
     "chapter": "Graphs",
     "bestFor": "Concept + Practice",
@@ -11,17 +22,16 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Play%20with%20graphs%20Arihant.pdf"
   },
   {
-    "title": "RD SHARMA VOL 1",
+    "title": "R D SHARMA VOL 1",
     "chapter": "Algebra",
     "bestFor": "Concept + Practice",
     "image": "https://dhanpatrai.com/img/books/Objective%20Math.(Vol.%20I%20&%20II).jpg",
     "tags": ["algebra", "r d"],
-    "reader": true,
     "action": "open",
-    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/RD%20Sharma%20Volume%20I.pdf"
+    "url": "https://t.me/nimcet_daily_quiz/55"
   },
   {
-    "title": "RD SHARMA VOL 2",
+    "title": "R D SHARMA VOL 2",
     "chapter": "Calculus",
     "bestFor": "Concept + Practice",
     "image": "https://m.media-amazon.com/images/I/71Yb6Jp-yfL._AC_UF1000,1000_QL80_.jpg",
@@ -31,7 +41,7 @@
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/math%20books/RD%20Sharma%20Volume%20II.pdf"
   },
   {
-    "title": "RD SHARMA 11",
+    "title": "R D SHARMA 11",
     "chapter": "Algebra",
     "bestFor": "Foundation",
     "image": "https://dhanpatrai.com/img/books/Math%20XI%20Vol%20I_1.jpg",
@@ -39,6 +49,27 @@
     "featured": false,
     "action": "open",
     "url": "https://t.me/nimcet_resources/139"
+  },
+  {
+    "title": "R D SHARMA 12 (Vol 1)",
+    "chapter": "Algebra",
+    "bestFor": "Foundation",
+    "image": "https://iili.io/CpJYYIj.png",
+    "tags": ["class 11", "r d"],
+    "featured": false,
+    "action": "open",
+    "url": "https://t.me/nimcet_resources/139"
+  },
+  {
+    "title": "R D SHARMA 12 (Vol 2)",
+    "chapter": "Algebra",
+    "bestFor": "Foundation",
+    "image": "https://iili.io/CpJaQDJ.png",
+    "tags": ["class 11", "r d"],
+    "featured": false,
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/RD%20sharma%20class%2012%20volume%202.pdf"
   },
   {
     "title": "R S AGGARWAL 11",
