@@ -39,14 +39,6 @@
   font-weight: 600;
 }
 
-.notes-card .card-action:hover,
-.formula-card .card-action:hover,
-.practice-card .card-action:hover,
-.pyqtype-card .card-action:hover {
-  background: color-mix(in srgb, var(--tc) 22%, transparent);
-  border-color: color-mix(in srgb, var(--tc) 55%, transparent);
-}
-
 /* ============ Resource grid & cards ============ */
 .resource-grid {
   display: grid;
