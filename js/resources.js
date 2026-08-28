@@ -19,6 +19,37 @@ import {
 
 import { renderGrid } from "./cards.js";
 
+const buildExamFilterBar = (examOptions) => {
+    const bar = document.createElement("div");
+    bar.id = "examFilterBar";
+    bar.className = "exam-filter-bar";
+
+    const label = document.createElement("span");
+    label.className = "exam-filter-label";
+    label.textContent = "Select Exam";
+    bar.appendChild(label);
+
+    examOptions.forEach(name => {
+        const btn = document.createElement("button");
+        btn.className = "exam-filter-btn";
+        btn.type = "button";
+        btn.textContent = name;
+
+        if (state.examFilter === name) {
+            btn.dataset.active = "true";
+        }
+
+        btn.addEventListener("click", () => {
+            state.examFilter = name;
+            renderResources();
+        });
+
+        bar.appendChild(btn);
+    });
+
+    return bar;
+};
+
 export const renderFilterPills = () => {
     elFilterPills.innerHTML = "";
 
@@ -54,37 +85,32 @@ export const renderFilterPills = () => {
     });
 
     if (state.subject === "Computer") {
-
         if (state.examFilter === null) {
             state.examFilter = "All";
         }
 
-        const bar = document.createElement("div");
-        bar.id = "examFilterBar";
-        bar.className = "exam-filter-bar";
+        const bar = buildExamFilterBar(["All", "NIMCET", "CUET PG"]);
 
-        const label = document.createElement("span");
-        label.className = "exam-filter-label";
-        label.textContent = "Select Exam";
-        bar.appendChild(label);
+        const toolbar = document.querySelector(".toolbar");
+        if (toolbar) {
+            toolbar.insertAdjacentElement("afterend", bar);
+        }
+    }
 
-        ["All", "NIMCET", "CUET PG"].forEach(name => {
-            const btn = document.createElement("button");
-            btn.className = "exam-filter-btn";
-            btn.type = "button";
-            btn.textContent = name;
+    if (state.subject === "Mathematics" && state.type === "PYQ") {
+        if (state.examFilter === null) {
+            state.examFilter = "All";
+        }
 
-            if (state.examFilter === name) {
-                btn.dataset.active = "true";
-            }
+        const examOptions = Array.from(
+            new Set(
+                state.resources
+                    .filter(r => r.subject === "Mathematics" && r.type === "PYQ" && r.exam)
+                    .map(r => r.exam)
+            )
+        );
 
-            btn.addEventListener("click", () => {
-                state.examFilter = name;
-                renderResources();
-            });
-
-            bar.appendChild(btn);
-        });
+        const bar = buildExamFilterBar(["All", ...examOptions]);
 
         const toolbar = document.querySelector(".toolbar");
         if (toolbar) {

@@ -306,7 +306,10 @@ export const goToResources = opts => {
         state.search = state.search;
     }
 
-    if (state.subject !== "Computer" || state.type !== "Video") {
+    const keepComputerFilter = state.subject === "Computer" && state.type === "Video";
+    const keepMathPyqFilter = state.subject === "Mathematics" && state.type === "PYQ";
+
+    if (!keepComputerFilter && !keepMathPyqFilter) {
         state.examFilter = null;
     }
 

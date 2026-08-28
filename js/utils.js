@@ -122,6 +122,10 @@ export const getFilteredResources = () => {
             }
         }
 
+        if (state.subject === "Mathematics" && state.type === "PYQ" && state.examFilter && state.examFilter !== "All") {
+            if ((item.exam || "") !== state.examFilter) return false;
+        }
+
         return true;
     });
 };
