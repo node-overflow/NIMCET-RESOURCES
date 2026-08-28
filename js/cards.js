@@ -358,7 +358,7 @@ const buildPyqTypeCard = (item) => {
 
         typeLabelChip(item, "--type-pyq", "PYQ") +
 
-        cardTopRight(yearBadgeHtml(item), examTagHtml(item)) +
+        cardTopRight(examTagHtml(item)) +
 
         "</div>" +
 

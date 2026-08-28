@@ -47,7 +47,7 @@ const buildStat = (num, label) => {
     return stat;
 };
 
-const animateCount = (element, target) => {
+const animateCount = (element, target, exact = false) => {
     const duration = Math.min(
         3000,
         Math.max(1800, target * 15)
@@ -65,7 +65,8 @@ const animateCount = (element, target) => {
         if (progress < 1) {
             requestAnimationFrame(update);
         } else {
-            element.textContent = target + "+";
+            const finalValue = exact ? target : Math.max(target - 1, 0);
+            element.textContent = finalValue + "+";
         }
     };
 
@@ -100,7 +101,7 @@ const renderHeroStats = () => {
     const dppNum = dppStat.querySelector(".hero-stat-num");
     const visitsNum = visitsStat.querySelector(".hero-stat-num");
 
-    animateCount(visitsNum, 5000);
+    animateCount(visitsNum, 5000, true);
     animateCount(pyqNum, state.pyqs.length);
 
     computeDppTotal().then(total => {
