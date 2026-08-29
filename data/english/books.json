@@ -1,10 +1,9 @@
 [
   {
-    "title": "High School English Grammar & Composition",
+    "title": "English Grammar",
     "chapter": "Grammar",
     "bestFor": "Foundation",
     "tags": ["grammar", "sentence structure"],
-    "featured": true,
     "action": "open",
     "url": "#"
   }

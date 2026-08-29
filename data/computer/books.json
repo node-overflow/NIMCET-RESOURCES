@@ -2,11 +2,8 @@
   {
     "title": "Let Us C",
     "chapter": "Programming in C",
-    "desc": "Classic C programming text covering syntax, pointers, structures and file handling.",
-    "difficulty": "Beginner",
     "bestFor": "Foundation",
     "tags": ["c programming", "pointers"],
-    "featured": true,
     "action": "open",
     "url": "#"
   }

@@ -36,7 +36,6 @@
     "bestFor": "Concept + Practice",
     "image": "https://m.media-amazon.com/images/I/71Yb6Jp-yfL._AC_UF1000,1000_QL80_.jpg",
     "tags": ["calculus", "r d"],
-    "featured": false,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/math%20books/RD%20Sharma%20Volume%20II.pdf"
   },
@@ -46,7 +45,6 @@
     "bestFor": "Foundation",
     "image": "https://dhanpatrai.com/img/books/Math%20XI%20Vol%20I_1.jpg",
     "tags": ["class 11", "r d"],
-    "featured": false,
     "action": "open",
     "url": "https://t.me/nimcet_resources/139"
   },
@@ -56,7 +54,6 @@
     "bestFor": "Foundation",
     "image": "https://iili.io/CpJYYIj.png",
     "tags": ["class 11", "r d"],
-    "featured": false,
     "action": "open",
     "url": "https://t.me/nimcet_resources/139"
   },
@@ -66,7 +63,6 @@
     "bestFor": "Foundation",
     "image": "https://iili.io/CpJaQDJ.png",
     "tags": ["class 11", "r d"],
-    "featured": false,
     "reader": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/RD%20sharma%20class%2012%20volume%202.pdf"
@@ -77,7 +73,6 @@
     "bestFor": "Practice",
     "image": "https://m.media-amazon.com/images/I/710DY60DHUL._SL1500_.jpg",
     "tags": ["class 11 mathematics", "rs"],
-    "featured": false,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/math%20books/R%20S%20Aggarwal%20%20class%2011%20maths%20-%20Senio.pdf"
   },
@@ -87,7 +82,6 @@
     "bestFor": "Practice",
     "image": "https://m.media-amazon.com/images/I/71XNw5ICsCL._SL1500_.jpg",
     "tags": ["class 12 mathematics", "rs"],
-    "featured": false,
     "action": "open",
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/math%20books/RS%20AGRAWAL%2012.pdf"
   },
@@ -97,7 +91,6 @@
     "bestFor": "Exam Prep",
     "image": "https://m.media-amazon.com/images/I/61zbJeaoiQL.jpg",
     "tags": ["mca entrance", "mathematics practice", "nimcet preparation"],
-    "featured": false,
     "reader": true,
     "action": "open",
     "url": "https://raw.githubusercontent.com/rawcontentgit/NIMCET-RESOURCES/master/math%20books/Arihant%20MCA%20Package.pdf"
@@ -108,7 +101,6 @@
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B011-F_72969b1f-94da-4a7f-95fb-9f1c142624c1_600x.jpg?v=1773291095",
     "tags": ["algebra", "concept building", "advanced practice"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Algebra.pdf"
@@ -119,7 +111,6 @@
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B012-F_9d482637-d21b-454e-9e06-1eaffcdf4908_600x.jpg?v=1773296020",
     "tags": ["coodinate geometry", "concept building", "advanced practice"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Coordinate%20Geometry.pdf"
@@ -130,7 +121,6 @@
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B015-F_7060f009-715c-4356-ace1-4d38147a4b73_600x.jpg?v=1773296178",
     "tags": ["calculus", "concept building", "advanced practice"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Differential%20Calculus.pdf"
@@ -141,7 +131,6 @@
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B016-F_6a62f266-6cd0-4838-a9f3-3d940e4fa612_600x.jpg?v=1773296256",
     "tags": ["calculus", "concept building", "advanced practice"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Integral%20Calculus.pdf"
@@ -152,7 +141,6 @@
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B017-F_6261156b-e075-4337-b00f-f3b201d84a3a_600x.png?v=1765001487",
     "tags": ["trigonometry", "concept building", "advanced practice"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Trigonometry.pdf"
@@ -163,7 +151,6 @@
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B018-F_91af9480-00db-4704-a1bc-34447d9bfe8e_600x.jpg?v=1773296794",
     "tags": ["vector", "concept building", "advanced practice"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Vectors%20%26%203D.pdf"
@@ -174,7 +161,6 @@
     "bestFor": "Concept Building",
     "image": "https://m.media-amazon.com/images/I/519C1RzWtNL._SL1360_.jpg",
     "tags": ["trigonometry", "concept building", "advanced practice"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/SL%20Loney-Plane%20Trigonometry.pdf"
@@ -185,7 +171,6 @@
     "bestFor": "Problem Practice",
     "image": "https://arihantbooks.com/cdn/shop/files/F280-F_52aa30e0-30df-4f3e-a6a9-185f1d574458.jpg?v=1738400585",
     "tags": ["class 11", "ncert exemplar", "problem practice"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/NCERT%20Examplar%20Math%20XI.pdf"
@@ -196,7 +181,6 @@
     "bestFor": "Problem Practice",
     "image": "https://arihantbooks.com/cdn/shop/files/F282-F_2b1700d1-b712-4e25-b6c8-a537318d12ca.jpg?v=1738400593",
     "tags": ["class 12", "ncert exemplar", "problem practice"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/NCERT%20Examplar%20Math%20XII.pdf"

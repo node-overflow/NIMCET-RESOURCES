@@ -6,7 +6,6 @@
     "difficulty": "Beginner",
     "bestFor": "Quick Revision",
     "tags": ["sets", "relations", "functions"],
-    "featured": false,
     "action": "download",
     "url": "#"
   },
@@ -17,7 +16,6 @@
     "difficulty": "Intermediate",
     "bestFor": "Quick Revision",
     "tags": ["complex numbers", "de moivre"],
-    "featured": false,
     "action": "download",
     "url": "#"
   },

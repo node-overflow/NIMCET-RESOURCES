@@ -4,7 +4,6 @@
     "chapter": "Geometry",
     "owner": "GB Sir",
     "tags": ["Geometry", "3d"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/3D%20GB%20Sir.pdf"
@@ -14,7 +13,6 @@
     "chapter": "Application of Derivatives",
     "owner": "GB Sir",
     "tags": ["calculus", "application of derivatives"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/AOD%20GB%20Sir.pdf"
@@ -24,7 +22,6 @@
     "chapter": "Application of Derivatives",
     "owner": "GB Sir",
     "tags": ["calculus", "application of derivatives"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/AOD%20II%20GB%20Sir.pdf"
@@ -34,7 +31,6 @@
     "chapter": "Application of Derivatives",
     "owner": "GB Sir",
     "tags": ["calculus", "application of derivatives"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/AOD%20III%20GB%20Sir.pdf"
@@ -44,7 +40,6 @@
     "chapter": "Application of Derivatives",
     "owner": "GB Sir",
     "tags": ["calculus", "application of derivatives"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/AOD%20IV%20GB%20Sir.pdf"
@@ -54,7 +49,6 @@
     "chapter": "Integral Calculus",
     "owner": "GB Sir",
     "tags": ["calculus", "area under curve", "integration"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Area%20under%20curve%20GB%20Sir.pdf"
@@ -64,7 +58,6 @@
     "chapter": "Binomial Theorem",
     "owner": "GB Sir",
     "tags": ["algebra", "binomial theorem"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Binomial%20Theorem%20GB%20Sir.pdf"
@@ -74,7 +67,6 @@
     "chapter": "Circle",
     "owner": "GB Sir",
     "tags": ["coordinate geometry", "circle"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Circles%20GB%20Sir.pdf"
@@ -84,7 +76,6 @@
     "chapter": "Complex Numbers",
     "owner": "GB Sir",
     "tags": ["algebra", "complex numbers"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Complex%20Numbers%20GB%20Sir.pdf"
@@ -94,7 +85,6 @@
     "chapter": "Continuity and Differentiability",
     "owner": "GB Sir",
     "tags": ["calculus", "continuity", "differentiability"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Continuity%20Differentiability%20GB%20Sir.pdf"
@@ -104,7 +94,6 @@
     "chapter": "Integral Calculus",
     "owner": "GB Sir",
     "tags": ["calculus", "integration", "definite integrals"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Definite%20Integrals%20GB%20Sir.pdf"
@@ -114,7 +103,6 @@
     "chapter": "Differential Equations",
     "owner": "GB Sir",
     "tags": ["calculus", "differential equations"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Differential%20Eqn%20GB%20Sir.pdf"
@@ -124,7 +112,6 @@
     "chapter": "Differentiation",
     "owner": "GB Sir",
     "tags": ["calculus", "differentiation"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Differentiation%20GB%20Sir.pdf"
@@ -134,7 +121,6 @@
     "chapter": "Ellipse",
     "owner": "GB Sir",
     "tags": ["coordinate geometry", "conic sections", "ellipse"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Ellipse%20GB%20Sir.pdf"
@@ -144,7 +130,6 @@
     "chapter": "Functions",
     "owner": "GB Sir",
     "tags": ["algebra", "functions"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Functions%20GB%20Sir.pdf"
@@ -154,7 +139,6 @@
     "chapter": "Functions",
     "owner": "GB Sir",
     "tags": ["algebra", "functions"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Functions%20II%20GB%20Sir.pdf"
@@ -164,7 +148,6 @@
     "chapter": "Functions",
     "owner": "GB Sir",
     "tags": ["algebra", "functions"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Functions%20III%20GB%20Sir.pdf"
@@ -174,7 +157,6 @@
     "chapter": "Hyperbola",
     "owner": "GB Sir",
     "tags": ["coordinate geometry", "conic sections", "hyperbola"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Hyperbola%20GB%20Sir.pdf"
@@ -184,7 +166,6 @@
     "chapter": "Integral Calculus",
     "owner": "GB Sir",
     "tags": ["calculus", "integration", "indefinite integrals"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Indefinite%20Integrals%20GB%20Sir.pdf"
@@ -194,7 +175,6 @@
     "chapter": "Limits",
     "owner": "GB Sir",
     "tags": ["calculus", "limits"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Limits%20GB%20Sir.pdf"
@@ -204,7 +184,6 @@
     "chapter": "Logarithms",
     "owner": "GB Sir",
     "tags": ["algebra", "logarithms"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Logarithms%20GB%20Sir.pdf"
@@ -214,7 +193,6 @@
     "chapter": "Matrices and Determinants",
     "owner": "GB Sir",
     "tags": ["algebra", "matrices", "determinants"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Matrix%20%26%20Determinant%20GB%20Sir.pdf"
@@ -224,7 +202,6 @@
     "chapter": "Permutation and Combination",
     "owner": "GB Sir",
     "tags": ["combinatorics", "permutation", "combination"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/P%26C%20GB%20Sir.pdf"
@@ -234,7 +211,6 @@
     "chapter": "Parabola",
     "owner": "GB Sir",
     "tags": ["coordinate geometry", "conic sections", "parabola"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Parabola%20GB%20Sir.pdf"
@@ -244,7 +220,6 @@
     "chapter": "Probability",
     "owner": "GB Sir",
     "tags": ["probability", "combinatorics"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Probability%20GB%20Sir.pdf"
@@ -254,7 +229,6 @@
     "chapter": "Sequences and Series",
     "owner": "GB Sir",
     "tags": ["algebra", "sequences", "series", "progression"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Progression%20GB%20Sir.pdf"
@@ -264,7 +238,6 @@
     "chapter": "Quadratic Equations",
     "owner": "GB Sir",
     "tags": ["algebra", "quadratic equations"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Quadratic%20Eqn%20GB%20Sir.pdf"
@@ -274,7 +247,6 @@
     "chapter": "Straight Lines",
     "owner": "GB Sir",
     "tags": ["coordinate geometry", "straight lines"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/St%20Lines%20GB%20Sir.pdf"
@@ -284,7 +256,6 @@
     "chapter": "Trigonometry",
     "owner": "GB Sir",
     "tags": ["trigonometry", "trigonometric functions"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Trigonometry%20GB%20Sir.pdf"
@@ -294,7 +265,6 @@
     "chapter": "Trigonometry",
     "owner": "GB Sir",
     "tags": ["trigonometry", "trigonometric functions"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Trigonometry%20II%20GB%20Sir.pdf"
@@ -304,7 +274,6 @@
     "chapter": "Trigonometry",
     "owner": "GB Sir",
     "tags": ["trigonometry", "trigonometric functions"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Trigonometry%20III%20GB%20Sir.pdf"
@@ -314,7 +283,6 @@
     "chapter": "Vector Algebra",
     "owner": "GB Sir",
     "tags": ["vector", "3d geometry", "geometry"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Vector%20GB%20Sir.pdf"

@@ -5,7 +5,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "sets"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/SET%20THEORY%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -16,7 +15,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "logarithm"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/LOGARITHMS%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -28,7 +26,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "quadratic equations"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/Quadratic%20Equation%20%5BNIMCET%20PYQ.pdf"
@@ -39,7 +36,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "sequence-and-series"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/SEQUENCE%20%26%20SERIES%20%5BNIMCET%20PYQ%5D.pdf"
@@ -50,7 +46,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "matrices"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/MATRICES%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -61,7 +56,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "determinants"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/DETERMINANTS%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -72,7 +66,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "binomial-theorem"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/BINOMIAL%20THEOREM%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -83,7 +76,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "permutation-combination", "pnc"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/PNC%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -94,7 +86,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "probability"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/PROBABILITY%20%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -105,7 +96,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "statistics"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/STATISTICS%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -117,7 +107,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "trigonometry", "trigonometric-ratios"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/TRIGNOMETRY%20RATIO%20%5BNIMCET%20PYQ%5D.pdf"
@@ -128,7 +117,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "trigonometry", "height-and-distance"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/HEIGHT%20%26%20DISTANCE%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -139,7 +127,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "trigonometry", "inverse-trigonometry"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/INVERSE%20TRIGONOMETRY%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -151,7 +138,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "coordinate-geometry", "circle"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/CIRCLE%20%5BNIMCET%20PYQ%5D.pdf"
@@ -162,7 +148,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "coordinate-geometry", "conic-section"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/CONIC%20SECTION%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -173,7 +158,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "coordinate-geometry", "triangle"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/PROPERTIES%20OF%20TRIANGLE%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -185,7 +169,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "functions", "mapping"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/MAPPING%20AND%20FUNCTION%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -196,7 +179,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "limits"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/LIMIT%20%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -207,7 +189,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "continuity", "differentiability"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/CONTINUITY%20AND%20DIFFERENTIABILITY%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -218,7 +199,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "differentiation"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/DIFFERENTIATION%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -229,7 +209,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "application-of-derivatives"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/APPLICATION%20OF%20DERIVATIVES%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -240,7 +219,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "integration"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/DEFINITE%20INTEGRATION.pdf"
@@ -251,7 +229,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "area-under-curve"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/AREA%20UNDER%20CURVE%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -262,7 +239,6 @@
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "differential-equation"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/DIFFERENTIAL%20EQUATION%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -273,7 +249,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "statistics", "sets", "relations"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Statistics%2C%20Sets%20%26%20Relations%20JEE.pdf"
@@ -284,7 +259,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "quadratic equations"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Quadratic%20Equation%20JEE.pdf"
@@ -295,7 +269,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "sequence and series"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Sequence%20%26%20Series%20JEE.pdf"
@@ -306,7 +279,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "binomial theorem"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Binomial%20Theorem%20JEE.pdf"
@@ -317,7 +289,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "matrices", "determinants"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Matrices%20%26%20Determinants%20JEE.pdf"
@@ -328,7 +299,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "pnc", "permutation and combination"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/P%26C%20JEE.pdf"
@@ -339,7 +309,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "probability"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Probability%20JEE.pdf"
@@ -350,7 +319,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "trigonometry"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Trigonometry%20JEE.pdf"
@@ -361,7 +329,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "coordinate geometry", "straight lines"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Straight%20Lines%20JEE.pdf"
@@ -372,7 +339,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "coordinate geometry", "circle"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Circle%20JEE.pdf"
@@ -383,7 +349,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "coordinate geometry", "conic sections"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Conic%20Sections%20JEE.pdf"
@@ -394,7 +359,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "geometry", "triangles"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Properties%20of%20Triangles%20JEE.pdf"
@@ -405,7 +369,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "complex numbers"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Complex%20Numbers%20JEE.pdf"
@@ -416,7 +379,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "functions", "algebra"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Functions%20JEE.pdf"
@@ -427,7 +389,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "limits", "continuity", "differentiability"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Limits%2C%20Continuity%20and%20Differentiability%20JEE.pdf"
@@ -438,7 +399,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "differentiation"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Differentiation%20JEE.pdf"
@@ -449,7 +409,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "application of derivatives"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/AOD%20JEE.pdf"
@@ -460,7 +419,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "indefinite integrals"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Indefinite%20Integrals%20JEE.pdf"
@@ -471,7 +429,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "definite integrals"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Definite%20Integrals%20JEE.pdf"
@@ -482,7 +439,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "differential equations"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Differential%20Equations%20JEE.pdf"
@@ -493,7 +449,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "trigonometry", "inverse trigonometric functions"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/ITF%20JEE.pdf"
@@ -504,7 +459,6 @@
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "vectors", "3d geometry"],
-    "featured": false,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Vector%20%26%203D%20JEE.pdf"
