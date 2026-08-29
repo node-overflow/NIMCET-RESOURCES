@@ -276,16 +276,6 @@ const buildPracticeCard = (item) => {
         cardUrl = escapeHtml(cardUrl);
     }
 
-    const metaBits = [];
-
-    if (item.questions != null && item.questions !== "") {
-        metaBits.push(item.questions + " Questions");
-    }
-
-    if (item.bestFor) {
-        metaBits.push(item.bestFor);
-    }
-
     card.innerHTML =
         '<div class="card-top-v2">' +
 
@@ -301,11 +291,9 @@ const buildPracticeCard = (item) => {
 
         '<h3 class="card-title"></h3>' +
 
-        (metaBits.length
+        (item.owner
             ? '<div class="card-meta">' +
-            metaBits
-                .map(bit => "<span>" + escapeHtml(bit) + "</span>")
-                .join("") +
+            '<span>' + escapeHtml(item.owner) + '</span>' +
             "</div>"
             : "") +
 
