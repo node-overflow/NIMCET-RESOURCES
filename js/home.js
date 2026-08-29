@@ -160,6 +160,43 @@ const buildLogoItem = (logo, name, sub, onClick) => {
     return item;
 };
 
+let marqueeObserverInitialized = false;
+
+const initMarqueeObserver = () => {
+    if (marqueeObserverInitialized) return;
+
+    marqueeObserverInitialized = true;
+
+    if (!("IntersectionObserver" in window)) return;
+
+    const wraps = [elExamMarquee, elNitMarquee]
+        .filter(Boolean)
+        .map(track => track.closest(".marquee-wrap"))
+        .filter(Boolean);
+
+    if (!wraps.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle(
+                    "is-offscreen",
+                    !entry.isIntersecting
+                );
+            });
+        },
+        { threshold: 0 }
+    );
+
+    wraps.forEach(wrap => observer.observe(wrap));
+
+    document.addEventListener("visibilitychange", () => {
+        wraps.forEach(wrap => {
+            wrap.classList.toggle("is-offscreen", document.hidden);
+        });
+    });
+};
+
 const renderExamMarquee = (onExamClick) => {
     if (!elExamMarquee) return;
 
@@ -381,6 +418,7 @@ export const renderHome = (
 
     renderExamMarquee(onExamClick);
     renderNitMarquee();
+    initMarqueeObserver();
     renderFaqs();
 
     elSubjectGrid.innerHTML = "";

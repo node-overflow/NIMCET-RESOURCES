@@ -19,8 +19,7 @@
   cursor: pointer;
   box-shadow: var(--shadow-card);
   transition:
-    border-color 0.14s ease,
-    background 0.14s ease,
+    var(--transition-base),
     transform 0.16s ease,
     box-shadow 0.16s ease;
 }
@@ -77,9 +76,8 @@
   font-weight: 500;
   cursor: pointer;
   transition:
-    border-color 0.12s ease,
-    color 0.12s ease,
-    background 0.12s ease;
+    var(--transition-fast),
+    color 0.12s ease;
 }
 
 .chip:hover {
@@ -189,9 +187,8 @@
   font-weight: 500;
   cursor: pointer;
   transition:
-    border-color 0.12s ease,
-    color 0.12s ease,
-    background 0.12s ease;
+    var(--transition-fast),
+    color 0.12s ease;
   white-space: nowrap;
 }
 

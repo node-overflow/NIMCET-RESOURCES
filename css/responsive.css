@@ -1,4 +1,25 @@
 @media (max-width: 880px) {
+  .faq-categories,
+  .subject-grid,
+  .chip-row,
+  .filter-pills,
+  .exam-filter-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .faq-categories::-webkit-scrollbar,
+  .subject-grid::-webkit-scrollbar,
+  .chip-row::-webkit-scrollbar,
+  .filter-pills::-webkit-scrollbar,
+  .exam-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
   .shell {
     display: block;
   }
@@ -102,22 +123,12 @@
 
   .faq-categories {
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x proximity;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
     position: static;
     margin: 0;
     padding: 2px 2px 4px;
     gap: 8px;
     min-width: 0;
     width: 100%;
-  }
-
-  .faq-categories::-webkit-scrollbar {
-    display: none;
   }
 
   .faq-cat-btn {
@@ -147,21 +158,11 @@
 
   .subject-grid {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x proximity;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
     margin: 0;
     padding: 0;
     gap: 10px;
     min-width: 0;
     width: 100%;
-  }
-
-  .subject-grid::-webkit-scrollbar {
-    display: none;
   }
 
   .subject-card {
@@ -181,18 +182,8 @@
   }
 
   .chip-row {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x proximity;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
     margin: 0;
     padding: 0;
-  }
-
-  .chip-row::-webkit-scrollbar {
-    display: none;
   }
 
   .chip {
@@ -232,22 +223,12 @@
   }
 
   .filter-pills {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x proximity;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
     margin: 0;
     padding: 0;
     min-width: 0;
     width: 100%;
     max-width: 100%;
     user-select: none;
-  }
-
-  .filter-pills::-webkit-scrollbar {
-    display: none;
   }
 
   .pill {
@@ -270,18 +251,8 @@
   }
 
   .exam-filter-bar {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x proximity;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
     margin-bottom: 14px;
     padding: 9px 12px;
-  }
-
-  .exam-filter-bar::-webkit-scrollbar {
-    display: none;
   }
 
   .exam-filter-label {

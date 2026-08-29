@@ -83,8 +83,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   transition:
-    background 0.14s ease,
-    border-color 0.14s ease,
+    var(--transition-base),
     transform 0.14s ease;
 }
 
@@ -224,6 +223,10 @@
   animation-play-state: paused;
 }
 
+.marquee-wrap.is-offscreen .marquee-track {
+  animation-play-state: paused;
+}
+
 @keyframes marquee-scroll {
   from {
     transform: translateX(-50%);
@@ -246,9 +249,7 @@
   cursor: default;
   user-select: none;
   text-align: left;
-  transition:
-    border-color 0.14s ease,
-    background 0.14s ease;
+  transition: var(--transition-base);
 }
 
 button.logo-card {
@@ -256,8 +257,7 @@ button.logo-card {
   font-family: inherit;
   box-shadow: var(--shadow-card);
   transition:
-    border-color 0.14s ease,
-    background 0.14s ease,
+    var(--transition-base),
     transform 0.16s ease,
     box-shadow 0.16s ease;
 }
@@ -413,8 +413,7 @@ button.logo-card:hover {
   line-height: 1.3;
   cursor: pointer;
   transition:
-    background 0.14s ease,
-    border-color 0.14s ease,
+    var(--transition-base),
     color 0.14s ease;
 }
 

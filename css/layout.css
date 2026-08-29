@@ -143,9 +143,8 @@
   font-weight: 500;
   cursor: pointer;
   transition:
-    background 0.12s ease,
-    color 0.12s ease,
-    border-color 0.12s ease;
+    var(--transition-fast),
+    color 0.12s ease;
 }
 
 .nav-item:hover {
