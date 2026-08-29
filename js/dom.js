@@ -80,6 +80,31 @@ export const elNitMarquee = $("#nitMarquee");
 export const elFaqList = $("#faqList");
 export const elFaqCategories = document.getElementById("faqCategories");
 
+export const elFeatureGrid = $("#featureGrid");
+export const elStepsGrid = $("#stepsGrid");
+export const elHomeUpdatesPreview = $("#homeUpdatesPreview");
+export const elHomeUpdatesBtn = $("#homeUpdatesBtn");
+export const elTestimonialGrid = $("#testimonialGrid");
+export const elCommunityBtn = $("#communityBtn");
+export const elFinalCtaBrowseBtn = $("#finalCtaBrowseBtn");
+export const elFinalCtaPyqBtn = $("#finalCtaPyqBtn");
+
+export const elManifestoEyebrow = $("#manifestoEyebrow");
+export const elManifestoTitle = $("#manifestoTitle");
+export const elManifestoText = $("#manifestoText");
+export const elManifestoSignoff = $("#manifestoSignoff");
+export const elExamPatternDisclaimer = $("#examPatternDisclaimer");
+export const elExamPatternGrid = $("#examPatternGrid");
+export const elExamPatternMeta = $("#examPatternMeta");
+export const elFocusSubjectTabs = $("#focusSubjectTabs");
+export const elFocusAreaList = $("#focusAreaList");
+export const elRoadmapTimeline = $("#roadmapTimeline");
+export const elComparisonTable = $("#comparisonTable");
+export const elRoutineGrid = $("#routineGrid");
+export const elMythFactGrid = $("#mythFactGrid");
+export const elFounderNote = $("#founderNote");
+export const elMotivationMarquee = $("#motivationMarquee");
+
 export const elResourcesHeading = $("#resourcesHeading");
 export const elResourcesCount = $("#resourcesCount");
 export const elFilterPills = $("#filterPills");

@@ -104,7 +104,7 @@ export const renderUpdateFilters = () => {
     });
 };
 
-const buildTimelineItem = item => {
+export const buildTimelineItem = item => {
     const dateObj = parseDateStr(item.date);
 
     const li = document.createElement("div");

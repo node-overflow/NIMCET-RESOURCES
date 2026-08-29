@@ -12,6 +12,16 @@ import { goHome, initHistoryNavigation } from "./navigation.js";
 
 import { elViewHome } from "./dom.js";
 
+import { TELEGRAM_URL } from "./config.js";
+
+const wireFooterCommunityLink = () => {
+    const link = document.querySelector(".footer-social-link");
+
+    if (link) {
+        link.href = TELEGRAM_URL;
+    }
+};
+
 const showLoadError = error => {
     console.error(error);
 
@@ -32,6 +42,7 @@ const showLoadError = error => {
 
 const init = async () => {
     wireThemeToggle();
+    wireFooterCommunityLink();
 
     try {
         await loadAllData();

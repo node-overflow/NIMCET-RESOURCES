@@ -229,7 +229,9 @@ const renderForView = () => {
                         search: ""
                     }),
                 () =>
-                    goToPyqs()
+                    goToPyqs(),
+                () =>
+                    goToUpdates()
             );
             break;
 

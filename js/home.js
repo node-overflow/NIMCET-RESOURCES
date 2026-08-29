@@ -5,7 +5,21 @@ import {
     TYPES,
     EXAMS,
     NITS,
-    FAQS_FILE
+    FAQS_FILE,
+    HOME_FEATURES,
+    HOW_IT_WORKS,
+    TESTIMONIALS,
+    TELEGRAM_URL,
+    MANIFESTO,
+    EXAM_PATTERN_SECTIONS,
+    EXAM_PATTERN_META,
+    FOCUS_AREAS,
+    PREP_ROADMAP,
+    COMPARISON_ROWS,
+    DAILY_ROUTINE,
+    MYTHS_FACTS,
+    FOUNDER_NOTE,
+    MOTIVATION_LINES
 } from "./config.js";
 
 import {
@@ -18,19 +32,45 @@ import {
     elExamMarquee,
     elNitMarquee,
     elFaqCategories,
-    elFaqList
+    elFaqList,
+    elFeatureGrid,
+    elStepsGrid,
+    elHomeUpdatesPreview,
+    elHomeUpdatesBtn,
+    elTestimonialGrid,
+    elCommunityBtn,
+    elFinalCtaBrowseBtn,
+    elFinalCtaPyqBtn,
+    elManifestoEyebrow,
+    elManifestoTitle,
+    elManifestoText,
+    elManifestoSignoff,
+    elExamPatternGrid,
+    elExamPatternMeta,
+    elExamPatternDisclaimer,
+    elFocusSubjectTabs,
+    elFocusAreaList,
+    elRoadmapTimeline,
+    elComparisonTable,
+    elRoutineGrid,
+    elMythFactGrid,
+    elFounderNote,
+    elMotivationMarquee
 } from "./dom.js";
 
 import { state } from "./state.js";
 
 import {
     countBySubject,
-    escapeHtml
+    escapeHtml,
+    parseDateStr
 } from "./utils.js";
 
 import { renderGrid } from "./cards.js";
 
 import { computeDppTotal } from "./dpp.js";
+
+import { buildTimelineItem } from "./updates.js";
 
 const buildStat = (num, label) => {
     const stat = document.createElement("div");
@@ -169,7 +209,7 @@ const initMarqueeObserver = () => {
 
     if (!("IntersectionObserver" in window)) return;
 
-    const wraps = [elExamMarquee, elNitMarquee]
+    const wraps = [elExamMarquee, elNitMarquee, elMotivationMarquee]
         .filter(Boolean)
         .map(track => track.closest(".marquee-wrap"))
         .filter(Boolean);
@@ -389,12 +429,464 @@ const renderFaqs = async () => {
     renderFaqQuestions(active ? active.faqs : []);
 };
 
+const renderFeatures = () => {
+    if (!elFeatureGrid) return;
+
+    elFeatureGrid.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
+    HOME_FEATURES.forEach(feature => {
+        const card = document.createElement("div");
+
+        card.className = "feature-card";
+
+        card.innerHTML =
+            '<span class="feature-icon" aria-hidden="true"></span>' +
+            '<h3 class="feature-title"></h3>' +
+            '<p class="feature-desc"></p>';
+
+        card.querySelector(".feature-icon").textContent = feature.icon;
+        card.querySelector(".feature-title").textContent = feature.title;
+        card.querySelector(".feature-desc").textContent = feature.desc;
+
+        fragment.appendChild(card);
+    });
+
+    elFeatureGrid.appendChild(fragment);
+};
+
+const renderSteps = () => {
+    if (!elStepsGrid) return;
+
+    elStepsGrid.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
+    HOW_IT_WORKS.forEach((step, index) => {
+        const card = document.createElement("div");
+
+        card.className = "step-card";
+
+        card.innerHTML =
+            '<span class="step-num"></span>' +
+            '<h3 class="step-title"></h3>' +
+            '<p class="step-desc"></p>';
+
+        card.querySelector(".step-num").textContent = index + 1;
+        card.querySelector(".step-title").textContent = step.title;
+        card.querySelector(".step-desc").textContent = step.desc;
+
+        fragment.appendChild(card);
+    });
+
+    elStepsGrid.appendChild(fragment);
+};
+
+const renderHomeUpdatesPreview = (onUpdatesClick) => {
+    if (!elHomeUpdatesPreview) return;
+
+    if (elHomeUpdatesBtn && !elHomeUpdatesBtn.dataset.wired) {
+        elHomeUpdatesBtn.dataset.wired = "true";
+
+        elHomeUpdatesBtn.addEventListener(
+            "click",
+            onUpdatesClick
+        );
+    }
+
+    const results = state.announcements
+        .slice()
+        .sort((a, b) => {
+            const dateA = parseDateStr(a.date);
+            const dateB = parseDateStr(b.date);
+
+            const timeA = dateA ? dateA.getTime() : 0;
+            const timeB = dateB ? dateB.getTime() : 0;
+
+            return timeB - timeA;
+        })
+        .slice(0, 3);
+
+    elHomeUpdatesPreview.innerHTML = "";
+
+    if (results.length === 0) {
+        elHomeUpdatesPreview.innerHTML =
+            '<p class="empty-sub" style="padding:6px 2px;">' +
+            'No updates yet — check back soon.' +
+            '</p>';
+
+        return;
+    }
+
+    const fragment = document.createDocumentFragment();
+
+    results.forEach(item => {
+        fragment.appendChild(
+            buildTimelineItem(item)
+        );
+    });
+
+    elHomeUpdatesPreview.appendChild(fragment);
+};
+
+const renderManifesto = () => {
+    if (!elManifestoText) return;
+
+    if (elManifestoEyebrow) {
+        elManifestoEyebrow.textContent = MANIFESTO.eyebrow;
+    }
+
+    if (elManifestoTitle) {
+        elManifestoTitle.textContent = MANIFESTO.title;
+    }
+
+    elManifestoText.innerHTML = "";
+
+    MANIFESTO.paragraphs.forEach(paragraph => {
+        const p = document.createElement("p");
+
+        p.textContent = paragraph;
+
+        elManifestoText.appendChild(p);
+    });
+
+    if (elManifestoSignoff) {
+        elManifestoSignoff.textContent = MANIFESTO.signoff;
+    }
+};
+
+const renderExamPattern = () => {
+    if (!elExamPatternGrid) return;
+
+    elExamPatternGrid.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
+    EXAM_PATTERN_SECTIONS.forEach(section => {
+        const card = document.createElement("div");
+
+        card.className = "pattern-card";
+
+        card.innerHTML =
+            '<h3 class="pattern-section-name"></h3>' +
+            '<div class="pattern-bar-track"><div class="pattern-bar-fill"></div></div>' +
+            '<div class="pattern-card-foot">' +
+            '<span class="pattern-questions"></span>' +
+            '<span class="pattern-marks"></span>' +
+            '</div>';
+
+        card.querySelector(".pattern-section-name").textContent = section.section;
+        card.querySelector(".pattern-bar-fill").style.width = section.weight;
+        card.querySelector(".pattern-questions").textContent = section.questions + " Qs";
+        card.querySelector(".pattern-marks").textContent = section.marks + " Marks";
+
+        fragment.appendChild(card);
+    });
+
+    elExamPatternGrid.appendChild(fragment);
+
+    if (elExamPatternMeta) {
+        elExamPatternMeta.innerHTML = "";
+
+        const metaItems = [
+            [EXAM_PATTERN_META.totalQuestions + " Questions", "Total"],
+            [EXAM_PATTERN_META.totalMarks + " Marks", "Total"],
+            [EXAM_PATTERN_META.duration, "Duration"],
+            [EXAM_PATTERN_META.negativeMarking, "Marking"],
+            [EXAM_PATTERN_META.mode, "Mode"]
+        ];
+
+        metaItems.forEach(([value, label]) => {
+            const item = document.createElement("div");
+
+            item.className = "pattern-meta-item";
+
+            item.innerHTML =
+                '<span class="pattern-meta-value"></span>' +
+                '<span class="pattern-meta-label"></span>';
+
+            item.querySelector(".pattern-meta-value").textContent = value;
+            item.querySelector(".pattern-meta-label").textContent = label;
+
+            elExamPatternMeta.appendChild(item);
+        });
+    }
+
+    if (elExamPatternDisclaimer) {
+        elExamPatternDisclaimer.textContent = EXAM_PATTERN_META.note;
+    }
+};
+
+let activeFocusSubject = null;
+
+const renderFocusAreaList = (subjectName) => {
+    if (!elFocusAreaList) return;
+
+    elFocusAreaList.innerHTML = "";
+
+    const areas = FOCUS_AREAS[subjectName] || [];
+
+    const fragment = document.createDocumentFragment();
+
+    areas.forEach(area => {
+        const row = document.createElement("div");
+
+        row.className = "focus-area-row";
+
+        row.innerHTML =
+            '<span class="focus-area-chapter"></span>' +
+            '<span class="focus-area-level"></span>';
+
+        row.querySelector(".focus-area-chapter").textContent = area.chapter;
+
+        const levelEl = row.querySelector(".focus-area-level");
+
+        levelEl.textContent = area.level;
+        levelEl.dataset.level = area.level.toLowerCase();
+
+        fragment.appendChild(row);
+    });
+
+    elFocusAreaList.appendChild(fragment);
+};
+
+const renderFocusAreas = () => {
+    if (!elFocusSubjectTabs) return;
+
+    const subjectNames = Object.keys(FOCUS_AREAS);
+
+    if (!activeFocusSubject || !subjectNames.includes(activeFocusSubject)) {
+        activeFocusSubject = subjectNames[0];
+    }
+
+    elFocusSubjectTabs.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
+    subjectNames.forEach(subjectName => {
+        const chip = document.createElement("button");
+
+        chip.className = "chip";
+        chip.type = "button";
+        chip.textContent = subjectName;
+        chip.dataset.active = subjectName === activeFocusSubject ? "true" : "false";
+
+        chip.addEventListener("click", () => {
+            if (activeFocusSubject === subjectName) return;
+
+            activeFocusSubject = subjectName;
+
+            elFocusSubjectTabs
+                .querySelectorAll(".chip")
+                .forEach(other => {
+                    other.dataset.active = "false";
+                });
+
+            chip.dataset.active = "true";
+
+            renderFocusAreaList(subjectName);
+        });
+
+        fragment.appendChild(chip);
+    });
+
+    elFocusSubjectTabs.appendChild(fragment);
+
+    renderFocusAreaList(activeFocusSubject);
+};
+
+const renderRoadmap = () => {
+    if (!elRoadmapTimeline) return;
+
+    elRoadmapTimeline.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
+    PREP_ROADMAP.forEach(phase => {
+        const item = document.createElement("div");
+
+        item.className = "roadmap-item";
+
+        item.innerHTML =
+            '<div class="roadmap-marker"><span class="roadmap-phase"></span></div>' +
+            '<div class="roadmap-content">' +
+            '<span class="roadmap-window"></span>' +
+            '<h3 class="roadmap-title"></h3>' +
+            '<p class="roadmap-desc"></p>' +
+            '</div>';
+
+        item.querySelector(".roadmap-phase").textContent = phase.phase;
+        item.querySelector(".roadmap-window").textContent = phase.window;
+        item.querySelector(".roadmap-title").textContent = phase.title;
+        item.querySelector(".roadmap-desc").textContent = phase.desc;
+
+        fragment.appendChild(item);
+    });
+
+    elRoadmapTimeline.appendChild(fragment);
+};
+
+const renderComparisonTable = () => {
+    if (!elComparisonTable) return;
+
+    elComparisonTable.innerHTML = "";
+
+    const header = document.createElement("div");
+
+    header.className = "comparison-row comparison-header";
+
+    header.innerHTML =
+        '<span></span>' +
+        '<span class="comparison-us-label">This Hub</span>' +
+        '<span class="comparison-them-label">Typical Paid Coaching</span>';
+
+    elComparisonTable.appendChild(header);
+
+    const fragment = document.createDocumentFragment();
+
+    COMPARISON_ROWS.forEach(row => {
+        const rowEl = document.createElement("div");
+
+        rowEl.className = "comparison-row";
+
+        rowEl.innerHTML =
+            '<span class="comparison-label"></span>' +
+            '<span class="comparison-us"></span>' +
+            '<span class="comparison-them"></span>';
+
+        rowEl.querySelector(".comparison-label").textContent = row.label;
+        rowEl.querySelector(".comparison-us").textContent = row.us;
+        rowEl.querySelector(".comparison-them").textContent = row.them;
+
+        fragment.appendChild(rowEl);
+    });
+
+    elComparisonTable.appendChild(fragment);
+};
+
+const renderRoutine = () => {
+    if (!elRoutineGrid) return;
+
+    elRoutineGrid.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
+    DAILY_ROUTINE.forEach(block => {
+        const card = document.createElement("div");
+
+        card.className = "routine-card";
+
+        card.innerHTML =
+            '<span class="routine-time"></span>' +
+            '<h3 class="routine-title"></h3>' +
+            '<p class="routine-desc"></p>';
+
+        card.querySelector(".routine-time").textContent = block.time;
+        card.querySelector(".routine-title").textContent = block.title;
+        card.querySelector(".routine-desc").textContent = block.desc;
+
+        fragment.appendChild(card);
+    });
+
+    elRoutineGrid.appendChild(fragment);
+};
+
+const renderMythsFacts = () => {
+    if (!elMythFactGrid) return;
+
+    elMythFactGrid.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
+    MYTHS_FACTS.forEach(pair => {
+        const card = document.createElement("div");
+
+        card.className = "myth-fact-card";
+
+        card.innerHTML =
+            '<div class="myth-row"><span class="myth-fact-tag myth-tag">Myth</span><p></p></div>' +
+            '<div class="fact-row"><span class="myth-fact-tag fact-tag">Fact</span><p></p></div>';
+
+        card.querySelector(".myth-row p").textContent = pair.myth;
+        card.querySelector(".fact-row p").textContent = pair.fact;
+
+        fragment.appendChild(card);
+    });
+
+    elMythFactGrid.appendChild(fragment);
+};
+
+const renderFounderNote = () => {
+    if (!elFounderNote) return;
+
+    elFounderNote.innerHTML =
+        '<h2 class="founder-note-title"></h2>' +
+        '<p class="founder-note-body"></p>' +
+        '<p class="founder-note-signoff"></p>';
+
+    elFounderNote.querySelector(".founder-note-title").textContent = FOUNDER_NOTE.title;
+    elFounderNote.querySelector(".founder-note-body").textContent = FOUNDER_NOTE.body;
+    elFounderNote.querySelector(".founder-note-signoff").textContent = FOUNDER_NOTE.signoff;
+};
+
+const renderMotivationMarquee = () => {
+    if (!elMotivationMarquee) return;
+
+    elMotivationMarquee.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
+    [...MOTIVATION_LINES, ...MOTIVATION_LINES].forEach(line => {
+        const chip = document.createElement("div");
+
+        chip.className = "logo-card motivation-card";
+
+        chip.innerHTML = '<span class="motivation-text"></span>';
+
+        chip.querySelector(".motivation-text").textContent = line;
+
+        fragment.appendChild(chip);
+    });
+
+    elMotivationMarquee.appendChild(fragment);
+};
+
+const renderTestimonials = () => {
+    if (!elTestimonialGrid) return;
+
+    elTestimonialGrid.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
+    TESTIMONIALS.forEach(testimonial => {
+        const card = document.createElement("div");
+
+        card.className = "testimonial-card";
+
+        card.innerHTML =
+            '<p class="testimonial-quote"></p>' +
+            '<p class="testimonial-source"></p>';
+
+        card.querySelector(".testimonial-quote").textContent =
+            `“${testimonial.quote}”`;
+
+        card.querySelector(".testimonial-source").textContent =
+            testimonial.source;
+
+        fragment.appendChild(card);
+    });
+
+    elTestimonialGrid.appendChild(fragment);
+};
+
 export const renderHome = (
     onSubjectClick,
     onTypeClick,
     onExamClick,
     onBrowseAll,
-    onPyqsHome
+    onPyqsHome,
+    onUpdatesClick
 ) => {
     renderHeroStats();
 
@@ -415,6 +907,42 @@ export const renderHome = (
             onPyqsHome
         );
     }
+
+    if (elFinalCtaBrowseBtn && !elFinalCtaBrowseBtn.dataset.wired) {
+        elFinalCtaBrowseBtn.dataset.wired = "true";
+
+        elFinalCtaBrowseBtn.addEventListener(
+            "click",
+            onBrowseAll
+        );
+    }
+
+    if (elFinalCtaPyqBtn && !elFinalCtaPyqBtn.dataset.wired) {
+        elFinalCtaPyqBtn.dataset.wired = "true";
+
+        elFinalCtaPyqBtn.addEventListener(
+            "click",
+            onPyqsHome
+        );
+    }
+
+    if (elCommunityBtn) {
+        elCommunityBtn.href = TELEGRAM_URL;
+    }
+
+    renderManifesto();
+    renderFeatures();
+    renderExamPattern();
+    renderFocusAreas();
+    renderSteps();
+    renderRoadmap();
+    renderHomeUpdatesPreview(onUpdatesClick);
+    renderComparisonTable();
+    renderRoutine();
+    renderMotivationMarquee();
+    renderTestimonials();
+    renderMythsFacts();
+    renderFounderNote();
 
     renderExamMarquee(onExamClick);
     renderNitMarquee();

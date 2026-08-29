@@ -40,6 +40,34 @@ const debounce = (fn, delay) => {
     };
 };
 
+const handleNavAction = (button) => {
+    const nav = button.dataset.nav;
+
+    if (nav === "home") {
+        goHome();
+    } else if (nav === "all") {
+        goToResources({
+            subject: null,
+            type: null,
+            search: ""
+        });
+    } else if (nav === "subject") {
+        goToResources({
+            subject: button.dataset.subject,
+            type: null,
+            search: ""
+        });
+    } else if (nav === "updates") {
+        goToUpdates();
+    } else if (nav === "pyqs") {
+        goToPyqs();
+    } else if (nav === "dpps") {
+        goToDpps();
+    } else if (nav === "mocks") {
+        goToMocks();
+    }
+};
+
 export const wireStaticEvents = () => {
     elOverlay.addEventListener("click", closeSidebar);
 
@@ -47,31 +75,13 @@ export const wireStaticEvents = () => {
 
     $$(".nav-item").forEach(button => {
         button.addEventListener("click", () => {
-            const nav = button.dataset.nav;
+            handleNavAction(button);
+        });
+    });
 
-            if (nav === "home") {
-                goHome();
-            } else if (nav === "all") {
-                goToResources({
-                    subject: null,
-                    type: null,
-                    search: ""
-                });
-            } else if (nav === "subject") {
-                goToResources({
-                    subject: button.dataset.subject,
-                    type: null,
-                    search: ""
-                });
-            } else if (nav === "updates") {
-                goToUpdates();
-            } else if (nav === "pyqs") {
-                goToPyqs();
-            } else if (nav === "dpps") {
-                goToDpps();
-            } else if (nav === "mocks") {
-                goToMocks();
-            }
+    $$(".footer-link[data-nav]").forEach(button => {
+        button.addEventListener("click", () => {
+            handleNavAction(button);
         });
     });
 

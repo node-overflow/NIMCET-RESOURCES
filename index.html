@@ -190,6 +190,11 @@
                 </header>
 
                 <section class="section">
+                    <h2 class="section-title">Why aspirants choose us</h2>
+                    <div class="feature-grid" id="featureGrid"></div>
+                </section>
+
+                <section class="section">
                     <h2 class="section-title">Subjects</h2>
                     <div class="subject-grid" id="subjectGrid"></div>
                 </section>
@@ -207,6 +212,33 @@
                     </div>
                 </section>
 
+                <section class="section section-breather manifesto-section">
+                    <span class="hero-eyebrow" id="manifestoEyebrow"></span>
+                    <h2 class="manifesto-title" id="manifestoTitle"></h2>
+                    <div class="manifesto-body" id="manifestoText"></div>
+                    <p class="manifesto-signoff" id="manifestoSignoff"></p>
+                </section>
+
+                <section class="section section-breather">
+                    <h2 class="section-title">How to use this hub</h2>
+                    <div class="steps-grid" id="stepsGrid"></div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Know the exam</h2>
+                    <p class="section-sub" id="examPatternDisclaimer"></p>
+                    <div class="pattern-grid" id="examPatternGrid"></div>
+                    <div class="pattern-meta" id="examPatternMeta"></div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Where to focus, subject by subject</h2>
+                    <p class="section-sub">Our own priority guide, built from patterns across previous years — not an
+                        official statistic.</p>
+                    <div class="chip-row" id="focusSubjectTabs"></div>
+                    <div class="focus-area-list" id="focusAreaList"></div>
+                </section>
+
                 <section class="section marquee-section">
                     <h2 class="section-title">Aim for these NITs</h2>
                     <p class="section-sub">A strong NIMCET rank opens the door to these National Institutes of
@@ -214,6 +246,68 @@
                     <div class="marquee-wrap">
                         <div class="marquee-track marquee-track-b" id="nitMarquee"></div>
                     </div>
+                </section>
+
+                <section class="section section-breather">
+                    <h2 class="section-title">Your preparation roadmap</h2>
+                    <p class="section-sub">Five phases, zero shortcuts — a structure to move through the syllabus with
+                        intent.</p>
+                    <div class="roadmap-timeline" id="roadmapTimeline"></div>
+                </section>
+
+                <section class="section">
+                    <div class="section-head-row">
+                        <h2 class="section-title" style="margin:0; padding:0; border:none;">Latest exam updates</h2>
+                        <button class="section-link-btn" id="homeUpdatesBtn" type="button">
+                            View all
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                    <div class="timeline" id="homeUpdatesPreview"></div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">A sample daily routine</h2>
+                    <p class="section-sub">A suggested rhythm, not a rulebook — adapt it to your own schedule and
+                        energy levels.</p>
+                    <div class="routine-grid" id="routineGrid"></div>
+                </section>
+
+                <section class="section cta-banner">
+                    <div class="cta-banner-text">
+                        <h2 class="cta-banner-title">Prep smarter, together.</h2>
+                        <p class="cta-banner-sub">Join fellow NIMCET 2027 aspirants for doubt-solving, updates and
+                            daily motivation.</p>
+                    </div>
+                    <a class="hero-btn hero-btn-primary" id="communityBtn" href="#" target="_blank"
+                        rel="noopener noreferrer">
+                        Join our Telegram
+                        <span class="arrow">→</span>
+                    </a>
+                </section>
+
+                <section class="section section-breather">
+                    <h2 class="section-title">Us, versus typical paid coaching</h2>
+                    <p class="section-sub">We're not against coaching institutes — we just don't think a price tag
+                        should decide who gets organised material.</p>
+                    <div class="comparison-table" id="comparisonTable"></div>
+                </section>
+
+                <section class="section marquee-section">
+                    <h2 class="section-title">Keep going</h2>
+                    <div class="marquee-wrap">
+                        <div class="marquee-track" id="motivationMarquee"></div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">What aspirants are saying</h2>
+                    <div class="testimonial-grid" id="testimonialGrid"></div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Myth vs fact</h2>
+                    <div class="myth-fact-grid" id="mythFactGrid"></div>
                 </section>
 
                 <section class="section">
@@ -226,10 +320,74 @@
                     </div>
                 </section>
 
+                <section class="section section-breather">
+                    <div class="founder-note" id="founderNote"></div>
+                </section>
+
                 <section class="section">
                     <h2 class="section-title">Featured</h2>
                     <div class="resource-grid" id="featuredGrid"></div>
                 </section>
+
+                <section class="section home-final-cta">
+                    <h2 class="home-final-cta-title">Ready to start preparing?</h2>
+                    <p class="home-final-cta-sub">Everything above is free and organized — pick a starting point and
+                        get going.</p>
+                    <div class="hero-actions" style="justify-content:center;">
+                        <button class="hero-btn hero-btn-primary" id="finalCtaBrowseBtn" type="button">
+                            Browse Resources
+                            <span class="arrow">→</span>
+                        </button>
+                        <button class="hero-btn hero-btn-ghost" id="finalCtaPyqBtn" type="button">Explore PYQs</button>
+                    </div>
+                </section>
+
+                <footer class="site-footer">
+                    <div class="footer-grid">
+                        <div class="footer-col footer-brand-col">
+                            <span class="brand-text">NIMCET <em>'27</em></span>
+                            <p class="footer-blurb">
+                                A free, organized resource hub for NIMCET aspirants — books, notes, PYQs, DPPs and
+                                exam updates, all in one place.
+                            </p>
+                        </div>
+
+                        <div class="footer-col">
+                            <p class="footer-col-title">Explore</p>
+                            <button class="footer-link" type="button" data-nav="home">Home</button>
+                            <button class="footer-link" type="button" data-nav="all">All Resources</button>
+                            <button class="footer-link" type="button" data-nav="updates">Exam Updates</button>
+                            <button class="footer-link" type="button" data-nav="pyqs">PYQs</button>
+                            <button class="footer-link" type="button" data-nav="dpps">DPPs</button>
+                            <button class="footer-link" type="button" data-nav="mocks">Mocks</button>
+                        </div>
+
+                        <div class="footer-col">
+                            <p class="footer-col-title">Subjects</p>
+                            <button class="footer-link" type="button" data-nav="subject"
+                                data-subject="Mathematics">Mathematics</button>
+                            <button class="footer-link" type="button" data-nav="subject"
+                                data-subject="Logical Reasoning">Logical Reasoning</button>
+                            <button class="footer-link" type="button" data-nav="subject"
+                                data-subject="Computer">Computer</button>
+                            <button class="footer-link" type="button" data-nav="subject"
+                                data-subject="Quantitative Aptitude">Quantitative Aptitude</button>
+                            <button class="footer-link" type="button" data-nav="subject"
+                                data-subject="English">English</button>
+                        </div>
+
+                        <div class="footer-col">
+                            <p class="footer-col-title">Community</p>
+                            <!-- TODO: same Telegram link as the CTA banner above -->
+                            <a class="footer-social-link" href="#" target="_blank"
+                                rel="noopener noreferrer">Telegram</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>Built for NIMCET 2027 aspirants. Not affiliated with any NIT or official exam body.</p>
+                    </div>
+                </footer>
             </section>
 
             <!-- RESOURCES VIEW -->
