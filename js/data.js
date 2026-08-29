@@ -8,6 +8,8 @@ import {
 
 import { state } from "./state.js";
 
+import { deriveMathChapter } from "./utils.js";
+
 const loadFile = (entry) => {
     return fetch(entry.path).then(response => {
         if (!response.ok) {
@@ -20,11 +22,23 @@ const loadFile = (entry) => {
     }).then(items => {
         const list = Array.isArray(items) ? items : [];
 
-        return list.map(item => ({
-            subject: entry.subject,
-            type: entry.type,
-            ...item
-        }));
+        return list.map(item => {
+            const merged = {
+                subject: entry.subject,
+                type: entry.type,
+                ...item
+            };
+
+            if (merged.subject === "Mathematics" && !merged.chapter) {
+                const guessed = deriveMathChapter(merged.title);
+
+                if (guessed) {
+                    merged.chapter = guessed;
+                }
+            }
+
+            return merged;
+        });
     });
 };
 

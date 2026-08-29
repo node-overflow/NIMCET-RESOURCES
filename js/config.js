@@ -43,44 +43,16 @@ export const dppChapterPath = (subjectSlug, chapterKey) =>
     `data/dpp/${subjectSlug}/${chapterKey}.json`;
 
 export const MOCK_TYPES = [
-    {
-        key: "free",
-        name: "Free Mocks",
-        symbol: "F"
-    },
-    {
-        key: "paid",
-        name: "Paid Mocks",
-        symbol: "P"
-    }
+    { key: "free", name: "Free Mocks", symbol: "F" },
+    { key: "paid", name: "Paid Mocks", symbol: "P" }
 ];
 
 export const UPDATE_CATEGORIES = [
-    {
-        key: "Notification",
-        label: "Notification",
-        cssVar: "--upd-notification"
-    },
-    {
-        key: "Exam Date",
-        label: "Exam Date",
-        cssVar: "--upd-exam-date"
-    },
-    {
-        key: "Admit Card",
-        label: "Admit Card",
-        cssVar: "--upd-admit-card"
-    },
-    {
-        key: "Result",
-        label: "Result",
-        cssVar: "--upd-result"
-    },
-    {
-        key: "Important",
-        label: "Important",
-        cssVar: "--upd-important"
-    }
+    { key: "Notification", label: "Notification", cssVar: "--upd-notification" },
+    { key: "Exam Date", label: "Exam Date", cssVar: "--upd-exam-date" },
+    { key: "Admit Card", label: "Admit Card", cssVar: "--upd-admit-card" },
+    { key: "Result", label: "Result", cssVar: "--upd-result" },
+    { key: "Important", label: "Important", cssVar: "--upd-important" }
 ];
 
 export const UPDATE_CATEGORY_VAR = Object.fromEntries(
@@ -93,60 +65,15 @@ export const UPDATE_CATEGORY_VAR = Object.fromEntries(
 export const NEW_WITHIN_DAYS = 7;
 
 export const EXAMS = [
-    {
-        key: "NIMCET",
-        name: "NIMCET",
-        full: "NIT MCA Common Entrance Test",
-        symbol: "N"
-    },
-    {
-        key: "CUET PG MCA",
-        name: "CUET PG MCA",
-        full: "CUET PG MCA Entrance",
-        symbol: "C"
-    },
-    {
-        key: "JEE MAIN MATH",
-        name: "JEE MAIN MATH",
-        full: "JOIN ENTRACE EXAMINATION MAIN",
-        symbol: "JM"
-    },
-    {
-        key: "TANCET",
-        name: "TANCET",
-        full: "Tamil Nadu Common Entrance Test (MCA)",
-        symbol: "T"
-    },
-    {
-        key: "WB JECA",
-        name: "WB JECA",
-        full: "West Bengal MCA Entrance",
-        symbol: "J"
-    },
-    {
-        key: "MAH CET",
-        name: "MAH CET",
-        full: "Maharashtra Common Entrance Test (MCA)",
-        symbol: "M"
-    },
-    {
-        key: "JAMIA MCA",
-        name: "JAMIA MCA",
-        full: "Jamia Millia Islamia MCA Entrance",
-        symbol: "J"
-    },
-    {
-        key: "DU MCA",
-        name: "DU MCA",
-        full: "Delhi University MCA Entrance",
-        symbol: "D"
-    },
-    {
-        key: "BHU MCA",
-        name: "BHU MCA",
-        full: "Banaras Hindu University MCA Entrance",
-        symbol: "B"
-    }
+    { key: "NIMCET", name: "NIMCET", full: "NIT MCA Common Entrance Test", symbol: "N" },
+    { key: "CUET PG MCA", name: "CUET PG MCA", full: "CUET PG MCA Entrance", symbol: "C" },
+    { key: "JEE MAIN MATH", name: "JEE MAIN MATH", full: "JOIN ENTRACE EXAMINATION MAIN", symbol: "JM" },
+    { key: "TANCET", name: "TANCET", full: "Tamil Nadu Common Entrance Test (MCA)", symbol: "T" },
+    { key: "WB JECA", name: "WB JECA", full: "West Bengal MCA Entrance", symbol: "J" },
+    { key: "MAH CET", name: "MAH CET", full: "Maharashtra Common Entrance Test (MCA)", symbol: "M" },
+    { key: "JAMIA MCA", name: "JAMIA MCA", full: "Jamia Millia Islamia MCA Entrance", symbol: "J" },
+    { key: "DU MCA", name: "DU MCA", full: "Delhi University MCA Entrance", symbol: "D" },
+    { key: "BHU MCA", name: "BHU MCA", full: "Banaras Hindu University MCA Entrance", symbol: "B" }
 ];
 
 export const NITS = [
@@ -166,53 +93,20 @@ export const NITS = [
 export const FAQS_FILE = "data/other/faqs.json";
 
 export const SUBJECTS = [
-    {
-        name: "Mathematics",
-        symbol: "Σ"
-    },
-    {
-        name: "Logical Reasoning",
-        symbol: "📊︎"
-    },
-    {
-        name: "Computer",
-        symbol: "</>"
-    },
-    {
-        name: "Quantitative Aptitude",
-        symbol: "%"
-    },
-    {
-        name: "English",
-        symbol: "Aa"
-    }
+    { name: "Mathematics", symbol: "Σ" },
+    { name: "Logical Reasoning", symbol: "📊︎" },
+    { name: "Computer", symbol: "</>" },
+    { name: "Quantitative Aptitude", symbol: "%" },
+    { name: "English", symbol: "Aa" }
 ];
 
 export const TYPES = [
-    {
-        key: "Book",
-        label: "Books"
-    },
-    {
-        key: "PYQ",
-        label: "PYQs"
-    },
-    {
-        key: "Notes",
-        label: "Notes"
-    },
-    {
-        key: "Video",
-        label: "Videos"
-    },
-    {
-        key: "Practice",
-        label: "Practice"
-    },
-    {
-        key: "Formula",
-        label: "Formulas"
-    }
+    { key: "Book", label: "Books" },
+    { key: "PYQ", label: "PYQs" },
+    { key: "Notes", label: "Notes" },
+    { key: "Video", label: "Videos" },
+    { key: "Practice", label: "Practice" },
+    { key: "Formula", label: "Formulas" }
 ];
 
 export const TYPE_CLASS = {
@@ -233,17 +127,35 @@ export const RESOURCE_ORDER = {
     Video: 6
 };
 
-export const MONTH_SHORT = [
-    "JAN",
-    "FEB",
-    "MAR",
-    "APR",
-    "MAY",
-    "JUN",
-    "JUL",
-    "AUG",
-    "SEP",
-    "OCT",
-    "NOV",
-    "DEC"
+export const MATH_CHAPTER_KEYWORDS = [
+    { chapter: "Quadratic Equations", keywords: ["quadratic"] },
+    { chapter: "Probability", keywords: ["probability"] },
+    { chapter: "Permutation & Combination", keywords: ["permutation", "combination", "npr", "ncr"] },
+    { chapter: "Binomial Theorem", keywords: ["binomial"] },
+    { chapter: "Matrices & Determinants", keywords: ["matrix", "matrices", "determinant"] },
+    { chapter: "Complex Numbers", keywords: ["complex number", "complex numbers"] },
+    { chapter: "Sequence & Series", keywords: ["sequence", "series", "progression", "ap and gp", "arithmetic progression", "geometric progression"] },
+    { chapter: "Trigonometry", keywords: ["trigonometry", "trigonometric", "trigonometric ratio", "itf"] },
+    { chapter: "Vectors", keywords: ["vector", "vectors"] },
+    { chapter: "3D Geometry", keywords: ["3d geometry", "3d", "three dimensional geometry", "three-dimensional geometry"] },
+    { chapter: "Straight Lines", keywords: ["straight line", "straight lines"] },
+    { chapter: "Circle", keywords: ["circle", "circles"] },
+    { chapter: "Parabola", keywords: ["parabola"] },
+    { chapter: "Ellipse", keywords: ["ellipse"] },
+    { chapter: "Hyperbola", keywords: ["hyperbola"] },
+    { chapter: "Limits", keywords: ["limits", "limit"] },
+    { chapter: "Continuity & Differentiability", keywords: ["continuity", "differentiability", "continuity differentiability"] },
+    { chapter: "Differentiation", keywords: ["differentiation", "derivative", "derivatives"] },
+    { chapter: "Application of Derivatives", keywords: ["application of derivatives", "applications of derivatives", "aod"] },
+    { chapter: "Indefinite Integration", keywords: ["indefinite integral", "indefinite integration"] },
+    { chapter: "Definite Integration", keywords: ["definite integral", "definite integration"] },
+    { chapter: "Area Under Curve", keywords: ["area under curve", "area under the curve"] },
+    { chapter: "Differential Equations", keywords: ["differential equation", "differential equations", "differential eqn"] },
+    { chapter: "Sets", keywords: ["set", "sets", "set theory"] },
+    { chapter: "Relations", keywords: ["relation", "relations"] },
+    { chapter: "Functions", keywords: ["function", "functions"] },
+    { chapter: "Statistics", keywords: ["statistics", "statistical"] },
+    { chapter: "Algebra", keywords: ["algebra"] }
 ];
+
+export const MONTH_SHORT = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];

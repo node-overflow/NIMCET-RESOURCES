@@ -1,6 +1,6 @@
 "use strict";
 
-import { NEW_WITHIN_DAYS, TYPES } from "./config.js";
+import { NEW_WITHIN_DAYS, TYPES, MATH_CHAPTER_KEYWORDS } from "./config.js";
 import { state } from "./state.js";
 
 export const escapeHtml = str => {
@@ -25,6 +25,18 @@ export const actionLabel = item => {
     }
 
     return "Open PDF";
+};
+
+export const deriveMathChapter = title => {
+    if (!title) return null;
+
+    const lower = String(title).toLowerCase();
+
+    const match = MATH_CHAPTER_KEYWORDS.find(entry =>
+        entry.keywords.some(keyword => lower.includes(keyword))
+    );
+
+    return match ? match.chapter : null;
 };
 
 export const countBySubject = name => {
