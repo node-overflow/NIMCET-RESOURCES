@@ -139,10 +139,7 @@ export const renderHeading = () => {
     elResourcesHeading.textContent = heading;
 };
 
-export const renderResources = () => {
-    renderHeading();
-    renderFilterPills();
-
+export const renderResourceResults = () => {
     const results = getFilteredResources();
 
     let resourceLabel = " resources";
@@ -169,4 +166,10 @@ export const renderResources = () => {
         elResourcesGrid,
         results
     );
+};
+
+export const renderResources = () => {
+    renderHeading();
+    renderFilterPills();
+    renderResourceResults();
 };

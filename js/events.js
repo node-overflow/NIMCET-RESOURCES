@@ -8,12 +8,13 @@ import {
     elDppChapterBackBtn,
     elDppBackBtn,
     elMocksBackBtn,
-    elSearchInput
+    elSearchInput,
+    elScrollTopBtn
 } from "./dom.js";
 
 import { state } from "./state.js";
 
-import { renderResources } from "./resources.js";
+import { renderResourceResults } from "./resources.js";
 
 import {
     goHome,
@@ -98,11 +99,11 @@ export const wireStaticEvents = () => {
         });
     }
 
-    const debouncedRenderResources = debounce(renderResources, 200);
+    const debouncedRenderResults = debounce(renderResourceResults, 200);
 
     elSearchInput.addEventListener("input", event => {
         state.search = event.target.value;
-        debouncedRenderResources();
+        debouncedRenderResults();
     });
 
     $$(".bnav-item").forEach(button => {
@@ -139,11 +140,9 @@ export const wireStaticEvents = () => {
     });
 
     const handleScrollTopButton = () => {
-        const button = document.getElementById("scrollTopBtn");
+        if (!elScrollTopBtn) return;
 
-        if (!button) return;
-
-        button.dataset.visible =
+        elScrollTopBtn.dataset.visible =
             window.scrollY > 300 ? "true" : "false";
     };
 
@@ -151,10 +150,8 @@ export const wireStaticEvents = () => {
         passive: true
     });
 
-    const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-    if (scrollTopBtn) {
-        scrollTopBtn.addEventListener("click", () => {
+    if (elScrollTopBtn) {
+        elScrollTopBtn.addEventListener("click", () => {
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"

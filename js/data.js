@@ -8,7 +8,7 @@ import {
 
 import { state } from "./state.js";
 
-import { deriveMathChapter } from "./utils.js";
+import { deriveMathChapter, buildSearchIndex } from "./utils.js";
 
 const loadFile = (entry) => {
     return fetch(entry.path).then(response => {
@@ -36,6 +36,8 @@ const loadFile = (entry) => {
                     merged.chapter = guessed;
                 }
             }
+
+            merged._searchIndex = buildSearchIndex(merged);
 
             return merged;
         });

@@ -617,6 +617,13 @@ const buildVideoCard = (item) => {
 
 export const renderGrid = (container, items) => {
 
+    // If a video is currently playing inside the grid we're about to wipe,
+    // drop the reference so it can be garbage collected and so the "stop
+    // the previous video" logic never runs against a detached node.
+    if (activeVideo && container.contains(activeVideo)) {
+        activeVideo = null;
+    }
+
     container.innerHTML = "";
 
     const fragment =

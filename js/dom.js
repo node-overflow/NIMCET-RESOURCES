@@ -86,3 +86,5 @@ export const elFilterPills = $("#filterPills");
 export const elSearchInput = $("#searchInput");
 export const elResourcesGrid = $("#resourcesGrid");
 export const elEmptyState = $("#emptyState");
+
+export const elScrollTopBtn = $("#scrollTopBtn");

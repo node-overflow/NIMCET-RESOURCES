@@ -102,10 +102,8 @@ export const extractYouTubeId = url => {
     return null;
 };
 
-export const matchesSearch = (item, query) => {
-    if (!query) return true;
-
-    const haystack = [
+export const buildSearchIndex = item => {
+    return [
         item.title,
         item.subject,
         item.chapter,
@@ -115,6 +113,12 @@ export const matchesSearch = (item, query) => {
     ]
         .join(" ")
         .toLowerCase();
+};
+
+export const matchesSearch = (item, query) => {
+    if (!query) return true;
+
+    const haystack = item._searchIndex || buildSearchIndex(item);
 
     return haystack.includes(query.toLowerCase());
 };
