@@ -51,6 +51,7 @@ if (!pdfUrl) {
 bookTitle.textContent = title;
 document.title = `${title} - PDF Reader`;
 downloadBtn.href = pdfUrl;
+downloadBtn.setAttribute("download", title.toLowerCase().endsWith(".pdf") ? title : `${title}.pdf`);
 
 
 /* ===== STATE ===== */
@@ -78,8 +79,10 @@ const textCache = new Map();
 
 /* ===== LAYOUT HELPERS ===== */
 
+const isMobileViewport = () => window.innerWidth <= 600;
+
 const getPageWidth = () => {
-    const margin = window.innerWidth <= 600 ? 0 : 40;
+    const margin = isMobileViewport() ? 0 : 40;
     return Math.max(200, viewer.clientWidth - margin);
 };
 
@@ -129,6 +132,9 @@ const loadPDF = async () => {
             disableAutoFetch: true,
             isEvalSupported: true,
             useSystemFonts: true,
+            cMapUrl: "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/6.2.108/cmaps/",
+            cMapPacked: true,
+            standardFontDataUrl: "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/6.2.108/standard_fonts/",
             verbosity: 0
         });
 
@@ -152,6 +158,11 @@ const loadPDF = async () => {
         basePageWidth = viewport.width;
         baseRatio = viewport.height / viewport.width;
         firstPage.cleanup();
+
+        if (isMobileViewport()) {
+            fitWidthMode = true;
+            calculateFitWidth();
+        }
 
         createPagePlaceholders();
 
@@ -356,8 +367,14 @@ const jumpToPage = pageNumber => {
 
 const handlePageInput = event => {
     const value = event.target.value.trim();
-    if (!value) { updatePageUI(); return; }
-    jumpToPage(Number(value));
+    const number = Number(value);
+
+    if (!value || !Number.isFinite(number) || number < 1) {
+        updatePageUI();
+        return;
+    }
+
+    jumpToPage(number);
 };
 
 pageInput.addEventListener("change", handlePageInput);
@@ -387,11 +404,14 @@ const changeZoom = amount => {
 zoomIn.addEventListener("click", () => changeZoom(0.1));
 zoomOut.addEventListener("click", () => changeZoom(-0.1));
 
-fitWidth.addEventListener("click", () => {
+const enableFitWidth = () => {
     fitWidthMode = true;
     calculateFitWidth();
     rerenderVisiblePages();
-});
+};
+
+fitWidth.addEventListener("click", enableFitWidth);
+zoomValue.addEventListener("click", enableFitWidth);
 
 const rerenderVisiblePages = () => {
     if (!pdf) return;
@@ -519,7 +539,34 @@ fullscreenBtn.addEventListener("click", async () => {
     }
 });
 
-printBtn.addEventListener("click", () => window.open(pdfUrl, "_blank", "noopener"));
+const printPDF = () => {
+    const existing = document.getElementById("printFrame");
+    if (existing) existing.remove();
+
+    const printFrame = document.createElement("iframe");
+    printFrame.id = "printFrame";
+    printFrame.style.position = "fixed";
+    printFrame.style.right = "0";
+    printFrame.style.bottom = "0";
+    printFrame.style.width = "0";
+    printFrame.style.height = "0";
+    printFrame.style.border = "0";
+
+    printFrame.onload = () => {
+        try {
+            printFrame.contentWindow.focus();
+            printFrame.contentWindow.print();
+        } catch (error) {
+            console.error("Print failed, opening PDF instead:", error);
+            window.open(pdfUrl, "_blank", "noopener");
+        }
+    };
+
+    printFrame.src = pdfUrl;
+    document.body.appendChild(printFrame);
+};
+
+printBtn.addEventListener("click", printPDF);
 
 
 /* ===== KEYBOARD ===== */
