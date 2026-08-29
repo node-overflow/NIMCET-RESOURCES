@@ -17,14 +17,19 @@
   text-align: left;
   user-select: none;
   cursor: pointer;
+  box-shadow: var(--shadow-card);
   transition:
     border-color 0.14s ease,
-    background 0.14s ease;
+    background 0.14s ease,
+    transform 0.16s ease,
+    box-shadow 0.16s ease;
 }
 
 .subject-card:hover {
   border-color: var(--border-strong);
   background: var(--surface-2);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .subject-symbol {
@@ -38,7 +43,7 @@
   color: var(--accent-text);
   font-weight: 700;
   font-size: 0.98rem;
-  border: 1px solid rgba(110, 107, 220, 0.2);
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
 }
 
 .subject-name {
@@ -84,7 +89,7 @@
 
 .chip[data-active="true"] {
   background: var(--accent-dim);
-  border-color: rgba(110, 107, 220, 0.4);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
   color: var(--accent-text);
 }
 
@@ -136,7 +141,7 @@
 }
 
 .search-field:focus-within {
-  border-color: rgba(110, 107, 220, 0.5);
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
 }
 
 .search-icon {
@@ -197,7 +202,7 @@
 
 .pill[data-active="true"] {
   background: var(--accent-dim);
-  border-color: rgba(110, 107, 220, 0.4);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
   color: var(--accent-text);
 }
 

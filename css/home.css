@@ -34,7 +34,7 @@
   align-items: center;
   padding: 5px 11px;
   border-radius: 999px;
-  border: 1px solid rgba(110, 107, 220, 0.28);
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
   background: var(--accent-dim-2);
   color: var(--accent-text);
   font-size: 0.82rem;
@@ -254,11 +254,19 @@
 button.logo-card {
   cursor: pointer;
   font-family: inherit;
+  box-shadow: var(--shadow-card);
+  transition:
+    border-color 0.14s ease,
+    background 0.14s ease,
+    transform 0.16s ease,
+    box-shadow 0.16s ease;
 }
 
 button.logo-card:hover {
   border-color: var(--border-strong);
   background: var(--surface-2);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .logo-badge {
@@ -271,7 +279,7 @@ button.logo-card:hover {
   border-radius: 999px;
   background: var(--accent-dim-2);
   color: var(--accent-text);
-  border: 1px solid rgba(110, 107, 220, 0.25);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
   font-weight: 800;
   font-size: 0.72rem;
   letter-spacing: -0.01em;
@@ -344,7 +352,7 @@ button.logo-card:hover {
 
 .faq-item[data-open="true"] .faq-icon {
   background: var(--accent-dim-2);
-  border-color: rgba(110, 107, 220, 0.3);
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
   color: var(--accent-text);
 }
 
@@ -417,7 +425,7 @@ button.logo-card:hover {
 
 .faq-cat-btn[data-active="true"] {
   background: var(--accent-dim-2);
-  border-color: rgba(110, 107, 220, 0.3);
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
   color: var(--accent-text);
 }
 

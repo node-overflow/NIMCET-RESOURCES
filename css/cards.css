@@ -5,10 +5,6 @@
 .pyqtype-card,
 .pyq-card {
   border-left: 3px solid var(--tc);
-  transition:
-    transform 0.16s ease,
-    box-shadow 0.16s ease,
-    background 0.16s ease;
 }
 
 .notes-card .card-title,
@@ -58,13 +54,18 @@
   text-decoration: none;
   color: inherit;
   cursor: default;
+  box-shadow: var(--shadow-card);
   transition:
     border-color 0.14s ease,
-    background 0.14s ease;
+    background 0.14s ease,
+    transform 0.16s ease,
+    box-shadow 0.16s ease;
 }
 
 .resource-card:hover {
   background: var(--surface-2);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
 }
 
 /* =========================
@@ -153,13 +154,18 @@
   gap: 14px;
   overflow: hidden;
   user-select: none;
+  box-shadow: var(--shadow-card);
   transition:
     border-color 0.14s ease,
-    background 0.14s ease;
+    background 0.14s ease,
+    transform 0.16s ease,
+    box-shadow 0.16s ease;
 }
 
 .pyq-card:hover {
   background: var(--surface-2);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .pyq-card-body {
@@ -172,7 +178,6 @@
 
 .pyq-title {
   margin: 0;
-  color: var(--text-calm-h);
   font-size: 1rem;
   font-weight: 450;
   color: var(--text);
@@ -327,7 +332,7 @@
 .year-badge {
   padding: 5px 11px;
   border-radius: 999px;
-  border: 1px solid rgba(110, 107, 220, 0.28);
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
   background: var(--accent-dim-2);
   color: var(--accent-text);
   font-size: 0.82rem;
@@ -433,7 +438,7 @@
   padding: 10px 15px;
   border-radius: var(--radius-sm);
   background: var(--accent-dim);
-  border: 1px solid rgba(110, 107, 220, 0.24);
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
   color: var(--accent-text);
   font-size: 0.74rem;
   font-weight: 600;
@@ -446,8 +451,8 @@
 }
 
 .card-action:hover {
-  background: rgba(110, 107, 220, 0.22);
-  border-color: rgba(110, 107, 220, 0.4);
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
 }
 
 .card-action,
@@ -660,7 +665,7 @@
   text-transform: uppercase;
   color: var(--accent-text);
   background: var(--accent-dim);
-  border: 1px solid rgba(110, 107, 220, 0.35);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
   border-radius: 999px;
 }
 
@@ -707,6 +712,6 @@
 
 .exam-filter-btn[data-active="true"] {
   background: var(--accent-dim);
-  border-color: rgba(110, 107, 220, 0.45);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
   color: var(--accent-text);
 }
