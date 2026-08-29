@@ -1,7 +1,6 @@
 [
   {
     "title": "Sets Pyqs",
-    "chapter": "Sets",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "sets"],
@@ -11,7 +10,6 @@
   },
   {
     "title": "Logarithm Pyqs",
-    "chapter": "Logarithm",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "logarithm"],
@@ -22,7 +20,6 @@
 
   {
     "title": "Quadratic Equation Pyqs",
-    "chapter": "Quadratic Equations",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "quadratic equations"],
@@ -32,7 +29,6 @@
   },
   {
     "title": "Sequence & Series Pyqs",
-    "chapter": "Sequence & Series",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "sequence-and-series"],
@@ -42,7 +38,6 @@
   },
   {
     "title": "Matrices Pyqs",
-    "chapter": "Matrices",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "matrices"],
@@ -52,7 +47,6 @@
   },
   {
     "title": "Determinants Pyqs",
-    "chapter": "Determinants",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "determinants"],
@@ -62,7 +56,6 @@
   },
   {
     "title": "Binomial Theorem Pyqs",
-    "chapter": "Binomial Theorem",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "binomial-theorem"],
@@ -72,7 +65,6 @@
   },
   {
     "title": "PNC Pyqs",
-    "chapter": "Permutation & Combination",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "permutation-combination", "pnc"],
@@ -82,7 +74,6 @@
   },
   {
     "title": "Probability Pyqs",
-    "chapter": "Probability",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "probability"],
@@ -92,7 +83,6 @@
   },
   {
     "title": "Statistics Pyqs",
-    "chapter": "Statistics",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "statistics"],
@@ -103,7 +93,6 @@
 
   {
     "title": "Trigonometry Ratio Pyqs",
-    "chapter": "Trigonometric Ratios",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "trigonometry", "trigonometric-ratios"],
@@ -113,7 +102,6 @@
   },
   {
     "title": "Height & Distance Pyqs",
-    "chapter": "Height & Distance",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "trigonometry", "height-and-distance"],
@@ -123,7 +111,6 @@
   },
   {
     "title": "Inverse Trigonometry Pyqs",
-    "chapter": "Inverse Trigonometry",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "trigonometry", "inverse-trigonometry"],
@@ -134,7 +121,6 @@
 
   {
     "title": "Circle Pyqs",
-    "chapter": "Circle",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "coordinate-geometry", "circle"],
@@ -144,7 +130,6 @@
   },
   {
     "title": "Conic Section Pyqs",
-    "chapter": "Conic Section",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "coordinate-geometry", "conic-section"],
@@ -154,7 +139,6 @@
   },
   {
     "title": "Properties of Triangle Pyqs",
-    "chapter": "Properties of Triangle",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "coordinate-geometry", "triangle"],
@@ -165,7 +149,6 @@
 
   {
     "title": "Mapping & Function Pyqs",
-    "chapter": "Mapping & Function",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "functions", "mapping"],
@@ -175,7 +158,6 @@
   },
   {
     "title": "Limit Pyqs",
-    "chapter": "Limits",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "limits"],
@@ -185,7 +167,6 @@
   },
   {
     "title": "Continuity & Differentiability Pyqs",
-    "chapter": "Continuity & Differentiability",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "continuity", "differentiability"],
@@ -195,7 +176,6 @@
   },
   {
     "title": "Differentiation Pyqs",
-    "chapter": "Differentiation",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "differentiation"],
@@ -205,7 +185,6 @@
   },
   {
     "title": "Application of Derivatives Pyqs",
-    "chapter": "Application of Derivatives",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "application-of-derivatives"],
@@ -215,7 +194,6 @@
   },
   {
     "title": "Definite Integration Pyqs",
-    "chapter": "Definite Integration",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "integration"],
@@ -225,7 +203,6 @@
   },
   {
     "title": "Area Under Curve Pyqs",
-    "chapter": "Area Under Curve",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "area-under-curve"],
@@ -235,7 +212,6 @@
   },
   {
     "title": "Differential Equation Pyqs",
-    "chapter": "Differential Equation",
     "exam": "NIMCET",
     "year": "2007-25",
     "tags": ["pyq", "calculus", "differential-equation"],
@@ -245,7 +221,6 @@
   },
   {
     "title": "Statistics, Sets & Relations Pyqs",
-    "chapter": "Statistics, Sets & Relations",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "statistics", "sets", "relations"],
@@ -255,7 +230,6 @@
   },
   {
     "title": "Quadratic Equation Pyqs",
-    "chapter": "Quadratic Equations",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "quadratic equations"],
@@ -265,7 +239,6 @@
   },
   {
     "title": "Sequence & Series Pyqs",
-    "chapter": "Sequence & Series",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "sequence and series"],
@@ -275,7 +248,6 @@
   },
   {
     "title": "Binomial Theorem Pyqs",
-    "chapter": "Binomial Theorem",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "binomial theorem"],
@@ -285,7 +257,6 @@
   },
   {
     "title": "Matrices & Determinants Pyqs",
-    "chapter": "Matrices & Determinants",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "matrices", "determinants"],
@@ -295,7 +266,6 @@
   },
   {
     "title": "P&C Pyqs",
-    "chapter": "Permutation & Combination",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "pnc", "permutation and combination"],
@@ -305,7 +275,6 @@
   },
   {
     "title": "Probability Pyqs",
-    "chapter": "Probability",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "probability"],
@@ -315,7 +284,6 @@
   },
   {
     "title": "Trigonometry Pyqs",
-    "chapter": "Trigonometry",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "trigonometry"],
@@ -325,7 +293,6 @@
   },
   {
     "title": "Straight Lines Pyqs",
-    "chapter": "Straight Lines",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "coordinate geometry", "straight lines"],
@@ -335,7 +302,6 @@
   },
   {
     "title": "Circle Pyqs",
-    "chapter": "Circle",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "coordinate geometry", "circle"],
@@ -345,7 +311,6 @@
   },
   {
     "title": "Conic Sections Pyqs",
-    "chapter": "Conic Sections",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "coordinate geometry", "conic sections"],
@@ -355,7 +320,6 @@
   },
   {
     "title": "Properties of Triangles Pyqs",
-    "chapter": "Properties of Triangles",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "geometry", "triangles"],
@@ -365,7 +329,6 @@
   },
   {
     "title": "Complex Numbers Pyqs",
-    "chapter": "Complex Numbers",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "complex numbers"],
@@ -375,7 +338,6 @@
   },
   {
     "title": "Functions Pyqs",
-    "chapter": "Functions",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "functions", "algebra"],
@@ -385,7 +347,6 @@
   },
   {
     "title": "Limits, Continuity & Differentiability Pyqs",
-    "chapter": "Limits, Continuity & Differentiability",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "limits", "continuity", "differentiability"],
@@ -395,7 +356,6 @@
   },
   {
     "title": "Differentiation Pyqs",
-    "chapter": "Differentiation",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "differentiation"],
@@ -405,7 +365,6 @@
   },
   {
     "title": "AOD Pyqs",
-    "chapter": "Application of Derivatives",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "application of derivatives"],
@@ -415,7 +374,6 @@
   },
   {
     "title": "Indefinite Integrals Pyqs",
-    "chapter": "Indefinite Integrals",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "indefinite integrals"],
@@ -425,7 +383,6 @@
   },
   {
     "title": "Definite Integrals Pyqs",
-    "chapter": "Definite Integrals",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "definite integrals"],
@@ -435,7 +392,6 @@
   },
   {
     "title": "Differential Equations Pyqs",
-    "chapter": "Differential Equations",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "differential equations"],
@@ -445,7 +401,6 @@
   },
   {
     "title": "ITF Pyqs",
-    "chapter": "Inverse Trigonometric Functions",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "trigonometry", "inverse trigonometric functions"],
@@ -455,7 +410,6 @@
   },
   {
     "title": "Vector & 3D Pyqs",
-    "chapter": "Vector & 3D Geometry",
     "exam": "JEE",
     "year": "up to 2019",
     "tags": ["pyq", "vectors", "3d geometry"],

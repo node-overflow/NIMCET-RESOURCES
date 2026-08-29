@@ -1,7 +1,6 @@
 [
   {
     "title": "Arihant Nimcet 16 Years Solved",
-    "chapter": "Math",
     "bestFor": "Practice",
     "image": "https://m.media-amazon.com/images/I/6109xOx50LL.jpg",
     "tags": ["nimcet"],
@@ -12,7 +11,6 @@
   },
   {
     "title": "Play with Graphs",
-    "chapter": "Graphs",
     "bestFor": "Concept + Practice",
     "image": "https://arihantbooks.com/cdn/shop/files/B019.j-f_600x.jpg?v=1773296855",
     "tags": ["graphs", "graph transformations", "functions and graphs"],
@@ -23,7 +21,6 @@
   },
   {
     "title": "R D SHARMA VOL 1",
-    "chapter": "Algebra",
     "bestFor": "Concept + Practice",
     "image": "https://dhanpatrai.com/img/books/Objective%20Math.(Vol.%20I%20&%20II).jpg",
     "tags": ["algebra", "r d"],
@@ -32,7 +29,6 @@
   },
   {
     "title": "R D SHARMA VOL 2",
-    "chapter": "Calculus",
     "bestFor": "Concept + Practice",
     "image": "https://m.media-amazon.com/images/I/71Yb6Jp-yfL._AC_UF1000,1000_QL80_.jpg",
     "tags": ["calculus", "r d"],
@@ -41,7 +37,6 @@
   },
   {
     "title": "R D SHARMA 11",
-    "chapter": "Algebra",
     "bestFor": "Foundation",
     "image": "https://dhanpatrai.com/img/books/Math%20XI%20Vol%20I_1.jpg",
     "tags": ["class 11", "r d"],
@@ -50,7 +45,6 @@
   },
   {
     "title": "R D SHARMA 12 (Vol 1)",
-    "chapter": "Algebra",
     "bestFor": "Foundation",
     "image": "https://iili.io/CpJYYIj.png",
     "tags": ["class 11", "r d"],
@@ -59,7 +53,6 @@
   },
   {
     "title": "R D SHARMA 12 (Vol 2)",
-    "chapter": "Algebra",
     "bestFor": "Foundation",
     "image": "https://iili.io/CpJaQDJ.png",
     "tags": ["class 11", "r d"],
@@ -69,7 +62,6 @@
   },
   {
     "title": "R S AGGARWAL 11",
-    "chapter": "Quantitative",
     "bestFor": "Practice",
     "image": "https://m.media-amazon.com/images/I/710DY60DHUL._SL1500_.jpg",
     "tags": ["class 11 mathematics", "rs"],
@@ -78,7 +70,6 @@
   },
   {
     "title": "R S AGGARWAL 12",
-    "chapter": "Quantitative",
     "bestFor": "Practice",
     "image": "https://m.media-amazon.com/images/I/71XNw5ICsCL._SL1500_.jpg",
     "tags": ["class 12 mathematics", "rs"],
@@ -87,7 +78,6 @@
   },
   {
     "title": "Arihant MCA Package",
-    "chapter": "MCA Prep",
     "bestFor": "Exam Prep",
     "image": "https://m.media-amazon.com/images/I/61zbJeaoiQL.jpg",
     "tags": ["mca entrance", "mathematics practice", "nimcet preparation"],
@@ -97,7 +87,6 @@
   },
   {
     "title": "Arihant Algebra",
-    "chapter": "Algebra",
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B011-F_72969b1f-94da-4a7f-95fb-9f1c142624c1_600x.jpg?v=1773291095",
     "tags": ["algebra", "concept building", "advanced practice"],
@@ -107,7 +96,6 @@
   },
   {
     "title": "Arihant Coordinate Geometry",
-    "chapter": "Algebra",
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B012-F_9d482637-d21b-454e-9e06-1eaffcdf4908_600x.jpg?v=1773296020",
     "tags": ["coodinate geometry", "concept building", "advanced practice"],
@@ -117,7 +105,6 @@
   },
   {
     "title": "Arihant Differential Calculus",
-    "chapter": "Algebra",
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B015-F_7060f009-715c-4356-ace1-4d38147a4b73_600x.jpg?v=1773296178",
     "tags": ["calculus", "concept building", "advanced practice"],
@@ -127,7 +114,6 @@
   },
   {
     "title": "Arihant Integral Calculus",
-    "chapter": "Algebra",
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B016-F_6a62f266-6cd0-4838-a9f3-3d940e4fa612_600x.jpg?v=1773296256",
     "tags": ["calculus", "concept building", "advanced practice"],
@@ -137,7 +123,6 @@
   },
   {
     "title": "Arihant Trigonometry",
-    "chapter": "Algebra",
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B017-F_6261156b-e075-4337-b00f-f3b201d84a3a_600x.png?v=1765001487",
     "tags": ["trigonometry", "concept building", "advanced practice"],
@@ -147,7 +132,6 @@
   },
   {
     "title": "Arihant Vectors & 3D",
-    "chapter": "Algebra",
     "bestFor": "Concept Building",
     "image": "https://arihantbooks.com/cdn/shop/files/B018-F_91af9480-00db-4704-a1bc-34447d9bfe8e_600x.jpg?v=1773296794",
     "tags": ["vector", "concept building", "advanced practice"],
@@ -157,7 +141,6 @@
   },
   {
     "title": "S L LONEY PLANE TRIGONOMETRY",
-    "chapter": "Trigonometry",
     "bestFor": "Concept Building",
     "image": "https://m.media-amazon.com/images/I/519C1RzWtNL._SL1360_.jpg",
     "tags": ["trigonometry", "concept building", "advanced practice"],
@@ -167,7 +150,6 @@
   },
   {
     "title": "NCERT EXEMPLAR 11",
-    "chapter": "Class 11 Mathematics",
     "bestFor": "Problem Practice",
     "image": "https://arihantbooks.com/cdn/shop/files/F280-F_52aa30e0-30df-4f3e-a6a9-185f1d574458.jpg?v=1738400585",
     "tags": ["class 11", "ncert exemplar", "problem practice"],
@@ -177,7 +159,6 @@
   },
   {
     "title": "NCERT EXEMPLAR 12",
-    "chapter": "Class 12 Mathematics",
     "bestFor": "Problem Practice",
     "image": "https://arihantbooks.com/cdn/shop/files/F282-F_2b1700d1-b712-4e25-b6c8-a537318d12ca.jpg?v=1738400593",
     "tags": ["class 12", "ncert exemplar", "problem practice"],

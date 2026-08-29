@@ -1,7 +1,6 @@
 [
   {
     "title": "3D Geometry",
-    "chapter": "Geometry",
     "owner": "GB Sir",
     "tags": ["Geometry", "3d"],
     "cdnjs": true,
@@ -10,7 +9,6 @@
   },
   {
     "title": "AOD",
-    "chapter": "Application of Derivatives",
     "owner": "GB Sir",
     "tags": ["calculus", "application of derivatives"],
     "cdnjs": true,
@@ -19,7 +17,6 @@
   },
   {
     "title": "AOD II",
-    "chapter": "Application of Derivatives",
     "owner": "GB Sir",
     "tags": ["calculus", "application of derivatives"],
     "cdnjs": true,
@@ -28,7 +25,6 @@
   },
   {
     "title": "AOD III",
-    "chapter": "Application of Derivatives",
     "owner": "GB Sir",
     "tags": ["calculus", "application of derivatives"],
     "cdnjs": true,
@@ -37,7 +33,6 @@
   },
   {
     "title": "AOD IV",
-    "chapter": "Application of Derivatives",
     "owner": "GB Sir",
     "tags": ["calculus", "application of derivatives"],
     "cdnjs": true,
@@ -46,7 +41,6 @@
   },
   {
     "title": "Area Under Curve",
-    "chapter": "Integral Calculus",
     "owner": "GB Sir",
     "tags": ["calculus", "area under curve", "integration"],
     "cdnjs": true,
@@ -55,7 +49,6 @@
   },
   {
     "title": "Binomial Theorem",
-    "chapter": "Binomial Theorem",
     "owner": "GB Sir",
     "tags": ["algebra", "binomial theorem"],
     "cdnjs": true,
@@ -64,7 +57,6 @@
   },
   {
     "title": "Circles",
-    "chapter": "Circle",
     "owner": "GB Sir",
     "tags": ["coordinate geometry", "circle"],
     "cdnjs": true,
@@ -73,7 +65,6 @@
   },
   {
     "title": "Complex Numbers",
-    "chapter": "Complex Numbers",
     "owner": "GB Sir",
     "tags": ["algebra", "complex numbers"],
     "cdnjs": true,
@@ -82,7 +73,6 @@
   },
   {
     "title": "Continuity Differentiability",
-    "chapter": "Continuity and Differentiability",
     "owner": "GB Sir",
     "tags": ["calculus", "continuity", "differentiability"],
     "cdnjs": true,
@@ -91,7 +81,6 @@
   },
   {
     "title": "Definite Integrals",
-    "chapter": "Integral Calculus",
     "owner": "GB Sir",
     "tags": ["calculus", "integration", "definite integrals"],
     "cdnjs": true,
@@ -100,7 +89,6 @@
   },
   {
     "title": "Differential Eqn",
-    "chapter": "Differential Equations",
     "owner": "GB Sir",
     "tags": ["calculus", "differential equations"],
     "cdnjs": true,
@@ -109,7 +97,6 @@
   },
   {
     "title": "Differentiation",
-    "chapter": "Differentiation",
     "owner": "GB Sir",
     "tags": ["calculus", "differentiation"],
     "cdnjs": true,
@@ -118,7 +105,6 @@
   },
   {
     "title": "Ellipse",
-    "chapter": "Ellipse",
     "owner": "GB Sir",
     "tags": ["coordinate geometry", "conic sections", "ellipse"],
     "cdnjs": true,
@@ -127,7 +113,6 @@
   },
   {
     "title": "Functions",
-    "chapter": "Functions",
     "owner": "GB Sir",
     "tags": ["algebra", "functions"],
     "cdnjs": true,
@@ -136,7 +121,6 @@
   },
   {
     "title": "Functions II",
-    "chapter": "Functions",
     "owner": "GB Sir",
     "tags": ["algebra", "functions"],
     "cdnjs": true,
@@ -145,7 +129,6 @@
   },
   {
     "title": "Functions III",
-    "chapter": "Functions",
     "owner": "GB Sir",
     "tags": ["algebra", "functions"],
     "cdnjs": true,
@@ -154,7 +137,6 @@
   },
   {
     "title": "Hyperbola",
-    "chapter": "Hyperbola",
     "owner": "GB Sir",
     "tags": ["coordinate geometry", "conic sections", "hyperbola"],
     "cdnjs": true,
@@ -163,7 +145,6 @@
   },
   {
     "title": "Indefinite Integrals",
-    "chapter": "Integral Calculus",
     "owner": "GB Sir",
     "tags": ["calculus", "integration", "indefinite integrals"],
     "cdnjs": true,
@@ -172,7 +153,6 @@
   },
   {
     "title": "Limits",
-    "chapter": "Limits",
     "owner": "GB Sir",
     "tags": ["calculus", "limits"],
     "cdnjs": true,
@@ -181,7 +161,6 @@
   },
   {
     "title": "Logarithms",
-    "chapter": "Logarithms",
     "owner": "GB Sir",
     "tags": ["algebra", "logarithms"],
     "cdnjs": true,
@@ -190,7 +169,6 @@
   },
   {
     "title": "Matrix & Determinant",
-    "chapter": "Matrices and Determinants",
     "owner": "GB Sir",
     "tags": ["algebra", "matrices", "determinants"],
     "cdnjs": true,
@@ -199,7 +177,6 @@
   },
   {
     "title": "P&C",
-    "chapter": "Permutation and Combination",
     "owner": "GB Sir",
     "tags": ["combinatorics", "permutation", "combination"],
     "cdnjs": true,
@@ -208,7 +185,6 @@
   },
   {
     "title": "Parabola",
-    "chapter": "Parabola",
     "owner": "GB Sir",
     "tags": ["coordinate geometry", "conic sections", "parabola"],
     "cdnjs": true,
@@ -217,7 +193,6 @@
   },
   {
     "title": "Probability",
-    "chapter": "Probability",
     "owner": "GB Sir",
     "tags": ["probability", "combinatorics"],
     "cdnjs": true,
@@ -226,7 +201,6 @@
   },
   {
     "title": "Progression",
-    "chapter": "Sequences and Series",
     "owner": "GB Sir",
     "tags": ["algebra", "sequences", "series", "progression"],
     "cdnjs": true,
@@ -235,7 +209,6 @@
   },
   {
     "title": "Quadratic Eqn",
-    "chapter": "Quadratic Equations",
     "owner": "GB Sir",
     "tags": ["algebra", "quadratic equations"],
     "cdnjs": true,
@@ -244,7 +217,6 @@
   },
   {
     "title": "St Lines",
-    "chapter": "Straight Lines",
     "owner": "GB Sir",
     "tags": ["coordinate geometry", "straight lines"],
     "cdnjs": true,
@@ -253,7 +225,6 @@
   },
   {
     "title": "Trigonometry",
-    "chapter": "Trigonometry",
     "owner": "GB Sir",
     "tags": ["trigonometry", "trigonometric functions"],
     "cdnjs": true,
@@ -262,7 +233,6 @@
   },
   {
     "title": "Trigonometry II",
-    "chapter": "Trigonometry",
     "owner": "GB Sir",
     "tags": ["trigonometry", "trigonometric functions"],
     "cdnjs": true,
@@ -271,7 +241,6 @@
   },
   {
     "title": "Trigonometry III",
-    "chapter": "Trigonometry",
     "owner": "GB Sir",
     "tags": ["trigonometry", "trigonometric functions"],
     "cdnjs": true,
@@ -280,7 +249,6 @@
   },
   {
     "title": "Vector",
-    "chapter": "Vector Algebra",
     "owner": "GB Sir",
     "tags": ["vector", "3d geometry", "geometry"],
     "cdnjs": true,

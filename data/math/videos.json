@@ -1,7 +1,6 @@
 [
   {
     "title": "Basic Math & Logarithm",
-    "chapter": "Basic Math",
     "bestFor": "One Shot",
     "tags": ["logarithm", "basic math"],
     "action": "open",
@@ -9,7 +8,6 @@
   },
   {
     "title": "Inequalities",
-    "chapter": "Basic Math",
     "bestFor": "One Shot",
     "tags": ["inequalities", "basic math"],
     "action": "open",
@@ -17,7 +15,6 @@
   },
   {
     "title": "Logarithm",
-    "chapter": "Basic Math",
     "bestFor": "One Shot",
     "tags": ["logarithm", "basic math"],
     "action": "open",
@@ -25,7 +22,6 @@
   },
   {
     "title": "Sets",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -33,7 +29,6 @@
   },
   {
     "title": "Sets",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -41,7 +36,6 @@
   },
   {
     "title": "Relations and Functions",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -49,7 +43,6 @@
   },
   {
     "title": "Relations and Functions",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -57,7 +50,6 @@
   },
   {
     "title": "Quadratic Equations",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -65,7 +57,6 @@
   },
   {
     "title": "Quadratic Equations",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -73,7 +64,6 @@
   },
   {
     "title": "Quadratic Equations",
-    "chapter": "Algebra",
     "bestFor": "jee mains pyqs",
     "tags": ["jee", "jee mains", "pyqs", "algebra", "video lecture"],
     "action": "open",
@@ -81,7 +71,6 @@
   },
   {
     "title": "Sequence and Series",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -89,7 +78,6 @@
   },
   {
     "title": "Sequence and Series",
-    "chapter": "Algebra",
     "bestFor": "jee mains pyqs",
     "tags": ["jee", "jee mains", "pyqs", "algebra", "video lecture"],
     "action": "open",
@@ -97,7 +85,6 @@
   },
   {
     "title": "Sequence and Series",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -105,7 +92,6 @@
   },
   {
     "title": "Binomial Theorem",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -113,7 +99,6 @@
   },
   {
     "title": "Binomial Theorem",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -121,7 +106,6 @@
   },
   {
     "title": "Permutations and Combinations",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -129,7 +113,6 @@
   },
   {
     "title": "Permutations and Combinations",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -137,7 +120,6 @@
   },
   {
     "title": "Matrices",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -145,7 +127,6 @@
   },
   {
     "title": "Matrices",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
@@ -153,7 +134,6 @@
   },
   {
     "title": "Determinants",
-    "chapter": "Algebra",
     "desc": "Determinants",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
@@ -162,7 +142,6 @@
   },
   {
     "title": "Determinants",
-    "chapter": "Algebra",
     "desc": "Determinants",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
@@ -171,7 +150,6 @@
   },
   {
     "title": "Trigonometry",
-    "chapter": "Trigonometry",
     "bestFor": "one shot",
     "tags": ["trigonometry", "video lecture"],
     "action": "open",
@@ -179,7 +157,6 @@
   },
   {
     "title": "Trigonometry",
-    "chapter": "Trigonometry",
     "bestFor": "one shot",
     "tags": ["trigonometry", "video lecture"],
     "action": "open",
@@ -187,7 +164,6 @@
   },
   {
     "title": "Trigonometric Equations",
-    "chapter": "Trigonometry",
     "bestFor": "one shot",
     "tags": ["trigonometry", "video lecture"],
     "action": "open",
@@ -195,7 +171,6 @@
   },
   {
     "title": "Trigonometric Equations",
-    "chapter": "Trigonometry",
     "bestFor": "one shot",
     "tags": ["trigonometry", "video lecture"],
     "action": "open",
@@ -203,7 +178,6 @@
   },
   {
     "title": "Solutions of Triangle",
-    "chapter": "Trigonometry",
     "bestFor": "one shot",
     "tags": ["trigonometry", "video lecture"],
     "action": "open",
@@ -211,7 +185,6 @@
   },
   {
     "title": "Straight Lines",
-    "chapter": "Coordinate Geometry",
     "bestFor": "one shot",
     "tags": ["coordinate geometry", "video lecture"],
     "action": "open",
@@ -219,7 +192,6 @@
   },
   {
     "title": "Straight Lines",
-    "chapter": "Coordinate Geometry",
     "bestFor": "one shot",
     "tags": ["coordinate geometry", "video lecture"],
     "action": "open",
@@ -227,7 +199,6 @@
   },
   {
     "title": "Circle",
-    "chapter": "Coordinate Geometry",
     "bestFor": "one shot",
     "tags": ["coordinate geometry", "video lecture"],
     "action": "open",
@@ -235,7 +206,6 @@
   },
   {
     "title": "Circle",
-    "chapter": "Coordinate Geometry",
     "bestFor": "one shot",
     "tags": ["coordinate geometry", "video lecture"],
     "action": "open",
@@ -243,7 +213,6 @@
   },
   {
     "title": "Parabola",
-    "chapter": "Conic Section",
     "bestFor": "one shot",
     "tags": ["conic section", "video lecture"],
     "action": "open",
@@ -251,7 +220,6 @@
   },
   {
     "title": "Parabola",
-    "chapter": "Conic Section",
     "bestFor": "one shot",
     "tags": ["conic section", "video lecture"],
     "action": "open",
@@ -259,7 +227,6 @@
   },
   {
     "title": "Ellipse",
-    "chapter": "Conic Section",
     "bestFor": "one shot",
     "tags": ["conic section", "video lecture"],
     "action": "open",
@@ -267,7 +234,6 @@
   },
   {
     "title": "Ellipse",
-    "chapter": "Conic Section",
     "bestFor": "one shot",
     "tags": ["conic section", "video lecture"],
     "action": "open",
@@ -275,7 +241,6 @@
   },
   {
     "title": "Hyperbola",
-    "chapter": "Conic Section",
     "bestFor": "one shot",
     "tags": ["conic section", "video lecture"],
     "action": "open",
@@ -283,7 +248,6 @@
   },
   {
     "title": "Hyperbola",
-    "chapter": "Conic Section",
     "bestFor": "one shot",
     "tags": ["conic section", "video lecture"],
     "action": "open",
@@ -291,7 +255,6 @@
   },
   {
     "title": "Limits",
-    "chapter": "Calculus",
     "bestFor": "One Shot",
     "tags": ["calculus", "video lecture"],
     "action": "open",
@@ -299,7 +262,6 @@
   },
   {
     "title": "Continuity",
-    "chapter": "Calculus",
     "bestFor": "One Shot",
     "tags": ["calculus", "video lecture"],
     "action": "open",
@@ -307,7 +269,6 @@
   },
   {
     "title": "Differentiability",
-    "chapter": "Calculus",
     "bestFor": "One Shot",
     "tags": ["calculus", "video lecture"],
     "action": "open",
@@ -315,7 +276,6 @@
   },
   {
     "title": "Methods of Differentiation",
-    "chapter": "Calculus",
     "bestFor": "One Shot",
     "tags": ["calculus", "video lecture"],
     "action": "open",
@@ -323,7 +283,6 @@
   },
   {
     "title": "Applications of Derivatives",
-    "chapter": "Calculus",
     "bestFor": "One Shot",
     "tags": ["calculus", "video lecture"],
     "action": "open",
@@ -331,7 +290,6 @@
   },
   {
     "title": "Indefinite Integration",
-    "chapter": "Calculus",
     "bestFor": "One Shot",
     "tags": ["calculus", "video lecture"],
     "action": "open",
@@ -339,7 +297,6 @@
   },
   {
     "title": "Indefinite Integration",
-    "chapter": "Calculus",
     "bestFor": "One Shot",
     "tags": ["calculus", "video lecture"],
     "action": "open",
@@ -347,7 +304,6 @@
   },
   {
     "title": "Definite Integration",
-    "chapter": "Calculus",
     "bestFor": "One Shot",
     "tags": ["calculus", "video lecture"],
     "action": "open",
@@ -355,7 +311,6 @@
   },
   {
     "title": "Differential Equations",
-    "chapter": "Calculus",
     "bestFor": "One Shot",
     "tags": ["calculus", "video lecture"],
     "action": "open",
@@ -363,7 +318,6 @@
   },
   {
     "title": "Area Under Curve",
-    "chapter": "Calculus",
     "bestFor": "One Shot",
     "tags": ["calculus", "video lecture"],
     "action": "open",
@@ -371,7 +325,6 @@
   },
   {
     "title": "Statistics",
-    "chapter": "Statistics",
     "bestFor": "one shot",
     "tags": ["statistics", "video lecture"],
     "action": "open",
@@ -379,7 +332,6 @@
   },
   {
     "title": "Probability",
-    "chapter": "Algebra",
     "bestFor": "one shot",
     "tags": ["algebra", "video lecture"],
     "action": "open",
