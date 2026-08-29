@@ -30,6 +30,15 @@ import {
     closeSidebar
 } from "./sidebar.js";
 
+const debounce = (fn, delay) => {
+    let timerId = null;
+
+    return (...args) => {
+        clearTimeout(timerId);
+        timerId = setTimeout(() => fn(...args), delay);
+    };
+};
+
 export const wireStaticEvents = () => {
     elOverlay.addEventListener("click", closeSidebar);
 
@@ -89,9 +98,11 @@ export const wireStaticEvents = () => {
         });
     }
 
+    const debouncedRenderResources = debounce(renderResources, 200);
+
     elSearchInput.addEventListener("input", event => {
         state.search = event.target.value;
-        renderResources();
+        debouncedRenderResources();
     });
 
     $$(".bnav-item").forEach(button => {

@@ -89,7 +89,15 @@ export const renderFilterPills = () => {
             state.examFilter = "All";
         }
 
-        const bar = buildExamFilterBar(["All", "NIMCET", "CUET PG"]);
+        const examOptions = Array.from(
+            new Set(
+                state.resources
+                    .filter(r => r.subject === "Computer" && r.exam)
+                    .map(r => r.exam)
+            )
+        );
+
+        const bar = buildExamFilterBar(["All", ...examOptions]);
 
         const toolbar = document.querySelector(".toolbar");
         if (toolbar) {

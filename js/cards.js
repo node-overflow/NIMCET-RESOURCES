@@ -667,8 +667,6 @@ export const renderDppCards = (container, items) => {
 
         card.innerHTML =
 
-            card.innerHTML =
-
             '<div class="pyq-card-body">' +
 
             '<div class="dpp-card-header">' +
@@ -916,8 +914,6 @@ export const renderPyqCards = (container, items) => {
         /* ---------- CARD ---------- */
 
         card.innerHTML =
-
-            card.innerHTML =
 
             '<div class="pyq-card-body">' +
 

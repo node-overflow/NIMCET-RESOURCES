@@ -78,8 +78,6 @@ export const initHistoryNavigation = () => {
     });
 };
 
-// ---------------------------------------------------------------------------
-
 export const setActiveNav = () => {
     document.querySelectorAll(".nav-item").forEach(button => {
         button.dataset.active = "false";
@@ -290,20 +288,14 @@ export const goToResources = opts => {
 
     if ("subject" in opts) {
         state.subject = opts.subject;
-    } else {
-        state.subject = state.subject;
     }
 
     if ("type" in opts) {
         state.type = opts.type;
-    } else {
-        state.type = state.type;
     }
 
     if ("search" in opts) {
         state.search = opts.search;
-    } else {
-        state.search = state.search;
     }
 
     const keepComputerFilter = state.subject === "Computer" && state.type === "Video";
