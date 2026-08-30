@@ -68,6 +68,7 @@ export const EXAMS = [
     { key: "NIMCET", name: "NIMCET", full: "NIT MCA Common Entrance Test", symbol: "N" },
     { key: "CUET PG MCA", name: "CUET PG MCA", full: "CUET PG MCA Entrance", symbol: "C" },
     { key: "JEE MAIN MATH", name: "JEE MAIN MATH", full: "JOIN ENTRACE EXAMINATION MAIN", symbol: "JM" },
+    { key: "JEE ADVANCED MATH", name: "JEE ADVANCED MATH", full: "JOIN ENTRACE EXAMINATION ADVANCED", symbol: "JA" },
     { key: "TANCET", name: "TANCET", full: "Tamil Nadu Common Entrance Test (MCA)", symbol: "T" },
     { key: "WB JECA", name: "WB JECA", full: "West Bengal MCA Entrance", symbol: "J" },
     { key: "MAH CET", name: "MAH CET", full: "Maharashtra Common Entrance Test (MCA)", symbol: "M" },

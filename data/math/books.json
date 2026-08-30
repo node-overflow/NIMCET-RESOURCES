@@ -20,6 +20,36 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/ERRORLESS%20MATH.pdf"
   },
   {
+    "title": "Advanced Problems in Mathematics (Black Book)",
+    "bestFor": "Advanced Practice",
+    "image": "https://m.media-amazon.com/images/I/51SGCrv669L._SL1485_.jpg",
+    "tags": ["nimcet", "jee"],
+    "featured": true,
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/black%20book%20by%20vikas%20gupta.pdf"
+  },
+  {
+    "title": "Advanced Problems in Coordinate Geometry (Pink Book)",
+    "bestFor": "Advanced Practice",
+    "image": "https://m.media-amazon.com/images/I/51GhSWS0QiL._SL1485_.jpg",
+    "tags": ["nimcet", "jee"],
+    "featured": true,
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/PINK%20BOOK%20by%20vikas%20gupta.pdf"
+  },
+  {
+    "title": "Advanced Problems in Algebra (Yellow Book)",
+    "bestFor": "Advanced Practice",
+    "image": "https://m.media-amazon.com/images/I/51TyAKGXrHL._SL1500_.jpg",
+    "tags": ["nimcet", "jee"],
+    "featured": true,
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/YELLOW%20BOOK%20by%20vikas%20gupta.pdf"
+  },
+  {
     "title": "Play with Graphs",
     "bestFor": "Concept + Practice",
     "image": "https://arihantbooks.com/cdn/shop/files/B019.j-f_600x.jpg?v=1773296855",
@@ -91,6 +121,7 @@
     "image": "https://m.media-amazon.com/images/I/61zbJeaoiQL.jpg",
     "tags": ["mca entrance", "mathematics practice", "nimcet preparation"],
     "reader": true,
+    "featured": true,
     "action": "open",
     "url": "https://raw.githubusercontent.com/rawcontentgit/NIMCET-RESOURCES/master/math%20books/Arihant%20MCA%20Package.pdf"
   },
@@ -149,6 +180,24 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Vectors%20%26%203D.pdf"
   },
   {
+    "title": "Arihant 41 Years Maths",
+    "bestFor": "Previous Year Questions",
+    "image": "https://m.media-amazon.com/images/I/71XbjNlhQmL._SL1500_.jpg",
+    "tags": ["pyqs", "advanced practice"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%2041%20Years%20Maths.pdf"
+  },
+  {
+    "title": "Integral Calculus Jee",
+    "bestFor": "Concept + Practice",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1517444449i/38316602.jpg",
+    "tags": ["concept building", "advanced practice"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Integral%20calculus%20by%20%20vinay%20kumar.pdf"
+  },
+  {
     "title": "S L LONEY PLANE TRIGONOMETRY",
     "bestFor": "Concept Building",
     "image": "https://m.media-amazon.com/images/I/519C1RzWtNL._SL1360_.jpg",
@@ -156,6 +205,14 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/SL%20Loney-Plane%20Trigonometry.pdf"
+  },
+  {
+    "title": "S L LONEY COORDINATE GEOMETRY",
+    "bestFor": "Concept Building",
+    "image": "https://m.media-amazon.com/images/I/415-gH+pAPL.jpg",
+    "tags": ["coodinate geometry", "concept building", "advanced practice"],
+    "action": "download",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/1.%20S.L.%20LONEY%20%5BCO-ORDINATE%20GEOMETRY%5D.pdf"
   },
   {
     "title": "NCERT EXEMPLAR 11",
@@ -192,5 +249,23 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/NCERT%20Examplar%20Math%20XII.pdf"
+  },
+  {
+    "title": "Arihant 40 Days JEE MAIN",
+    "bestFor": "Exam Prep",
+    "image": "https://m.media-amazon.com/images/I/51s-Coz3htL.jpg",
+    "tags": ["advanced practice"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/ARIHANT%20MATHEMATICS%20%5B40%20DAYS%20JEE%20MAINS%20STRATEGY%5D.pdf"
+  },
+  {
+    "title": "1000 Challenging Problems in Mathematics",
+    "bestFor": "Advanced Practice",
+    "image": "https://m.media-amazon.com/images/I/81CJrIfE4dL._SL1500_.jpg",
+    "tags": ["advanced practice"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/5.%201000%20ADVANCED%20PROBLEMS%20IN%20MATHEMATICS.pdf"
   }
 ]

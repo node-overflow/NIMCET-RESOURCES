@@ -221,7 +221,7 @@
   },
   {
     "title": "Statistics, Sets & Relations Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "statistics", "sets", "relations"],
     "cdnjs": true,
@@ -230,7 +230,7 @@
   },
   {
     "title": "Quadratic Equation Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "quadratic equations"],
     "cdnjs": true,
@@ -239,7 +239,7 @@
   },
   {
     "title": "Sequence & Series Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "sequence and series"],
     "cdnjs": true,
@@ -248,7 +248,7 @@
   },
   {
     "title": "Binomial Theorem Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "binomial theorem"],
     "cdnjs": true,
@@ -257,7 +257,7 @@
   },
   {
     "title": "Matrices & Determinants Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "matrices", "determinants"],
     "cdnjs": true,
@@ -266,7 +266,7 @@
   },
   {
     "title": "P&C Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "pnc", "permutation and combination"],
     "cdnjs": true,
@@ -275,7 +275,7 @@
   },
   {
     "title": "Probability Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "probability"],
     "cdnjs": true,
@@ -284,7 +284,7 @@
   },
   {
     "title": "Trigonometry Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "trigonometry"],
     "cdnjs": true,
@@ -293,7 +293,7 @@
   },
   {
     "title": "Straight Lines Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "coordinate geometry", "straight lines"],
     "cdnjs": true,
@@ -302,7 +302,7 @@
   },
   {
     "title": "Circle Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "coordinate geometry", "circle"],
     "cdnjs": true,
@@ -311,7 +311,7 @@
   },
   {
     "title": "Conic Sections Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "coordinate geometry", "conic sections"],
     "cdnjs": true,
@@ -320,7 +320,7 @@
   },
   {
     "title": "Properties of Triangles Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "geometry", "triangles"],
     "cdnjs": true,
@@ -329,7 +329,7 @@
   },
   {
     "title": "Complex Numbers Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "algebra", "complex numbers"],
     "cdnjs": true,
@@ -338,7 +338,7 @@
   },
   {
     "title": "Functions Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "functions", "algebra"],
     "cdnjs": true,
@@ -347,7 +347,7 @@
   },
   {
     "title": "Limits, Continuity & Differentiability Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "limits", "continuity", "differentiability"],
     "cdnjs": true,
@@ -356,7 +356,7 @@
   },
   {
     "title": "Differentiation Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "differentiation"],
     "cdnjs": true,
@@ -365,7 +365,7 @@
   },
   {
     "title": "AOD Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "application of derivatives"],
     "cdnjs": true,
@@ -374,7 +374,7 @@
   },
   {
     "title": "Indefinite Integrals Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "indefinite integrals"],
     "cdnjs": true,
@@ -383,7 +383,7 @@
   },
   {
     "title": "Definite Integrals Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "definite integrals"],
     "cdnjs": true,
@@ -392,7 +392,7 @@
   },
   {
     "title": "Differential Equations Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "calculus", "differential equations"],
     "cdnjs": true,
@@ -401,7 +401,7 @@
   },
   {
     "title": "ITF Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "trigonometry", "inverse trigonometric functions"],
     "cdnjs": true,
@@ -410,11 +410,218 @@
   },
   {
     "title": "Vector & 3D Pyqs",
-    "exam": "JEE",
+    "exam": "JEE Main + Adv.",
     "year": "up to 2019",
     "tags": ["pyq", "vectors", "3d geometry"],
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Vector%20%26%203D%20JEE.pdf"
+  },
+  {
+    "title": "Quadratic Equations Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["quadratic equations", "algebra", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-02_Quadratic%20Equations.pdf"
+  },
+  {
+    "title": "Binomial Theorem Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["binomial theorem", "algebra", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-03_Binomial%20Theorem.pdf"
+  },
+  {
+    "title": "Permutations and Combinations Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["permutations and combinations", "algebra", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-04_Permutations%20and%20Combinations.pdf"
+  },
+  {
+    "title": "Sequences and Series Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["sequences and series", "algebra", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-05_Sequences%20and%20Series.pdf"
+  },
+  {
+    "title": "Matrices Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["matrices", "algebra", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-06_Matrices.pdf"
+  },
+  {
+    "title": "Determinants Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["determinants", "algebra", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-07_Determinants.pdf"
+  },
+  {
+    "title": "Trigonometric Functions Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["trigonometric functions", "trigonometry", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-08_Trigonometric%20Functions.pdf"
+  },
+  {
+    "title": "Inverse Trigonometric Functions Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["inverse trigonometric functions", "trigonometry", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-09_Inverse%20Trigonometric%20Functions.pdf"
+  },
+  {
+    "title": "Straight Lines Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["straight lines", "coordinate geometry", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-10_Straight%20Lines.pdf"
+  },
+  {
+    "title": "Circle Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["circle", "coordinate geometry", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-11_Circle.pdf"
+  },
+  {
+    "title": "Conic Sections Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["conic sections", "coordinate geometry", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-12_Conic%20Sections.pdf"
+  },
+  {
+    "title": "Sets Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["sets", "algebra", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-13_Sets.pdf"
+  },
+  {
+    "title": "Functions Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["functions", "algebra", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-14_Functions.pdf"
+  },
+  {
+    "title": "Limits and Derivatives Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["limits and derivatives", "calculus", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-15_Limits%20and%20Derivatives.pdf"
+  },
+  {
+    "title": "Continuity and Differentiability Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["continuity and differentiability", "calculus", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-16_Continuity%20and%20Differentiability.pdf"
+  },
+  {
+    "title": "Application of Derivatives Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["application of derivatives", "calculus", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-17_Application%20of%20Derivatives.pdf"
+  },
+  {
+    "title": "Indefinite Integrals Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["indefinite integrals", "calculus", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-18_Indefinite%20Integrals.pdf"
+  },
+  {
+    "title": "Definite Integrals Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["definite integrals", "calculus", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-19_Definite%20Integrals.pdf"
+  },
+  {
+    "title": "Area Under Curve Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["area under curve", "calculus", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-20_Area%20Under%20Curve.pdf"
+  },
+  {
+    "title": "Differential Equations Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["differential equations", "calculus", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-21_Differential%20Equations.pdf"
+  },
+  {
+    "title": "Vector Algebra Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["vector algebra", "vectors", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-22_Vector%20Algebra.pdf"
+  },
+  {
+    "title": "3D Geometry Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["three dimensional geometry", "geometry", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-23_Three%20Dimensional%20Geometry.pdf"
+  },
+  {
+    "title": "Probability Pyqs",
+    "exam": "JEE Advanced",
+    "year": "up to 2022",
+    "tags": ["probability", "algebra", "pyqs"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-24_Probability.pdf"
   }
 ]
