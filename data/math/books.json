@@ -10,11 +10,20 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20NIMCET%2016%20Years%20Solved%20PYQs.pdf"
   },
   {
+    "title": "Errorless Maths",
+    "bestFor": "Practice",
+    "image": "https://d1bvsltgc3wm6k.cloudfront.net/contents/2463/image/60f7b561e271060a8381fdb6_blob.png",
+    "tags": ["nimcet"],
+    "featured": true,
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/ERRORLESS%20MATH.pdf"
+  },
+  {
     "title": "Play with Graphs",
     "bestFor": "Concept + Practice",
     "image": "https://arihantbooks.com/cdn/shop/files/B019.j-f_600x.jpg?v=1773296855",
     "tags": ["graphs", "graph transformations", "functions and graphs"],
-    "featured": true,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Play%20with%20graphs%20Arihant.pdf"
@@ -156,6 +165,24 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/NCERT%20Examplar%20Math%20XI.pdf"
+  },
+  {
+    "title": "NCERT CLASS 12 (Vol 1)",
+    "bestFor": "Problem Practice",
+    "image": "https://m.media-amazon.com/images/I/918O3XZAW9L._SL1500_.jpg",
+    "tags": ["class 11", "ncert exemplar", "problem practice"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/NCERT%20CLASS%2012%20(Vol%201).pdf"
+  },
+  {
+    "title": "NCERT CLASS 12 (Vol 2)",
+    "bestFor": "Problem Practice",
+    "image": "https://m.media-amazon.com/images/I/711wSDzQw4L._SL1500_.jpg",
+    "tags": ["class 11", "ncert exemplar", "problem practice"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/NCERT%20CLASS%2012%20(Vol%202).pdf"
   },
   {
     "title": "NCERT EXEMPLAR 12",
