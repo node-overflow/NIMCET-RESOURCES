@@ -328,18 +328,39 @@
             <section class="view" id="view-exam-info" hidden>
                 <div class="view-head">
                     <h1>Exam Info</h1>
-                    <p class="subtitle">Pattern, marking scheme, focus areas and the road from Day 1 to exam day —
-                        everything you need to know about NIMCET, in one place.</p>
+                    <p class="subtitle">Pattern, eligibility, syllabus, dates, strategy and the road from Day 1 to
+                        exam day — everything you need to know about NIMCET, in one place.</p>
                 </div>
 
-                <section class="section">
+                <nav class="exam-info-nav" id="examInfoQuickNav" aria-label="Jump to a section"></nav>
+
+                <section class="section" id="overview">
                     <h2 class="section-title">Know the exam</h2>
                     <p class="section-sub" id="examPatternDisclaimer"></p>
                     <div class="pattern-grid" id="examPatternGrid"></div>
                     <div class="pattern-meta" id="examPatternMeta"></div>
                 </section>
 
-                <section class="section section-breather">
+                <section class="section section-breather" id="eligibility">
+                    <h2 class="section-title">Eligibility criteria</h2>
+                    <p class="section-sub" id="eligibilityNote"></p>
+                    <div class="feature-grid" id="eligibilityGrid"></div>
+                </section>
+
+                <section class="section section-breather" id="timeline">
+                    <h2 class="section-title">Key dates &amp; the application cycle</h2>
+                    <p class="section-sub" id="examTimelineNote"></p>
+                    <div class="roadmap-timeline" id="examTimeline"></div>
+                </section>
+
+                <section class="section section-breather" id="syllabus">
+                    <h2 class="section-title">Full syllabus checklist</h2>
+                    <p class="section-sub" id="syllabusNote"></p>
+                    <div class="chip-row" id="syllabusSubjectTabs"></div>
+                    <div class="syllabus-chip-grid" id="syllabusChapterList"></div>
+                </section>
+
+                <section class="section section-breather" id="focus-areas">
                     <h2 class="section-title">Where to focus, subject by subject</h2>
                     <p class="section-sub">Our own priority guide, built from patterns across previous years — not an
                         official statistic.</p>
@@ -347,7 +368,39 @@
                     <div class="focus-area-list" id="focusAreaList"></div>
                 </section>
 
-                <section class="section marquee-section">
+                <section class="section section-breather" id="strategy">
+                    <h2 class="section-title">Section-wise time strategy</h2>
+                    <p class="section-sub" id="strategyNote"></p>
+                    <div class="strategy-grid" id="strategyGrid"></div>
+                </section>
+
+                <section class="section section-breather" id="roadmap">
+                    <h2 class="section-title">Your preparation roadmap</h2>
+                    <p class="section-sub">Five phases, zero shortcuts — a structure to move through the syllabus with
+                        intent.</p>
+                    <div class="roadmap-timeline" id="roadmapTimeline"></div>
+                </section>
+
+                <section class="section section-breather" id="books">
+                    <h2 class="section-title">Recommended books</h2>
+                    <p class="section-sub">A short, high-value shelf — not a shopping list. Pair these with the free
+                        PYQs and DPPs on this site.</p>
+                    <div class="rec-book-grid" id="booksGrid"></div>
+                </section>
+
+                <section class="section section-breather" id="exam-day">
+                    <h2 class="section-title">Exam day checklist</h2>
+                    <p class="section-sub">The small, boring things that quietly decide whether your morning goes
+                        smoothly.</p>
+                    <div class="checklist" id="examDayChecklist"></div>
+                </section>
+
+                <section class="section section-breather" id="mistakes">
+                    <h2 class="section-title">Mistakes to avoid</h2>
+                    <div class="myth-fact-grid" id="mistakesList"></div>
+                </section>
+
+                <section class="section marquee-section section-breather" id="nits">
                     <h2 class="section-title">Aim for these NITs</h2>
                     <p class="section-sub">A strong NIMCET rank opens the door to these National Institutes of
                         Technology.</p>
@@ -356,16 +409,14 @@
                     </div>
                 </section>
 
-                <section class="section section-breather">
-                    <h2 class="section-title">Your preparation roadmap</h2>
-                    <p class="section-sub">Five phases, zero shortcuts — a structure to move through the syllabus with
-                        intent.</p>
-                    <div class="roadmap-timeline" id="roadmapTimeline"></div>
-                </section>
-
-                <section class="section">
+                <section class="section section-breather" id="myths">
                     <h2 class="section-title">Myth vs fact</h2>
                     <div class="myth-fact-grid" id="mythFactGrid"></div>
+                </section>
+
+                <section class="section section-breather" id="faq">
+                    <h2 class="section-title">Exam info FAQs</h2>
+                    <div class="faq-list" id="examFaqList"></div>
                 </section>
             </section>
 

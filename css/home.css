@@ -757,11 +757,45 @@ button.logo-card:hover {
   box-shadow: var(--shadow-card);
 }
 
+.pattern-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 .pattern-section-name {
   margin: 0;
+  min-width: 0;
   font-size: 0.9rem;
   font-weight: 650;
   color: var(--text);
+  line-height: 1.35;
+}
+
+.pattern-marking {
+  display: flex;
+  flex-shrink: 0;
+  gap: 5px;
+}
+
+.pattern-mark-pill {
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+}
+
+.pattern-mark-pos {
+  color: var(--type-video);
+  background: color-mix(in srgb, var(--type-video) 14%, transparent);
+}
+
+.pattern-mark-neg {
+  color: var(--type-pyq);
+  background: color-mix(in srgb, var(--type-pyq) 14%, transparent);
 }
 
 .pattern-bar-track {
@@ -1040,4 +1074,200 @@ button.logo-card:hover {
   color: var(--accent-text);
   font-size: 0.85rem;
   font-weight: 650;
+}
+
+/* ============ Exam info quick nav ============ */
+.exam-info-nav {
+  position: sticky;
+  top: var(--safe-top, 0px);
+  z-index: 12;
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  background: var(--bg);
+  padding: 10px 2px 16px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid var(--border);
+}
+
+.exam-info-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.exam-info-nav .chip {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* ============ Syllabus checklist ============ */
+.syllabus-chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.syllabus-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  font-weight: 550;
+}
+
+.syllabus-chip::before {
+  content: "✓";
+  color: var(--accent-text);
+  font-weight: 700;
+  font-size: 0.72rem;
+}
+
+/* ============ Section strategy ============ */
+.strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.strategy-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  box-shadow: var(--shadow-card);
+}
+
+.strategy-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.strategy-section-name {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 650;
+  color: var(--text);
+}
+
+.strategy-time {
+  flex-shrink: 0;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--accent-dim);
+  color: var(--accent-text);
+  font-size: 0.7rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.strategy-approach {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-dim);
+}
+
+/* ============ Recommended books ============ */
+.rec-book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.rec-book-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  box-shadow: var(--shadow-card);
+}
+
+.rec-book-subject {
+  align-self: flex-start;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--accent-dim);
+  color: var(--accent-text);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.rec-book-title {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.rec-book-note {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+
+/* ============ Exam day checklist ============ */
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 6px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+}
+
+.checklist-item:hover {
+  background: var(--surface-2);
+}
+
+.checklist-num {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent-dim-2);
+  border: 1px solid var(--accent);
+  color: var(--accent-text);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.checklist-item p {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-dim);
 }

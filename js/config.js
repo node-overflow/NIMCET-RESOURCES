@@ -209,10 +209,10 @@ export const HOW_IT_WORKS = [
    ========================================================= */
 
 export const EXAM_PATTERN_SECTIONS = [
-    { section: "Mathematics", questions: 50, marks: 200, weight: "42%" },
-    { section: "Analytical Ability & Logical Reasoning", questions: 40, marks: 160, weight: "33%" },
-    { section: "Computer Awareness", questions: 10, marks: 40, weight: "8%" },
-    { section: "General English", questions: 20, marks: 80, weight: "17%" }
+    { section: "Mathematics", questions: 50, marks: 600, weight: "60%", correct: 12, incorrect: 3 },
+    { section: "Analytical Ability & Logical Reasoning", questions: 40, marks: 240, weight: "24%", correct: 6, incorrect: 1.5 },
+    { section: "Computer Awareness", questions: 20, marks: 120, weight: "12%", correct: 6, incorrect: 1.5 },
+    { section: "General English", questions: 10, marks: 40, weight: "4%", correct: 4, incorrect: 1 }
 ];
 
 export const EXAM_PATTERN_META = {
@@ -337,3 +337,228 @@ export const FOUNDER_NOTE = {
     body: "We are not a company. We are just a small group of NIMCET aspirants and alumni who know how difficult it can be to find good study material. We built this site to make that easier. We are bringing together useful resources, one subject, one PYQ, and one DPP at a time. As more students need resources, we will keep adding more.",
     signoff: "— Built by aspirants, for aspirants."
 };
+
+/* =========================================================
+   EXAM INFO — QUICK NAV
+   ========================================================= */
+
+export const EXAM_INFO_NAV = [
+    { id: "overview", label: "Exam Pattern" },
+    { id: "eligibility", label: "Eligibility" },
+    { id: "timeline", label: "Key Dates" },
+    { id: "syllabus", label: "Syllabus" },
+    { id: "focus-areas", label: "Focus Areas" },
+    { id: "strategy", label: "Section Strategy" },
+    { id: "roadmap", label: "Prep Roadmap" },
+    { id: "books", label: "Books" },
+    { id: "exam-day", label: "Exam Day" },
+    { id: "mistakes", label: "Mistakes to Avoid" },
+    { id: "nits", label: "Target NITs" },
+    { id: "myths", label: "Myth vs Fact" },
+    { id: "faq", label: "FAQs" }
+];
+
+/* =========================================================
+   ELIGIBILITY
+   ========================================================= */
+
+export const ELIGIBILITY_CRITERIA = [
+    {
+        icon: "🎓",
+        title: "Academic qualification",
+        desc: "A Bachelor's degree (BCA / B.Sc. in Computer Science, Information Technology, Mathematics, Statistics or a related discipline) with Mathematics as a subject at the 10+2 or graduation level, from a recognised university."
+    },
+    {
+        icon: "📊",
+        title: "Minimum marks",
+        desc: "Typically 60% aggregate (or equivalent CGPA) for General/OBC/EWS candidates and 55% for SC/ST/PwD candidates in the qualifying degree. Confirm the exact figure for the current cycle in the official brochure."
+    },
+    {
+        icon: "📝",
+        title: "Final-year candidates",
+        desc: "Students in the final year of their qualifying degree can usually apply, subject to producing proof of graduation with the required percentage before counselling and admission."
+    },
+    {
+        icon: "🌐",
+        title: "Nationality",
+        desc: "Open to Indian nationals. A limited number of seats at some NITs are separately available to foreign nationals through DASA, which runs outside NIMCET."
+    },
+    {
+        icon: "⏳",
+        title: "No upper age limit",
+        desc: "NIMCET has generally not enforced an upper age limit, and there is typically no cap on the number of attempts, as long as eligibility is met each year."
+    },
+    {
+        icon: "Σ",
+        title: "Mathematics requirement",
+        desc: "Since Mathematics carries the largest weight in the exam, most participating institutes require it to have been studied as a full subject, not just an applied or minor component."
+    }
+];
+
+export const ELIGIBILITY_NOTE = "Eligibility criteria can be revised every year by the conducting NIT. Treat the points above as a general guide and always cross-check the current year's official information brochure before applying.";
+
+/* =========================================================
+   EXAM TIMELINE (application cycle, not exam-day roadmap)
+   ========================================================= */
+
+export const EXAM_TIMELINE_PHASES = [
+    { phase: "1", window: "Typically Feb – Mar", title: "Notification", desc: "The conducting NIT releases the official information brochure covering eligibility, pattern, fees and important dates." },
+    { phase: "2", window: "Typically Mar – Apr", title: "Application Window", desc: "Online registration opens. Fill the form carefully, mistakes in category or personal details can cause problems later at counselling." },
+    { phase: "3", window: "Typically May", title: "Admit Card", desc: "Admit cards are released roughly two to three weeks before the exam. Download early and verify your centre, photo and details immediately." },
+    { phase: "4", window: "Typically Late May / June", title: "Exam Day", desc: "The Computer Based Test is conducted in a single national sitting across designated centres on one day." },
+    { phase: "5", window: "Typically 2 – 3 Weeks Later", title: "Result & Rank List", desc: "Results are declared along with an all-India rank list, which becomes the basis for the counselling rounds that follow." },
+    { phase: "6", window: "Typically June – July", title: "Counselling & Seat Allotment", desc: "Centralised counselling for seat allotment across participating NITs, based on rank, category and the choices you fill." }
+];
+
+export const EXAM_TIMELINE_NOTE = "These windows are indicative, based on how past cycles have generally played out, and are not official dates. The exact schedule for the current cycle is set by the conducting NIT, follow the Updates tab on this site and the official website for the real dates.";
+
+/* =========================================================
+   SYLLABUS, SECTION BY SECTION
+   ========================================================= */
+
+export const SYLLABUS = {
+    "Mathematics": MATH_CHAPTER_KEYWORDS.map(item => item.chapter),
+    "Logical Reasoning": [
+        "Number & Letter Series",
+        "Coding–Decoding",
+        "Blood Relations",
+        "Direction Sense",
+        "Syllogisms",
+        "Statements, Assumptions & Conclusions",
+        "Seating Arrangement & Puzzles",
+        "Analogies",
+        "Classification (Odd One Out)",
+        "Data Sufficiency",
+        "Venn Diagrams",
+        "Clocks & Calendars",
+        "Non-Verbal Reasoning (Mirror & Water Images)",
+        "Ranking & Ordering"
+    ],
+    "Computer": [
+        "Computer Organization & Architecture Basics",
+        "Number Systems & Conversions",
+        "Boolean Algebra & Logic Gates",
+        "Basic Programming Concepts & Flowcharts",
+        "Data Structures Basics (Arrays, Stacks, Queues)",
+        "Operating Systems Fundamentals",
+        "Memory & Storage Devices",
+        "Networking Basics",
+        "Internet & Web Fundamentals",
+        "MS Office & Software Basics",
+        "Computer Abbreviations & General Awareness"
+    ],
+    "Quantitative Aptitude": [
+        "Number System",
+        "Percentages",
+        "Profit & Loss",
+        "Simple & Compound Interest",
+        "Ratio, Proportion & Variation",
+        "Averages",
+        "Time, Speed & Distance",
+        "Time & Work",
+        "Mixtures & Alligation",
+        "Mensuration",
+        "Data Interpretation",
+        "Simplification & Approximation"
+    ],
+    "English": [
+        "Vocabulary (Synonyms & Antonyms)",
+        "One-Word Substitution",
+        "Idioms & Phrasal Verbs",
+        "Grammar (Tenses, Articles, Prepositions)",
+        "Error Spotting & Sentence Correction",
+        "Sentence Rearrangement (Para Jumbles)",
+        "Reading Comprehension",
+        "Fill in the Blanks",
+        "Cloze Test"
+    ]
+};
+
+export const SYLLABUS_NOTE = "This is a comprehensive study checklist compiled from patterns across previous years, not an official syllabus document. Use it to track coverage, not as a substitute for the official brochure.";
+
+/* =========================================================
+   SECTION-WISE TIME STRATEGY
+   ========================================================= */
+
+export const SECTION_STRATEGY = [
+    {
+        section: "Mathematics",
+        suggestedTime: "50–55 min",
+        approach: "Attempt your strongest chapters first (Coordinate Geometry, Calculus, Trigonometry) to bank marks early. Skip lengthy calculation-heavy questions on the first pass and return to them only if time allows."
+    },
+    {
+        section: "Analytical Ability & Logical Reasoning",
+        suggestedTime: "30–35 min",
+        approach: "Usually quicker and less calculation-heavy than Math. Puzzles and arrangements can eat time, so leave them for last within this section if you're running behind."
+    },
+    {
+        section: "Computer Awareness",
+        suggestedTime: "8–10 min",
+        approach: "Fewer questions, so a clean pass here is high value for the time spent. Skip a question the moment it feels unfamiliar rather than guessing blind, given the negative marking."
+    },
+    {
+        section: "General English",
+        suggestedTime: "15–18 min",
+        approach: "Reading comprehension passages can be time-expensive. Clear the direct vocabulary and grammar questions first, then return to passage-based ones."
+    }
+];
+
+export const SECTION_STRATEGY_NOTE = "These are suggested time splits based on typical question distribution, not an official rule. Adjust them based on your own strengths after a few mock attempts.";
+
+/* =========================================================
+   RECOMMENDED BOOKS
+   ========================================================= */
+
+export const RECOMMENDED_BOOKS = [
+    { subject: "Mathematics", title: "NCERT Mathematics (Class 11 & 12)", note: "Build the conceptual base before moving on to problem-heavy books." },
+    { subject: "Mathematics", title: "Objective Mathematics — R.D. Sharma", note: "Strong for chapter-wise objective practice at NIMCET's difficulty level." },
+    { subject: "Logical Reasoning", title: "A Modern Approach to Verbal & Non-Verbal Reasoning — R.S. Aggarwal", note: "Covers nearly every reasoning topic that shows up in NIMCET." },
+    { subject: "Quantitative Aptitude", title: "Quantitative Aptitude — R.S. Aggarwal", note: "A dependable base for percentages, time-speed-distance and interest problems." },
+    { subject: "Quantitative Aptitude", title: "How to Prepare for Quantitative Aptitude — Arun Sharma", note: "Useful once the basics are solid and you want tougher, exam-style variety." },
+    { subject: "Computer Awareness", title: "Computer Fundamentals — P.K. Sinha", note: "Good for building the core computer awareness concepts NIMCET tests." },
+    { subject: "English", title: "High School English Grammar & Composition — Wren & Martin", note: "The standard reference for grammar rules and error-spotting practice." },
+    { subject: "PYQs", title: "NIMCET Previous Year Papers (last 10–15 years)", note: "The single highest-value resource, available free on this site under PYQs." }
+];
+
+/* =========================================================
+   EXAM DAY CHECKLIST
+   ========================================================= */
+
+export const EXAM_DAY_CHECKLIST = [
+    "Carry your admit card (printed) and a valid original photo ID, exactly as specified in the exam instructions.",
+    "Reach the exam centre at least 45–60 minutes before the reporting time, verification queues always take longer than expected.",
+    "Visit the exam centre a day in advance if it's an unfamiliar city, so exam-day logistics are one less thing to worry about.",
+    "Carry only the items permitted on your admit card, electronic devices, smartwatches and personal calculators are almost always disallowed.",
+    "Get a full night's sleep before the exam, a rested mind consistently outperforms one that crammed until 3 AM.",
+    "Read all on-screen instructions carefully in the first minute, understand the navigation and marking scheme before you start.",
+    "Attempt sections and questions in the order that suits your strengths, not necessarily the order they are presented in.",
+    "Keep an eye on the on-screen timer and switch sections deliberately, don't let one section eat into another's time.",
+    "Mark uncertain questions for review instead of leaving them blank or guessing immediately, come back if time allows.",
+    "Stay calm if a section starts poorly, one tough section does not decide the whole paper."
+];
+
+/* =========================================================
+   COMMON MISTAKES
+   ========================================================= */
+
+export const COMMON_MISTAKES = [
+    { mistake: "Guessing blindly on unfamiliar questions.", fix: "Negative marking means a wrong guess costs more than an unattempted question. Guess only after eliminating at least two options." },
+    { mistake: "Over-preparing Mathematics, under-preparing everything else.", fix: "Reasoning, Computer Awareness and English are comparatively easier to score well in with focused, limited effort. Don't ignore them." },
+    { mistake: "Starting mocks too late in the preparation.", fix: "Begin full-length mocks well before your target date, even with an incomplete syllabus, to build timing and stamina early." },
+    { mistake: "Not reviewing mistakes from practice sets.", fix: "Solving more questions without reviewing errors just repeats the same mistakes. Keep a running log of what went wrong and why." },
+    { mistake: "Ignoring official notifications and updates.", fix: "Exam dates, pattern tweaks and eligibility details can change year to year. Track the official NIMCET site and this site's Updates tab." },
+    { mistake: "Cramming new topics in the final week.", fix: "The last week is for revision and formula recall, not for learning new chapters from scratch." }
+];
+
+/* =========================================================
+   EXAM-INFO FAQs
+   ========================================================= */
+
+export const EXAM_INFO_FAQS = [
+    { q: "Is NIMCET conducted more than once a year?", a: "No, NIMCET has historically been conducted once a year in a single national-level sitting, not across multiple shifts or attempts." },
+    { q: "Is there a sectional cutoff?", a: "Based on past years' pattern, NIMCET has not applied section-wise cutoffs, only the overall score and rank have mattered for counselling. Always confirm this in the current brochure." },
+    { q: "Is normalization applied to scores?", a: "Since the exam is typically held in a single shift for all candidates, normalization across shifts has generally not been necessary in past years." },
+    { q: "How is counselling conducted after NIMCET?", a: "Admission to participating NITs after NIMCET is usually managed through a centralised counselling process where candidates fill choices of institute and are allotted seats by rank." },
+    { q: "Can I reattempt NIMCET the next year to improve my rank?", a: "Yes, there is generally no restriction on the number of attempts, as long as you continue to meet the eligibility criteria for that year's exam." },
+    { q: "Do all NITs offering MCA accept NIMCET scores?", a: "Most NITs offering an MCA programme participate in NIMCET admissions, but the exact list can vary by year. Check the official notification for the current list of participating institutes." }
+];

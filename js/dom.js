@@ -89,13 +89,38 @@ export const elCommunityBtn = $("#communityBtn");
 export const elFinalCtaBrowseBtn = $("#finalCtaBrowseBtn");
 export const elFinalCtaPyqBtn = $("#finalCtaPyqBtn");
 
+export const elExamInfoNav = $("#examInfoQuickNav");
+
 export const elExamPatternDisclaimer = $("#examPatternDisclaimer");
 export const elExamPatternGrid = $("#examPatternGrid");
 export const elExamPatternMeta = $("#examPatternMeta");
+
+export const elEligibilityGrid = $("#eligibilityGrid");
+export const elEligibilityNote = $("#eligibilityNote");
+
+export const elExamTimeline = $("#examTimeline");
+export const elExamTimelineNote = $("#examTimelineNote");
+
+export const elSyllabusSubjectTabs = $("#syllabusSubjectTabs");
+export const elSyllabusChapterList = $("#syllabusChapterList");
+export const elSyllabusNote = $("#syllabusNote");
+
 export const elFocusSubjectTabs = $("#focusSubjectTabs");
 export const elFocusAreaList = $("#focusAreaList");
+
+export const elStrategyGrid = $("#strategyGrid");
+export const elStrategyNote = $("#strategyNote");
+
 export const elRoadmapTimeline = $("#roadmapTimeline");
+
+export const elBooksGrid = $("#booksGrid");
+
+export const elExamDayChecklist = $("#examDayChecklist");
+
+export const elMistakesList = $("#mistakesList");
+
 export const elMythFactGrid = $("#mythFactGrid");
+export const elExamFaqList = $("#examFaqList");
 export const elFounderNote = $("#founderNote");
 
 export const elResourcesHeading = $("#resourcesHeading");
