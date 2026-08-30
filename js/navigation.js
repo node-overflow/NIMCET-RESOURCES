@@ -33,6 +33,8 @@ import {
     mockByKey
 } from "./mocks.js";
 
+import { renderExamInfo } from "./examinfo.js";
+
 import { closeSidebar } from "./sidebar.js";
 
 let historyInitialized = false;
@@ -151,6 +153,16 @@ export const setActiveNav = () => {
         return;
     }
 
+    if (state.view === "exam-info") {
+        const button = document.querySelector('.nav-item[data-nav="examinfo"]');
+
+        if (button) {
+            button.dataset.active = "true";
+        }
+
+        return;
+    }
+
     if (state.view === "dpps" || state.view === "dpps-subject" || state.view === "dpps-chapter") {
         const button = document.querySelector('.nav-item[data-nav="dpps"]');
 
@@ -220,8 +232,6 @@ const renderForView = () => {
                         type,
                         search: ""
                     }),
-                examKey =>
-                    goToPyqsExam(examKey),
                 () =>
                     goToResources({
                         subject: null,
@@ -250,6 +260,10 @@ const renderForView = () => {
 
         case "pyqs-exam":
             renderPyqsExam();
+            break;
+
+        case "exam-info":
+            renderExamInfo();
             break;
 
         case "dpps":
@@ -332,6 +346,12 @@ export const goToPyqsExam = examKey => {
     state.examKey = examKey;
 
     showView("pyqs-exam");
+
+    renderForView();
+};
+
+export const goToExamInfo = () => {
+    showView("exam-info");
 
     renderForView();
 };

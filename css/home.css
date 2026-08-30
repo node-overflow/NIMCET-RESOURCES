@@ -505,6 +505,24 @@ button.logo-card:hover {
   color: var(--text-dim);
 }
 
+/* ============ Home mocks teaser link ============ */
+.home-mocks-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 14px;
+  padding: 10px 15px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-md);
+  background: var(--accent-dim-2);
+  color: var(--accent-text);
+  font-size: 0.84rem;
+}
+
+.home-mocks-link:hover {
+  background: var(--accent-dim);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
 /* ============ How-it-works steps ============ */
 .steps-grid {
   display: grid;
@@ -615,39 +633,6 @@ button.logo-card:hover {
   line-height: 1.55;
 }
 
-/* ============ Testimonials ============ */
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 14px;
-}
-
-.testimonial-card {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  min-width: 0;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 20px;
-  box-shadow: var(--shadow-card);
-}
-
-.testimonial-quote {
-  margin: 0;
-  color: var(--text-calm);
-  font-size: 0.89rem;
-  line-height: 1.65;
-}
-
-.testimonial-source {
-  margin: 0;
-  color: var(--text-faint);
-  font-size: 0.76rem;
-  font-weight: 600;
-}
-
 /* ============ Home page final CTA ============ */
 .home-final-cta {
   text-align: center;
@@ -752,49 +737,6 @@ button.logo-card:hover {
   color: var(--text-faint);
   font-size: 0.76rem;
   line-height: 1.5;
-}
-
-/* ============ Manifesto ============ */
-.manifesto-section {
-  padding: 34px 36px;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
-  background:
-    radial-gradient(circle at 100% 0%, var(--accent-dim) 0%, transparent 55%),
-    var(--surface);
-}
-
-.manifesto-title {
-  margin: 14px 0 16px;
-  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
-  font-weight: 800;
-  letter-spacing: -0.015em;
-  line-height: 1.25;
-  color: var(--text);
-  max-width: 26ch;
-}
-
-.manifesto-body {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 68ch;
-}
-
-.manifesto-body p {
-  margin: 0;
-  color: var(--text-dim);
-  font-size: 0.94rem;
-  line-height: 1.7;
-}
-
-.manifesto-signoff {
-  margin: 18px 0 0;
-  padding-top: 16px;
-  border-top: 1px solid var(--border);
-  color: var(--accent-text);
-  font-size: 0.92rem;
-  font-weight: 650;
 }
 
 /* ============ Exam pattern ============ */
@@ -1013,117 +955,6 @@ button.logo-card:hover {
   font-size: 0.85rem;
   line-height: 1.6;
   color: var(--text-dim);
-}
-
-/* ============ Comparison table ============ */
-.comparison-table {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background: var(--surface);
-}
-
-.comparison-row {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr 1fr;
-  gap: 10px;
-  padding: 14px 18px;
-  border-bottom: 1px solid var(--border);
-  align-items: center;
-}
-
-.comparison-row:last-child {
-  border-bottom: none;
-}
-
-.comparison-header {
-  background: var(--surface-2);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--text-faint);
-}
-
-.comparison-us-label {
-  color: var(--accent-text);
-}
-
-.comparison-label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.comparison-us {
-  font-size: 0.84rem;
-  color: var(--text);
-  font-weight: 600;
-}
-
-.comparison-us::before {
-  content: "✓ ";
-  color: var(--type-video);
-}
-
-.comparison-them {
-  font-size: 0.84rem;
-  color: var(--text-faint);
-}
-
-/* ============ Daily routine ============ */
-.routine-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 12px;
-}
-
-.routine-card {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 18px;
-  box-shadow: var(--shadow-card);
-}
-
-.routine-time {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--accent-text);
-}
-
-.routine-title {
-  margin: 0;
-  font-size: 0.94rem;
-  font-weight: 700;
-  color: var(--text);
-}
-
-.routine-desc {
-  margin: 0;
-  font-size: 0.82rem;
-  line-height: 1.55;
-  color: var(--text-dim);
-}
-
-/* ============ Motivation marquee ============ */
-.motivation-card {
-  min-width: 260px;
-  cursor: default;
-}
-
-.motivation-text {
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--text-calm);
-  line-height: 1.4;
 }
 
 /* ============ Myth vs fact ============ */

@@ -21,6 +21,7 @@ import {
     goToResources,
     goToUpdates,
     goToPyqs,
+    goToExamInfo,
     goToDpps,
     goToDppsSubject,
     goToMocks
@@ -61,6 +62,8 @@ const handleNavAction = (button) => {
         goToUpdates();
     } else if (nav === "pyqs") {
         goToPyqs();
+    } else if (nav === "examinfo") {
+        goToExamInfo();
     } else if (nav === "dpps") {
         goToDpps();
     } else if (nav === "mocks") {

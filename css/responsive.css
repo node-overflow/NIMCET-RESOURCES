@@ -422,8 +422,7 @@
   }
 
   .feature-grid,
-  .steps-grid,
-  .testimonial-grid {
+  .steps-grid {
     grid-template-columns: 1fr;
     gap: 10px;
   }
@@ -454,34 +453,6 @@
 
   .home-final-cta {
     padding: 26px 4px 4px;
-  }
-
-  .manifesto-section {
-    padding: 22px 18px;
-  }
-
-  .manifesto-title {
-    max-width: none;
-  }
-
-  .comparison-row {
-    grid-template-columns: 1fr;
-    gap: 4px;
-    padding: 12px 14px;
-  }
-
-  .comparison-header {
-    display: none;
-  }
-
-  .comparison-us::before {
-    content: "This hub: ";
-    color: var(--accent-text);
-  }
-
-  .comparison-them::before {
-    content: "Paid coaching: ";
-    color: var(--text-faint);
   }
 
   .roadmap-timeline {

@@ -165,8 +165,8 @@ export const TELEGRAM_URL = "https://t.me/nimcet2027group";
 export const HOME_FEATURES = [
     {
         icon: "🎯",
-        title: "100% Free, Always",
-        desc: "No paywalls, no premium plans, every book, note, PYQ, DPP and resources stays free."
+        title: "Core Resources, Always Free",
+        desc: "Every book, note, PYQ and DPP stays free, permanently. No paywalls, no 'unlock with premium'."
     },
     {
         icon: "🗂️",
@@ -175,13 +175,13 @@ export const HOME_FEATURES = [
     },
     {
         icon: "🔄",
-        title: "Kept Up To Date",
+        title: "Kept Current",
         desc: "New papers, notes and exam notifications get added as they are released, not months later."
     },
     {
-        icon: "🤝",
-        title: "By Aspirants, For Aspirants",
-        desc: "Built from the gaps we felt while preparing, so you do not have to hunt across ten tabs."
+        icon: "📝",
+        title: "Mock Tests, Done Right",
+        desc: "Free mock tests to build exam temperament, with a premium mock series in the works for deeper rank analysis."
     }
 ];
 
@@ -204,38 +204,8 @@ export const HOW_IT_WORKS = [
     }
 ];
 
-export const TESTIMONIALS = [
-    {
-        quote: "Having every subject's PYQs in one place saved me hours I used to spend tracking them down.",
-        source: "Shivam"
-    },
-    {
-        quote: "The chapter-wise DPPs made it easy to tell which topics actually needed more practice.",
-        source: "Shivani"
-    },
-    {
-        quote: "Simple, fast, and nothing locked behind a paywall, exactly what free prep should look like.",
-        source: "Vipin"
-    }
-];
-
 /* =========================================================
-   MANIFESTO / MISSION
-   ========================================================= */
-
-export const MANIFESTO = {
-    eyebrow: "Our Manifesto",
-    title: "Preparation shouldn't have a price tag.",
-    paragraphs: [
-        "Every year, thousands of NIMCET aspirants start their prep by opening ten different tabs, joining five different Telegram channels, and still not knowing if the notes they find are even reliable.",
-        "Meanwhile, big coaching brands sell the same PDFs you can find for free, wrapped in subscription plans that cost more than some families can afford.",
-        "We built this platform because we were those aspirants. We know what it feels like to lose a week just searching for reliable PYQs. So we did the searching once, organised everything, and made it free, permanently."
-    ],
-    signoff: "No paywalls. No 'contact us for pricing.' Just prep, organised."
-};
-
-/* =========================================================
-   EXAM PATTERN (general guide — verify against official notification)
+   EXAM PATTERN
    ========================================================= */
 
 export const EXAM_PATTERN_SECTIONS = [
@@ -332,31 +302,6 @@ export const PREP_ROADMAP = [
 ];
 
 /* =========================================================
-   US VS TYPICAL PAID COACHING
-   ========================================================= */
-
-export const COMPARISON_ROWS = [
-    { label: "Cost", us: "Free, always", them: "₹15,000 – ₹60,000+ per course" },
-    { label: "Access", us: "Instant, no signup, no waitlist", them: "Batch start dates, admission process" },
-    { label: "Content organisation", us: "Subject × type, chapter-tagged", them: "Varies by faculty, often scattered" },
-    { label: "PYQs", us: "Exam-wise, sorted by year", them: "Usually bundled behind test series" },
-    { label: "DPPs", us: "Chapter-wise, free forever", them: "Often a separate paid add-on" },
-    { label: "Updates", us: "Live exam-updates timeline", them: "Mostly through batch announcements" },
-    { label: "Who it's for", us: "Every NIMCET aspirant, any budget", them: "Aspirants who can afford a seat" }
-];
-
-/* =========================================================
-   DAILY STUDY ROUTINE (suggested, not prescriptive)
-   ========================================================= */
-
-export const DAILY_ROUTINE = [
-    { time: "Morning", title: "Concept Block", desc: "60–90 minutes on your weakest subject, while your mind is freshest." },
-    { time: "Midday", title: "Practice Block", desc: "Chapter-wise Practice sets or DPPs — focused, timed, no distractions." },
-    { time: "Evening", title: "PYQ Block", desc: "One PYQ set or a mixed set of previous questions across subjects." },
-    { time: "Night", title: "Revise & Reflect", desc: "10-minute formula-sheet skim and a quick note on what went wrong today." }
-];
-
-/* =========================================================
    MYTH VS FACT
    ========================================================= */
 
@@ -376,6 +321,10 @@ export const MYTHS_FACTS = [
     {
         myth: "You should start mocks only after finishing the syllabus.",
         fact: "Starting mocks early, even with an incomplete syllabus, helps you get comfortable with the pressure and timing you will face on the actual day."
+    },
+    {
+        myth: "A free platform can't offer serious mock tests.",
+        fact: "Our mock tests stay free by default. A premium mock series is planned for aspirants who want deeper score analysis, but it will never replace the free tier."
     }
 ];
 
@@ -388,18 +337,3 @@ export const FOUNDER_NOTE = {
     body: "We are not a company. We are just a small group of NIMCET aspirants and alumni who know how difficult it can be to find good study material. We built this site to make that easier. We are bringing together useful resources, one subject, one PYQ, and one DPP at a time. As more students need resources, we will keep adding more.",
     signoff: "— Built by aspirants, for aspirants."
 };
-
-/* =========================================================
-   MOTIVATIONAL LINES (marquee)
-   ========================================================= */
-
-export const MOTIVATION_LINES = [
-    "Consistency beats intensity.",
-    "Every PYQ you solve today is a rank you protect tomorrow.",
-    "You don't need more resources. You need to start with what's here.",
-    "Discipline is choosing between what you want now and what you want most.",
-    "Your only competition is who you were last week.",
-    "Small, daily progress beats occasional, dramatic effort.",
-    "The syllabus doesn't care how you feel. Show up anyway.",
-    "An NIT seat is built one solved question at a time."
-];
