@@ -189,6 +189,33 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%2041%20Years%20Maths.pdf"
   },
   {
+    "title": "Algebra I by Vinay Kumar",
+    "bestFor": "Concept + Practice",
+    "image": "https://m.media-amazon.com/images/I/71SzjFeVCXL._SL1100_.jpg",
+    "tags": ["concept building", "advanced practice"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Comprehensive%20Algebra%20I%20for%20JEE%20by%20Vinay%20Kumar.pdf"
+  },
+  {
+    "title": "Algebra II by Vinay Kumar",
+    "bestFor": "Concept + Practice",
+    "image": "https://m.media-amazon.com/images/I/716QJUMB5CL._SL1100_.jpg",
+    "tags": ["concept building", "advanced practice"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Comprehensive%20Algebra%20II%20for%20JEE%20by%20Vinay%20Kumar.pdf"
+  },
+  {
+    "title": "Functions & Graph by Vinay Kumar",
+    "bestFor": "Concept + Practice",
+    "image": "https://m.media-amazon.com/images/I/715SSXIaKTL._SL1484_.jpg",
+    "tags": ["concept building", "advanced practice"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Functions%20and%20Graphs%20for%20JEE%20by%20Vinay%20Kumar.pdf"
+  },
+  {
     "title": "Integral Calculus by Vinay Kumar",
     "bestFor": "Concept + Practice",
     "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1517444449i/38316602.jpg",
@@ -267,5 +294,23 @@
     "reader": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/5.%201000%20ADVANCED%20PROBLEMS%20IN%20MATHEMATICS.pdf"
+  },
+  {
+    "title": "GRB Problems in Algebra",
+    "bestFor": "Advanced Practice",
+    "image": "https://m.media-amazon.com/images/I/51lb1gygT4L._SL1080_.jpg",
+    "tags": ["advanced practice"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/GRB%20Problems%20in%20Algebra%20for%20JEE%20Sameer%20Bansal.pdf"
+  },
+  {
+    "title": "Thomas Calculus JEE",
+    "bestFor": "Advanced Practice",
+    "image": "https://m.media-amazon.com/images/I/81PrSgGbPlL._SL1500_.jpg",
+    "tags": ["advanced practice"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Thomas%20Calculus%20for%20JEE.pdf"
   }
 ]
