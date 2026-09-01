@@ -71,31 +71,41 @@
    BOOK CARD
    ========================= */
 
-.book-card {
-  padding: 0;
-  gap: 0;
-  overflow: hidden;
-}
-
-.book-card:hover {
-  background: var(--surface-2);
-  border-color: var(--border-strong);
-}
-
 .book-cover {
   width: 100%;
-  aspect-ratio: 5 / 6;
-  overflow: hidden;
-  background: var(--surface-2);
+  height: 260px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 35px;
   border-bottom: 1px solid var(--border);
+  perspective: 1200px;
+  overflow: hidden;
 }
 
 .book-cover img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  transform: rotateY(-16deg) rotateX(2deg);
+  transform-origin: center center;
+  box-shadow:
+    8px 6px 0 rgba(0, 0, 0, 0.14),
+    16px 16px 0 rgba(0, 0, 0, 0.08),
+    22px 24px 32px rgba(0, 0, 0, 0.28);
+  transition:
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.book-card:hover .book-cover img {
+  transform: rotateY(0deg) rotateX(0deg) translateY(-4px);
+  box-shadow:
+    8px 10px 0 rgba(0, 0, 0, 0.1),
+    16px 22px 28px rgba(0, 0, 0, 0.22);
 }
 
 .book-cover-placeholder {
