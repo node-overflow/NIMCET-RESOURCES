@@ -98,6 +98,7 @@
 .hero-btn-primary {
   background: var(--accent);
   color: #fff;
+  text-decoration: none;
 }
 
 .hero-btn-primary:hover {
