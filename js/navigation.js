@@ -69,9 +69,15 @@ const applySnapshot = (snapshot) => {
 
     elSearchInput.value = state.search;
 
-    showView(s.view || "home", { pushHistoryEntry: false });
+    showView(s.view || "home", { pushHistoryEntry: false, skipScrollReset: true });
 
     renderForView();
+
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            window.scrollTo(0, s.scrollY || 0);
+        });
+    });
 };
 
 export const initHistoryNavigation = () => {
@@ -184,7 +190,15 @@ export const setActiveNav = () => {
 
 export const showView = (name, options = {}) => {
     const pushHistoryEntry = options.pushHistoryEntry !== false;
+    const skipScrollReset = options.skipScrollReset === true;
     const previousView = state.view;
+
+    if (historyInitialized) {
+        history.replaceState(
+            { ...(history.state || {}), scrollY: window.scrollY },
+            ""
+        );
+    }
 
     state.view = name;
 
@@ -200,9 +214,12 @@ export const showView = (name, options = {}) => {
 
     closeSidebar();
 
-    window.scrollTo(0, 0);
+    if (!skipScrollReset) {
+        window.scrollTo(0, 0);
+    }
 
     const snapshot = buildSnapshot();
+    snapshot.scrollY = skipScrollReset ? window.scrollY : 0;
 
     if (!historyInitialized) {
         history.replaceState(snapshot, "", "");
