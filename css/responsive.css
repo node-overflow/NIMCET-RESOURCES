@@ -321,6 +321,40 @@
     font-size: 0.85rem;
   }
 
+  .cover-card {
+    aspect-ratio: 3 / 4;
+  }
+
+  .cover-unit {
+    font-size: 0.58rem;
+  }
+
+  .cover-chip {
+    font-size: 0.6rem;
+    padding: 2px 8px;
+  }
+
+  .cover-title {
+    font-size: 0.82rem;
+    -webkit-line-clamp: 3;
+  }
+
+  .cover-bg::before {
+    font-size: 1.8rem;
+  }
+
+  .cover-headline {
+    font-size: 0.76rem;
+  }
+
+  .cover-meta {
+    font-size: 0.58rem;
+  }
+
+  .cover-bottom {
+    padding-top: 8px;
+  }
+
   .card-desc {
     font-size: 0.76rem;
     display: -webkit-box;
@@ -486,6 +520,14 @@
 @media (max-width: 400px) {
   .resource-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cover-card {
+    aspect-ratio: 16 / 10;
+  }
+
+  .cover-title {
+    -webkit-line-clamp: 2;
   }
 }
 

@@ -68,6 +68,156 @@
 }
 
 /* =========================
+   COVER-STYLE TYPE CARDS
+   ========================= */
+
+.cover-card {
+  position: relative;
+  aspect-ratio: 6 / 5;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.cover-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+  z-index: 1;
+}
+
+.cover-unit {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.65rem;
+  font-weight: 750;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--tc);
+}
+
+.cover-chip,
+.year-badge {
+  flex-shrink: 0;
+}
+
+.cover-chip {
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--accent-dim-2);
+  color: var(--text-calm);
+  font-size: 0.64rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.cover-main {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.cover-bg {
+  position: absolute;
+  inset: -8% -4% auto auto;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.cover-bg::before {
+  content: attr(data-mark);
+  display: block;
+  font-size: clamp(2rem, 4.6vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--tc);
+  opacity: 0.12;
+  white-space: nowrap;
+  transform: rotate(-8deg);
+}
+
+.cover-card[data-unit="coordinate"] .cover-main::before,
+.cover-card[data-unit="coordinate"] .cover-main::after {
+  content: "";
+  position: absolute;
+  background: var(--tc);
+  opacity: 0.14;
+  z-index: 0;
+}
+
+.cover-card[data-unit="coordinate"] .cover-main::before {
+  width: 1px;
+  height: 62%;
+  left: 18%;
+  bottom: 0;
+}
+
+.cover-card[data-unit="coordinate"] .cover-main::after {
+  width: 68%;
+  height: 1px;
+  left: 18%;
+  bottom: 30%;
+}
+
+.cover-title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: clamp(0.92rem, 1vw + 0.72rem, 1.1rem);
+  font-weight: 700;
+  line-height: 1.32;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cover-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  min-width: 0;
+}
+
+.cover-headline {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cover-meta {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.cover-card .card-foot {
+  padding-top: 0;
+}
+
+.cover-card .card-action {
+  width: 100%;
+}
+
+/* =========================
    BOOK CARD
    ========================= */
 

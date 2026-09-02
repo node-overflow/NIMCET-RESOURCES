@@ -8,24 +8,74 @@ import {
     extractYouTubeId
 } from "./utils.js";
 
-import { state } from "./state.js";
-
 let activeVideo = null;
+
+
+/* =========================================================
+   UNIT DETECTION (chapter/title -> topic unit + bg mark)
+   ========================================================= */
+
+const UNIT_DEFS = [
+    {
+        key: "trigonometry", label: "Trigonometry", mark: "sin θ",
+        test: /trig|sine|cosine|tangent|identit/i
+    },
+
+    {
+        key: "calculus", label: "Calculus", mark: "∫dx",
+        test: /limit|continuit|differentia|integrat|calculus|derivative/i
+    },
+
+    {
+        key: "coordinate", label: "Coordinate Geometry", mark: "(x,y)",
+        test: /coordinate|circle|parabola|ellipse|hyperbola|straight line|conic/i
+    },
+
+    {
+        key: "vectors", label: "Vectors & 3D", mark: "→v",
+        test: /vector|3d geometry|three.?dimensional/i
+    },
+
+    {
+        key: "probability", label: "Probability & Stats", mark: "P(A)",
+        test: /probability|statistic|\bmean\b|median|variance/i
+    },
+
+    {
+        key: "matrices", label: "Matrices & Determinants", mark: "[M]",
+        test: /matri|determinant/i
+    },
+
+    {
+        key: "algebra", label: "Algebra", mark: "x²",
+        test: /quadratic|algebra|complex\s*number|permutation|combination|p\s*(?:&|and|n)\s*c|binomial|sequence|series|progression|\bsets?\b|\brelations?\b|\bfunctions?\b|logarithm|inequalit/i
+    }
+];
+
+const SUBJECT_FALLBACK = {
+    Physics: { key: "physics", label: "Physics", mark: "F=ma" },
+    Chemistry: { key: "chemistry", label: "Chemistry", mark: "H₂O" },
+    Computer: { key: "computer", label: "Computer", mark: "</>" },
+    Mathematics: { key: "mathematics", label: "Mathematics", mark: "∑" },
+    English: { key: "english", label: "English", mark: "Aa" },
+    Reasoning: { key: "reasoning", label: "Reasoning", mark: "?!" }
+};
+
+const getUnitInfo = (item) => {
+    const source = (item.chapter || item.title || "").toString();
+
+    const found = UNIT_DEFS.find(unit => unit.test.test(source));
+
+    if (found) return found;
+
+    return SUBJECT_FALLBACK[item.subject] ||
+        { key: "general", label: item.subject || "General", mark: "★" };
+};
 
 
 /* =========================================================
    SHARED CARD HELPERS
    ========================================================= */
-
-const shouldShowTypeLabel = (item) => !(state.type && state.type === item.type);
-
-const typeLabelChip = (item, cssVar, text) => {
-    if (!shouldShowTypeLabel(item)) return "";
-
-    return '<span class="type-label" style="color: var(' + cssVar + ')">' +
-        escapeHtml(text) +
-        "</span>";
-};
 
 const examTagHtml = (item) => {
     if (item.subject === "Computer" && item.exam) {
@@ -132,14 +182,14 @@ export const buildCard = (item) => {
 
 
 /* =========================================================
-   NOTES CARD
+   COVER-STYLE TYPE CARDS
    ========================================================= */
 
-const buildNotesCard = (item) => {
+const buildCoverCard = (item, { className, tcVar, badge, headline, metaLabel, topLabel }) => {
     const card = document.createElement("div");
 
-    card.className = "resource-card notes-card";
-    card.style.setProperty("--tc", "var(--type-notes)");
+    card.className = "resource-card cover-card " + className;
+    card.style.setProperty("--tc", tcVar);
 
     let cardUrl = getCardUrl(item);
 
@@ -147,31 +197,36 @@ const buildNotesCard = (item) => {
         cardUrl = escapeHtml(cardUrl);
     }
 
-    const metaBits = [item.chapter || item.subject, item.bestFor]
-        .filter(Boolean);
+    const unit = getUnitInfo(item);
+
+    card.dataset.unit = unit.key;
 
     card.innerHTML =
-        '<div class="card-top-v2">' +
+        '<div class="cover-top">' +
 
-        (shouldShowTypeLabel(item)
-            ? '<span class="card-icon-badge" style="--tc: var(--type-notes)">✎</span>'
-            : "") +
+        '<span class="cover-unit"></span>' +
 
-        typeLabelChip(item, "--type-notes", "Notes") +
-
-        cardTopRight(examTagHtml(item)) +
+        cardTopRight(badge || "", examTagHtml(item)) +
 
         "</div>" +
 
-        '<h3 class="card-title"></h3>' +
+        '<div class="cover-main">' +
 
-        (metaBits.length
-            ? '<div class="card-meta">' +
-            metaBits
-                .map(bit => "<span>" + escapeHtml(bit) + "</span>")
-                .join("") +
-            "</div>"
+        '<span class="cover-bg" data-mark="' + escapeHtml(unit.mark) + '" aria-hidden="true"></span>' +
+
+        '<h3 class="cover-title"></h3>' +
+
+        "</div>" +
+
+        '<div class="cover-bottom">' +
+
+        (headline
+            ? '<span class="cover-headline"></span>'
             : "") +
+
+        '<span class="cover-meta"></span>' +
+
+        "</div>" +
 
         '<div class="card-foot">' +
 
@@ -187,199 +242,75 @@ const buildNotesCard = (item) => {
 
         "</div>";
 
-    card.querySelector(".card-title").textContent = item.title || "";
+    const topText = (topLabel && topLabel.trim()) ? topLabel : unit.label;
+
+    card.querySelector(".cover-unit").textContent = topText;
+    card.querySelector(".cover-title").textContent = item.title || "";
+    card.querySelector(".cover-meta").textContent = metaLabel || "";
+
+    if (headline) {
+        card.querySelector(".cover-headline").textContent = headline;
+    }
 
     wireCardAction(card, item);
 
     return card;
 };
+
+
+/* =========================================================
+   NOTES CARD
+   ========================================================= */
+
+const buildNotesCard = (item) => buildCoverCard(item, {
+    className: "notes-card",
+    tcVar: "var(--type-notes)",
+    badge: "",
+    headline: "",
+    metaLabel: "Chapter Notes"
+});
 
 
 /* =========================================================
    FORMULA CARD
    ========================================================= */
 
-const buildFormulaCard = (item) => {
-    const card = document.createElement("div");
-
-    card.className = "resource-card formula-card";
-    card.style.setProperty("--tc", "var(--type-formula)");
-
-    let cardUrl = getCardUrl(item);
-
-    if (cardUrl !== "#") {
-        cardUrl = escapeHtml(cardUrl);
-    }
-
-    const chapterLabel = item.chapter || item.subject || "";
-
-    card.innerHTML =
-        '<div class="card-top-v2">' +
-
-        (shouldShowTypeLabel(item)
-            ? '<span class="card-icon-badge" style="--tc: var(--type-formula)">∑</span>'
-            : "") +
-
-        typeLabelChip(item, "--type-formula", "Formula") +
-
-        cardTopRight(examTagHtml(item)) +
-
-        "</div>" +
-
-        '<h3 class="card-title"></h3>' +
-
-        (chapterLabel
-            ? '<div class="formula-chapter"></div>'
-            : "") +
-
-        '<div class="card-foot">' +
-
-        '<a class="card-action" href="' +
-        cardUrl +
-        '" target="_blank" rel="noopener noreferrer">' +
-
-        actionLabel(item) +
-
-        ' <span class="arrow">→</span>' +
-
-        "</a>" +
-
-        "</div>";
-
-    card.querySelector(".card-title").textContent = item.title || "";
-
-    const chapterEl = card.querySelector(".formula-chapter");
-
-    if (chapterEl) {
-        chapterEl.textContent = chapterLabel;
-    }
-
-    wireCardAction(card, item);
-
-    return card;
-};
+const buildFormulaCard = (item) => buildCoverCard(item, {
+    className: "formula-card",
+    tcVar: "var(--type-formula)",
+    badge: "",
+    headline: "",
+    metaLabel: "Formula Sheet"
+});
 
 
 /* =========================================================
    PRACTICE CARD
    ========================================================= */
 
-const buildPracticeCard = (item) => {
-    const card = document.createElement("div");
-
-    card.className = "resource-card practice-card";
-    card.style.setProperty("--tc", "var(--type-practice)");
-
-    let cardUrl = getCardUrl(item);
-
-    if (cardUrl !== "#") {
-        cardUrl = escapeHtml(cardUrl);
-    }
-
-    card.innerHTML =
-        '<div class="card-top-v2">' +
-
-        (shouldShowTypeLabel(item)
-            ? '<span class="card-icon-badge" style="--tc: var(--type-practice)">✓</span>'
-            : "") +
-
-        typeLabelChip(item, "--type-practice", "Practice") +
-
-        cardTopRight(examTagHtml(item)) +
-
-        "</div>" +
-
-        '<h3 class="card-title"></h3>' +
-
-        (item.owner
-            ? '<div class="card-meta">' +
-            '<span>' + escapeHtml(item.owner) + '</span>' +
-            "</div>"
-            : "") +
-
-        '<div class="card-foot">' +
-
-        '<a class="card-action" href="' +
-        cardUrl +
-        '" target="_blank" rel="noopener noreferrer">' +
-
-        actionLabel(item) +
-
-        ' <span class="arrow">→</span>' +
-
-        "</a>" +
-
-        "</div>";
-
-    card.querySelector(".card-title").textContent = item.title || "";
-
-    wireCardAction(card, item);
-
-    return card;
-};
+const buildPracticeCard = (item) => buildCoverCard(item, {
+    className: "practice-card",
+    tcVar: "var(--type-practice)",
+    badge: item.owner
+        ? '<span class="cover-chip">' + escapeHtml(item.owner) + "</span>"
+        : "",
+    headline: "",
+    metaLabel: "Practice Set"
+});
 
 
 /* =========================================================
    PYQ (SUBJECT-WISE RESOURCE) CARD
    ========================================================= */
 
-const buildPyqTypeCard = (item) => {
-    const card = document.createElement("div");
-
-    card.className = "resource-card pyqtype-card";
-    card.style.setProperty("--tc", "var(--type-pyq)");
-
-    let cardUrl = getCardUrl(item);
-
-    if (cardUrl !== "#") {
-        cardUrl = escapeHtml(cardUrl);
-    }
-
-    const metaBits = [item.exam, item.year].filter(Boolean);
-
-    card.innerHTML =
-        '<div class="card-top-v2">' +
-
-        (shouldShowTypeLabel(item)
-            ? '<span class="card-icon-badge">✎</span>'
-            : "") +
-
-        typeLabelChip(item, "--type-pyq", "PYQ") +
-
-        cardTopRight(examTagHtml(item)) +
-
-        "</div>" +
-
-        '<h3 class="card-title"></h3>' +
-
-        (metaBits.length
-            ? '<div class="card-meta">' +
-            metaBits
-                .map(bit => "<span>" + escapeHtml(bit) + "</span>")
-                .join("") +
-            "</div>"
-            : "") +
-
-        '<div class="card-foot">' +
-
-        '<a class="card-action" href="' +
-        cardUrl +
-        '" target="_blank" rel="noopener noreferrer">' +
-
-        actionLabel(item) +
-
-        ' <span class="arrow">→</span>' +
-
-        "</a>" +
-
-        "</div>";
-
-    card.querySelector(".card-title").textContent = item.title || "";
-
-    wireCardAction(card, item);
-
-    return card;
-};
+const buildPyqTypeCard = (item) => buildCoverCard(item, {
+    className: "pyqtype-card",
+    tcVar: "var(--type-pyq)",
+    badge: yearBadgeHtml(item),
+    topLabel: item.exam || item.subject || "",
+    headline: "",
+    metaLabel: "Previous Year Questions"
+});
 
 
 /* =========================================================
@@ -617,9 +548,6 @@ const buildVideoCard = (item) => {
 
 export const renderGrid = (container, items) => {
 
-    // If a video is currently playing inside the grid we're about to wipe,
-    // drop the reference so it can be garbage collected and so the "stop
-    // the previous video" logic never runs against a detached node.
     if (activeVideo && container.contains(activeVideo)) {
         activeVideo = null;
     }
