@@ -8,5 +8,15 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/reasoning%20books/B%20S%20Sijwali%20Reasoning%20(1).pdf"
+  },
+  {
+    "title": "SSC Reasoning",
+    "chapter": "Foundation",
+    "bestFor": "Foundation",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf7zp5XI7yI2rlNPLJcEcS1IcMeEjPwgKlbtUhSEpSdQ&s",
+    "tags": ["verbal reasoning", "non-verbal reasoning"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20books/PINNACLE%20REASONING%20BOOK.pdf"
   }
 ]
