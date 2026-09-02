@@ -6,5 +6,13 @@
   {
     "key": "quadratic",
     "name": "Quadratic Equations"
+  },
+  {
+    "key": "sequence_series",
+    "name": "Sequence & Series"
+  },
+  {
+    "key": "binomial",
+    "name": "Binomial Theorem"
   }
 ]

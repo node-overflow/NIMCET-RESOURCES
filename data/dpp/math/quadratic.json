@@ -1,4 +1,128 @@
 [
-  { "title": "DPP 1 — AP & GP Basics", "url": "https://your-link.com/dpp1.pdf", "action": "open" },
-  { "title": "DPP 2 — Sum to Infinity", "url": "https://your-link.com/dpp2.pdf", "action": "download" }
+  {
+    "title": "DPP 1",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/1.pdf"
+  },
+  {
+    "title": "DPP 2",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/2.pdf"
+  },
+  {
+    "title": "DPP 3",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/3.pdf"
+  },
+  {
+    "title": "DPP 4",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/4.pdf"
+  },
+  {
+    "title": "DPP 5",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/5.pdf"
+  },
+  {
+    "title": "DPP 6",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/6.pdf"
+  },
+  {
+    "title": "DPP 7",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/7.pdf"
+  },
+  {
+    "title": "DPP 8",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/8.pdf"
+  },
+  {
+    "title": "DPP 9",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/9.pdf"
+  },
+  {
+    "title": "DPP 10",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/10.pdf"
+  },
+  {
+    "title": "DPP 11",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/11.pdf"
+  },
+  {
+    "title": "DPP 12",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/12.pdf"
+  },
+  {
+    "title": "DPP 13",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/13.pdf"
+  },
+  {
+    "title": "DPP 14",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/14.pdf"
+  },
+  {
+    "title": "DPP 15",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/15.pdf"
+  },
+  {
+    "title": "DPP 16",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/16.pdf"
+  },
+  {
+    "title": "DPP 17",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/17.pdf"
+  },
+  {
+    "title": "DPP 18",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/18.pdf"
+  },
+  {
+    "title": "DPP 19",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/19.pdf"
+  },
+  {
+    "title": "DPP 20",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/20.pdf"
+  },
+  {
+    "title": "DPP 21",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20dpps/quadratic%20eqns/21.pdf"
+  }
 ]
