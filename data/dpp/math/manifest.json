@@ -16,6 +16,22 @@
     "name": "Binomial Theorem"
   },
   {
+    "key": "p&c",
+    "name": "Permutations & Combinations"
+  },
+  {
+    "key": "probability",
+    "name": "Probability"
+  },
+  {
+    "key": "matrices",
+    "name": "Matrices"
+  },
+  {
+    "key": "determinants",
+    "name": "Determinants"
+  },
+  {
     "key": "trigo",
     "name": "Trigonometry"
   },
@@ -46,5 +62,9 @@
   {
     "key": "differential_eqns",
     "name": "Differential Equations"
+  },
+  {
+    "key": "straight_lines",
+    "name": "Straight Lines"
   }
 ]
