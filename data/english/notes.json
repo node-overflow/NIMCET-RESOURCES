@@ -1,10 +1,10 @@
 [
   {
-    "title": "Reading Comprehension \u2013 Notes",
-    "chapter": "Comprehension",
-    "bestFor": "Quick Revision",
-    "tags": ["comprehension", "reading strategy"],
-    "action": "download",
-    "url": "#"
+    "title": "English Notes",
+    "bestFor": "Revision",
+    "tags": ["english", "grammar"],
+    "action": "open",
+    "cdnjs": true,
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/english%20notes/Unacademy%20English.pdf"
   }
 ]

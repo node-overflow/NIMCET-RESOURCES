@@ -1,10 +1,29 @@
 [
   {
-    "title": "NIMCET 2016-2026 Solved Papers",
-    "chapter": "Previous Years",
-    "bestFor": "Exam Pattern",
+    "title": "NIMCET PYQS",
+    "exam": "NIMCET",
+    "year": "up to 2022",
     "tags": ["pyq", "previous years"],
-    "action": "download",
-    "url": "#"
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/NIMCET%20Computer%20pyqs.pdf"
+  },
+  {
+    "title": "Digital Logic PYQS",
+    "exam": "GATE",
+    "year": "up to 2023",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/DIGITAL%20LOGIC%20GATE%20PYQS.pdf"
+  },
+  {
+    "title": "Operating System PYQS",
+    "exam": "GATE",
+    "year": "up to 2023",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/OS%20GATE%20PYQS.pdf"
   }
 ]
