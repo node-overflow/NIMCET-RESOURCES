@@ -1,10 +1,22 @@
 [
   {
-    "title": "Let Us C",
-    "chapter": "Programming in C",
+    "title": "Arihant Computer Awareness",
     "bestFor": "Foundation",
-    "tags": ["c programming", "pointers"],
+    "image": "https://m.media-amazon.com/images/I/71QH337TTXL._SL1360_.jpg",
+    "tags": ["nimcet", "computer awareness"],
+    "featured": true,
+    "cdnjs": true,
     "action": "open",
-    "url": "#"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20books/ARIHANT%20COMPUTER%20AWARENESS%20ENGLISH%20EDITION.pdf"
+  },
+  {
+    "title": "Arihant Objective Computer Awareness",
+    "bestFor": "Foundation",
+    "image": "https://m.media-amazon.com/images/I/715+0MC0W6L._SL1500_.jpg",
+    "tags": ["nimcet", "computer awareness"],
+    "featured": true,
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20books/Objective-Computer-Awareness-by-Arihant.pdf"
   }
 ]

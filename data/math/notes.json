@@ -3,6 +3,7 @@
     "title": "Set Theory & Relations \u2013 Notes",
     "bestFor": "Quick Revision",
     "tags": ["sets", "relations", "functions"],
+    "cdnjs": true,
     "action": "download",
     "url": "#"
   }
