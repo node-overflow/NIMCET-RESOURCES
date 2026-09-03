@@ -85,6 +85,8 @@ const animateCount = (element, target) => {
 
 let heroStatsAnimated = false;
 
+const floorToTens = num => Math.floor(num / 10) * 10;
+
 const renderHeroStats = () => {
     if (!elHeroStats || heroStatsAnimated) return;
 
@@ -112,20 +114,21 @@ const renderHeroStats = () => {
     const visitsNum = visitsStat.querySelector(".hero-stat-num");
 
     animateCount(visitsNum, 5000);
-    animateCount(pyqNum, state.pyqs.length);
+
+    animateCount(pyqNum, floorToTens(state.pyqs.length));
 
     computeDppTotal().then(total => {
         if (!resourceNum || !dppNum) return;
 
         if (total > 0) {
-            animateCount(dppNum, total);
+            animateCount(dppNum, floorToTens(total));
 
             const materialTotal =
                 state.resources.length +
                 state.pyqs.length +
                 total;
 
-            animateCount(resourceNum, materialTotal);
+            animateCount(resourceNum, floorToTens(materialTotal));
         } else {
             dppNum.textContent = "Soon";
 
@@ -133,7 +136,7 @@ const renderHeroStats = () => {
                 state.resources.length +
                 state.pyqs.length;
 
-            animateCount(resourceNum, materialTotal);
+            animateCount(resourceNum, floorToTens(materialTotal));
         }
     });
 };
