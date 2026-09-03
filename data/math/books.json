@@ -180,6 +180,51 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Arihant%20Vectors%20%26%203D.pdf"
   },
   {
+    "title": "CENGAGE ALGEBRA",
+    "bestFor": "Concept Building",
+    "image": "https://m.media-amazon.com/images/I/71ghG8GrfiL._SL1500_.jpg",
+    "tags": ["algebra", "concept building", "advanced practice"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Cengage%20Algebra.pdf"
+  },
+  {
+    "title": "CENGAGE TRIGONOMETRY",
+    "bestFor": "Concept Building",
+    "image": "https://m.media-amazon.com/images/I/71i5OinrOAL._SL1500_.jpg",
+    "tags": ["trigonometry", "concept building", "advanced practice"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/CENGAGE%20TRIGONOMETRY.pdf"
+  },
+  {
+    "title": "CENGAGE COORIDINATE GEOMETRY",
+    "bestFor": "Concept Building",
+    "image": "https://m.media-amazon.com/images/I/71hrJbqyuhL._SL1500_.jpg",
+    "tags": ["geometry", "concept building", "advanced practice"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/CENGAGE%20GEOMETRY.pdf"
+  },
+  {
+    "title": "CENGAGE CALCULUS",
+    "bestFor": "Concept Building",
+    "image": "https://m.media-amazon.com/images/I/71hXgsr1dyL._SL1500_.jpg",
+    "tags": ["calculus", "concept building", "advanced practice"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/CENGAGE%20CALCULUS.pdf"
+  },
+  {
+    "title": "CENGAGE VECTOR AND 3D",
+    "bestFor": "Concept Building",
+    "image": "https://m.media-amazon.com/images/I/81D8g8gBmUL._SL1500_.jpg",
+    "tags": ["vector", "3d geometry", "concept building"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Cengage%20vector%20and%203d.pdf"
+  },
+  {
     "title": "Arihant 41 Years Maths",
     "bestFor": "Previous Year Questions",
     "image": "https://m.media-amazon.com/images/I/71XbjNlhQmL._SL1500_.jpg",
@@ -242,15 +287,6 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/1.%20S.L.%20LONEY%20%5BCO-ORDINATE%20GEOMETRY%5D.pdf"
   },
   {
-    "title": "NCERT EXEMPLAR 11",
-    "bestFor": "Problem Practice",
-    "image": "https://arihantbooks.com/cdn/shop/files/F280-F_52aa30e0-30df-4f3e-a6a9-185f1d574458.jpg?v=1738400585",
-    "tags": ["class 11", "ncert exemplar", "problem practice"],
-    "cdnjs": true,
-    "action": "open",
-    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/NCERT%20Examplar%20Math%20XI.pdf"
-  },
-  {
     "title": "NCERT CLASS 11",
     "bestFor": "Problem Practice",
     "image": "https://m.media-amazon.com/images/I/81FG0XZXXGL._SL1500_.jpg",
@@ -276,6 +312,15 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/NCERT%20CLASS%2012%20(Vol%202).pdf"
+  },
+  {
+    "title": "NCERT EXEMPLAR 11",
+    "bestFor": "Problem Practice",
+    "image": "https://arihantbooks.com/cdn/shop/files/F280-F_52aa30e0-30df-4f3e-a6a9-185f1d574458.jpg?v=1738400585",
+    "tags": ["class 11", "ncert exemplar", "problem practice"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/NCERT%20Examplar%20Math%20XI.pdf"
   },
   {
     "title": "NCERT EXEMPLAR 12",
