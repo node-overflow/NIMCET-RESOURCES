@@ -14,5 +14,37 @@
   {
     "key": "binomial",
     "name": "Binomial Theorem"
+  },
+  {
+    "key": "trigo",
+    "name": "Trigonometry"
+  },
+  {
+    "key": "itf",
+    "name": "Inverse Trigonometric Functions"
+  },
+  {
+    "key": "lcd",
+    "name": "Limits, Continuity & Differentiability"
+  },
+  {
+    "key": "differentiation",
+    "name": "Differentian"
+  },
+  {
+    "key": "indefinite_integrals",
+    "name": "Indefinite Integrals"
+  },
+  {
+    "key": "definite_integrals",
+    "name": "Definite Integrals"
+  },
+  {
+    "key": "aod",
+    "name": "Applications of Derivatives"
+  },
+  {
+    "key": "differential_eqns",
+    "name": "Differential Equations"
   }
 ]
