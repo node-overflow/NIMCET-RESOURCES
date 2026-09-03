@@ -1,10 +1,11 @@
 [
   {
-    "title": "Quantitative Aptitude for Competitive Examinations",
-    "chapter": "Foundation",
+    "title": "R S Aggarwal Reasoning",
     "bestFor": "Foundation",
-    "tags": ["arithmetic", "shortcuts"],
+    "image": "https://m.media-amazon.com/images/I/71dhQppgVlL._SL1500_.jpg",
+    "tags": ["quantitative aptitude", "arithmetic"],
+    "reader": true,
     "action": "open",
-    "url": "#"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quant%20books/RS%20AGRAWAL%20QUANTS.pdf"
   }
 ]

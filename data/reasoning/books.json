@@ -1,7 +1,15 @@
 [
   {
+    "title": "R S Aggarwal Reasoning",
+    "bestFor": "Foundation",
+    "image": "https://m.media-amazon.com/images/I/91cbUTa3C+L._SL1500_.jpg",
+    "tags": ["verbal reasoning", "non-verbal reasoning"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20books/RS%20Aggarwal%20reasoning.pdf"
+  },
+  {
     "title": "B S Sijwali",
-    "chapter": "Foundation",
     "bestFor": "Foundation",
     "image": "https://m.media-amazon.com/images/I/61nPOybeo3L._SL1360_.jpg",
     "tags": ["verbal reasoning", "non-verbal reasoning"],
@@ -10,8 +18,25 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/reasoning%20books/B%20S%20Sijwali%20Reasoning%20(1).pdf"
   },
   {
+    "title": "Puzzles & Seating Arrangement",
+    "bestFor": "Foundation",
+    "image": "https://m.media-amazon.com/images/I/81al8W4rykL._SL1500_.jpg",
+    "tags": ["verbal reasoning", "non-verbal reasoning"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20books/Book%20on%20Puzzles%20%26%20Seating%20Arrangement%20(2).pdf"
+  },
+  {
+    "title": "Logical Reasoning by Arun Sharma",
+    "bestFor": "Foundation",
+    "image": "https://m.media-amazon.com/images/I/81ZK7RZcsaL._SL1500_.jpg",
+    "tags": ["verbal reasoning", "non-verbal reasoning"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20books/Logical%20Reasoning%20ARUN%20SHARMA.pdf"
+  },
+  {
     "title": "SSC Reasoning",
-    "chapter": "Foundation",
     "bestFor": "Foundation",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf7zp5XI7yI2rlNPLJcEcS1IcMeEjPwgKlbtUhSEpSdQ&s",
     "tags": ["verbal reasoning", "non-verbal reasoning"],
