@@ -185,7 +185,7 @@ export const buildCard = (item) => {
    COVER-STYLE TYPE CARDS
    ========================================================= */
 
-const buildCoverCard = (item, { className, tcVar, badge, headline, metaLabel, topLabel }) => {
+const buildCoverCard = (item, { className, tcVar, badge, headline, metaLabel, topLabel, hideExamTag }) => {
     const card = document.createElement("div");
 
     card.className = "resource-card cover-card " + className;
@@ -206,7 +206,7 @@ const buildCoverCard = (item, { className, tcVar, badge, headline, metaLabel, to
 
         '<span class="cover-unit"></span>' +
 
-        cardTopRight(badge || "", examTagHtml(item)) +
+        cardTopRight(badge || "", hideExamTag ? "" : examTagHtml(item)) +
 
         "</div>" +
 
@@ -309,7 +309,8 @@ const buildPyqTypeCard = (item) => buildCoverCard(item, {
     badge: yearBadgeHtml(item),
     topLabel: item.exam || item.subject || "",
     headline: "",
-    metaLabel: "Previous Year Questions"
+    metaLabel: "Previous Year Questions",
+    hideExamTag: true
 });
 
 
