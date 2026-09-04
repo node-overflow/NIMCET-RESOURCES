@@ -4,6 +4,7 @@ const STORAGE_KEY = "nimcet-theme";
 
 const elToggle = document.getElementById("themeToggle");
 const elThemeColor = document.querySelector('meta[name="theme-color"]');
+const elColorScheme = document.querySelector('meta[name="color-scheme"]');
 
 const applyTheme = (theme) => {
     if (theme === "light") {
@@ -11,11 +12,13 @@ const applyTheme = (theme) => {
 
         if (elToggle) elToggle.textContent = "☀️";
         if (elThemeColor) elThemeColor.setAttribute("content", "#f7f8fa");
+        if (elColorScheme) elColorScheme.setAttribute("content", "light");
     } else {
         document.documentElement.removeAttribute("data-theme");
 
         if (elToggle) elToggle.textContent = "🌙";
         if (elThemeColor) elThemeColor.setAttribute("content", "#0a0a0c");
+        if (elColorScheme) elColorScheme.setAttribute("content", "dark");
     }
 };
 
