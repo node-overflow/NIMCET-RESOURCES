@@ -15,7 +15,7 @@
     "image": "https://d1bvsltgc3wm6k.cloudfront.net/contents/2463/image/60f7b561e271060a8381fdb6_blob.png",
     "tags": ["nimcet"],
     "featured": true,
-    "cdnjs": true,
+    "reader": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/ERRORLESS%20MATH.pdf"
   },

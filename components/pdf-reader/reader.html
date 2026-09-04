@@ -3,192 +3,1210 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
     <title>PDF Reader</title>
+    <style>
+        :root {
+            --bar-bg: #2b2f31;
+            --bar-fg: #e8eaed;
+            --bar-fg-dim: #9aa0a6;
+            --bg: #525659;
+            --page-shadow: 0 2px 10px rgba(0, 0, 0, .45);
+            --accent: #4f9dff;
+            --sidebar-w: 190px;
+            --sidebar-bg: #212426;
+            --thumb-active: #4f9dff;
+            --radius: 6px;
+        }
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/6.2.108/pdf_viewer.min.css">
+        * {
+            box-sizing: border-box;
+        }
 
-    <link rel="stylesheet" href="reader.css">
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            overscroll-behavior: none;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--bar-fg);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            height: 100dvh;
+        }
+
+        /* ---------- Toolbar ---------- */
+        #toolbar {
+            height: 48px;
+            flex: 0 0 48px;
+            background: var(--bar-bg);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 0 8px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+            z-index: 50;
+            position: relative;
+        }
+
+        #toolbar .grp {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        #toolbar .sep {
+            width: 1px;
+            height: 24px;
+            background: #454a4d;
+            margin: 0 6px;
+            flex: 0 0 1px;
+        }
+
+        #toolbar .spacer {
+            flex: 1;
+        }
+
+        .tbtn {
+            -webkit-tap-highlight-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border: none;
+            background: transparent;
+            color: var(--bar-fg);
+            border-radius: 50%;
+            cursor: pointer;
+            flex: 0 0 auto;
+        }
+
+        .tbtn:hover {
+            background: #3c4043;
+        }
+
+        .tbtn:active {
+            background: #4a4e51;
+        }
+
+        .tbtn:disabled {
+            opacity: .35;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        .tbtn svg {
+            width: 20px;
+            height: 20px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        #pageBox {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--bar-fg-dim);
+            font-size: 13px;
+            flex: 0 0 auto;
+        }
+
+        #pageInput {
+            width: 38px;
+            background: #3c4043;
+            border: 1px solid #54585b;
+            color: #fff;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 13px;
+            padding: 5px 2px;
+            -moz-appearance: textfield;
+        }
+
+        #pageInput::-webkit-outer-spin-button,
+        #pageInput::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        #zoomPct {
+            min-width: 44px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--bar-fg-dim);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        #fname {
+            font-size: 13px;
+            color: var(--bar-fg-dim);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 26vw;
+            margin-left: 4px;
+        }
+
+        @media (max-width:760px) {
+            #fname {
+                display: none;
+            }
+
+            .hide-mobile {
+                display: none !important;
+            }
+
+            #toolbar {
+                padding: 0 4px;
+                gap: 0;
+            }
+        }
+
+        /* ---------- Layout ---------- */
+        #body {
+            flex: 1;
+            display: flex;
+            min-height: 0;
+            position: relative;
+        }
+
+        /* Sidebar / minimap */
+        #sidebar {
+            width: var(--sidebar-w);
+            flex: 0 0 var(--sidebar-w);
+            background: var(--sidebar-bg);
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 14px 0 40px;
+            transition: transform .22s ease, width .22s ease;
+            scrollbar-width: thin;
+            scrollbar-color: #555 transparent;
+        }
+
+        #sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        #sidebar::-webkit-scrollbar-thumb {
+            background: #555;
+            border-radius: 3px;
+        }
+
+        .thumbWrap {
+            margin: 0 auto 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            width: calc(var(--sidebar-w) - 40px);
+        }
+
+        .thumbCanvasBox {
+            width: 100%;
+            background: #3a3d3f;
+            border-radius: 3px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+            border: 2px solid transparent;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .thumbWrap.active .thumbCanvasBox {
+            border-color: var(--thumb-active);
+        }
+
+        .thumbCanvasBox canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .thumbNum {
+            font-size: 11px;
+            color: var(--bar-fg-dim);
+            margin-top: 5px;
+        }
+
+        .thumbWrap.active .thumbNum {
+            color: #fff;
+        }
+
+        #sidebarBackdrop {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .5);
+            z-index: 39;
+        }
+
+        @media (max-width:760px) {
+            #sidebar {
+                position: fixed;
+                top: 48px;
+                bottom: 0;
+                left: 0;
+                z-index: 40;
+                transform: translateX(-100%);
+                width: 62vw;
+                flex-basis: 62vw;
+                box-shadow: 2px 0 12px rgba(0, 0, 0, .4);
+            }
+
+            #sidebar.open {
+                transform: translateX(0);
+            }
+
+            #sidebarBackdrop.show {
+                display: block;
+            }
+        }
+
+        /* Viewer */
+        #viewerWrap {
+            flex: 1;
+            position: relative;
+            min-width: 0;
+            background: var(--bg);
+        }
+
+        #scroller {
+            position: absolute;
+            inset: 0;
+            overflow-y: auto;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+            padding: 16px 0 60px;
+        }
+
+        #pages {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            min-height: 100%;
+        }
+
+        .pageWrap {
+            position: relative;
+            background: #fff;
+            box-shadow: var(--page-shadow);
+            flex: 0 0 auto;
+            contain: layout style paint;
+        }
+
+        .pageWrap canvas {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            image-rendering: auto;
+        }
+
+        .pageWrap .pnum {
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+            color: #c8cbcd;
+            background: rgba(0, 0, 0, 0);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity .15s;
+        }
+
+        .textLayer {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            line-height: 1;
+            text-align: initial;
+            transform-origin: 0 0;
+        }
+
+        .textLayer span,
+        .textLayer br {
+            color: transparent;
+            position: absolute;
+            white-space: pre;
+            cursor: text;
+            transform-origin: 0 0;
+        }
+
+        .textLayer ::selection {
+            background: rgba(79, 157, 255, .35);
+        }
+
+        .pageWrap.loadingPage::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(0, 0, 0, .03) 25%, rgba(0, 0, 0, .08) 37%, rgba(0, 0, 0, .03) 63%);
+            background-size: 400% 100%;
+            animation: shimmer 1.3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 100% 0
+            }
+
+            100% {
+                background-position: 0 0
+            }
+        }
+
+        /* Drop zone / empty state */
+        #dropZone {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 16px;
+            text-align: center;
+            z-index: 5;
+            color: var(--bar-fg-dim);
+        }
+
+        #dropZone.dragOver {
+            outline: 3px dashed var(--accent);
+            outline-offset: -16px;
+            background: rgba(79, 157, 255, .06);
+        }
+
+        #dropZone svg {
+            width: 64px;
+            height: 64px;
+            stroke: #7a7f82;
+            fill: none;
+            stroke-width: 1.4;
+        }
+
+        #dropZone h2 {
+            color: #e8eaed;
+            font-weight: 500;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        #dropZone p {
+            margin: 0;
+            font-size: 13px;
+            max-width: 280px;
+        }
+
+        .openBtn {
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 22px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .openBtn:hover {
+            filter: brightness(1.08);
+        }
+
+        /* Loading overlay */
+        #loadOverlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(37, 40, 42, .97);
+            z-index: 60;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        #loadOverlay.show {
+            display: flex;
+        }
+
+        #loadOverlay .ring {
+            width: 56px;
+            height: 56px;
+            position: relative;
+        }
+
+        #loadOverlay .ring svg {
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+
+        #loadOverlay .ring circle {
+            fill: none;
+            stroke-width: 4;
+        }
+
+        #loadOverlay .ring .bg {
+            stroke: #3c4043;
+        }
+
+        #loadOverlay .ring .fg {
+            stroke: var(--accent);
+            stroke-linecap: round;
+            transition: stroke-dashoffset .12s linear;
+        }
+
+        #loadOverlay .pct {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            color: #fff;
+        }
+
+        #loadOverlay .msg {
+            font-size: 13px;
+            color: var(--bar-fg-dim);
+        }
+
+        #loadOverlay .fname {
+            font-size: 14px;
+            color: #fff;
+            max-width: 70vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        #errBox {
+            position: absolute;
+            left: 50%;
+            top: 14px;
+            transform: translateX(-50%);
+            background: #3c1f1f;
+            color: #ffb4b4;
+            border: 1px solid #6b2f2f;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            z-index: 70;
+            max-width: 80vw;
+            display: none;
+        }
+
+        input[type=file] {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- TOP TOOLBAR -->
-    <header class="toolbar">
-
-        <div class="toolbar-left">
-
-            <div class="document-name" id="bookTitle">
-                PDF Reader
-            </div>
-
-        </div>
-
-
-        <div class="toolbar-center">
-
-            <button id="prevBtn" class="toolbar-button" title="Previous page" aria-label="Previous page">
-                <svg viewBox="0 -960 960 960">
-                    <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
-                </svg>
-            </button>
-
-            <div class="page-counter">
-                <input id="pageInput" type="text" inputmode="numeric" value="1" aria-label="Page number">
-                <span>/</span>
-                <span id="pageCount">0</span>
-            </div>
-
-            <button id="nextBtn" class="toolbar-button" title="Next page" aria-label="Next page">
-                <svg viewBox="0 -960 960 960">
-                    <path d="m376-240-56-56 184-184-184-184 56-56 240 240-240 240Z" />
-                </svg>
-            </button>
-
-            <span class="vertical-separator"></span>
-
-            <div class="zoom-controls">
-
-                <button id="zoomOut" class="toolbar-button" title="Zoom out" aria-label="Zoom out">
-                    <svg viewBox="0 -960 960 960">
-                        <path d="M232-444v-72h496v72H232Z" />
-                    </svg>
-                </button>
-
-                <button id="zoomValue" class="zoom-value" title="Fit to width">
-                    120%
-                </button>
-
-                <button id="zoomIn" class="toolbar-button" title="Zoom in" aria-label="Zoom in">
-                    <svg viewBox="0 -960 960 960">
-                        <path d="M444-444H240v-72h204v-204h72v204h204v72H516v204h-72v-204Z" />
-                    </svg>
-                </button>
-
-            </div>
-
-            <span class="vertical-separator"></span>
-
-            <button id="fitWidth" class="toolbar-button" title="Fit to width" aria-label="Fit to width">
-                <svg viewBox="0 -960 960 960">
-                    <path
-                        d="M263.72-96Q234-96 213-117.15T192-168v-624q0-29.7 21.16-50.85Q234.32-864 264.04-864h432.24Q726-864 747-842.85T768-792v624q0 29.7-21.16 50.85Q725.68-96 695.96-96H263.72ZM696-168v-624H264v624h432Zm-336-72 120-120 120 120-120-360-120 360Z" />
-                </svg>
-            </button>
-
-        </div>
-
-
-        <div class="toolbar-right">
-
-            <button id="searchBtn" class="toolbar-button desktop-tool" title="Search" aria-label="Search">
-                <svg viewBox="0 -960 960 960">
-                    <path
-                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
-                </svg>
-            </button>
-
-            <button id="printBtn" class="toolbar-button desktop-tool" title="Print" aria-label="Print">
-                <svg viewBox="0 -960 960 960">
-                    <path
-                        d="M648-624v-120H312v120h-72v-192h480v192h-72Zm-480 72h625-625Zm539.79 96q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5ZM648-216v-144H312v144h336Zm72 72H240v-144H96v-240q0-40 28-68t68-28h576q40 0 68 28t28 68v240H720v144Zm73-216v-153.67Q793-530 781-541t-28-11H206q-16.15 0-27.07 11.04Q168-529.92 168-513.6V-360h72v-72h480v72h73Z" />
-                </svg>
-            </button>
-
-            <button id="fullscreenBtn" class="toolbar-button" title="Fullscreen" aria-label="Fullscreen">
-                <svg viewBox="0 -960 960 960">
-                    <path
-                        d="M120-120v-200h72v128h128v72H120Zm520 0v-72h128v-128h72v200H640ZM120-640v-200h200v72H192v128h-72Zm648 0v-128H640v-72h200v200h-72Z" />
-                </svg>
-            </button>
-
-            <a id="downloadBtn" class="toolbar-button download" title="Download" aria-label="Download">
-                <svg viewBox="0 -960 960 960">
-                    <path
-                        d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z" />
-                </svg>
-            </a>
-
-        </div>
-
-    </header>
-
-
-    <!-- SEARCH -->
-    <div id="searchPanel" class="search-panel">
-
-        <div class="search-inner">
-
-            <svg viewBox="0 -960 960 960">
-                <path
-                    d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
-            </svg>
-
-            <input id="searchInput" type="search" placeholder="Find in document">
-
-            <span id="searchStatus"></span>
-
-            <button id="closeSearch" aria-label="Close search">
-                <svg viewBox="0 -960 960 960">
-                    <path
-                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                </svg>
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- PDF VIEWER -->
-    <main id="viewer">
-
-        <div id="pdfContainer"></div>
-
-        <div id="loading">
-
-            <div class="spinner"></div>
-
-            <div class="loading-title">
-                Loading PDF
-            </div>
-
-            <div class="loading-text">
-                Please wait...
-            </div>
-
-        </div>
-
-    </main>
-
-
-    <!-- MOBILE BOTTOM BAR -->
-    <div class="mobile-toolbar">
-
-        <button id="mobilePrev" aria-label="Previous page">
-            <svg viewBox="0 -960 960 960">
-                <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+    <div id="toolbar">
+        <button class="tbtn" id="btnSidebar" title="Toggle thumbnails" aria-label="Toggle thumbnails">
+            <svg viewBox="0 0 24 24">
+                <rect x="3" y="4" width="7" height="16" rx="1"></rect>
+                <line x1="14" y1="4" x2="21" y2="4"></line>
+                <line x1="14" y1="10" x2="21" y2="10"></line>
+                <line x1="14" y1="16" x2="21" y2="16"></line>
             </svg>
         </button>
-
-        <div class="page-counter">
-            <input id="mobilePageInput" type="text" inputmode="numeric" value="1" aria-label="Page number">
-            <span>/</span>
-            <span id="mobilePageCount">0</span>
+        <div class="sep"></div>
+        <div class="grp" id="pageBox">
+            <button class="tbtn" id="btnPrev" title="Previous page"><svg viewBox="0 0 24 24">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg></button>
+            <input id="pageInput" type="number" min="1" value="1">
+            <span>/ <span id="pageTotal">-</span></span>
+            <button class="tbtn" id="btnNext" title="Next page"><svg viewBox="0 0 24 24">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg></button>
         </div>
-
-        <button id="mobileNext" aria-label="Next page">
-            <svg viewBox="0 -960 960 960">
-                <path d="m376-240-56-56 184-184-184-184 56-56 240 240-240 240Z" />
-            </svg>
-        </button>
-
+        <div class="sep hide-mobile"></div>
+        <div class="grp hide-mobile">
+            <button class="tbtn" id="btnZoomOut" title="Zoom out"><svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg></button>
+            <span id="zoomPct" title="Reset zoom">100%</span>
+            <button class="tbtn" id="btnZoomIn" title="Zoom in"><svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg></button>
+            <button class="tbtn" id="btnFitWidth" title="Fit to width"><svg viewBox="0 0 24 24">
+                    <polyline points="3 8 3 3 8 3"></polyline>
+                    <polyline points="16 3 21 3 21 8"></polyline>
+                    <polyline points="21 16 21 21 16 21"></polyline>
+                    <polyline points="8 21 3 21 3 16"></polyline>
+                </svg></button>
+        </div>
+        <span id="fname"></span>
+        <div class="spacer"></div>
+        <button class="tbtn" id="btnFullscreen" title="Fullscreen"><svg viewBox="0 0 24 24">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3"></path>
+                <path d="M21 8V5a2 2 0 0 0-2-2h-3"></path>
+                <path d="M3 16v3a2 2 0 0 0 2 2h3"></path>
+                <path d="M16 21h3a2 2 0 0 0 2-2v-3"></path>
+            </svg></button>
+        <button class="tbtn" id="btnDownload" title="Download"><svg viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg></button>
+        <button class="tbtn" id="btnOpen" title="Open PDF"><svg viewBox="0 0 24 24">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg></button>
     </div>
 
+    <div id="body">
+        <div id="sidebarBackdrop"></div>
+        <div id="sidebar"></div>
 
-    <script type="module" src="reader.js"></script>
+        <div id="viewerWrap">
+            <div id="dropZone">
+                <svg viewBox="0 0 24 24">
+                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                    <polyline points="13 2 13 9 20 9"></polyline>
+                </svg>
+                <h2>Open a PDF to get started</h2>
+                <p>Drag &amp; drop a PDF file anywhere on this page, or click below to browse.</p>
+                <button class="openBtn" id="btnOpenBig">Choose PDF file</button>
+            </div>
+            <div id="scroller" style="display:none;">
+                <div id="pages"></div>
+            </div>
+            <div id="loadOverlay">
+                <div class="fname" id="ovFname"></div>
+                <div class="ring">
+                    <svg viewBox="0 0 56 56">
+                        <circle class="bg" cx="28" cy="28" r="24"></circle>
+                        <circle class="fg" id="ringFg" cx="28" cy="28" r="24" stroke-dasharray="150.8"
+                            stroke-dashoffset="150.8"></circle>
+                    </svg>
+                    <div class="pct" id="ovPct">0%</div>
+                </div>
+                <div class="msg" id="ovMsg">Loading document…</div>
+            </div>
+            <div id="errBox"></div>
+        </div>
+    </div>
 
+    <input type="file" id="fileInput" accept="application/pdf,.pdf">
+
+    <script type="module">
+        import * as pdfjsLib from "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/6.2.108/pdf.min.mjs";
+        pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/6.2.108/pdf.worker.min.mjs";
+
+        /* ------------------------------------------------------------------ */
+        /*  State                                                              */
+        /* ------------------------------------------------------------------ */
+        const els = {
+            toolbar: document.getElementById('toolbar'),
+            sidebar: document.getElementById('sidebar'),
+            sidebarBackdrop: document.getElementById('sidebarBackdrop'),
+            scroller: document.getElementById('scroller'),
+            pages: document.getElementById('pages'),
+            dropZone: document.getElementById('dropZone'),
+            loadOverlay: document.getElementById('loadOverlay'),
+            ringFg: document.getElementById('ringFg'),
+            ovPct: document.getElementById('ovPct'),
+            ovMsg: document.getElementById('ovMsg'),
+            ovFname: document.getElementById('ovFname'),
+            errBox: document.getElementById('errBox'),
+            pageInput: document.getElementById('pageInput'),
+            pageTotal: document.getElementById('pageTotal'),
+            zoomPct: document.getElementById('zoomPct'),
+            fname: document.getElementById('fname'),
+            fileInput: document.getElementById('fileInput'),
+        };
+
+        const RING_CIRC = 150.8;
+        const ZOOM_STEPS = [0.25, 0.33, 0.5, 0.67, 0.75, 0.9, 1, 1.1, 1.25, 1.5, 1.75, 2, 2.5, 3, 4];
+        const RENDER_BUFFER_PX = 1400;   // how far outside viewport a page stays rendered
+        const MAX_CONCURRENT_RENDERS = 2;
+        const MAX_DPR = 2;               // cap device pixel ratio for perf
+
+        let pdfDoc = null;
+        let numPages = 0;
+        let scale = 1;
+        let fitWidthMode = true;
+        let baseViewport1 = null;        // viewport of page 1 at scale 1 (default size guess)
+        let pageMeta = [];               // per page: {wrap,canvas,textLayerDiv,viewport1,rendered,rendering,renderTask,textTask}
+        let thumbMeta = [];              // per page: {wrap,canvas,rendered}
+        let currentPage = 1;
+        let renderQueue = [];
+        let activeRenders = 0;
+        let currentFileName = 'document.pdf';
+        let currentFileBlobUrl = null;
+
+        /* ------------------------------------------------------------------ */
+        /*  Utilities                                                          */
+        /* ------------------------------------------------------------------ */
+        function showError(msg) {
+            els.errBox.textContent = msg;
+            els.errBox.style.display = 'block';
+            clearTimeout(showError._t);
+            showError._t = setTimeout(() => { els.errBox.style.display = 'none'; }, 6000);
+        }
+        function dpr() { return Math.min(window.devicePixelRatio || 1, MAX_DPR); }
+        function isMobile() { return window.innerWidth <= 760; }
+
+        function setLoading(show, pct, msg, fname) {
+            els.loadOverlay.classList.toggle('show', show);
+            if (fname !== undefined) els.ovFname.textContent = fname;
+            if (msg !== undefined) els.ovMsg.textContent = msg;
+            if (pct !== undefined) {
+                const clamped = Math.max(0, Math.min(100, pct));
+                els.ovPct.textContent = Math.round(clamped) + '%';
+                els.ringFg.style.strokeDashoffset = RING_CIRC - (RING_CIRC * clamped / 100);
+            }
+        }
+
+        /* ------------------------------------------------------------------ */
+        /*  Open document                                                      */
+        /* ------------------------------------------------------------------ */
+        async function openSource(src, fname) {
+            resetDoc();
+            currentFileName = fname || 'document.pdf';
+            els.fname.textContent = currentFileName;
+            els.dropZone.style.display = 'none';
+            setLoading(true, 0, 'Loading document…', currentFileName);
+
+            try {
+                const loadingTask = pdfjsLib.getDocument(src);
+                loadingTask.onProgress = (p) => {
+                    if (p.total) {
+                        setLoading(true, (p.loaded / p.total) * 100, 'Loading document…');
+                    } else {
+                        setLoading(true, undefined, `Loading… ${(p.loaded / 1024 / 1024).toFixed(1)} MB`);
+                    }
+                };
+                pdfDoc = await loadingTask.promise;
+                numPages = pdfDoc.numPages;
+                els.pageTotal.textContent = numPages;
+                els.pageInput.max = numPages;
+
+                setLoading(true, 100, 'Preparing pages…');
+                const page1 = await pdfDoc.getPage(1);
+                baseViewport1 = page1.getViewport({ scale: 1 });
+
+                buildSkeleton();
+                computeFitWidthScale();
+                applyScaleToAllWrappers();
+                updateFitBtnTitle();
+
+                els.scroller.style.display = 'block';
+                setLoading(false);
+                els.scroller.scrollTop = 0;
+                updateActivePage(1);
+                scheduleWindowUpdate();
+            } catch (err) {
+                console.error(err);
+                setLoading(false);
+                els.dropZone.style.display = 'flex';
+                showError('Could not load this PDF: ' + (err && err.message ? err.message : 'unknown error'));
+            }
+        }
+
+        function resetDoc() {
+            if (pdfDoc) { try { pdfDoc.destroy(); } catch (e) { } }
+            pdfDoc = null; numPages = 0;
+            pageMeta.forEach(m => { if (m.renderTask) try { m.renderTask.cancel(); } catch (e) { } });
+            pageMeta = []; thumbMeta = [];
+            els.pages.innerHTML = '';
+            els.sidebar.innerHTML = '';
+            renderQueue = []; activeRenders = 0;
+            currentPage = 1;
+            els.pageInput.value = 1;
+            if (currentFileBlobUrl) { URL.revokeObjectURL(currentFileBlobUrl); currentFileBlobUrl = null; }
+        }
+
+        /* ------------------------------------------------------------------ */
+        /*  Build page + thumb skeleton (placeholders, sized, virtualized)     */
+        /* ------------------------------------------------------------------ */
+        function buildSkeleton() {
+            const pagesFrag = document.createDocumentFragment();
+            const thumbFrag = document.createDocumentFragment();
+
+            for (let i = 1; i <= numPages; i++) {
+                // main page wrapper
+                const wrap = document.createElement('div');
+                wrap.className = 'pageWrap loadingPage';
+                wrap.dataset.pageNum = i;
+                const pnum = document.createElement('div');
+                pnum.className = 'pnum';
+                pnum.textContent = i;
+                wrap.appendChild(pnum);
+                pagesFrag.appendChild(wrap);
+
+                pageMeta.push({
+                    wrap, canvas: null, textLayerDiv: null,
+                    viewport1: baseViewport1, rendered: false, rendering: false,
+                    renderTask: null, textTask: null
+                });
+
+                // thumbnail wrapper
+                const tw = document.createElement('div');
+                tw.className = 'thumbWrap';
+                tw.dataset.pageNum = i;
+                const box = document.createElement('div');
+                box.className = 'thumbCanvasBox';
+                const ratio = baseViewport1.height / baseViewport1.width;
+                box.style.aspectRatio = `1 / ${ratio.toFixed(4)}`;
+                tw.appendChild(box);
+                const label = document.createElement('div');
+                label.className = 'thumbNum';
+                label.textContent = i;
+                tw.appendChild(label);
+                thumbFrag.appendChild(tw);
+
+                thumbMeta.push({ wrap: tw, box, canvas: null, rendered: false });
+
+                tw.addEventListener('click', () => jumpToPage(i));
+            }
+
+            els.pages.appendChild(pagesFrag);
+            els.sidebar.appendChild(thumbFrag);
+
+            observeAll();
+        }
+
+        /* ------------------------------------------------------------------ */
+        /*  Scale / sizing                                                     */
+        /* ------------------------------------------------------------------ */
+        function computeFitWidthScale() { const available = els.scroller.clientWidth * (isMobile() ? 0.9 : 1); scale = isMobile() ? Math.max(0.1, available / baseViewport1.width) : 1; els.zoomPct.textContent = Math.round(scale * 100) + '%'; }
+
+        function applyScaleToAllWrappers() {
+            pageMeta.forEach((m) => {
+                const vp = m.viewport1;
+                const w = Math.floor(vp.width * scale);
+                const h = Math.floor(vp.height * scale);
+                m.wrap.style.width = w + 'px';
+                m.wrap.style.height = h + 'px';
+                if (m.rendered) { m.rendered = false; m.wrap.classList.add('loadingPage'); renderPageAt(parseInt(m.wrap.dataset.pageNum, 10)); }
+            });
+        }
+
+        function updateFitBtnTitle() {
+            const btn = document.getElementById('btnFitWidth');
+            if (btn) btn.title = fitWidthMode ? 'Actual size (100%)' : 'Fit to width';
+        }
+
+        function setScale(newScale, opts = {}) {
+            newScale = Math.max(0.1, Math.min(6, newScale));
+            // preserve viewport-relative position of the currently centered page
+            const anchorPage = currentPage;
+            const anchorMeta = pageMeta[anchorPage - 1];
+            let ratio = 0;
+            if (anchorMeta) {
+                const rect = anchorMeta.wrap.getBoundingClientRect();
+                const scRect = els.scroller.getBoundingClientRect();
+                ratio = (scRect.top - rect.top) / rect.height; // how far scrolled into this page (neg->above)
+            }
+            scale = newScale;
+            els.zoomPct.textContent = Math.round(scale * 100) + '%';
+            fitWidthMode = false;
+            updateFitBtnTitle();
+
+            pageMeta.forEach((m) => {
+                const vp = m.viewport1;
+                m.wrap.style.width = Math.floor(vp.width * scale) + 'px';
+                m.wrap.style.height = Math.floor(vp.height * scale) + 'px';
+                if (m.rendered || m.rendering) {
+                    cancelRender(m);
+                    m.rendered = false;
+                    m.wrap.classList.add('loadingPage');
+                }
+            });
+
+            if (!opts.skipRestore && anchorMeta) {
+                requestAnimationFrame(() => {
+                    const rect = anchorMeta.wrap.getBoundingClientRect();
+                    const scRect = els.scroller.getBoundingClientRect();
+                    const targetTop = els.scroller.scrollTop + (rect.top - scRect.top) + ratio * rect.height;
+                    els.scroller.scrollTop = targetTop;
+                    scheduleWindowUpdate();
+                });
+            } else {
+                scheduleWindowUpdate();
+            }
+        }
+
+        function cancelRender(m) {
+            if (m.renderTask) { try { m.renderTask.cancel(); } catch (e) { } m.renderTask = null; }
+            m.rendering = false;
+        }
+
+        /* ------------------------------------------------------------------ */
+        /*  Windowed rendering via IntersectionObserver                        */
+        /* ------------------------------------------------------------------ */
+        let renderObserver, currentPageObserver, thumbObserver;
+
+        function observeAll() {
+            if (renderObserver) renderObserver.disconnect();
+            if (currentPageObserver) currentPageObserver.disconnect();
+            if (thumbObserver) thumbObserver.disconnect();
+
+            renderObserver = new IntersectionObserver(onRenderIntersect, {
+                root: els.scroller,
+                rootMargin: `${RENDER_BUFFER_PX}px 0px ${RENDER_BUFFER_PX}px 0px`,
+                threshold: 0
+            });
+            currentPageObserver = new IntersectionObserver(onCurrentPageIntersect, {
+                root: els.scroller,
+                rootMargin: '0px',
+                threshold: [0, .25, .5, .75, 1]
+            });
+            thumbObserver = new IntersectionObserver(onThumbIntersect, {
+                root: els.sidebar,
+                rootMargin: '600px 0px 600px 0px',
+                threshold: 0
+            });
+
+            pageMeta.forEach(m => { renderObserver.observe(m.wrap); currentPageObserver.observe(m.wrap); });
+            thumbMeta.forEach(t => thumbObserver.observe(t.wrap));
+        }
+
+        function onRenderIntersect(entries) {
+            for (const e of entries) {
+                const num = parseInt(e.target.dataset.pageNum, 10);
+                if (e.isIntersecting) {
+                    enqueueRender(num);
+                } else {
+                    unrenderPage(num);
+                }
+            }
+        }
+
+        const visibleRatios = new Map();
+        function onCurrentPageIntersect(entries) {
+            for (const e of entries) {
+                const num = parseInt(e.target.dataset.pageNum, 10);
+                if (e.isIntersecting) visibleRatios.set(num, e.intersectionRatio);
+                else visibleRatios.delete(num);
+            }
+            let best = null, bestR = -1;
+            visibleRatios.forEach((r, n) => { if (r > bestR) { bestR = r; best = n; } });
+            if (best) updateActivePage(best);
+        }
+
+        function onThumbIntersect(entries) {
+            for (const e of entries) {
+                if (e.isIntersecting) {
+                    const num = parseInt(e.target.dataset.pageNum, 10);
+                    renderThumb(num);
+                }
+            }
+        }
+
+        function scheduleWindowUpdate() {
+            // Force IO to re-evaluate immediately (helps right after a resize/zoom)
+            requestAnimationFrame(() => {
+                pageMeta.forEach(m => {
+                    const r = m.wrap.getBoundingClientRect();
+                    const sr = els.scroller.getBoundingClientRect();
+                    const within = r.bottom > sr.top - RENDER_BUFFER_PX && r.top < sr.bottom + RENDER_BUFFER_PX;
+                    const num = parseInt(m.wrap.dataset.pageNum, 10);
+                    if (within) enqueueRender(num); else unrenderPage(num);
+                });
+            });
+        }
+
+        /* ------------------------------------------------------------------ */
+        /*  Render queue (limits concurrent pdf.js render calls)               */
+        /* ------------------------------------------------------------------ */
+        function enqueueRender(num) {
+            const m = pageMeta[num - 1];
+            if (!m || m.rendered || m.rendering) return;
+            if (renderQueue.includes(num)) return;
+            renderQueue.push(num);
+            pumpQueue();
+        }
+
+        function pumpQueue() {
+            while (activeRenders < MAX_CONCURRENT_RENDERS && renderQueue.length) {
+                const num = renderQueue.shift();
+                const m = pageMeta[num - 1];
+                if (!m || m.rendered || m.rendering) continue;
+                activeRenders++;
+                renderPageAt(num).finally(() => { activeRenders--; pumpQueue(); });
+            }
+        }
+
+        async function renderPageAt(num) {
+            const m = pageMeta[num - 1];
+            if (!m) return;
+            m.rendering = true;
+            try {
+                const page = await pdfDoc.getPage(num);
+                const vp1 = page.getViewport({ scale: 1 });
+                if (Math.abs(vp1.width - m.viewport1.width) > 0.5 || Math.abs(vp1.height - m.viewport1.height) > 0.5) {
+                    m.viewport1 = vp1;
+                    m.wrap.style.width = Math.floor(vp1.width * scale) + 'px';
+                    m.wrap.style.height = Math.floor(vp1.height * scale) + 'px';
+                }
+                const viewport = page.getViewport({ scale });
+                const ratio = dpr();
+
+                let canvas = m.canvas;
+                if (!canvas) {
+                    canvas = document.createElement('canvas');
+                    m.wrap.insertBefore(canvas, m.wrap.firstChild);
+                    m.canvas = canvas;
+                }
+                canvas.width = Math.ceil(viewport.width * ratio);
+                canvas.height = Math.ceil(viewport.height * ratio);
+                const ctx = canvas.getContext('2d', { alpha: false });
+                const task = page.render({
+                    canvasContext: ctx,
+                    viewport,
+                    transform: ratio !== 1 ? [ratio, 0, 0, ratio, 0, 0] : null
+                });
+                m.renderTask = task;
+                await task.promise;
+                m.renderTask = null;
+                m.rendered = true;
+                m.wrap.classList.remove('loadingPage');
+
+                // text layer (best-effort, non-blocking of visuals)
+                buildTextLayer(m, page, viewport).catch(() => { });
+            } catch (err) {
+                if (err && err.name === 'RenderingCancelledException') { /* expected */ }
+                else console.warn('render error on page', num, err);
+            } finally {
+                m.rendering = false;
+            }
+        }
+
+        async function buildTextLayer(m, page, viewport) {
+            if (!pdfjsLib.TextLayer) return;
+            if (m.textLayerDiv) { m.textLayerDiv.remove(); m.textLayerDiv = null; }
+            const div = document.createElement('div');
+            div.className = 'textLayer';
+            div.style.width = viewport.width + 'px';
+            div.style.height = viewport.height + 'px';
+            m.wrap.appendChild(div);
+            m.textLayerDiv = div;
+            try {
+                const textContent = await page.getTextContent();
+                const tl = new pdfjsLib.TextLayer({
+                    textContentSource: textContent,
+                    container: div,
+                    viewport
+                });
+                await tl.render();
+            } catch (e) {
+                /* ignore */
+            }
+        }
+
+        function unrenderPage(num) {
+            const m = pageMeta[num - 1];
+            if (!m) return;
+            const idx = renderQueue.indexOf(num);
+            if (idx !== -1) renderQueue.splice(idx, 1);
+            cancelRender(m);
+            if (!m.rendered) return;
+            if (m.canvas) { m.canvas.remove(); m.canvas = null; }
+            if (m.textLayerDiv) { m.textLayerDiv.remove(); m.textLayerDiv = null; }
+            m.rendered = false;
+            m.wrap.classList.add('loadingPage');
+        }
+
+        /* ------------------------------------------------------------------ */
+        /*  Thumbnails (rendered once, kept — cheap)                           */
+        /* ------------------------------------------------------------------ */
+        async function renderThumb(num) {
+            const t = thumbMeta[num - 1];
+            if (!t || t.rendered || !pdfDoc) return;
+            t.rendered = true; // mark early to avoid duplicate work
+            try {
+                const page = await pdfDoc.getPage(num);
+                const targetW = 150;
+                const vp1 = page.getViewport({ scale: 1 });
+                const s = targetW / vp1.width;
+                const viewport = page.getViewport({ scale: s });
+                const canvas = document.createElement('canvas');
+                const ratio = Math.min(window.devicePixelRatio || 1, 2);
+                canvas.width = Math.ceil(viewport.width * ratio);
+                canvas.height = Math.ceil(viewport.height * ratio);
+                const ctx = canvas.getContext('2d', { alpha: false });
+                await page.render({ canvasContext: ctx, viewport, transform: ratio !== 1 ? [ratio, 0, 0, ratio, 0, 0] : null }).promise;
+                t.box.innerHTML = '';
+                t.box.appendChild(canvas);
+                t.canvas = canvas;
+            } catch (e) {
+                t.rendered = false;
+            }
+        }
+
+        /* ------------------------------------------------------------------ */
+        /*  Navigation                                                         */
+        /* ------------------------------------------------------------------ */
+        function updateActivePage(num) {
+            if (num === currentPage) { /* ignore */ }
+            currentPage = num;
+            els.pageInput.value = num;
+            thumbMeta.forEach((t, i) => t.wrap.classList.toggle('active', i + 1 === num));
+            const activeThumb = thumbMeta[num - 1];
+            if (activeThumb) {
+                const wrapRect = activeThumb.wrap.getBoundingClientRect();
+                const sideRect = els.sidebar.getBoundingClientRect();
+                if (wrapRect.top < sideRect.top || wrapRect.bottom > sideRect.bottom) {
+                    activeThumb.wrap.scrollIntoView({ block: 'center', behavior: 'smooth' });
+                }
+            }
+        }
+
+        function jumpToPage(num) {
+            num = Math.max(1, Math.min(numPages, num));
+            const m = pageMeta[num - 1];
+            if (!m) return;
+            m.wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            updateActivePage(num);
+            if (isMobile()) closeSidebar();
+        }
+
+        /* ------------------------------------------------------------------ */
+        /*  Toolbar wiring                                                     */
+        /* ------------------------------------------------------------------ */
+        document.getElementById('btnPrev').addEventListener('click', () => jumpToPage(currentPage - 1));
+        document.getElementById('btnNext').addEventListener('click', () => jumpToPage(currentPage + 1));
+        els.pageInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') { jumpToPage(parseInt(els.pageInput.value, 10) || 1); els.pageInput.blur(); }
+        });
+        els.pageInput.addEventListener('change', () => jumpToPage(parseInt(els.pageInput.value, 10) || 1));
+
+        document.getElementById('btnZoomIn').addEventListener('click', () => {
+            const next = ZOOM_STEPS.find(z => z > scale + 0.001) || scale * 1.25;
+            setScale(next);
+        });
+        document.getElementById('btnZoomOut').addEventListener('click', () => {
+            const rev = [...ZOOM_STEPS].reverse();
+            const next = rev.find(z => z < scale - 0.001) || scale * 0.8;
+            setScale(next);
+        });
+        els.zoomPct.addEventListener('click', () => setScale(1));
+        document.getElementById('btnFitWidth').addEventListener('click', () => {
+            if (fitWidthMode) {
+                setScale(1);
+            } else {
+                fitWidthMode = true;
+                const available = els.scroller.clientWidth - (isMobile() ? 24 : 48);
+                scale = Math.max(0.1, available / baseViewport1.width);
+                els.zoomPct.textContent = Math.round(scale * 100) + '%';
+                applyScaleToAllWrappers();
+                scheduleWindowUpdate();
+                updateFitBtnTitle();
+            }
+        });
+
+        document.getElementById('btnFullscreen').addEventListener('click', () => {
+            if (!document.fullscreenElement) document.documentElement.requestFullscreen().catch(() => { });
+            else document.exitFullscreen();
+        });
+
+        document.getElementById('btnDownload').addEventListener('click', () => {
+            if (!currentFileBlobUrl && !pdfDoc) return;
+            const a = document.createElement('a');
+            a.href = currentFileBlobUrl || '';
+            a.download = currentFileName || 'document.pdf';
+            if (a.href) a.click();
+        });
+
+        function openSidebar() { els.sidebar.classList.add('open'); els.sidebarBackdrop.classList.add('show'); }
+        function closeSidebar() { els.sidebar.classList.remove('open'); els.sidebarBackdrop.classList.remove('show'); }
+        document.getElementById('btnSidebar').addEventListener('click', () => {
+            if (isMobile()) { els.sidebar.classList.contains('open') ? closeSidebar() : openSidebar(); }
+            else {
+                const collapsed = els.sidebar.style.display === 'none';
+                els.sidebar.style.display = collapsed ? 'block' : 'none';
+            }
+        });
+        els.sidebarBackdrop.addEventListener('click', closeSidebar);
+
+        document.getElementById('btnOpen').addEventListener('click', () => els.fileInput.click());
+        document.getElementById('btnOpenBig').addEventListener('click', () => els.fileInput.click());
+        els.fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) loadFile(file);
+            els.fileInput.value = '';
+        });
+
+        function loadFile(file) {
+            if (currentFileBlobUrl) URL.revokeObjectURL(currentFileBlobUrl);
+            currentFileBlobUrl = URL.createObjectURL(file);
+            openSource({ url: currentFileBlobUrl }, file.name);
+        }
+
+        /* Drag & drop */
+        ['dragenter', 'dragover'].forEach(ev => document.addEventListener(ev, (e) => {
+            e.preventDefault();
+            els.dropZone.style.display = 'flex';
+            els.dropZone.classList.add('dragOver');
+        }));
+        ['dragleave', 'drop'].forEach(ev => document.addEventListener(ev, (e) => {
+            e.preventDefault();
+            els.dropZone.classList.remove('dragOver');
+        }));
+        document.addEventListener('drop', (e) => {
+            e.preventDefault();
+            const file = e.dataTransfer.files && e.dataTransfer.files[0];
+            if (file && file.type === 'application/pdf') { loadFile(file); }
+            else if (file) { showError('Please drop a valid PDF file.'); if (!pdfDoc) els.dropZone.style.display = 'flex'; }
+            else if (!pdfDoc) { els.dropZone.style.display = 'flex'; }
+        });
+
+        /* Keyboard shortcuts */
+        document.addEventListener('keydown', (e) => {
+            if (document.activeElement === els.pageInput) return;
+            if (!pdfDoc) return;
+            if (e.key === 'ArrowRight' || e.key === 'PageDown') { jumpToPage(currentPage + 1); }
+            else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { jumpToPage(currentPage - 1); }
+            else if ((e.ctrlKey || e.metaKey) && (e.key === '=' || e.key === '+')) { e.preventDefault(); document.getElementById('btnZoomIn').click(); }
+            else if ((e.ctrlKey || e.metaKey) && e.key === '-') { e.preventDefault(); document.getElementById('btnZoomOut').click(); }
+        });
+
+        /* Resize handling */
+        let resizeT;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeT);
+            resizeT = setTimeout(() => {
+                if (!pdfDoc) return;
+                if (fitWidthMode) { computeFitWidthScale(); applyScaleToAllWrappers(); }
+                scheduleWindowUpdate();
+            }, 150);
+        });
+
+        /* Load PDF from ?file= or ?url= query param */
+        (function checkQueryParam() {
+            const params = new URLSearchParams(window.location.search);
+            const q = params.get('file') || params.get('url');
+            if (q) {
+                const name = decodeURIComponent(q.split('/').pop().split('?')[0]) || 'document.pdf';
+                openSource({ url: q }, name);
+            }
+        })();
+    </script>
 </body>
 
 </html>
