@@ -4,7 +4,8 @@ import {
     SUBJECTS,
     DPP_SUBJECT_SLUGS,
     dppManifestPath,
-    dppChapterPath
+    dppChapterPath,
+    DPP_STATS_FILE
 } from "./config.js";
 
 import {
@@ -21,7 +22,7 @@ import {
 
 import { state } from "./state.js";
 
-import { escapeHtml } from "./utils.js";
+import { escapeHtml, subjectSymbolHtml } from "./utils.js";
 
 import { renderDppCards } from "./cards.js";
 
@@ -92,26 +93,38 @@ export const computeDppTotal = () => {
         return Promise.resolve(state.dppTotalCount);
     }
 
-    const subjectNames = Object.keys(DPP_SUBJECT_SLUGS);
+    return fetchJsonSafe(DPP_STATS_FILE).then(stats => {
+        const fastTotal =
+            stats && typeof stats.total === "number"
+                ? stats.total
+                : null;
 
-    return Promise.all(
-        subjectNames.map(subjectName =>
-            loadChapters(subjectName).then(chapters =>
-                Promise.all(
-                    chapters.map(chapter =>
-                        loadDppItems(subjectName, chapter.key).then(
-                            items => items.length
+        if (fastTotal != null) {
+            state.dppTotalCount = fastTotal;
+            return fastTotal;
+        }
+
+        const subjectNames = Object.keys(DPP_SUBJECT_SLUGS);
+
+        return Promise.all(
+            subjectNames.map(subjectName =>
+                loadChapters(subjectName).then(chapters =>
+                    Promise.all(
+                        chapters.map(chapter =>
+                            loadDppItems(subjectName, chapter.key).then(
+                                items => items.length
+                            )
                         )
-                    )
-                ).then(counts => counts.reduce((a, b) => a + b, 0))
+                    ).then(counts => counts.reduce((a, b) => a + b, 0))
+                )
             )
-        )
-    ).then(subjectTotals => {
-        const total = subjectTotals.reduce((a, b) => a + b, 0);
+        ).then(subjectTotals => {
+            const total = subjectTotals.reduce((a, b) => a + b, 0);
 
-        state.dppTotalCount = total;
+            state.dppTotalCount = total;
 
-        return total;
+            return total;
+        });
     });
 };
 
@@ -130,7 +143,7 @@ export const renderDppSubjectGrid = (onSubjectClick) => {
 
         button.innerHTML =
             '<span class="subject-symbol">' +
-            escapeHtml(subject.symbol) +
+            subjectSymbolHtml(subject) +
             '</span>' +
 
             '<span class="subject-name">' +

@@ -34,7 +34,8 @@ import { state } from "./state.js";
 import {
     countBySubject,
     escapeHtml,
-    parseDateStr
+    parseDateStr,
+    subjectSymbolHtml
 } from "./utils.js";
 
 import { renderGrid } from "./cards.js";
@@ -458,7 +459,7 @@ export const renderHome = (
 
         button.innerHTML =
             '<span class="subject-symbol">' +
-            escapeHtml(subject.symbol) +
+            subjectSymbolHtml(subject) +
             '</span>' +
 
             '<span class="subject-name">' +

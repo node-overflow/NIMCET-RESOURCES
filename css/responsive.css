@@ -181,6 +181,14 @@
     font-size: 0.87rem;
   }
 
+  .sym-desktop-only {
+    display: none;
+  }
+
+  .sym-mobile-only {
+    display: inline;
+  }
+
   .chip-row {
     margin: 0;
     padding: 0;

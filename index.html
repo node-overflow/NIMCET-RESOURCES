@@ -48,7 +48,7 @@
                     if (cs) cs.setAttribute("content", "light");
                 }
             } catch (e) {
-                // ignore
+                // localStorage unavailable (private browsing etc.) — fall back to dark.
             }
         })();
     </script>
@@ -176,7 +176,8 @@
                         <span>Mathematics</span>
                     </button>
                     <button class="nav-item" data-nav="subject" data-subject="Logical Reasoning">
-                        <span class="nav-symbol">📊︎</span>
+                        <span class="nav-symbol"><span class="sym-desktop-only">📊︎</span><span
+                                class="sym-mobile-only">?!</span></span>
                         <span>Logical Reasoning</span>
                     </button>
                     <button class="nav-item" data-nav="subject" data-subject="Computer">
@@ -344,7 +345,6 @@
 
                         <div class="footer-col">
                             <p class="footer-col-title">Community</p>
-                            <!-- TODO: same Telegram link as the CTA banner above -->
                             <a class="footer-social-link" href="#" target="_blank"
                                 rel="noopener noreferrer">Telegram</a>
                         </div>

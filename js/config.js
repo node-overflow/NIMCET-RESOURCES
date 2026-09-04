@@ -42,6 +42,8 @@ export const dppManifestPath = (subjectSlug) =>
 export const dppChapterPath = (subjectSlug, chapterKey) =>
     `data/dpp/${subjectSlug}/${chapterKey}.json`;
 
+export const DPP_STATS_FILE = "data/dpp/stats.json";
+
 export const MOCK_TYPES = [
     { key: "free", name: "Free Mocks", symbol: "F" },
     { key: "paid", name: "Paid Mocks", symbol: "P" }
@@ -95,7 +97,7 @@ export const FAQS_FILE = "data/other/faqs.json";
 
 export const SUBJECTS = [
     { name: "Mathematics", symbol: "Σ" },
-    { name: "Logical Reasoning", symbol: "📊︎" },
+    { name: "Logical Reasoning", symbol: "📊︎", symbolMobile: "?!" },
     { name: "Computer", symbol: "</>" },
     { name: "Quantitative Aptitude", symbol: "%" },
     { name: "English", symbol: "Aa" }

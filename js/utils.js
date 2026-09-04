@@ -27,6 +27,21 @@ export const actionLabel = item => {
     return "Open PDF";
 };
 
+export const subjectSymbolHtml = subject => {
+    if (subject.symbolMobile) {
+        return (
+            '<span class="sym-desktop-only">' +
+            escapeHtml(subject.symbol) +
+            '</span>' +
+            '<span class="sym-mobile-only">' +
+            escapeHtml(subject.symbolMobile) +
+            '</span>'
+        );
+    }
+
+    return escapeHtml(subject.symbol);
+};
+
 export const deriveMathChapter = title => {
     if (!title) return null;
 

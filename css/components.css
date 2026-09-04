@@ -45,6 +45,10 @@
   border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
 }
 
+.sym-mobile-only {
+  display: none;
+}
+
 .subject-name {
   font-weight: 600;
   font-size: 0.94rem;
