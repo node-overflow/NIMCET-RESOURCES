@@ -105,7 +105,14 @@ export const renderFilterPills = () => {
         }
     }
 
-    if (state.subject === "Mathematics" && state.type === "PYQ") {
+    const pyqExamSubjects = [
+        "Mathematics",
+        "English",
+        "Logical Reasoning",
+        "Quantitative Aptitude"
+    ];
+
+    if (pyqExamSubjects.includes(state.subject) && state.type === "PYQ") {
         if (state.examFilter === null) {
             state.examFilter = "All";
         }
@@ -113,7 +120,7 @@ export const renderFilterPills = () => {
         const examOptions = Array.from(
             new Set(
                 state.resources
-                    .filter(r => r.subject === "Mathematics" && r.type === "PYQ" && r.exam)
+                    .filter(r => r.subject === state.subject && r.type === "PYQ" && r.exam)
                     .map(r => r.exam)
             )
         );

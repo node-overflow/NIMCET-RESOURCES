@@ -138,7 +138,14 @@ export const getFilteredResources = () => {
             }
         }
 
-        if (state.subject === "Mathematics" && state.type === "PYQ" && state.examFilter && state.examFilter !== "All") {
+        const pyqExamSubjects = [
+            "Mathematics",
+            "English",
+            "Logical Reasoning",
+            "Quantitative Aptitude"
+        ];
+
+        if (pyqExamSubjects.includes(state.subject) && state.type === "PYQ" && state.examFilter && state.examFilter !== "All") {
             if ((item.exam || "") !== state.examFilter) return false;
         }
 
