@@ -220,6 +220,15 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/DIFFERENTIAL%20EQUATION%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
   },
   {
+    "title": "Coordinate Geometry Pyqs",
+    "exam": "CUET PG",
+    "year": "2007-25",
+    "tags": ["pyq", "coordinate", "geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20pyqs_resource/COORDINATE%20GEOMETRY%20CUET%20PG%20PYQS.pdf"
+  },
+  {
     "title": "Statistics, Sets & Relations Pyqs",
     "exam": "JEE Main + Adv.",
     "year": "up to 2019",

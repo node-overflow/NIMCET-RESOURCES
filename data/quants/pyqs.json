@@ -1,10 +1,119 @@
 [
   {
-    "title": "NIMCET 2016-2026 Solved Papers \u2013 Quant Section",
-    "chapter": "Previous Years",
-    "bestFor": "Exam Pattern",
+    "title": "Average",
+    "exam": "NIMCET",
+    "year": "upto 2024",
     "tags": ["pyq", "previous years"],
-    "action": "download",
-    "url": "#"
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Average%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "G.P.",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20G.P.%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "HCF",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20HCF%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "LCM",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20LCM%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Mensuration",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Mensuration%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Mixture",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Mixture%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Number Series",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Number%20Series%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Number System",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Number%20System%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "P & C",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20P%20%26%20C%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Percentage",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Percentage%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Profit and Loss",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Profit%20and%20Loss%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Simplification",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Simplification%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Time, Speed & Distance",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Time%2C%20Speed%20%26%20Distance%20Topicwise%20PYQ.pdf"
   }
 ]

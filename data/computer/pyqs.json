@@ -25,5 +25,50 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/OS%20GATE%20PYQS.pdf"
+  },
+  {
+    "title": "Number System PYQS",
+    "exam": "CUET PG",
+    "year": "up to 2025",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/NUMBER%20SYSTEM%20CUET%20PG%20PYQS.pdf"
+  },
+  {
+    "title": "Boolean Algebra PYQS",
+    "exam": "CUET PG",
+    "year": "up to 2025",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/BOOLEAN%20ALGEBRA%20CUET%20PG%20PYQS.pdf"
+  },
+  {
+    "title": "Digital Logic PYQS",
+    "exam": "CUET PG",
+    "year": "2025",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/DIGITAL%20LOGIC%20CUET%20PG%202025%20PYQS.pdf"
+  },
+  {
+    "title": "DSA PYQS",
+    "exam": "CUET PG",
+    "year": "up to 2025",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/DSA%20CUET%20PG%20PYQS.pdf"
+  },
+  {
+    "title": "Operating System PYQS",
+    "exam": "CUET PG",
+    "year": "up to 2025",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/OPERATING%20SYSTEM%20CUET%20PG%20PYQS.pdf"
   }
 ]

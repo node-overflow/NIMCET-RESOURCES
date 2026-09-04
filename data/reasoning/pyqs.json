@@ -1,10 +1,290 @@
 [
   {
-    "title": "NIMCET 2026 Solved Paper",
-    "chapter": "Previous Years",
-    "bestFor": "Exam Pattern",
+    "title": "Age",
+    "exam": "NIMCET",
+    "year": "upto 2024",
     "tags": ["pyq", "previous years"],
-    "action": "download",
-    "url": "#"
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20AGE%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Analogy",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Analogy%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Blood Relation",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Blood%20Relation%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Calendar",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Calendar%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Clock",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Clock%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Coding Decoding",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Coding%20Decoding%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Direction",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Direction%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Figure Counting",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Figure%20Counting%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Odd One Out",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Odd%20One%20Out%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Puzzle",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Puzzle%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Ranking",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Ranking%20Topciwise%20PYQ.pdf"
+  },
+  {
+    "title": "Seating Arrangement",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Seating%20Arrangement%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Statement Conclusion",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Statement%20Conclusion%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "Syllogism",
+    "exam": "NIMCET",
+    "year": "upto 2024",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/NIMCET%20Reasoning%20Syllogism%20Topicwise%20PYQ.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2007",
+    "exam": "NIMCET",
+    "year": "2007",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202007%20Reasoning.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2008",
+    "exam": "NIMCET",
+    "year": "2008",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202008%20REASONING.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2009",
+    "exam": "NIMCET",
+    "year": "2009",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202009%20REASONING.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2010",
+    "exam": "NIMCET",
+    "year": "2010",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202010%20Reasoning.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2011",
+    "exam": "NIMCET",
+    "year": "2011",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202011%20REASONING.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2012",
+    "exam": "NIMCET",
+    "year": "2012",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202012REASONING.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2013",
+    "exam": "NIMCET",
+    "year": "2013",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202013%20REASONING.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2014",
+    "exam": "NIMCET",
+    "year": "2014",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202014%20REASONING.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2015",
+    "exam": "NIMCET",
+    "year": "2015",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202015%20REASONING.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2016",
+    "exam": "NIMCET",
+    "year": "2016",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202016%20REASONING.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2017",
+    "exam": "NIMCET",
+    "year": "2017",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202017%20Reasoning.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2018",
+    "exam": "NIMCET",
+    "year": "2018",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202018%20Reasoning.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2019",
+    "exam": "NIMCET",
+    "year": "2019",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202019%20Reasoning.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2020",
+    "exam": "NIMCET",
+    "year": "2020",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202020%20REASONING.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2021",
+    "exam": "NIMCET",
+    "year": "2021",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202021%20REASONING.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2022",
+    "exam": "NIMCET",
+    "year": "2022",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202022%20REASONING.pdf"
+  },
+  {
+    "title": "NIMCET Reasoning 2023",
+    "exam": "NIMCET",
+    "year": "2023",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/year%20wise%20pyqs/NIMCET%202023%20Reasoning.pdf"
+  },
+  {
+    "title": "CUET PG Reasoning 2025",
+    "exam": "CUET PG",
+    "year": "2025",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20pyqs_resource/REASONING%20CUET%20PG%202025%20PYQS.pdf"
   }
 ]
