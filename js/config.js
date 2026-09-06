@@ -131,34 +131,150 @@ export const RESOURCE_ORDER = {
 };
 
 export const MATH_CHAPTER_KEYWORDS = [
-    { chapter: "Quadratic Equations", keywords: ["quadratic"] },
-    { chapter: "Probability", keywords: ["probability"] },
-    { chapter: "Permutation & Combination", keywords: ["permutation", "combination", "npr", "ncr"] },
-    { chapter: "Binomial Theorem", keywords: ["binomial"] },
-    { chapter: "Matrices & Determinants", keywords: ["matrix", "matrices", "determinant"] },
-    { chapter: "Complex Numbers", keywords: ["complex number", "complex numbers"] },
-    { chapter: "Sequence & Series", keywords: ["sequence", "series", "progression", "ap and gp", "arithmetic progression", "geometric progression"] },
-    { chapter: "Trigonometry", keywords: ["trigonometry", "trigonometric", "trigonometric ratio", "itf"] },
-    { chapter: "Vectors", keywords: ["vector", "vectors"] },
-    { chapter: "3D Geometry", keywords: ["3d geometry", "3d", "three dimensional geometry", "three-dimensional geometry"] },
-    { chapter: "Straight Lines", keywords: ["straight line", "straight lines"] },
-    { chapter: "Circle", keywords: ["circle", "circles"] },
-    { chapter: "Parabola", keywords: ["parabola"] },
-    { chapter: "Ellipse", keywords: ["ellipse"] },
-    { chapter: "Hyperbola", keywords: ["hyperbola"] },
-    { chapter: "Limits", keywords: ["limits", "limit"] },
-    { chapter: "Continuity & Differentiability", keywords: ["continuity", "differentiability", "continuity differentiability"] },
-    { chapter: "Differentiation", keywords: ["differentiation", "derivative", "derivatives"] },
-    { chapter: "Application of Derivatives", keywords: ["application of derivatives", "applications of derivatives", "aod"] },
-    { chapter: "Indefinite Integration", keywords: ["indefinite integral", "indefinite integration"] },
-    { chapter: "Definite Integration", keywords: ["definite integral", "definite integration"] },
-    { chapter: "Area Under Curve", keywords: ["area under curve", "area under the curve"] },
-    { chapter: "Differential Equations", keywords: ["differential equation", "differential equations", "differential eqn"] },
-    { chapter: "Sets", keywords: ["set", "sets", "set theory"] },
-    { chapter: "Relations", keywords: ["relation", "relations"] },
-    { chapter: "Functions", keywords: ["function", "functions"] },
-    { chapter: "Statistics", keywords: ["statistics", "statistical"] },
-    { chapter: "Algebra", keywords: ["algebra"] }
+    {
+        chapter: "Inverse Trigonometric Functions", order: 15,
+        keywords: ["itf", "inverse trigonometric", "inverse trig function", "inverse circular function", "arcsin", "arccos", "arctan"]
+    },
+    {
+        chapter: "Solutions of Triangle", order: 16,
+        keywords: ["solution of triangle", "solutions of triangle", "solutions of triangles", "properties of triangle", "properties of triangles"]
+    },
+    {
+        chapter: "Height & Distance", order: 17,
+        keywords: ["height and distance", "heights and distances", "height & distance"]
+    },
+    {
+        chapter: "Trigonometry", order: 14,
+        keywords: ["trigonometry", "trigonometric", "trig identit", "trigonometric ratio", "trigonometric identit", "trigonometric equation"]
+    },
+    {
+        chapter: "Application of Derivatives", order: 27,
+        keywords: ["application of derivative", "applications of derivative", "aod", "tangent and normal", "maxima and minima", "maxima minima", "increasing and decreasing function", "monotonicity", "rolle's theorem", "mean value theorem", "rate of change"]
+    },
+    {
+        chapter: "Differentiation", order: 26,
+        keywords: ["differentiation", "derivative", "derivatives"]
+    },
+    {
+        chapter: "Continuity", order: 24,
+        keywords: ["continuity"]
+    },
+    {
+        chapter: "Differentiability", order: 25,
+        keywords: ["differentiability"]
+    },
+    {
+        chapter: "Indefinite Integration", order: 28,
+        keywords: ["indefinite integral", "indefinite integration", "integration by parts", "integration by substitution", "methods of integration"]
+    },
+    {
+        chapter: "Definite Integration", order: 29,
+        keywords: ["definite integral", "definite integration", "fundamental theorem of calculus", "properties of definite integral"]
+    },
+    {
+        chapter: "Area Under Curve", order: 30,
+        keywords: ["area under curve", "area under the curve", "area bounded by curve", "area bounded by curves"]
+    },
+    {
+        chapter: "Differential Equations", order: 31,
+        keywords: ["differential equation", "differential equations", "differential eqn", "diff eq", "order and degree"]
+    },
+    {
+        chapter: "Matrices", order: 12,
+        keywords: ["matrix", "matrices"]
+    },
+    {
+        chapter: "Determinants", order: 13,
+        keywords: ["determinant", "determinants"]
+    },
+    {
+        chapter: "Sequence & Series", order: 8,
+        keywords: ["sequence", "series", "progression", "ap and gp", "ap-gp", "arithmetic progression", "geometric progression", "harmonic progression"]
+    },
+    {
+        chapter: "Binomial Theorem", order: 9,
+        keywords: ["binomial"]
+    },
+    {
+        chapter: "Permutation & Combination", order: 10,
+        keywords: ["permutation", "combination", "npr", "ncr", "p and c", "p & c", "fundamental principle of counting", "pnc", "p&c"]
+    },
+    {
+        chapter: "Probability", order: 11,
+        keywords: ["probability"]
+    },
+    {
+        chapter: "Quadratic Equations", order: 7,
+        keywords: ["quadratic"]
+    },
+    {
+        chapter: "Straight Lines", order: 18,
+        keywords: ["straight line", "straight lines"]
+    },
+    {
+        chapter: "Circle", order: 19,
+        keywords: ["circle", "circles"]
+    },
+    {
+        chapter: "Parabola", order: 20,
+        keywords: ["parabola"]
+    },
+    {
+        chapter: "Ellipse", order: 21,
+        keywords: ["ellipse"]
+    },
+    {
+        chapter: "Hyperbola", order: 22,
+        keywords: ["hyperbola"]
+    },
+    {
+        chapter: "Limits", order: 23,
+        keywords: ["limit", "limits"]
+    },
+    {
+        chapter: "Statistics", order: 32,
+        keywords: ["statistics", "statistical", "mean median mode", "standard deviation", "measures of dispersion", "measures of central tendency"]
+    },
+    {
+        chapter: "Sets", order: 4,
+        keywords: ["set theory", "sets", "venn diagram"]
+    },
+    {
+        chapter: "Relations", order: 5,
+        keywords: ["relation", "relations"]
+    },
+    {
+        chapter: "Basic Mathematics", order: 1,
+        keywords: ["basic math", "basic maths", "basic mathematics", "fundamentals of mathematics", "number system"]
+    },
+    {
+        chapter: "Logarithm", order: 2,
+        keywords: ["logarithm", "logarithmic", "log function", "log functions"]
+    },
+    {
+        chapter: "Inequalities", order: 3,
+        keywords: ["inequalit", "inequation"]
+    },
+    {
+        chapter: "Complex Numbers", order: 33,
+        keywords: ["complex number", "complex numbers"]
+    },
+    {
+        chapter: "Vectors", order: 34,
+        keywords: ["vector", "vectors"]
+    },
+    {
+        chapter: "3D Geometry", order: 35,
+        keywords: ["3d geometry", "three dimensional geometry", "three-dimensional geometry", "3-d geometry"]
+    },
+    {
+        chapter: "Algebra", order: 36,
+        keywords: ["algebra"]
+    },
+    {
+        chapter: "Functions", order: 6,
+        keywords: ["function", "functions"]
+    }
 ];
 
 export const MONTH_SHORT = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];

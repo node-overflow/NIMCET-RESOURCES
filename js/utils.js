@@ -54,6 +54,16 @@ export const deriveMathChapter = title => {
     return match ? match.chapter : null;
 };
 
+export const getMathChapterRank = title => {
+    const chapter = deriveMathChapter(title);
+
+    if (!chapter) return 999;
+
+    const entry = MATH_CHAPTER_KEYWORDS.find(item => item.chapter === chapter);
+
+    return entry && typeof entry.order === "number" ? entry.order : 999;
+};
+
 export const countBySubject = name => {
     return state.resources.filter(
         resource => resource.subject === name

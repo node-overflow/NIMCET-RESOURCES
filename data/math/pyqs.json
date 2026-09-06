@@ -64,10 +64,10 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/BINOMIAL%20THEOREM%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
   },
   {
-    "title": "PNC Pyqs",
+    "title": "Permutations and Combinations Pyqs",
     "exam": "NIMCET",
     "year": "2007-25",
-    "tags": ["pyq", "permutation-combination", "pnc"],
+    "tags": ["pnc", "p&c", "permutations and combinations", "algebra", "pyqs"],
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/nimcet/PNC%20%5BNIMCET%20TOPIC%20WISE%20PYQ%5D.pdf"
@@ -274,10 +274,10 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/Matrices%20%26%20Determinants%20JEE.pdf"
   },
   {
-    "title": "P&C Pyqs",
+    "title": "Permutations and Combinations Pyqs",
     "exam": "JEE Main + Adv.",
     "year": "up to 2019",
-    "tags": ["pyq", "pnc", "permutation and combination"],
+    "tags": ["pnc", "p&c", "permutations and combinations", "algebra", "pyqs"],
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee/P%26C%20JEE.pdf"
@@ -448,7 +448,7 @@
     "title": "Permutations and Combinations Pyqs",
     "exam": "JEE Advanced",
     "year": "up to 2022",
-    "tags": ["permutations and combinations", "algebra", "pyqs"],
+    "tags": ["pnc", "p&c", "permutations and combinations", "algebra", "pyqs"],
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyq%20card/math/jee%20advanced/M_Ch-04_Permutations%20and%20Combinations.pdf"

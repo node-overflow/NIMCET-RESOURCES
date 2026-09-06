@@ -279,6 +279,9 @@ export const renderDppChapterItems = () => {
         elDppGrid.hidden = false;
         elDppEmpty.hidden = true;
 
-        renderDppCards(elDppGrid, items);
+        renderDppCards(elDppGrid, items, {
+            subjectName,
+            chapterName: state.dppChapterName || chapterKey
+        });
     });
 };

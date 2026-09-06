@@ -2,6 +2,7 @@
   {
     "title": "Algorithms PW",
     "bestFor": "Concept Building",
+    "exam": ["CUET PG"],
     "tags": ["algorithms", "computer science", "algorithms pw"],
     "action": "open",
     "cdnjs": true,
@@ -10,12 +11,8 @@
   {
     "title": "Data Structures PW",
     "bestFor": "Concept Building",
-    "tags": [
-      "data structures",
-      "computer science",
-      "dsa",
-      "data structures pw"
-    ],
+    "exam": ["CUET PG"],
+    "tags": ["data structures", "dsa"],
     "action": "open",
     "cdnjs": true,
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20notes/Data%20Structures%20PW.pdf"
@@ -23,6 +20,7 @@
   {
     "title": "Digital Logic PW",
     "bestFor": "Concept Building",
+    "exam": ["NIMCET", "CUET PG"],
     "tags": ["digital logic", "computer science", "digital logic pw"],
     "action": "open",
     "cdnjs": true,
@@ -31,12 +29,8 @@
   {
     "title": "Operating System PW",
     "bestFor": "Concept Building",
-    "tags": [
-      "operating system",
-      "computer science",
-      "os",
-      "operating system pw"
-    ],
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["operating system", "os"],
     "action": "open",
     "cdnjs": true,
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20notes/Operating%20System%20PW.pdf"
@@ -44,6 +38,7 @@
   {
     "title": "C Language & DSA Unacademy",
     "bestFor": "Concept Building",
+    "exam": ["CUET PG"],
     "tags": ["c language", "data structures", "dsa", "unacademy"],
     "action": "open",
     "cdnjs": true,
@@ -52,6 +47,7 @@
   {
     "title": "Operating Systems Unacademy",
     "bestFor": "Concept Building",
+    "exam": ["NIMCET", "CUET PG"],
     "tags": ["operating system", "computer science", "os", "unacademy"],
     "action": "open",
     "cdnjs": true,
@@ -60,6 +56,7 @@
   {
     "title": "Digital Logic Unacademy",
     "bestFor": "Concept Building",
+    "exam": ["NIMCET", "CUET PG"],
     "tags": ["digital logic", "computer science", "unacademy"],
     "action": "open",
     "cdnjs": true,

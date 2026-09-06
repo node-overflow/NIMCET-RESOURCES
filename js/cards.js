@@ -23,7 +23,7 @@ const UNIT_DEFS = [
 
     {
         key: "calculus", label: "Calculus", mark: "∫dx",
-        test: /limit|continuit|differentia|integrat|calculus|derivative/i
+        test: /limit|continuity|differentia|integra|calculus|derivative/i
     },
 
     {
@@ -320,6 +320,46 @@ const buildPyqTypeCard = (item) => buildCoverCard(item, {
 
 
 /* =========================================================
+   DPP CARD (cover style, matches practice cards)
+   ========================================================= */
+
+const dppQsBadgeHtml = (item) => {
+    if (!item.qc) return "";
+
+    return (
+        '<span class="cover-chip dpp-qs-chip">' +
+        '<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+        '<circle cx="12" cy="12" r="10"></circle>' +
+        '<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>' +
+        '<path d="M12 17h.01"></path>' +
+        '</svg>' +
+        '<span>' + escapeHtml(String(item.qc)) + ' Qs</span>' +
+        '</span>'
+    );
+};
+
+const buildDppCard = (item, context = {}) => {
+    const subjectName = context.subjectName || "";
+    const chapterName = context.chapterName || "";
+
+    const enrichedItem = {
+        ...item,
+        subject: subjectName,
+        chapter: chapterName
+    };
+
+    return buildCoverCard(enrichedItem, {
+        className: "dpp-cover-card",
+        tcVar: "var(--type-practice)",
+        badge: dppQsBadgeHtml(item),
+        topLabel: chapterName || subjectName,
+        headline: "",
+        metaLabel: "Daily Practice Problem"
+    });
+};
+
+
+/* =========================================================
    BOOK CARD
    ========================================================= */
 
@@ -565,9 +605,14 @@ export const renderGrid = (container, items) => {
 
     [...items]
         .sort(
-            (a, b) =>
-                (RESOURCE_ORDER[a.type] || 99) -
-                (RESOURCE_ORDER[b.type] || 99)
+            (a, b) => {
+                if (a.subject === "Mathematics" && b.subject === "Mathematics") {
+                    return 0;
+                }
+
+                return (RESOURCE_ORDER[a.type] || 99) -
+                    (RESOURCE_ORDER[b.type] || 99);
+            }
         )
         .forEach(item => {
 
@@ -585,7 +630,7 @@ export const renderGrid = (container, items) => {
    DPP CARDS
    ========================================================= */
 
-export const renderDppCards = (container, items) => {
+export const renderDppCards = (container, items, context = {}) => {
 
     container.innerHTML = "";
 
@@ -593,71 +638,9 @@ export const renderDppCards = (container, items) => {
         document.createDocumentFragment();
 
     items.forEach(item => {
-
-        const card = document.createElement("div");
-
-        card.className = "pyq-card dpp-card";
-
-        card.style.setProperty("--tc", "var(--type-practice)");
-
-        let dppUrl = getCardUrl(item);
-
-        if (dppUrl !== "#") {
-            dppUrl = escapeHtml(dppUrl);
-        }
-
-        card.innerHTML =
-
-            '<div class="pyq-card-body">' +
-
-            '<div class="dpp-card-header">' +
-
-            '<h3 class="pyq-title"></h3>' +
-
-            (item.qc
-                ? '<span class="dpp-badge">' +
-                '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
-                '<circle cx="12" cy="12" r="10"></circle>' +
-                '<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>' +
-                '<path d="M12 17h.01"></path>' +
-                '</svg>' +
-                '<span>' + escapeHtml(String(item.qc)) + ' Qs</span>' +
-                '</span>'
-                : "") +
-
-            '</div>' +
-
-            '<div class="pyq-card-foot">' +
-
-            '<a class="card-action" href="' +
-            dppUrl +
-            '" target="_blank" rel="noopener noreferrer">' +
-
-            actionLabel(item) +
-
-            ' <span class="arrow">→</span>' +
-
-            "</a>" +
-
-            "</div>" +
-
-            "</div>";
-
-        card.querySelector(".pyq-title").textContent =
-            item.title || "DPP";
-
-        const action =
-            card.querySelector(".card-action");
-
-        action.addEventListener("click", event => {
-
-            if (!item.url || item.url === "#") {
-                event.preventDefault();
-            }
-
-        });
-
-        fragment.appendChild(card);
+        fragment.appendChild(
+            buildDppCard(item, context)
+        );
     });
 
     container.appendChild(fragment);

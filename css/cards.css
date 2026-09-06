@@ -3,6 +3,7 @@
 .formula-card,
 .practice-card,
 .pyqtype-card,
+.dpp-cover-card,
 .pyq-card {
   border-left: 3px solid var(--tc);
 }
@@ -217,6 +218,16 @@
   width: 100%;
 }
 
+.cover-chip.dpp-qs-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cover-chip.dpp-qs-chip svg {
+  flex-shrink: 0;
+}
+
 /* =========================
    BOOK CARD
    ========================= */
@@ -393,40 +404,6 @@
   justify-content: flex-end;
   padding-top: 2px;
   z-index: 1;
-}
-
-.dpp-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 2px;
-}
-
-.dpp-card-header .pyq-title {
-  margin: 0;
-  flex: 1;
-  min-width: 0;
-}
-
-.dpp-card-header .dpp-badge {
-  flex-shrink: 0;
-}
-
-.dpp-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 4px 10px;
-  border-radius: 999px;
-  color: var(--dpp-badge);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-}
-
-.dpp-badge svg {
-  flex-shrink: 0;
 }
 
 .card-top {
