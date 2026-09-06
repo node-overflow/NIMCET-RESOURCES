@@ -145,10 +145,11 @@ export const getFilteredResources = () => {
         if (!matchesSearch(item, state.search)) return false;
 
         if (state.subject === "Computer" && state.examFilter && state.examFilter !== "All") {
-            const exam = (item.exam || "").toUpperCase();
+            const exams = (Array.isArray(item.exam) ? item.exam : [item.exam])
+                .map(e => (e || "").toUpperCase());
             const filter = state.examFilter.toUpperCase();
 
-            if (exam !== filter && exam !== "ALL") {
+            if (!exams.includes(filter) && !exams.includes("ALL")) {
                 return false;
             }
         }
@@ -161,7 +162,8 @@ export const getFilteredResources = () => {
         ];
 
         if (pyqExamSubjects.includes(state.subject) && state.type === "PYQ" && state.examFilter && state.examFilter !== "All") {
-            if ((item.exam || "") !== state.examFilter) return false;
+            const exams = Array.isArray(item.exam) ? item.exam : [item.exam];
+            if (!exams.includes(state.examFilter)) return false;
         }
 
         return true;

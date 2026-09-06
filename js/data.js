@@ -29,6 +29,10 @@ const loadFile = (entry) => {
                 ...item
             };
 
+            if (merged.exam != null && !Array.isArray(merged.exam)) {
+                merged.exam = [merged.exam];
+            }
+
             if (merged.subject === "Mathematics" && !merged.chapter) {
                 const guessed = deriveMathChapter(merged.title);
 

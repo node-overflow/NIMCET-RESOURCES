@@ -93,7 +93,7 @@ export const renderFilterPills = () => {
             new Set(
                 state.resources
                     .filter(r => r.subject === "Computer" && r.exam)
-                    .map(r => r.exam)
+                    .flatMap(r => r.exam)
             )
         );
 
@@ -121,7 +121,7 @@ export const renderFilterPills = () => {
             new Set(
                 state.resources
                     .filter(r => r.subject === state.subject && r.type === "PYQ" && r.exam)
-                    .map(r => r.exam)
+                    .flatMap(r => r.exam)
             )
         );
 

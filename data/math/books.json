@@ -25,7 +25,7 @@
     "image": "https://m.media-amazon.com/images/I/51SGCrv669L._SL1485_.jpg",
     "tags": ["nimcet", "jee"],
     "featured": true,
-    "cdnjs": true,
+    "reader": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/black%20book%20by%20vikas%20gupta.pdf"
   },
@@ -284,7 +284,7 @@
     "image": "https://m.media-amazon.com/images/I/415-gH+pAPL.jpg",
     "tags": ["coodinate geometry", "concept building", "advanced practice"],
     "reader": true,
-    "action": "download",
+    "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/1.%20S.L.%20LONEY%20%5BCO-ORDINATE%20GEOMETRY%5D.pdf"
   },
   {
@@ -385,5 +385,14 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Disha%20Authentic%20SHORTCUTS%2C%20TIPS%2C%20TRICKS%20-%20Er.%20Vaibhav%20Singh.pdf"
+  },
+  {
+    "title": "Practice Question in Calculus",
+    "bestFor": "Practice",
+    "image": "https://m.media-amazon.com/images/I/61+mZ3ZRb1L._SL1000_.jpg",
+    "tags": ["calculus", "problem practice"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Practice%20Question%20in%20Calculus%20by%20GB%20Sir.pdf"
   }
 ]

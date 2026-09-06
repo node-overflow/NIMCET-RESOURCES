@@ -79,7 +79,12 @@ const getUnitInfo = (item) => {
 
 const examTagHtml = (item) => {
     if (item.subject === "Computer" && item.exam) {
-        return '<span class="video-exam-tag">' + escapeHtml(item.exam) + "</span>";
+        const exams = Array.isArray(item.exam) ? item.exam : [item.exam];
+
+        return exams
+            .filter(Boolean)
+            .map(exam => '<span class="video-exam-tag">' + escapeHtml(exam) + "</span>")
+            .join("");
     }
 
     return "";
@@ -307,7 +312,7 @@ const buildPyqTypeCard = (item) => buildCoverCard(item, {
     className: "pyqtype-card",
     tcVar: "var(--type-pyq)",
     badge: yearBadgeHtml(item),
-    topLabel: item.exam || item.subject || "",
+    topLabel: (Array.isArray(item.exam) ? item.exam.join(" / ") : item.exam) || item.subject || "",
     headline: "",
     metaLabel: "Previous Year Questions",
     hideExamTag: true

@@ -334,7 +334,7 @@ const buildSkeleton = () => {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Scale / sizing                                                     */
+/*  Scale / sizing                                                    */
 /* ------------------------------------------------------------------ */
 const computeFitWidthScale = () => {
     const available = isMobile() ? els.scroller.clientWidth * 0.9 : els.scroller.clientWidth - 48;
