@@ -1,10 +1,250 @@
 [
   {
-    "title": "Profit & Loss Practice Set",
-    "chapter": "Profit and Loss",
-    "bestFor": "Timed Practice",
-    "tags": ["profit and loss"],
+    "title": "Area",
+    "owner": "R S Aggarwal",
+    "tags": ["area", "geometry", "mensuration"],
+    "cdnjs": true,
     "action": "open",
-    "url": "#"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Area.pdf"
+  },
+  {
+    "title": "Average",
+    "owner": "R S Aggarwal",
+    "tags": ["average", "arithmetic", "mean"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Average.pdf"
+  },
+  {
+    "title": "Boats & Streams",
+    "owner": "R S Aggarwal",
+    "tags": ["boats", "streams", "time and distance"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Boats%20%26%20Streams.pdf"
+  },
+  {
+    "title": "Calendar",
+    "owner": "R S Aggarwal",
+    "tags": ["calendar", "dates", "odd days"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Calendar.pdf"
+  },
+  {
+    "title": "Chain Rule",
+    "owner": "R S Aggarwal",
+    "tags": ["chain rule", "proportion", "work"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Chain%20Rule.pdf"
+  },
+  {
+    "title": "Clocks",
+    "owner": "R S Aggarwal",
+    "tags": ["clocks", "time", "angles"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Clocks.pdf"
+  },
+  {
+    "title": "Compound Interest",
+    "owner": "R S Aggarwal",
+    "tags": ["compound interest", "interest", "growth"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Compound%20Interest.pdf"
+  },
+  {
+    "title": "Decimal Fractions",
+    "owner": "R S Aggarwal",
+    "tags": ["decimals", "fractions", "arithmetic"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Decimal%20Fractions.pdf"
+  },
+  {
+    "title": "HCF & LCM",
+    "owner": "R S Aggarwal",
+    "tags": ["hcf", "lcm", "number system"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/HCF%20%26%20LCM.pdf"
+  },
+  {
+    "title": "Heights & Distances",
+    "owner": "R S Aggarwal",
+    "tags": ["heights", "distances", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Heights%20%26%20Distances.pdf"
+  },
+  {
+    "title": "Logarithms",
+    "owner": "R S Aggarwal",
+    "tags": ["logarithms", "indices", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Logarithms.pdf"
+  },
+  {
+    "title": "Mixtures and Allegations",
+    "owner": "R S Aggarwal",
+    "tags": ["mixtures", "allegation", "ratio"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Mixtures%20and%20Allegations.pdf"
+  },
+  {
+    "title": "Number System",
+    "owner": "R S Aggarwal",
+    "tags": ["number system", "integers", "numbers"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Number%20System.pdf"
+  },
+  {
+    "title": "Odd Man Out",
+    "owner": "R S Aggarwal",
+    "tags": ["odd man out", "classification", "numbers"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Odd%20man%20out.pdf"
+  },
+  {
+    "title": "P & C",
+    "owner": "R S Aggarwal",
+    "tags": ["permutation", "combination", "counting"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/P%20%26%20C.pdf"
+  },
+  {
+    "title": "Partnership",
+    "owner": "R S Aggarwal",
+    "tags": ["partnership", "ratio", "profit sharing"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Partnership.pdf"
+  },
+  {
+    "title": "Percentage",
+    "owner": "R S Aggarwal",
+    "tags": ["percentage", "profit", "loss"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Percentage.pdf"
+  },
+  {
+    "title": "Pipes & Cisterns",
+    "owner": "R S Aggarwal",
+    "tags": ["pipes", "cisterns", "time and work"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Pipes%20%26%20Cisterns.pdf"
+  },
+  {
+    "title": "Probability",
+    "owner": "R S Aggarwal",
+    "tags": ["probability", "events", "counting"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Probability.pdf"
+  },
+  {
+    "title": "Problems on Ages",
+    "owner": "R S Aggarwal",
+    "tags": ["ages", "algebra", "ratio"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Problems%20on%20ages.pdf"
+  },
+  {
+    "title": "Problems on Numbers",
+    "owner": "R S Aggarwal",
+    "tags": ["numbers", "number system", "arithmetic"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Problems%20on%20numbers.pdf"
+  },
+  {
+    "title": "Problems on Trains",
+    "owner": "R S Aggarwal",
+    "tags": ["trains", "speed", "time and distance"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Problems%20on%20trains.pdf"
+  },
+  {
+    "title": "Profit & Loss",
+    "owner": "R S Aggarwal",
+    "tags": ["profit", "loss", "percentage"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Profit%20%26%20Loss.pdf"
+  },
+  {
+    "title": "Ratio & Proportion",
+    "owner": "R S Aggarwal",
+    "tags": ["ratio", "proportion", "arithmetic"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Ratio%20%26%20Proportion.pdf"
+  },
+  {
+    "title": "Simple Interest",
+    "owner": "R S Aggarwal",
+    "tags": ["simple interest", "interest", "percentage"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Simple%20Interest.pdf"
+  },
+  {
+    "title": "Simplification",
+    "owner": "R S Aggarwal",
+    "tags": ["simplification", "arithmetic", "bodmas"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Simplification.pdf"
+  },
+  {
+    "title": "Square & Cube Roots",
+    "owner": "R S Aggarwal",
+    "tags": ["square roots", "cube roots", "surds"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Square%20%26%20Cube%20Roots.pdf"
+  },
+  {
+    "title": "Surds & Indices",
+    "owner": "R S Aggarwal",
+    "tags": ["surds", "indices", "exponents"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Surds%20%26%20Indices.pdf"
+  },
+  {
+    "title": "Time & Distance",
+    "owner": "R S Aggarwal",
+    "tags": ["time", "distance", "speed"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Time%20%26%20Distance.pdf"
+  },
+  {
+    "title": "Time & Work",
+    "owner": "R S Aggarwal",
+    "tags": ["time", "work", "efficiency"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Time%20%26%20Work.pdf"
+  },
+  {
+    "title": "Volume & Surface Areas",
+    "owner": "R S Aggarwal",
+    "tags": ["volume", "surface area", "mensuration"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quants%20r%20s%20aggarwal%20practice/Volume%20%26%20Surface%20Areas.pdf"
   }
 ]

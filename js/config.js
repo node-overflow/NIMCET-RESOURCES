@@ -76,7 +76,8 @@ export const EXAMS = [
     { key: "MAH CET", name: "MAH CET", full: "Maharashtra Common Entrance Test (MCA)", symbol: "M" },
     { key: "JAMIA MCA", name: "JAMIA MCA", full: "Jamia Millia Islamia MCA Entrance", symbol: "J" },
     { key: "DU MCA", name: "DU MCA", full: "Delhi University MCA Entrance", symbol: "D" },
-    { key: "BHU MCA", name: "BHU MCA", full: "Banaras Hindu University MCA Entrance", symbol: "B" }
+    { key: "BHU MCA", name: "BHU MCA", full: "Banaras Hindu University MCA Entrance", symbol: "B" },
+    { key: "JNU MCA", name: "JNU MCA", full: "Jawaharlal Nehru University MCA Entrance", symbol: "J" }
 ];
 
 export const NITS = [

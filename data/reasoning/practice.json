@@ -1,10 +1,122 @@
 [
   {
-    "title": "Analogy & Classification Practice Set",
-    "chapter": "Analogy",
-    "bestFor": "Timed Practice",
-    "tags": ["analogy", "classification"],
+    "title": "Alphabet Test",
+    "owner": "R S Aggarwal",
+    "tags": ["alphabet", "letter series", "arrangement"],
+    "cdnjs": true,
     "action": "open",
-    "url": "#"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Alphabet%20Test%20RA.pdf"
+  },
+  {
+    "title": "Analogy",
+    "owner": "R S Aggarwal",
+    "tags": ["analogy", "word relationship", "logical reasoning"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Analogy%20RA.pdf"
+  },
+  {
+    "title": "Arithmetical Reasoning",
+    "owner": "R S Aggarwal",
+    "tags": ["arithmetic", "mathematical reasoning", "word problems"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Arithmetical%20Reasoning%20RA.pdf"
+  },
+  {
+    "title": "Assertion & Reasoning",
+    "owner": "R S Aggarwal",
+    "tags": ["assertion", "reasoning", "logic"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Assertion%20%26%20Reasoning%20RA.pdf"
+  },
+  {
+    "title": "Blood Relation",
+    "owner": "R S Aggarwal",
+    "tags": ["blood relations", "family tree", "relationships"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Blood%20Relation%20RA.pdf"
+  },
+  {
+    "title": "Classification",
+    "owner": "R S Aggarwal",
+    "tags": ["classification", "odd one out", "logical reasoning"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Classification%20RA.pdf"
+  },
+  {
+    "title": "Coding Decoding",
+    "owner": "R S Aggarwal",
+    "tags": ["coding", "decoding", "patterns"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Coding%20Decoding%20RA.pdf"
+  },
+  {
+    "title": "Data Sufficiency",
+    "owner": "R S Aggarwal",
+    "tags": ["data sufficiency", "logic", "decision making"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Data%20Sufficiency%20RA.pdf"
+  },
+  {
+    "title": "Descision Making",
+    "owner": "R S Aggarwal",
+    "tags": ["decision making", "logic", "problem solving"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Descision%20Making%20RA.pdf"
+  },
+  {
+    "title": "Direction Sense",
+    "owner": "R S Aggarwal",
+    "tags": ["directions", "distance", "position"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Direction%20Sense%20RA.pdf"
+  },
+  {
+    "title": "Number, Ranking & Time",
+    "owner": "R S Aggarwal",
+    "tags": ["ranking", "numbers", "order"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Number%2C%20Ranking%20%26%20Time%20RA.pdf"
+  },
+  {
+    "title": "Puzzles",
+    "owner": "R S Aggarwal",
+    "tags": ["puzzles", "arrangements", "logical reasoning"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Puzzles%20RA.pdf"
+  },
+  {
+    "title": "Sequence of Words",
+    "owner": "R S Aggarwal",
+    "tags": ["sequence", "words", "arrangement"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Sequence%20of%20words%20RA.pdf"
+  },
+  {
+    "title": "Series",
+    "owner": "R S Aggarwal",
+    "tags": ["series", "number series", "patterns"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Series%20RA.pdf"
+  },
+  {
+    "title": "Venn Diagram",
+    "owner": "R S Aggarwal",
+    "tags": ["venn diagram", "sets", "classification"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20r%20s%20aggarwal%20practice/Venn%20Diagram%20RA.pdf"
   }
 ]

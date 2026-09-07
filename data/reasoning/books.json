@@ -18,6 +18,15 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/reasoning%20books/B%20S%20Sijwali%20Reasoning%20(1).pdf"
   },
   {
+    "title": "Shortcuts in Reasoning",
+    "bestFor": "Shortcut",
+    "image": "https://m.media-amazon.com/images/I/41cDq59SAlL.jpg",
+    "tags": ["verbal reasoning", "non-verbal reasoning", "trick", "shortcut"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20books/Shortcuts_in_Reasoning_Verbal%2C_Non_Verbal_%26_Analytical_for_Competitive.pdf"
+  },
+  {
     "title": "Puzzles & Seating Arrangement",
     "bestFor": "Foundation",
     "image": "https://m.media-amazon.com/images/I/81al8W4rykL._SL1500_.jpg",
@@ -25,6 +34,15 @@
     "reader": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20books/Book%20on%20Puzzles%20%26%20Seating%20Arrangement%20(2).pdf"
+  },
+  {
+    "title": "Ace Reasoning - 3000+ Chapterwise Questions",
+    "bestFor": "Practice",
+    "image": "https://m.media-amazon.com/images/I/61psJjlsw+L._SL1100_.jpg",
+    "tags": ["verbal reasoning", "non-verbal reasoning", "practice"],
+    "reader": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/reasoning%20books/Ace%20reasoning%203rd%20edition.pdf"
   },
   {
     "title": "Logical Reasoning by Arun Sharma",

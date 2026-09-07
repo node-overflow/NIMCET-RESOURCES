@@ -355,6 +355,30 @@
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/bhu%20mca/BHU_2011_MCA_ACTUAL%20(1).pdf"
   },
   {
+    "exam": "JNU MCA",
+    "year": 2016,
+    "title": "JNU MCA 2016",
+    "action": "open",
+    "cdnjs": true,
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyqs/jnu%20mca/JNU%20MCA%20-2016.pdf"
+  },
+  {
+    "exam": "JNU MCA",
+    "year": 2017,
+    "title": "JNU MCA 2017",
+    "action": "open",
+    "cdnjs": true,
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyqs/jnu%20mca/JNU%20MCA%20-2017.pdf"
+  },
+  {
+    "exam": "JNU MCA",
+    "year": 2018,
+    "title": "JNU MCA 2018",
+    "action": "open",
+    "cdnjs": true,
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyqs/jnu%20mca/JNU%20MCA%20-2018.pdf"
+  },
+  {
     "exam": "WB JECA",
     "year": 2025,
     "title": "WB JECA 2025",
