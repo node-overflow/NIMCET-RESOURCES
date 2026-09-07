@@ -9,7 +9,8 @@ export const $$ = (selector, context = document) =>
 export const elSidebar = $("#sidebar");
 export const elOverlay = $("#overlay");
 export const elSidebarClose = $("#sidebarClose");
-export const elMenuBBtn = $('.bnav-item[data-bottom="menu"]');
+export const elMobileMenuBtn = $("#mobileMenuBtn");
+export const elMobileTopbar = $("#mobileTopbar");
 
 export const elViewHome = $("#view-home");
 export const elViewExamInfo = $("#view-exam-info");
@@ -81,13 +82,9 @@ export const elNitMarquee = $("#nitMarquee");
 export const elFaqList = $("#faqList");
 export const elFaqCategories = document.getElementById("faqCategories");
 
-export const elFeatureGrid = $("#featureGrid");
-export const elStepsGrid = $("#stepsGrid");
 export const elHomeUpdatesPreview = $("#homeUpdatesPreview");
 export const elHomeUpdatesBtn = $("#homeUpdatesBtn");
 export const elCommunityBtn = $("#communityBtn");
-export const elFinalCtaBrowseBtn = $("#finalCtaBrowseBtn");
-export const elFinalCtaPyqBtn = $("#finalCtaPyqBtn");
 
 export const elExamInfoNav = $("#examInfoQuickNav");
 
@@ -121,7 +118,6 @@ export const elMistakesList = $("#mistakesList");
 
 export const elMythFactGrid = $("#mythFactGrid");
 export const elExamFaqList = $("#examFaqList");
-export const elFounderNote = $("#founderNote");
 
 export const elResourcesHeading = $("#resourcesHeading");
 export const elResourcesCount = $("#resourcesCount");

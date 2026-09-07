@@ -282,48 +282,6 @@ export const MONTH_SHORT = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AU
 
 export const TELEGRAM_URL = "https://t.me/nimcet2027group";
 
-export const HOME_FEATURES = [
-    {
-        icon: "🎯",
-        title: "Core Resources, Always Free",
-        desc: "Every book, note, PYQ and DPP stays free, permanently. No paywalls, no 'unlock with premium'."
-    },
-    {
-        icon: "🗂️",
-        title: "Organized, Not Dumped",
-        desc: "Everything is sorted by subject and type, so you spend time studying, not searching."
-    },
-    {
-        icon: "🔄",
-        title: "Kept Current",
-        desc: "New papers, notes and exam notifications get added as they are released, not months later."
-    },
-    {
-        icon: "📝",
-        title: "Mock Tests, Done Right",
-        desc: "Free mock tests to build exam temperament, with a premium mock series in the works for deeper rank analysis."
-    }
-];
-
-export const HOW_IT_WORKS = [
-    {
-        title: "Pick your subject",
-        desc: "Mathematics, Logical Reasoning, Computer, Quantitative Aptitude or English, start where you need it most."
-    },
-    {
-        title: "Browse by type",
-        desc: "Books, Notes, PYQs, Videos, Practice sets or Formula sheets, filtered exactly the way you want."
-    },
-    {
-        title: "Drill with PYQs & DPPs",
-        desc: "Work through exam-wise previous year papers and chapter-wise Daily Practice Problems."
-    },
-    {
-        title: "Stay ahead on updates",
-        desc: "Track notifications, exam dates, admit cards and results in one running timeline."
-    }
-];
-
 /* =========================================================
    EXAM PATTERN
    ========================================================= */
@@ -447,16 +405,6 @@ export const MYTHS_FACTS = [
         fact: "Our mock tests stay free by default. A premium mock series is planned for aspirants who want deeper score analysis, but it will never replace the free tier."
     }
 ];
-
-/* =========================================================
-   FOUNDER'S NOTE
-   ========================================================= */
-
-export const FOUNDER_NOTE = {
-    title: "A note from the team behind this website",
-    body: "We are not a company. We are just a small group of NIMCET aspirants and alumni who know how difficult it can be to find good study material. We built this site to make that easier. We are bringing together useful resources, one subject, one PYQ, and one DPP at a time. As more students need resources, we will keep adding more.",
-    signoff: "— Built by aspirants, for aspirants."
-};
 
 /* =========================================================
    EXAM INFO — QUICK NAV

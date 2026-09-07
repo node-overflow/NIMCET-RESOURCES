@@ -525,51 +525,6 @@ button.logo-card:hover {
 }
 
 /* ============ How-it-works steps ============ */
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 14px;
-}
-
-.step-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  min-width: 0;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 20px 18px 18px;
-}
-
-.step-num {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 999px;
-  background: var(--accent-dim);
-  color: var(--accent-text);
-  font-weight: 800;
-  font-size: 0.88rem;
-}
-
-.step-title {
-  margin: 4px 0 0;
-  font-size: 0.94rem;
-  font-weight: 650;
-  color: var(--text);
-}
-
-.step-desc {
-  margin: 0;
-  font-size: 0.83rem;
-  line-height: 1.6;
-  color: var(--text-dim);
-}
-
 /* ============ Section header with an inline "view all" link ============ */
 .section-head-row {
   display: flex;
@@ -635,28 +590,6 @@ button.logo-card:hover {
 }
 
 /* ============ Home page final CTA ============ */
-.home-final-cta {
-  text-align: center;
-  padding: 34px 20px 10px;
-  border-top: 1px solid var(--border);
-}
-
-.home-final-cta-title {
-  margin: 0 0 8px;
-  font-size: 1.3rem;
-  font-weight: 750;
-  color: var(--text);
-  letter-spacing: -0.01em;
-}
-
-.home-final-cta-sub {
-  margin: 0 auto;
-  max-width: 46ch;
-  color: var(--text-dim);
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
 /* ============ Site footer ============ */
 .site-footer {
   margin: 40px -48px -64px;
@@ -1046,37 +979,6 @@ button.logo-card:hover {
 }
 
 /* ============ Founder note ============ */
-.founder-note {
-  padding: 30px 34px;
-  border-radius: var(--radius-lg);
-  border: 1px dashed var(--border-strong);
-  background: var(--surface);
-  text-align: center;
-  max-width: 62ch;
-  margin: 0 auto;
-}
-
-.founder-note-title {
-  margin: 0 0 12px;
-  font-size: 1.1rem;
-  font-weight: 750;
-  color: var(--text);
-}
-
-.founder-note-body {
-  margin: 0;
-  color: var(--text-dim);
-  font-size: 0.9rem;
-  line-height: 1.7;
-}
-
-.founder-note-signoff {
-  margin: 14px 0 0;
-  color: var(--accent-text);
-  font-size: 0.85rem;
-  font-weight: 650;
-}
-
 /* ============ Exam info quick nav ============ */
 .exam-info-nav {
   position: sticky;

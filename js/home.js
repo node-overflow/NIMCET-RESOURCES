@@ -4,10 +4,7 @@ import {
     SUBJECTS,
     TYPES,
     FAQS_FILE,
-    HOME_FEATURES,
-    HOW_IT_WORKS,
-    TELEGRAM_URL,
-    FOUNDER_NOTE
+    TELEGRAM_URL
 } from "./config.js";
 
 import {
@@ -19,14 +16,9 @@ import {
     elHeroPyqBtn,
     elFaqCategories,
     elFaqList,
-    elFeatureGrid,
-    elStepsGrid,
     elHomeUpdatesPreview,
     elHomeUpdatesBtn,
-    elCommunityBtn,
-    elFinalCtaBrowseBtn,
-    elFinalCtaPyqBtn,
-    elFounderNote
+    elCommunityBtn
 } from "./dom.js";
 
 import { state } from "./state.js";
@@ -279,60 +271,6 @@ const renderFaqs = async () => {
     renderFaqQuestions(active ? active.faqs : []);
 };
 
-const renderFeatures = () => {
-    if (!elFeatureGrid) return;
-
-    elFeatureGrid.innerHTML = "";
-
-    const fragment = document.createDocumentFragment();
-
-    HOME_FEATURES.forEach(feature => {
-        const card = document.createElement("div");
-
-        card.className = "feature-card";
-
-        card.innerHTML =
-            '<span class="feature-icon" aria-hidden="true"></span>' +
-            '<h3 class="feature-title"></h3>' +
-            '<p class="feature-desc"></p>';
-
-        card.querySelector(".feature-icon").textContent = feature.icon;
-        card.querySelector(".feature-title").textContent = feature.title;
-        card.querySelector(".feature-desc").textContent = feature.desc;
-
-        fragment.appendChild(card);
-    });
-
-    elFeatureGrid.appendChild(fragment);
-};
-
-const renderSteps = () => {
-    if (!elStepsGrid) return;
-
-    elStepsGrid.innerHTML = "";
-
-    const fragment = document.createDocumentFragment();
-
-    HOW_IT_WORKS.forEach((step, index) => {
-        const card = document.createElement("div");
-
-        card.className = "step-card";
-
-        card.innerHTML =
-            '<span class="step-num"></span>' +
-            '<h3 class="step-title"></h3>' +
-            '<p class="step-desc"></p>';
-
-        card.querySelector(".step-num").textContent = index + 1;
-        card.querySelector(".step-title").textContent = step.title;
-        card.querySelector(".step-desc").textContent = step.desc;
-
-        fragment.appendChild(card);
-    });
-
-    elStepsGrid.appendChild(fragment);
-};
-
 const renderHomeUpdatesPreview = (onUpdatesClick) => {
     if (!elHomeUpdatesPreview) return;
 
@@ -380,19 +318,6 @@ const renderHomeUpdatesPreview = (onUpdatesClick) => {
     elHomeUpdatesPreview.appendChild(fragment);
 };
 
-const renderFounderNote = () => {
-    if (!elFounderNote) return;
-
-    elFounderNote.innerHTML =
-        '<h2 class="founder-note-title"></h2>' +
-        '<p class="founder-note-body"></p>' +
-        '<p class="founder-note-signoff"></p>';
-
-    elFounderNote.querySelector(".founder-note-title").textContent = FOUNDER_NOTE.title;
-    elFounderNote.querySelector(".founder-note-body").textContent = FOUNDER_NOTE.body;
-    elFounderNote.querySelector(".founder-note-signoff").textContent = FOUNDER_NOTE.signoff;
-};
-
 export const renderHome = (
     onSubjectClick,
     onTypeClick,
@@ -420,32 +345,11 @@ export const renderHome = (
         );
     }
 
-    if (elFinalCtaBrowseBtn && !elFinalCtaBrowseBtn.dataset.wired) {
-        elFinalCtaBrowseBtn.dataset.wired = "true";
-
-        elFinalCtaBrowseBtn.addEventListener(
-            "click",
-            onBrowseAll
-        );
-    }
-
-    if (elFinalCtaPyqBtn && !elFinalCtaPyqBtn.dataset.wired) {
-        elFinalCtaPyqBtn.dataset.wired = "true";
-
-        elFinalCtaPyqBtn.addEventListener(
-            "click",
-            onPyqsHome
-        );
-    }
-
     if (elCommunityBtn) {
         elCommunityBtn.href = TELEGRAM_URL;
     }
 
-    renderFeatures();
-    renderSteps();
     renderHomeUpdatesPreview(onUpdatesClick);
-    renderFounderNote();
 
     renderFaqs();
 

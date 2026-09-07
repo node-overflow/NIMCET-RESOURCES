@@ -9,7 +9,8 @@ import {
     elDppBackBtn,
     elMocksBackBtn,
     elSearchInput,
-    elScrollTopBtn
+    elScrollTopBtn,
+    elMobileMenuBtn
 } from "./dom.js";
 
 import { state } from "./state.js";
@@ -76,6 +77,10 @@ export const wireStaticEvents = () => {
 
     elSidebarClose.addEventListener("click", closeSidebar);
 
+    if (elMobileMenuBtn) {
+        elMobileMenuBtn.addEventListener("click", toggleSidebar);
+    }
+
     $$(".nav-item").forEach(button => {
         button.addEventListener("click", () => {
             handleNavAction(button);
@@ -117,39 +122,6 @@ export const wireStaticEvents = () => {
     elSearchInput.addEventListener("input", event => {
         state.search = event.target.value;
         debouncedRenderResults();
-    });
-
-    $$(".bnav-item").forEach(button => {
-        button.addEventListener("click", () => {
-            const action = button.dataset.bottom;
-
-            if (action === "home") {
-                goHome();
-            } else if (action === "all") {
-                goToResources({
-                    subject: null,
-                    type: null,
-                    search: ""
-                });
-            } else if (action === "menu") {
-                toggleSidebar();
-            } else if (action === "search") {
-                closeSidebar();
-
-                if (state.view !== "resources") {
-                    goToResources({});
-                }
-
-                setTimeout(() => {
-                    elSearchInput.focus();
-
-                    elSearchInput.scrollIntoView({
-                        behavior: "smooth",
-                        block: "center"
-                    });
-                }, 50);
-            }
-        });
     });
 
     const handleScrollTopButton = () => {

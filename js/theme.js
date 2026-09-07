@@ -3,20 +3,27 @@
 const STORAGE_KEY = "nimcet-theme";
 
 const elToggle = document.getElementById("themeToggle");
+const elToggleMobile = document.getElementById("themeToggleMobile");
 const elThemeColor = document.querySelector('meta[name="theme-color"]');
 const elColorScheme = document.querySelector('meta[name="color-scheme"]');
+
+const setToggleIcons = (theme) => {
+    const icon = theme === "light" ? "☀️" : "🌙";
+    if (elToggle) elToggle.textContent = icon;
+    if (elToggleMobile) elToggleMobile.textContent = icon;
+};
 
 const applyTheme = (theme) => {
     if (theme === "light") {
         document.documentElement.setAttribute("data-theme", "light");
 
-        if (elToggle) elToggle.textContent = "☀️";
+        setToggleIcons("light");
         if (elThemeColor) elThemeColor.setAttribute("content", "#f7f8fa");
         if (elColorScheme) elColorScheme.setAttribute("content", "light");
     } else {
         document.documentElement.removeAttribute("data-theme");
 
-        if (elToggle) elToggle.textContent = "🌙";
+        setToggleIcons("dark");
         if (elThemeColor) elThemeColor.setAttribute("content", "#0a0a0c");
         if (elColorScheme) elColorScheme.setAttribute("content", "dark");
     }
@@ -34,7 +41,7 @@ const saveTheme = (theme) => {
     try {
         localStorage.setItem(STORAGE_KEY, theme);
     } catch (error) {
-        // Private browsing / storage disabled
+        // ignore
     }
 };
 
@@ -55,5 +62,8 @@ export const wireThemeToggle = () => {
 
     if (elToggle) {
         elToggle.addEventListener("click", toggleTheme);
+    }
+    if (elToggleMobile) {
+        elToggleMobile.addEventListener("click", toggleTheme);
     }
 };

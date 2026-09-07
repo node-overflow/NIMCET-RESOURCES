@@ -52,7 +52,6 @@ svg {
   .chip:active,
   .pill:active,
   .nav-item:active,
-  .bnav-item:active,
   .icon-btn:active {
     opacity: 0.75;
   }
