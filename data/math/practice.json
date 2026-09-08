@@ -254,5 +254,213 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Vector%20GB%20Sir.pdf"
+  },
+  {
+    "title": "Application of Derivatives HLP",
+    "owner": "Resonance",
+    "tags": ["aod", "calculus", "application of derivatives"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/AOD%20HLP.pdf"
+  },
+  {
+    "title": "Application of Derivatives",
+    "owner": "Resonance",
+    "tags": ["aod", "calculus", "application of derivatives"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/AOD%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Binomial Theorem",
+    "owner": "Resonance",
+    "tags": ["binomial theorem", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Binomial%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Circle",
+    "owner": "Resonance",
+    "tags": ["circle", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Circle%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Complex Numbers HLP",
+    "owner": "Resonance",
+    "tags": ["complex numbers", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Complex%20HLP.pdf"
+  },
+  {
+    "title": "Complex Numbers",
+    "owner": "Resonance",
+    "tags": ["complex numbers", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Complex%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Conic Sections",
+    "owner": "Resonance",
+    "tags": ["conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Conic%20Section%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Definite Integration",
+    "owner": "Resonance",
+    "tags": ["definite integration", "integral calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Definite%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Differential Equations",
+    "owner": "Resonance",
+    "tags": ["differential equations", "integral calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Diff%20Eqn%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Differentiation",
+    "owner": "Resonance",
+    "tags": ["differentiation", "differential calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Differentiation%20Reso.pdf"
+  },
+  {
+    "title": "Functions",
+    "owner": "Resonance",
+    "tags": ["functions", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Function%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Indefinite Integration",
+    "owner": "Resonance",
+    "tags": ["indefinite integration", "integral calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Indefinite%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Linear Combination of Divisors",
+    "owner": "Resonance",
+    "tags": ["linear combination of divisors", "number theory"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/LCD%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Matrices and Determinants",
+    "owner": "Resonance",
+    "tags": ["matrices", "determinants", "linear algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/M%26D%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Permutation and Combination",
+    "owner": "Resonance",
+    "tags": ["permutation and combination", "combinatorics"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/P%26C%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Probability",
+    "owner": "Resonance",
+    "tags": ["probability"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Probability%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Progressions",
+    "owner": "Resonance",
+    "tags": ["progressions", "sequences and series"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Progression%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Quadratic Equations",
+    "owner": "Resonance",
+    "tags": ["quadratic equations", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Quadratic%20Eqn%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Quadratic Equations HLP",
+    "owner": "Resonance",
+    "tags": ["quadratic equations", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Quadratic%20HLP.pdf"
+  },
+  {
+    "title": "Relations, Functions and Inverse Trigonometric Functions",
+    "owner": "Resonance",
+    "tags": ["relations", "functions", "inverse trigonometric functions"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/RF_ITF%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Sequence of Numbers",
+    "owner": "Resonance",
+    "tags": ["sequence of numbers", "sequences and series"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/SOT%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Set Theory and Inequalities",
+    "owner": "Resonance",
+    "tags": ["sets", "inequalities", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Set%20Ineqn%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Straight Lines",
+    "owner": "Resonance",
+    "tags": ["straight lines", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/St%20Lines%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Statistics",
+    "owner": "Resonance",
+    "tags": ["statistics"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Statistics%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Trigonometry",
+    "owner": "Resonance",
+    "tags": ["trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Trigo%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Vectors and Three-Dimensional Geometry",
+    "owner": "Resonance",
+    "tags": ["vectors", "three-dimensional geometry", "3d geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Vector%203D%20Reso%20qs.pdf"
   }
 ]

@@ -1,11 +1,20 @@
 [
   {
-    "title": "R S Aggarwal Reasoning",
+    "title": "R S Aggarwal Quantative Aptitude",
     "bestFor": "Foundation",
     "image": "https://m.media-amazon.com/images/I/71dhQppgVlL._SL1500_.jpg",
     "tags": ["quantitative aptitude", "arithmetic"],
     "reader": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quant%20books/RS%20AGRAWAL%20QUANTS.pdf"
+  },
+  {
+    "title": "General Aptitude",
+    "bestFor": "Foundation",
+    "image": "https://raw.githubusercontent.com/rawcontentgit/image-host/refs/heads/main/books/aptitude_chawla.png",
+    "tags": ["quantitative aptitude", "arithmetic"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/quant%20books/General%20Aptitude%20WB.pdf"
   }
 ]
