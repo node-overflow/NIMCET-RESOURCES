@@ -1,10 +1,370 @@
 [
   {
-    "title": "Set Theory & Relations \u2013 Notes",
-    "bestFor": "Quick Revision",
-    "tags": ["sets", "relations", "functions"],
+    "title": "Application of Derivatives",
+    "owner": "Resonance",
+    "tags": ["application of derivatives", "aod"],
     "cdnjs": true,
-    "action": "download",
-    "url": "#"
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/AOD%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Binomial Theorem",
+    "owner": "Resonance",
+    "tags": ["binomial theorem", "binomial"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Binomial%20Reso.pdf"
+  },
+  {
+    "title": "Circle",
+    "owner": "Resonance",
+    "tags": ["circle", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Circle%20Reso.pdf"
+  },
+  {
+    "title": "Complex Numbers",
+    "owner": "Resonance",
+    "tags": ["complex numbers", "complex"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Complex%20Reso.pdf"
+  },
+  {
+    "title": "Conic Sections",
+    "owner": "Resonance",
+    "tags": ["conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Conic%20Section%20Reso.pdf"
+  },
+  {
+    "title": "Definite Integration",
+    "owner": "Resonance",
+    "tags": ["definite integration", "integration"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Definite%20Reso.pdf"
+  },
+  {
+    "title": "Differential Equations",
+    "owner": "Resonance",
+    "tags": ["differential equations", "differentiation"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Diff%20Eqn%20Reso.pdf"
+  },
+  {
+    "title": "Functions",
+    "owner": "Resonance",
+    "tags": ["functions", "relations", "sets"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Function%20Reso.pdf"
+  },
+  {
+    "title": "Indefinite Integration",
+    "owner": "Resonance",
+    "tags": ["indefinite integration", "integration"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Indefinite%20Reso.pdf"
+  },
+  {
+    "title": "Limits, Continuity and Differentiability",
+    "owner": "Resonance",
+    "tags": ["limits", "continuity", "differentiability"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/LCD%20Reso.pdf"
+  },
+  {
+    "title": "Matrices and Determinants",
+    "owner": "Resonance",
+    "tags": ["matrices", "determinants"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/M%26D%20Reso.pdf"
+  },
+  {
+    "title": "Permutation and Combination",
+    "owner": "Resonance",
+    "tags": ["permutation", "combination", "p&c"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/P%26C%20Reso.pdf"
+  },
+  {
+    "title": "Probability",
+    "owner": "Resonance",
+    "tags": ["probability"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Probability%20Reso.pdf"
+  },
+  {
+    "title": "Progressions",
+    "owner": "Resonance",
+    "tags": ["progressions", "sequences and series"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Progression%20Reso.pdf"
+  },
+  {
+    "title": "Quadratic Equations",
+    "owner": "Resonance",
+    "tags": ["quadratic equations", "quadratic"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Quadratic%20Eqn%20Reso.pdf"
+  },
+  {
+    "title": "Relations and Functions",
+    "owner": "Resonance",
+    "tags": ["relations", "functions"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/RF_ITF%20Reso.pdf"
+  },
+  {
+    "title": "Sequences and Series",
+    "owner": "Resonance",
+    "tags": ["sequences and series", "series"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/SOT%20Reso.pdf"
+  },
+  {
+    "title": "Sets and Inequalities",
+    "owner": "Resonance",
+    "tags": ["sets", "inequalities"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Set%20Ineqn%20Reso.pdf"
+  },
+  {
+    "title": "Straight Lines",
+    "owner": "Resonance",
+    "tags": ["straight lines", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/St%20Lines%20Reso.pdf"
+  },
+  {
+    "title": "Statistics",
+    "owner": "Resonance",
+    "tags": ["statistics"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Statistics%20Reso.pdf"
+  },
+  {
+    "title": "Trigonometry",
+    "owner": "Resonance",
+    "tags": ["trigonometry", "trigonometric functions"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Trigo%20Reso.pdf"
+  },
+  {
+    "title": "Vector and 3D Geometry",
+    "owner": "Resonance",
+    "tags": ["vectors", "three dimensional geometry", "3d geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20theory/Vector%203D%20Reso.pdf"
+  },
+  {
+    "title": "Application of Derivatives",
+    "owner": "Allen",
+    "tags": ["application of derivatives", "derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/AOD.pdf"
+  },
+  {
+    "title": "Binomial Theorem",
+    "owner": "Allen",
+    "tags": ["binomial theorem", "algebra", "expansion"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/BT.pdf"
+  },
+  {
+    "title": "Circle",
+    "owner": "Allen",
+    "tags": ["circle", "coordinate geometry", "conic sections"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Circle.pdf"
+  },
+  {
+    "title": "Complex Numbers",
+    "owner": "Allen",
+    "tags": ["complex numbers", "algebra", "complex plane"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Complex.pdf"
+  },
+  {
+    "title": "Conic Sections",
+    "owner": "Allen",
+    "tags": ["conic sections", "coordinate geometry", "parabola"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Conic.pdf"
+  },
+  {
+    "title": "Determinants",
+    "owner": "Allen",
+    "tags": ["determinants", "matrices", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Determinant_.pdf"
+  },
+  {
+    "title": "Functions and Inverse Trigonometric Functions",
+    "owner": "Allen",
+    "tags": ["functions", "inverse trigonometric functions", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Function%20ITF.pdf"
+  },
+  {
+    "title": "Fundamentals of Algebra",
+    "owner": "Allen",
+    "tags": ["algebra", "fundamentals", "equations"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Fundamental%20of%20Algebra.pdf"
+  },
+  {
+    "title": "Fundamentals of Geometry",
+    "owner": "Allen",
+    "tags": ["geometry", "fundamentals", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Fundamental%20of%20geometry.pdf"
+  },
+  {
+    "title": "Limits, Continuity and Differentiability",
+    "owner": "Allen",
+    "tags": ["limits", "continuity", "differentiation"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/LCD.pdf"
+  },
+  {
+    "title": "Logarithms",
+    "owner": "Allen",
+    "tags": ["logarithms", "algebra", "exponents"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Log.pdf"
+  },
+  {
+    "title": "Modulus",
+    "owner": "Allen",
+    "tags": ["modulus", "absolute value", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/MOD.pdf"
+  },
+  {
+    "title": "Matrices",
+    "owner": "Allen",
+    "tags": ["matrices", "linear algebra", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Matrices.pdf"
+  },
+  {
+    "title": "Permutations and Combinations",
+    "owner": "Allen",
+    "tags": ["permutations", "combinations", "counting"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/PnC.pdf"
+  },
+  {
+    "title": "Probability",
+    "owner": "Allen",
+    "tags": ["probability", "permutations", "combinations"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Probability.pdf"
+  },
+  {
+    "title": "System of Trigonometric Equations",
+    "owner": "Allen",
+    "tags": ["trigonometry", "trigonometric equations", "equations"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/SOT.pdf"
+  },
+  {
+    "title": "Straight Lines",
+    "owner": "Allen",
+    "tags": ["straight lines", "coordinate geometry", "lines"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/St%20line_.pdf"
+  },
+  {
+    "title": "Statistics",
+    "owner": "Allen",
+    "tags": ["statistics", "mean", "data analysis"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Statistics.pdf"
+  },
+  {
+    "title": "Vectors",
+    "owner": "Allen",
+    "tags": ["vectors", "vector algebra", "three dimensional geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/Vector.pdf"
+  },
+  {
+    "title": "Height and Distance",
+    "owner": "Allen",
+    "tags": ["height and distance", "trigonometry", "applications"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/height%20%26%20distance.pdf"
+  },
+  {
+    "title": "Integration",
+    "owner": "Allen",
+    "tags": ["integration", "calculus", "integrals"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/integration.pdf"
+  },
+  {
+    "title": "Quadratic Equations",
+    "owner": "Allen",
+    "tags": ["quadratic equations", "algebra", "equations"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/quadratic%20eqn.pdf"
+  },
+  {
+    "title": "Sequences and Series",
+    "owner": "Allen",
+    "tags": ["sequences", "series", "progressions"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/sequence%20%26%20series.pdf"
+  },
+  {
+    "title": "Trigonometric Equations",
+    "owner": "Allen",
+    "tags": ["trigonometry", "trigonometric equations", "equations"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20theory/trigo%20eqn.pdf"
   }
 ]

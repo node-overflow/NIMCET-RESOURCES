@@ -462,5 +462,189 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20resonance%20practice%20sheet/Vector%203D%20Reso%20qs.pdf"
+  },
+  {
+    "title": "Application of Derivatives",
+    "owner": "Allen",
+    "tags": ["application of derivatives", "derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/AOD.pdf"
+  },
+  {
+    "title": "Binomial Theorem",
+    "owner": "Allen",
+    "tags": ["binomial theorem", "algebra", "expansion"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/BT.pdf"
+  },
+  {
+    "title": "Circle",
+    "owner": "Allen",
+    "tags": ["circle", "coordinate geometry", "conic sections"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Circle.pdf"
+  },
+  {
+    "title": "Complex Numbers",
+    "owner": "Allen",
+    "tags": ["complex numbers", "algebra", "complex plane"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Complex.pdf"
+  },
+  {
+    "title": "Conic Sections",
+    "owner": "Allen",
+    "tags": ["conic sections", "coordinate geometry", "parabola"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Conic.pdf"
+  },
+  {
+    "title": "Determinants",
+    "owner": "Allen",
+    "tags": ["determinants", "matrices", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Determinant.pdf"
+  },
+  {
+    "title": "Functions and Inverse Trigonometric Functions",
+    "owner": "Allen",
+    "tags": ["functions", "inverse trigonometric functions", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Function%20ITF.pdf"
+  },
+  {
+    "title": "Fundamentals of Algebra",
+    "owner": "Allen",
+    "tags": ["algebra", "fundamentals", "equations"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Fundamental%20of%20algebra.pdf"
+  },
+  {
+    "title": "Fundamentals of Geometry",
+    "owner": "Allen",
+    "tags": ["geometry", "fundamentals", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Fundamental%20of%20geometry_.pdf"
+  },
+  {
+    "title": "Height and Distance",
+    "owner": "Allen",
+    "tags": ["height and distance", "trigonometry", "applications"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Height%20distance.pdf"
+  },
+  {
+    "title": "Integration",
+    "owner": "Allen",
+    "tags": ["integration", "calculus", "integrals"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Integration.pdf"
+  },
+  {
+    "title": "Limits, Continuity and Differentiability",
+    "owner": "Allen",
+    "tags": ["limits", "continuity", "differentiation"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/LCD.pdf"
+  },
+  {
+    "title": "Logarithms",
+    "owner": "Allen",
+    "tags": ["logarithms", "algebra", "exponents"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Log.pdf"
+  },
+  {
+    "title": "Modulus",
+    "owner": "Allen",
+    "tags": ["modulus", "absolute value", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/MOD.pdf"
+  },
+  {
+    "title": "Matrices",
+    "owner": "Allen",
+    "tags": ["matrices", "linear algebra", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Matrices.pdf"
+  },
+  {
+    "title": "Probability",
+    "owner": "Allen",
+    "tags": ["probability", "permutations", "combinations"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Probability.pdf"
+  },
+  {
+    "title": "System of Trigonometric Equations",
+    "owner": "Allen",
+    "tags": ["trigonometry", "trigonometric equations", "equations"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/SOT.pdf"
+  },
+  {
+    "title": "Sets and Inequalities",
+    "owner": "Allen",
+    "tags": ["sets", "inequalities", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/Set%20%2C%20inequality.pdf"
+  },
+  {
+    "title": "Straight Lines",
+    "owner": "Allen",
+    "tags": ["straight lines", "coordinate geometry", "lines"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/St%20line.pdf"
+  },
+  {
+    "title": "Quadratic Equations",
+    "owner": "Allen",
+    "tags": ["quadratic equations", "algebra", "equations"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/quadratic%20eqn.pdf"
+  },
+  {
+    "title": "Sequences and Series",
+    "owner": "Allen",
+    "tags": ["sequences", "series", "progressions"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/sequence%20%26%20series.pdf"
+  },
+  {
+    "title": "Trigonometric Equations",
+    "owner": "Allen",
+    "tags": ["trigonometry", "trigonometric equations", "equations"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/trigo%20eqn.pdf"
+  },
+  {
+    "title": "Vectors",
+    "owner": "Allen",
+    "tags": ["vectors", "vector algebra", "three-dimensional geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/vector.pdf"
   }
 ]

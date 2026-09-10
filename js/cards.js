@@ -270,7 +270,9 @@ const buildCoverCard = (item, { className, tcVar, badge, headline, metaLabel, to
 const buildNotesCard = (item) => buildCoverCard(item, {
     className: "notes-card",
     tcVar: "var(--type-notes)",
-    badge: "",
+    badge: item.owner
+        ? '<span class="cover-chip">' + escapeHtml(item.owner) + "</span>"
+        : "",
     headline: "",
     metaLabel: "Chapter Notes"
 });
