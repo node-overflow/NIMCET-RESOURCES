@@ -646,5 +646,1033 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20allen%20practice/vector.pdf"
+  },
+  {
+    "title": "Three-Dimensional Geometry",
+    "owner": "Aakash",
+    "tags": [
+      "three-dimensional geometry",
+      "3d geometry",
+      "coordinate geometry"
+    ],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/3D%20Geometry.pdf"
+  },
+  {
+    "title": "Applications of Derivatives",
+    "owner": "Aakash",
+    "tags": ["applications of derivatives", "derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Applications%20of%20Derivatives.pdf"
+  },
+  {
+    "title": "Applications of Integrals",
+    "owner": "Aakash",
+    "tags": ["applications of integrals", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Applications%20of%20Integral.pdf"
+  },
+  {
+    "title": "Binomial Theorem",
+    "owner": "Aakash",
+    "tags": ["binomial theorem", "algebra", "expansion"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Binomial%20Theorem.pdf"
+  },
+  {
+    "title": "Continuity and Differentiability",
+    "owner": "Aakash",
+    "tags": ["continuity", "differentiability", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/CONTINUITY%20and%20Differnentiability.pdf"
+  },
+  {
+    "title": "Complex Numbers and Quadratic Equations",
+    "owner": "Aakash",
+    "tags": ["complex numbers", "quadratic equations", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Complex%20Number%20and%20Quadratic%20equations.pdf"
+  },
+  {
+    "title": "Conic Sections Part 1",
+    "owner": "Aakash",
+    "tags": ["conic sections", "coordinate geometry", "parabola"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Conic%20Sections%201.pdf"
+  },
+  {
+    "title": "Conic Sections Part 2",
+    "owner": "Aakash",
+    "tags": ["conic sections", "coordinate geometry", "ellipse"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Conic%20Sections%202.pdf"
+  },
+  {
+    "title": "Determinants",
+    "owner": "Aakash",
+    "tags": ["determinants", "matrices", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Determinants.pdf"
+  },
+  {
+    "title": "Differential Equations",
+    "owner": "Aakash",
+    "tags": ["differential equations", "calculus", "derivatives"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Differential%20equations.pdf"
+  },
+  {
+    "title": "Integrals",
+    "owner": "Aakash",
+    "tags": ["integrals", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Integrals.pdf"
+  },
+  {
+    "title": "Inverse Trigonometric Functions",
+    "owner": "Aakash",
+    "tags": ["inverse trigonometric functions", "trigonometry", "functions"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Inverse%20Trigonometric%20FUNCTIONS.pdf"
+  },
+  {
+    "title": "Limits and Derivatives",
+    "owner": "Aakash",
+    "tags": ["limits", "derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Limits%20and%20Derivatives.pdf"
+  },
+  {
+    "title": "Matrices",
+    "owner": "Aakash",
+    "tags": ["matrices", "linear algebra", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Matrices.pdf"
+  },
+  {
+    "title": "Permutations and Combinations",
+    "owner": "Aakash",
+    "tags": ["permutations", "combinations", "counting"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Permutations%20and%20Combinations.pdf"
+  },
+  {
+    "title": "Probability",
+    "owner": "Aakash",
+    "tags": ["probability", "permutations", "combinations"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Probability.pdf"
+  },
+  {
+    "title": "Relations and Functions",
+    "owner": "Aakash",
+    "tags": ["relations", "functions", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Relations%20and%20Functions.pdf"
+  },
+  {
+    "title": "Sequences and Series",
+    "owner": "Aakash",
+    "tags": ["sequences", "series", "progressions"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Sequence%20and%20series.pdf"
+  },
+  {
+    "title": "Sets",
+    "owner": "Aakash",
+    "tags": ["sets", "set theory", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Sets.pdf"
+  },
+  {
+    "title": "Statistics",
+    "owner": "Aakash",
+    "tags": ["statistics", "mean", "data analysis"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Statistics.pdf"
+  },
+  {
+    "title": "Straight Lines",
+    "owner": "Aakash",
+    "tags": ["straight lines", "coordinate geometry", "lines"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Straight%20Lines.pdf"
+  },
+  {
+    "title": "Trigonometric Functions",
+    "owner": "Aakash",
+    "tags": ["trigonometric functions", "trigonometry", "identities"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Trigonometric%20FUNCTIONS.pdf"
+  },
+  {
+    "title": "Vector Algebra",
+    "owner": "Aakash",
+    "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20aakash%20practice/Vector%20Algebra.pdf"
+  },
+  {
+    "title": "Area Under Curve I",
+    "owner": "Motion",
+    "tags": ["area under curve", "definite integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/area%20under%20curve%201.pdf"
+  },
+  {
+    "title": "Area Under Curve II",
+    "owner": "Motion",
+    "tags": ["area under curve", "definite integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/area%20under%20curve%202.pdf"
+  },
+  {
+    "title": "Area Under Curve III",
+    "owner": "Motion",
+    "tags": ["area under curve", "definite integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/area%20under%20curve%203.pdf"
+  },
+  {
+    "title": "Area Under Curve IV",
+    "owner": "Motion",
+    "tags": ["area under curve", "definite integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/area%20under%20curve%204.pdf"
+  },
+  {
+    "title": "Area Under Curve V",
+    "owner": "Motion",
+    "tags": ["area under curve", "definite integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/area%20under%20curve%205.pdf"
+  },
+  {
+    "title": "Binomial Theorem I",
+    "owner": "Motion",
+    "tags": ["binomial theorem", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/binomial%20theorem%201.pdf"
+  },
+  {
+    "title": "Binomial Theorem II",
+    "owner": "Motion",
+    "tags": ["binomial theorem", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/binomial%20theorem%202.pdf"
+  },
+  {
+    "title": "Binomial Theorem III",
+    "owner": "Motion",
+    "tags": ["binomial theorem", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/binomial%20theorem%203.pdf"
+  },
+  {
+    "title": "Binomial Theorem IV",
+    "owner": "Motion",
+    "tags": ["binomial theorem", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/binomial%20theorem%204.pdf"
+  },
+  {
+    "title": "Binomial Theorem V",
+    "owner": "Motion",
+    "tags": ["binomial theorem", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/binomial%20theorem%205.pdf"
+  },
+  {
+    "title": "Circle I",
+    "owner": "Motion",
+    "tags": ["circle", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/circle%201.pdf"
+  },
+  {
+    "title": "Circle II",
+    "owner": "Motion",
+    "tags": ["circle", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/circle%202.pdf"
+  },
+  {
+    "title": "Circle III",
+    "owner": "Motion",
+    "tags": ["circle", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/circle%203.pdf"
+  },
+  {
+    "title": "Circle IV",
+    "owner": "Motion",
+    "tags": ["circle", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/circle%204.pdf"
+  },
+  {
+    "title": "Circle V",
+    "owner": "Motion",
+    "tags": ["circle", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/circle%205.pdf"
+  },
+  {
+    "title": "Complex Numbers I",
+    "owner": "Motion",
+    "tags": ["complex numbers", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/complex%20number%201.pdf"
+  },
+  {
+    "title": "Complex Numbers II",
+    "owner": "Motion",
+    "tags": ["complex numbers", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/complex%20number%202.pdf"
+  },
+  {
+    "title": "Complex Numbers III",
+    "owner": "Motion",
+    "tags": ["complex numbers", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/complex%20number%203.pdf"
+  },
+  {
+    "title": "Complex Numbers IV",
+    "owner": "Motion",
+    "tags": ["complex numbers", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/complex%20number%204.pdf"
+  },
+  {
+    "title": "Complex Numbers V",
+    "owner": "Motion",
+    "tags": ["complex numbers", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/complex%20number%205.pdf"
+  },
+  {
+    "title": "Continuity and Differentiability",
+    "owner": "Motion",
+    "tags": ["continuity and differentiability", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/continuity%20%26%20differentiability.pdf"
+  },
+  {
+    "title": "Definite Integration I",
+    "owner": "Motion",
+    "tags": ["definite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/definite%20integration%201.pdf"
+  },
+  {
+    "title": "Definite Integration II",
+    "owner": "Motion",
+    "tags": ["definite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/definite%20integration%202.pdf"
+  },
+  {
+    "title": "Definite Integration III",
+    "owner": "Motion",
+    "tags": ["definite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/definite%20integration%203.pdf"
+  },
+  {
+    "title": "Definite Integration IV",
+    "owner": "Motion",
+    "tags": ["definite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/definite%20integration%204.pdf"
+  },
+  {
+    "title": "Definite Integration V",
+    "owner": "Motion",
+    "tags": ["definite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/definite%20integration%205.pdf"
+  },
+  {
+    "title": "Definite Integration VI",
+    "owner": "Motion",
+    "tags": ["definite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/definite%20integration%206.pdf"
+  },
+  {
+    "title": "Differential Equations I",
+    "owner": "Motion",
+    "tags": ["differential equations", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/differential%20eqn%201.pdf"
+  },
+  {
+    "title": "Differential Equations II",
+    "owner": "Motion",
+    "tags": ["differential equations", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/differential%20eqn%202.pdf"
+  },
+  {
+    "title": "Differential Equations III",
+    "owner": "Motion",
+    "tags": ["differential equations", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/differential%20eqn%203.pdf"
+  },
+  {
+    "title": "Differential Equations IV",
+    "owner": "Motion",
+    "tags": ["differential equations", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/differential%20eqn%204.pdf"
+  },
+  {
+    "title": "Differential Equations V",
+    "owner": "Motion",
+    "tags": ["differential equations", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/differential%20eqn%205.pdf"
+  },
+  {
+    "title": "Ellipse I",
+    "owner": "Motion",
+    "tags": ["ellipse", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/ellipse%201.pdf"
+  },
+  {
+    "title": "Ellipse II",
+    "owner": "Motion",
+    "tags": ["ellipse", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/ellipse%202.pdf"
+  },
+  {
+    "title": "Ellipse III",
+    "owner": "Motion",
+    "tags": ["ellipse", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/ellipse%203.pdf"
+  },
+  {
+    "title": "Ellipse IV",
+    "owner": "Motion",
+    "tags": ["ellipse", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/ellipse%204.pdf"
+  },
+  {
+    "title": "Ellipse V",
+    "owner": "Motion",
+    "tags": ["ellipse", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/ellipse%205.pdf"
+  },
+  {
+    "title": "Functions",
+    "owner": "Motion",
+    "tags": ["functions", "relations and functions", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/function.pdf"
+  },
+  {
+    "title": "Hyperbola I",
+    "owner": "Motion",
+    "tags": ["hyperbola", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/hyperbola%201.pdf"
+  },
+  {
+    "title": "Hyperbola II",
+    "owner": "Motion",
+    "tags": ["hyperbola", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/hyperbola%202.pdf"
+  },
+  {
+    "title": "Hyperbola III",
+    "owner": "Motion",
+    "tags": ["hyperbola", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/hyperbola%203.pdf"
+  },
+  {
+    "title": "Hyperbola IV",
+    "owner": "Motion",
+    "tags": ["hyperbola", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/hyperbola%204.pdf"
+  },
+  {
+    "title": "Hyperbola V",
+    "owner": "Motion",
+    "tags": ["hyperbola", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/hyperbola%205.pdf"
+  },
+  {
+    "title": "Indefinite Integration I",
+    "owner": "Motion",
+    "tags": ["indefinite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/indefinite%20integration%201.pdf"
+  },
+  {
+    "title": "Indefinite Integration II",
+    "owner": "Motion",
+    "tags": ["indefinite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/indefinite%20integration%202.pdf"
+  },
+  {
+    "title": "Indefinite Integration III",
+    "owner": "Motion",
+    "tags": ["indefinite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/indefinite%20integration%203.pdf"
+  },
+  {
+    "title": "Indefinite Integration IV",
+    "owner": "Motion",
+    "tags": ["indefinite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/indefinite%20integration%204.pdf"
+  },
+  {
+    "title": "Indefinite Integration V",
+    "owner": "Motion",
+    "tags": ["indefinite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/indefinite%20integration%205.pdf"
+  },
+  {
+    "title": "Indefinite Integration VI",
+    "owner": "Motion",
+    "tags": ["indefinite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/indefinite%20integration%206.pdf"
+  },
+  {
+    "title": "Inverse Trigonometric Functions",
+    "owner": "Motion",
+    "tags": ["inverse trigonometric functions", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/itf.pdf"
+  },
+  {
+    "title": "Limits",
+    "owner": "Motion",
+    "tags": ["limits", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/limits.pdf"
+  },
+  {
+    "title": "Logarithms",
+    "owner": "Motion",
+    "tags": ["logarithms", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/logarithm.pdf"
+  },
+  {
+    "title": "Modulus",
+    "owner": "Motion",
+    "tags": ["modulus", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/mod.pdf"
+  },
+  {
+    "title": "Matrices & Determinants I",
+    "owner": "Motion",
+    "tags": ["Matrices & Determinants", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/m%20%26%20d%201.pdf"
+  },
+  {
+    "title": "Matrices & Determinants II",
+    "owner": "Motion",
+    "tags": ["Matrices & Determinants", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/m%20%26%20d%202.pdf"
+  },
+  {
+    "title": "Matrices & Determinants III",
+    "owner": "Motion",
+    "tags": ["Matrices & Determinants", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/m%20%26%20d%203.pdf"
+  },
+  {
+    "title": "Matrices & Determinants IV",
+    "owner": "Motion",
+    "tags": ["Matrices & Determinants", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/m%20%26%20d%204.pdf"
+  },
+  {
+    "title": "Matrices & Determinants V",
+    "owner": "Motion",
+    "tags": ["Matrices & Determinants", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/m%20%26%20d%205.pdf"
+  },
+  {
+    "title": "Maxima and Minima I",
+    "owner": "Motion",
+    "tags": ["maxima and minima", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/maxima%20%26%20minima%201.pdf"
+  },
+  {
+    "title": "Maxima and Minima II",
+    "owner": "Motion",
+    "tags": ["maxima and minima", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/maxima%20%26%20minima%202.pdf"
+  },
+  {
+    "title": "Maxima and Minima III",
+    "owner": "Motion",
+    "tags": ["maxima and minima", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/maxima%20%26%20minima%203.pdf"
+  },
+  {
+    "title": "Maxima and Minima IV",
+    "owner": "Motion",
+    "tags": ["maxima and minima", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/maxima%20%26%20minima%204.pdf"
+  },
+  {
+    "title": "Maxima and Minima V",
+    "owner": "Motion",
+    "tags": ["maxima and minima", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/maxima%20%26%20minima%205.pdf"
+  },
+  {
+    "title": "Monotonicity I",
+    "owner": "Motion",
+    "tags": ["monotonicity", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/monotonocity%201.pdf"
+  },
+  {
+    "title": "Monotonicity II",
+    "owner": "Motion",
+    "tags": ["monotonicity", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/monotonocity%202.pdf"
+  },
+  {
+    "title": "Monotonicity III",
+    "owner": "Motion",
+    "tags": ["monotonicity", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/monotonocity%203.pdf"
+  },
+  {
+    "title": "Monotonicity IV",
+    "owner": "Motion",
+    "tags": ["monotonicity", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/monotonocity%204.pdf"
+  },
+  {
+    "title": "Monotonicity V",
+    "owner": "Motion",
+    "tags": ["monotonicity", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/monotonocity%205.pdf"
+  },
+  {
+    "title": "Parabola I",
+    "owner": "Motion",
+    "tags": ["parabola", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/parabola%201.pdf"
+  },
+  {
+    "title": "Parabola II",
+    "owner": "Motion",
+    "tags": ["parabola", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/parabola%202.pdf"
+  },
+  {
+    "title": "Parabola III",
+    "owner": "Motion",
+    "tags": ["parabola", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/parabola%203.pdf"
+  },
+  {
+    "title": "Parabola IV",
+    "owner": "Motion",
+    "tags": ["parabola", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/parabola%204.pdf"
+  },
+  {
+    "title": "Parabola V",
+    "owner": "Motion",
+    "tags": ["parabola", "conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/parabola%205.pdf"
+  },
+  {
+    "title": "Quadratic Equations",
+    "owner": "Motion",
+    "tags": ["quadratic equations", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/quadratic%20eqn.pdf"
+  },
+  {
+    "title": "Sequence and Series I",
+    "owner": "Motion",
+    "tags": ["sequence and series", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/sequence%20%26%20series%201.pdf"
+  },
+  {
+    "title": "Sequence and Series II",
+    "owner": "Motion",
+    "tags": ["sequence and series", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/sequence%20%26%20series%202.pdf"
+  },
+  {
+    "title": "Sequence and Series III",
+    "owner": "Motion",
+    "tags": ["sequence and series", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/sequence%20%26%20series%203.pdf"
+  },
+  {
+    "title": "Sequence and Series IV",
+    "owner": "Motion",
+    "tags": ["sequence and series", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/sequence%20%26%20series%204.pdf"
+  },
+  {
+    "title": "Sequence and Series V",
+    "owner": "Motion",
+    "tags": ["sequence and series", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/sequence%20%26%20series%205.pdf"
+  },
+  {
+    "title": "Solutions of Triangles I",
+    "owner": "Motion",
+    "tags": ["solutions of triangles", "triangles", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/sot%201.pdf"
+  },
+  {
+    "title": "Solutions of Triangles II",
+    "owner": "Motion",
+    "tags": ["solutions of triangles", "triangles", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/sot%202.pdf"
+  },
+  {
+    "title": "Solutions of Triangles III",
+    "owner": "Motion",
+    "tags": ["solutions of triangles", "triangles", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/sot%203.pdf"
+  },
+  {
+    "title": "Solutions of Triangles IV",
+    "owner": "Motion",
+    "tags": ["solutions of triangles", "triangles", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/sot%204.pdf"
+  },
+  {
+    "title": "Solutions of Triangles V",
+    "owner": "Motion",
+    "tags": ["solutions of triangles", "triangles", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/sot%205.pdf"
+  },
+  {
+    "title": "Straight Lines I",
+    "owner": "Motion",
+    "tags": ["straight lines", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/st%20lines%201.pdf"
+  },
+  {
+    "title": "Straight Lines II",
+    "owner": "Motion",
+    "tags": ["straight lines", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/st%20lines%202.pdf"
+  },
+  {
+    "title": "Straight Lines III",
+    "owner": "Motion",
+    "tags": ["straight lines", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/st%20lines%203.pdf"
+  },
+  {
+    "title": "Straight Lines IV",
+    "owner": "Motion",
+    "tags": ["straight lines", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/st%20lines%204.pdf"
+  },
+  {
+    "title": "Straight Lines V",
+    "owner": "Motion",
+    "tags": ["straight lines", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/st%20lines%205.pdf"
+  },
+  {
+    "title": "Tangent and Normal I",
+    "owner": "Motion",
+    "tags": ["tangent and normal", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/tangent%20%26%20normal%201.pdf"
+  },
+  {
+    "title": "Tangent and Normal II",
+    "owner": "Motion",
+    "tags": ["tangent and normal", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/tangent%20%26%20normal%202.pdf"
+  },
+  {
+    "title": "Tangent and Normal III",
+    "owner": "Motion",
+    "tags": ["tangent and normal", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/tangent%20%26%20normal%203.pdf"
+  },
+  {
+    "title": "Tangent and Normal IV",
+    "owner": "Motion",
+    "tags": ["tangent and normal", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/tangent%20%26%20normal%204.pdf"
+  },
+  {
+    "title": "Tangent and Normal V",
+    "owner": "Motion",
+    "tags": ["tangent and normal", "application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/tangent%20%26%20normal%205.pdf"
+  },
+  {
+    "title": "Trigonometric Equations I",
+    "owner": "Motion",
+    "tags": ["trigonometric equations", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/trigo%20eqn%201.pdf"
+  },
+  {
+    "title": "Trigonometric Equations II",
+    "owner": "Motion",
+    "tags": ["trigonometric equations", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/trigo%20eqn%202.pdf"
+  },
+  {
+    "title": "Trigonometric Equations III",
+    "owner": "Motion",
+    "tags": ["trigonometric equations", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/trigo%20eqn%203.pdf"
+  },
+  {
+    "title": "Trigonometric Equations IV",
+    "owner": "Motion",
+    "tags": ["trigonometric equations", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/trigo%20eqn%204.pdf"
+  },
+  {
+    "title": "Trigonometric Equations V",
+    "owner": "Motion",
+    "tags": ["trigonometric equations", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/trigo%20eqn%205.pdf"
+  },
+  {
+    "title": "Trigonometric Ratios",
+    "owner": "Motion",
+    "tags": ["trigonometric ratios", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/trigo%20ratio.pdf"
+  },
+  {
+    "title": "Vector Algebra I",
+    "owner": "Motion",
+    "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/vector%201.pdf"
+  },
+  {
+    "title": "Vector Algebra II",
+    "owner": "Motion",
+    "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/vector%202.pdf"
+  },
+  {
+    "title": "Vector Algebra III",
+    "owner": "Motion",
+    "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/vector%203.pdf"
+  },
+  {
+    "title": "Vector Algebra IV",
+    "owner": "Motion",
+    "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/vector%204.pdf"
+  },
+  {
+    "title": "Vector Algebra V",
+    "owner": "Motion",
+    "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/vector%205.pdf"
   }
 ]
