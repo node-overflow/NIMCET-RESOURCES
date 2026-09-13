@@ -176,6 +176,16 @@ export const getFilteredResources = () => {
             if (!exams.includes(state.examFilter)) return false;
         }
 
+        if (state.subject === "Mathematics" && state.type === "Practice") {
+            if (state.mathOwnerFilter && state.mathOwnerFilter !== "All") {
+                if (item.owner !== state.mathOwnerFilter) return false;
+            }
+
+            if (state.mathChapterFilter && state.mathChapterFilter !== "All") {
+                if (deriveMathChapter(item.title) !== state.mathChapterFilter) return false;
+            }
+        }
+
         return true;
     });
 };

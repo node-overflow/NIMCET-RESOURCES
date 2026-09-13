@@ -845,3 +845,38 @@
   border-color: color-mix(in srgb, var(--accent) 45%, transparent);
   color: var(--accent-text);
 }
+
+/* ===== Dropdown-style filters (Mathematics → Practice) ===== */
+.filter-select-wrap {
+  display: inline-flex;
+}
+
+.filter-select {
+  padding: 7px 30px 7px 14px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  font-weight: 550;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2397a0b0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M6 9l6 6 6-6'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  transition:
+    var(--transition-fast),
+    color 0.12s ease;
+}
+
+.filter-select:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.filter-select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}

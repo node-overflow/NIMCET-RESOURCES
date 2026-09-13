@@ -14,6 +14,8 @@ export const state = {
     dppSubject: null,
     dppChapterKey: null,
     dppChapterName: null,
+    mathOwnerFilter: null,
+    mathChapterFilter: null,
     dppChaptersCache: {},
     dppItemsCache: {},
     dppTotalCount: null,

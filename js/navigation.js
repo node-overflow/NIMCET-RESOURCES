@@ -33,8 +33,6 @@ import {
     mockByKey
 } from "./mocks.js";
 
-import { renderExamInfo } from "./examinfo.js";
-
 import { closeSidebar } from "./sidebar.js";
 
 let historyInitialized = false;
@@ -46,6 +44,8 @@ const buildSnapshot = () => ({
     search: state.search,
     examKey: state.examKey,
     examFilter: state.examFilter,
+    mathOwnerFilter: state.mathOwnerFilter,
+    mathChapterFilter: state.mathChapterFilter,
     dppSubject: state.dppSubject,
     dppChapterKey: state.dppChapterKey,
     dppChapterName: state.dppChapterName,
@@ -61,6 +61,8 @@ const applySnapshot = (snapshot) => {
     state.search = s.search ?? "";
     state.examKey = s.examKey ?? null;
     state.examFilter = s.examFilter ?? null;
+    state.mathOwnerFilter = s.mathOwnerFilter ?? null;
+    state.mathChapterFilter = s.mathChapterFilter ?? null;
     state.dppSubject = s.dppSubject ?? null;
     state.dppChapterKey = s.dppChapterKey ?? null;
     state.dppChapterName = s.dppChapterName ?? null;
@@ -151,16 +153,6 @@ export const setActiveNav = () => {
 
     if (state.view === "pyqs" || state.view === "pyqs-exam") {
         const button = document.querySelector('.nav-item[data-nav="pyqs"]');
-
-        if (button) {
-            button.dataset.active = "true";
-        }
-
-        return;
-    }
-
-    if (state.view === "exam-info") {
-        const button = document.querySelector('.nav-item[data-nav="examinfo"]');
 
         if (button) {
             button.dataset.active = "true";
@@ -279,10 +271,6 @@ const renderForView = () => {
             renderPyqsExam();
             break;
 
-        case "exam-info":
-            renderExamInfo();
-            break;
-
         case "dpps":
             renderDppSubjectGrid(goToDppsSubject);
             break;
@@ -338,6 +326,13 @@ export const goToResources = opts => {
         state.examFilter = null;
     }
 
+    const keepMathPracticeFilter = state.subject === "Mathematics" && state.type === "Practice";
+
+    if (!keepMathPracticeFilter) {
+        state.mathOwnerFilter = null;
+        state.mathChapterFilter = null;
+    }
+
     elSearchInput.value = state.search;
 
     showView("resources");
@@ -363,12 +358,6 @@ export const goToPyqsExam = examKey => {
     state.examKey = examKey;
 
     showView("pyqs-exam");
-
-    renderForView();
-};
-
-export const goToExamInfo = () => {
-    showView("exam-info");
 
     renderForView();
 };

@@ -553,16 +553,6 @@
     min-height: 48px;
   }
 
-  /* ====== Feature cards ====== */
-  .feature-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .feature-card {
-    padding: 16px 15px;
-  }
-
   /* ====== CTA / footer ====== */
   .cta-banner {
     flex-direction: column;
@@ -640,25 +630,6 @@
     font-size: 0.8rem;
   }
 
-  .roadmap-timeline {
-    padding-left: 26px;
-  }
-
-  .roadmap-marker {
-    left: -26px;
-  }
-
-  /* ====== Exam info sticky nav ====== */
-  .exam-info-nav {
-    top: calc(52px + var(--safe-top));
-    padding: 8px 0 12px;
-    margin-bottom: 18px;
-  }
-
-  .exam-info-nav .chip {
-    min-height: 36px;
-  }
-
   /* ====== Back buttons ====== */
   .back-btn {
     font-size: 0.82rem;
@@ -670,22 +641,6 @@
   /* ====== Empty states ====== */
   .empty-state {
     padding: 40px 16px;
-  }
-
-  /* ====== Pattern / strategy / books grids ====== */
-  .pattern-grid,
-  .strategy-grid,
-  .rec-book-grid,
-  .myth-fact-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .pattern-card,
-  .strategy-card,
-  .rec-book-card,
-  .myth-fact-card {
-    padding: 15px;
   }
 
   /* ====== Nav items larger for touch ====== */

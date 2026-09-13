@@ -1,6 +1,6 @@
 "use strict";
 
-import { TYPES } from "./config.js";
+import { TYPES, MATH_CHAPTER_KEYWORDS } from "./config.js";
 
 import {
     elFilterPills,
@@ -14,7 +14,9 @@ import { state } from "./state.js";
 
 import {
     typeLabelPlural,
-    getFilteredResources
+    getFilteredResources,
+    deriveMathChapter,
+    escapeHtml
 } from "./utils.js";
 
 import { renderGrid } from "./cards.js";
@@ -50,11 +52,99 @@ const buildExamFilterBar = (examOptions) => {
     return bar;
 };
 
+const chapterOrder = (chapter) => {
+    const entry = MATH_CHAPTER_KEYWORDS.find(item => item.chapter === chapter);
+
+    return entry && typeof entry.order === "number" ? entry.order : 999;
+};
+
+const buildSelect = (id, label, options, selectedValue, onChange) => {
+    const wrap = document.createElement("label");
+    wrap.className = "filter-select-wrap";
+
+    const select = document.createElement("select");
+    select.id = id;
+    select.className = "filter-select";
+
+    select.innerHTML =
+        '<option value="All">' + escapeHtml(label) + '</option>' +
+        options
+            .map(opt => '<option value="' + escapeHtml(opt) + '">' + escapeHtml(opt) + '</option>')
+            .join("");
+
+    select.value = selectedValue || "All";
+
+    select.addEventListener("change", () => {
+        onChange(select.value);
+    });
+
+    wrap.appendChild(select);
+
+    return wrap;
+};
+
+const buildMathPracticeFilterBar = () => {
+    const bar = document.createElement("div");
+    bar.id = "mathPracticeFilterBar";
+    bar.className = "exam-filter-bar";
+
+    const practiceItems = state.resources.filter(
+        item => item.subject === "Mathematics" && item.type === "Practice"
+    );
+
+    const owners = Array.from(
+        new Set(
+            practiceItems
+                .map(item => item.owner)
+                .filter(Boolean)
+        )
+    ).sort();
+
+    const chapters = Array.from(
+        new Set(
+            practiceItems
+                .map(item => deriveMathChapter(item.title))
+                .filter(Boolean)
+        )
+    ).sort((a, b) => chapterOrder(a) - chapterOrder(b));
+
+    bar.appendChild(
+        buildSelect(
+            "mathOwnerFilter",
+            "All Owners",
+            owners,
+            state.mathOwnerFilter,
+            value => {
+                state.mathOwnerFilter = value;
+                renderResourceResults();
+            }
+        )
+    );
+
+    bar.appendChild(
+        buildSelect(
+            "mathChapterFilter",
+            "All Chapters",
+            chapters,
+            state.mathChapterFilter,
+            value => {
+                state.mathChapterFilter = value;
+                renderResourceResults();
+            }
+        )
+    );
+
+    return bar;
+};
+
 export const renderFilterPills = () => {
     elFilterPills.innerHTML = "";
 
     const oldBar = document.getElementById("examFilterBar");
     if (oldBar) oldBar.remove();
+
+    const oldMathBar = document.getElementById("mathPracticeFilterBar");
+    if (oldMathBar) oldMathBar.remove();
 
     const allPill = document.createElement("button");
     allPill.className = "pill";
@@ -64,6 +154,8 @@ export const renderFilterPills = () => {
     allPill.addEventListener("click", () => {
         state.type = null;
         state.examFilter = null;
+        state.mathOwnerFilter = null;
+        state.mathChapterFilter = null;
         renderResources();
     });
     elFilterPills.appendChild(allPill);
@@ -79,6 +171,12 @@ export const renderFilterPills = () => {
 
             state.type = type.key;
             state.examFilter = null;
+
+            if (type.key !== "Practice") {
+                state.mathOwnerFilter = null;
+                state.mathChapterFilter = null;
+            }
+
             renderResources();
         });
         elFilterPills.appendChild(pill);
@@ -126,6 +224,23 @@ export const renderFilterPills = () => {
         );
 
         const bar = buildExamFilterBar(["All", ...examOptions]);
+
+        const toolbar = document.querySelector(".toolbar");
+        if (toolbar) {
+            toolbar.insertAdjacentElement("afterend", bar);
+        }
+    }
+
+    if (state.subject === "Mathematics" && state.type === "Practice") {
+        if (state.mathOwnerFilter === null) {
+            state.mathOwnerFilter = "All";
+        }
+
+        if (state.mathChapterFilter === null) {
+            state.mathChapterFilter = "All";
+        }
+
+        const bar = buildMathPracticeFilterBar();
 
         const toolbar = document.querySelector(".toolbar");
         if (toolbar) {

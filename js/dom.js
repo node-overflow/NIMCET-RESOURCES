@@ -13,7 +13,6 @@ export const elMobileMenuBtn = $("#mobileMenuBtn");
 export const elMobileTopbar = $("#mobileTopbar");
 
 export const elViewHome = $("#view-home");
-export const elViewExamInfo = $("#view-exam-info");
 export const elViewResources = $("#view-resources");
 export const elViewUpdates = $("#view-updates");
 export const elViewPyqs = $("#view-pyqs");
@@ -26,7 +25,6 @@ export const elViewMocksDetail = $("#view-mocks-detail");
 
 export const VIEWS = {
     home: elViewHome,
-    "exam-info": elViewExamInfo,
     resources: elViewResources,
     updates: elViewUpdates,
     pyqs: elViewPyqs,
@@ -78,46 +76,12 @@ export const elFeaturedGrid = $("#featuredGrid");
 export const elHeroStats = $("#heroStats");
 export const elHeroBrowseBtn = $("#heroBrowseBtn");
 export const elHeroPyqBtn = $("#heroPyqBtn");
-export const elNitMarquee = $("#nitMarquee");
 export const elFaqList = $("#faqList");
 export const elFaqCategories = document.getElementById("faqCategories");
 
 export const elHomeUpdatesPreview = $("#homeUpdatesPreview");
 export const elHomeUpdatesBtn = $("#homeUpdatesBtn");
 export const elCommunityBtn = $("#communityBtn");
-
-export const elExamInfoNav = $("#examInfoQuickNav");
-
-export const elExamPatternDisclaimer = $("#examPatternDisclaimer");
-export const elExamPatternGrid = $("#examPatternGrid");
-export const elExamPatternMeta = $("#examPatternMeta");
-
-export const elEligibilityGrid = $("#eligibilityGrid");
-export const elEligibilityNote = $("#eligibilityNote");
-
-export const elExamTimeline = $("#examTimeline");
-export const elExamTimelineNote = $("#examTimelineNote");
-
-export const elSyllabusSubjectTabs = $("#syllabusSubjectTabs");
-export const elSyllabusChapterList = $("#syllabusChapterList");
-export const elSyllabusNote = $("#syllabusNote");
-
-export const elFocusSubjectTabs = $("#focusSubjectTabs");
-export const elFocusAreaList = $("#focusAreaList");
-
-export const elStrategyGrid = $("#strategyGrid");
-export const elStrategyNote = $("#strategyNote");
-
-export const elRoadmapTimeline = $("#roadmapTimeline");
-
-export const elBooksGrid = $("#booksGrid");
-
-export const elExamDayChecklist = $("#examDayChecklist");
-
-export const elMistakesList = $("#mistakesList");
-
-export const elMythFactGrid = $("#mythFactGrid");
-export const elExamFaqList = $("#examFaqList");
 
 export const elResourcesHeading = $("#resourcesHeading");
 export const elResourcesCount = $("#resourcesCount");
