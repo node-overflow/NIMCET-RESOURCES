@@ -44,7 +44,6 @@
     "bestFor": "Advanced Practice",
     "image": "https://m.media-amazon.com/images/I/51TyAKGXrHL._SL1500_.jpg",
     "tags": ["nimcet", "jee"],
-    "featured": true,
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/YELLOW%20BOOK%20by%20vikas%20gupta.pdf"
@@ -394,5 +393,15 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Practice%20Question%20in%20Calculus%20by%20GB%20Sir.pdf"
+  },
+  {
+    "title": "IIT JEE REVISION PACKAGE (1000 Problems)",
+    "bestFor": "Advanced Practice",
+    "image": "https://raw.githubusercontent.com/rawcontentgit/image-host/refs/heads/main/books/catalysers_math.png",
+    "tags": ["jee", "problem practice"],
+    "featured": true,
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Catalysers%20Maths%20-%20JEE%20Advanced.pdf"
   }
 ]

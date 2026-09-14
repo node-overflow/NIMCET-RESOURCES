@@ -202,19 +202,37 @@
   }
 
   .hero-stats {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: none;
     margin-top: 22px;
     padding-top: 18px;
-    gap: 12px;
+    gap: 14px 8px;
+  }
+
+  .hero-stat {
+    padding: 0;
+  }
+
+  .hero-stat:not(:last-child)::after {
+    display: none;
   }
 
   .hero-stat-num {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 
   .hero-stat-label {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
+  }
+
+  .hero-steps {
+    margin-top: 20px;
+  }
+
+  .hero-steps-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   /* ====== Sections ====== */

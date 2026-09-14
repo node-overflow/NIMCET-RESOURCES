@@ -1,6 +1,7 @@
 /* ============ Home hero ============ */
 .hero {
   position: relative;
+  z-index: 0;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   align-items: center;
@@ -15,23 +16,144 @@
   overflow: hidden;
 }
 
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-repeat: repeat;
+  background-size: 230px 170px;
+}
+
+.hero::before {
+  background-image:
+    radial-gradient(1.6px 1.6px at 8% 22%, var(--accent-text), transparent 65%),
+    radial-gradient(
+      1.2px 1.2px at 22% 64%,
+      var(--accent-text),
+      transparent 65%
+    ),
+    radial-gradient(
+      1.8px 1.8px at 38% 14%,
+      var(--accent-text),
+      transparent 65%
+    ),
+    radial-gradient(
+      1.3px 1.3px at 67% 78%,
+      var(--accent-text),
+      transparent 65%
+    ),
+    radial-gradient(1.6px 1.6px at 91% 58%, var(--accent-text), transparent 65%);
+  animation: hero-star-twinkle-a 7s ease-in-out infinite;
+}
+
+.hero::after {
+  background-image:
+    radial-gradient(
+      1.3px 1.3px at 52% 48%,
+      var(--accent-text),
+      transparent 65%
+    ),
+    radial-gradient(
+      1.5px 1.5px at 78% 30%,
+      var(--accent-text),
+      transparent 65%
+    ),
+    radial-gradient(
+      1.3px 1.3px at 14% 88%,
+      var(--accent-text),
+      transparent 65%
+    ),
+    radial-gradient(
+      1.6px 1.6px at 46% 92%,
+      var(--accent-text),
+      transparent 65%
+    ),
+    radial-gradient(1.3px 1.3px at 85% 10%, var(--accent-text), transparent 65%);
+  animation: hero-star-twinkle-b 9s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+@keyframes hero-star-twinkle-a {
+  0%,
+  100% {
+    opacity: var(--hero-star-opacity-min);
+    background-position: 0 0;
+  }
+  50% {
+    opacity: var(--hero-star-opacity-max);
+    background-position: 7px -5px;
+  }
+}
+
+@keyframes hero-star-twinkle-b {
+  0%,
+  100% {
+    opacity: var(--hero-star-opacity-max);
+    background-position: 0 0;
+  }
+  50% {
+    opacity: var(--hero-star-opacity-min);
+    background-position: -6px 6px;
+  }
+}
+
 .hero-main {
   min-width: 0;
+  align-self: start;
 }
 
 .hero-slogan {
+  color: var(--hero-slogan-color);
   font-family: "Caveat", "Segoe Print", cursive;
   font-size: 1.35rem;
   font-weight: 600;
   text-align: center;
   margin-top: 2px;
-  opacity: 0.35;
+  opacity: 0.75;
   transform: rotate(-2deg) translateX(-6px);
+}
+
+/* ============ Hero shooting-star trail ============ */
+.hero-star-trail {
+  position: relative;
+  width: 200px;
+  height: 28px;
+  margin: 10px auto 2px;
+}
+
+.hero-star-trail-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.hero-star-trail-stop-edge {
+  stop-color: var(--accent-text);
+  stop-opacity: 0;
+}
+
+.hero-star-trail-stop-mid {
+  stop-color: var(--accent-text);
+  stop-opacity: 0.9;
+}
+
+.hero-star-trail-path {
+  fill: none;
+  stroke: url(#heroStarTrailGrad);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  filter: drop-shadow(
+    0 0 3px color-mix(in srgb, var(--accent-text) 60%, transparent)
+  );
 }
 
 .hero-eyebrow {
   display: inline-flex;
   align-items: center;
+  gap: 6px;
   padding: 5px 11px;
   border-radius: 999px;
   border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
@@ -40,6 +162,11 @@
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+}
+
+.hero-eyebrow-icon {
+  flex-shrink: 0;
+  opacity: 0.9;
 }
 
 .hero-title {
@@ -75,7 +202,7 @@
 .hero-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   padding: 11px 18px;
   border-radius: var(--radius-md);
   font-size: 0.88rem;
@@ -87,23 +214,19 @@
     transform 0.14s ease;
 }
 
-.hero-btn .arrow {
-  transition: transform 0.14s ease;
-}
-
-.hero-btn:hover .arrow {
-  transform: translateX(2px);
+.hero-btn-icon {
+  flex-shrink: 0;
 }
 
 .hero-btn-primary {
-  background: var(--accent);
+  background: var(--hero-btn-primary-bg);
   color: #fff;
   text-decoration: none;
 }
 
 .hero-btn-primary:hover {
   transform: translateY(-1px);
-  filter: brightness(1.06);
+  filter: brightness(1.08);
 }
 
 .hero-btn-ghost {
@@ -119,25 +242,124 @@
 
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 10px;
-  margin-top: 30px;
-  padding-top: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 28px;
+  padding-top: 22px;
   border-top: 1px solid var(--border);
-  max-width: 560px;
+  max-width: 620px;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.hero-stat:nth-child(3n + 1) {
+  padding-left: 0;
+}
+
+.hero-stat:nth-child(3n) {
+  padding-right: 0;
+}
+
+.hero-stat:not(:nth-child(3n))::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 36px;
+  background: var(--border);
+}
+
+.hero-stat:nth-child(n + 4) {
+  border-top: 1px solid var(--border);
+}
+
+.hero-stat-icon {
+  flex-shrink: 0;
+  color: var(--accent-text);
+  opacity: 0.7;
+}
+
+.hero-stat-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
 
 .hero-stat-num {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: var(--text);
   letter-spacing: -0.01em;
+  line-height: 1.15;
 }
 
 .hero-stat-label {
-  margin-top: 2px;
-  font-size: 0.74rem;
-  color: var(--text-faint);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  line-height: 1.3;
+}
+
+/* ============ Hero get-started steps ============ */
+.hero-steps {
+  margin-top: 26px;
+  max-width: 620px;
+}
+
+.hero-steps-title {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.hero-steps-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.hero-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+.hero-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent-dim-2);
+  color: var(--accent-text);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.hero-step-text {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
 }
 
 /* ============ Hero illustration ============ */

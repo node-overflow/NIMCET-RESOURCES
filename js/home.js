@@ -36,14 +36,28 @@ import { computeDppTotal } from "./dpp.js";
 
 import { buildTimelineItem } from "./updates.js";
 
-const buildStat = (num, label) => {
+const STAT_ICONS = {
+    materials: `<svg class="hero-stat-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`,
+    pyq: `<svg class="hero-stat-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>`,
+    dpp: `<svg class="hero-stat-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>`,
+    video: `<svg class="hero-stat-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>`,
+    book: `<svg class="hero-stat-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8"/><path d="M8 11h6"/></svg>`,
+    practice: `<svg class="hero-stat-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M7 9h10M7 13h10M7 17h6"/></svg>`
+};
+
+const buildStat = (num, label, iconKey) => {
     const stat = document.createElement("div");
 
     stat.className = "hero-stat";
 
+    const iconHtml = STAT_ICONS[iconKey] || "";
+
     stat.innerHTML =
+        iconHtml +
+        '<div class="hero-stat-text">' +
         '<div class="hero-stat-num"></div>' +
-        '<div class="hero-stat-label"></div>';
+        '<div class="hero-stat-label"></div>' +
+        '</div>';
 
     stat.querySelector(".hero-stat-num").textContent = num;
     stat.querySelector(".hero-stat-label").textContent = label;
@@ -89,24 +103,44 @@ const renderHeroStats = () => {
 
     const fragment = document.createDocumentFragment();
 
-    const resourceStat = buildStat("0+", "Study Materials");
-    const pyqStat = buildStat("0+", "PYQ Papers");
-    const dppStat = buildStat("0+", "DPPs");
-    const visitsStat = buildStat("0+", "Visits");
+    const resourceStat = buildStat("0+", "Study Materials", "materials");
+    const pyqStat = buildStat("0+", "PYQ Papers", "pyq");
+    const dppStat = buildStat("0+", "DPPs", "dpp");
+    const videoStat = buildStat("0+", "Videos", "video");
+    const bookStat = buildStat("0+", "Books", "book");
+    const practiceStat = buildStat("0+", "Practice Sheets", "practice");
 
     fragment.appendChild(resourceStat);
     fragment.appendChild(pyqStat);
     fragment.appendChild(dppStat);
-    fragment.appendChild(visitsStat);
+    fragment.appendChild(videoStat);
+    fragment.appendChild(bookStat);
+    fragment.appendChild(practiceStat);
 
     elHeroStats.appendChild(fragment);
 
     const resourceNum = resourceStat.querySelector(".hero-stat-num");
     const pyqNum = pyqStat.querySelector(".hero-stat-num");
     const dppNum = dppStat.querySelector(".hero-stat-num");
-    const visitsNum = visitsStat.querySelector(".hero-stat-num");
+    const videoNum = videoStat.querySelector(".hero-stat-num");
+    const bookNum = bookStat.querySelector(".hero-stat-num");
+    const practiceNum = practiceStat.querySelector(".hero-stat-num");
 
-    animateCount(visitsNum, 5000);
+    const videoTotal = state.resources.filter(
+        resource => resource.type === "Video"
+    ).length;
+
+    const bookTotal = state.resources.filter(
+        resource => resource.type === "Book"
+    ).length;
+
+    const practiceTotal = state.resources.filter(
+        resource => resource.type === "Practice"
+    ).length;
+
+    animateCount(videoNum, floorToTens(videoTotal));
+    animateCount(bookNum, floorToTens(bookTotal));
+    animateCount(practiceNum, floorToTens(practiceTotal));
 
     animateCount(pyqNum, floorToTens(state.pyqs.length));
 
