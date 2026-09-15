@@ -46,6 +46,8 @@
   --radius-lg: 12px;
 
   --sidebar-w: 236px;
+  --sidebar-bg: var(--surface);
+  --nav-item-color: var(--text-dim);
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-left: env(safe-area-inset-left, 0px);
@@ -107,4 +109,7 @@
   --hero-star-opacity-max: 0.42;
   --hero-slogan-color: #574fd6;
   --hero-btn-primary-bg: var(--accent);
+
+  --sidebar-bg: #F4F4F3;
+  --nav-item-color: #000000d2;
 }

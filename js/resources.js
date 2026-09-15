@@ -16,7 +16,8 @@ import {
     typeLabelPlural,
     getFilteredResources,
     deriveMathChapter,
-    escapeHtml
+    escapeHtml,
+    TYPE_CHIP_ICONS
 } from "./utils.js";
 
 import { renderGrid } from "./cards.js";
@@ -164,7 +165,11 @@ export const renderFilterPills = () => {
         const pill = document.createElement("button");
         pill.className = "pill";
         pill.type = "button";
-        pill.textContent = type.label;
+        pill.innerHTML =
+            (TYPE_CHIP_ICONS[type.key] || "") +
+            "<span>" +
+            escapeHtml(type.label) +
+            "</span>";
         pill.dataset.active = state.type === type.key ? "true" : "false";
         pill.addEventListener("click", () => {
             if (state.type === type.key) return;

@@ -4,10 +4,11 @@
   z-index: 0;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
-  align-items: center;
+  align-items: start;
   gap: 20px;
+  height: fit-content;
   margin-bottom: 40px;
-  padding: 40px 40px 34px;
+  padding: 28px 32px;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
   background:
@@ -423,12 +424,12 @@
   cursor: pointer;
   font-size: 0.94rem;
   font-weight: 650;
-  color: var(--text-calm);
+  color: var(--text);
   transition: color 0.14s ease;
 }
 
 .faq-question:hover {
-  color: var(--accent-faq);
+  color: var(--accent-text);
 }
 
 .faq-icon {
@@ -693,16 +694,41 @@
   color: var(--text);
 }
 
-.footer-social-link {
-  align-self: flex-start;
-  color: var(--accent-text);
-  font-size: 0.84rem;
-  font-weight: 650;
-  text-decoration: none;
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
 }
 
-.footer-social-link:hover {
-  text-decoration: underline;
+.footer-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  border: none;
+  color: var(--text-dim);
+  background: transparent;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease;
+}
+
+.footer-social-telegram:hover {
+  color: #fff;
+  background: #229ed9;
+}
+
+.footer-social-whatsapp:hover {
+  color: #fff;
+  background: #25d366;
+}
+
+.footer-social-gmail:hover {
+  color: #fff;
+  background: #ea4335;
 }
 
 .footer-bottom {

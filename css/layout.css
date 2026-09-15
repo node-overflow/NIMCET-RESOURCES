@@ -25,7 +25,7 @@
 .sidebar {
   width: var(--sidebar-w);
   flex-shrink: 0;
-  background: var(--surface);
+  background: var(--sidebar-bg);
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
@@ -137,7 +137,7 @@
   border: none;
   border-left: 2px solid transparent;
   background: transparent;
-  color: var(--text-dim);
+  color: var(--nav-item-color);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   font-size: 0.86rem;
   font-weight: 500;
@@ -183,6 +183,7 @@
   font-size: 0.7rem;
   color: var(--text-faint);
   line-height: 1.5;
+  text-align: center;
 }
 
 /* ============ Main content ============ */
@@ -225,7 +226,7 @@
 
 .section-title {
   position: relative;
-  font-size: 0.76rem;
+  font-size: 0.94rem;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;

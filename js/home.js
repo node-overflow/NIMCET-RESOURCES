@@ -27,7 +27,8 @@ import {
     countBySubject,
     escapeHtml,
     parseDateStr,
-    subjectSymbolHtml
+    subjectSymbolHtml,
+    TYPE_CHIP_ICONS
 } from "./utils.js";
 
 import { renderGrid } from "./cards.js";
@@ -423,7 +424,11 @@ export const renderHome = (
 
         chip.className = "chip";
         chip.type = "button";
-        chip.textContent = type.label;
+        chip.innerHTML =
+            (TYPE_CHIP_ICONS[type.key] || "") +
+            "<span>" +
+            escapeHtml(type.label) +
+            "</span>";
 
         chip.addEventListener("click", () => {
             onTypeClick(type.key);
