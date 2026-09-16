@@ -224,6 +224,24 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Cengage%20vector%20and%203d.pdf"
   },
   {
+    "title": "Mathematics for JEE ADVANCED",
+    "bestFor": "Advanced Practice",
+    "image": "https://m.media-amazon.com/images/I/814Fq2YqFEL._SL1500_.jpg",
+    "tags": ["advanced practice", "concept building"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20BOOKS/Mathematics%20for%20JEE%20Advance%20Pearson.pdf"
+  },
+  {
+    "title": "Logarithm and its Applications",
+    "bestFor": "Concept Building",
+    "image": "https://m.media-amazon.com/images/I/61LR8cWccdL._SL1500_.jpg",
+    "tags": ["logarithm", "concept building"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20BOOKS/Logarithm_And_Its_Applications_G._Tewani.pdf"
+  },
+  {
     "title": "Arihant 41 Years Maths",
     "bestFor": "Previous Year Questions",
     "image": "https://m.media-amazon.com/images/I/71XbjNlhQmL._SL1500_.jpg",

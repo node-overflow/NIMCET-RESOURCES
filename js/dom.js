@@ -22,6 +22,7 @@ export const elViewDppsSubject = $("#view-dpps-subject");
 export const elViewDppsChapter = $("#view-dpps-chapter");
 export const elViewMocks = $("#view-mocks");
 export const elViewMocksDetail = $("#view-mocks-detail");
+export const elViewMathgym = $("#view-mathgym");
 
 export const VIEWS = {
     home: elViewHome,
@@ -33,7 +34,8 @@ export const VIEWS = {
     "dpps-subject": elViewDppsSubject,
     "dpps-chapter": elViewDppsChapter,
     mocks: elViewMocks,
-    "mocks-detail": elViewMocksDetail
+    "mocks-detail": elViewMocksDetail,
+    mathgym: elViewMathgym
 };
 
 export const elUpdatesBadge = $("#updatesBadge");
@@ -68,6 +70,9 @@ export const elMocksGrid = $("#mocksGrid");
 
 export const elMocksBackBtn = $("#mocksBackBtn");
 export const elMocksDetailHeading = $("#mocksDetailHeading");
+
+export const elMathgymGrid = $("#mathgymGrid");
+export const elMathgymEmpty = $("#mathgymEmpty");
 
 export const elSubjectGrid = $("#subjectGrid");
 export const elTypeChips = $("#typeChips");

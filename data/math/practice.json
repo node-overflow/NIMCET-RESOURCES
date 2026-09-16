@@ -1,7 +1,7 @@
 [
   {
     "title": "3D Geometry",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["Geometry", "3d"],
     "cdnjs": true,
     "action": "open",
@@ -9,7 +9,7 @@
   },
   {
     "title": "AOD",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["calculus", "application of derivatives"],
     "cdnjs": true,
     "action": "open",
@@ -17,7 +17,7 @@
   },
   {
     "title": "AOD II",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["calculus", "application of derivatives"],
     "cdnjs": true,
     "action": "open",
@@ -25,7 +25,7 @@
   },
   {
     "title": "AOD III",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["calculus", "application of derivatives"],
     "cdnjs": true,
     "action": "open",
@@ -33,7 +33,7 @@
   },
   {
     "title": "AOD IV",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["calculus", "application of derivatives"],
     "cdnjs": true,
     "action": "open",
@@ -41,7 +41,7 @@
   },
   {
     "title": "Area Under Curve",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["calculus", "area under curve", "integration"],
     "cdnjs": true,
     "action": "open",
@@ -49,7 +49,7 @@
   },
   {
     "title": "Binomial Theorem",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["algebra", "binomial theorem"],
     "cdnjs": true,
     "action": "open",
@@ -57,7 +57,7 @@
   },
   {
     "title": "Circles",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["coordinate geometry", "circle"],
     "cdnjs": true,
     "action": "open",
@@ -65,7 +65,7 @@
   },
   {
     "title": "Complex Numbers",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["algebra", "complex numbers"],
     "cdnjs": true,
     "action": "open",
@@ -73,7 +73,7 @@
   },
   {
     "title": "Continuity Differentiability",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["calculus", "continuity", "differentiability"],
     "cdnjs": true,
     "action": "open",
@@ -81,7 +81,7 @@
   },
   {
     "title": "Definite Integrals",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["calculus", "integration", "definite integrals"],
     "cdnjs": true,
     "action": "open",
@@ -89,7 +89,7 @@
   },
   {
     "title": "Differential Eqn",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["calculus", "differential equations"],
     "cdnjs": true,
     "action": "open",
@@ -97,7 +97,7 @@
   },
   {
     "title": "Differentiation",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["calculus", "differentiation"],
     "cdnjs": true,
     "action": "open",
@@ -105,7 +105,7 @@
   },
   {
     "title": "Ellipse",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["coordinate geometry", "conic sections", "ellipse"],
     "cdnjs": true,
     "action": "open",
@@ -113,7 +113,7 @@
   },
   {
     "title": "Functions",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["algebra", "functions"],
     "cdnjs": true,
     "action": "open",
@@ -121,7 +121,7 @@
   },
   {
     "title": "Functions II",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["algebra", "functions"],
     "cdnjs": true,
     "action": "open",
@@ -129,7 +129,7 @@
   },
   {
     "title": "Functions III",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["algebra", "functions"],
     "cdnjs": true,
     "action": "open",
@@ -137,7 +137,7 @@
   },
   {
     "title": "Hyperbola",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["coordinate geometry", "conic sections", "hyperbola"],
     "cdnjs": true,
     "action": "open",
@@ -145,7 +145,7 @@
   },
   {
     "title": "Indefinite Integrals",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["calculus", "integration", "indefinite integrals"],
     "cdnjs": true,
     "action": "open",
@@ -153,7 +153,7 @@
   },
   {
     "title": "Limits",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["calculus", "limits"],
     "cdnjs": true,
     "action": "open",
@@ -161,7 +161,7 @@
   },
   {
     "title": "Logarithms",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["algebra", "logarithms"],
     "cdnjs": true,
     "action": "open",
@@ -169,7 +169,7 @@
   },
   {
     "title": "Matrix & Determinant",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["algebra", "matrices", "determinants"],
     "cdnjs": true,
     "action": "open",
@@ -177,7 +177,7 @@
   },
   {
     "title": "P&C",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["combinatorics", "permutation", "combination"],
     "cdnjs": true,
     "action": "open",
@@ -185,7 +185,7 @@
   },
   {
     "title": "Parabola",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["coordinate geometry", "conic sections", "parabola"],
     "cdnjs": true,
     "action": "open",
@@ -193,7 +193,7 @@
   },
   {
     "title": "Probability",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["probability", "combinatorics"],
     "cdnjs": true,
     "action": "open",
@@ -201,15 +201,15 @@
   },
   {
     "title": "Progression",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["algebra", "sequences", "series", "progression"],
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20practice/GB%20SIR/Progression%20GB%20Sir.pdf"
   },
   {
-    "title": "Quadratic Eqn",
-    "owner": "GB Sir",
+    "title": "Quadratic Equations",
+    "owner": "GB SIR",
     "tags": ["algebra", "quadratic equations"],
     "cdnjs": true,
     "action": "open",
@@ -217,7 +217,7 @@
   },
   {
     "title": "St Lines",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["coordinate geometry", "straight lines"],
     "cdnjs": true,
     "action": "open",
@@ -225,7 +225,7 @@
   },
   {
     "title": "Trigonometry",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["trigonometry", "trigonometric functions"],
     "cdnjs": true,
     "action": "open",
@@ -233,7 +233,7 @@
   },
   {
     "title": "Trigonometry II",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["trigonometry", "trigonometric functions"],
     "cdnjs": true,
     "action": "open",
@@ -241,7 +241,7 @@
   },
   {
     "title": "Trigonometry III",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["trigonometry", "trigonometric functions"],
     "cdnjs": true,
     "action": "open",
@@ -249,7 +249,7 @@
   },
   {
     "title": "Vector",
-    "owner": "GB Sir",
+    "owner": "GB SIR",
     "tags": ["vector", "3d geometry", "geometry"],
     "cdnjs": true,
     "action": "open",
@@ -257,7 +257,7 @@
   },
   {
     "title": "Application of Derivatives HLP",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["aod", "calculus", "application of derivatives"],
     "cdnjs": true,
     "action": "open",
@@ -265,7 +265,7 @@
   },
   {
     "title": "Application of Derivatives",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["aod", "calculus", "application of derivatives"],
     "cdnjs": true,
     "action": "open",
@@ -273,7 +273,7 @@
   },
   {
     "title": "Binomial Theorem",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["binomial theorem", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -281,7 +281,7 @@
   },
   {
     "title": "Circle",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["circle", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -289,7 +289,7 @@
   },
   {
     "title": "Complex Numbers HLP",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["complex numbers", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -297,7 +297,7 @@
   },
   {
     "title": "Complex Numbers",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["complex numbers", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -305,7 +305,7 @@
   },
   {
     "title": "Conic Sections",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -313,7 +313,7 @@
   },
   {
     "title": "Definite Integration",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["definite integration", "integral calculus"],
     "cdnjs": true,
     "action": "open",
@@ -321,7 +321,7 @@
   },
   {
     "title": "Differential Equations",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["differential equations", "integral calculus"],
     "cdnjs": true,
     "action": "open",
@@ -329,7 +329,7 @@
   },
   {
     "title": "Differentiation",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["differentiation", "differential calculus"],
     "cdnjs": true,
     "action": "open",
@@ -337,7 +337,7 @@
   },
   {
     "title": "Functions",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["functions", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -345,7 +345,7 @@
   },
   {
     "title": "Indefinite Integration",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["indefinite integration", "integral calculus"],
     "cdnjs": true,
     "action": "open",
@@ -353,7 +353,7 @@
   },
   {
     "title": "Linear Combination of Divisors",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["linear combination of divisors", "number theory"],
     "cdnjs": true,
     "action": "open",
@@ -361,7 +361,7 @@
   },
   {
     "title": "Matrices and Determinants",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["matrices", "determinants", "linear algebra"],
     "cdnjs": true,
     "action": "open",
@@ -369,7 +369,7 @@
   },
   {
     "title": "Permutation and Combination",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["permutation and combination", "combinatorics"],
     "cdnjs": true,
     "action": "open",
@@ -377,7 +377,7 @@
   },
   {
     "title": "Probability",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["probability"],
     "cdnjs": true,
     "action": "open",
@@ -385,7 +385,7 @@
   },
   {
     "title": "Progressions",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["progressions", "sequences and series"],
     "cdnjs": true,
     "action": "open",
@@ -393,7 +393,7 @@
   },
   {
     "title": "Quadratic Equations",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["quadratic equations", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -401,7 +401,7 @@
   },
   {
     "title": "Quadratic Equations HLP",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["quadratic equations", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -409,7 +409,7 @@
   },
   {
     "title": "Relations, Functions and Inverse Trigonometric Functions",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["relations", "functions", "inverse trigonometric functions"],
     "cdnjs": true,
     "action": "open",
@@ -417,7 +417,7 @@
   },
   {
     "title": "Sequence of Numbers",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["sequence of numbers", "sequences and series"],
     "cdnjs": true,
     "action": "open",
@@ -425,7 +425,7 @@
   },
   {
     "title": "Set Theory and Inequalities",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["sets", "inequalities", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -433,7 +433,7 @@
   },
   {
     "title": "Straight Lines",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["straight lines", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -441,7 +441,7 @@
   },
   {
     "title": "Statistics",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["statistics"],
     "cdnjs": true,
     "action": "open",
@@ -449,7 +449,7 @@
   },
   {
     "title": "Trigonometry",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -457,7 +457,7 @@
   },
   {
     "title": "Vectors and Three-Dimensional Geometry",
-    "owner": "Resonance",
+    "owner": "RESONANCE",
     "tags": ["vectors", "three-dimensional geometry", "3d geometry"],
     "cdnjs": true,
     "action": "open",
@@ -465,7 +465,7 @@
   },
   {
     "title": "Application of Derivatives",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["application of derivatives", "derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -473,7 +473,7 @@
   },
   {
     "title": "Binomial Theorem",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["binomial theorem", "algebra", "expansion"],
     "cdnjs": true,
     "action": "open",
@@ -481,7 +481,7 @@
   },
   {
     "title": "Circle",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["circle", "coordinate geometry", "conic sections"],
     "cdnjs": true,
     "action": "open",
@@ -489,7 +489,7 @@
   },
   {
     "title": "Complex Numbers",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["complex numbers", "algebra", "complex plane"],
     "cdnjs": true,
     "action": "open",
@@ -497,7 +497,7 @@
   },
   {
     "title": "Conic Sections",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["conic sections", "coordinate geometry", "parabola"],
     "cdnjs": true,
     "action": "open",
@@ -505,7 +505,7 @@
   },
   {
     "title": "Determinants",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["determinants", "matrices", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -513,7 +513,7 @@
   },
   {
     "title": "Functions and Inverse Trigonometric Functions",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["functions", "inverse trigonometric functions", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -521,7 +521,7 @@
   },
   {
     "title": "Fundamentals of Algebra",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["algebra", "fundamentals", "equations"],
     "cdnjs": true,
     "action": "open",
@@ -529,7 +529,7 @@
   },
   {
     "title": "Fundamentals of Geometry",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["geometry", "fundamentals", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -537,7 +537,7 @@
   },
   {
     "title": "Height and Distance",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["height and distance", "trigonometry", "applications"],
     "cdnjs": true,
     "action": "open",
@@ -545,7 +545,7 @@
   },
   {
     "title": "Integration",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["integration", "calculus", "integrals"],
     "cdnjs": true,
     "action": "open",
@@ -553,7 +553,7 @@
   },
   {
     "title": "Limits, Continuity and Differentiability",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["limits", "continuity", "differentiation"],
     "cdnjs": true,
     "action": "open",
@@ -561,7 +561,7 @@
   },
   {
     "title": "Logarithms",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["logarithms", "algebra", "exponents"],
     "cdnjs": true,
     "action": "open",
@@ -569,7 +569,7 @@
   },
   {
     "title": "Modulus",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["modulus", "absolute value", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -577,7 +577,7 @@
   },
   {
     "title": "Matrices",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["matrices", "linear algebra", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -585,7 +585,7 @@
   },
   {
     "title": "Probability",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["probability", "permutations", "combinations"],
     "cdnjs": true,
     "action": "open",
@@ -593,7 +593,7 @@
   },
   {
     "title": "System of Trigonometric Equations",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["trigonometry", "trigonometric equations", "equations"],
     "cdnjs": true,
     "action": "open",
@@ -601,7 +601,7 @@
   },
   {
     "title": "Sets and Inequalities",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["sets", "inequalities", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -609,7 +609,7 @@
   },
   {
     "title": "Straight Lines",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["straight lines", "coordinate geometry", "lines"],
     "cdnjs": true,
     "action": "open",
@@ -617,7 +617,7 @@
   },
   {
     "title": "Quadratic Equations",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["quadratic equations", "algebra", "equations"],
     "cdnjs": true,
     "action": "open",
@@ -625,7 +625,7 @@
   },
   {
     "title": "Sequences and Series",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["sequences", "series", "progressions"],
     "cdnjs": true,
     "action": "open",
@@ -633,7 +633,7 @@
   },
   {
     "title": "Trigonometric Equations",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["trigonometry", "trigonometric equations", "equations"],
     "cdnjs": true,
     "action": "open",
@@ -641,7 +641,7 @@
   },
   {
     "title": "Vectors",
-    "owner": "Allen",
+    "owner": "ALLEN",
     "tags": ["vectors", "vector algebra", "three-dimensional geometry"],
     "cdnjs": true,
     "action": "open",
@@ -649,7 +649,7 @@
   },
   {
     "title": "Three-Dimensional Geometry",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": [
       "three-dimensional geometry",
       "3d geometry",
@@ -661,7 +661,7 @@
   },
   {
     "title": "Applications of Derivatives",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["applications of derivatives", "derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -669,7 +669,7 @@
   },
   {
     "title": "Applications of Integrals",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["applications of integrals", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -677,7 +677,7 @@
   },
   {
     "title": "Binomial Theorem",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["binomial theorem", "algebra", "expansion"],
     "cdnjs": true,
     "action": "open",
@@ -685,7 +685,7 @@
   },
   {
     "title": "Continuity and Differentiability",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["continuity", "differentiability", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -693,7 +693,7 @@
   },
   {
     "title": "Complex Numbers and Quadratic Equations",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["complex numbers", "quadratic equations", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -701,7 +701,7 @@
   },
   {
     "title": "Conic Sections Part 1",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["conic sections", "coordinate geometry", "parabola"],
     "cdnjs": true,
     "action": "open",
@@ -709,7 +709,7 @@
   },
   {
     "title": "Conic Sections Part 2",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["conic sections", "coordinate geometry", "ellipse"],
     "cdnjs": true,
     "action": "open",
@@ -717,7 +717,7 @@
   },
   {
     "title": "Determinants",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["determinants", "matrices", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -725,7 +725,7 @@
   },
   {
     "title": "Differential Equations",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["differential equations", "calculus", "derivatives"],
     "cdnjs": true,
     "action": "open",
@@ -733,7 +733,7 @@
   },
   {
     "title": "Integrals",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["integrals", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -741,7 +741,7 @@
   },
   {
     "title": "Inverse Trigonometric Functions",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["inverse trigonometric functions", "trigonometry", "functions"],
     "cdnjs": true,
     "action": "open",
@@ -749,7 +749,7 @@
   },
   {
     "title": "Limits and Derivatives",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["limits", "derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -757,7 +757,7 @@
   },
   {
     "title": "Matrices",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["matrices", "linear algebra", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -765,7 +765,7 @@
   },
   {
     "title": "Permutations and Combinations",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["permutations", "combinations", "counting"],
     "cdnjs": true,
     "action": "open",
@@ -773,7 +773,7 @@
   },
   {
     "title": "Probability",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["probability", "permutations", "combinations"],
     "cdnjs": true,
     "action": "open",
@@ -781,7 +781,7 @@
   },
   {
     "title": "Relations and Functions",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["relations", "functions", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -789,7 +789,7 @@
   },
   {
     "title": "Sequences and Series",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["sequences", "series", "progressions"],
     "cdnjs": true,
     "action": "open",
@@ -797,7 +797,7 @@
   },
   {
     "title": "Sets",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["sets", "set theory", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -805,7 +805,7 @@
   },
   {
     "title": "Statistics",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["statistics", "mean", "data analysis"],
     "cdnjs": true,
     "action": "open",
@@ -813,7 +813,7 @@
   },
   {
     "title": "Straight Lines",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["straight lines", "coordinate geometry", "lines"],
     "cdnjs": true,
     "action": "open",
@@ -821,7 +821,7 @@
   },
   {
     "title": "Trigonometric Functions",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["trigonometric functions", "trigonometry", "identities"],
     "cdnjs": true,
     "action": "open",
@@ -829,7 +829,7 @@
   },
   {
     "title": "Vector Algebra",
-    "owner": "Aakash",
+    "owner": "AAKASH",
     "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
     "cdnjs": true,
     "action": "open",
@@ -837,7 +837,7 @@
   },
   {
     "title": "Area Under Curve I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["area under curve", "definite integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -845,7 +845,7 @@
   },
   {
     "title": "Area Under Curve II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["area under curve", "definite integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -853,7 +853,7 @@
   },
   {
     "title": "Area Under Curve III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["area under curve", "definite integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -861,7 +861,7 @@
   },
   {
     "title": "Area Under Curve IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["area under curve", "definite integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -869,7 +869,7 @@
   },
   {
     "title": "Area Under Curve V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["area under curve", "definite integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -877,7 +877,7 @@
   },
   {
     "title": "Binomial Theorem I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["binomial theorem", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -885,7 +885,7 @@
   },
   {
     "title": "Binomial Theorem II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["binomial theorem", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -893,7 +893,7 @@
   },
   {
     "title": "Binomial Theorem III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["binomial theorem", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -901,7 +901,7 @@
   },
   {
     "title": "Binomial Theorem IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["binomial theorem", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -909,7 +909,7 @@
   },
   {
     "title": "Binomial Theorem V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["binomial theorem", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -917,7 +917,7 @@
   },
   {
     "title": "Circle I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["circle", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -925,7 +925,7 @@
   },
   {
     "title": "Circle II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["circle", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -933,7 +933,7 @@
   },
   {
     "title": "Circle III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["circle", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -941,7 +941,7 @@
   },
   {
     "title": "Circle IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["circle", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -949,7 +949,7 @@
   },
   {
     "title": "Circle V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["circle", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -957,7 +957,7 @@
   },
   {
     "title": "Complex Numbers I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["complex numbers", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -965,7 +965,7 @@
   },
   {
     "title": "Complex Numbers II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["complex numbers", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -973,7 +973,7 @@
   },
   {
     "title": "Complex Numbers III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["complex numbers", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -981,7 +981,7 @@
   },
   {
     "title": "Complex Numbers IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["complex numbers", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -989,7 +989,7 @@
   },
   {
     "title": "Complex Numbers V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["complex numbers", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -997,7 +997,7 @@
   },
   {
     "title": "Continuity and Differentiability",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["continuity and differentiability", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1005,7 +1005,7 @@
   },
   {
     "title": "Definite Integration I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["definite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1013,7 +1013,7 @@
   },
   {
     "title": "Definite Integration II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["definite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1021,7 +1021,7 @@
   },
   {
     "title": "Definite Integration III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["definite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1029,7 +1029,7 @@
   },
   {
     "title": "Definite Integration IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["definite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1037,7 +1037,7 @@
   },
   {
     "title": "Definite Integration V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["definite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1045,7 +1045,7 @@
   },
   {
     "title": "Definite Integration VI",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["definite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1053,7 +1053,7 @@
   },
   {
     "title": "Differential Equations I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["differential equations", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1061,7 +1061,7 @@
   },
   {
     "title": "Differential Equations II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["differential equations", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1069,7 +1069,7 @@
   },
   {
     "title": "Differential Equations III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["differential equations", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1077,7 +1077,7 @@
   },
   {
     "title": "Differential Equations IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["differential equations", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1085,7 +1085,7 @@
   },
   {
     "title": "Differential Equations V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["differential equations", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1093,7 +1093,7 @@
   },
   {
     "title": "Ellipse I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["ellipse", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1101,7 +1101,7 @@
   },
   {
     "title": "Ellipse II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["ellipse", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1109,7 +1109,7 @@
   },
   {
     "title": "Ellipse III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["ellipse", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1117,7 +1117,7 @@
   },
   {
     "title": "Ellipse IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["ellipse", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1125,7 +1125,7 @@
   },
   {
     "title": "Ellipse V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["ellipse", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1133,7 +1133,7 @@
   },
   {
     "title": "Functions",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["functions", "relations and functions", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1141,7 +1141,7 @@
   },
   {
     "title": "Hyperbola I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["hyperbola", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1149,7 +1149,7 @@
   },
   {
     "title": "Hyperbola II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["hyperbola", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1157,7 +1157,7 @@
   },
   {
     "title": "Hyperbola III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["hyperbola", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1165,7 +1165,7 @@
   },
   {
     "title": "Hyperbola IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["hyperbola", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1173,7 +1173,7 @@
   },
   {
     "title": "Hyperbola V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["hyperbola", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1181,7 +1181,7 @@
   },
   {
     "title": "Indefinite Integration I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["indefinite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1189,7 +1189,7 @@
   },
   {
     "title": "Indefinite Integration II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["indefinite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1197,7 +1197,7 @@
   },
   {
     "title": "Indefinite Integration III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["indefinite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1205,7 +1205,7 @@
   },
   {
     "title": "Indefinite Integration IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["indefinite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1213,7 +1213,7 @@
   },
   {
     "title": "Indefinite Integration V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["indefinite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1221,7 +1221,7 @@
   },
   {
     "title": "Indefinite Integration VI",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["indefinite integration", "integration", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1229,7 +1229,7 @@
   },
   {
     "title": "Inverse Trigonometric Functions",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["inverse trigonometric functions", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1237,7 +1237,7 @@
   },
   {
     "title": "Limits",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["limits", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1245,7 +1245,7 @@
   },
   {
     "title": "Logarithms",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["logarithms", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1253,7 +1253,7 @@
   },
   {
     "title": "Modulus",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["modulus", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1261,7 +1261,7 @@
   },
   {
     "title": "Matrices & Determinants I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["Matrices & Determinants", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1269,7 +1269,7 @@
   },
   {
     "title": "Matrices & Determinants II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["Matrices & Determinants", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1277,7 +1277,7 @@
   },
   {
     "title": "Matrices & Determinants III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["Matrices & Determinants", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1285,7 +1285,7 @@
   },
   {
     "title": "Matrices & Determinants IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["Matrices & Determinants", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1293,7 +1293,7 @@
   },
   {
     "title": "Matrices & Determinants V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["Matrices & Determinants", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1301,7 +1301,7 @@
   },
   {
     "title": "Maxima and Minima I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["maxima and minima", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1309,7 +1309,7 @@
   },
   {
     "title": "Maxima and Minima II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["maxima and minima", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1317,7 +1317,7 @@
   },
   {
     "title": "Maxima and Minima III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["maxima and minima", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1325,7 +1325,7 @@
   },
   {
     "title": "Maxima and Minima IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["maxima and minima", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1333,7 +1333,7 @@
   },
   {
     "title": "Maxima and Minima V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["maxima and minima", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1341,7 +1341,7 @@
   },
   {
     "title": "Monotonicity I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["monotonicity", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1349,7 +1349,7 @@
   },
   {
     "title": "Monotonicity II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["monotonicity", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1357,7 +1357,7 @@
   },
   {
     "title": "Monotonicity III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["monotonicity", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1365,7 +1365,7 @@
   },
   {
     "title": "Monotonicity IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["monotonicity", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1373,7 +1373,7 @@
   },
   {
     "title": "Monotonicity V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["monotonicity", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1381,7 +1381,7 @@
   },
   {
     "title": "Parabola I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["parabola", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1389,7 +1389,7 @@
   },
   {
     "title": "Parabola II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["parabola", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1397,7 +1397,7 @@
   },
   {
     "title": "Parabola III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["parabola", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1405,7 +1405,7 @@
   },
   {
     "title": "Parabola IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["parabola", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1413,7 +1413,7 @@
   },
   {
     "title": "Parabola V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["parabola", "conic sections", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1421,7 +1421,7 @@
   },
   {
     "title": "Quadratic Equations",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["quadratic equations", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1429,7 +1429,7 @@
   },
   {
     "title": "Sequence and Series I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["sequence and series", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1437,7 +1437,7 @@
   },
   {
     "title": "Sequence and Series II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["sequence and series", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1445,7 +1445,7 @@
   },
   {
     "title": "Sequence and Series III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["sequence and series", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1453,7 +1453,7 @@
   },
   {
     "title": "Sequence and Series IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["sequence and series", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1461,7 +1461,7 @@
   },
   {
     "title": "Sequence and Series V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["sequence and series", "algebra"],
     "cdnjs": true,
     "action": "open",
@@ -1469,7 +1469,7 @@
   },
   {
     "title": "Solutions of Triangles I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["solutions of triangles", "triangles", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1477,7 +1477,7 @@
   },
   {
     "title": "Solutions of Triangles II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["solutions of triangles", "triangles", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1485,7 +1485,7 @@
   },
   {
     "title": "Solutions of Triangles III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["solutions of triangles", "triangles", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1493,7 +1493,7 @@
   },
   {
     "title": "Solutions of Triangles IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["solutions of triangles", "triangles", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1501,7 +1501,7 @@
   },
   {
     "title": "Solutions of Triangles V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["solutions of triangles", "triangles", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1509,7 +1509,7 @@
   },
   {
     "title": "Straight Lines I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["straight lines", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1517,7 +1517,7 @@
   },
   {
     "title": "Straight Lines II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["straight lines", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1525,7 +1525,7 @@
   },
   {
     "title": "Straight Lines III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["straight lines", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1533,7 +1533,7 @@
   },
   {
     "title": "Straight Lines IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["straight lines", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1541,7 +1541,7 @@
   },
   {
     "title": "Straight Lines V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["straight lines", "coordinate geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1549,7 +1549,7 @@
   },
   {
     "title": "Tangent and Normal I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["tangent and normal", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1557,7 +1557,7 @@
   },
   {
     "title": "Tangent and Normal II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["tangent and normal", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1565,7 +1565,7 @@
   },
   {
     "title": "Tangent and Normal III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["tangent and normal", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1573,7 +1573,7 @@
   },
   {
     "title": "Tangent and Normal IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["tangent and normal", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1581,7 +1581,7 @@
   },
   {
     "title": "Tangent and Normal V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["tangent and normal", "application of derivatives", "calculus"],
     "cdnjs": true,
     "action": "open",
@@ -1589,7 +1589,7 @@
   },
   {
     "title": "Trigonometric Equations I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["trigonometric equations", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1597,7 +1597,7 @@
   },
   {
     "title": "Trigonometric Equations II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["trigonometric equations", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1605,7 +1605,7 @@
   },
   {
     "title": "Trigonometric Equations III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["trigonometric equations", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1613,7 +1613,7 @@
   },
   {
     "title": "Trigonometric Equations IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["trigonometric equations", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1621,7 +1621,7 @@
   },
   {
     "title": "Trigonometric Equations V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["trigonometric equations", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1629,7 +1629,7 @@
   },
   {
     "title": "Trigonometric Ratios",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["trigonometric ratios", "trigonometry"],
     "cdnjs": true,
     "action": "open",
@@ -1637,7 +1637,7 @@
   },
   {
     "title": "Vector Algebra I",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1645,7 +1645,7 @@
   },
   {
     "title": "Vector Algebra II",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1653,7 +1653,7 @@
   },
   {
     "title": "Vector Algebra III",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1661,7 +1661,7 @@
   },
   {
     "title": "Vector Algebra IV",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
     "cdnjs": true,
     "action": "open",
@@ -1669,10 +1669,258 @@
   },
   {
     "title": "Vector Algebra V",
-    "owner": "Motion",
+    "owner": "MOTION",
     "tags": ["vector algebra", "vectors", "three-dimensional geometry"],
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20motion%20practice/vector%205.pdf"
+  },
+  {
+    "title": "Algebra",
+    "owner": "A DAS GUPTA",
+    "tags": ["algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20A%20DAS%20GUPTA%20CHAPTERWISE/Algebra.pdf"
+  },
+  {
+    "title": "Calculus",
+    "owner": "A DAS GUPTA",
+    "tags": ["calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20A%20DAS%20GUPTA%20CHAPTERWISE/Calculus.pdf"
+  },
+  {
+    "title": "Coordinate Geometry",
+    "owner": "A DAS GUPTA",
+    "tags": ["coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20A%20DAS%20GUPTA%20CHAPTERWISE/Coordinate%20Geometry.pdf"
+  },
+  {
+    "title": "Probability",
+    "owner": "A DAS GUPTA",
+    "tags": ["probability"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20A%20DAS%20GUPTA%20CHAPTERWISE/Probability.pdf"
+  },
+  {
+    "title": "Set Theory",
+    "owner": "A DAS GUPTA",
+    "tags": ["set theory", "sets"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20A%20DAS%20GUPTA%20CHAPTERWISE/Set%20Theory.pdf"
+  },
+  {
+    "title": "Trigonometry",
+    "owner": "A DAS GUPTA",
+    "tags": ["trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20A%20DAS%20GUPTA%20CHAPTERWISE/Trigonometry.pdf"
+  },
+  {
+    "title": "Vectors",
+    "owner": "A DAS GUPTA",
+    "tags": ["vectors", "vector algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20A%20DAS%20GUPTA%20CHAPTERWISE/Vectors.pdf"
+  },
+  {
+    "title": "3D Geometry",
+    "owner": "FIITJEE",
+    "tags": ["three-dimensional geometry", "3D geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%203D%20Geometry.pdf"
+  },
+  {
+    "title": "Applications of Derivatives",
+    "owner": "FIITJEE",
+    "tags": ["applications of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Applications%20of%20Derivative.pdf"
+  },
+  {
+    "title": "Area Under Curve",
+    "owner": "FIITJEE",
+    "tags": ["area", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Area.pdf"
+  },
+  {
+    "title": "Binomial Theorem",
+    "owner": "FIITJEE",
+    "tags": ["binomial theorem", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Binomial%20Theorem.pdf"
+  },
+  {
+    "title": "Circle",
+    "owner": "FIITJEE",
+    "tags": ["circle", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Circle.pdf"
+  },
+  {
+    "title": "Complex Number",
+    "owner": "FIITJEE",
+    "tags": ["complex numbers", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Complex%20Number.pdf"
+  },
+  {
+    "title": "Determinants",
+    "owner": "FIITJEE",
+    "tags": ["determinants", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Determinants.pdf"
+  },
+  {
+    "title": "Differential Equation",
+    "owner": "FIITJEE",
+    "tags": ["differential equations", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Differential%20Equation.pdf"
+  },
+  {
+    "title": "Ellipse",
+    "owner": "FIITJEE",
+    "tags": ["ellipse", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Ellipse.pdf"
+  },
+  {
+    "title": "Functions I",
+    "owner": "FIITJEE",
+    "tags": ["functions", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Functions%20I.pdf"
+  },
+  {
+    "title": "Functions II",
+    "owner": "FIITJEE",
+    "tags": ["functions", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Functions%20II.pdf"
+  },
+  {
+    "title": "Hyperbola",
+    "owner": "FIITJEE",
+    "tags": ["hyperbola", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Hyperbola.pdf"
+  },
+  {
+    "title": "Indefinite Integration",
+    "owner": "FIITJEE",
+    "tags": ["indefinite integration", "integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Indefinite%20Integration.pdf"
+  },
+  {
+    "title": "Limits, Continuity and Differentiability",
+    "owner": "FIITJEE",
+    "tags": ["limits", "continuity", "differentiability", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Limits%20Continuity%20and%20Differentia.pdf"
+  },
+  {
+    "title": "Parabola",
+    "owner": "FIITJEE",
+    "tags": ["parabola", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Parabola.pdf"
+  },
+  {
+    "title": "Permutation & Combination",
+    "owner": "FIITJEE",
+    "tags": ["permutation", "combination", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Permutation%26Combination.pdf"
+  },
+  {
+    "title": "Probability",
+    "owner": "FIITJEE",
+    "tags": ["probability"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Probability.pdf"
+  },
+  {
+    "title": "Sequences and Series",
+    "owner": "FIITJEE",
+    "tags": ["progressions", "series", "sequences"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Progressions%20And%20Series.pdf"
+  },
+  {
+    "title": "Quadratic Equations",
+    "owner": "FIITJEE",
+    "tags": ["quadratic equations", "algebra", "exponential"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Quadratic%20Equations%20and%20Exp.pdf"
+  },
+  {
+    "title": "Solutions of Triangles",
+    "owner": "FIITJEE",
+    "tags": ["solutions of triangle", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Solns%20of%20Triangle.pdf"
+  },
+  {
+    "title": "Straight Line",
+    "owner": "FIITJEE",
+    "tags": ["straight line", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Straight%20Line.pdf"
+  },
+  {
+    "title": "Trigonometric Equations",
+    "owner": "FIITJEE",
+    "tags": ["trigonometric equations", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Trigonometric%20Eqn.pdf"
+  },
+  {
+    "title": "Trigonometry",
+    "owner": "FIITJEE",
+    "tags": ["trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Trigonometry.pdf"
+  },
+  {
+    "title": "Vectors",
+    "owner": "FIITJEE",
+    "tags": ["vectors", "vector algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Vectors.pdf"
   }
 ]

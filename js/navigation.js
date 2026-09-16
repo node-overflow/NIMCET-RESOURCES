@@ -33,6 +33,8 @@ import {
     mockByKey
 } from "./mocks.js";
 
+import { renderMathgym } from "./mathgym.js";
+
 import { closeSidebar } from "./sidebar.js";
 
 let historyInitialized = false;
@@ -177,6 +179,16 @@ export const setActiveNav = () => {
         if (button) {
             button.dataset.active = "true";
         }
+
+        return;
+    }
+
+    if (state.view === "mathgym") {
+        const button = document.querySelector('.nav-item[data-nav="mathgym"]');
+
+        if (button) {
+            button.dataset.active = "true";
+        }
     }
 };
 
@@ -294,6 +306,10 @@ const renderForView = () => {
             break;
         }
 
+        case "mathgym":
+            renderMathgym();
+            break;
+
         default:
             break;
     }
@@ -403,6 +419,12 @@ export const goToMocksDetail = (mockKey, mockName) => {
     state.mockKey = mockKey;
 
     showView("mocks-detail");
+
+    renderForView();
+};
+
+export const goToMathgym = () => {
+    showView("mathgym", { pushHistoryEntry: false });
 
     renderForView();
 };

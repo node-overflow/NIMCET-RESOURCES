@@ -729,6 +729,17 @@
     "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/jamia%20mca/2016.pdf"
   },
   {
+    "exam": "MAH CET",
+    "year": 2024,
+    "title": "MAH CET 2024",
+    "questions": 100,
+    "duration": 90,
+    "marks": 200,
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyqs/MAH%20CET/MAH-CET%202024%20ORIGINAL%20PAPER.pdf"
+  },
+  {
     "exam": "JEE MAIN MATH",
     "year": 2026,
     "title": "JEE MAIN 2026",

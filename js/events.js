@@ -24,7 +24,8 @@ import {
     goToPyqs,
     goToDpps,
     goToDppsSubject,
-    goToMocks
+    goToMocks,
+    goToMathgym
 } from "./navigation.js";
 
 import {
@@ -66,6 +67,8 @@ const handleNavAction = (button) => {
         goToDpps();
     } else if (nav === "mocks") {
         goToMocks();
+    } else if (nav === "mathgym") {
+        goToMathgym();
     }
 };
 
