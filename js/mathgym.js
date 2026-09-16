@@ -41,18 +41,26 @@ const loadMathgymItems = () => {
 };
 
 /* =========================================================
-   ICON — used as the decorative mark on every set card
+   GRAPH WATERMARK — engraved top-right background decoration
    ========================================================= */
 
-const GYM_SPARK_ICON =
-    '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
-    '<path d="M13 2 4.2 13.4h5.6L11 22l8.8-11.4h-5.6L13 2Z" ' +
-    'stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" fill="currentColor" fill-opacity="0.14"/>' +
+const GYM_GRAPH_MARK =
+    '<svg viewBox="0 0 120 92" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+    '<path d="M2 88h116M2 2v86" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>' +
+    '<path d="M2 66 26 66M2 44 26 44M2 22 26 22" stroke="currentColor" stroke-width="1" stroke-dasharray="2 4" opacity="0.6"/>' +
+    '<path d="M8 74C 28 20, 46 84, 66 34 S 104 10, 116 26" ' +
+    'stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/>' +
+    '<circle cx="46" cy="63" r="3.2" fill="currentColor"/>' +
+    '<circle cx="80" cy="26" r="3.2" fill="currentColor"/>' +
+    '<circle cx="116" cy="26" r="3.2" fill="currentColor"/>' +
     '</svg>';
 
 /* =========================================================
    CARD BUILDER
    ========================================================= */
+
+/* per-row accent rotation, desktop only (mobile forces pink via CSS) */
+const GYM_ACCENTS = ["--gym-violet", "--gym-pink", "--gym-sky", "--gym-orange"];
 
 const buildMathgymCard = (item, index) => {
     const hasLink = Boolean(item.url) && item.url !== "#";
@@ -60,7 +68,11 @@ const buildMathgymCard = (item, index) => {
     const card = document.createElement("div");
 
     card.className = "gym-card";
-    card.style.setProperty("--gym-i", index % 6);
+
+    const rowIndex = Math.floor(index / 4);
+    const accentVar = GYM_ACCENTS[rowIndex % 4];
+
+    card.style.setProperty("--gym-accent", "var(" + accentVar + ")");
 
     const indexLabel = String(index + 1).padStart(2, "0");
 
@@ -76,7 +88,7 @@ const buildMathgymCard = (item, index) => {
     card.innerHTML =
         '<span class="gym-card-num" aria-hidden="true">' + indexLabel + '</span>' +
 
-        '<div class="gym-card-orb" aria-hidden="true">' + GYM_SPARK_ICON + '</div>' +
+        '<div class="gym-card-graph" aria-hidden="true">' + GYM_GRAPH_MARK + '</div>' +
 
         '<div class="gym-card-body">' +
         '<span class="gym-card-kicker">Practice Set</span>' +

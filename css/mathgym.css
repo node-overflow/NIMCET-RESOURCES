@@ -1,13 +1,28 @@
+/* ---------- 4-color rotation: violet, pink, sky, orange ---------- */
+:root {
+  --gym-violet: #7c5cff;
+  --gym-pink: #ec6a9c;
+  --gym-sky: #35a0e8;
+  --gym-orange: #f2994a;
+}
+
+:root[data-theme="light"] {
+  --gym-violet: #6d4fe0;
+  --gym-pink: #d9558a;
+  --gym-sky: #1f87c9;
+  --gym-orange: #dd7e2c;
+}
+
 /* ---------- grid ---------- */
 .gym-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
 }
 
 /* ---------- card ---------- */
 .gym-card {
-  --gym-accent: var(--accent);
+  --gym-accent: var(--gym-violet);
 
   position: relative;
   isolation: isolate;
@@ -36,25 +51,7 @@
     background 0.25s ease;
 }
 
-/* per-card accent rotation — six "stations" */
-.gym-card:nth-of-type(6n + 1) {
-  --gym-accent: var(--accent);
-}
-.gym-card:nth-of-type(6n + 2) {
-  --gym-accent: var(--type-practice);
-}
-.gym-card:nth-of-type(6n + 3) {
-  --gym-accent: var(--type-formula);
-}
-.gym-card:nth-of-type(6n + 4) {
-  --gym-accent: var(--type-video);
-}
-.gym-card:nth-of-type(6n + 5) {
-  --gym-accent: var(--type-notes);
-}
-.gym-card:nth-of-type(6n + 6) {
-  --gym-accent: var(--type-pyq);
-}
+/* accent fallback (overridden per-card via inline style from JS) */
 
 /* fill-up progress edge */
 .gym-card::after {
@@ -110,35 +107,29 @@
   color: color-mix(in srgb, var(--gym-accent) 32%, transparent);
 }
 
-/* icon orb */
-.gym-card-orb {
-  position: relative;
-  z-index: 1;
-  width: 42px;
-  height: 42px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 13px;
-  margin-bottom: 16px;
-  color: #fff;
-  background: linear-gradient(
-    135deg,
-    var(--gym-accent),
-    color-mix(in srgb, var(--gym-accent) 65%, black 15%)
-  );
-  box-shadow: 0 8px 18px -8px
-    color-mix(in srgb, var(--gym-accent) 70%, transparent);
-  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+/* engraved graph watermark — top right, quiet, no glow */
+.gym-card-graph {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  width: 132px;
+  height: 100px;
+  color: color-mix(in srgb, var(--gym-accent) 26%, transparent);
+  pointer-events: none;
+  z-index: 0;
+  transition:
+    color 0.35s ease,
+    transform 0.35s ease;
 }
 
-.gym-card-orb svg {
-  width: 20px;
-  height: 20px;
+.gym-card-graph svg {
+  width: 100%;
+  height: 100%;
 }
 
-.gym-card:hover .gym-card-orb {
-  transform: rotate(-8deg) scale(1.06);
+.gym-card:hover .gym-card-graph {
+  color: color-mix(in srgb, var(--gym-accent) 36%, transparent);
+  transform: translateY(-2px);
 }
 
 /* body */
@@ -150,7 +141,7 @@
 
 .gym-card-kicker {
   display: block;
-  font-size: 0.66rem;
+  font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -160,7 +151,7 @@
 
 .gym-card-title {
   margin: 0;
-  font-size: 1.06rem;
+  font-size: 1.24rem;
   font-weight: 700;
   line-height: 1.32;
   color: var(--text);
@@ -173,14 +164,14 @@
   align-items: center;
   gap: 5px;
   margin-top: 9px;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--text-dim);
 }
 
 .gym-card-count svg {
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   flex-shrink: 0;
   color: color-mix(in srgb, var(--gym-accent) 70%, var(--text-dim) 30%);
 }
@@ -199,7 +190,7 @@
   padding: 7px 13px;
   border-radius: 999px;
   font: inherit;
-  font-size: 0.76rem;
+  font-size: 0.85rem;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
@@ -257,6 +248,57 @@
 .gym-card-cta-arrow svg {
   width: 14px;
   height: 14px;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 880px) {
+  .gym-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+  }
+
+  .gym-card {
+    --gym-accent: var(--gym-pink) !important;
+    min-height: 172px;
+    padding: 19px 18px 16px;
+    border-radius: 17px;
+  }
+
+  .gym-card-num {
+    font-size: 3.8rem;
+  }
+
+  .gym-card-graph {
+    width: 118px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gym-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .gym-card {
+    min-height: 158px;
+    padding: 18px 17px 15px;
+  }
+
+  .gym-card-graph {
+    width: 108px;
+    height: 84px;
+  }
+
+  .gym-card-title {
+    font-size: 1.12rem;
+  }
+
+  .gym-card-num {
+    font-size: 3.4rem;
+    right: 10px;
+    bottom: -10px;
+  }
 }
 
 @media (hover: none) {
