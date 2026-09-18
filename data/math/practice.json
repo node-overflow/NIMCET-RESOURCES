@@ -1922,5 +1922,389 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20FIITJEE%20PRACTICE%20SHEETS/FIITJEE%20Vectors.pdf"
+  },
+  {
+    "title": "AOD",
+    "owner": "NUCLEUS",
+    "tags": ["aod", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/AOD.pdf"
+  },
+  {
+    "title": "Basic Mathematics",
+    "owner": "NUCLEUS",
+    "tags": ["basic mathematics"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Basic%20Math.pdf"
+  },
+  {
+    "title": "Binomial Theorem",
+    "owner": "NUCLEUS",
+    "tags": ["binomial theorem", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Binomial%20Theorem.pdf"
+  },
+  {
+    "title": "Circle",
+    "owner": "NUCLEUS",
+    "tags": ["circle", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Circle.pdf"
+  },
+  {
+    "title": "Complex Numbers",
+    "owner": "NUCLEUS",
+    "tags": ["complex numbers", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Complex%20Number.pdf"
+  },
+  {
+    "title": "Conic Sections",
+    "owner": "NUCLEUS",
+    "tags": ["conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Conic%20Section.pdf"
+  },
+  {
+    "title": "Determinants",
+    "owner": "NUCLEUS",
+    "tags": ["determinants", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Determinant.pdf"
+  },
+  {
+    "title": "Differential Equations & AUC",
+    "owner": "NUCLEUS",
+    "tags": ["differential equations", "auc", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Differential%20Equation%20%26%20AUC.pdf"
+  },
+  {
+    "title": "Functions",
+    "owner": "NUCLEUS",
+    "tags": ["functions", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Functions.pdf"
+  },
+  {
+    "title": "Inverse Trigonometric Functions",
+    "owner": "NUCLEUS",
+    "tags": ["inverse trigonometric functions", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/ITF.pdf"
+  },
+  {
+    "title": "Inequalities",
+    "owner": "NUCLEUS",
+    "tags": ["inequalities", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Inequality.pdf"
+  },
+  {
+    "title": "Integration",
+    "owner": "NUCLEUS",
+    "tags": ["integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Integration.pdf"
+  },
+  {
+    "title": "Limits, Continuity & Differentiability",
+    "owner": "NUCLEUS",
+    "tags": ["limits", "continuity", "differentiability", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/LCD.pdf"
+  },
+  {
+    "title": "Logarithms",
+    "owner": "NUCLEUS",
+    "tags": ["logarithms", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Logarithm.pdf"
+  },
+  {
+    "title": "Differentiation",
+    "owner": "NUCLEUS",
+    "tags": ["differentiation", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/MOD.pdf"
+  },
+  {
+    "title": "Matrices",
+    "owner": "NUCLEUS",
+    "tags": ["matrices", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Matrix.pdf"
+  },
+  {
+    "title": "Permutation & Combination",
+    "owner": "NUCLEUS",
+    "tags": ["permutation", "combination", "combinatorics"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Permutation%20%26%20Combination.pdf"
+  },
+  {
+    "title": "Probability",
+    "owner": "NUCLEUS",
+    "tags": ["probability"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Probability.pdf"
+  },
+  {
+    "title": "Quadratic Equations",
+    "owner": "NUCLEUS",
+    "tags": ["quadratic equations", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Quadratic%20Equation.pdf"
+  },
+  {
+    "title": "Sequence & Series",
+    "owner": "NUCLEUS",
+    "tags": ["sequence", "series", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Sequence%20%26%20Series.pdf"
+  },
+  {
+    "title": "Solutions of Triangle",
+    "owner": "NUCLEUS",
+    "tags": ["solutions of triangle", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Solutions%20Of%20Triangle.pdf"
+  },
+  {
+    "title": "Straight Lines",
+    "owner": "NUCLEUS",
+    "tags": ["straight lines", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Straight%20Lines.pdf"
+  },
+  {
+    "title": "Trigonometric Equations",
+    "owner": "NUCLEUS",
+    "tags": ["trigonometric equations", "trigonometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Trigonometric%20Equations.pdf"
+  },
+  {
+    "title": "Vector & 3D",
+    "owner": "NUCLEUS",
+    "tags": ["vectors", "3d geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20NUCLEUS%20PRACTICE%20SHEETS/Vector%20%26%203D.pdf"
+  },
+  {
+    "title": "Application of Derivatives I",
+    "owner": "MC SIR",
+    "tags": ["application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/AOD.pdf"
+  },
+  {
+    "title": "Application of Derivatives II",
+    "owner": "MC SIR",
+    "tags": ["application of derivatives", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/AOD%20II.pdf"
+  },
+  {
+    "title": "Area Under the Curve",
+    "owner": "MC SIR",
+    "tags": ["area under the curve", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Area%20Under%20Curve.pdf"
+  },
+  {
+    "title": "Binomial Theorem",
+    "owner": "MC SIR",
+    "tags": ["binomial theorem", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Binomial%20Theorem.pdf"
+  },
+  {
+    "title": "Circles",
+    "owner": "MC SIR",
+    "tags": ["circles", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Circles.pdf"
+  },
+  {
+    "title": "Complex Numbers",
+    "owner": "MC SIR",
+    "tags": ["complex numbers", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Complex%20Number.pdf"
+  },
+  {
+    "title": "Conic Sections",
+    "owner": "MC SIR",
+    "tags": ["conic sections", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Conic%20Sections.pdf"
+  },
+  {
+    "title": "Definite Integration",
+    "owner": "MC SIR",
+    "tags": ["definite integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Definite%20Integration.pdf"
+  },
+  {
+    "title": "Determinants",
+    "owner": "MC SIR",
+    "tags": ["determinants", "matrices"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Determinant.pdf"
+  },
+  {
+    "title": "Differential Equations",
+    "owner": "MC SIR",
+    "tags": ["differential equations", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Differential%20Equations.pdf"
+  },
+  {
+    "title": "Differentiation",
+    "owner": "MC SIR",
+    "tags": ["differentiation", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Differentiation.pdf"
+  },
+  {
+    "title": "Functions and Inverse Trigonometric Functions II",
+    "owner": "MC SIR",
+    "tags": ["functions", "inverse trigonometric functions"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Function%20%26%20ITF%20II.pdf"
+  },
+  {
+    "title": "Functions and Inverse Trigonometric Functions",
+    "owner": "MC SIR",
+    "tags": ["functions", "inverse trigonometric functions"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Function%20%26%20ITF.pdf"
+  },
+  {
+    "title": "Limits and Continuity",
+    "owner": "MC SIR",
+    "tags": ["limits", "continuity", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Limit%20%26%20Continuity.pdf"
+  },
+  {
+    "title": "Limits, Continuity and Differentiability",
+    "owner": "MC SIR",
+    "tags": ["limits", "continuity", "differentiability", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Limits%2C%20Continuity%20%26%20Differentiability.pdf"
+  },
+  {
+    "title": "Logarithms",
+    "owner": "MC SIR",
+    "tags": ["logarithms", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Logarithm.pdf"
+  },
+  {
+    "title": "Differentiation and Indefinite Integration",
+    "owner": "MC SIR",
+    "tags": ["differentiation", "indefinite integration", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/MOD%20%26%20Indefinite%20Integration.pdf"
+  },
+  {
+    "title": "Matrices",
+    "owner": "MC SIR",
+    "tags": ["matrices", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Matrices.pdf"
+  },
+  {
+    "title": "Permutations and Combinations",
+    "owner": "MC SIR",
+    "tags": ["permutations", "combinations", "probability"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Permutations%20%26%20Combinations.pdf"
+  },
+  {
+    "title": "Probability",
+    "owner": "MC SIR",
+    "tags": ["probability"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Probability.pdf"
+  },
+  {
+    "title": "Quadratic Equations",
+    "owner": "MC SIR",
+    "tags": ["quadratic equations", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Quadratic%20Equation.pdf"
+  },
+  {
+    "title": "Sequence and Series",
+    "owner": "MC SIR",
+    "tags": ["sequence and series", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Sequence%20%26%20Series.pdf"
+  },
+  {
+    "title": "Straight Lines and Circles",
+    "owner": "MC SIR",
+    "tags": ["straight lines", "circles", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Straigh%20Line%20%26%20Circle.pdf"
+  },
+  {
+    "title": "Straight Lines",
+    "owner": "MC SIR",
+    "tags": ["straight lines", "coordinate geometry"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/MATH%20MC%20SIR%20SHEETS/Straight%20Lines.pdf"
   }
 ]
