@@ -5,6 +5,8 @@ import {
     actionLabel
 } from "./utils.js";
 
+import { state } from "./state.js";
+
 /* =========================================================
    UNIT DETECTION (chapter/title -> topic unit + bg mark)
    ========================================================= */
@@ -73,7 +75,18 @@ export const getUnitInfo = (item) => {
 
 export const examTagHtml = (item) => {
     if (item.subject === "Computer" && item.exam) {
-        const exams = Array.isArray(item.exam) ? item.exam : [item.exam];
+        let exams = (Array.isArray(item.exam) ? item.exam : [item.exam]).filter(Boolean);
+
+        const active = state.subject === "Computer" ? state.examFilter : null;
+
+        if (active && active !== "All") {
+            const activeUpper = active.toUpperCase();
+            const matched = exams.filter(
+                exam => String(exam).toUpperCase() === activeUpper
+            );
+
+            exams = matched.length ? matched : [active];
+        }
 
         return exams
             .filter(Boolean)

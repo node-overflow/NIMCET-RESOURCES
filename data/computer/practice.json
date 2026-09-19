@@ -1,10 +1,34 @@
 [
   {
-    "title": "C Programming Output-Based \u2013 Practice Set",
-    "chapter": "Programming in C",
-    "bestFor": "Timed Practice",
-    "tags": ["c programming", "output based"],
+    "title": "Computer Fundamentals I",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["computer fundamentals", "digital logic", "digital gates"],
+    "cdnjs": true,
     "action": "open",
-    "url": "#"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Computer%20Fundamentals%20I.pdf"
+  },
+  {
+    "title": "Computer Fundamentals II",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["computer fundamentals", "digital logic", "digital gates"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Computer%20Fundamentals%20II.pdf"
+  },
+  {
+    "title": "Operating Sysytem I",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["operating system", "os"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Operating%20System%20I.pdf"
+  },
+  {
+    "title": "Operating Sysytem II",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["operating system", "os"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Operating%20System%20II.pdf"
   }
 ]
