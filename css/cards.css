@@ -880,3 +880,48 @@
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
+
+/* =========================================================
+   GLASSY SHINE — DPP cards, PYQ (Exam Hub) cards, and the
+   PYQ / Notes / Practice / Formula cards inside a subject's
+   resource grid.
+   ========================================================= */
+
+.dpp-cover-card,
+.pyq-card,
+.pyqtype-card,
+.notes-card,
+.practice-card,
+.formula-card {
+  background: color-mix(in srgb, var(--surface) 66%, transparent);
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+}
+
+.dpp-cover-card:hover,
+.pyq-card:hover,
+.pyqtype-card:hover,
+.notes-card:hover,
+.practice-card:hover,
+.formula-card:hover {
+  background: color-mix(in srgb, var(--surface-2) 74%, transparent);
+}
+
+.dpp-cover-card::after,
+.pyq-card::after,
+.pyqtype-card::after,
+.notes-card::after,
+.practice-card::after,
+.formula-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 0;
+}
