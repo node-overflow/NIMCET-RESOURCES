@@ -421,5 +421,14 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20books/Catalysers%20Maths%20-%20JEE%20Advanced.pdf"
+  },
+  {
+    "title": "Chapter-wise DPP for JEE Advanced",
+    "bestFor": "Advanced Practice",
+    "image": "https://m.media-amazon.com/images/I/71xEKSkd7lL._SL1360_.jpg",
+    "tags": ["jee", "problem practice"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/math%20books/Chapterwise%20DPP%20MathematicsJEEA%40studypandit.pdf"
   }
 ]

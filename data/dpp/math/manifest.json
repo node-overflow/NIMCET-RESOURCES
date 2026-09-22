@@ -66,5 +66,9 @@
   {
     "key": "straight_lines",
     "name": "Straight Lines"
+  },
+  {
+    "key": "vector",
+    "name": "Vector & 3D"
   }
 ]

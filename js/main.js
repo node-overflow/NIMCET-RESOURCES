@@ -8,7 +8,7 @@ import { wireThemeToggle } from "./theme.js";
 
 import { updateUnreadBadge } from "./updates.js";
 
-import { goHome, initHistoryNavigation } from "./navigation.js";
+import { initFromLocation, initHistoryNavigation } from "./navigation.js";
 
 import { elViewHome } from "./dom.js";
 
@@ -51,7 +51,7 @@ const init = async () => {
 
         updateUnreadBadge();
 
-        goHome();
+        initFromLocation();
 
         initHistoryNavigation();
 

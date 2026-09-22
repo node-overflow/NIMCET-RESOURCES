@@ -12,6 +12,8 @@ import {
 
 import { state } from "./state.js";
 
+import { goToResources } from "./navigation.js";
+
 import {
     typeLabelPlural,
     getFilteredResources,
@@ -153,11 +155,9 @@ export const renderFilterPills = () => {
     allPill.textContent = "All";
     allPill.dataset.active = state.type ? "false" : "true";
     allPill.addEventListener("click", () => {
-        state.type = null;
-        state.examFilter = null;
-        state.mathOwnerFilter = null;
-        state.mathChapterFilter = null;
-        renderResources();
+        if (!state.type) return;
+
+        goToResources({ type: null });
     });
     elFilterPills.appendChild(allPill);
 
@@ -174,15 +174,7 @@ export const renderFilterPills = () => {
         pill.addEventListener("click", () => {
             if (state.type === type.key) return;
 
-            state.type = type.key;
-            state.examFilter = null;
-
-            if (type.key !== "Practice") {
-                state.mathOwnerFilter = null;
-                state.mathChapterFilter = null;
-            }
-
-            renderResources();
+            goToResources({ type: type.key });
         });
         elFilterPills.appendChild(pill);
     });

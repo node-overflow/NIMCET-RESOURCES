@@ -37,6 +37,8 @@ import { renderMathgym } from "./mathgym.js";
 
 import { closeSidebar } from "./sidebar.js";
 
+import { pathForState, routeFromPath } from "./routes.js";
+
 let historyInitialized = false;
 
 const buildSnapshot = () => ({
@@ -225,15 +227,19 @@ export const showView = (name, options = {}) => {
     const snapshot = buildSnapshot();
     snapshot.scrollY = skipScrollReset ? window.scrollY : 0;
 
+    const url = pathForState(state);
+
     if (!historyInitialized) {
-        history.replaceState(snapshot, "", "");
+        history.replaceState(snapshot, "", url);
         historyInitialized = true;
     } else if (pushHistoryEntry) {
         if (previousView === name) {
-            history.replaceState(snapshot, "", "");
+            history.replaceState(snapshot, "", url);
         } else {
-            history.pushState(snapshot, "", "");
+            history.pushState(snapshot, "", url);
         }
+    } else {
+        history.replaceState(snapshot, "", url);
     }
 };
 
@@ -427,4 +433,71 @@ export const goToMathgym = () => {
     showView("mathgym", { pushHistoryEntry: false });
 
     renderForView();
+};
+
+/* =========================================================
+   DEEP-LINK ROUTING (real URL <-> app state)
+   ========================================================= */
+
+const applyRoute = (route) => {
+    switch (route.view) {
+        case "resources":
+            goToResources({
+                subject: route.subject ?? null,
+                type: route.type ?? null,
+                search: ""
+            });
+            break;
+
+        case "updates":
+            goToUpdates();
+            break;
+
+        case "pyqs":
+            goToPyqs();
+            break;
+
+        case "pyqs-exam":
+            goToPyqsExam(route.examKey);
+            break;
+
+        case "dpps":
+            goToDpps();
+            break;
+
+        case "dpps-subject":
+            goToDppsSubject(route.dppSubject);
+            break;
+
+        case "dpps-chapter":
+            state.dppSubject = route.dppSubject;
+
+            goToDppsChapter(route.dppChapterKey, route.dppChapterKey);
+            break;
+
+        case "mocks":
+            goToMocks();
+            break;
+
+        case "mocks-detail": {
+            const mock = mockByKey(route.mockKey);
+
+            goToMocksDetail(route.mockKey, mock ? mock.name : route.mockKey);
+            break;
+        }
+
+        case "mathgym":
+            goToMathgym();
+            break;
+
+        default:
+            goHome();
+    }
+};
+
+export const initFromLocation = () => {
+    const hashPath = window.location.hash ? window.location.hash.slice(1) : "/";
+    const route = routeFromPath(hashPath || "/");
+
+    applyRoute(route);
 };
