@@ -208,7 +208,13 @@ export const buildCoverCard = (item, { className, tcVar, badge, headline, metaLa
             ? '<span class="cover-headline"></span>'
             : "") +
 
+        '<div class="cover-meta-row">' +
+
         '<span class="cover-meta"></span>' +
+
+        '<span class="cover-difficulty"></span>' +
+
+        "</div>" +
 
         "</div>" +
 
@@ -231,6 +237,15 @@ export const buildCoverCard = (item, { className, tcVar, badge, headline, metaLa
     card.querySelector(".cover-unit").textContent = topText;
     card.querySelector(".cover-title").textContent = item.title || "";
     card.querySelector(".cover-meta").textContent = metaLabel || "";
+
+    const difficulty = typeof item.difficulty === "string" ? item.difficulty.trim().toLowerCase() : "";
+    const difficultyEl = card.querySelector(".cover-difficulty");
+
+    if (difficulty === "easy" || difficulty === "medium" || difficulty === "hard") {
+        difficultyEl.textContent = difficulty;
+        difficultyEl.dataset.difficulty = difficulty;
+        difficultyEl.classList.add("is-visible");
+    }
 
     if (headline) {
         card.querySelector(".cover-headline").textContent = headline;

@@ -1,19 +1,27 @@
 [
   {
-    "title": "Computer Fundamentals I",
+    "title": "Digital Fundamentals I",
     "exam": ["NIMCET", "CUET PG"],
-    "tags": ["computer fundamentals", "digital logic", "digital gates"],
+    "tags": ["digital fundamentals", "digital logic", "logic gates"],
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Computer%20Fundamentals%20I.pdf"
   },
   {
-    "title": "Computer Fundamentals II",
+    "title": "Digital Fundamentals II",
     "exam": ["NIMCET", "CUET PG"],
-    "tags": ["computer fundamentals", "digital logic", "digital gates"],
+    "tags": ["digital fundamentals", "digital logic", "logic gates"],
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Computer%20Fundamentals%20II.pdf"
+  },
+  {
+    "title": "Digital Fundamentals III",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["digital fundamentals", "digital logic", "logic gates"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/digital%20fundamentals%20mcqs.pdf"
   },
   {
     "title": "Operating Sysytem I",
@@ -30,5 +38,72 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Operating%20System%20II.pdf"
+  },
+  {
+    "title": "Operating Sysytem III",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["operating system", "os"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/500%20OS%20MCQS.pdf"
+  },
+  {
+    "title": "Operating Sysytem IV",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["operating system", "os"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/OS%20MCQS.pdf"
+  },
+  {
+    "title": "Operating Sysytem MCQs",
+    "exam": "GATE",
+    "tags": ["operating system", "os"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/OS%20GATE%20QUESTIONS.pdf"
+  },
+  {
+    "title": "Data Structures I",
+    "exam": "CUET PG",
+    "tags": ["data structures", "dsa"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/100-mcq-dsa-questions.pdf"
+  },
+  {
+    "title": "Data Structures II",
+    "exam": "CUET PG",
+    "tags": ["data structures", "dsa"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/DSA%20MCQS.pdf"
+  },
+  {
+    "title": "Arrays (DSA) I",
+    "exam": "CUET PG",
+    "tags": ["arrays", "data structures", "dsa"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/CUET%20PG%20Arrays%20Practice%20Sheet%20(Easy%20Level%20-%2030%20MCQs).pdf"
+  },
+  {
+    "title": "Arrays (DSA) II",
+    "exam": "CUET PG",
+    "tags": ["arrays", "data structures", "dsa"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/CUET%20PG%20Arrays%20Practice%20Sheet%20(Medium%20Level%20-%2030%20MCQs).pdf"
+  },
+  {
+    "title": "Arrays (DSA) III",
+    "exam": "CUET PG",
+    "tags": ["arrays", "data structures", "dsa"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/CUET%20PG%20Arrays%20Practice%20Sheet%20(Hard%20Level).pdf"
   }
 ]

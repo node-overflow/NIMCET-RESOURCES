@@ -202,12 +202,55 @@
   color: var(--text);
 }
 
+.cover-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
+
 .cover-meta {
   font-size: 0.62rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-faint);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cover-difficulty {
+  display: none;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+.cover-difficulty.is-visible {
+  display: inline-flex;
+}
+
+.cover-difficulty[data-difficulty="easy"] {
+  background: rgba(34, 197, 94, 0.16);
+  color: #22c55e;
+}
+
+.cover-difficulty[data-difficulty="medium"] {
+  background: rgba(249, 115, 22, 0.16);
+  color: #f97316;
+}
+
+.cover-difficulty[data-difficulty="hard"] {
+  background: rgba(239, 68, 68, 0.16);
+  color: #ef4444;
 }
 
 .cover-card .card-foot {
