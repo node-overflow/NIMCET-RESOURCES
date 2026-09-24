@@ -1,8 +1,270 @@
 [
   {
+    "title": "Data Representation I",
+    "exam": "NIMCET",
+    "tags": ["data representation"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Data%20Representation%20Practice%20Sheet%20-%20NIMCET%20Easy.pdf"
+  },
+  {
+    "title": "Data Representation II",
+    "exam": "NIMCET",
+    "tags": ["data representation"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Data%20Representation%20Practice%20Sheet%20-%20NIMCET%20Medium.pdf"
+  },
+  {
+    "title": "Data Representation III",
+    "exam": "NIMCET",
+    "tags": ["data representation"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Data%20Representation%20Practice%20Sheet%20-%20NIMCET%20Hard.pdf"
+  },
+  {
+    "title": "Data Representation IV",
+    "exam": "NIMCET",
+    "tags": ["data representation"],
+    "difficulty": "insane",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Data%20Representation%20Practice%20Sheet%20-%20NIMCET%20Insane%20Level.pdf"
+  },
+  {
+    "title": "Floating Point Representation I",
+    "exam": "NIMCET",
+    "tags": ["floating point representation"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Floating%20Point%20Representation%20Practice%20Sheet%20-%20Easy%20Level.pdf"
+  },
+  {
+    "title": "Floating Point Representation II",
+    "exam": "NIMCET",
+    "tags": ["floating point representation"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMET/Floating%20Point%20Representation%20Practice%20Sheet%20-%20Easy%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Floating Point Representation III",
+    "exam": "NIMCET",
+    "tags": ["floating point representation"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Floating%20Point%20Representation%20Practice%20Sheet%20-%20Medium%20Level.pdf"
+  },
+  {
+    "title": "Floating Point Representation IV",
+    "exam": "NIMCET",
+    "tags": ["floating point representation"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Floating%20Point%20Representation%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Binary Arithmetic I",
+    "exam": "NIMCET",
+    "tags": ["binary arithmetic"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Binary%20Arithmetic%20Practice%20Sheet%20-%20Easy%20Level.pdf"
+  },
+  {
+    "title": "Binary Arithmetic II",
+    "exam": "NIMCET",
+    "tags": ["binary arithmetic"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Binary%20Arithmetic%20Practice%20Sheet%20-%20Easy%20Level%20(Set%202).pdf"
+  },
+  {
+    "title": "Binary Arithmetic III",
+    "exam": "NIMCET",
+    "tags": ["binary arithmetic"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Binary%20Arithmetic%20Practice%20Sheet%20-%20Medium%20Level.pdf"
+  },
+  {
+    "title": "Binary Arithmetic IV",
+    "exam": "NIMCET",
+    "tags": ["binary arithmetic"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Binary%20Arithmetic%20Practice%20Sheet%20-%20Hard%20Level.pdf"
+  },
+  {
+    "title": "Boolean Algebra I",
+    "exam": "NIMCET",
+    "tags": ["boolean algebra"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Boolean%20Algebra%20Practice%20Sheet%20-%20Easy%20Level.pdf"
+  },
+  {
+    "title": "Boolean Algebra II",
+    "exam": "NIMCET",
+    "tags": ["boolean algebra"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Boolean%20Algebra%20Practice%20Sheet%20-%20Easy%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Boolean Algebra III",
+    "exam": "NIMCET",
+    "tags": ["boolean algebra"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Boolean%20Algebra%20Practice%20Sheet%20-%20Medium%20Level.pdf"
+  },
+  {
+    "title": "Boolean Algebra IV",
+    "exam": "NIMCET",
+    "tags": ["boolean algebra"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Boolean%20Algebra%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Boolean Algebra V",
+    "exam": "NIMCET",
+    "tags": ["boolean algebra"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Boolean%20Algebra%20Practice%20Sheet%20-%20Medium%20Level%20Set%203.pdf"
+  },
+  {
+    "title": "Boolean Algebra VI",
+    "exam": "NIMCET",
+    "tags": ["boolean algebra"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Boolean%20Algebra%20Practice%20Sheet%20-%20Medium%20Level%20Set%204.pdf"
+  },
+  {
+    "title": "Boolean Algebra VII",
+    "exam": "NIMCET",
+    "tags": ["boolean algebra"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Boolean%20Algebra%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Boolean Algebra VIII",
+    "exam": "NIMCET",
+    "tags": ["boolean algebra"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Boolean%20Algebra%20Practice%20Sheet%20-%20Hard%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Computer Organization I",
+    "exam": "NIMCET",
+    "tags": ["computer organization", "computer basics"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Computer%20Organization%20Easy%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "Computer Organization II",
+    "exam": "NIMCET",
+    "tags": ["computer organization", "computer basics"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Computer%20Organization%20Medium%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "Computer Organization III",
+    "exam": "NIMCET",
+    "tags": ["computer organization", "computer basics"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Computer%20Organization%20Hard%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "CPU & Instruction Formats I",
+    "exam": "NIMCET",
+    "tags": ["cpu", "central processing unit"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/CPU%20%26%20Instruction%20Formats%20Easy%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "CPU & Instruction Formats II",
+    "exam": "NIMCET",
+    "tags": ["cpu", "central processing unit"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/CPU%20%26%20Instruction%20Formats%20Medium%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "CPU & Instruction Formats III",
+    "exam": "NIMCET",
+    "tags": ["cpu", "central processing unit"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/CPU%20%26%20Instruction%20Formats%20Hard%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "I/O Devices I",
+    "exam": "NIMCET",
+    "tags": ["io devices", "input output devices"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/IO%20Devices%20Easy%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "I/O Devices II",
+    "exam": "NIMCET",
+    "tags": ["io devices", "input output devices"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/IO%20Devices%20Medium%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "I/O Devices III",
+    "exam": "NIMCET",
+    "tags": ["io devices", "input output devices"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/IO%20Devices%20Hard%20Practice%20Sheet.pdf"
+  },
+  {
     "title": "Digital Fundamentals I",
     "exam": ["NIMCET", "CUET PG"],
     "tags": ["digital fundamentals", "digital logic", "logic gates"],
+    "difficulty": "medium",
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Computer%20Fundamentals%20I.pdf"
@@ -11,6 +273,7 @@
     "title": "Digital Fundamentals II",
     "exam": ["NIMCET", "CUET PG"],
     "tags": ["digital fundamentals", "digital logic", "logic gates"],
+    "difficulty": "medium",
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Computer%20Fundamentals%20II.pdf"
@@ -19,6 +282,7 @@
     "title": "Digital Fundamentals III",
     "exam": ["NIMCET", "CUET PG"],
     "tags": ["digital fundamentals", "digital logic", "logic gates"],
+    "difficulty": "easy",
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/digital%20fundamentals%20mcqs.pdf"
@@ -27,6 +291,7 @@
     "title": "Operating Sysytem I",
     "exam": ["NIMCET", "CUET PG"],
     "tags": ["operating system", "os"],
+    "difficulty": "hard",
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Operating%20System%20I.pdf"
@@ -35,6 +300,7 @@
     "title": "Operating Sysytem II",
     "exam": ["NIMCET", "CUET PG"],
     "tags": ["operating system", "os"],
+    "difficulty": "medium",
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Operating%20System%20II.pdf"
@@ -43,6 +309,7 @@
     "title": "Operating Sysytem III",
     "exam": ["NIMCET", "CUET PG"],
     "tags": ["operating system", "os"],
+    "difficulty": "easy",
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/500%20OS%20MCQS.pdf"
@@ -51,6 +318,7 @@
     "title": "Operating Sysytem IV",
     "exam": ["NIMCET", "CUET PG"],
     "tags": ["operating system", "os"],
+    "difficulty": "easy",
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/OS%20MCQS.pdf"
@@ -67,6 +335,7 @@
     "title": "Data Structures I",
     "exam": "CUET PG",
     "tags": ["data structures", "dsa"],
+    "difficulty": "easy",
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/100-mcq-dsa-questions.pdf"
@@ -75,6 +344,7 @@
     "title": "Data Structures II",
     "exam": "CUET PG",
     "tags": ["data structures", "dsa"],
+    "difficulty": "medium",
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/DSA%20MCQS.pdf"
@@ -105,5 +375,50 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/CUET%20PG%20Arrays%20Practice%20Sheet%20(Hard%20Level).pdf"
+  },
+  {
+    "title": "Sparse Matrix (DSA)",
+    "exam": "CUET PG",
+    "tags": ["matrix", "data structures", "dsa"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/CUET%20PG%20Sparse%20Matrix%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "Stacks (DSA) I",
+    "exam": "CUET PG",
+    "tags": ["stacks", "data structures", "dsa"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/CUET%20PG%20Stacks%20Easy%20Level%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "Stacks (DSA) II",
+    "exam": "CUET PG",
+    "tags": ["stacks", "data structures", "dsa"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/CUET%20PG%20Stacks%20Hard%20Level%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "Queues (DSA) I",
+    "exam": "CUET PG",
+    "tags": ["queues", "data structures", "dsa"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/CUET%20PG%20Queues%20Easy%20Level%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "Queues (DSA) II",
+    "exam": "CUET PG",
+    "tags": ["queues", "data structures", "dsa"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/CUET%20PG%20Queues%20Medium%20Level%20Practice%20Sheet.pdf"
   }
 ]
