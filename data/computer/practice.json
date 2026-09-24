@@ -261,6 +261,78 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/IO%20Devices%20Hard%20Practice%20Sheet.pdf"
   },
   {
+    "title": "Input Devices I",
+    "exam": "NIMCET",
+    "tags": ["input devices"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Input%20Devices%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Input Devices II",
+    "exam": "NIMCET",
+    "tags": ["input devices"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Input%20Devices%20Practice%20Sheet%20-%20Easy%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Input Devices III",
+    "exam": "NIMCET",
+    "tags": ["input devices"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Input%20Devices%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Input Devices IV",
+    "exam": "NIMCET",
+    "tags": ["input devices"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Input%20Devices%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Output Devices I",
+    "exam": "NIMCET",
+    "tags": ["output devices"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Output%20Devices%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Output Devices II",
+    "exam": "NIMCET",
+    "tags": ["output devices"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Output%20Devices%20Practice%20Sheet%20-%20Easy%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Output Devices III",
+    "exam": "NIMCET",
+    "tags": ["output devices"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Output%20Devices%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Output Devices IV",
+    "exam": "NIMCET",
+    "tags": ["output devices"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Output%20Devices%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
     "title": "Digital Fundamentals I",
     "exam": ["NIMCET", "CUET PG"],
     "tags": ["digital fundamentals", "digital logic", "logic gates"],

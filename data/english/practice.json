@@ -1,10 +1,482 @@
 [
   {
-    "title": "Synonyms & Antonyms",
-    "chapter": "Vocabulary",
-    "bestFor": "Timed Practice",
-    "tags": ["synonyms", "antonyms"],
+    "title": "Adjective I",
+    "tags": ["adjective"],
+    "difficulty": "easy",
+    "cdnjs": true,
     "action": "open",
-    "url": "#"
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Adjective%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Adjective II",
+    "tags": ["adjective"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Adjective%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Adjective III",
+    "tags": ["adjective"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Adjective%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Adjective IV",
+    "tags": ["adjective"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Adjective%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Adverb I",
+    "tags": ["adverb"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Adverb%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Adverb II",
+    "tags": ["adverb"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Adverb%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Adverb III",
+    "tags": ["adverb"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Adverb%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Adverb IV",
+    "tags": ["adverb"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Adverb%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Antonyms and Synonyms I",
+    "tags": ["antonyms", "synonyms"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Antonyms%20and%20Synonyms%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Antonyms and Synonyms II",
+    "tags": ["antonyms", "synonyms"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Antonyms%20and%20Synonyms%20Practice%20Sheet%20-%20Easy%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Antonyms and Synonyms III",
+    "tags": ["antonyms", "synonyms"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Antonyms%20and%20Synonyms%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Antonyms and Synonyms IV",
+    "tags": ["antonyms", "synonyms"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Antonyms%20and%20Synonyms%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Antonyms and Synonyms V",
+    "tags": ["antonyms", "synonyms"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Antonyms%20and%20Synonyms%20Practice%20Sheet%20-%20Medium%20Level%20Set%203.pdf"
+  },
+  {
+    "title": "Antonyms and Synonyms VI",
+    "tags": ["antonyms", "synonyms"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Antonyms%20and%20Synonyms%20Practice%20Sheet%20-%20Medium%20Level%20Set%204.pdf"
+  },
+  {
+    "title": "Antonyms and Synonyms VII",
+    "tags": ["antonyms", "synonyms"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Antonyms%20and%20Synonyms%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Antonyms and Synonyms VIII",
+    "tags": ["antonyms", "synonyms"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Antonyms%20and%20Synonyms%20Practice%20Sheet%20-%20Hard%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Articles I",
+    "tags": ["articles"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Articles%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Articles II",
+    "tags": ["articles"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Articles%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Articles III",
+    "tags": ["articles"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Articles%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Articles IV",
+    "tags": ["articles"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Articles%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Basics of Grammar I",
+    "tags": ["basics of grammar"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Basics%20of%20Grammar%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Basics of Grammar II",
+    "tags": ["basics of grammar"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Basics%20of%20Grammar%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Basics of Grammar III",
+    "tags": ["basics of grammar"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Basics%20of%20Grammar%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Basics of Grammar IV",
+    "tags": ["basics of grammar"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Basics%20of%20Grammar%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Determiners I",
+    "tags": ["determiners"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Determiners%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Determiners II",
+    "tags": ["determiners"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Determiners%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Determiners III",
+    "tags": ["determiners"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Determiners%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Determiners IV",
+    "tags": ["determiners"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Determiners%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Idioms and Phrases I",
+    "tags": ["idioms and phrases"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Idioms%20and%20Phrases%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Idioms and Phrases II",
+    "tags": ["idioms and phrases"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Idioms%20and%20Phrases%20Practice%20Sheet%20-%20Easy%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Idioms and Phrases III",
+    "tags": ["idioms and phrases"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Idioms%20and%20Phrases%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Idioms and Phrases IV",
+    "tags": ["idioms and phrases"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Idioms%20and%20Phrases%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Idioms and Phrases V",
+    "tags": ["idioms and phrases"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Idioms%20and%20Phrases%20Practice%20Sheet%20-%20Medium%20Level%20Set%203.pdf"
+  },
+  {
+    "title": "Idioms and Phrases VI",
+    "tags": ["idioms and phrases"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Idioms%20and%20Phrases%20Practice%20Sheet%20-%20Medium%20Level%20Set%204.pdf"
+  },
+  {
+    "title": "Idioms and Phrases VII",
+    "tags": ["idioms and phrases"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Idioms%20and%20Phrases%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Idioms and Phrases VIII",
+    "tags": ["idioms and phrases"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Idioms%20and%20Phrases%20Practice%20Sheet%20-%20Hard%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Noun I",
+    "tags": ["noun"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Noun%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Noun II",
+    "tags": ["noun"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Noun%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Noun III",
+    "tags": ["noun"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Noun%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Noun IV",
+    "tags": ["noun"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Noun%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Parts of Speech I",
+    "tags": ["parts of speech"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Parts%20of%20Speech%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Parts of Speech II",
+    "tags": ["parts of speech"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Parts%20of%20Speech%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Parts of Speech III",
+    "tags": ["parts of speech"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Parts%20of%20Speech%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Parts of Speech IV",
+    "tags": ["parts of speech"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Parts%20of%20Speech%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Pronoun I",
+    "tags": ["pronoun"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Pronoun%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Pronoun II",
+    "tags": ["pronoun"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Pronoun%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Pronoun III",
+    "tags": ["pronoun"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Pronoun%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Pronoun IV",
+    "tags": ["pronoun"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Pronoun%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Subject Verb Agreement I",
+    "tags": ["subject verb agreement"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Subject%20Verb%20Agreement%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Subject Verb Agreement II",
+    "tags": ["subject verb agreement"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Subject%20Verb%20Agreement%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Subject Verb Agreement III",
+    "tags": ["subject verb agreement"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Subject%20Verb%20Agreement%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Subject Verb Agreement IV",
+    "tags": ["subject verb agreement"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Subject%20Verb%20Agreement%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Vocabulary Series I",
+    "tags": ["vocabulary"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Vocabulary%20Series%20Practice%20Sheet%20-%20Easy%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Vocabulary Series II",
+    "tags": ["vocabulary"],
+    "difficulty": "easy",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Vocabulary%20Series%20Practice%20Sheet%20-%20Easy%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Vocabulary Series III",
+    "tags": ["vocabulary"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Vocabulary%20Series%20Practice%20Sheet%20-%20Medium%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Vocabulary Series IV",
+    "tags": ["vocabulary"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Vocabulary%20Series%20Practice%20Sheet%20-%20Medium%20Level%20Set%202.pdf"
+  },
+  {
+    "title": "Vocabulary Series V",
+    "tags": ["vocabulary"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Vocabulary%20Series%20Practice%20Sheet%20-%20Medium%20Level%20Set%203.pdf"
+  },
+  {
+    "title": "Vocabulary Series VI",
+    "tags": ["vocabulary"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Vocabulary%20Series%20Practice%20Sheet%20-%20Medium%20Level%20Set%204.pdf"
+  },
+  {
+    "title": "Vocabulary Series VII",
+    "tags": ["vocabulary"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Vocabulary%20Series%20Practice%20Sheet%20-%20Hard%20Level%20Set%201.pdf"
+  },
+  {
+    "title": "Vocabulary Series VIII",
+    "tags": ["vocabulary"],
+    "difficulty": "hard",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/ENGLISH%20PRACTICE/Vocabulary%20Series%20Practice%20Sheet%20-%20Hard%20Level%20Set%202.pdf"
   }
 ]
