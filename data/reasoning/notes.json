@@ -1,10 +1,8 @@
 [
   {
-    "title": "Coding Decoding",
-    "chapter": "Coding Decoding",
-    "bestFor": "Quick Revision",
-    "tags": ["coding decoding"],
-    "action": "download",
-    "url": "#"
+    "title": "Title",
+    "tags": ["tag"],
+    "action": "open",
+    "url": ""
   }
 ]

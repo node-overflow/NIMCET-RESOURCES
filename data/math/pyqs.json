@@ -222,11 +222,29 @@
   {
     "title": "Coordinate Geometry Pyqs",
     "exam": "CUET PG",
-    "year": "2007-25",
+    "year": "upto 2025",
     "tags": ["pyq", "coordinate", "geometry"],
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20pyqs_resource/COORDINATE%20GEOMETRY%20CUET%20PG%20PYQS.pdf"
+  },
+  {
+    "title": "Algebra Pyqs",
+    "exam": "CUET PG",
+    "year": "upto 2025",
+    "tags": ["pyq", "algebra"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20pyqs_resource/CUET%20PG%20ALGEBRA%20PYQS.pdf"
+  },
+  {
+    "title": "Calculus Pyqs",
+    "exam": "CUET PG",
+    "year": "upto 2025",
+    "tags": ["pyq", "calculus"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/math%20pyqs_resource/CUET%20PG%20CALCULUS%20PYQS.pdf"
   },
   {
     "title": "Statistics, Sets & Relations Pyqs",

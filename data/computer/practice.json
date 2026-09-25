@@ -207,6 +207,24 @@
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/NIMCET/Computer%20Organization%20Hard%20Practice%20Sheet.pdf"
   },
   {
+    "title": "Bus Structure (COA)",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["bus structure", "computer organization", "computer basics"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Bus%20Structure%20(COA)%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "Microoperations (COA)",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["microoperations", "computer organization", "computer basics"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Microoperations%20(COA)%20Practice%20Sheet.pdf"
+  },
+  {
     "title": "CPU & Instruction Formats I",
     "exam": "NIMCET",
     "tags": ["cpu", "central processing unit"],
@@ -394,6 +412,33 @@
     "cdnjs": true,
     "action": "open",
     "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/OS%20MCQS.pdf"
+  },
+  {
+    "title": "Operating Sysytem V",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["operating system", "os"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Operating%20System%20Practice%20Sheet.pdf"
+  },
+  {
+    "title": "Process Management (OS) I",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["process management", "operating system", "os"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Process%20Management%20(OS)%20Practice%20Sheet%202.pdf"
+  },
+  {
+    "title": "Process Management (OS) II",
+    "exam": ["NIMCET", "CUET PG"],
+    "tags": ["process management", "operating system", "os"],
+    "difficulty": "medium",
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-3/blob/master/COMPUTER%20PRACTICE/Process%20Management%20(OS)%20Practice%20Sheet.pdf"
   },
   {
     "title": "Operating Sysytem MCQs",
