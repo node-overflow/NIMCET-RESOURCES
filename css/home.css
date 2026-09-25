@@ -736,6 +736,11 @@
   margin: 28px auto 0;
   padding-top: 18px;
   border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 24px;
+  flex-wrap: wrap;
 }
 
 .footer-bottom p {
@@ -743,4 +748,9 @@
   color: var(--text-faint);
   font-size: 0.76rem;
   line-height: 1.5;
+}
+
+.footer-brand-mark {
+  color: var(--accent-text);
+  font-weight: 600;
 }

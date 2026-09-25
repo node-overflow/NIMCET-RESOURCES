@@ -182,8 +182,14 @@
   margin: 0;
   font-size: 0.7rem;
   color: var(--text-faint);
-  line-height: 1.5;
-  text-align: center;
+  line-height: 1.55;
+  text-align: left;
+  letter-spacing: 0.005em;
+}
+
+.sidebar-foot-brand {
+  color: var(--accent-text);
+  font-weight: 600;
 }
 
 /* ============ Main content ============ */

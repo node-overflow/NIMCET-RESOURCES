@@ -20,15 +20,14 @@
   box-shadow: var(--shadow-card);
   transition:
     var(--transition-base),
-    transform 0.16s ease,
     box-shadow 0.16s ease;
 }
 
 .subject-card:hover {
-  border-color: var(--border-strong);
-  background: var(--surface-2);
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-card-hover);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  box-shadow:
+    0 10px 24px -14px color-mix(in srgb, var(--accent) 50%, transparent),
+    var(--shadow-card);
 }
 
 .subject-symbol {
