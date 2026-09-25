@@ -22,8 +22,18 @@ const wireFooterCommunityLink = () => {
     }
 };
 
+const hidePreloadGate = () => {
+    const gate = document.getElementById("appPreload");
+
+    if (gate) {
+        gate.hidden = true;
+    }
+};
+
 const showLoadError = error => {
     console.error(error);
+
+    elViewHome.hidden = false;
 
     elViewHome.innerHTML =
         '<div class="empty-state" style="margin-top:40px;">' +
@@ -57,6 +67,8 @@ const init = async () => {
 
     } catch (error) {
         showLoadError(error);
+    } finally {
+        hidePreloadGate();
     }
 };
 

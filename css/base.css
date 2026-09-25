@@ -106,3 +106,41 @@ html {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+/* App preload gate */
+.app-preload {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  transition: opacity 0.15s ease;
+}
+
+.app-preload[hidden] {
+  display: none;
+}
+
+.app-preload-spinner {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2.5px solid var(--border-strong);
+  border-top-color: var(--accent);
+  animation: app-preload-spin 0.7s linear infinite;
+}
+
+@keyframes app-preload-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html.is-scrolling .resource-card,
+html.is-scrolling .pyq-card,
+html.is-scrolling .subject-card,
+html.is-scrolling .gym-card {
+  pointer-events: none;
+}

@@ -32,6 +32,11 @@
   --upd-result: #6cbb84;
   --upd-important: #d67b7b;
 
+  --diff-easy: #3dd66b;
+  --diff-medium: #e0a72e;
+  --diff-hard: #f0575d;
+  --diff-insane: #d65fe0;
+
   --dpp-badge: #bdb5cd;
 
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -100,6 +105,11 @@
   --upd-result: #338f52;
   --upd-important: #c25757;
 
+  --diff-easy: #17914f;
+  --diff-medium: #a26603;
+  --diff-hard: #cc2f36;
+  --diff-insane: #9c1fae;
+
   --dpp-badge: #625c6d;
 
   --shadow-card: 0 1px 2px rgba(15, 17, 21, 0.05);
@@ -110,6 +120,6 @@
   --hero-slogan-color: #574fd6;
   --hero-btn-primary-bg: var(--accent);
 
-  --sidebar-bg: #F4F4F3;
+  --sidebar-bg: #f4f4f3;
   --nav-item-color: #000000d2;
 }

@@ -232,6 +232,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   line-height: 1.6;
+  border: 1px solid transparent;
 }
 
 .cover-difficulty.is-visible {
@@ -239,18 +240,27 @@
 }
 
 .cover-difficulty[data-difficulty="easy"] {
-  background: rgba(34, 197, 94, 0.16);
-  color: #22c55e;
+  background: color-mix(in srgb, var(--diff-easy) 14%, transparent);
+  border-color: color-mix(in srgb, var(--diff-easy) 32%, transparent);
+  color: var(--diff-easy);
 }
 
 .cover-difficulty[data-difficulty="medium"] {
-  background: rgba(249, 115, 22, 0.16);
-  color: #c9c93a;
+  background: color-mix(in srgb, var(--diff-medium) 14%, transparent);
+  border-color: color-mix(in srgb, var(--diff-medium) 32%, transparent);
+  color: var(--diff-medium);
 }
 
 .cover-difficulty[data-difficulty="hard"] {
-  background: rgba(239, 68, 68, 0.16);
-  color: #ef4444;
+  background: color-mix(in srgb, var(--diff-hard) 14%, transparent);
+  border-color: color-mix(in srgb, var(--diff-hard) 32%, transparent);
+  color: var(--diff-hard);
+}
+
+.cover-difficulty[data-difficulty="insane"] {
+  background: color-mix(in srgb, var(--diff-insane) 16%, transparent);
+  border-color: color-mix(in srgb, var(--diff-insane) 40%, transparent);
+  color: var(--diff-insane);
 }
 
 .cover-card .card-foot {

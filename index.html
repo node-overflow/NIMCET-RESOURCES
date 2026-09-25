@@ -67,6 +67,11 @@
 
 <body>
 
+    <!-- App preload gates -->
+    <div class="app-preload" id="appPreload">
+        <div class="app-preload-spinner"></div>
+    </div>
+
     <!-- Sidebar overlay for mobile -->
     <div class="overlay" id="overlay"></div>
 
@@ -224,7 +229,7 @@
 
         <main class="main" id="main">
             <!-- HOME VIEW -->
-            <section class="view" id="view-home">
+            <section class="view" id="view-home" hidden>
                 <header class="hero">
                     <div class="hero-main">
                         <span class="hero-eyebrow">

@@ -241,7 +241,12 @@ export const buildCoverCard = (item, { className, tcVar, badge, headline, metaLa
     const difficulty = typeof item.difficulty === "string" ? item.difficulty.trim().toLowerCase() : "";
     const difficultyEl = card.querySelector(".cover-difficulty");
 
-    if (difficulty === "easy" || difficulty === "medium" || difficulty === "hard") {
+    if (
+        difficulty === "easy" ||
+        difficulty === "medium" ||
+        difficulty === "hard" ||
+        difficulty === "insane"
+    ) {
         difficultyEl.textContent = difficulty;
         difficultyEl.dataset.difficulty = difficulty;
         difficultyEl.classList.add("is-visible");

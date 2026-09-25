@@ -131,7 +131,27 @@ export const wireStaticEvents = () => {
             window.scrollY > 300 ? "true" : "false";
     };
 
-    window.addEventListener("scroll", handleScrollTopButton, {
+    // Cards flicker "blank" for a frame when content scrolls under a
+    // stationary cursor, because the browser keeps re-hit-testing :hover
+    // and re-triggering each card's hover transition mid-scroll. Suspend
+    // hover (via pointer-events, see base.css) while actively scrolling,
+    // and lift the suspension shortly after scrolling settles.
+    let scrollEndTimer = null;
+
+    const handleScrollHoverGuard = () => {
+        document.documentElement.classList.add("is-scrolling");
+
+        clearTimeout(scrollEndTimer);
+
+        scrollEndTimer = setTimeout(() => {
+            document.documentElement.classList.remove("is-scrolling");
+        }, 150);
+    };
+
+    window.addEventListener("scroll", () => {
+        handleScrollTopButton();
+        handleScrollHoverGuard();
+    }, {
         passive: true
     });
 
