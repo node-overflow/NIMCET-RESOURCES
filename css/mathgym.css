@@ -7,10 +7,10 @@
 }
 
 :root[data-theme="light"] {
-  --gym-violet: #6d4fe0;
-  --gym-pink: #d9558a;
-  --gym-sky: #1f87c9;
-  --gym-orange: #dd7e2c;
+  --gym-violet: #6547d6;
+  --gym-pink: #b83c72;
+  --gym-sky: #16709f;
+  --gym-orange: #b85f14;
 }
 
 /* ---------- grid ---------- */

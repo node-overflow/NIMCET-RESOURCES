@@ -18,7 +18,7 @@ const applyTheme = (theme) => {
         document.documentElement.setAttribute("data-theme", "light");
 
         setToggleIcons("light");
-        if (elThemeColor) elThemeColor.setAttribute("content", "#f7f8fa");
+        if (elThemeColor) elThemeColor.setAttribute("content", "#edeff3");
         if (elColorScheme) elColorScheme.setAttribute("content", "light");
     } else {
         document.documentElement.removeAttribute("data-theme");
