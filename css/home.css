@@ -553,24 +553,6 @@
   color: var(--text);
 }
 
-/* ============ Home mocks teaser link ============ */
-.home-mocks-link {
-  display: inline-flex;
-  align-items: center;
-  margin-top: 14px;
-  padding: 10px 15px;
-  border: 1px dashed var(--border-strong);
-  border-radius: var(--radius-md);
-  background: var(--accent-dim-2);
-  color: var(--accent-text);
-  font-size: 0.84rem;
-}
-
-.home-mocks-link:hover {
-  background: var(--accent-dim);
-  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
-}
-
 /* ============ How-it-works steps ============ */
 /* ============ Section header with an inline "view all" link ============ */
 .section-head-row {
