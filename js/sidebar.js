@@ -13,6 +13,45 @@ const elCollapseBtn = () => document.getElementById("sidebarCollapseBtn");
 
 const isDesktop = () => window.matchMedia(DESKTOP_MQ).matches;
 
+const getNavItems = () =>
+    elSidebar ? Array.from(elSidebar.querySelectorAll(".nav-item")) : [];
+
+const ensureNavTooltipCache = () => {
+    getNavItems().forEach((item) => {
+        if (item.dataset.tooltip) return;
+
+        const labelSpan = Array.from(item.querySelectorAll("span")).find(
+            (s) =>
+                !s.classList.contains("nav-symbol") &&
+                !s.classList.contains("nav-badge") &&
+                !s.classList.contains("sym-desktop-only") &&
+                !s.classList.contains("sym-mobile-only")
+        );
+
+        const text =
+            (labelSpan && labelSpan.textContent.trim()) ||
+            item.getAttribute("title") ||
+            "";
+
+        if (text) item.dataset.tooltip = text;
+
+        item.removeAttribute("title");
+    });
+};
+
+const setNavTooltips = (collapsed) => {
+    getNavItems().forEach((item) => {
+        const tip = item.dataset.tooltip;
+        if (!tip) return;
+
+        if (collapsed) {
+            item.setAttribute("title", tip);
+        } else {
+            item.removeAttribute("title");
+        }
+    });
+};
+
 export const openSidebar = () => {
     elSidebar.classList.add("open");
     elOverlay.classList.add("active");
@@ -35,18 +74,22 @@ export const toggleSidebar = () => {
 
 const setCollapseUi = (collapsed) => {
     const btn = elCollapseBtn();
-    if (!btn) return;
+    if (btn) {
+        btn.setAttribute("aria-expanded", collapsed ? "false" : "true");
+        btn.setAttribute(
+            "aria-label",
+            collapsed ? "Expand sidebar" : "Collapse sidebar"
+        );
+        btn.title = collapsed ? "Expand sidebar" : "Collapse sidebar";
+    }
 
-    btn.setAttribute("aria-expanded", collapsed ? "false" : "true");
-    btn.setAttribute(
-        "aria-label",
-        collapsed ? "Expand sidebar" : "Collapse sidebar"
-    );
-    btn.title = collapsed ? "Expand sidebar" : "Collapse sidebar";
+    setNavTooltips(collapsed);
 };
 
 export const setSidebarCollapsed = (collapsed) => {
     if (!elSidebar) return;
+
+    ensureNavTooltipCache();
 
     if (collapsed && isDesktop()) {
         elSidebar.classList.add("collapsed");
@@ -74,6 +117,8 @@ export const toggleSidebarCollapse = () => {
 export const initSidebarCollapse = () => {
     const btn = elCollapseBtn();
     if (!btn) return;
+
+    ensureNavTooltipCache();
 
     let preferred = false;
     try {

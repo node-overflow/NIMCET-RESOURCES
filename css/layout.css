@@ -113,6 +113,10 @@
   transition: transform 0.32s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
+.sidebar .brand .theme-toggle {
+  background: transparent;
+}
+
 .brand-text {
   font-weight: 700;
   font-size: 0.95rem;
@@ -261,13 +265,14 @@
 }
 
 .sidebar.collapsed .brand {
+  flex-direction: column;
   justify-content: center;
-  padding: 4px 0 16px;
-  gap: 0;
+  align-items: center;
+  padding: 4px 0 14px;
+  gap: 10px;
 }
 
 .sidebar.collapsed .brand-text,
-.sidebar.collapsed .theme-toggle,
 .sidebar.collapsed .nav-label,
 .sidebar.collapsed .sidebar-foot {
   opacity: 0;
@@ -278,9 +283,20 @@
   overflow: hidden;
 }
 
-.sidebar.collapsed .brand-text,
-.sidebar.collapsed .theme-toggle {
+.sidebar.collapsed .brand-text {
   display: none;
+}
+
+.sidebar.collapsed .theme-toggle {
+  display: inline-flex;
+  margin-left: 0;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  opacity: 1;
+  max-width: none;
+  pointer-events: auto;
+  overflow: visible;
 }
 
 .sidebar.collapsed .nav-label {
