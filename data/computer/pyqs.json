@@ -164,6 +164,52 @@
   {
     "title": "Number System PYQS",
     "exam": "CUET PG",
+    "year": "2021-2026",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/Number%20System%20PYQs%20CUET%20PG%20MCA.pdf"
+  },
+  {
+    "title": "Boolean Algebra PYQS",
+    "exam": "CUET PG",
+    "year": "2021-2026",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/Boolean%20Algebra%20PYQs%20CUET%20PG%20MCA.pdf"
+  },
+  {
+    "title": "Digital Logic PYQS",
+    "exam": "CUET PG",
+    "year": "2021-2026",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/Digital%20Logic%20PYQs%20CUET%20PG%20MCA.pdf"
+  },
+  {
+    "title": "DSA PYQS",
+    "exam": "CUET PG",
+    "year": "2021-2026",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/DSA%20PYQs%20CUET%20PG%20MCA.pdf"
+  },
+  {
+    "title": "Operating System PYQS",
+    "exam": "CUET PG",
+    "year": "2021-2026",
+    "tags": ["pyq", "previous years"],
+    "cdnjs": true,
+    "action": "open",
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES-2/blob/master/computer%20pyqs_resource/Operating%20System%20PYQs%20CUET%20PG%20MCA.pdf"
+  },
+
+  {
+    "title": "Number System PYQS",
+    "exam": "CUET PG",
     "year": "up to 2025",
     "tags": ["pyq", "previous years"],
     "cdnjs": true,

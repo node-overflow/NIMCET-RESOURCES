@@ -30,7 +30,8 @@ import {
 
 import {
     toggleSidebar,
-    closeSidebar
+    closeSidebar,
+    initSidebarCollapse
 } from "./sidebar.js";
 
 const debounce = (fn, delay) => {
@@ -80,6 +81,8 @@ export const wireStaticEvents = () => {
     if (elMobileMenuBtn) {
         elMobileMenuBtn.addEventListener("click", toggleSidebar);
     }
+
+    initSidebarCollapse();
 
     $$(".nav-item").forEach(button => {
         button.addEventListener("click", () => {
@@ -131,11 +134,6 @@ export const wireStaticEvents = () => {
             window.scrollY > 300 ? "true" : "false";
     };
 
-    // Cards flicker "blank" for a frame when content scrolls under a
-    // stationary cursor, because the browser keeps re-hit-testing :hover
-    // and re-triggering each card's hover transition mid-scroll. Suspend
-    // hover (via pointer-events, see base.css) while actively scrolling,
-    // and lift the suspension shortly after scrolling settles.
     let scrollEndTimer = null;
 
     const handleScrollHoverGuard = () => {

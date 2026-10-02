@@ -17,7 +17,7 @@
   --accent-dim: rgba(110, 107, 220, 0.14);
   --accent-dim-2: rgba(110, 107, 220, 0.08);
   --accent-text: #aca9f6;
-  --accent-faq: #fefeffc5;
+  --accent-faq: #c5ccd8;
 
   --type-book: #c99a54;
   --type-pyq: #d67b7b;
@@ -51,6 +51,7 @@
   --radius-lg: 12px;
 
   --sidebar-w: 236px;
+  --sidebar-w-collapsed: 68px;
   --sidebar-bg: var(--surface);
   --nav-item-color: var(--text-dim);
   --safe-top: env(safe-area-inset-top, 0px);

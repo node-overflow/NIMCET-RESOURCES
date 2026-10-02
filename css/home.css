@@ -424,7 +424,7 @@
   cursor: pointer;
   font-size: 0.94rem;
   font-weight: 650;
-  color: var(--text);
+  color: var(--accent-faq);
   transition: color 0.14s ease;
 }
 

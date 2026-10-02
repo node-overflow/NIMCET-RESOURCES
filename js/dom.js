@@ -11,6 +11,7 @@ export const elOverlay = $("#overlay");
 export const elSidebarClose = $("#sidebarClose");
 export const elMobileMenuBtn = $("#mobileMenuBtn");
 export const elMobileTopbar = $("#mobileTopbar");
+export const elSidebarCollapseBtn = $("#sidebarCollapseBtn");
 
 export const elViewHome = $("#view-home");
 export const elViewResources = $("#view-resources");
