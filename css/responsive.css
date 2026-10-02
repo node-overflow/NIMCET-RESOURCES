@@ -86,6 +86,7 @@
     display: none !important;
   }
 
+  /* Collapsed state is desktop-only — reset if class leaks to mobile */
   .sidebar.collapsed {
     width: min(86vw, 320px);
     padding-top: calc(16px + var(--safe-top));
@@ -679,9 +680,26 @@
     max-width: none;
   }
 
-  .cta-banner #communityBtn {
-    justify-content: center;
-    min-height: 46px;
+  .cta-banner .reach-card {
+    width: 100%;
+    max-width: 315px;
+    height: 76px;
+    margin-inline: auto;
+    padding: 0 14px;
+    gap: 12px;
+  }
+
+  .cta-banner .reach-card-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .cta-banner .reach-card-count {
+    font-size: 0.98rem;
+  }
+
+  .cta-banner .reach-card-handle {
+    font-size: 0.78rem;
   }
 
   .section-head-row {

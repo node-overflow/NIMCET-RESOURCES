@@ -618,6 +618,127 @@
   line-height: 1.55;
 }
 
+/* Reach card */
+.reach-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  width: 315px;
+  height: 84px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-radius: 13px;
+  border: 1px solid rgba(252, 252, 253, 0.12);
+  background: rgba(26, 29, 39, 0.95);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Subtle shine under text/icon */
+.reach-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(172, 169, 246, 0.08) 42%,
+    rgba(110, 107, 220, 0.04) 55%,
+    transparent 100%
+  );
+  opacity: 0;
+  transform: translateX(-120%);
+  transition:
+    opacity 0.28s ease,
+    transform 0.8s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.reach-card:hover {
+  border-color: rgba(252, 252, 253, 0.18);
+  background: rgba(32, 36, 48, 0.98);
+}
+
+.reach-card:hover::before {
+  opacity: 1;
+  transform: translateX(220%);
+}
+
+.reach-card-icon {
+  flex-shrink: 0;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.reach-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.reach-card-count,
+.reach-card-handle {
+  position: relative;
+  z-index: 2;
+}
+
+.reach-card-count {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.reach-card-handle {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  line-height: 1.25;
+}
+
+:root[data-theme="light"] .reach-card {
+  border-color: rgba(27, 33, 48, 0.12);
+  background: #f4f5f8;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+:root[data-theme="light"] .reach-card:hover {
+  border-color: rgba(84, 82, 192, 0.22);
+  background: #eef0f4;
+}
+
+/* Soft indigo/purple shine for light mode */
+:root[data-theme="light"] .reach-card::before {
+  display: block;
+  content: "";
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(84, 82, 192, 0.09) 42%,
+    rgba(84, 82, 192, 0.04) 55%,
+    transparent 100%
+  );
+}
+
 /* ============ Home page final CTA ============ */
 /* ============ Site footer ============ */
 .site-footer {
