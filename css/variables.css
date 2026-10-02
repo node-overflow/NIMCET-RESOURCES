@@ -1,8 +1,9 @@
 :root {
-  --bg: #0b0d11;
-  --surface: #12151b;
-  --surface-2: #171b23;
-  --surface-hover: #1b202a;
+  /* Soft deep slate-navy — easier on eyes than pure black */
+  --bg: #0e1118;
+  --surface: #151922;
+  --surface-2: #1a1f2b;
+  --surface-hover: #1f2533;
   --border: rgba(255, 255, 255, 0.07);
   --border-strong: rgba(255, 255, 255, 0.15);
 

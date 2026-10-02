@@ -24,7 +24,7 @@ const applyTheme = (theme) => {
         document.documentElement.removeAttribute("data-theme");
 
         setToggleIcons("dark");
-        if (elThemeColor) elThemeColor.setAttribute("content", "#0a0a0c");
+        if (elThemeColor) elThemeColor.setAttribute("content", "#0e1118");
         if (elColorScheme) elColorScheme.setAttribute("content", "dark");
     }
 };
