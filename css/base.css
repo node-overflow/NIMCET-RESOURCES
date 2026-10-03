@@ -31,8 +31,9 @@ body {
 
 body {
   position: relative;
-  /* Subtle ambient depth — soft indigo glow, not flat pure black */
   background-image:
+    linear-gradient(rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px),
     radial-gradient(
       ellipse 110% 70% at 12% -8%,
       rgba(110, 107, 220, 0.14),
@@ -48,6 +49,12 @@ body {
       rgba(40, 50, 90, 0.28),
       transparent 55%
     );
+  background-size:
+    48px 48px,
+    48px 48px,
+    auto,
+    auto,
+    auto;
   background-attachment: fixed;
 }
 
@@ -63,6 +70,7 @@ body {
       rgba(84, 82, 192, 0.04),
       transparent 45%
     );
+  background-size: auto, auto;
 }
 
 button {
@@ -106,8 +114,6 @@ input:focus-visible {
   border-radius: var(--radius-sm);
 }
 
-/* ============ Scrollbar ============ */
-
 html {
   scrollbar-width: thin;
   scrollbar-color: var(--border-strong) transparent;
@@ -139,7 +145,6 @@ html {
   background: transparent;
 }
 
-/* App preload gate */
 .app-preload {
   position: fixed;
   inset: 0;
