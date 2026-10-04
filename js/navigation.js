@@ -128,7 +128,7 @@ export const setActiveNav = () => {
             if (subjectButton) {
                 subjectButton.dataset.active = "true";
             }
-        } else if (!state.type) {
+        } else {
             const allButton = document.querySelector('.nav-item[data-nav="all"]');
 
             if (allButton) {
