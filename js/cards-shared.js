@@ -60,9 +60,12 @@ const SUBJECT_FALLBACK = {
 export const getUnitInfo = (item) => {
     const source = (item.chapter || item.title || "").toString();
 
-    const found = UNIT_DEFS.find(unit => unit.test.test(source));
-
-    if (found) return found;
+    // Only apply math unit detection for Mathematics subjects.
+    // Otherwise English (etc.) titles like "Vocabulary Series IV" match "series" → Algebra "x²".
+    if (item.subject === "Mathematics") {
+        const found = UNIT_DEFS.find(unit => unit.test.test(source));
+        if (found) return found;
+    }
 
     return SUBJECT_FALLBACK[item.subject] ||
         { key: "general", label: item.subject || "General", mark: "★" };
