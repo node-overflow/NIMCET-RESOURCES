@@ -8,20 +8,20 @@
         "a": "NIMCET is a national entrance exam for MCA admission at participating NITs and other institutes. It is conducted once every year."
       },
       {
-        "q": "Who can apply for NIMCET?",
-        "a": "Students with a qualifying bachelor's degree and the required Mathematics or Statistics background can apply, subject to the current rules."
-      },
-      {
-        "q": "How many questions are there in NIMCET?",
-        "a": "NIMCET has 120 questions divided into Mathematics, Logical Reasoning, Computer Awareness and General English sections."
+        "q": "Who is eligible for NIMCET?",
+        "a": "Candidates with a qualifying undergraduate degree and Mathematics or Statistics as one of the subjects can apply for NIMCET. B.E. and B.Tech. graduates from a recognized university or institution are also eligible."
       },
       {
         "q": "What is the NIMCET exam pattern?",
-        "a": "NIMCET is a computer-based test with multiple-choice questions. Each section has its own marks, time and negative marking rules."
+        "a": "NIMCET is conducted as a single paper with 120 multiple-choice questions divided into three parts. Mathematics has 50 questions with 70 minutes, Analytical Ability and Logical Reasoning has 40 questions with 30 minutes, and Computer Awareness and English have 20 and 10 questions respectively, with 20 minutes for the section."
       },
       {
-        "q": "How is the NIMCET rank calculated?",
-        "a": "Your marks are calculated using the official marking scheme, and candidates are then ranked based on their overall performance."
+        "q": "How much is the NIMCET application fee?",
+        "a": "The application fee is ₹2,500 for OPEN, OPEN-EWS, and OBC candidates. For SC, ST, and PwD candidates, the fee is ₹1,250. The fee is non-refundable and must be paid through the available payment options on the NIMCET website."
+      },
+      {
+        "q": "Which colleges participate in NIMCET?",
+        "a": "The participating institutes are NIT Agartala, NIT Allahabad, NIT Bhopal, NIT Delhi, NIT Jamshedpur, NIT Kurukshetra, NIT Meghalaya, NIT Patna, NIT Raipur, NIT Tiruchirappalli, NIT Warangal, IIIT Bhopal, and IIIT Vadodara."
       }
     ]
   },
@@ -30,24 +30,24 @@
     "label": "Study Material",
     "faqs": [
       {
-        "q": "How are DPPs organised?",
-        "a": "DPPs are organised by subject and chapter, so you can practise one topic at a time without searching through long PDFs."
+        "q": "Is NCERT enough for NIMCET?",
+        "a": "NCERT can be useful for building basic concepts, especially in Mathematics, but it is not enough by itself for NIMCET-level practice and speed."
       },
       {
-        "q": "Where do I find previous year papers?",
-        "a": "Open the PYQs section and select an exam. Papers are arranged by year, with the latest papers shown first for quick access."
+        "q": "Should I follow NIMCET-specific books or JEE books?",
+        "a": "NIMCET-specific books are useful for understanding the exam level, while selected JEE material can help with stronger concepts and additional practice where needed."
       },
       {
-        "q": "Are mock tests available?",
-        "a": "Mock tests are being added to the site. Once available, you will find them in the Mocks section for regular practice."
+        "q": "Should I make my own notes while studying?",
+        "a": "Yes, especially for formulas, shortcuts, important concepts and mistakes. Keep them concise so they remain useful for quick revision later."
       },
       {
-        "q": "Where can I find study notes?",
-        "a": "Open the Notes section and choose a subject or chapter. Notes are grouped by topic to make revision easier and faster."
+        "q": "Should I solve questions from other competitive exams for NIMCET?",
+        "a": "Yes, but selectively. Questions from exams such as JEE can be useful for Mathematics, while you should avoid spending too much time on questions far beyond the NIMCET level."
       },
       {
-        "q": "Where can I find video lectures?",
-        "a": "Open the Videos section to find useful lectures organised by subject and topic. You can use them for learning or quick revision."
+        "q": "How much practice material should I solve for each topic?",
+        "a": "Solve enough questions to understand the common patterns and become comfortable with the topic. Focus on quality and analysing mistakes rather than solving a fixed number."
       }
     ]
   },
@@ -57,23 +57,23 @@
     "faqs": [
       {
         "q": "How should I start preparing for NIMCET?",
-        "a": "Start with the syllabus and build your basics first. Then practise questions, solve PYQs and slowly move towards timed mock tests."
+        "a": "Start with the syllabus and build your basics first. Then practice questions, solve PYQs and slowly move towards timed mock tests."
       },
       {
         "q": "Which subject should I study first?",
-        "a": "Start with Mathematics if it is your weakest area. Build the basics, practise regularly and then give more time to your weak topics."
+        "a": "Start with Mathematics if it is your weakest area. Build the basics, practice regularly and then give more time to your weak topics."
       },
       {
         "q": "How important are NIMCET PYQs?",
         "a": "PYQs are very important because they show the exam style, repeated concepts and difficulty level. Solve them after learning each topic."
       },
       {
-        "q": "How should I use DPPs?",
-        "a": "Use DPPs after finishing a topic. Try the questions yourself first, then review your mistakes and note the concepts you missed."
+        "q": "When should I start solving mock tests?",
+        "a": "Start with topic-wise and sectional practice while learning the syllabus. Once you have covered enough topics, begin full-length mocks and analyse your mistakes after each test."
       },
       {
-        "q": "How can I improve my speed?",
-        "a": "Practise with a timer and track the questions where you lose time. Regular timed practice will help you become faster without rushing."
+        "q": "What should I do if I am weak in a topic?",
+        "a": "Go back to the basics and solve easier questions first. Gradually move to exam-level questions and keep practising until you can solve them without depending on solutions."
       }
     ]
   },
@@ -83,11 +83,7 @@
     "faqs": [
       {
         "q": "What happens after the NIMCET exam?",
-        "a": "After the result, eligible candidates take part in counselling and fill their institute preferences based on their rank."
-      },
-      {
-        "q": "Which institutes accept NIMCET scores?",
-        "a": "Your NIMCET rank is used for counselling and admission to participating NITs and other institutes listed in the official brochure."
+        "a": "After the NIMCET exam, the answer key and result are released, followed by the counselling process. Qualified candidates register for counselling, fill and lock their preferred institutes, and are allotted seats based on their rank, choices, category, and seat availability. After the regular rounds, a special round may be conducted for remaining vacant seats."
       },
       {
         "q": "What is NIMCET counselling?",
@@ -95,11 +91,15 @@
       },
       {
         "q": "Can I change my college preference later?",
-        "a": "Preference changes depend on the counselling rules and the current round. Always check the official counselling instructions before making changes."
+        "a": "Yes. You can change your college preferences during the NIMCET counselling choice-filling period. However, once the choices are automatically locked at the deadline, they cannot be changed."
       },
       {
-        "q": "Is NIMCET rank important for admission?",
-        "a": "Yes. Your rank plays a major role in seat allotment, along with your category, preferences and the seats available in each institute."
+        "q": "What happens if I do not get my preferred college in the first round?",
+        "a": "If you do not get your preferred college in the first round, you can choose the Float option and participate in subsequent counselling rounds for a possible upgrade based on your rank, choices, and available seats."
+      },
+      {
+        "q": "What happens after I am allotted a seat?",
+        "a": "After a seat is allotted, you need to pay the Seat Acceptance Fee and select the applicable option, such as Float or Freeze. You must then complete the required online reporting and admission formalities within the given deadline."
       }
     ]
   },
@@ -109,11 +109,11 @@
     "faqs": [
       {
         "q": "Is everything on this site free?",
-        "a": "Yes. The resources linked here are free to access. The site simply collects and organises useful study material in one place."
+        "a": "Most of the resources here, including all PYQs, books, and many other useful materials, are completely free and are enough to support a strong preparation. However, some resources may require a Pro plan or a subscription."
       },
       {
         "q": "Do I need an account to use the site?",
-        "a": "No account is needed for the main resources. You can browse the site and access available study material without signing in."
+        "a": "No account is needed to access the resources. You can browse the site and access available study material without signing in."
       },
       {
         "q": "Can I use the site on my phone?",
