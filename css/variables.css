@@ -64,6 +64,9 @@
   --hero-star-opacity-max: 0.75;
   --hero-slogan-color: #a8b4ff;
   --hero-btn-primary-bg: #5a55d9;
+
+  /* Soft warm paper tone for book covers — not pure white, not dark */
+  --book-cover-bg: #e4e2dc;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -126,6 +129,8 @@
 
   --sidebar-bg: #e8ebf0;
   --nav-item-color: #3a4457;
+
+  --book-cover-bg: #ffffff;
 }
 
 :root[data-theme="light"] .overlay {

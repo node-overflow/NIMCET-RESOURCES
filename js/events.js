@@ -161,4 +161,62 @@ export const wireStaticEvents = () => {
             });
         });
     }
+
+    wireBookLightbox();
+};
+
+/* =========================================================
+   BOOK COVER LIGHTBOX (desktop only)
+   ========================================================= */
+
+const DESKTOP_MQ = "(min-width: 881px)";
+
+const isDesktop = () => window.matchMedia(DESKTOP_MQ).matches;
+
+const wireBookLightbox = () => {
+    const lightbox = document.getElementById("bookLightbox");
+    const lightboxImg = document.getElementById("bookLightboxImg");
+
+    if (!lightbox || !lightboxImg) return;
+
+    const openLightbox = (src, alt) => {
+        lightboxImg.src = src;
+        lightboxImg.alt = alt || "Book cover";
+        lightbox.hidden = false;
+        document.body.classList.add("no-scroll");
+    };
+
+    const closeLightbox = () => {
+        lightbox.hidden = true;
+        lightboxImg.removeAttribute("src");
+        lightboxImg.alt = "";
+        document.body.classList.remove("no-scroll");
+    };
+
+    document.addEventListener("click", (event) => {
+        const img = event.target.closest(".book-cover img");
+
+        if (!img) return;
+        if (!isDesktop()) return;
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        const src = img.currentSrc || img.src;
+        if (!src) return;
+
+        openLightbox(src, img.alt);
+    });
+
+    lightbox.addEventListener("click", (event) => {
+        if (event.target.closest("[data-lightbox-close]")) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !lightbox.hidden) {
+            closeLightbox();
+        }
+    });
 };

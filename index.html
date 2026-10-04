@@ -213,8 +213,7 @@
                         <span class="nav-symbol">&Sigma;</span>
                         <span>Mathematics</span>
                     </button>
-                    <button class="nav-item" data-nav="subject" data-subject="Logical Reasoning"
-                       >
+                    <button class="nav-item" data-nav="subject" data-subject="Logical Reasoning">
                         <span class="nav-symbol"><span class="sym-desktop-only">📊︎</span><span
                                 class="sym-mobile-only">?!</span></span>
                         <span>Logical Reasoning</span>
@@ -223,8 +222,7 @@
                         <span class="nav-symbol">&lt;/&gt;</span>
                         <span>Computer</span>
                     </button>
-                    <button class="nav-item" data-nav="subject" data-subject="Quantitative Aptitude"
-                       >
+                    <button class="nav-item" data-nav="subject" data-subject="Quantitative Aptitude">
                         <span class="nav-symbol">%</span>
                         <span>Quantitative Aptitude</span>
                     </button>
@@ -638,6 +636,20 @@
     <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Back to top">
         ↑
     </button>
+
+    <!-- Book cover lightbox (desktop only; opened via JS) -->
+    <div class="book-lightbox" id="bookLightbox" hidden>
+        <div class="book-lightbox-backdrop" data-lightbox-close></div>
+        <div class="book-lightbox-stage">
+            <button class="book-lightbox-close" type="button" aria-label="Close preview" data-lightbox-close>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </button>
+            <img class="book-lightbox-img" id="bookLightboxImg" alt="" />
+        </div>
+    </div>
 
     <script type="module" src="js/main.js"></script>
 
