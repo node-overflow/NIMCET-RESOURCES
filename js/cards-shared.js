@@ -17,9 +17,20 @@ const UNIT_DEFS = [
         test: /trig|sine|cosine|tangent|identit/i
     },
 
+    // Specific calculus splits (order matters — first match wins)
+    {
+        key: "limits", label: "Limits & Continuity", mark: "lim",
+        test: /limit|continuity|differentiability/i
+    },
+
+    {
+        key: "differentiation", label: "Differentiation", mark: "dy/dx",
+        test: /differentiat|derivative|aod|application of derivative/i
+    },
+
     {
         key: "calculus", label: "Calculus", mark: "∫dx",
-        test: /limit|continuity|differentia|integra|calculus|derivative/i
+        test: /integra|calculus|differential\s*eq/i
     },
 
     {
@@ -43,8 +54,13 @@ const UNIT_DEFS = [
     },
 
     {
+        key: "pnc", label: "Permutation & Combination", mark: "nCr",
+        test: /permutation|combination|p\s*(?:&|and|n)\s*c|\bpnc\b|binomial/i
+    },
+
+    {
         key: "algebra", label: "Algebra", mark: "x²",
-        test: /quadratic|algebra|complex\s*number|permutation|combination|p\s*(?:&|and|n)\s*c|binomial|sequence|series|progression|\bsets?\b|\brelations?\b|\bfunctions?\b|logarithm|inequalit/i
+        test: /quadratic|algebra|complex\s*number|sequence|series|progression|\bsets?\b|\brelations?\b|\bfunctions?\b|logarithm|inequalit/i
     }
 ];
 

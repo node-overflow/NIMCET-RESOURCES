@@ -23,9 +23,9 @@ import {
     goToUpdates,
     goToPyqs,
     goToDpps,
-    goToDppsSubject,
     goToMocks,
-    goToMathgym
+    goToMathgym,
+    goBack
 } from "./navigation.js";
 
 import {
@@ -98,25 +98,25 @@ export const wireStaticEvents = () => {
 
     if (elPyqsBackBtn) {
         elPyqsBackBtn.addEventListener("click", () => {
-            goToPyqs();
+            goBack();
         });
     }
 
     if (elDppChapterBackBtn) {
         elDppChapterBackBtn.addEventListener("click", () => {
-            goToDpps();
+            goBack();
         });
     }
 
     if (elDppBackBtn) {
         elDppBackBtn.addEventListener("click", () => {
-            goToDppsSubject(state.dppSubject);
+            goBack();
         });
     }
 
     if (elMocksBackBtn) {
         elMocksBackBtn.addEventListener("click", () => {
-            goToMocks();
+            goBack();
         });
     }
 

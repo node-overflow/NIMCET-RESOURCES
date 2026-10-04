@@ -24,6 +24,8 @@ import { state } from "./state.js";
 
 import { escapeHtml, subjectSymbolHtml } from "./utils.js";
 
+import { getUnitInfo } from "./cards-shared.js";
+
 import { renderDppCards } from "./cards.js";
 
 const fetchJsonSafe = (path) => {
@@ -201,6 +203,11 @@ export const renderDppChapters = (onChapterClick) => {
 
             const chapterName = chapter.name || chapterKey;
 
+            const unit = getUnitInfo({
+                subject: subjectName,
+                chapter: chapterName
+            });
+
             const button = document.createElement("button");
 
             button.className = "subject-card";
@@ -208,7 +215,7 @@ export const renderDppChapters = (onChapterClick) => {
 
             button.innerHTML =
                 '<span class="subject-symbol">' +
-                escapeHtml(chapterName.charAt(0).toUpperCase()) +
+                escapeHtml(unit.mark) +
                 '</span>' +
 
                 '<span class="subject-name">' +
