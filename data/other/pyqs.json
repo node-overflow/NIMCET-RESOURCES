@@ -27,7 +27,8 @@
     "duration": 120,
     "marks": 1000,
     "action": "open",
-    "url": "https://cdn.jsdelivr.net/gh/rawcontentgit/NIMCET-RESOURCES@master/pyqs/nimcet/NIMCET%202025%20Paper.pdf"
+    "cdnjs": true,
+    "url": "https://github.com/rawcontentgit/NIMCET-RESOURCES/blob/master/pyqs/nimcet/NIMCET%202024.pdf"
   },
   {
     "exam": "NIMCET",
