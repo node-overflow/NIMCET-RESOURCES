@@ -69,8 +69,8 @@
   font-size: 15px;
   line-height: 1;
   margin-left: 6px;
-  border: 1px solid color-mix(in srgb, var(--border) 55%, transparent);
+  border: none;
   transition:
     color 0.15s ease,
-    border-color 0.15s ease;
+    background 0.15s ease;
 }

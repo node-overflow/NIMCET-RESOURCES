@@ -115,6 +115,11 @@
   background: transparent;
 }
 
+.sidebar .brand .theme-toggle:hover {
+  color: var(--text);
+  background: var(--surface-hover);
+}
+
 .brand-text {
   font-weight: 700;
   font-size: 0.95rem;
