@@ -32,11 +32,11 @@ body {
 body {
   position: relative;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.028) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.016) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.016) 1px, transparent 1px),
     radial-gradient(
       ellipse 110% 70% at 12% -8%,
-      rgba(110, 107, 220, 0.14),
+      rgba(110, 107, 220, 0.08),
       transparent 52%
     ),
     radial-gradient(
@@ -180,4 +180,10 @@ html.is-scrolling .pyq-card,
 html.is-scrolling .subject-card,
 html.is-scrolling .gym-card {
   pointer-events: none;
+}
+
+/* Dark mode: stronger text selection */
+:root:not([data-theme="light"]) ::selection {
+  background: rgba(110, 107, 220, 0.35);
+  color: var(--text);
 }

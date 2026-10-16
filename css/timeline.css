@@ -171,3 +171,9 @@
   font-weight: 600;
   color: var(--text-faint);
 }
+
+/* Dark mode: unified card hover */
+:root:not([data-theme="light"]) .timeline-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 32%, var(--border));
+  background: var(--surface-2);
+}

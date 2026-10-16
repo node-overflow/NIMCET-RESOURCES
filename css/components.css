@@ -314,3 +314,28 @@
   background: var(--surface-hover);
   border-color: var(--border-strong);
 }
+
+/* ============ Dark mode: unified hover system ============ */
+:root:not([data-theme="light"]) .subject-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 32%, var(--border));
+  background: var(--surface-2);
+  box-shadow: var(--shadow-card-hover);
+}
+
+:root:not([data-theme="light"]) #typeChips .chip:hover {
+  border-color: color-mix(in srgb, var(--accent) 32%, var(--border));
+  box-shadow: var(--shadow-card-hover);
+}
+
+:root:not([data-theme="light"]) #typeChips .chip:not([data-active="true"]):hover {
+  background: var(--surface-2);
+}
+
+:root:not([data-theme="light"]) .chip:not([data-active="true"]):hover,
+:root:not([data-theme="light"]) .pill:not([data-active="true"]):hover {
+  background: var(--surface-2);
+}
+
+:root:not([data-theme="light"]) .scroll-top-btn:hover {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border-strong));
+}

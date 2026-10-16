@@ -628,8 +628,8 @@
   padding: 0 16px;
   box-sizing: border-box;
   border-radius: 13px;
-  border: 1px solid rgba(252, 252, 253, 0.12);
-  background: rgba(26, 29, 39, 0.95);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-2);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
   text-decoration: none;
   color: inherit;
@@ -668,8 +668,8 @@
 }
 
 .reach-card:hover {
-  border-color: rgba(252, 252, 253, 0.18);
-  background: rgba(32, 36, 48, 0.98);
+  border-color: color-mix(in srgb, var(--accent) 32%, var(--border-strong));
+  background: var(--surface-hover);
 }
 
 .reach-card:hover::before {
@@ -856,4 +856,24 @@
 .footer-brand-mark {
   color: var(--accent-text);
   font-weight: 600;
+}
+
+/* ============ Dark mode: calmer hover colors ============ */
+:root:not([data-theme="light"]) .faq-cat-btn:not([data-active="true"]):hover {
+  background: var(--surface-2);
+}
+
+:root:not([data-theme="light"]) .footer-social-telegram:hover {
+  color: #229ed9;
+  background: color-mix(in srgb, #229ed9 16%, transparent);
+}
+
+:root:not([data-theme="light"]) .footer-social-whatsapp:hover {
+  color: #25d366;
+  background: color-mix(in srgb, #25d366 16%, transparent);
+}
+
+:root:not([data-theme="light"]) .footer-social-gmail:hover {
+  color: #ea4335;
+  background: color-mix(in srgb, #ea4335 16%, transparent);
 }

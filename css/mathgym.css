@@ -1,9 +1,9 @@
 /* ---------- 4-color rotation: violet, pink, sky, orange ---------- */
 :root {
-  --gym-violet: #7c5cff;
-  --gym-pink: #ec6a9c;
-  --gym-sky: #35a0e8;
-  --gym-orange: #f2994a;
+  --gym-violet: #8a82e8;
+  --gym-pink: #d97ba3;
+  --gym-sky: #5aa5d9;
+  --gym-orange: #d9965a;
 }
 
 :root[data-theme="light"] {
@@ -305,4 +305,16 @@
   .gym-card::after {
     transform: scaleX(1);
   }
+}
+
+/* ---------- dark mode: calmer hover ---------- */
+:root:not([data-theme="light"]) .gym-card:hover {
+  transform: translateY(-3px);
+}
+
+:root:not([data-theme="light"]) .gym-card-cta:not(:disabled):hover,
+:root:not([data-theme="light"]) .gym-card-cta:not(:disabled):focus-visible {
+  color: var(--text);
+  background: color-mix(in srgb, var(--gym-accent) 22%, transparent);
+  border-color: color-mix(in srgb, var(--gym-accent) 55%, transparent);
 }

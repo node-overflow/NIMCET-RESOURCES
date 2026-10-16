@@ -1079,3 +1079,57 @@
   pointer-events: none;
   z-index: 0;
 }
+
+/* ============ Dark mode: unified hover system ============ */
+:root:not([data-theme="light"]) .resource-card:hover,
+:root:not([data-theme="light"]) .pyq-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 32%, var(--border));
+  background: var(--surface-2);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+:root:not([data-theme="light"]) .video-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 32%, var(--border));
+  background: var(--surface-2);
+}
+
+:root:not([data-theme="light"]) .exam-filter-btn:not([data-active="true"]):hover {
+  background: var(--surface-2);
+}
+
+:root:not([data-theme="light"]) .filter-select:hover {
+  background-color: var(--surface-hover);
+}
+
+/* ============ Dark mode: calmer glass cards ============ */
+:root:not([data-theme="light"]) .dpp-cover-card,
+:root:not([data-theme="light"]) .pyq-card,
+:root:not([data-theme="light"]) .pyqtype-card,
+:root:not([data-theme="light"]) .notes-card,
+:root:not([data-theme="light"]) .practice-card,
+:root:not([data-theme="light"]) .formula-card {
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+}
+
+:root:not([data-theme="light"]) .dpp-cover-card:hover,
+:root:not([data-theme="light"]) .pyq-card:hover,
+:root:not([data-theme="light"]) .pyqtype-card:hover,
+:root:not([data-theme="light"]) .notes-card:hover,
+:root:not([data-theme="light"]) .practice-card:hover,
+:root:not([data-theme="light"]) .formula-card:hover {
+  background: color-mix(in srgb, var(--surface-2) 92%, transparent);
+}
+
+:root:not([data-theme="light"]) .dpp-cover-card::after,
+:root:not([data-theme="light"]) .pyq-card::after,
+:root:not([data-theme="light"]) .pyqtype-card::after,
+:root:not([data-theme="light"]) .notes-card::after,
+:root:not([data-theme="light"]) .practice-card::after,
+:root:not([data-theme="light"]) .formula-card::after {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+}
