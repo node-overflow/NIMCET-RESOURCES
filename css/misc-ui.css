@@ -65,6 +65,12 @@
   background: var(--surface-hover);
 }
 
+.icon-btn.theme-toggle svg {
+  width: 1.25em;
+  height: 1.25em;
+  display: block;
+}
+
 .icon-btn.theme-toggle {
   font-size: 15px;
   line-height: 1;
