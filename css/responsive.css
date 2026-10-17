@@ -657,14 +657,18 @@
     min-height: 40px;
   }
 
-  .faq-panel {
-    padding: 0 14px;
+  .faq-panel .faq-list {
+    gap: 10px;
   }
 
-  .faq-question {
+  .faq-panel .faq-question {
     font-size: 0.9rem;
-    padding: 15px 2px;
+    padding: 15px 16px;
     min-height: 48px;
+  }
+
+  .faq-panel .faq-answer {
+    padding: 0 16px 16px 16px;
   }
 
   /* ====== CTA / footer ====== */

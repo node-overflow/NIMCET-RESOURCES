@@ -183,7 +183,7 @@
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--text-faint);
+  color: var(--nav-label-color);
   white-space: nowrap;
   overflow: hidden;
   transition:
@@ -250,7 +250,7 @@
 .sidebar-foot p {
   margin: 0;
   font-size: 0.7rem;
-  color: var(--text-faint);
+  color: var(--text-dim);
   line-height: 1.55;
   text-align: left;
   letter-spacing: 0.005em;

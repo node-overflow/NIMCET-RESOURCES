@@ -109,11 +109,11 @@
     "faqs": [
       {
         "q": "Is everything on this site free?",
-        "a": "Most of the resources here, including all PYQs, books, and many other useful materials, are completely free and are enough to support a strong preparation. However, some resources may require a Pro plan or a subscription."
+        "a": "Most of the resources here, including all PYQs, books, and many other useful materials, are completely free and are enough to support a strong preparation. However, some resources may require a pro plan or a subscription."
       },
       {
         "q": "Do I need an account to use the site?",
-        "a": "No account is needed to access the resources. You can browse the site and access available study material without signing in."
+        "a": "No, you don't need an account to access the resources. You can browse the site and access available study material without signing in."
       },
       {
         "q": "Can I use the site on my phone?",
@@ -125,7 +125,7 @@
       },
       {
         "q": "Where can I find exam updates?",
-        "a": "Check the Updates section for important notices such as exam dates, admit cards, results and other NIMCET related announcements."
+        "a": "Check the updates section for important notices such as exam dates, admit cards, results and other NIMCET related announcements."
       }
     ]
   }

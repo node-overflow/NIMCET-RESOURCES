@@ -203,8 +203,8 @@ const renderFaqQuestions = (faqs) => {
             '<button class="faq-question" type="button" aria-expanded="false">' +
             '<span></span>' +
             '<span class="faq-icon">' +
-            '<svg width="12" height="12" viewBox="0 0 12 12" fill="none">' +
-            '<path d="M6 1.2V10.8M1.2 6H10.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>' +
+            '<svg width="16" height="16" viewBox="0 0 16 16" fill="none">' +
+            '<path d="M3.5 6 8 10.5 12.5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>' +
             '</svg>' +
             '</span>' +
             '</button>' +

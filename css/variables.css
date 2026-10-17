@@ -54,7 +54,8 @@
   --sidebar-w: 236px;
   --sidebar-w-collapsed: 68px;
   --sidebar-bg: #11151d;
-  --nav-item-color: var(--text-dim);
+  --nav-item-color: #a8b0bf;
+  --nav-label-color: var(--text-dim);
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-left: env(safe-area-inset-left, 0px);
@@ -63,7 +64,8 @@
   --hero-star-opacity-min: 0.22;
   --hero-star-opacity-max: 0.5;
   --hero-slogan-color: #a8b4ff;
-  --hero-btn-primary-bg: #5a55d9;
+  --hero-btn-primary-bg: #5652c6;
+  --hero-btn-primary-text: #eceefb;
 
   /* Soft warm paper tone for book covers — not pure white, not dark */
   --book-cover-bg: #d4d2cc;
@@ -126,9 +128,11 @@
   --hero-star-opacity-max: 0.34;
   --hero-slogan-color: #4d4ab8;
   --hero-btn-primary-bg: var(--accent);
+  --hero-btn-primary-text: #fff;
 
   --sidebar-bg: #e8ebf0;
-  --nav-item-color: #3a4457;
+  --nav-item-color: #1a2232;
+  --nav-label-color: #38425a;
 
   --book-cover-bg: #ffffff;
 }
