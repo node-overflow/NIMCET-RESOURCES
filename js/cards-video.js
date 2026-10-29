@@ -18,6 +18,60 @@ export const clearActiveVideoIfInside = (container) => {
     }
 };
 
+const restoreThumbnail = (thumbnail) => {
+    if (!thumbnail || !thumbnail.dataset.originalContent) {
+        return;
+    }
+
+    thumbnail.innerHTML = thumbnail.dataset.originalContent;
+    thumbnail.classList.remove("video-playing");
+
+    if (activeVideo === thumbnail) {
+        activeVideo = null;
+    }
+};
+
+const playInlineVideo = (thumbnail) => {
+    const videoId = thumbnail.dataset.videoId;
+    if (!videoId) {
+        return;
+    }
+
+    // Already playing this one — ignore
+    if (activeVideo === thumbnail) {
+        return;
+    }
+
+    // Stop any other currently playing video
+    if (activeVideo && activeVideo !== thumbnail) {
+        restoreThumbnail(activeVideo);
+    }
+
+    // Capture original thumbnail HTML once (before first play)
+    if (!thumbnail.dataset.originalContent) {
+        thumbnail.dataset.originalContent = thumbnail.innerHTML;
+    }
+
+    const title = thumbnail.dataset.videoTitle || "YouTube video";
+
+    thumbnail.innerHTML =
+        '<iframe ' +
+        'class="video-embed" ' +
+        'src="https://www.youtube.com/embed/' +
+        videoId +
+        '?autoplay=1&rel=0" ' +
+        'title="' +
+        escapeHtml(title) +
+        '" ' +
+        'frameborder="0" ' +
+        'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ' +
+        "allowfullscreen>" +
+        "</iframe>";
+
+    thumbnail.classList.add("video-playing");
+    activeVideo = thumbnail;
+};
+
 export const buildVideoCard = (item) => {
 
     const card = document.createElement("div");
@@ -103,64 +157,30 @@ export const buildVideoCard = (item) => {
 
     if (!videoId) {
         playButton.style.display = "none";
-    }
+    } else {
+        // Persist id/title on the thumbnail so play works after restore
+        thumbnail.dataset.videoId = videoId;
+        thumbnail.dataset.videoTitle = item.title || "YouTube video";
 
-    playButton.addEventListener("click", event => {
+        // Save original content NOW, before any play, so restore is clean
+        thumbnail.dataset.originalContent = thumbnail.innerHTML;
 
-        event.preventDefault();
-        event.stopPropagation();
-
-        if (!videoId) {
-            return;
-        }
-
-        if (activeVideo && activeVideo !== thumbnail) {
-
-            activeVideo.innerHTML =
-                activeVideo.dataset.originalContent;
-
-            activeVideo.classList.remove("video-playing");
-
-            const oldButton =
-                activeVideo.querySelector(".play-badge");
-
-            if (oldButton) {
-                oldButton.style.display = "";
+        // Event delegation on the stable thumbnail element.
+        // The play button is destroyed/recreated on play/restore, but
+        // the thumbnail node itself never is — so this listener always works.
+        thumbnail.addEventListener("click", event => {
+            // Only react to clicks on the play badge (or its children, e.g. SVG)
+            const badge = event.target.closest(".play-badge");
+            if (!badge || !thumbnail.contains(badge)) {
+                return;
             }
-        }
 
-        if (!thumbnail.dataset.originalContent) {
+            event.preventDefault();
+            event.stopPropagation();
 
-            thumbnail.dataset.originalContent =
-                thumbnail.innerHTML;
-        }
-
-        thumbnail.innerHTML =
-
-            '<iframe ' +
-
-            'class="video-embed" ' +
-
-            'src="https://www.youtube.com/embed/' +
-            videoId +
-            '?autoplay=1&rel=0" ' +
-
-            'title="' +
-            escapeHtml(item.title || "YouTube video") +
-            '" ' +
-
-            'frameborder="0" ' +
-
-            'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ' +
-
-            "allowfullscreen>" +
-
-            "</iframe>";
-
-        thumbnail.classList.add("video-playing");
-
-        activeVideo = thumbnail;
-    });
+            playInlineVideo(thumbnail);
+        });
+    }
 
     return card;
 };
