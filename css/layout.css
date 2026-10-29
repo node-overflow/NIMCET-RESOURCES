@@ -125,7 +125,6 @@
   font-size: 0.95rem;
   letter-spacing: -0.005em;
   color: var(--text);
-  flex: 1;
   white-space: nowrap;
   overflow: hidden;
   opacity: 1;

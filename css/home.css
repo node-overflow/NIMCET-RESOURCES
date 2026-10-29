@@ -769,7 +769,7 @@
 .footer-col {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 10px;
   min-width: 0;
 }
 
