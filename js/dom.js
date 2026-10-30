@@ -15,7 +15,6 @@ export const elSidebarCollapseBtn = $("#sidebarCollapseBtn");
 
 export const elViewHome = $("#view-home");
 export const elViewResources = $("#view-resources");
-export const elViewUpdates = $("#view-updates");
 export const elViewPyqs = $("#view-pyqs");
 export const elViewPyqsExam = $("#view-pyqs-exam");
 export const elViewDpps = $("#view-dpps");
@@ -28,7 +27,6 @@ export const elViewMathgym = $("#view-mathgym");
 export const VIEWS = {
     home: elViewHome,
     resources: elViewResources,
-    updates: elViewUpdates,
     pyqs: elViewPyqs,
     "pyqs-exam": elViewPyqsExam,
     dpps: elViewDpps,
@@ -38,11 +36,6 @@ export const VIEWS = {
     "mocks-detail": elViewMocksDetail,
     mathgym: elViewMathgym
 };
-
-export const elUpdatesBadge = $("#updatesBadge");
-export const elUpdateFilters = $("#updateFilters");
-export const elUpdatesTimeline = $("#updatesTimeline");
-export const elUpdatesEmpty = $("#updatesEmpty");
 
 export const elExamGrid = $("#examGrid");
 export const elExamsEmpty = $("#examsEmpty");
@@ -85,8 +78,6 @@ export const elHeroPyqBtn = $("#heroPyqBtn");
 export const elFaqList = $("#faqList");
 export const elFaqCategories = document.getElementById("faqCategories");
 
-export const elHomeUpdatesPreview = $("#homeUpdatesPreview");
-export const elHomeUpdatesBtn = $("#homeUpdatesBtn");
 export const elCommunityBtn = $("#communityBtn");
 
 export const elResourcesHeading = $("#resourcesHeading");

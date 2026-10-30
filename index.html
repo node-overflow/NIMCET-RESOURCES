@@ -17,13 +17,13 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="NIMCET Resources — Free Prep Hub for NIMCET 2027">
     <meta property="og:description"
-        content="A curated, free resource hub for NIMCET aspirants — books, notes, PYQs, DPPs, mock tests and exam updates, all organised by subject.">
+        content="A curated, free resource hub for NIMCET aspirants — books, notes, PYQs, DPPs, mock tests, all organised by subject.">
     <meta property="og:image" content="assets/og-image.png">
     <meta property="og:url" content="https://your-domain-here.com/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NIMCET Resources — Free Prep Hub for NIMCET 2027">
     <meta name="twitter:description"
-        content="A curated, free resource hub for NIMCET aspirants — books, notes, PYQs, DPPs, mock tests and exam updates, all organised by subject.">
+        content="A curated, free resource hub for NIMCET aspirants — books, notes, PYQs, DPPs, mock tests, all organised by subject.">
     <meta name="twitter:image" content="assets/og-image.png">
 
     <title>NIMCET RESOURCES</title>
@@ -59,7 +59,6 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/misc-ui.css">
-    <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/mathgym.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -142,18 +141,6 @@
 
                 <div class="nav-group nav-group-hub">
                     <p class="nav-label">Exam Hub</p>
-                    <button class="nav-item" data-nav="updates">
-                        <svg class="nav-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <rect x="2" y="3" width="12" height="11" rx="1.5" stroke="currentColor"
-                                stroke-width="1.4" />
-                            <path d="M2 6.3H14" stroke="currentColor" stroke-width="1.4" />
-                            <path d="M5.2 1.6V4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
-                            <path d="M10.8 1.6V4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
-                            <circle cx="5.3" cy="9.4" r="1" fill="currentColor" />
-                        </svg>
-                        <span>Exam Updates</span>
-                        <span class="nav-badge" id="updatesBadge" hidden></span>
-                    </button>
                     <button class="nav-item" data-nav="pyqs">
                         <svg class="nav-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M4.2 1.8h5l3 3v8.4a1 1 0 0 1-1 1H4.2a1 1 0 0 1-1-1V2.8a1 1 0 0 1 1-1Z"
@@ -352,7 +339,8 @@
                 <section class="section cta-banner">
                     <div class="cta-banner-text">
                         <h2 class="cta-banner-title">Prep smarter, together.</h2>
-                        <p class="cta-banner-sub">Join other NIMCET aspirants to clear doubts and stay updated on everything related to the exam.</p>
+                        <p class="cta-banner-sub">Join other NIMCET aspirants to clear doubts and stay updated on
+                            everything related to the exam.</p>
                     </div>
                     <a class="reach-card reach-card-telegram" id="communityBtn" href="#" target="_blank"
                         rel="noopener noreferrer" aria-label="Join Telegram group @nimcet2027group">
@@ -374,7 +362,7 @@
                             <span class="brand-text">NIMCET <em>'27</em></span>
                             <p class="footer-blurb">
                                 A free, organized resource hub for NIMCET aspirants, bringing together books, notes,
-                                PYQs, DPPs, practice resources, and exam updates in one place.
+                                PYQs, DPPs, and practice resources in one place.
                             </p>
                         </div>
 
@@ -382,7 +370,6 @@
                             <p class="footer-col-title">Explore</p>
                             <button class="footer-link" type="button" data-nav="home">Home</button>
                             <button class="footer-link" type="button" data-nav="all">All Resources</button>
-                            <button class="footer-link" type="button" data-nav="updates">Exam Updates</button>
                             <button class="footer-link" type="button" data-nav="pyqs">PYQs</button>
                             <button class="footer-link" type="button" data-nav="dpps">DPPs</button>
                             <button class="footer-link" type="button" data-nav="mocks">Mocks</button>
@@ -465,24 +452,6 @@
                 <div class="empty-state" id="emptyState" hidden>
                     <p class="empty-title">No resources match</p>
                     <p class="empty-sub">Try a different search term or clear the active filter.</p>
-                </div>
-            </section>
-
-            <!-- EXAM UPDATES VIEW -->
-            <section class="view" id="view-updates" hidden>
-                <header class="view-head">
-                    <h1>Exam Updates</h1>
-                    <p class="subtitle">Notifications, dates, admit cards and results, all updated as they are released.
-                    </p>
-                </header>
-
-                <div class="chip-row" id="updateFilters"></div>
-
-                <div class="timeline" id="updatesTimeline"></div>
-
-                <div class="empty-state" id="updatesEmpty" hidden>
-                    <p class="empty-title">No updates yet</p>
-                    <p class="empty-sub">Announcements will show up here as soon as they're added.</p>
                 </div>
             </section>
 

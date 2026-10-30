@@ -29,7 +29,6 @@ export const DATA_FILE_ENTRIES = Object.keys(SUBJECT_BY_SLUG).flatMap(subjectSlu
     }))
 );
 
-export const ANNOUNCEMENTS_FILE = "data/other/announcements.json";
 export const PYQS_FILE = "data/other/pyqs.json";
 export const FAQS_FILE = "data/other/faqs.json";
 
@@ -61,29 +60,6 @@ export const MOCK_TYPES = [
     { key: "free", name: "Free Mocks", symbol: "F" },
     { key: "paid", name: "Paid Mocks", symbol: "P" }
 ];
-
-/* =========================================================
-   UPDATES / ANNOUNCEMENTS
-   ========================================================= */
-
-export const UPDATE_CATEGORIES = [
-    { key: "Notification", label: "Notification", cssVar: "--upd-notification" },
-    { key: "Exam Date", label: "Exam Date", cssVar: "--upd-exam-date" },
-    { key: "Admit Card", label: "Admit Card", cssVar: "--upd-admit-card" },
-    { key: "Result", label: "Result", cssVar: "--upd-result" },
-    { key: "Important", label: "Important", cssVar: "--upd-important" }
-];
-
-export const UPDATE_CATEGORY_VAR = Object.fromEntries(
-    UPDATE_CATEGORIES.map(category => [
-        category.key,
-        category.cssVar
-    ])
-);
-
-export const NEW_WITHIN_DAYS = 7;
-
-export const MONTH_SHORT = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
 /* =========================================================
    EXAMS (used for PYQ browsing)

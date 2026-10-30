@@ -16,8 +16,6 @@ import {
     elHeroPyqBtn,
     elFaqCategories,
     elFaqList,
-    elHomeUpdatesPreview,
-    elHomeUpdatesBtn,
     elCommunityBtn
 } from "./dom.js";
 
@@ -26,7 +24,6 @@ import { state } from "./state.js";
 import {
     countBySubject,
     escapeHtml,
-    parseDateStr,
     subjectSymbolHtml,
     TYPE_CHIP_ICONS
 } from "./utils.js";
@@ -34,8 +31,6 @@ import {
 import { renderGrid } from "./cards.js";
 
 import { computeDppTotal } from "./dpp.js";
-
-import { buildTimelineItem } from "./updates.js";
 
 const STAT_ICONS = {
     materials: `<svg class="hero-stat-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`,
@@ -306,59 +301,11 @@ const renderFaqs = async () => {
     renderFaqQuestions(active ? active.faqs : []);
 };
 
-const renderHomeUpdatesPreview = (onUpdatesClick) => {
-    if (!elHomeUpdatesPreview) return;
-
-    if (elHomeUpdatesBtn && !elHomeUpdatesBtn.dataset.wired) {
-        elHomeUpdatesBtn.dataset.wired = "true";
-
-        elHomeUpdatesBtn.addEventListener(
-            "click",
-            onUpdatesClick
-        );
-    }
-
-    const results = state.announcements
-        .slice()
-        .sort((a, b) => {
-            const dateA = parseDateStr(a.date);
-            const dateB = parseDateStr(b.date);
-
-            const timeA = dateA ? dateA.getTime() : 0;
-            const timeB = dateB ? dateB.getTime() : 0;
-
-            return timeB - timeA;
-        })
-        .slice(0, 3);
-
-    elHomeUpdatesPreview.innerHTML = "";
-
-    if (results.length === 0) {
-        elHomeUpdatesPreview.innerHTML =
-            '<p class="empty-sub" style="padding:6px 2px;">' +
-            'No updates yet — check back soon.' +
-            '</p>';
-
-        return;
-    }
-
-    const fragment = document.createDocumentFragment();
-
-    results.forEach(item => {
-        fragment.appendChild(
-            buildTimelineItem(item)
-        );
-    });
-
-    elHomeUpdatesPreview.appendChild(fragment);
-};
-
 export const renderHome = (
     onSubjectClick,
     onTypeClick,
     onBrowseAll,
-    onPyqsHome,
-    onUpdatesClick
+    onPyqsHome
 ) => {
     renderHeroStats();
 
@@ -383,8 +330,6 @@ export const renderHome = (
     if (elCommunityBtn) {
         elCommunityBtn.href = TELEGRAM_URL;
     }
-
-    renderHomeUpdatesPreview(onUpdatesClick);
 
     renderFaqs();
 

@@ -1,6 +1,6 @@
 "use strict";
 
-import { NEW_WITHIN_DAYS, TYPES, MATH_CHAPTER_KEYWORDS } from "./config.js";
+import { TYPES, MATH_CHAPTER_KEYWORDS } from "./config.js";
 import { state } from "./state.js";
 
 export const escapeHtml = str => {
@@ -83,43 +83,6 @@ export const countByExam = key => {
     return state.pyqs.filter(
         resource => resource.exam === key
     ).length;
-};
-
-export const parseDateStr = str => {
-    if (!str) return null;
-
-    const parts = String(str)
-        .split("-")
-        .map(n => parseInt(n, 10));
-
-    if (parts.length < 3 || parts.some(Number.isNaN)) {
-        return null;
-    }
-
-    const date = new Date(
-        parts[0],
-        parts[1] - 1,
-        parts[2]
-    );
-
-    if (Number.isNaN(date.getTime())) {
-        return null;
-    }
-
-    return date;
-};
-
-export const isRecent = dateObj => {
-    if (!dateObj) return false;
-
-    const diffDays =
-        (Date.now() - dateObj.getTime()) / 86400000;
-
-    if (diffDays >= 0 && diffDays <= NEW_WITHIN_DAYS) {
-        return true;
-    }
-
-    return false;
 };
 
 export const extractYouTubeId = url => {

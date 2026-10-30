@@ -27,12 +27,6 @@
   --type-practice: #b98cd6;
   --type-formula: #c6b357;
 
-  --upd-notification: #6e6bdc;
-  --upd-exam-date: #6fa4d9;
-  --upd-admit-card: #c99a54;
-  --upd-result: #6cbb84;
-  --upd-important: #d67b7b;
-
   --diff-easy: #5ec98a;
   --diff-medium: #d9a441;
   --diff-hard: #e8696f;
@@ -107,12 +101,6 @@
   --type-practice: #81449b;
   --type-formula: #786611;
 
-  --upd-notification: #5452c0;
-  --upd-exam-date: #2b6799;
-  --upd-admit-card: #875d1c;
-  --upd-result: #27744a;
-  --upd-important: #ad4646;
-
   --diff-easy: #0f7a45;
   --diff-medium: #855402;
   --diff-hard: #b1232b;
@@ -139,9 +127,4 @@
 
 :root[data-theme="light"] .overlay {
   background: rgba(27, 33, 48, 0.38);
-}
-
-:root[data-theme="light"] .update-new {
-  border-color: rgba(39, 116, 74, 0.32);
-  background: rgba(39, 116, 74, 0.1);
 }

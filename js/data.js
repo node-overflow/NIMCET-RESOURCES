@@ -2,7 +2,6 @@
 
 import {
     DATA_FILE_ENTRIES,
-    ANNOUNCEMENTS_FILE,
     PYQS_FILE
 } from "./config.js";
 
@@ -69,16 +68,7 @@ export const loadData = () => {
 };
 
 export const loadOptionalData = () => {
-    return Promise.all([
-        loadOptional(ANNOUNCEMENTS_FILE),
-        loadOptional(PYQS_FILE)
-    ]).then(([announcements, pyqs]) => {
-        if (Array.isArray(announcements)) {
-            state.announcements = announcements;
-        } else {
-            state.announcements = [];
-        }
-
+    return loadOptional(PYQS_FILE).then(pyqs => {
         if (Array.isArray(pyqs)) {
             state.pyqs = pyqs;
         } else {

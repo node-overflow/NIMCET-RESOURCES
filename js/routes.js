@@ -73,9 +73,6 @@ const rawPathForState = (state) => {
             return "/resources";
         }
 
-        case "updates":
-            return "/updates";
-
         case "pyqs":
             return "/pyqs";
 
@@ -127,10 +124,6 @@ export const routeFromPath = (pathname) => {
         }
 
         return { view: "resources", subject: null, type: null };
-    }
-
-    if (first === "updates") {
-        return { view: "updates" };
     }
 
     if (first === "pyqs") {

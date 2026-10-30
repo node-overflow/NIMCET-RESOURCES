@@ -730,47 +730,6 @@
     gap: 6px;
   }
 
-  /* ====== Timeline / roadmap ====== */
-  .timeline {
-    padding-left: 22px;
-  }
-
-  .timeline::before {
-    left: 5px;
-  }
-
-  .timeline-dot {
-    left: -22px;
-    width: 11px;
-    height: 11px;
-  }
-
-  .timeline-card {
-    gap: 12px;
-    padding: 13px 14px;
-  }
-
-  .timeline-date {
-    width: 46px;
-    height: 46px;
-  }
-
-  .timeline-date .tl-day {
-    font-size: 0.95rem;
-  }
-
-  .timeline-date .tl-month {
-    font-size: 0.58rem;
-  }
-
-  .timeline-title {
-    font-size: 0.9rem;
-  }
-
-  .timeline-desc {
-    font-size: 0.8rem;
-  }
-
   /* ====== Back buttons ====== */
   .back-btn {
     font-size: 0.82rem;

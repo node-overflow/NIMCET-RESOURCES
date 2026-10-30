@@ -20,7 +20,6 @@ import { renderResourceResults } from "./resources.js";
 import {
     goHome,
     goToResources,
-    goToUpdates,
     goToPyqs,
     goToDpps,
     goToMocks,
@@ -60,8 +59,6 @@ const handleNavAction = (button) => {
             type: null,
             search: ""
         });
-    } else if (nav === "updates") {
-        goToUpdates();
     } else if (nav === "pyqs") {
         goToPyqs();
     } else if (nav === "dpps") {

@@ -12,11 +12,6 @@ import { renderHome } from "./home.js";
 import { renderResources } from "./resources.js";
 
 import {
-    renderUpdates,
-    updateUnreadBadge
-} from "./updates.js";
-
-import {
     renderExamGrid,
     renderPyqsExam
 } from "./pyqs.js";
@@ -66,7 +61,6 @@ const NAV_KEYS = [
     "dppChapterKey",
     "dppChapterName",
     "mockKey",
-    "updateCategory"
 ];
 
 const buildSnapshot = (scrollY = 0) => {
@@ -95,7 +89,6 @@ const applySnapshotToState = (snap) => {
     state.dppChapterKey = s.dppChapterKey ?? null;
     state.dppChapterName = s.dppChapterName ?? null;
     state.mockKey = s.mockKey ?? null;
-    state.updateCategory = s.updateCategory ?? null;
     state.view = s.view || "home";
 
     if (elSearchInput) {
@@ -169,18 +162,12 @@ const renderForView = () => {
                         type: null,
                         search: ""
                     }),
-                () => goToPyqs(),
-                () => goToUpdates()
+                () => goToPyqs()
             );
             break;
 
         case "resources":
             renderResources();
-            break;
-
-        case "updates":
-            updateUnreadBadge();
-            renderUpdates();
             break;
 
         case "pyqs":
@@ -285,12 +272,6 @@ export const setActiveNav = () => {
         return;
     }
 
-    if (state.view === "updates") {
-        const button = document.querySelector('.nav-item[data-nav="updates"]');
-        if (button) button.dataset.active = "true";
-        return;
-    }
-
     if (state.view === "pyqs" || state.view === "pyqs-exam") {
         const button = document.querySelector('.nav-item[data-nav="pyqs"]');
         if (button) button.dataset.active = "true";
@@ -355,11 +336,6 @@ export const goToResources = opts => {
     if (elSearchInput) elSearchInput.value = state.search;
 
     showView("resources");
-    renderForView();
-};
-
-export const goToUpdates = () => {
-    showView("updates");
     renderForView();
 };
 
@@ -440,7 +416,6 @@ export const goBack = () => {
             goToMocks();
             break;
         case "resources":
-        case "updates":
         case "pyqs":
         case "dpps":
         case "mocks":
@@ -487,10 +462,6 @@ const applyRouteQuiet = (route) => {
             state.mathOwnerFilter = null;
             state.mathChapterFilter = null;
             state.view = "resources";
-            break;
-
-        case "updates":
-            state.view = "updates";
             break;
 
         case "pyqs":

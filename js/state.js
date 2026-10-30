@@ -2,13 +2,11 @@
 
 export const state = {
     resources: [],
-    announcements: [],
     pyqs: [],
     view: "home",
     subject: null,
     type: null,
     search: "",
-    updateCategory: null,
     examKey: null,
     examFilter: null,
     dppSubject: null,

@@ -6,8 +6,6 @@ import { wireStaticEvents } from "./events.js";
 
 import { wireThemeToggle } from "./theme.js";
 
-import { updateUnreadBadge } from "./updates.js";
-
 import { initFromLocation, initHistoryNavigation } from "./navigation.js";
 
 import { elViewHome } from "./dom.js";
@@ -59,7 +57,6 @@ const init = async () => {
 
         wireStaticEvents();
 
-        updateUnreadBadge();
 
         initFromLocation();
 
